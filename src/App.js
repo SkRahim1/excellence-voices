@@ -78,7 +78,7 @@ export default function App() {
       {/* Navbar */}
       <header className="navbar">
         <div className="brand">
-          <img src="/logo.png" alt="Excellence Logo" className="logo" />
+          <img src="./logo.png" alt="Excellence Logo" className="logo" />
 
           <div>
             <div className="brand-title">Excellence</div>
