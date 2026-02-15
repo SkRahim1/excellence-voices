@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/excellence-voices/static/css/main.b6dc94f4.css",
-    "main.js": "/excellence-voices/static/js/main.675fabef.js",
-    "index.html": "/excellence-voices/index.html",
-    "main.b6dc94f4.css.map": "/excellence-voices/static/css/main.b6dc94f4.css.map",
-    "main.675fabef.js.map": "/excellence-voices/static/js/main.675fabef.js.map"
+    "main.css": "/static/css/main.b6dc94f4.css",
+    "main.js": "/static/js/main.675fabef.js",
+    "index.html": "/index.html",
+    "main.b6dc94f4.css.map": "/static/css/main.b6dc94f4.css.map",
+    "main.675fabef.js.map": "/static/js/main.675fabef.js.map"
   },
   "entrypoints": [
     "static/css/main.b6dc94f4.css",
