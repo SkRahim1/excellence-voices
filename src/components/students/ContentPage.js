@@ -29,7 +29,7 @@ export default function ContentPage() {
           whiteSpace: "pre-line",
           textAlign: "left",
           marginTop: "30px",
-          lineHeight: "2.2",
+          lineHeight: "1",
           fontSize: "20px",
           background: "#fff",
           padding: "35px",
@@ -45,7 +45,7 @@ export default function ContentPage() {
               <p
                 key={index}
                 style={{
-                  marginBottom: "18px",
+                  marginBottom: "6px",
                 }}
               >
                 <span
