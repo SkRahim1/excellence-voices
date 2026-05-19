@@ -1591,7 +1591,197 @@ Student Speaking Practice:
       },
     ],
 
-    skits: [],
+    skits: [
+      {
+        id: 1,
+        title: "First Day at School",
+
+        content: `
+Characters: Teacher, Arjun, Hina
+Teacher: Welcome to the class, children.
+Arjun: I am happy to come to school.
+Hina: I made a new friend today.
+Teacher: Please introduce yourselves.
+Arjun: My name is Arjun.
+Hina: My name is Hina.
+Teacher: Be kind and helpful to everyone.
+Arjun: We will help each other.
+Hina: We will be good students.
+Moral: Make friends and be kind.
+`,
+      },
+
+      {
+        id: 2,
+        title: "At the Grocery Store",
+
+        content: `
+Characters: Shopkeeper, Kabir, Sana
+Shopkeeper: Welcome to my shop.
+Kabir: I want some apples.
+Sana: I want a packet of biscuits.
+Shopkeeper: Here are your items.
+Kabir: How much are the apples?
+Sana: Thank you, uncle.
+Shopkeeper: Visit again, children.
+Kabir: The apples look fresh.
+Sana: Bye, uncle!
+Moral: Speak politely while shopping.
+`,
+      },
+
+      {
+        id: 3,
+        title: "The Lost Water Bottle",
+
+        content: `
+Characters: Teacher, Reema, Yusuf
+Teacher: Why are you sad, Reema?
+Reema: I lost my water bottle.
+Yusuf: I will help you find it.
+Teacher: Check near your desk.
+Reema: I already looked there.
+Yusuf: Is this your bottle?
+Teacher: Good job, Yusuf.
+Reema: Yes, it is mine. Thank you!
+Yusuf: Friends should help each other.
+Moral: Helping friends is a good habit.
+`,
+      },
+
+      {
+        id: 4,
+        title: "Healthy Food",
+
+        content: `
+Characters: Mother, Riya, Sameer
+Mother: Eat your vegetables, children.
+Riya: Vegetables make us strong.
+Sameer: I like carrots and beans.
+Mother: Junk food is not healthy.
+Riya: I also like fruits.
+Sameer: Healthy food gives energy.
+Mother: I am proud of you both.
+Riya: We will eat healthy food daily.
+Sameer: Yes, mother!
+Moral: Healthy food keeps us strong.
+`,
+      },
+
+      {
+        id: 5,
+        title: "At the Bus Stop",
+
+        content: `
+Characters: Driver, Ayaan, Fatima
+Driver: Good morning, children.
+Ayaan: Good morning, uncle.
+Fatima: The bus is here!
+Driver: Sit properly in the bus.
+Ayaan: I will sit quietly.
+Fatima: I will keep my bag safely.
+Driver: Safety is very important.
+Ayaan: Thank you, uncle.
+Fatima: We will follow the rules.
+Moral: Follow safety rules while travelling.
+`,
+      },
+
+      {
+        id: 6,
+        title: "Cleaning the Garden",
+
+        content: `
+Characters: Gardener, Neha, Imran
+Gardener: The garden needs cleaning today.
+Neha: I will pick up the papers.
+Imran: I will water the plants.
+Gardener: Thank you for helping me.
+Neha: Flowers look beautiful here.
+Imran: Plants need water every day.
+Gardener: You are responsible children.
+Neha: We should keep gardens clean.
+Imran: Nature is important for us.
+Moral: Keep nature clean and green.
+`,
+      },
+
+      {
+        id: 7,
+        title: "Homework Time",
+
+        content: `
+Characters: Father, Aditya, Sara
+Father: Have you completed your homework?
+Aditya: I finished my maths homework.
+Sara: I finished my English homework.
+Father: Very good, children.
+Aditya: Homework helps us learn.
+Sara: I enjoyed doing my work.
+Father: Keep studying regularly.
+Aditya: I will study every day.
+Sara: We will work hard.
+Moral: Complete your homework on time.
+`,
+      },
+
+      {
+        id: 8,
+        title: "At the Doctor’s Clinic",
+
+        content: `
+Characters: Doctor, Zain, Mehak
+Doctor: What happened to you, Zain?
+Zain: I have a cold and cough.
+Mehak: He was not feeling well today.
+Doctor: Take this medicine on time.
+Zain: I will take the medicine.
+Mehak: He also needs rest.
+Doctor: Drink warm water too.
+Zain: Thank you, doctor.
+Mehak: We will follow your advice.
+Moral: Take care of your health.
+`,
+      },
+
+      {
+        id: 9,
+        title: "The Rainy Day",
+
+        content: `
+Characters: Mother, Ravi, Noor
+Mother: It is raining heavily outside.
+Ravi: I want to play in the rain.
+Noor: I like rainy weather too.
+Mother: Take your umbrellas first.
+Ravi: I will wear my raincoat.
+Noor: I will wear my boots.
+Mother: Stay safe and careful.
+Ravi: Thank you, mother.
+Noor: We will be careful.
+Moral: Stay safe during rainy days.
+`,
+      },
+
+      {
+        id: 10,
+        title: "Good Manners",
+
+        content: `
+Characters: Teacher, Vikram, Aisha
+Teacher: Good manners are important.
+Vikram: We should say “please.”
+Aisha: We should say “thank you.”
+Teacher: Always respect elders.
+Vikram: I help my grandparents at home.
+Aisha: I speak politely to everyone.
+Teacher: Excellent children!
+Vikram: Good manners make us better people.
+Aisha: We will always be polite.
+Moral: Good manners make everyone happy.
+`,
+      },
+    ],
 
     stories: [
       {
@@ -2298,7 +2488,258 @@ Student Speaking Sentences:
       },
     ],
 
-    skits: [],
+    skits: [
+      {
+        id: 1,
+        title: "The New Student",
+
+        content: `
+Characters: Narrator, Teacher, Aarav, Zain, Meera
+Narrator: It is Monday morning. The students are talking in the classroom before the teacher arrives.
+Teacher: Good morning, children. Today, we have a new student in our class.
+Students: Good morning, ma’am.
+Aarav: Hello everyone. My name is Aarav.
+Narrator: The students smile at Aarav and make him feel welcome.
+Meera: Welcome, Aarav. Our class is very friendly.
+Zain: You can sit next to me.
+Aarav: Thank you. I was feeling nervous.
+Narrator: During lunch break, Aarav sits alone quietly.
+Meera: Aarav, come sit with us.
+Aarav: Thank you, Meera.
+Zain: Friends should eat together.
+Narrator: The children share their lunch happily.
+Meera: What did you bring today?
+Aarav: I brought sandwiches.
+Zain: Great! I brought biryani.
+Moral: Be kind to new students.
+`,
+      },
+
+      {
+        id: 2,
+        title: "Saving Water",
+
+        content: `
+Characters: Narrator, Father, Hina, Yusuf
+Narrator: One afternoon, Hina leaves the water tap open after washing her hands.
+Yusuf: Hina, the tap is still open.
+Hina: Oh no! I forgot to close it.
+Father: Water should not be wasted.
+Narrator: Hina feels sorry after hearing her father’s words.
+Hina: Sorry, father.
+Yusuf: Water is very precious.
+Father: Every drop is important.
+Narrator: The next day, the teacher talks about saving water in class.
+Teacher: Children, why should we save water?
+Hina: Because many people do not get enough water.
+Yusuf: We should close taps properly.
+Teacher: Very good, children.
+Hina: I will save water every day.
+Yusuf: I will tell my friends too.
+Moral: Save water for the future.
+`,
+      },
+
+      {
+        id: 3,
+        title: "The Lost Wallet",
+
+        content: `
+Characters: Narrator, Kabir, Fatima, Police Officer
+Narrator: Kabir and Fatima are walking near the market after school.
+Kabir: Look! Someone dropped a wallet.
+Fatima: There is money inside it.
+Kabir: We should return it.
+Narrator: The children take the wallet to the police station.
+Fatima: Honest people do the right thing.
+Kabir: Yes, the owner may be worried.
+Police Officer: Good job, children.
+Narrator: The police officer checks the wallet carefully.
+Police Officer: Many children would keep the money.
+Kabir: My parents taught me honesty.
+Fatima: We wanted to help the owner.
+Police Officer: I am proud of you both.
+Kabir: Thank you, sir.
+Fatima: Honesty always feels good.
+Moral: Always be honest.
+`,
+      },
+
+      {
+        id: 4,
+        title: "Clean Classroom",
+
+        content: `
+Characters: Narrator, Teacher, Simran, Arjun
+Narrator: After lunch break, the classroom becomes dirty.
+Teacher: Children, look at the classroom.
+Simran: The room looks very messy.
+Arjun: We should clean it quickly.
+Narrator: The students decide to clean the classroom together.
+Teacher: That is a good idea.
+Simran: I will collect the papers.
+Arjun: I will arrange the desks.
+Narrator: After a few minutes, the classroom becomes neat again.
+Teacher: Wonderful work, children.
+Simran: Clean places look beautiful.
+Arjun: We should always use dustbins.
+Teacher: Cleanliness is a good habit.
+Simran: We will keep our class clean.
+Arjun: A clean classroom makes us happy.
+Moral: Keep your surroundings clean.
+`,
+      },
+
+      {
+        id: 5,
+        title: "At the Library",
+
+        content: `
+Characters: Narrator, Librarian, Sana, Rehan
+Narrator: Sana and Rehan visit the school library for the first time.
+Librarian: Welcome to the library, children.
+Sana: There are so many books here.
+Rehan: I want a science book.
+Narrator: The librarian shows them different shelves full of books.
+Librarian: Books help us learn new things.
+Sana: I like storybooks.
+Rehan: I like books about space.
+Narrator: The children carefully choose books and sit quietly to read.
+Librarian: Please return the books on time.
+Sana: I will take care of my book.
+Rehan: Reading is really fun.
+Librarian: Visit again next week.
+Sana: Thank you for helping us.
+Rehan: The library is my favourite place.
+Moral: Reading increases knowledge.
+`,
+      },
+
+      {
+        id: 6,
+        title: "Helping an Old Man",
+
+        content: `
+Characters: Narrator, Old Man, Aisha, Dev
+Narrator: An old man is standing near a busy road.
+Old Man: I cannot cross the road alone.
+Aisha: We will help you.
+Dev: Please hold my hand carefully.
+Narrator: The children help the old man cross the road safely.
+Old Man: Thank you, children.
+Aisha: Helping elders is important.
+Dev: We are happy to help.
+Narrator: The old man smiles happily.
+Old Man: You both are very kind.
+Aisha: My parents taught me to help others.
+Dev: We should respect elders.
+Old Man: May God bless you.
+Aisha: Take care, grandfather.
+Dev: Have a safe day.
+Moral: Respect and help elders.
+`,
+      },
+
+      {
+        id: 7,
+        title: "Healthy Food Habits",
+
+        content: `
+Characters: Narrator, Mother, Rohan, Zara
+Narrator: Rohan is eating chips while Zara eats fruits.
+Mother: Rohan, eat healthy food.
+Rohan: I like chips and burgers.
+Zara: Fruits make us strong.
+Narrator: Mother explains why healthy food is important.
+Mother: Junk food is not good for health.
+Rohan: Really?
+Zara: I drink milk every day.
+Narrator: The next morning, Rohan decides to change his habits.
+Mother: What would you like for breakfast?
+Rohan: I want fruits and milk today.
+Zara: That is a healthy choice.
+Mother: Very good, Rohan.
+Rohan: I want to stay healthy.
+Zara: Healthy food gives energy.
+Moral: Eat healthy food every day.
+`,
+      },
+
+      {
+        id: 8,
+        title: "School Picnic",
+
+        content: `
+Characters: Narrator, Teacher, Ravi, Noor
+Narrator: The students are going for a school picnic.
+Teacher: Sit properly, children.
+Ravi: I brought snacks for everyone.
+Noor: I cannot wait to reach the park.
+Narrator: The children sing songs and enjoy the journey.
+Teacher: Do not make too much noise.
+Ravi: Sorry, ma’am.
+Noor: We are very excited.
+Narrator: The children reach the park and start playing games.
+Teacher: Do not throw garbage here.
+Ravi: We will keep the park clean.
+Noor: Let us play football now.
+Teacher: I hope you enjoyed today.
+Ravi: This was so much fun.
+Noor: Thank you for bringing us here.
+Moral: Enjoy outings responsibly.
+`,
+      },
+
+      {
+        id: 9,
+        title: "The Broken Plant",
+
+        content: `
+Characters: Narrator, Mother, Tina, Rehan
+Narrator: Tina and Rehan are playing in the garden.
+Mother: What happened here?
+Tina: The flower pot broke accidentally.
+Rehan: We were playing carelessly.
+Narrator: The children feel sorry after seeing the broken plant.
+Mother: Plants should be protected.
+Tina: Sorry, mother.
+Rehan: We will be careful next time.
+Narrator: The next day, the children plant a new flower.
+Mother: I am happy to see this.
+Tina: We planted a new flower.
+Rehan: We will water it daily.
+Mother: Very good, children.
+Tina: Plants make our world beautiful.
+Rehan: We should protect nature.
+Moral: Take care of plants and nature.
+`,
+      },
+
+      {
+        id: 10,
+        title: "Teamwork Wins",
+
+        content: `
+Characters: Narrator, Coach, Veer, Ananya
+Narrator: Veer and Ananya are practising football before an important match.
+Coach: Teamwork is very important.
+Veer: I will pass the ball properly.
+Ananya: I will support my teammates.
+Narrator: The coach teaches the students to trust each other.
+Coach: Good teams always work together.
+Veer: We should not fight during games.
+Ananya: Teamwork makes us stronger.
+Narrator: The team wins the football match.
+Coach: I am proud of all of you.
+Veer: We won because of teamwork.
+Ananya: Everyone played very well.
+Coach: Keep supporting each other.
+Veer: We learned a lot today.
+Ananya: Teamwork always helps us succeed.
+Moral: Teamwork leads to success.
+`,
+      },
+    ],
 
     stories: [
       {
@@ -3108,7 +3549,281 @@ Student Speaking Practice:
       },
     ],
 
-    skits: [],
+    skits: [
+      {
+        id: 1,
+        title: "Mobile Phone vs Books",
+
+        content: `
+Characters: Narrator, Mother, Arjun, Sara
+Narrator: Arjun is sitting on the sofa and playing games on his mobile phone.
+Mother: Arjun, you are still using your phone?
+Arjun: I am playing my favourite game.
+Sara: You have homework too.
+Arjun: I will do it later.
+Narrator: Mother sits beside Arjun and speaks calmly.
+Mother: Too much screen time is not healthy.
+Sara: Books help us learn new things.
+Arjun: But games are more exciting.
+Mother: Balance is important in life.
+Narrator: After finishing homework, Arjun starts reading with Sara.
+Sara: See? Reading is fun too.
+Arjun: Yes, this story is really interesting.
+Mother: I am happy to see both of you reading together.
+Sara: Books improve our imagination.
+Arjun: I will spend less time on my phone now.
+Sara: We can read together daily.
+Mother: Good habits always help us grow.
+Moral: Use mobile phones wisely and develop reading habits.
+`,
+      },
+
+      {
+        id: 2,
+        title: "The Importance of Punctuality",
+
+        content: `
+Characters: Narrator, Teacher, Ravi, Mehak
+Narrator: The school bell rings, and all the students are seated in class.
+Teacher: Ravi, you are late again.
+Ravi: Sorry, ma’am. I woke up late.
+Mehak: The lesson has already started.
+Ravi: I will try to improve.
+Narrator: Ravi feels embarrassed in front of the class.
+Teacher: Time is very valuable.
+Mehak: Punctual students stay organised.
+Ravi: I understand now.
+Teacher: Good habits lead to success.
+Narrator: The next morning, Ravi reaches school before the bell rings.
+Teacher: Excellent, Ravi! You are early today.
+Ravi: I woke up early and got ready on time.
+Mehak: That is a big improvement.
+Ravi: I feel much better today.
+Teacher: Keep this habit forever.
+Ravi: I surely will, ma’am.
+Mehak: Punctuality makes life easier.
+Moral: Always be punctual and value time.
+`,
+      },
+
+      {
+        id: 3,
+        title: "The Tree Plantation Drive",
+
+        content: `
+Characters: Narrator, Principal, Zoya, Kabir
+Narrator: During the morning assembly, the principal announces a tree plantation drive.
+Principal: Children, we must plant more trees.
+Zoya: Trees make the air fresh.
+Kabir: They also give us shade.
+Principal: Trees are very important for nature.
+Narrator: The students become excited about the activity.
+Zoya: I will plant a mango tree.
+Kabir: I will plant a neem tree.
+Principal: Wonderful ideas, children.
+Zoya: Our school will look greener.
+Narrator: The students gather in the garden with small plants.
+Principal: Dig the soil carefully.
+Kabir: I will water the plants daily.
+Zoya: I will protect my plant.
+Principal: Plants need love and care.
+Kabir: This activity is fun.
+Zoya: Trees help us in many ways.
+Principal: I am proud of all of you.
+Moral: Plant trees and protect nature.
+`,
+      },
+
+      {
+        id: 4,
+        title: "The Honest Shopkeeper",
+
+        content: `
+Characters: Narrator, Shopkeeper, Ali, Riya
+Narrator: Ali and Riya visit a grocery shop after school.
+Shopkeeper: Welcome, children. What do you want?
+Ali: We want juice and biscuits.
+Riya: And one packet of chips.
+Shopkeeper: Here are your items.
+Narrator: The children pay the money and leave happily.
+Ali: Thank you, uncle.
+Riya: Bye, uncle.
+Shopkeeper: Visit again.
+Ali: The shop is very nice.
+Narrator: After a few minutes, the shopkeeper runs towards the children.
+Shopkeeper: Children, I gave you extra money by mistake.
+Ali: Oh! We did not notice it.
+Riya: Thank you for being honest.
+Shopkeeper: Honesty is always important.
+Ali: Honest people are respected.
+Riya: We learned a good lesson today.
+Shopkeeper: Always stay truthful.
+Moral: Honesty is the best policy.
+`,
+      },
+
+      {
+        id: 5,
+        title: "The Science Project",
+
+        content: `
+Characters: Narrator, Teacher, Aarav, Hina
+Narrator: The teacher gives the students a science project about the solar system.
+Teacher: You must complete this project in pairs.
+Aarav: Hina, will you work with me?
+Hina: Yes, let us do it together.
+Teacher: Use charts and pictures too.
+Narrator: The students start discussing ideas excitedly.
+Aarav: I will draw the planets.
+Hina: I will write the information neatly.
+Teacher: Good teamwork is important.
+Aarav: This project will be fun.
+Narrator: Two days later, the students present their project confidently.
+Teacher: Your project looks wonderful.
+Hina: We worked very hard.
+Aarav: We learned many new things.
+Teacher: Excellent teamwork, children.
+Hina: Thank you, ma’am.
+Aarav: Teamwork made the work easy.
+Moral: Teamwork helps us succeed.
+`,
+      },
+
+      {
+        id: 6,
+        title: "Respecting School Property",
+
+        content: `
+Characters: Narrator, Teacher, Dev, Simran
+Narrator: During recess, Dev starts drawing on the classroom desk with a pen.
+Teacher: Dev, what are you doing?
+Dev: I was just drawing.
+Simran: School property should stay clean.
+Dev: I did not think about that.
+Narrator: Dev feels sorry after hearing the teacher.
+Teacher: Desks belong to everyone.
+Simran: We should protect our classroom.
+Dev: Sorry, ma’am.
+Teacher: Learn from your mistakes.
+Narrator: After school, Dev cleans the desk carefully.
+Teacher: I am happy you understood your mistake.
+Dev: I will never repeat it.
+Simran: Good students care for their school.
+Teacher: Very good, Dev.
+Dev: I will keep my classroom clean.
+Simran: Clean schools look beautiful.
+Moral: Respect and protect school property.
+`,
+      },
+
+      {
+        id: 7,
+        title: "The Lost Puppy",
+
+        content: `
+Characters: Narrator, Noor, Aryan, Watchman
+Narrator: Noor and Aryan hear a puppy crying near the park gate.
+Noor: The puppy looks scared.
+Aryan: Maybe it lost its owner.
+Watchman: I saw it wandering alone.
+Noor: Let us help it.
+Narrator: The children give water and biscuits to the puppy.
+Aryan: It looks hungry.
+Noor: Poor puppy.
+Watchman: You both are kind children.
+Aryan: Animals need care too.
+Narrator: After some time, a little girl comes running towards the puppy.
+Girl: Bruno! I was searching for you.
+Noor: Is this your puppy?
+Aryan: We found him near the gate.
+Girl: Thank you so much.
+Noor: We are glad to help.
+Aryan: Take good care of him.
+Moral: Be kind to animals.
+`,
+      },
+
+      {
+        id: 8,
+        title: "The Importance of Exercise",
+
+        content: `
+Characters: Narrator, Father, Rehan, Meera
+Narrator: Rehan spends most of his time watching television and eating snacks.
+Father: Rehan, you should exercise daily.
+Rehan: I feel lazy today.
+Meera: Exercise keeps us healthy.
+Father: Outdoor games are important too.
+Narrator: Father explains the importance of physical activity.
+Rehan: I like watching cartoons.
+Meera: Playing outside is more fun.
+Father: Healthy habits make us active.
+Rehan: Maybe I should try.
+Narrator: The next evening, Rehan joins Meera in the park.
+Father: I am happy to see you exercising.
+Rehan: I feel fresh and energetic now.
+Meera: Exercise is enjoyable.
+Father: Keep this habit daily.
+Rehan: I will play outside every day.
+Meera: Let us come again tomorrow.
+Moral: Exercise daily to stay healthy.
+`,
+      },
+
+      {
+        id: 9,
+        title: "The Forgotten Homework",
+
+        content: `
+Characters: Narrator, Teacher, Aisha, Bilal
+Narrator: The teacher asks students to submit homework notebooks.
+Teacher: Children, submit your homework one by one.
+Aisha: Here is my notebook, ma’am.
+Bilal: Ma’am, I forgot my homework at home.
+Teacher: This is not the first time, Bilal.
+Narrator: Bilal feels embarrassed in front of the class.
+Bilal: I am sorry, ma’am.
+Aisha: I always pack my bag at night.
+Teacher: Being organised is very important.
+Bilal: I understand now.
+Narrator: That evening, Bilal carefully arranges his school bag.
+Mother: What are you doing, Bilal?
+Bilal: I am packing my bag for tomorrow.
+Mother: That is a good habit.
+Bilal: I do not want to forget my homework again.
+Mother: Planning helps us stay responsible.
+Bilal: I will follow a routine now.
+Moral: Be responsible and organised.
+`,
+      },
+
+      {
+        id: 10,
+        title: "The Power of Kind Words",
+
+        content: `
+Characters: Narrator, Grandmother, Tina, Yusuf
+Narrator: Tina and Yusuf are playing a board game in the living room.
+Tina: Yusuf, you are not playing fairly.
+Yusuf: That is not true. You changed the rules.
+Grandmother: Why are you both shouting?
+Tina: He is making me angry.
+Narrator: Grandmother calmly asks both children to sit beside her.
+Grandmother: Angry words hurt people.
+Yusuf: I did not mean to be rude.
+Tina: I also spoke badly.
+Grandmother: Kind words solve problems peacefully.
+Narrator: Later, Tina and Yusuf continue playing peacefully.
+Tina: Sorry for shouting at you.
+Yusuf: I am sorry too.
+Grandmother: That is much better.
+Tina: We should speak politely.
+Yusuf: The game is more fun now.
+Grandmother: Kind words make relationships stronger.
+Moral: Always speak politely and kindly.
+`,
+      },
+    ],
 
     stories: [
       {
@@ -3921,7 +4636,542 @@ Student Speaking Practice:
       },
     ],
 
-    skits: [],
+    skits: [
+      {
+        id: 1,
+        title: "Mobile Phone vs Books",
+
+        content: `
+Characters: Narrator, Mother, Arjun, Sara
+
+Scene 1: At Home
+
+Narrator: Arjun is sitting on the sofa and playing games on his mobile phone for a long time.
+
+Mother: Arjun, you are still using your phone?
+
+Arjun: I am playing my favourite game.
+
+Sara: You have homework too.
+
+Arjun: I will do it later.
+
+Narrator: Mother sits beside Arjun and speaks calmly.
+
+Mother: Too much screen time is not healthy.
+
+Sara: Books help us learn new things.
+
+Arjun: But games are more exciting.
+
+Mother: Balance is important in life.
+
+Scene 2: Later That Evening
+
+Narrator: After finishing his homework, Arjun sits beside Sara and starts reading the storybook with her.
+
+Sara: See? Reading is fun too.
+
+Arjun: Yes, this story is really interesting.
+
+Mother: I am happy to see both of you reading together.
+
+Sara: Books improve our imagination.
+
+Arjun: I will spend less time on my phone now.
+
+Mother: Good habits always help us grow.
+
+Moral: Use mobile phones wisely and develop reading habits.
+
+Props Needed:
+• Mobile phone
+• Storybook
+• Sofa
+• School bag
+`,
+      },
+
+      {
+        id: 2,
+        title: "The Importance of Punctuality",
+
+        content: `
+Characters: Narrator, Teacher, Ravi, Mehak
+
+Scene 1: In the Classroom
+
+Narrator: The school bell rings, and all the students are seated in class.
+
+Teacher: Ravi, you are late again.
+
+Ravi: Sorry, ma’am. I woke up late.
+
+Mehak: The lesson has already started.
+
+Ravi: I will try to improve.
+
+Narrator: Ravi feels embarrassed in front of the class.
+
+Teacher: Time is very valuable.
+
+Mehak: Punctual students stay organised.
+
+Ravi: I understand now.
+
+Scene 2: The Next Morning
+
+Narrator: Ravi reaches school before the bell rings and looks fresh and confident.
+
+Teacher: Excellent, Ravi! You are early today.
+
+Ravi: I woke up early and got ready on time.
+
+Mehak: That is a big improvement.
+
+Teacher: Keep this habit forever.
+
+Ravi: I surely will, ma’am.
+
+Mehak: Punctuality makes life easier.
+
+Moral: Always be punctual and value time.
+
+Props Needed:
+• School bag
+• Clock
+• Teacher’s desk
+• Chairs
+`,
+      },
+
+      {
+        id: 3,
+        title: "The Tree Plantation Drive",
+
+        content: `
+Characters: Narrator, Principal, Zoya, Kabir
+
+Scene 1: School Assembly
+
+Narrator: During the morning assembly, the principal announces a tree plantation drive.
+
+Principal: Children, we must plant more trees.
+
+Zoya: Trees make the air fresh.
+
+Kabir: They also give us shade.
+
+Principal: Trees are very important for nature.
+
+Narrator: The students become excited about the activity.
+
+Zoya: I will plant a mango tree.
+
+Kabir: I will plant a neem tree.
+
+Scene 2: In the Garden
+
+Narrator: The students gather in the garden with small plants and gardening tools.
+
+Principal: Dig the soil carefully.
+
+Kabir: I will water the plants daily.
+
+Zoya: I will protect my plant.
+
+Principal: Plants need love and care.
+
+Kabir: Trees help us in many ways.
+
+Zoya: We should plant more trees.
+
+Moral: Plant trees and protect nature.
+
+Props Needed:
+• Small plants
+• Watering can
+• Gardening tools
+• Gloves
+`,
+      },
+
+      {
+        id: 4,
+        title: "The Honest Shopkeeper",
+
+        content: `
+Characters: Narrator, Shopkeeper, Ali, Riya
+
+Scene 1: At the Grocery Shop
+
+Narrator: Ali and Riya visit a grocery shop after school.
+
+Shopkeeper: Welcome, children. What do you want?
+
+Ali: We want juice and biscuits.
+
+Riya: And one packet of chips.
+
+Shopkeeper: Here are your items.
+
+Narrator: The children pay the money and leave happily.
+
+Ali: Thank you, uncle.
+
+Riya: Bye, uncle.
+
+Scene 2: Outside the Shop
+
+Narrator: After a few minutes, the shopkeeper runs towards the children.
+
+Shopkeeper: Children, I gave you extra money by mistake.
+
+Ali: Oh! We did not notice it.
+
+Riya: Thank you for being honest.
+
+Shopkeeper: Honesty is always important.
+
+Ali: Honest people are respected.
+
+Riya: We learned a good lesson today.
+
+Moral: Honesty is the best policy.
+
+Props Needed:
+• Toy snacks
+• Fake money
+• Counter table
+• Shopping bag
+`,
+      },
+
+      {
+        id: 5,
+        title: "The Science Project",
+
+        content: `
+Characters: Narrator, Teacher, Aarav, Hina
+
+Scene 1: In the Classroom
+
+Narrator: The teacher gives the students a science project about the solar system.
+
+Teacher: You must complete this project in pairs.
+
+Aarav: Hina, will you work with me?
+
+Hina: Yes, let us do it together.
+
+Teacher: Use charts and pictures too.
+
+Narrator: The students start discussing ideas excitedly.
+
+Aarav: I will draw the planets.
+
+Hina: I will write the information neatly.
+
+Scene 2: Project Presentation
+
+Narrator: Two days later, the students present their project confidently.
+
+Teacher: Your project looks wonderful.
+
+Hina: We worked very hard.
+
+Aarav: We learned many new things.
+
+Teacher: Excellent teamwork, children.
+
+Hina: Teamwork made the work easy.
+
+Aarav: We enjoyed this activity.
+
+Moral: Teamwork helps us succeed.
+
+Props Needed:
+• Chart paper
+• Planet drawings
+• Markers
+• Project file
+`,
+      },
+
+      {
+        id: 6,
+        title: "Respecting School Property",
+
+        content: `
+Characters: Narrator, Teacher, Dev, Simran
+
+Scene 1: During Recess
+
+Narrator: During recess, Dev starts drawing on the classroom desk with a pen.
+
+Teacher: Dev, what are you doing?
+
+Dev: I was just drawing.
+
+Simran: School property should stay clean.
+
+Dev: I did not think about that.
+
+Narrator: Dev feels sorry after hearing the teacher.
+
+Teacher: Desks belong to everyone.
+
+Simran: We should protect our classroom.
+
+Scene 2: After School
+
+Narrator: After school, Dev cleans the desk carefully with a cloth.
+
+Teacher: I am happy you understood your mistake.
+
+Dev: I will never repeat it.
+
+Simran: Good students care for their school.
+
+Teacher: Very good, Dev.
+
+Dev: I will keep my classroom clean.
+
+Moral: Respect and protect school property.
+
+Props Needed:
+• Classroom desk
+• Pen
+• Cloth
+• School bags
+`,
+      },
+
+      {
+        id: 7,
+        title: "The Lost Puppy",
+
+        content: `
+Characters: Narrator, Noor, Aryan, Watchman
+
+Scene 1: Near the Park
+
+Narrator: Noor and Aryan hear a puppy crying near the park gate.
+
+Noor: The puppy looks scared.
+
+Aryan: Maybe it lost its owner.
+
+Watchman: I saw it wandering alone.
+
+Noor: Let us help it.
+
+Narrator: The children give water and biscuits to the puppy.
+
+Aryan: It looks hungry.
+
+Noor: Poor puppy.
+
+Scene 2: The Owner Arrives
+
+Narrator: A little girl comes running towards the puppy.
+
+Girl: Bruno! I was searching for you.
+
+Noor: Is this your puppy?
+
+Aryan: We found him near the gate.
+
+Girl: Thank you so much.
+
+Noor: We are glad to help.
+
+Aryan: Take good care of him.
+
+Moral: Be kind to animals.
+
+Props Needed:
+• Toy puppy
+• Water bowl
+• Biscuit packet
+• Park bench
+`,
+      },
+
+      {
+        id: 8,
+        title: "The Importance of Exercise",
+
+        content: `
+Characters: Narrator, Father, Rehan, Meera
+
+Scene 1: At Home
+
+Narrator: Rehan spends most of his time watching television and eating snacks.
+
+Father: Rehan, you should exercise daily.
+
+Rehan: I feel lazy today.
+
+Meera: Exercise keeps us healthy.
+
+Father: Outdoor games are important too.
+
+Narrator: Father explains the importance of physical activity.
+
+Rehan: I like watching cartoons.
+
+Meera: Playing outside is more fun.
+
+Scene 2: In the Park
+
+Narrator: The next evening, Rehan joins Meera in the park to play badminton.
+
+Father: I am happy to see you exercising.
+
+Rehan: I feel fresh and energetic now.
+
+Meera: Exercise is enjoyable.
+
+Father: Keep this habit daily.
+
+Rehan: I will play outside every day.
+
+Meera: Let us come again tomorrow.
+
+Moral: Exercise daily to stay healthy.
+
+Props Needed:
+• Badminton racket
+• Shuttlecock
+• Water bottle
+• TV remote
+`,
+      },
+
+      {
+        id: 9,
+        title: "The Forgotten Homework",
+
+        content: `
+Characters: Narrator, Teacher, Aisha, Bilal
+
+Scene 1: In the Classroom
+
+Narrator: The teacher enters the classroom and asks the students to submit their homework notebooks. All the students take out their notebooks except Bilal, who looks nervous and worried.
+
+Teacher: Children, submit your homework one by one.
+
+Aisha: Here is my notebook, ma’am.
+
+Bilal: Ma’am, I forgot my homework at home.
+
+Teacher: This is not the first time, Bilal.
+
+Narrator: Bilal feels embarrassed because the whole class is looking at him.
+
+Bilal: I am sorry, ma’am.
+
+Aisha: I always pack my bag at night.
+
+Teacher: Being organised is very important.
+
+Bilal: I understand now.
+
+Scene 2: At Home
+
+Narrator: That evening, Bilal sits at his study table and carefully arranges all his books and notebooks inside his school bag.
+
+Mother: What are you doing, Bilal?
+
+Bilal: I am packing my bag for tomorrow.
+
+Mother: That is a good habit.
+
+Bilal: I do not want to forget my homework again.
+
+Narrator: Bilal writes a small checklist and sticks it near his table.
+
+Mother: Planning helps us stay responsible.
+
+Bilal: I will follow a routine now.
+
+Teacher: Good habits bring success.
+
+Bilal: I will become more organised from today.
+
+Moral: Be responsible and organised.
+
+Props Needed:
+• School bag
+• Homework notebook
+• Study table
+• Checklist paper
+• Pencil or pen
+`,
+      },
+
+      {
+        id: 10,
+        title: "The Power of Kind Words",
+
+        content: `
+Characters: Narrator, Grandmother, Tina, Yusuf
+
+Scene 1: At Home
+
+Narrator: Tina and Yusuf are playing a board game in the living room. Suddenly, they start arguing loudly because both of them want to win the game.
+
+Tina: Yusuf, you are not playing fairly.
+
+Yusuf: That is not true. You changed the rules.
+
+Grandmother: Why are you both shouting?
+
+Tina: He is making me angry.
+
+Narrator: Grandmother calmly asks both children to sit beside her.
+
+Grandmother: Angry words hurt people.
+
+Yusuf: I did not mean to be rude.
+
+Tina: I also spoke badly.
+
+Grandmother: Kind words solve problems peacefully.
+
+Scene 2: Later That Evening
+
+Narrator: After some time, Tina and Yusuf sit together again and continue playing the game peacefully.
+
+Tina: Sorry for shouting at you.
+
+Yusuf: I am sorry too.
+
+Grandmother: That is much better.
+
+Tina: We should speak politely.
+
+Narrator: The children smile happily and enjoy the game together without fighting.
+
+Yusuf: The game is more fun now.
+
+Grandmother: Kind words make relationships stronger.
+
+Tina: We learned an important lesson today.
+
+Yusuf: We will speak kindly from now on.
+
+Moral: Always speak politely and kindly.
+
+Props Needed:
+• Board game or cards
+• Sofa or chairs
+• Small table
+• Cushion or mat
+`,
+      },
+    ],
 
     stories: [
       {
@@ -4780,7 +6030,849 @@ Student Speaking Practice:
       },
     ],
 
-    skits: [],
+    skits: [
+      {
+        id: 1,
+        title: "The Mystery of the Missing Trophy",
+
+        content: `
+Characters: Narrator, Principal, Arjun, Sara, Bilal
+
+Scene 1: In the School Hall
+
+Narrator: The school is preparing for Annual Day. Teachers and students are decorating the stage when suddenly everyone notices that the championship trophy is missing from the display table.
+
+Principal: The trophy was here this morning. Where did it go?
+
+Sara: Maybe someone moved it during decoration.
+
+Bilal: We should search the whole school quickly.
+
+Arjun: Do not worry, sir. We will help find it.
+
+Narrator: The students divide themselves into groups and begin searching different areas of the school.
+
+Principal: Stay calm and work together carefully.
+
+Sara: I will check the classrooms.
+
+Bilal: I will look behind the stage.
+
+Arjun: I will search near the sports room.
+
+Scene 2: The Search
+
+Narrator: After searching for several minutes, Bilal notices something shining behind a large curtain near the stage.
+
+Bilal: Wait! I think I found something here.
+
+Sara: Is it really the trophy?
+
+Arjun: Yes! The trophy is safe.
+
+Principal: Excellent work, children.
+
+Narrator: Everyone feels relieved after finding the trophy safely hidden behind the curtain.
+
+Sara: Someone must have placed it here by mistake.
+
+Bilal: Good teamwork helped us solve the problem.
+
+Arjun: Panicking would not have helped.
+
+Principal: That is absolutely correct.
+
+Scene 3: Annual Day Celebration
+
+Narrator: The Annual Day function begins successfully, and the trophy is placed proudly back on the stage.
+
+Principal: Today you showed responsibility and teamwork.
+
+Sara: We learned the importance of staying calm.
+
+Bilal: Working together makes difficult tasks easier.
+
+Arjun: Team spirit always helps us succeed.
+
+Narrator: The audience claps loudly while the students smile proudly at each other.
+
+Principal: I am very proud of all of you.
+
+Sara: This became an unforgettable day.
+
+Bilal: I enjoyed solving the mystery.
+
+Arjun: Teamwork saved the celebration.
+
+Moral: Stay calm and work together to solve problems.
+
+Props Needed:
+• Trophy
+• Curtain setup
+• Stage table
+• Microphone
+• School bags
+`,
+      },
+
+      {
+        id: 2,
+        title: "The Secret of Success",
+
+        content: `
+Characters: Narrator, Teacher, Arjun, Hiba, Rehan
+
+Scene 1: Before the Test
+
+Narrator: The students are preparing for their final exam. Hiba and Rehan are revising seriously while Arjun keeps delaying his studies.
+
+Teacher: Children, tomorrow is your final examination.
+
+Arjun: I will study later tonight.
+
+Hiba: Last-minute study creates confusion.
+
+Rehan: Regular practice makes learning easier.
+
+Narrator: Arjun ignores their advice and continues wasting time.
+
+Teacher: Success comes through discipline and hard work.
+
+Arjun: One night of study is enough for me.
+
+Hiba: Good preparation builds confidence.
+
+Rehan: We revised these lessons all week.
+
+Scene 2: Exam Day
+
+Narrator: The next morning, the students enter the examination hall quietly. Arjun looks nervous because he could not prepare properly.
+
+Teacher: Read every question carefully before writing.
+
+Arjun: Some questions look difficult.
+
+Hiba: We practised these questions yesterday.
+
+Rehan: Regular study really helps during exams.
+
+Narrator: Arjun struggles to remember answers while Hiba and Rehan write confidently.
+
+Teacher: Manage your time wisely.
+
+Arjun: I should have started earlier.
+
+Hiba: Planning reduces stress.
+
+Rehan: Hard work always gives confidence.
+
+Scene 3: Result Day
+
+Narrator: One week later, the teacher enters the classroom with the result sheets.
+
+Teacher: Hiba and Rehan scored excellent marks.
+
+Hiba: Thank you, ma’am.
+
+Rehan: Regular study helped us a lot.
+
+Arjun: I learned an important lesson today.
+
+Narrator: Arjun realises that success never comes from shortcuts.
+
+Teacher: Success requires patience and consistency.
+
+Arjun: I will study regularly from now on.
+
+Hiba: Good habits bring improvement.
+
+Rehan: Smart work and hard work go together.
+
+Moral: Success comes through regular effort and discipline.
+
+Props Needed:
+• Books and notebooks
+• Question papers
+• School bags
+• Result sheet
+• Teacher’s desk
+`,
+      },
+
+      {
+        id: 3,
+        title: "The Fake Rumour",
+
+        content: `
+Characters: Narrator, Teacher, Riya, Sameer, Ali
+
+Scene 1: During Lunch Break
+
+Narrator: During lunch break, some students are talking excitedly near the classroom. A strange rumour suddenly spreads through the school that the exams have been cancelled.
+
+Riya: I heard that the exams are cancelled.
+
+Sameer: Really? That is amazing news.
+
+Ali: Who told you this information?
+
+Riya: My friend heard it from another student.
+
+Narrator: More students begin believing the rumour without checking if it is true.
+
+Sameer: I was worried about the maths exam.
+
+Ali: We should confirm before believing it.
+
+Riya: Everyone in the corridor is talking about it.
+
+Sameer: I hope it is true.
+
+Scene 2: Morning Assembly
+
+Narrator: The next morning, the principal notices students discussing the rumour everywhere in school. He decides to clarify the truth during assembly.
+
+Principal: Students, I heard a false rumour spreading in school.
+
+Riya: So the exams are not cancelled?
+
+Sameer: We believed the wrong information.
+
+Ali: That is why we should verify facts first.
+
+Narrator: The students feel embarrassed because they spread information without checking it properly.
+
+Principal: Rumours create confusion and panic.
+
+Riya: I understand my mistake now.
+
+Sameer: I should not believe everything quickly.
+
+Ali: Responsible students share only correct information.
+
+Scene 3: After School
+
+Narrator: After school, the students sit together and discuss what they learned from the incident.
+
+Teacher: What lesson did you learn today?
+
+Riya: We should never spread unverified news.
+
+Sameer: False rumours can create unnecessary problems.
+
+Ali: Truthful communication is very important.
+
+Narrator: The students promise to become more careful and responsible in the future.
+
+Teacher: Think carefully before sharing information.
+
+Riya: I will verify facts first from now on.
+
+Sameer: I learned a valuable lesson today.
+
+Ali: Truth always matters most.
+
+Moral: Never spread rumours or false information.
+
+Props Needed:
+• School bags
+• Lunch boxes
+• Microphone
+• Notice board
+• Classroom chairs
+`,
+      },
+
+      {
+        id: 4,
+        title: "The Lost Wallet Adventure",
+
+        content: `
+Characters: Narrator, Dev, Noor, Old Man, Police Officer
+
+Scene 1: Near the Park
+
+Narrator: Dev and Noor are walking home after school. While passing through the park, Dev notices a brown wallet lying near a bench.
+
+Dev: Noor, look! Someone dropped a wallet here.
+
+Noor: There is money and some cards inside it.
+
+Dev: We should find the owner quickly.
+
+Noor: Honest people always do the right thing.
+
+Narrator: The children look around carefully, hoping someone nearby lost the wallet.
+
+Old Man: Children, have you seen a brown wallet?
+
+Dev: Is this wallet yours, grandfather?
+
+Noor: We found it near the bench.
+
+Old Man: Yes, this is mine. Thank you so much.
+
+Scene 2: At the Police Booth
+
+Narrator: The old man takes the children to a nearby police booth to appreciate their honesty.
+
+Police Officer: You both showed great honesty today.
+
+Dev: We only returned what belonged to him.
+
+Noor: Keeping it would have been wrong.
+
+Old Man: These children are very responsible.
+
+Narrator: The police officer smiles proudly while listening to the children.
+
+Police Officer: Society needs honest citizens like you.
+
+Dev: My parents always teach me honesty.
+
+Noor: Helping others makes us feel happy.
+
+Old Man: I am truly thankful to both of you.
+
+Scene 3: School Assembly
+
+Narrator: The next day, the principal talks about Dev and Noor’s honesty during the morning assembly.
+
+Principal: These students set a wonderful example for everyone.
+
+Dev: We are happy we could help someone.
+
+Noor: Honesty always brings respect.
+
+Students: Well done, Dev and Noor!
+
+Narrator: The students clap loudly and feel inspired by the story.
+
+Principal: Good character is more valuable than money.
+
+Dev: We learned that honesty builds trust.
+
+Noor: Small good actions can inspire many people.
+
+Students: We will also always stay truthful.
+
+Moral: Honesty always earns respect and trust.
+
+Props Needed:
+• Wallet
+• Fake money
+• Park bench or chair
+• Police cap or badge
+• Microphone
+• School bags
+`,
+      },
+
+      {
+        id: 5,
+        title: "The Science Exhibition Challenge",
+
+        content: `
+Characters: Narrator, Teacher, Aarav, Hina, Bilal
+
+Scene 1: In the Classroom
+
+Narrator: The school announces a science exhibition competition. Students are excitedly discussing ideas for creative projects.
+
+Teacher: Children, you must prepare innovative science models.
+
+Aarav: I want to make a volcano model.
+
+Hina: I want to create a water filter project.
+
+Bilal: I am thinking about making a robot.
+
+Narrator: The students begin planning their projects seriously.
+
+Teacher: Remember, presentation is also important.
+
+Aarav: I will practise explaining my model.
+
+Hina: Team discussions can improve ideas.
+
+Bilal: This competition will be exciting.
+
+Scene 2: A Problem During Preparation
+
+Narrator: One day before the exhibition, Aarav accidentally damages part of his volcano model and becomes upset.
+
+Aarav: Oh no! My volcano model is broken.
+
+Hina: Do not panic. We can repair it together.
+
+Bilal: We still have enough time.
+
+Aarav: Thank you for helping me.
+
+Narrator: The friends work together carefully and repair the project.
+
+Hina: Teamwork solves difficult problems.
+
+Bilal: Let us add more colour to the model.
+
+Aarav: It looks even better now.
+
+Hina: Never lose confidence before a challenge.
+
+Scene 3: Exhibition Day
+
+Narrator: The school hall is full of colourful projects and excited students. Aarav confidently presents his volcano model to the judges.
+
+Teacher: Your presentation is excellent.
+
+Aarav: This model shows a volcanic eruption.
+
+Hina: We worked very hard on our ideas.
+
+Bilal: Science becomes fun through creativity.
+
+Narrator: The judges appreciate the students’ teamwork and confidence.
+
+Teacher: I am proud of all of you.
+
+Aarav: We learned many new things.
+
+Hina: Hard work always gives good results.
+
+Bilal: Teamwork made everything easier.
+
+Moral: Teamwork and confidence help us overcome challenges.
+
+Props Needed:
+• Volcano model
+• Chart papers
+• Markers or colours
+• Table setup
+• Fake certificates or medals
+`,
+      },
+
+      {
+        id: 6,
+        title: "The Forgotten Homework",
+
+        content: `
+Characters: Narrator, Teacher, Aisha, Kabir, Mother
+
+Scene 1: In the Classroom
+
+Narrator: The teacher enters the classroom and asks students to submit their homework notebooks. Kabir suddenly realises that he forgot his homework at home.
+
+Teacher: Please submit your homework notebooks.
+
+Aisha: Here is my homework, ma’am.
+
+Kabir: Ma’am, I forgot my notebook at home.
+
+Teacher: This is the second time this week, Kabir.
+
+Narrator: Kabir feels embarrassed because he knows he was careless.
+
+Kabir: I am really sorry, ma’am.
+
+Aisha: I always pack my school bag at night.
+
+Teacher: Good habits make students responsible.
+
+Kabir: I will improve from now on.
+
+Scene 2: At Home
+
+Narrator: That evening, Kabir sits quietly at his study table while his mother notices that he looks upset.
+
+Mother: Why are you looking worried?
+
+Kabir: I forgot my homework again today.
+
+Mother: You need better planning and discipline.
+
+Kabir: I understand my mistake now.
+
+Narrator: Kabir decides to create a checklist for his school bag.
+
+Mother: Organisation saves time and stress.
+
+Kabir: I will prepare my bag before sleeping.
+
+Mother: That is a very good habit.
+
+Kabir: I do not want to repeat this mistake.
+
+Scene 3: The Next Morning
+
+Narrator: The next morning, Kabir reaches school confidently with all his books and homework neatly packed.
+
+Teacher: Good morning, Kabir. Did you bring your homework today?
+
+Kabir: Yes, ma’am. I checked my bag twice.
+
+Aisha: That is great improvement.
+
+Teacher: I am proud of your responsibility.
+
+Narrator: Kabir smiles happily because he learned from his mistake.
+
+Kabir: Planning really makes life easier.
+
+Aisha: Good habits build confidence.
+
+Teacher: Responsible students achieve success.
+
+Kabir: I will stay organised from now on.
+
+Moral: Responsibility and planning lead to success.
+
+Props Needed:
+• Homework notebook
+• School bag
+• Study table
+• Checklist paper
+• Pen or pencil
+`,
+      },
+
+      {
+        id: 7,
+        title: "The Power of Kind Words",
+
+        content: `
+Characters: Narrator, Grandmother, Tina, Yusuf
+
+Scene 1: At Home
+
+Narrator: Tina and Yusuf are playing a board game in the living room. Suddenly, they start arguing loudly because both of them want to win.
+
+Tina: Yusuf, you are not following the rules.
+
+Yusuf: That is not true. You changed the rules first.
+
+Grandmother: Why are both of you shouting?
+
+Tina: He is making me angry.
+
+Narrator: Grandmother calmly asks them to sit beside her.
+
+Grandmother: Angry words hurt people deeply.
+
+Yusuf: I did not mean to be rude.
+
+Tina: I also spoke badly.
+
+Grandmother: Kind words solve problems peacefully.
+
+Scene 2: Learning the Lesson
+
+Narrator: Grandmother tells the children a story about how polite words can strengthen relationships.
+
+Grandmother: Respectful language creates happiness.
+
+Tina: Sometimes anger controls us quickly.
+
+Yusuf: We should think before speaking.
+
+Grandmother: Wise people stay calm during arguments.
+
+Narrator: Tina and Yusuf begin understanding their mistake.
+
+Tina: I should not shout at others.
+
+Yusuf: I should speak more politely too.
+
+Grandmother: Good communication builds strong friendships.
+
+Tina: We learned an important lesson today.
+
+Scene 3: Later That Evening
+
+Narrator: Later that evening, Tina and Yusuf sit together again and continue playing peacefully.
+
+Tina: Yusuf, I am sorry for shouting earlier.
+
+Yusuf: I am sorry too, Tina.
+
+Grandmother: That is much better.
+
+Tina: Speaking politely feels nicer.
+
+Narrator: The children smile happily and enjoy the game together without fighting.
+
+Yusuf: The game is more fun now.
+
+Grandmother: Kind words make relationships stronger.
+
+Tina: We will speak respectfully from now on.
+
+Yusuf: Polite behaviour makes everyone happy.
+
+Moral: Kind and respectful words create strong relationships.
+
+Props Needed:
+• Board game or cards
+• Sofa or chairs
+• Small table
+• Cushion or mat
+• Water bottle
+`,
+      },
+
+      {
+        id: 8,
+        title: "The Mobile Addiction Problem",
+
+        content: `
+Characters: Narrator, Father, Rehan, Zara, Teacher
+
+Scene 1: At Home
+
+Narrator: Rehan spends most of his time playing games on his mobile phone. He ignores his homework, outdoor games, and even family conversations.
+
+Father: Rehan, you have been using your phone for two hours.
+
+Rehan: I am about to finish one more game.
+
+Zara: You did not even complete your homework yet.
+
+Father: Too much screen time affects health and studies.
+
+Narrator: Rehan continues playing and ignores everyone’s advice.
+
+Rehan: Mobile games help me relax.
+
+Zara: Outdoor games are healthier and more fun.
+
+Father: Balance is necessary in everything.
+
+Rehan: I will stop after this level.
+
+Scene 2: In the Classroom
+
+Narrator: The next day, Rehan feels sleepy and cannot answer questions properly in class.
+
+Teacher: Rehan, why are you looking so tired today?
+
+Rehan: I stayed awake late last night.
+
+Zara: He was playing mobile games for many hours.
+
+Teacher: Excessive phone use harms concentration.
+
+Narrator: Rehan realises that his habits are affecting his performance.
+
+Teacher: Technology is useful only when used wisely.
+
+Rehan: I understand my mistake now.
+
+Zara: Time management is very important.
+
+Teacher: Good habits improve both health and learning.
+
+Scene 3: Positive Change
+
+Narrator: A few days later, Rehan starts following a proper routine and reduces his screen time.
+
+Father: I am happy to see you studying regularly.
+
+Rehan: I also started playing football outside.
+
+Zara: You look more active and cheerful now.
+
+Father: Healthy habits create a better lifestyle.
+
+Narrator: Rehan feels happier and more confident after changing his routine.
+
+Rehan: I learned to use technology wisely.
+
+Zara: Balance makes life better.
+
+Teacher: Smart students control their habits.
+
+Rehan: I will continue this routine.
+
+Moral: Technology should be used wisely and in balance.
+
+Props Needed:
+• Mobile phone
+• School bags
+• Football
+• Study table
+• Books and notebooks
+`,
+      },
+
+      {
+        id: 9,
+        title: "The Unexpected Hero",
+
+        content: `
+Characters: Narrator, Watchman, Ayaan, Meera, Principal
+
+Scene 1: After School
+
+Narrator: After school ends, most students leave the building quickly because dark clouds are gathering in the sky. Suddenly, heavy rain starts falling.
+
+Watchman: Everyone should stay inside until the rain stops.
+
+Ayaan: The rain is becoming stronger.
+
+Meera: Look! Water is entering the library room.
+
+Watchman: The books may get damaged.
+
+Narrator: The teachers are busy managing students, so Ayaan quickly decides to help.
+
+Ayaan: We should move the books to a safer place.
+
+Meera: I will help you carry them.
+
+Watchman: Be careful while walking.
+
+Ayaan: We must save the library books.
+
+Scene 2: Saving the Library
+
+Narrator: Ayaan and Meera quickly move books and important papers away from the leaking window.
+
+Meera: The water is spreading everywhere.
+
+Ayaan: Close the windows tightly.
+
+Watchman: I will bring buckets and cloths.
+
+Meera: We must work quickly.
+
+Narrator: The principal arrives and notices the students helping responsibly.
+
+Principal: I am impressed by your quick thinking.
+
+Ayaan: We only wanted to protect the books.
+
+Meera: School property belongs to everyone.
+
+Watchman: These children acted very responsibly.
+
+Scene 3: Appreciation During Assembly
+
+Narrator: The next morning, the principal appreciates Ayaan and Meera during the morning assembly.
+
+Principal: These students showed responsibility and leadership yesterday.
+
+Ayaan: We simply did what was right.
+
+Meera: Helping others feels good.
+
+Students: Well done!
+
+Narrator: The whole school claps proudly for the students.
+
+Principal: Small actions can make a big difference.
+
+Ayaan: We learned the importance of responsibility.
+
+Meera: Teamwork helped us act quickly.
+
+Students: We feel inspired by them.
+
+Moral: Responsibility and quick action can solve problems.
+
+Props Needed:
+• Books
+• Buckets
+• Cloth or towel
+• School bags
+• Umbrella
+• Microphone
+`,
+      },
+
+      {
+        id: 10,
+        title: "The Debate Competition",
+
+        content: `
+Characters: Narrator, Teacher, Arjun, Hiba, Sameer
+
+Scene 1: Competition Announcement
+
+Narrator: The English teacher announces an inter-school debate competition. The topic is “Books Are Better Than Mobile Phones.”
+
+Teacher: Two students will represent our school.
+
+Arjun: I want to participate in the debate.
+
+Hiba: I also want to join.
+
+Sameer: This topic sounds interesting.
+
+Narrator: The students begin preparing their arguments seriously.
+
+Teacher: Good communication needs confidence and clear ideas.
+
+Arjun: I will collect strong points about books.
+
+Hiba: I will prepare points about technology too.
+
+Sameer: Practice improves speaking skills.
+
+Scene 2: Debate Practice
+
+Narrator: The students practise speaking confidently in front of the class.
+
+Arjun: Books improve imagination and vocabulary.
+
+Hiba: Mobile phones provide quick information and learning apps.
+
+Teacher: Speak clearly and confidently.
+
+Sameer: Both sides have strong points.
+
+Narrator: The students continue improving their speaking and presentation skills.
+
+Arjun: Reading books increases concentration.
+
+Hiba: Technology becomes useful when used wisely.
+
+Teacher: Excellent arguments from both sides.
+
+Sameer: Confidence is very important during debates.
+
+Scene 3: Competition Day
+
+Narrator: On the day of the competition, the students confidently present their ideas in front of judges and other schools.
+
+Teacher: I am proud of your preparation.
+
+Arjun: I was nervous at first, but now I feel confident.
+
+Hiba: Practice helped us improve a lot.
+
+Sameer: You both spoke very well.
+
+Narrator: The judges appreciate the students for their confidence and communication skills.
+
+Teacher: Winning is important, but learning matters more.
+
+Arjun: I learned to speak confidently in public.
+
+Hiba: Debates improve thinking and communication.
+
+Sameer: This competition inspired all of us.
+
+Moral: Confidence and communication skills grow through practice.
+
+Props Needed:
+• Microphone
+• Debate podium or table
+• Cue cards or papers
+• School bags
+• Certificates or medals
+`,
+      },
+    ],
 
     stories: [
       {
@@ -5730,8 +7822,1141 @@ Student Practice:
 `,
       },
     ],
+    skits: [
+      {
+        id: 1,
+        title: "The Cyber Trap",
 
-    skits: [],
+        content: `
+Characters: Narrator, Aarav, Zoya, Cyber Officer, Scammer, Teacher
+
+Scene 1: In the Computer Lab
+
+Narrator: The students are attending a computer class. Aarav is excited because he recently started using social media and online games.
+
+Teacher: Children, the internet is useful, but it can also be dangerous.
+
+Aarav: Ma’am, online games are really fun.
+
+Zoya: We should also be careful while chatting online.
+
+Teacher: Never share personal information with strangers.
+
+Action: Aarav secretly checks his phone under the desk.
+
+Narrator: Aarav receives a message from an unknown person offering free gaming coins.
+
+Scammer: Congratulations! You won free rewards. Send your password quickly.
+
+Aarav: Wow! This looks real.
+
+Zoya: Aarav, do not trust unknown messages.
+
+Teacher: Online scams are becoming very common.
+
+Scene 2: At Home
+
+Narrator: That evening, Aarav sits alone in his room and replies to the scammer’s message without thinking carefully.
+
+Action: Aarav types quickly on his phone.
+
+Scammer: Send your password now to claim your prize.
+
+Aarav: Okay, I am sending it.
+
+Zoya: (calling on phone) Aarav, did you claim the reward?
+
+Aarav: Yes, I just shared my account details.
+
+Narrator: Suddenly, Aarav’s game account gets locked.
+
+Aarav: Oh no! My account is hacked.
+
+Scammer: Thank you for the password.
+
+Aarav: I made a huge mistake.
+
+Zoya: I told you not to trust strangers online.
+
+Scene 3: At the Cyber Safety Workshop
+
+Narrator: The next day, the school organises a cyber safety workshop with a cyber officer.
+
+Cyber Officer: Never share passwords or personal details online.
+
+Aarav: Sir, I lost my account because I trusted a scammer.
+
+Zoya: Many students do not know about online fraud.
+
+Cyber Officer: Awareness is the best protection.
+
+Action: The officer shows safety tips on a projector.
+
+Cyber Officer: Use strong passwords and verify every message.
+
+Aarav: I learned my lesson the hard way.
+
+Zoya: Online safety is everyone’s responsibility.
+
+Teacher: Smart internet use protects us from danger.
+
+Scene 4: A Better Decision
+
+Narrator: A few days later, Aarav receives another suspicious message, but this time he reacts wisely.
+
+Scammer: Click this link to win a new smartphone.
+
+Aarav: I know this is fake now.
+
+Zoya: Good decision, Aarav.
+
+Cyber Officer: Reporting scams helps protect others too.
+
+Action: Aarav deletes the message confidently.
+
+Narrator: Aarav feels proud because he learned to use technology safely and responsibly.
+
+Teacher: Mistakes can teach valuable lessons.
+
+Aarav: I will stay alert online from now on.
+
+Zoya: Awareness makes us smarter and safer.
+
+Cyber Officer: Responsible internet users protect themselves and others.
+
+Moral: Never trust unknown online messages or share personal information.
+
+Props Needed:
+• Mobile phones
+• Laptop or computer setup
+• Projector
+• School desks and chairs
+• ID card or police badge
+`,
+      },
+
+      {
+        id: 2,
+        title: "The Forgotten Friendship",
+
+        content: `
+Characters: Narrator, Rehan, Kabir, Hina, Coach, Doctor
+
+Scene 1: During Cricket Practice
+
+Narrator: Rehan and Kabir are best friends and star players of the school cricket team. Recently, Rehan has become more focused on winning than friendship.
+
+Coach: Team spirit is more important than individual success.
+
+Rehan: I want to become the best player.
+
+Kabir: We win only when we play together.
+
+Hina: Friendship matters more than trophies.
+
+Action: Rehan ignores Kabir during practice and walks away proudly.
+
+Narrator: Kabir feels hurt by Rehan’s behaviour but remains silent.
+
+Coach: Arrogance can destroy teamwork.
+
+Rehan: I only care about winning now.
+
+Kabir: Success without friendship feels empty.
+
+Hina: True friends support each other.
+
+Scene 2: During the Match
+
+Narrator: During an important match, Kabir gets injured while trying to save a difficult catch.
+
+Action: Kabir falls on the ground while fielding.
+
+Kabir: My ankle hurts badly.
+
+Hina: Someone call the doctor quickly.
+
+Coach: Stay calm, everyone.
+
+Rehan: Kabir, are you okay?
+
+Narrator: Rehan suddenly realises how much his friend matters to him.
+
+Doctor: He needs rest for a few days.
+
+Kabir: I will recover soon.
+
+Rehan: I am sorry for ignoring you lately.
+
+Hina: Friendship is tested during difficult times.
+
+Scene 3: At the Hospital
+
+Narrator: Rehan visits Kabir at the hospital carrying fruits and a get-well card.
+
+Rehan: I should have behaved better with you.
+
+Kabir: I was upset, but you are still my friend.
+
+Hina: Real friendship forgives mistakes.
+
+Doctor: Positive support helps recovery.
+
+Action: Rehan gives Kabir the friendship card.
+
+Narrator: Rehan understands that success means nothing without good relationships.
+
+Rehan: Winning made me selfish.
+
+Kabir: Good friends always stand together.
+
+Hina: Respect and kindness keep friendships strong.
+
+Doctor: Emotional support is powerful medicine too.
+
+Scene 4: Back on the Playground
+
+Narrator: A few weeks later, Kabir returns to practice. This time, Rehan plays with a completely different attitude.
+
+Coach: I can already see better teamwork today.
+
+Rehan: Winning is important, but friendship matters more.
+
+Kabir: True teamwork comes from trust.
+
+Hina: Now this looks like a real team.
+
+Action: Rehan and Kabir shake hands and smile proudly.
+
+Narrator: The team becomes stronger because the players now value friendship and teamwork equally.
+
+Coach: I am proud of your growth.
+
+Rehan: I learned a life-changing lesson.
+
+Kabir: Friendship makes success meaningful.
+
+Hina: Strong relationships create strong teams.
+
+Moral: Friendship and teamwork are more valuable than ego and pride.
+
+Props Needed:
+• Cricket bat and ball
+• Sports cones
+• Bandage or medical kit
+• Get-well card
+• Hospital chair or bed setup
+`,
+      },
+
+      {
+        id: 3,
+        title: "The Secret WhatsApp Group",
+
+        content: `
+Characters: Narrator, Ayaan, Sara, Bilal, Teacher, Principal
+
+Scene 1: In the Classroom
+
+Narrator: During lunch break, a few students secretly create a WhatsApp group to make fun of classmates. They think it is harmless entertainment.
+
+Ayaan: Let us make a funny group for our class.
+
+Bilal: We can share memes and jokes.
+
+Sara: But we should not hurt anyone.
+
+Ayaan: Relax, it is only for fun.
+
+Action: Bilal secretly takes a funny photo of another student.
+
+Narrator: Soon, the jokes slowly turn into rude comments and embarrassing pictures.
+
+Bilal: This edited photo looks hilarious.
+
+Sara: I do not think this is right.
+
+Ayaan: Everyone in the group is laughing.
+
+Sara: Someone’s feelings can get hurt.
+
+Scene 2: The Problem Grows
+
+Narrator: The next morning, one student comes to school feeling upset after seeing the messages online.
+
+Teacher: Why are you looking disturbed today?
+
+Student: Some students made fun of me online.
+
+Sara: Ma’am, a secret group was sharing rude messages.
+
+Teacher: Cyberbullying is a serious issue.
+
+Action: The teacher checks the students’ phones carefully.
+
+Ayaan: We did not think it would become serious.
+
+Bilal: We were only joking.
+
+Teacher: Humiliating others is never funny.
+
+Sara: Online behaviour should also be respectful.
+
+Scene 3: Meeting with the Principal
+
+Narrator: The principal calls the students to his office and explains the consequences of cyberbullying.
+
+Principal: Technology should never be used to hurt people.
+
+Ayaan: We understand our mistake now.
+
+Bilal: We did not realise the damage we caused.
+
+Sara: Words online can deeply affect someone.
+
+Narrator: The students feel ashamed after understanding the seriousness of their actions.
+
+Principal: Responsible students show kindness everywhere.
+
+Ayaan: We are truly sorry.
+
+Bilal: We will delete the group immediately.
+
+Teacher: Respect is important both online and offline.
+
+Scene 4: A Positive Change
+
+Narrator: A few days later, the students create a new group for sharing notes, homework, and positive messages.
+
+Sara: This group should help everyone learn together.
+
+Ayaan: We can share study materials and reminders.
+
+Bilal: Positive communication feels much better.
+
+Teacher: This is a wonderful improvement.
+
+Action: The students happily share study notes and motivational quotes.
+
+Narrator: The class atmosphere becomes friendlier and more supportive than before.
+
+Principal: Mistakes can become valuable lessons.
+
+Ayaan: We learned to use social media responsibly.
+
+Bilal: Respect matters in every conversation.
+
+Sara: Kindness always creates a better environment.
+
+Moral: Technology should be used responsibly and respectfully.
+
+Props Needed:
+• Mobile phones
+• School bags
+• Classroom desks and chairs
+• Fake chat screenshots
+• Principal office setup
+`,
+      },
+
+      {
+        id: 4,
+        title: "The Last Benchers",
+
+        content: `
+Characters: Narrator, Teacher, Rohit, Imran, Mehak, Principal
+
+Scene 1: In the Classroom
+
+Narrator: Rohit and Imran always sit on the last bench and spend more time joking than studying. Mehak, who sits in front, often warns them.
+
+Teacher: Please pay attention to the lesson.
+
+Rohit: We are listening, ma’am.
+
+Imran: We were just discussing the topic.
+
+Mehak: You both were making jokes again.
+
+Action: Rohit quickly hides a paper airplane under the desk.
+
+Narrator: The teacher notices their careless behaviour but decides to give them another chance.
+
+Teacher: Talent is wasted without discipline.
+
+Rohit: We will focus from now on.
+
+Imran: We can improve if we try seriously.
+
+Mehak: Good habits create better results.
+
+Scene 2: Group Project Announcement
+
+Narrator: The teacher announces a group presentation competition and selects Rohit as the group leader.
+
+Rohit: Ma’am, why did you choose me?
+
+Teacher: I believe you have leadership potential.
+
+Imran: This is a big responsibility.
+
+Mehak: We should work seriously on this project.
+
+Action: The group starts discussing ideas for the presentation.
+
+Narrator: Rohit slowly realises that leadership requires responsibility and teamwork.
+
+Teacher: A leader motivates the entire team.
+
+Rohit: I do not want to disappoint everyone.
+
+Imran: Let us divide the work properly.
+
+Mehak: Teamwork will help us succeed.
+
+Scene 3: Presentation Day
+
+Narrator: The students stand nervously on the stage, ready to present their project before judges and teachers.
+
+Principal: Confidence is the key to success.
+
+Rohit: Good morning everyone. Today we will present our topic.
+
+Imran: We worked hard to prepare this presentation.
+
+Mehak: Teamwork helped us complete the project successfully.
+
+Action: The audience claps after the confident presentation.
+
+Narrator: Rohit feels proud because he proved that he could be responsible and focused.
+
+Teacher: Excellent improvement, Rohit and Imran.
+
+Rohit: Hard work changed my confidence completely.
+
+Imran: Discipline really makes a difference.
+
+Mehak: Everyone can improve with effort.
+
+Scene 4: A New Beginning
+
+Narrator: A few weeks later, Rohit and Imran begin participating actively in class instead of wasting time.
+
+Teacher: I am happy to see this positive change.
+
+Rohit: I realised my potential after the project.
+
+Imran: Studying seriously feels rewarding now.
+
+Mehak: Improvement always begins with one good decision.
+
+Action: Rohit confidently answers a question in class.
+
+Narrator: The students no longer behave carelessly and become role models for others.
+
+Principal: Every student has hidden talent.
+
+Rohit: Discipline helped me discover my abilities.
+
+Imran: We should never underestimate ourselves.
+
+Teacher: Consistency creates success.
+
+Moral: Discipline and responsibility can completely transform a person.
+
+Props Needed:
+• School bags
+• Paper airplane
+• Project charts
+• Podium or presentation table
+• Microphone
+`,
+      },
+
+      {
+        id: 5,
+        title: "The AI Homework Disaster",
+
+        content: `
+Characters: Narrator, Arnav, Zoya, Teacher, Principal, Computer Teacher
+
+Scene 1: Homework Submission
+
+Narrator: The English teacher asks students to submit a creative essay assignment. Arnav secretly copies everything from an AI tool without understanding it.
+
+Teacher: I hope everyone wrote the essay honestly.
+
+Arnav: Yes, ma’am. I completed it quickly.
+
+Zoya: I spent two days writing mine carefully.
+
+Teacher: Creativity and original thinking are important.
+
+Action: Arnav smiles confidently while hiding his nervousness.
+
+Narrator: The teacher notices that Arnav’s essay sounds very advanced and unusual.
+
+Teacher: Arnav, can you explain your essay ideas?
+
+Arnav: Umm… I forgot some points.
+
+Zoya: Understanding your work matters too.
+
+Teacher: Something does not seem right.
+
+Scene 2: The Truth Comes Out
+
+Narrator: The next day, the teacher discusses the assignment with the principal and computer teacher.
+
+Computer Teacher: Many students are using AI tools carelessly nowadays.
+
+Principal: Technology should support learning, not replace it.
+
+Arnav: I copied the essay without understanding it.
+
+Teacher: Honest effort is more important than shortcuts.
+
+Action: Arnav lowers his head feeling guilty.
+
+Narrator: Arnav realises that using technology irresponsibly can damage learning.
+
+Principal: Tools are useful only when used wisely.
+
+Arnav: I understand my mistake now.
+
+Zoya: Real learning comes from thinking independently.
+
+Teacher: Mistakes can become learning opportunities.
+
+Scene 3: A Second Chance
+
+Narrator: The teacher gives Arnav another opportunity to write the essay in his own words.
+
+Teacher: This time, write honestly using your own ideas.
+
+Arnav: I will work sincerely this time.
+
+Zoya: I can help you organise your points.
+
+Computer Teacher: Technology should guide learning, not replace effort.
+
+Action: Arnav starts writing carefully in his notebook.
+
+Narrator: For the first time, Arnav feels proud of his own original work.
+
+Teacher: Your writing improved because it came from your own thinking.
+
+Arnav: I feel more confident now.
+
+Zoya: Honest effort always feels rewarding.
+
+Principal: True education develops understanding and creativity.
+
+Scene 4: Learning the Right Lesson
+
+Narrator: During assembly, the principal speaks about the responsible use of technology and artificial intelligence.
+
+Principal: Technology is powerful, but responsibility is more important.
+
+Arnav: I learned that shortcuts do not create real success.
+
+Teacher: Creativity grows through genuine effort.
+
+Zoya: Smart students use technology wisely.
+
+Action: Students clap after the speech.
+
+Narrator: Arnav feels grateful because his mistake helped him become more responsible and confident.
+
+Computer Teacher: Balance between technology and thinking is essential.
+
+Arnav: I will always learn honestly from now on.
+
+Teacher: Real knowledge comes through understanding.
+
+Principal: Responsible learners build a better future.
+
+Moral: Technology should support learning, not replace honesty and effort.
+
+Props Needed:
+• Laptops or mobile phones
+• Notebooks and pens
+• School desks and chairs
+• Podium or microphone
+• Assignment papers
+`,
+      },
+      {
+        id: 6,
+        title: "The School Election Campaign",
+
+        content: `
+Characters: Narrator, Principal, Ayaan, Hiba, Kabir, Meera
+
+Scene 1: Election Announcement
+
+Narrator: The school announces student council elections. Many students become excited because they want to become the School Captain.
+
+Principal: This year’s election should be fair and respectful.
+
+Ayaan: I want to become School Captain.
+
+Hiba: Leadership is a big responsibility.
+
+Kabir: A good leader should help everyone.
+
+Action: Students start discussing campaign ideas in groups.
+
+Narrator: Ayaan becomes very focused on winning the election and starts making unrealistic promises.
+
+Ayaan: If I win, there will be no homework every Friday.
+
+Meera: You should make practical promises.
+
+Hiba: A leader should be honest with students.
+
+Kabir: Empty promises never build trust.
+
+Scene 2: Campaign Week
+
+Narrator: During campaign week, students give speeches in front of the school. Some students focus only on popularity, while others focus on real ideas.
+
+Hiba: I want to improve sports and library activities.
+
+Kabir: I will listen to students’ problems seriously.
+
+Ayaan: I promise exciting changes for everyone.
+
+Meera: Good leadership needs responsibility, not only popularity.
+
+Action: Students clap after each speech.
+
+Narrator: Slowly, students begin noticing the difference between honest leadership and attention-seeking behaviour.
+
+Principal: Leadership means service and discipline.
+
+Hiba: A leader should inspire others positively.
+
+Kabir: Respect is earned through actions.
+
+Ayaan: Maybe I focused too much on winning.
+
+Scene 3: Result Day
+
+Narrator: On election day, the whole school gathers in the assembly hall to hear the results.
+
+Principal: The new School Captain is Hiba.
+
+Students: Congratulations, Hiba!
+
+Hiba: Thank you for trusting me.
+
+Ayaan: Congratulations. You truly deserved it.
+
+Action: Ayaan shakes hands with Hiba respectfully.
+
+Narrator: Ayaan feels disappointed at first but understands why students chose Hiba.
+
+Kabir: Honest leadership always wins respect.
+
+Meera: Students trusted her sincerity.
+
+Ayaan: I learned an important lesson today.
+
+Principal: Losing gracefully is also a sign of maturity.
+
+Scene 4: A Better Leader
+
+Narrator: A few weeks later, Ayaan begins helping Hiba organise school activities and becomes more responsible.
+
+Hiba: Thank you for helping with the event planning.
+
+Ayaan: I realised leadership is about teamwork, not power.
+
+Kabir: That is real personal growth.
+
+Meera: Good leaders continue learning from mistakes.
+
+Action: The students work together while decorating the stage.
+
+Narrator: Ayaan becomes more respected because of his improved attitude and teamwork.
+
+Principal: I am proud of your positive change.
+
+Ayaan: This experience changed my thinking completely.
+
+Hiba: Leadership grows through humility and service.
+
+Kabir: Respect matters more than winning.
+
+Moral: True leadership is built on honesty, responsibility, and teamwork.
+
+Props Needed:
+• Election posters
+• Microphone or podium
+• Ballot box
+• Charts or banners
+• School badges
+`,
+      },
+
+      {
+        id: 7,
+        title: "The Viral Video Mistake",
+
+        content: `
+Characters: Narrator, Rehan, Zoya, Teacher, Principal, Cameraman Student
+
+Scene 1: During Recess
+
+Narrator: During lunch break, some students are joking around in the playground. Rehan secretly records a funny video of another student slipping accidentally.
+
+Rehan: This video is hilarious.
+
+Cameraman Student: Upload it online quickly.
+
+Zoya: That student may feel embarrassed.
+
+Rehan: Everyone will laugh at it.
+
+Action: Rehan uploads the video on social media.
+
+Narrator: Within a few hours, many students begin sharing the video across school groups.
+
+Cameraman Student: The video is becoming popular already.
+
+Zoya: Popularity should not come from humiliating someone.
+
+Rehan: I did not think it was serious.
+
+Teacher: What is happening here?
+
+Scene 2: The Consequences
+
+Narrator: The student in the video becomes upset and stops talking to classmates.
+
+Teacher: Rehan, did you upload the video without permission?
+
+Rehan: Yes, ma’am, but it was only for fun.
+
+Zoya: Online actions can deeply hurt people.
+
+Teacher: Respect and privacy are very important.
+
+Action: Rehan looks ashamed while listening quietly.
+
+Narrator: The principal calls Rehan to discuss the situation seriously.
+
+Principal: Technology should never be used irresponsibly.
+
+Rehan: I understand my mistake now.
+
+Teacher: Viral content can create emotional pain.
+
+Zoya: We must think before posting online.
+
+Scene 3: Apology and Realisation
+
+Narrator: The next day, Rehan meets the student personally and apologises sincerely.
+
+Rehan: I am truly sorry for uploading the video.
+
+Student: I felt embarrassed in front of everyone.
+
+Zoya: Mistakes can be corrected through honesty.
+
+Teacher: Apologising sincerely shows maturity.
+
+Action: Rehan deletes the video from every platform.
+
+Narrator: Rehan realises that online actions have real emotional consequences.
+
+Rehan: I should have respected your privacy.
+
+Student: Thank you for understanding your mistake.
+
+Teacher: Responsible digital behaviour is important.
+
+Zoya: Kindness matters both online and offline.
+
+Scene 4: Digital Awareness Campaign
+
+Narrator: The school organises a digital awareness campaign to teach students about responsible social media use.
+
+Principal: Technology should spread positivity, not humiliation.
+
+Rehan: I learned a valuable lesson from my mistake.
+
+Teacher: Responsible students think before posting anything online.
+
+Zoya: Digital respect is as important as real-life respect.
+
+Action: Students hold posters about online safety and respect.
+
+Narrator: Rehan now uses social media responsibly and encourages others to do the same.
+
+Principal: Mistakes become meaningful when we learn from them.
+
+Rehan: I will use technology more responsibly now.
+
+Teacher: Awareness creates better digital citizens.
+
+Zoya: Respect should exist everywhere.
+
+Moral: Think carefully before posting anything online.
+
+Props Needed:
+• Mobile phones
+• Posters or placards
+• School bags
+• Microphone
+• Social media printouts or fake screenshots
+`,
+      },
+
+      {
+        id: 8,
+        title: "The Scholarship Interview",
+
+        content: `
+Characters: Narrator, Interviewer, Aisha, Kabir, Teacher, Principal
+
+Scene 1: The Announcement
+
+Narrator: The school announces a scholarship opportunity for talented students. Aisha and Kabir are selected for the final interview round.
+
+Principal: This scholarship rewards confidence, honesty, and knowledge.
+
+Aisha: I am excited but also nervous.
+
+Kabir: Interviews can be challenging.
+
+Teacher: Confidence grows through preparation.
+
+Action: Students begin practising interview questions after school.
+
+Narrator: Aisha prepares seriously while Kabir feels overconfident and avoids practice.
+
+Teacher: Preparation improves communication skills.
+
+Aisha: I am practising every day.
+
+Kabir: I can manage without much practice.
+
+Principal: Confidence without preparation is risky.
+
+Scene 2: Interview Preparation
+
+Narrator: Aisha practises speaking clearly in front of a mirror while Kabir spends time playing games instead of preparing.
+
+Aisha: I should answer calmly and confidently.
+
+Teacher: Eye contact and clear communication are important.
+
+Kabir: Interviews are easy. I am not worried.
+
+Principal: Serious opportunities require serious effort.
+
+Action: Aisha practises introducing herself confidently.
+
+Narrator: The difference in preparation slowly becomes visible.
+
+Teacher: Preparation builds self-confidence.
+
+Aisha: Practice is helping me improve.
+
+Kabir: Maybe I should have prepared more seriously.
+
+Principal: Discipline creates better performance.
+
+Scene 3: Interview Day
+
+Narrator: The students enter the interview room nervously while the interviewers observe them carefully.
+
+Interviewer: Tell us about your strengths.
+
+Aisha: I am hardworking, disciplined, and eager to learn.
+
+Kabir: I enjoy participating in sports and activities.
+
+Interviewer: How do you handle challenges?
+
+Action: Aisha answers confidently while Kabir struggles to organise his thoughts.
+
+Narrator: The interview panel notices Aisha’s confidence and preparation immediately.
+
+Aisha: Challenges teach us patience and growth.
+
+Kabir: I become nervous during difficult situations.
+
+Interviewer: Honest answers show maturity.
+
+Teacher: Stay calm and focused.
+
+Scene 4: The Final Result
+
+Narrator: A few days later, the school announces the scholarship results during assembly.
+
+Principal: Congratulations, Aisha. You have won the scholarship.
+
+Aisha: Thank you for believing in me.
+
+Kabir: You truly deserved it.
+
+Teacher: Hard work and preparation always shine.
+
+Action: Students clap loudly for Aisha.
+
+Narrator: Kabir realises that talent alone is not enough without discipline and preparation.
+
+Kabir: I learned an important lesson from this experience.
+
+Aisha: Practice helped me overcome fear.
+
+Principal: Success comes from effort and consistency.
+
+Teacher: Preparation creates confidence.
+
+Moral: Hard work and preparation lead to success.
+
+Props Needed:
+• Chairs and table
+• Interview file or folder
+• Microphone
+• Certificates
+• School bags
+`,
+      },
+
+      {
+        id: 9,
+        title: "The Cheating Incident",
+
+        content: `
+Characters: Narrator, Teacher, Armaan, Zaid, Hiba, Principal
+
+Scene 1: Before the Examination
+
+Narrator: The students are preparing for their mathematics exam. Armaan feels nervous because he did not study properly for the test.
+
+Teacher: Tomorrow’s exam will test your understanding and preparation.
+
+Armaan: I am worried because I forgot many formulas.
+
+Zaid: You should revise with us after school.
+
+Hiba: Regular practice reduces fear during exams.
+
+Action: Armaan secretly writes formulas on a small paper and hides it inside his pocket.
+
+Narrator: Instead of preparing honestly, Armaan decides to cheat during the examination.
+
+Teacher: Honest effort is more important than marks.
+
+Armaan: I hope nobody notices my cheat paper.
+
+Zaid: Confidence comes from preparation, not shortcuts.
+
+Hiba: Cheating only creates bigger problems later.
+
+Scene 2: During the Exam
+
+Narrator: The next morning, the examination hall becomes completely silent as students begin writing their answers carefully.
+
+Teacher: Read every question properly before answering.
+
+Armaan: These questions are difficult.
+
+Zaid: Stay calm and think carefully.
+
+Hiba: We practised these problems yesterday.
+
+Action: Armaan secretly takes out the cheat paper under the desk.
+
+Narrator: The teacher notices Armaan looking repeatedly under the table.
+
+Teacher: Armaan, what are you hiding there?
+
+Armaan: Ma’am… I can explain.
+
+Teacher: Is that a cheat paper?
+
+Armaan: I made a terrible mistake.
+
+Scene 3: Meeting with the Principal
+
+Narrator: After the examination, Armaan is taken to the principal’s office. He feels ashamed and guilty.
+
+Principal: Cheating damages honesty and self-respect.
+
+Armaan: I was scared of failing the exam.
+
+Teacher: Fear should never lead to dishonesty.
+
+Hiba: Everyone faces challenges sometimes.
+
+Action: Armaan lowers his head and apologises sincerely.
+
+Narrator: Armaan realises that shortcuts can destroy trust and confidence.
+
+Principal: Mistakes become valuable lessons when we learn from them.
+
+Armaan: I promise never to cheat again.
+
+Zaid: Honest effort always feels better.
+
+Teacher: Real success comes from sincerity and hard work.
+
+Scene 4: A New Beginning
+
+Narrator: A few weeks later, Armaan starts studying seriously with his friends and becomes more confident.
+
+Teacher: I can see great improvement in your attitude.
+
+Armaan: I realised honesty is more important than marks.
+
+Hiba: Discipline slowly builds confidence.
+
+Zaid: Hard work always gives peace of mind.
+
+Action: The students study together in the library.
+
+Narrator: Armaan no longer looks for shortcuts and becomes a more responsible student.
+
+Principal: True success is built on honesty and effort.
+
+Armaan: I learned an unforgettable lesson.
+
+Teacher: Good character matters everywhere in life.
+
+Hiba: Honest students earn real respect.
+
+Moral: Honesty and hard work are more valuable than shortcuts.
+
+Props Needed:
+• Exam papers
+• Cheat paper
+• School bags
+• Classroom desks and chairs
+• Principal office setup
+`,
+      },
+
+      {
+        id: 10,
+        title: "The Climate Change Mission",
+
+        content: `
+Characters: Narrator, Science Teacher, Aarav, Zoya, Kabir, Mayor
+
+Scene 1: In the Science Class
+
+Narrator: During science class, the teacher discusses climate change and environmental problems affecting the world.
+
+Science Teacher: Climate change is becoming a serious global issue.
+
+Aarav: Rising temperatures are affecting nature everywhere.
+
+Zoya: Pollution is damaging our environment badly.
+
+Kabir: Many people still ignore these problems.
+
+Action: The teacher shows pictures of pollution and deforestation on the projector.
+
+Narrator: The students become concerned after seeing the harmful effects on the environment.
+
+Science Teacher: Small actions can create big environmental changes.
+
+Aarav: We should spread awareness in our community.
+
+Zoya: Students can also make a difference.
+
+Kabir: Let us organise an environmental campaign.
+
+Scene 2: Planning the Campaign
+
+Narrator: After school, the students prepare posters and awareness speeches for their climate campaign.
+
+Aarav: Our posters should encourage people to plant trees.
+
+Zoya: We should also talk about reducing plastic waste.
+
+Kabir: Saving electricity is important too.
+
+Science Teacher: Excellent ideas, children.
+
+Action: The students make colourful posters and banners together.
+
+Narrator: The group becomes more motivated while preparing for the campaign.
+
+Aarav: Awareness can inspire people to change habits.
+
+Zoya: Protecting nature is everyone’s responsibility.
+
+Kabir: Even small changes can help the planet.
+
+Science Teacher: Responsible citizens protect the environment.
+
+Scene 3: Community Awareness Event
+
+Narrator: The students organise an awareness event in the community park where many people gather to listen.
+
+Mayor: I am happy to see young students taking initiative.
+
+Aarav: Climate change affects everyone’s future.
+
+Zoya: We must reduce pollution and protect nature.
+
+Kabir: Planting trees improves our environment.
+
+Action: Students distribute pamphlets and display posters around the park.
+
+Narrator: The audience listens carefully and appreciates the students’ confidence and dedication.
+
+Mayor: Young minds can inspire society positively.
+
+Aarav: Change begins with awareness.
+
+Zoya: Every person can contribute something.
+
+Kabir: Protecting Earth is our shared duty.
+
+Scene 4: Positive Impact
+
+Narrator: A few weeks later, the students notice positive changes in their neighbourhood. More people begin planting trees and avoiding plastic waste.
+
+Science Teacher: Your campaign created real awareness.
+
+Aarav: It feels good to make a difference.
+
+Zoya: Many people started using cloth bags now.
+
+Kabir: Small efforts can create big results.
+
+Action: Students plant saplings together near the school.
+
+Narrator: The students feel proud because their actions inspired others to care for the environment.
+
+Mayor: Responsible citizens create a better future.
+
+Science Teacher: Never underestimate the power of young voices.
+
+Aarav: We will continue spreading awareness.
+
+Zoya: Protecting nature should become a habit for everyone.
+
+Moral: Small responsible actions can help protect the planet.
+
+Props Needed:
+• Posters and banners
+• Plant saplings
+• Watering can
+• Projector or chart papers
+• Pamphlets
+• Microphone
+`,
+      },
+    ],
 
     stories: [
       {
@@ -6709,7 +9934,1147 @@ Learn from mistakes and practise English daily.
       },
     ],
 
-    skits: [],
+    skits: [
+      {
+        id: 1,
+        title: "The Dark Side of Fame",
+
+        content: `
+Characters: Narrator, Aryan, Zoya, Influencer, Teacher, Mother
+
+Scene 1: In the Classroom
+
+Narrator: Aryan has recently become obsessed with social media influencers and online fame. He spends more time making videos than focusing on studies and real relationships.
+
+Teacher: Aryan, your attention in class is decreasing these days.
+
+Aryan: I want to become famous online quickly.
+
+Zoya: Fame is not more important than real life.
+
+Teacher: Success without balance creates problems.
+
+Action: Aryan secretly records a video during class.
+
+Narrator: Aryan uploads funny videos daily and becomes excited whenever his followers increase.
+
+Aryan: My followers increased again today.
+
+Zoya: But your grades are falling badly.
+
+Teacher: Real success requires discipline and patience.
+
+Aryan: Online fame is all I need right now.
+
+Scene 2: At Home
+
+Narrator: Aryan spends late nights making videos and checking comments online. Slowly, he becomes stressed and emotionally affected by negative comments.
+
+Mother: You hardly sleep properly anymore.
+
+Aryan: People are posting rude comments on my videos.
+
+Mother: Social media should not control your happiness.
+
+Aryan: I feel stressed all the time now.
+
+Action: Aryan throws his phone on the bed angrily.
+
+Narrator: Aryan begins realising that online fame also brings pressure and negativity.
+
+Mother: Real confidence comes from within.
+
+Aryan: I forgot about my studies and health.
+
+Zoya: Balance is important in life.
+
+Mother: Technology should support life, not control it.
+
+Scene 3: School Counselling Session
+
+Narrator: The school organises a counselling session about mental health and social media pressure.
+
+Counsellor: Online popularity does not define your value.
+
+Aryan: I became addicted to likes and followers.
+
+Zoya: Many teenagers feel pressure because of social media.
+
+Teacher: Self-worth should never depend on online attention.
+
+Action: Students listen carefully during the session.
+
+Narrator: Aryan understands how social media affected his emotions and priorities.
+
+Counsellor: Focus on real growth and healthy habits.
+
+Aryan: I want to manage my time better now.
+
+Teacher: Discipline creates long-term success.
+
+Zoya: Real happiness comes from balance and self-respect.
+
+Scene 4: A Positive Change
+
+Narrator: A few weeks later, Aryan starts using social media responsibly while focusing again on studies, sports, and family.
+
+Mother: You look much happier and healthier now.
+
+Aryan: I realised real life matters more than online fame.
+
+Teacher: I can see improvement in your attitude.
+
+Zoya: Balance makes everything better.
+
+Action: Aryan switches off his phone and joins friends for basketball practice.
+
+Narrator: Aryan no longer depends on online attention for happiness and confidence.
+
+Counsellor: Responsible technology use creates a healthier mind.
+
+Aryan: I learned to control technology instead of letting it control me.
+
+Teacher: Self-discipline is true strength.
+
+Zoya: Real success includes peace of mind.
+
+Moral: Social media should be used wisely and in balance.
+
+Props Needed:
+• Mobile phones
+• Basketball
+• School desks and chairs
+• Counselling session setup
+• Notebook and school bags
+`,
+      },
+
+      {
+        id: 2,
+        title: "The Pressure to Fit In",
+
+        content: `
+Characters: Narrator, Rehan, Kabir, Sara, Teacher, Counsellor
+
+Scene 1: In the School Corridor
+
+Narrator: Rehan recently joined a new group of popular students. To impress them, he starts changing his behaviour and ignoring his old friends.
+
+Kabir: You hardly spend time with us anymore.
+
+Rehan: I am busy with my new friends now.
+
+Sara: Real friends should not be ignored.
+
+Rehan: I just want to fit in with everyone.
+
+Action: Rehan laughs loudly with the popular group while ignoring Kabir.
+
+Narrator: Slowly, Rehan begins acting differently just to gain acceptance.
+
+Kabir: You are changing too much.
+
+Rehan: People respect confidence and popularity.
+
+Sara: Pretending to be someone else never lasts long.
+
+Teacher: True confidence comes from being yourself.
+
+Scene 2: The Wrong Decision
+
+Narrator: One day, the popular group pressures Rehan into breaking school rules during recess.
+
+Student Leader: Come on, Rehan. Everybody does this.
+
+Rehan: I do not think this is right.
+
+Sara: Do not do something just to impress others.
+
+Kabir: Real friends never force bad decisions.
+
+Action: Rehan hesitates while the others encourage him.
+
+Narrator: Rehan feels uncomfortable because he knows the group’s behaviour is wrong.
+
+Student Leader: Are you scared?
+
+Rehan: No, but this could create problems.
+
+Teacher: What is happening here?
+
+Rehan: I made a bad decision by following others.
+
+Scene 3: Counselling and Realisation
+
+Narrator: After the incident, the school counsellor speaks to Rehan privately about peer pressure and self-respect.
+
+Counsellor: Many teenagers feel pressure to fit in.
+
+Rehan: I changed myself just to be accepted.
+
+Kabir: True friendship accepts people honestly.
+
+Sara: You should never lose your identity.
+
+Action: Rehan listens quietly and reflects on his choices.
+
+Narrator: Rehan realises that popularity without self-respect is meaningless.
+
+Counsellor: Confidence means making your own wise decisions.
+
+Rehan: I ignored people who truly cared about me.
+
+Teacher: Good character matters more than popularity.
+
+Sara: Respect yourself first.
+
+Scene 4: Choosing the Right Path
+
+Narrator: A few days later, Rehan reconnects with his old friends and becomes more confident in being himself.
+
+Kabir: It is good to have you back.
+
+Rehan: I realised real friends never pressure us.
+
+Sara: Being yourself is the best choice.
+
+Teacher: Personal growth comes from wise decisions.
+
+Action: Rehan walks away from the negative group confidently.
+
+Narrator: Rehan feels happier because he no longer pretends to impress others.
+
+Counsellor: Strong people make independent choices.
+
+Rehan: I learned to value self-respect over popularity.
+
+Kabir: Real friendship is built on trust and honesty.
+
+Sara: Confidence begins with accepting yourself.
+
+Moral: Never change yourself just to fit in with others.
+
+Props Needed:
+• School bags
+• Mobile phones
+• Classroom desks and chairs
+• Counselling room setup
+• Basketball or sports items
+`,
+      },
+
+      {
+        id: 3,
+        title: "The Screenshot Mistake",
+
+        content: `
+Characters: Narrator, Ayaan, Hiba, Zain, Teacher, Principal
+
+Scene 1: In the Classroom
+
+Narrator: During lunch break, Hiba privately messages her friend Zain about a personal problem she is facing. She trusts him completely.
+
+Hiba: Please do not share this with anyone.
+
+Zain: Do not worry. Your secret is safe with me.
+
+Ayaan: What are you both discussing so seriously?
+
+Zain: It is just a private conversation.
+
+Action: Ayaan secretly notices the message on Zain’s phone.
+
+Narrator: Later, Ayaan takes a screenshot of the conversation and forwards it to other students as a joke.
+
+Ayaan: This will spread quickly in the class group.
+
+Zain: You should not share private chats.
+
+Ayaan: Relax, it is only for fun.
+
+Hiba: Personal conversations deserve respect.
+
+Scene 2: The Situation Gets Worse
+
+Narrator: By the next morning, many students have already seen the screenshot, and Hiba feels embarrassed and hurt.
+
+Hiba: I trusted my friends, and now everyone knows.
+
+Zain: I never wanted this to happen.
+
+Teacher: Why is there so much tension in class today?
+
+Ayaan: I did not think it would become serious.
+
+Action: Hiba quietly leaves the classroom feeling upset.
+
+Narrator: The teacher realises that careless online behaviour has emotionally affected a student.
+
+Teacher: Privacy and trust should never be broken.
+
+Zain: A screenshot can damage someone’s feelings badly.
+
+Ayaan: I understand my mistake now.
+
+Teacher: Digital responsibility is very important.
+
+Scene 3: Principal’s Office
+
+Narrator: The principal calls the students to discuss the issue seriously and explain the importance of online ethics.
+
+Principal: Technology should never be used to humiliate others.
+
+Ayaan: I forwarded the screenshot without thinking carefully.
+
+Hiba: Private conversations should stay private.
+
+Zain: Trust once broken becomes difficult to rebuild.
+
+Action: Ayaan apologises sincerely to Hiba.
+
+Narrator: Ayaan realises that one careless action online can deeply hurt someone emotionally.
+
+Principal: Respect matters both online and offline.
+
+Ayaan: I am truly sorry for my behaviour.
+
+Teacher: Responsible students think before sharing anything.
+
+Hiba: I hope others learn from this too.
+
+Scene 4: Spreading Awareness
+
+Narrator: A week later, the school organises a digital ethics campaign where students discuss privacy, trust, and respectful communication.
+
+Teacher: Online responsibility is a part of good character.
+
+Ayaan: I learned that privacy should always be respected.
+
+Hiba: Kindness matters even in digital conversations.
+
+Zain: Trust is very valuable.
+
+Action: Students put up posters about digital safety and respect.
+
+Narrator: The campaign creates awareness among students about responsible technology use.
+
+Principal: Smart students protect both privacy and dignity.
+
+Ayaan: I will think carefully before sharing anything online.
+
+Teacher: Technology becomes meaningful when used wisely.
+
+Hiba: Respect creates safer and happier environments.
+
+Moral: Respect privacy and think carefully before sharing anything online.
+
+Props Needed:
+• Mobile phones
+• Fake chat screenshots
+• Posters or placards
+• School desks and chairs
+• Principal office setup
+`,
+      },
+
+      {
+        id: 4,
+        title: "The Silent Pressure",
+
+        content: `
+Characters: Narrator, Meera, Sara, Rohan, Counsellor, Teacher
+
+Scene 1: In the Classroom
+
+Narrator: Meera is one of the brightest students in class, but recently she has become unusually quiet and stressed because of academic pressure.
+
+Teacher: Meera, you seem distracted these days.
+
+Meera: I am trying to manage everything, ma’am.
+
+Sara: You hardly smile anymore.
+
+Rohan: You do not need to handle everything alone.
+
+Action: Meera quietly closes her notebook and avoids eye contact.
+
+Narrator: Meera feels pressure to always remain perfect in studies and competitions.
+
+Teacher: Success should never harm your peace of mind.
+
+Meera: I am scared of disappointing everyone.
+
+Sara: Nobody expects you to be perfect all the time.
+
+Rohan: Taking care of mental health is important too.
+
+Scene 2: At Home
+
+Narrator: That evening, Meera continues studying late into the night without taking breaks or resting properly.
+
+Mother: You have been studying for many hours continuously.
+
+Meera: Exams and projects are stressing me out.
+
+Mother: Rest is also necessary for good performance.
+
+Meera: I feel afraid of failing.
+
+Action: Meera suddenly starts crying from stress and exhaustion.
+
+Narrator: Her mother realises that the pressure is becoming emotionally harmful.
+
+Mother: You should share your feelings openly.
+
+Meera: I thought strong students never feel weak.
+
+Mother: Everyone needs emotional support sometimes.
+
+Meera: I feel better after talking honestly.
+
+Scene 3: Counselling Session
+
+Narrator: The school counsellor speaks with Meera about stress management, emotional balance, and self-care.
+
+Counsellor: Academic success should not damage mental health.
+
+Meera: I kept all my stress inside for too long.
+
+Sara: We all face pressure sometimes.
+
+Rohan: Sharing problems reduces stress greatly.
+
+Action: The counsellor teaches breathing and relaxation techniques.
+
+Narrator: Meera slowly understands that balance is more important than perfection.
+
+Counsellor: Taking breaks improves focus and health.
+
+Meera: I need to manage my time better.
+
+Teacher: Learning should not become emotional pressure.
+
+Sara: Real strength includes asking for help.
+
+Scene 4: A Healthier Mindset
+
+Narrator: A few weeks later, Meera starts following a balanced routine that includes studies, rest, exercise, and hobbies.
+
+Teacher: You look much happier and more confident now.
+
+Meera: I realised mental peace is very important.
+
+Rohan: Balance improves both health and performance.
+
+Sara: You smile more often now.
+
+Action: Meera joins her friends during sports period instead of studying alone.
+
+Narrator: Meera becomes healthier emotionally and academically after changing her routine.
+
+Counsellor: A healthy mind creates better success.
+
+Meera: I learned to care for my mental health.
+
+Teacher: Balanced students grow more confidently.
+
+Sara: Happiness and health always matter.
+
+Moral: Mental health is just as important as academic success.
+
+Props Needed:
+• Books and notebooks
+• Study table
+• School bags
+• Counselling room setup
+• Water bottle or stress ball
+`,
+      },
+
+      {
+        id: 5,
+        title: "The Deepfake Disaster",
+
+        content: `
+Characters: Narrator, Aarush, Zoya, Kabir, Computer Teacher, Principal
+
+Scene 1: In the Computer Lab
+
+Narrator: During computer class, students discuss a new AI app that can create fake videos and edited voices. Aarush becomes curious about trying it for fun.
+
+Kabir: This AI app can change faces and voices easily.
+
+Aarush: That sounds really interesting.
+
+Zoya: But fake videos can create serious problems.
+
+Computer Teacher: Technology should always be used responsibly.
+
+Action: Aarush secretly downloads the app on his phone.
+
+Narrator: Aarush decides to create a funny edited video of Kabir without asking permission.
+
+Aarush: Everyone will laugh when they see this video.
+
+Kabir: What are you working on?
+
+Aarush: It is just a small joke.
+
+Zoya: Some jokes can hurt people badly.
+
+Scene 2: The Video Goes Viral
+
+Narrator: The next day, the edited video spreads quickly through school groups and social media pages.
+
+Kabir: People are laughing at me because of that fake video.
+
+Aarush: I never thought it would spread this far.
+
+Zoya: Digital content becomes uncontrollable very quickly.
+
+Teacher: Who created this edited video?
+
+Action: Students whisper and show the video to each other secretly.
+
+Narrator: Kabir feels embarrassed and angry because his image has been damaged publicly.
+
+Kabir: My reputation is getting affected.
+
+Aarush: I made a terrible mistake.
+
+Teacher: Misusing AI tools can seriously harm others.
+
+Zoya: Technology without ethics becomes dangerous.
+
+Scene 3: Principal’s Office
+
+Narrator: The principal calls the students and explains the risks of deepfake technology and digital misuse.
+
+Principal: Deepfake technology can destroy trust and spread misinformation.
+
+Aarush: I only wanted to make people laugh.
+
+Kabir: But it made me feel humiliated.
+
+Computer Teacher: AI tools require responsibility and ethics.
+
+Action: Aarush apologises sincerely to Kabir.
+
+Narrator: Aarush realises that one careless digital action can create serious emotional consequences.
+
+Principal: Technology should never be used to insult others.
+
+Aarush: I understand my mistake completely now.
+
+Kabir: Trust becomes difficult to rebuild once broken.
+
+Teacher: Responsible students think before posting anything online.
+
+Scene 4: Digital Ethics Campaign
+
+Narrator: A week later, the school organises a campaign about AI ethics and responsible digital behaviour.
+
+Computer Teacher: Artificial intelligence should help society positively.
+
+Aarush: I learned that digital actions have real consequences.
+
+Zoya: Ethics are just as important as technology.
+
+Kabir: Respect should exist both online and offline.
+
+Action: Students display posters about digital responsibility and AI ethics.
+
+Narrator: The campaign creates awareness among students about the dangers of fake online content.
+
+Principal: Smart users combine technology with responsibility.
+
+Aarush: I will use technology more wisely now.
+
+Teacher: Awareness protects society from misuse.
+
+Zoya: Responsible technology creates a safer future.
+
+Moral: Technology and AI should always be used ethically and responsibly.
+
+Props Needed:
+• Mobile phones
+• Laptop or computer setup
+• Posters and placards
+• Projector
+• School desks and chairs
+`,
+      },
+      {
+        id: 6,
+        title: "The Cancel Culture Incident",
+
+        content: `
+Characters: Narrator, Aryan, Meera, Kabir, Principal, Teacher
+
+Scene 1: During Lunch Break
+
+Narrator: During lunch break, Aryan makes a careless joke about a classmate in front of several students. Some students record the moment and upload it online.
+
+Aryan: It was only a joke. Why is everyone so serious?
+
+Kabir: Some jokes can hurt people deeply.
+
+Meera: People are already sharing the video online.
+
+Teacher: Words spoken carelessly can create serious problems.
+
+Action: Students whisper while checking the viral clip on their phones.
+
+Narrator: Within a few hours, students across the school begin criticising Aryan harshly online.
+
+Aryan: Everyone is attacking me now.
+
+Kabir: Online anger spreads very quickly.
+
+Meera: People should understand the full situation first.
+
+Teacher: Public humiliation never solves problems properly.
+
+Scene 2: The Online Backlash
+
+Narrator: The next day, Aryan notices hundreds of angry comments and messages targeting him online.
+
+Aryan: I cannot handle these messages anymore.
+
+Kabir: Social media can become very toxic.
+
+Meera: Criticising someone endlessly only creates more harm.
+
+Teacher: Accountability is important, but cruelty is wrong too.
+
+Action: Aryan switches off his phone feeling emotionally overwhelmed.
+
+Narrator: Aryan realises his mistake, but the online hate becomes emotionally exhausting.
+
+Aryan: I understand that my joke was wrong.
+
+Kabir: Mistakes should become lessons, not lifelong punishment.
+
+Meera: People should learn forgiveness too.
+
+Teacher: Responsible behaviour matters both online and offline.
+
+Scene 3: Principal’s Discussion
+
+Narrator: The principal calls the students together to discuss online behaviour, accountability, and empathy.
+
+Principal: Social media should never become a tool for destroying someone emotionally.
+
+Aryan: I never wanted to hurt anyone seriously.
+
+Kabir: Online hate can become dangerous very quickly.
+
+Meera: People deserve opportunities to improve after mistakes.
+
+Action: Aryan apologises sincerely in front of the class.
+
+Narrator: The students slowly begin understanding the importance of empathy and responsible communication.
+
+Principal: Correcting mistakes is important, but kindness matters too.
+
+Aryan: I learned to think before speaking.
+
+Teacher: Digital responsibility includes empathy and respect.
+
+Kabir: Society improves when people learn and grow.
+
+Scene 4: A Better Understanding
+
+Narrator: A few weeks later, the school organises a workshop about responsible online communication and emotional well-being.
+
+Teacher: Online actions affect real emotions and real lives.
+
+Aryan: I learned that careless jokes can create serious damage.
+
+Meera: People should criticise responsibly, not cruelly.
+
+Kabir: Respect and empathy should guide every conversation.
+
+Action: Students create posters about kindness and digital responsibility.
+
+Narrator: The students become more thoughtful and responsible about both online behaviour and public criticism.
+
+Principal: Mistakes should become opportunities for growth.
+
+Aryan: I will communicate more carefully now.
+
+Teacher: Responsible communication creates healthier communities.
+
+Meera: Kindness and accountability should exist together.
+
+Moral: Think carefully before speaking online and treat others with empathy.
+
+Props Needed:
+• Mobile phones
+• Posters and placards
+• School desks and chairs
+• Projector or screen
+• Principal office setup
+`,
+      },
+
+      {
+        id: 7,
+        title: "The Online Challenge",
+
+        content: `
+Characters: Narrator, Rehan, Zoya, Kabir, Teacher, Doctor
+
+Scene 1: In the School Corridor
+
+Narrator: Students are discussing a dangerous online challenge that has become popular on social media recently.
+
+Rehan: Everyone is posting videos of this challenge online.
+
+Kabir: It looks risky and unsafe.
+
+Zoya: Many people are doing it just for views and likes.
+
+Teacher: Not every online trend should be followed blindly.
+
+Action: Rehan watches challenge videos excitedly on his phone.
+
+Narrator: Rehan becomes tempted to try the challenge himself because he wants attention online.
+
+Rehan: My video could become viral too.
+
+Kabir: Popularity is not worth risking safety.
+
+Zoya: Dangerous trends can harm people seriously.
+
+Teacher: Smart students make responsible decisions.
+
+Scene 2: The Dangerous Attempt
+
+Narrator: After school, Rehan and a few students secretly attempt the challenge in the playground.
+
+Kabir: I still think this is a bad idea.
+
+Rehan: Relax, nothing will happen.
+
+Zoya: Please stop before someone gets hurt.
+
+Action: Rehan slips badly while attempting the challenge and injures himself.
+
+Rehan: Ahh! My ankle hurts badly.
+
+Kabir: Someone call for help quickly.
+
+Narrator: The students panic after seeing Rehan injured.
+
+Teacher: What happened here?
+
+Zoya: He was trying the dangerous online challenge.
+
+Teacher: Social media trends should never replace common sense.
+
+Scene 3: At the Hospital
+
+Narrator: The doctor examines Rehan’s injured ankle while the students wait quietly.
+
+Doctor: You were lucky that the injury was not more serious.
+
+Rehan: I only wanted online attention.
+
+Kabir: Social media pressure can influence people badly.
+
+Zoya: Many students follow trends without thinking about safety.
+
+Action: Rehan sits silently feeling regretful.
+
+Narrator: Rehan realises that temporary online popularity is never worth physical danger.
+
+Doctor: Responsible decisions protect health and life.
+
+Rehan: I understand my mistake now.
+
+Teacher: Awareness and self-control are very important.
+
+Kabir: Real confidence does not come from risky behaviour.
+
+Scene 4: School Awareness Campaign
+
+Narrator: A week later, the students organise a campaign warning others about dangerous online challenges.
+
+Teacher: Students should learn to think critically before following trends.
+
+Rehan: I learned my lesson through experience.
+
+Zoya: Awareness can prevent accidents and injuries.
+
+Kabir: Online popularity should never become more important than safety.
+
+Action: Students display posters about internet safety and responsible choices.
+
+Narrator: The campaign helps many students understand the risks of blindly copying online trends.
+
+Doctor: Smart people evaluate consequences before acting.
+
+Rehan: I will use social media more responsibly now.
+
+Teacher: Technology should support learning and positivity.
+
+Zoya: Wise decisions protect both health and future.
+
+Moral: Never follow dangerous online trends without thinking carefully.
+
+Props Needed:
+• Mobile phones
+• Posters or placards
+• Bandage or medical kit
+• Playground setup
+• Hospital chair or bed setup
+`,
+      },
+
+      {
+        id: 8,
+        title: "The AI Friend Illusion",
+
+        content: `
+Characters: Narrator, Aarav, Meera, Mother, Counsellor, Teacher
+
+Scene 1: At Home
+
+Narrator: Aarav recently started spending hours chatting with an AI companion app. Slowly, he begins avoiding real conversations with friends and family.
+
+Mother: You hardly talk to us these days.
+
+Aarav: I already have someone to talk to online.
+
+Meera: Spending too much time with virtual apps is unhealthy.
+
+Teacher: Real human relationships are important for emotional growth.
+
+Action: Aarav keeps typing on his phone while ignoring everyone around him.
+
+Narrator: Aarav becomes emotionally attached to the AI chatbot and starts isolating himself socially.
+
+Aarav: The AI understands me better than people do.
+
+Mother: Technology cannot replace real emotional connections.
+
+Meera: Real friendships involve real understanding and support.
+
+Teacher: Balance is important in every aspect of life.
+
+Scene 2: Emotional Isolation
+
+Narrator: Aarav slowly stops participating in sports, group activities, and family discussions because he prefers spending time online.
+
+Meera: You missed football practice again.
+
+Aarav: I was busy chatting online.
+
+Mother: You are becoming distant from everyone.
+
+Aarav: I feel comfortable talking only to the AI now.
+
+Action: Aarav ignores calls from his friends and continues staring at his phone.
+
+Narrator: Although the AI gives responses instantly, Aarav begins feeling emotionally lonely and disconnected.
+
+Meera: Technology should support life, not replace relationships.
+
+Teacher: Human emotions need real human interaction.
+
+Mother: Isolation can affect mental health badly.
+
+Aarav: I did not realise I was changing so much.
+
+Scene 3: Counselling Session
+
+Narrator: The school counsellor speaks to Aarav about emotional balance, healthy technology habits, and the importance of real relationships.
+
+Counsellor: AI tools are useful, but they cannot replace real people.
+
+Aarav: I became emotionally dependent on the app.
+
+Meera: Real friendships involve care, trust, and shared experiences.
+
+Teacher: Healthy communication happens in real life too.
+
+Action: Aarav listens thoughtfully during the counselling session.
+
+Narrator: Aarav slowly understands that digital comfort should never replace meaningful human connections.
+
+Counsellor: Emotional balance requires real interaction and healthy habits.
+
+Aarav: I ignored important relationships around me.
+
+Mother: We only wanted you to stay happy and healthy.
+
+Teacher: Technology should support growth, not isolation.
+
+Scene 4: Reconnecting with Real Life
+
+Narrator: A few weeks later, Aarav reduces his screen time and reconnects with friends, sports, and family activities.
+
+Meera: It feels great to see you outside again.
+
+Aarav: I realised real friendships matter the most.
+
+Mother: You look much happier now.
+
+Teacher: Balance creates emotional well-being.
+
+Action: Aarav joins his friends during a football game.
+
+Narrator: Aarav feels emotionally healthier after reconnecting with real people and activities.
+
+Counsellor: Technology becomes healthy when used responsibly.
+
+Aarav: I learned that real relationships cannot be replaced.
+
+Meera: Human connection is very valuable.
+
+Teacher: A balanced life creates real happiness.
+
+Moral: Technology should never replace real human relationships.
+
+Props Needed:
+• Mobile phones
+• Football
+• Sofa or chairs
+• Counselling room setup
+• School bags
+`,
+      },
+
+      {
+        id: 9,
+        title: "The Fake Marksheet",
+
+        content: `
+Characters: Narrator, Rohan, Aisha, Father, Teacher, Principal
+
+Scene 1: After the Test Results
+
+Narrator: The school announces the unit test results. Rohan scores very low marks and becomes afraid of showing the report card to his parents.
+
+Teacher: Students, please get your report cards signed by your parents.
+
+Rohan: I do not know how my father will react.
+
+Aisha: Mistakes can be improved with hard work.
+
+Teacher: Honest communication is always important.
+
+Action: Rohan quietly hides his report card inside his bag.
+
+Narrator: Instead of speaking honestly, Rohan decides to change the marks on the report card.
+
+Rohan: Maybe nobody will notice the changes.
+
+Aisha: Hiding the truth only creates bigger problems.
+
+Rohan: I am too scared to tell the truth.
+
+Teacher: Fear should never lead to dishonesty.
+
+Scene 2: At Home
+
+Narrator: That evening, Rohan secretly changes the marks using a pen before showing the report card to his father.
+
+Father: Your marks look very good this time.
+
+Rohan: Yes… I worked hard.
+
+Father: I am proud of your improvement.
+
+Rohan: Thank you, Dad.
+
+Action: Rohan avoids eye contact and looks nervous.
+
+Narrator: Although his father feels happy, Rohan feels guilty because he knows he lied.
+
+Father: Honest effort always gives success.
+
+Rohan: I feel uncomfortable hiding the truth.
+
+Father: What happened? You look worried.
+
+Rohan: Nothing… I am just tired.
+
+Scene 3: The Truth is Revealed
+
+Narrator: The next day, the teacher notices the altered marks and informs the principal immediately.
+
+Teacher: These marks were changed after printing.
+
+Principal: Rohan, did you edit your report card?
+
+Rohan: Yes, sir… I was scared of disappointing my father.
+
+Aisha: Honesty would have solved the problem better.
+
+Action: Rohan lowers his head feeling ashamed.
+
+Narrator: Rohan realises that one lie created even more stress and embarrassment.
+
+Principal: Mistakes are normal, but dishonesty damages trust.
+
+Rohan: I understand my mistake now.
+
+Teacher: Parents value honesty more than perfect marks.
+
+Aisha: Truth may feel difficult, but it builds trust.
+
+Scene 4: A New Lesson
+
+Narrator: That evening, Rohan honestly explains everything to his father and apologises sincerely.
+
+Father: I am disappointed by the lie, not by your marks.
+
+Rohan: I was afraid of your reaction.
+
+Father: Problems can always be solved honestly.
+
+Rohan: I will never repeat this mistake again.
+
+Action: Rohan tears the fake report card and promises to work harder honestly.
+
+Narrator: Rohan feels relieved after finally telling the truth and decides to focus on genuine improvement.
+
+Father: Hard work matters more than shortcuts.
+
+Rohan: I learned that honesty is more important than marks.
+
+Teacher: Real success comes through sincerity and effort.
+
+Principal: Trust is earned through honesty and responsibility.
+
+Moral: Honesty is more valuable than temporary success through lies.
+
+Props Needed:
+• Report card papers
+• Pens or markers
+• School bags
+• Principal office setup
+• Study table and chairs
+`,
+      },
+
+      {
+        id: 10,
+        title: "The Climate Strike Debate",
+
+        content: `
+Characters: Narrator, Aarav, Sara, Mayor, Science Teacher, Reporter
+
+Scene 1: In the Science Classroom
+
+Narrator: During science class, students discuss climate change and environmental destruction happening around the world.
+
+Science Teacher: Climate change is affecting every country today.
+
+Aarav: Rising temperatures are becoming dangerous.
+
+Sara: Pollution and plastic waste are major problems.
+
+Reporter: Young people around the world are raising awareness now.
+
+Action: The teacher shows pollution images on the projector.
+
+Narrator: Aarav becomes inspired after watching videos of students leading environmental movements.
+
+Aarav: We should organise a climate awareness event too.
+
+Sara: Students can inspire society positively.
+
+Science Teacher: Responsible action begins with awareness.
+
+Reporter: Young voices can create powerful change.
+
+Scene 2: Planning the Climate Strike
+
+Narrator: After school, students gather in the park to prepare posters and speeches for the awareness campaign.
+
+Aarav: Our campaign should encourage people to reduce plastic use.
+
+Sara: We should also promote tree plantation drives.
+
+Reporter: Many people ignore environmental issues completely.
+
+Science Teacher: Education creates responsible citizens.
+
+Action: Students paint posters and prepare slogans together.
+
+Narrator: The students become more motivated while discussing environmental solutions.
+
+Aarav: Climate change affects our future directly.
+
+Sara: Small actions can create big changes.
+
+Reporter: Awareness is the first step toward improvement.
+
+Science Teacher: Protecting nature is everyone’s duty.
+
+Scene 3: Public Awareness Event
+
+Narrator: The students organise a peaceful climate awareness event in the community park where citizens and media gather to listen.
+
+Mayor: I appreciate students taking initiative for the environment.
+
+Aarav: Our planet needs responsible action now.
+
+Sara: Pollution and deforestation must be reduced.
+
+Reporter: Young students are inspiring the entire city today.
+
+Action: Students distribute pamphlets and hold climate posters high.
+
+Narrator: The audience listens carefully and begins discussing environmental responsibility seriously.
+
+Mayor: Young minds can inspire positive social change.
+
+Aarav: Every citizen can contribute something meaningful.
+
+Sara: Protecting Earth protects our future generations.
+
+Reporter: Awareness movements create real impact.
+
+Scene 4: Positive Impact
+
+Narrator: A few weeks later, the neighbourhood becomes cleaner as more people start reducing plastic waste and planting trees.
+
+Science Teacher: Your campaign created genuine awareness.
+
+Aarav: It feels amazing to make a difference.
+
+Sara: Many families started using reusable bags now.
+
+Mayor: Responsible citizens create stronger communities.
+
+Action: Students plant saplings together near the school garden.
+
+Narrator: The students feel proud because their voices inspired real environmental action.
+
+Reporter: Your campaign became popular across the city.
+
+Aarav: We will continue spreading awareness.
+
+Science Teacher: Positive change begins with responsible action.
+
+Sara: Protecting nature should become everyone’s habit.
+
+Moral: Young voices and responsible actions can help protect the planet.
+
+Props Needed:
+• Posters and placards
+• Plant saplings
+• Watering can
+• Projector or charts
+• Microphone
+• Pamphlets
+`,
+      },
+    ],
 
     stories: [
       {
@@ -7581,7 +11946,1043 @@ Learn from mistakes and practise daily.
       },
     ],
 
-    skits: [],
+    skits: [
+      {
+        id: 1,
+        title: "The Viral Lie",
+
+        content: `
+Characters: Narrator, Aarav, Zoya, Rehan, Meera, Teacher, Principal
+
+Scene 1: In the Classroom
+
+Narrator: During lunch break, Aarav hears a rumour that one teacher is leaving the school. Without checking the truth, he quickly shares the information in the class group.
+
+Aarav: Guys, I heard our English teacher is leaving the school.
+
+Rehan: Really? Who told you that?
+
+Aarav: One senior student mentioned it near the corridor.
+
+Zoya: Maybe we should confirm it first.
+
+Action: Aarav forwards the message to several school groups.
+
+Narrator: Within minutes, students across the school begin discussing the rumour loudly.
+
+Meera: Everyone is talking about this now.
+
+Rehan: Social media spreads information too fast.
+
+Teacher: Why are students looking so disturbed today?
+
+Zoya: A rumour is spreading around the school, ma’am.
+
+Scene 2: Confusion in School
+
+Narrator: The rumour creates confusion among students and parents. Some students even become emotional thinking their favourite teacher is leaving.
+
+Teacher: I do not understand how this false information spread so quickly.
+
+Principal: False rumours create unnecessary panic.
+
+Aarav: I only forwarded what I heard.
+
+Meera: Sharing unverified information is dangerous.
+
+Action: Students whisper and check their phones continuously.
+
+Narrator: Aarav slowly realises that one careless message created a huge misunderstanding.
+
+Rehan: People trust messages without checking facts.
+
+Teacher: Responsible communication is very important today.
+
+Zoya: One false post can affect many people.
+
+Aarav: I did not think it would become this serious.
+
+Scene 3: Principal’s Office
+
+Narrator: The principal calls Aarav and his friends to discuss the consequences of spreading misinformation online.
+
+Principal: Technology should be used responsibly and carefully.
+
+Aarav: I understand my mistake now, sir.
+
+Teacher: Truth should always be verified before sharing.
+
+Meera: Social media can spread both truth and harm.
+
+Action: Aarav apologises sincerely to the teacher.
+
+Narrator: Aarav feels guilty because his careless action created confusion across the school.
+
+Principal: Responsible students think before forwarding anything.
+
+Aarav: I will never share unverified news again.
+
+Rehan: Awareness is very important in the digital world.
+
+Zoya: One message can influence many people.
+
+Scene 4: Awareness Campaign
+
+Narrator: A week later, students organise a campaign about responsible social media use and fact-checking.
+
+Teacher: Digital responsibility is a modern life skill.
+
+Aarav: I learned that false information spreads very quickly.
+
+Meera: Fact-checking protects people from confusion.
+
+Principal: Awareness creates responsible citizens.
+
+Action: Students display posters about fake news and responsible communication.
+
+Narrator: The campaign helps students understand the importance of truth and responsibility online.
+
+Rehan: Social media should spread positivity and truth.
+
+Zoya: Thinking before sharing is very important.
+
+Teacher: Responsible communication builds trust.
+
+Aarav: I learned an unforgettable lesson.
+
+Moral: Never spread information without verifying the truth.
+
+Props Needed:
+• Mobile phones
+• Posters and placards
+• School bags
+• Classroom desks and chairs
+• Microphone or podium
+`,
+      },
+      {
+        id: 2,
+        title: "The Café Incident",
+
+        content: `
+Characters: Narrator, Imran, Sofia, Waiter, Café Manager, Old Man, Police Officer
+
+Scene 1: At the Café
+
+Narrator: On a Sunday evening, a group of teenagers visit a busy café after their tuition classes. Everyone is busy taking selfies and making reels for social media.
+
+Imran: This café looks perfect for Instagram reels.
+
+Sofia: Let us record near the window lights.
+
+Waiter: Please be careful and do not block the pathway.
+
+Imran: Relax, it will only take a minute.
+
+Action: Imran places his phone on a table and records loudly while customers look uncomfortable.
+
+Narrator: While recording, Imran accidentally pushes an old man’s bag from the chair.
+
+Old Man: Young man, please pay attention.
+
+Imran: Sorry, I did not notice the bag.
+
+Sofia: We became too distracted with recording.
+
+Waiter: Public places should be respected by everyone.
+
+Scene 2: The Missing Wallet
+
+Narrator: A few minutes later, the old man realises that his wallet is missing from the fallen bag.
+
+Old Man: My wallet is gone. It was inside my bag.
+
+Café Manager: Everyone please stay calm.
+
+Sofia: Maybe it fell somewhere nearby.
+
+Imran: Let us help search for it.
+
+Action: Customers begin checking under chairs and tables.
+
+Narrator: The atmosphere becomes tense as everyone starts worrying about the missing wallet.
+
+Police Officer: I received a complaint about a missing wallet.
+
+Old Man: It contains important documents and money.
+
+Imran: Officer, we will help you search properly.
+
+Café Manager: We should also check the CCTV footage.
+
+Scene 3: The Truth Revealed
+
+Narrator: After checking the CCTV footage, the manager notices that the wallet had fallen under a nearby sofa when the bag was pushed accidentally.
+
+Café Manager: The wallet is under the sofa near the corner table.
+
+Old Man: Thank goodness! Everything is still inside.
+
+Imran: I am really sorry for the carelessness.
+
+Sofia: We should have behaved more responsibly.
+
+Action: Imran respectfully returns the wallet to the old man.
+
+Narrator: Imran feels embarrassed because his careless behaviour created panic for everyone.
+
+Police Officer: Public behaviour should always be responsible.
+
+Old Man: Mistakes happen, but learning from them matters.
+
+Waiter: Respecting others is very important in public places.
+
+Imran: I understand my mistake clearly now.
+
+Scene 4: A Better Lesson
+
+Narrator: Before leaving the café, the teenagers sit quietly and reflect on the incident seriously.
+
+Sofia: We became too obsessed with social media content.
+
+Imran: Real life is more important than online attention.
+
+Café Manager: Good manners create positive environments.
+
+Police Officer: Responsible behaviour earns respect everywhere.
+
+Action: Imran switches off his phone and helps clean the table before leaving.
+
+Narrator: The teenagers leave the café with a valuable lesson about responsibility, awareness, and public behaviour.
+
+Old Man: Young people should use technology wisely.
+
+Imran: I learned to stay aware of my surroundings.
+
+Sofia: Respecting public spaces is everyone’s duty.
+
+Waiter: Small responsible actions make a big difference.
+
+Moral: Public responsibility and awareness are more important than online attention.
+
+Props Needed:
+• Café table and chairs
+• Mobile phones
+• Wallet
+• CCTV camera setup (fake)
+• Tray or menu cards
+• Police cap or badge
+`,
+      },
+
+      {
+        id: 3,
+        title: "The Bus Stop Decision",
+
+        content: `
+Characters: Narrator, Arjun, Kavya, Rohit, Priya, Bus Conductor, Shopkeeper
+
+Scene 1: At the Bus Stop
+
+Narrator: One evening, a group of friends are waiting at a crowded bus stop after attending coaching classes. Everyone is tired and discussing their weekend plans.
+
+Arjun: This bus is getting late again today.
+
+Kavya: I just want to reach home quickly.
+
+Rohit: Look at that new gaming café across the road.
+
+Priya: It looks crowded and expensive too.
+
+Action: Rohit notices a small purse lying near the bench at the bus stop.
+
+Narrator: Rohit quickly picks up the purse and secretly checks inside it.
+
+Rohit: There is a lot of money inside this purse.
+
+Arjun: Someone must be searching for it right now.
+
+Kavya: We should return it immediately.
+
+Rohit: Nobody saw us pick it up.
+
+Scene 2: The Argument
+
+Narrator: The friends begin arguing about what to do with the purse. Rohit wants to keep the money while the others disagree strongly.
+
+Rohit: We could use this money for fun.
+
+Priya: That money belongs to someone else.
+
+Arjun: Keeping it would be dishonest.
+
+Kavya: Imagine how worried the owner must feel.
+
+Action: An elderly shopkeeper nearby overhears their conversation.
+
+Shopkeeper: Honesty shows a person’s real character.
+
+Rohit: But nobody would know if we kept it.
+
+Priya: Wrong actions remain wrong even in secret.
+
+Arjun: We should do the right thing.
+
+Narrator: Rohit slowly starts feeling guilty after hearing everyone’s opinions.
+
+Kavya: Money can be earned again, but trust cannot.
+
+Shopkeeper: Good decisions define your future personality.
+
+Rohit: Maybe I am thinking selfishly.
+
+Priya: Honesty always gives peace of mind.
+
+Scene 3: The Real Owner
+
+Narrator: Suddenly, a worried woman arrives near the bus stop searching everywhere nervously.
+
+Woman: Has anyone seen a brown purse here?
+
+Arjun: What was inside the purse?
+
+Woman: My salary money and important documents.
+
+Kavya: I think this purse belongs to you.
+
+Action: Rohit slowly hands the purse back to the woman.
+
+Narrator: The woman becomes emotional after getting her purse back safely.
+
+Woman: Thank you so much for your honesty.
+
+Rohit: I almost made a very wrong decision.
+
+Priya: Returning it was the right thing to do.
+
+Shopkeeper: Honest actions always earn respect.
+
+Scene 4: A Valuable Lesson
+
+Narrator: After the woman leaves, the friends quietly reflect on the situation while waiting for the bus.
+
+Rohit: Today I understood the real value of honesty.
+
+Arjun: Good friends help each other make better decisions.
+
+Kavya: Temptation can confuse people sometimes.
+
+Priya: Character is tested during difficult moments.
+
+Action: The bus arrives, and the friends board it peacefully.
+
+Narrator: Rohit feels proud because he chose honesty instead of selfishness.
+
+Shopkeeper: Honest people are respected everywhere.
+
+Rohit: I learned an unforgettable lesson today.
+
+Arjun: Right decisions create strong character.
+
+Kavya: Honesty always brings inner peace.
+
+Moral: Honesty and good character matter more than temporary temptation.
+
+Props Needed:
+• Bus stop bench
+• Purse or wallet
+• School bags
+• Bus ticket or fake currency
+• Shop counter setup
+`,
+      },
+
+      {
+        id: 4,
+        title: "The Apartment Meeting",
+
+        content: `
+Characters: Narrator, Vivek, Sneha, Aditya, Ramesh Uncle, Society Secretary, Security Guard
+
+Scene 1: In the Apartment Compound
+
+Narrator: A group of teenagers are playing cricket in the apartment compound during the evening. Suddenly, the ball breaks a flower pot near the entrance.
+
+Aditya: Oh no! The flower pot broke completely.
+
+Sneha: We should apologise immediately.
+
+Vivek: Maybe we should quietly leave before anyone notices.
+
+Security Guard: What happened here?
+
+Action: The boys quickly hide the cricket bat behind the bench.
+
+Narrator: The security guard notices the broken pot and looks disappointed.
+
+Security Guard: This is the third complaint this month.
+
+Aditya: We did not do it intentionally.
+
+Sneha: We should take responsibility for the mistake.
+
+Vivek: Everyone will blame us now.
+
+Scene 2: The Society Meeting
+
+Narrator: That night, the apartment society holds a meeting to discuss repeated damage in the compound area.
+
+Society Secretary: Residents are unhappy about careless behaviour.
+
+Ramesh Uncle: Children should learn responsibility.
+
+Vivek: We are really sorry about the flower pot.
+
+Sneha: We should help repair the damage too.
+
+Action: Residents discuss the issue seriously while the teenagers sit quietly.
+
+Narrator: Vivek feels nervous because he expected everyone to scold them harshly.
+
+Aditya: We only wanted a place to play safely.
+
+Security Guard: The parking area is dangerous for cricket.
+
+Ramesh Uncle: Children also need proper playgrounds.
+
+Society Secretary: Both discipline and understanding are important.
+
+Scene 3: Finding a Solution
+
+Narrator: Instead of arguing, the residents and teenagers begin discussing practical solutions together.
+
+Sneha: We can play only during fixed evening hours.
+
+Aditya: We will avoid the parking area from now on.
+
+Ramesh Uncle: There is an empty ground near the community hall.
+
+Society Secretary: That can become a proper play area.
+
+Action: Everyone starts agreeing and discussing rules peacefully.
+
+Narrator: The meeting slowly changes from complaints into teamwork and cooperation.
+
+Security Guard: Clear rules will prevent future problems.
+
+Vivek: We will also help clean the compound regularly.
+
+Sneha: Responsibility should come with freedom.
+
+Ramesh Uncle: Respectful communication solves conflicts better.
+
+Scene 4: A Better Community
+
+Narrator: A few weeks later, the teenagers play responsibly in the new play area while also helping maintain the apartment compound.
+
+Society Secretary: The atmosphere in the society feels much better now.
+
+Aditya: Playing responsibly is more enjoyable.
+
+Vivek: I learned that avoiding mistakes only creates more problems.
+
+Sneha: Honest communication improved everything.
+
+Action: The teenagers clean the play area after finishing their game.
+
+Narrator: The residents and children now share a stronger understanding and respect for each other.
+
+Ramesh Uncle: Responsible young people create stronger communities.
+
+Security Guard: Cooperation solved this issue peacefully.
+
+Aditya: We learned to balance fun with responsibility.
+
+Sneha: Respect makes every community happier.
+
+Moral: Responsibility and communication help create peaceful communities.
+
+Props Needed:
+• Cricket bat and ball
+• Broken flower pot
+• Chairs and table for meeting
+• Apartment bench setup
+• Security cap or whistle
+`,
+      },
+
+      {
+        id: 5,
+        title: "The Train Journey",
+
+        content: `
+Characters: Narrator, Karan, Neha, Rahul, Ticket Collector, Old Woman, Tea Vendor
+
+Scene 1: At the Railway Station
+
+Narrator: Karan, Rahul, and Neha are travelling to another city for a state-level competition. The railway station is crowded and noisy.
+
+Rahul: This station is more crowded than I expected.
+
+Neha: Keep your bags carefully with you.
+
+Karan: Do not worry. Nothing will happen.
+
+Tea Vendor: Tea, coffee, snacks! Fresh tea!
+
+Action: Rahul keeps his backpack carelessly near a bench while checking his phone.
+
+Narrator: The train announcement begins, and passengers suddenly rush toward the platform.
+
+Ticket Collector: Passengers, please stand in line properly.
+
+Neha: Rahul, where is your backpack?
+
+Rahul: Wait… I left it near the bench.
+
+Karan: Hurry! Let us check quickly.
+
+Scene 2: Panic on the Platform
+
+Narrator: Rahul becomes nervous because his backpack contains important documents and competition certificates.
+
+Rahul: My certificates and wallet are inside that bag.
+
+Neha: Calm down. We will find it together.
+
+Karan: Let us search near the waiting area first.
+
+Ticket Collector: Losing bags during travel can become dangerous.
+
+Action: The friends run across the platform searching for the missing backpack.
+
+Narrator: Rahul blames himself for being careless during the busy situation.
+
+Tea Vendor: Are you searching for a black backpack?
+
+Rahul: Yes! Did you see it anywhere?
+
+Tea Vendor: An old woman kept it safely near the tea stall.
+
+Neha: Thank goodness!
+
+Scene 3: The Honest Stranger
+
+Narrator: The friends rush toward the tea stall and meet an elderly woman holding the backpack carefully.
+
+Old Woman: Is this your bag, beta?
+
+Rahul: Yes, aunty! Thank you so much.
+
+Karan: We were really worried.
+
+Neha: You helped us at the right time.
+
+Action: Rahul respectfully takes the backpack and checks his documents.
+
+Narrator: Everything inside the bag is safe, and Rahul feels deeply relieved.
+
+Old Woman: Carelessness during travel can create serious problems.
+
+Rahul: I learned an important lesson today.
+
+Ticket Collector: Responsible travellers stay alert all the time.
+
+Tea Vendor: Honest people still exist everywhere.
+
+Scene 4: A Responsible Change
+
+Narrator: After boarding the train, the friends quietly discuss the incident while looking out the window.
+
+Rahul: I became careless because I was distracted by my phone.
+
+Neha: Awareness is very important during travel.
+
+Karan: Small mistakes can create big problems.
+
+Ticket Collector: Discipline and alertness keep people safe.
+
+Action: Rahul keeps his backpack safely beside him and switches off his phone.
+
+Narrator: Rahul feels grateful because the experience taught him responsibility and awareness.
+
+Old Woman: Good lessons often come from difficult moments.
+
+Rahul: I will stay more careful from now on.
+
+Neha: Responsible behaviour protects us everywhere.
+
+Karan: Awareness is a very valuable habit.
+
+Moral: Responsibility and alertness are important in every situation.
+
+Props Needed:
+• Backpack
+• Train tickets
+• Bench setup
+• Tea cups or tray
+• Railway station announcement setup
+• School bags
+`,
+      },
+      {
+        id: 6,
+        title: "The Wedding Disaster",
+
+        content: `
+Characters: Narrator, Rohan, Ananya, Vikram, Wedding Planner, Chef, Grandfather
+
+Scene 1: At the Wedding Hall
+
+Narrator: A big family wedding is taking place in a beautifully decorated hall. Everyone is busy with preparations, music, and photography.
+
+Ananya: The decorations look amazing today.
+
+Vikram: This wedding is going to be unforgettable.
+
+Rohan: Let us record some cinematic videos for social media.
+
+Wedding Planner: Please do not block the workers while recording.
+
+Action: Rohan and Vikram start making reels near the stage lights.
+
+Narrator: While recording carelessly, Vikram accidentally disconnects a decoration wire near the food area.
+
+Chef: Who touched the light connection here?
+
+Rohan: We did not notice the wire.
+
+Ananya: You both should be more careful.
+
+Wedding Planner: Decorations and electrical setups are sensitive.
+
+Scene 2: The Power Failure
+
+Narrator: Suddenly, the lights near the dining area stop working, and confusion spreads across the wedding hall.
+
+Guests: What happened to the lights?
+
+Chef: The food counters are getting affected.
+
+Wedding Planner: Somebody disconnected the power line accidentally.
+
+Vikram: I think we caused this problem.
+
+Action: Workers rush around trying to fix the electrical issue.
+
+Narrator: Rohan becomes nervous because many guests are getting irritated and the wedding program is getting delayed.
+
+Ananya: Hiding the truth will make things worse.
+
+Rohan: Everyone will become angry with us.
+
+Grandfather: Mistakes should be accepted honestly.
+
+Chef: Problems get solved faster with honesty.
+
+Scene 3: Accepting Responsibility
+
+Narrator: Rohan and Vikram finally gather courage and confess the truth to the wedding planner.
+
+Rohan: Sir, we accidentally disturbed the wiring while recording videos.
+
+Wedding Planner: At least you admitted the truth honestly.
+
+Vikram: We are really sorry for the trouble.
+
+Grandfather: Accepting mistakes shows maturity.
+
+Action: Rohan and Vikram help workers arrange emergency lights.
+
+Narrator: Slowly, the atmosphere becomes calm again as everyone works together to solve the issue.
+
+Chef: The food service can continue now.
+
+Ananya: Teamwork solved the problem quickly.
+
+Wedding Planner: Responsibility is more important than avoiding blame.
+
+Rohan: I learned an important lesson today.
+
+Scene 4: A Memorable Lesson
+
+Narrator: Later that night, the wedding celebrations continue happily, and the teenagers quietly reflect on the incident.
+
+Grandfather: Social media should never distract people from responsibility.
+
+Rohan: We became careless while trying to impress others online.
+
+Vikram: Real maturity means staying aware of surroundings.
+
+Ananya: Fun should never create problems for others.
+
+Action: The teenagers help clean the dining area after the event.
+
+Narrator: The experience teaches them that responsibility and awareness matter more than online attention.
+
+Wedding Planner: Good character is shown through actions.
+
+Chef: Responsible people are respected everywhere.
+
+Rohan: I will stay more careful in public events now.
+
+Vikram: Small careless actions can create big problems.
+
+Moral: Responsibility and awareness are important in every public situation.
+
+Props Needed:
+• Wedding decoration setup
+• Mobile phones
+• Dining table and chairs
+• Decorative lights
+• Food serving trays
+• Microphone or speaker system
+`,
+      },
+
+      {
+        id: 7,
+        title: "The Road Rage Incident",
+
+        content: `
+Characters: Narrator, Arvind, Nikhil, Pooja, Taxi Driver, Traffic Police Officer, Shop Owner
+
+Scene 1: At the Traffic Signal
+
+Narrator: Arvind, Nikhil, and Pooja are returning home after coaching classes on Arvind’s scooter. The roads are crowded because of evening traffic.
+
+Nikhil: This traffic is becoming unbearable today.
+
+Pooja: Drive carefully. The roads are very crowded.
+
+Arvind: Relax, I know how to handle traffic.
+
+Taxi Driver: Please move your scooter properly.
+
+Action: Arvind suddenly brakes near the taxi, and both vehicles almost collide.
+
+Narrator: The taxi driver becomes angry, and a heated argument begins in the middle of the road.
+
+Taxi Driver: You should drive more responsibly.
+
+Arvind: You were driving too close to us.
+
+Pooja: Fighting on the road will not solve anything.
+
+Nikhil: Everyone is watching us now.
+
+Scene 2: The Argument Escalates
+
+Narrator: The argument grows louder, and traffic behind them starts getting blocked.
+
+Taxi Driver: Young people drive recklessly nowadays.
+
+Arvind: You are blaming us unfairly.
+
+Shop Owner: Please calm down. The road is getting blocked.
+
+Pooja: Anger is making the situation worse.
+
+Action: Vehicles begin honking loudly as people gather around.
+
+Narrator: The tension increases until a traffic police officer arrives near the signal.
+
+Traffic Police Officer: What is happening here?
+
+Nikhil: It started because of a small misunderstanding.
+
+Taxi Driver: He suddenly stopped the scooter carelessly.
+
+Arvind: I became angry without thinking properly.
+
+Scene 3: A Reality Check
+
+Narrator: The police officer calmly speaks to both sides and explains how road rage can become dangerous.
+
+Traffic Police Officer: One moment of anger can cause serious accidents.
+
+Pooja: People lose control during stressful situations.
+
+Shop Owner: Small arguments often become huge fights on roads.
+
+Arvind: I should have stayed calm.
+
+Action: The police officer asks everyone to move their vehicles aside.
+
+Narrator: Arvind slowly realises that ego and anger almost created a dangerous situation.
+
+Taxi Driver: I also reacted too aggressively.
+
+Traffic Police Officer: Patience is very important while driving.
+
+Nikhil: Roads become safer when people stay calm.
+
+Pooja: Respectful behaviour prevents unnecessary conflicts.
+
+Scene 4: A Safer Attitude
+
+Narrator: After the incident, both sides apologise and prepare to leave peacefully.
+
+Arvind: I am sorry for losing my temper.
+
+Taxi Driver: I should have spoken calmly too.
+
+Traffic Police Officer: Responsible driving saves lives.
+
+Shop Owner: Patience solves more problems than anger.
+
+Action: Arvind wears his helmet properly and starts the scooter carefully.
+
+Narrator: The teenagers leave with an important lesson about patience, safety, and emotional control.
+
+Nikhil: Today taught us a serious lesson.
+
+Pooja: Anger can create unnecessary danger.
+
+Arvind: I will drive more responsibly from now on.
+
+Traffic Police Officer: Discipline on roads protects everyone.
+
+Moral: Patience and responsible behaviour are essential on the road.
+
+Props Needed:
+• Scooter setup or chairs as scooter
+• Helmets
+• Traffic signal setup
+• Police cap or whistle
+• Bags and water bottles
+`,
+      },
+
+      {
+        id: 8,
+        title: "The Lost Necklace",
+
+        content: `
+Characters: Narrator, Kavita, Diya, Manish, Jewellery Shop Owner, Customer, Security Guard
+
+Scene 1: Inside the Jewellery Shop
+
+Narrator: Kavita, Diya, and Manish visit a jewellery shop to buy a gift for a family function. The shop is crowded because of the festival season.
+
+Diya: These necklace designs look beautiful.
+
+Manish: We should choose something simple and elegant.
+
+Kavita: Let us check the silver section too.
+
+Shop Owner: Please look carefully. We have many new collections today.
+
+Action: Customers move around the crowded shop while staff show jewellery trays.
+
+Narrator: Suddenly, a customer starts panicking after noticing her necklace is missing.
+
+Customer: My gold necklace is missing!
+
+Security Guard: Everyone please remain calm.
+
+Diya: This situation looks serious.
+
+Manish: Maybe it fell somewhere accidentally.
+
+Scene 2: Suspicion and Panic
+
+Narrator: The atmosphere inside the shop becomes tense as customers begin checking their belongings nervously.
+
+Shop Owner: Nobody will leave until we search properly.
+
+Kavita: I hope nobody suspects us unfairly.
+
+Customer: That necklace is very valuable.
+
+Security Guard: We should check the CCTV footage.
+
+Action: Staff begin searching around counters and chairs carefully.
+
+Narrator: Kavita notices something shining near the trial mirror.
+
+Kavita: Wait, I think I see something there.
+
+Diya: Is that the missing necklace?
+
+Manish: Yes, it is lying near the mirror.
+
+Customer: Thank goodness!
+
+Scene 3: The Truth Comes Out
+
+Narrator: The customer realises that the necklace slipped accidentally while she was trying another design.
+
+Customer: I became nervous and assumed the worst.
+
+Shop Owner: Crowded places can create confusion quickly.
+
+Security Guard: Panic often increases misunderstandings.
+
+Kavita: Staying calm helped solve the problem.
+
+Action: Kavita carefully hands the necklace back to the customer.
+
+Narrator: Everyone feels relieved after the misunderstanding gets cleared peacefully.
+
+Customer: Thank you for your honesty and help.
+
+Diya: Helping others is always important.
+
+Manish: Carelessness can create unnecessary panic.
+
+Shop Owner: Responsible behaviour creates trust.
+
+Scene 4: A Valuable Lesson
+
+Narrator: Before leaving the shop, the teenagers discuss how quickly panic and suspicion can spread in public places.
+
+Kavita: People should think calmly before blaming others.
+
+Diya: Fear can affect judgment badly.
+
+Manish: Staying alert is very important in crowded places.
+
+Security Guard: Awareness prevents confusion and conflict.
+
+Action: The friends collect their shopping bags and prepare to leave.
+
+Narrator: The incident teaches everyone the value of patience, honesty, and calm thinking.
+
+Customer: Honest people make society safer.
+
+Shop Owner: Responsibility and patience solve many problems.
+
+Kavita: Today taught us to stay calm during problems.
+
+Diya: Good decisions come from clear thinking.
+
+Moral: Staying calm and responsible helps solve problems peacefully.
+
+Props Needed:
+• Jewellery boxes or fake jewellery
+• Shopping bags
+• Counter and chairs
+• CCTV setup (fake)
+• Security cap or badge
+`,
+      },
+
+      {
+        id: 10,
+        title: "The Flood Rescue",
+
+        content: `
+Characters: Narrator, Dev, Anjali, Ritesh, Boatman, Police Officer, Doctor
+
+Scene 1: Heavy Rainfall
+
+Narrator: Continuous rainfall causes severe flooding in a small town. Roads become waterlogged, electricity goes out, and people begin struggling to move safely.
+
+Anjali: The water level is rising very quickly.
+
+Dev: Many houses near the river are already flooded.
+
+Ritesh: The streets are becoming dangerous now.
+
+Police Officer: Everyone should move toward safer areas immediately.
+
+Action: Thunder sounds loudly while people rush carrying bags and umbrellas.
+
+Narrator: Dev notices an elderly woman trapped near a flooded lane.
+
+Dev: That grandmother cannot cross the water safely.
+
+Anjali: We should help her immediately.
+
+Ritesh: The current looks very strong.
+
+Police Officer: Be careful and stay together.
+
+Scene 2: The Rescue Attempt
+
+Narrator: A local boatman arrives to help people move toward safer places while heavy rain continues.
+
+Boatman: Only a few people can sit in the boat at once.
+
+Anjali: Let us first help the elderly woman.
+
+Dev: She looks frightened and weak.
+
+Ritesh: We must act quickly before the water rises more.
+
+Action: Dev and Ritesh carefully support the old woman toward the boat.
+
+Narrator: Suddenly, Ritesh slips while walking through the water.
+
+Ritesh: Help! I lost my balance.
+
+Dev: Hold my hand tightly.
+
+Boatman: Stay calm and do not panic.
+
+Police Officer: Everyone move slowly and carefully.
+
+Scene 3: At the Relief Camp
+
+Narrator: After several rescue trips, many families safely reach a temporary relief camp organised by local authorities.
+
+Doctor: Some people are suffering from exhaustion and dehydration.
+
+Anjali: We should help distribute water and food.
+
+Dev: Everyone here looks frightened and tired.
+
+Police Officer: Teamwork is helping us manage the situation.
+
+Action: Volunteers distribute blankets and medicines to families.
+
+Narrator: The teenagers stop thinking only about themselves and begin helping rescue workers actively.
+
+Ritesh: Difficult situations show people’s real character.
+
+Boatman: Humanity becomes most important during disasters.
+
+Doctor: Even small help can save lives.
+
+Anjali: Communities become stronger when people help each other.
+
+Scene 4: A New Understanding
+
+Narrator: A few days later, the flood situation improves, and people slowly begin returning home safely.
+
+Police Officer: The town handled this disaster with courage and unity.
+
+Dev: This experience changed my thinking completely.
+
+Ritesh: I realised how important teamwork and humanity are.
+
+Anjali: Helping others gives real satisfaction.
+
+Action: The teenagers help clean muddy streets after the flood.
+
+Narrator: The disaster teaches everyone valuable lessons about courage, responsibility, and community support.
+
+Boatman: Brave people stay calm during difficult situations.
+
+Doctor: Humanity and cooperation save lives.
+
+Dev: I will always help people during emergencies.
+
+Anjali: Unity gives strength during hard times.
+
+Moral: Humanity, courage, and teamwork become most important during difficult situations.
+
+Props Needed:
+• Umbrellas
+• Buckets or water effect setup
+• Boat setup (chairs can be used)
+• Blankets and water bottles
+• Police cap and medical kit
+• Bags and flashlights
+`,
+      },
+    ],
 
     stories: [
       {

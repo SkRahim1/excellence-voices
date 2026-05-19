@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./App.css";
 
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 
 import { Mic, School, Users, Sparkles } from "lucide-react";
 
@@ -14,11 +14,106 @@ import Students from "./components/Students";
 import Trainers from "./components/Trainers";
 import FreeDemo from "./components/FreeDemo";
 import Footer from "./components/Footer";
-//students content
+
+// students content
 import StudentsHome from "./components/students/StudentsHome";
 import ClassPage from "./components/students/ClassPage";
 import CategoryPage from "./components/students/CategoryPage";
 import ContentPage from "./components/students/ContentPage";
+
+/* PASSWORD PROTECTION */
+function ProtectedRoute({ children }) {
+  const [password, setPassword] = useState("");
+  const [isAuthenticated, setIsAuthenticated] = useState(
+    localStorage.getItem("studentAccess") === "true",
+  );
+
+  const correctPassword = "excellencestudents"; // change password here
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    if (password === correctPassword) {
+      localStorage.setItem("studentAccess", "true");
+      setIsAuthenticated(true);
+    } else {
+      alert("Wrong Password");
+    }
+  };
+
+  if (!isAuthenticated) {
+    return (
+      <div
+        style={{
+          height: "100vh",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          background: "#f4f4f4",
+          padding: "20px",
+        }}
+      >
+        <form
+          onSubmit={handleSubmit}
+          style={{
+            background: "#fff",
+            padding: "40px",
+            borderRadius: "18px",
+            boxShadow: "0 5px 20px rgba(0,0,0,0.1)",
+            width: "100%",
+            maxWidth: "400px",
+          }}
+        >
+          <h2
+            style={{
+              textAlign: "center",
+              marginBottom: "25px",
+              color: "#0D2D59",
+            }}
+          >
+            Student Access
+          </h2>
+
+          <input
+            type="password"
+            placeholder="Enter Password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+            style={{
+              width: "100%",
+              padding: "14px",
+              borderRadius: "12px",
+              border: "1px solid #ccc",
+              marginBottom: "20px",
+              fontSize: "16px",
+              outline: "none",
+            }}
+          />
+
+          <button
+            type="submit"
+            style={{
+              width: "100%",
+              padding: "14px",
+              border: "none",
+              borderRadius: "12px",
+              background: "#0D2D59",
+              color: "#fff",
+              fontSize: "16px",
+              fontWeight: "600",
+              cursor: "pointer",
+            }}
+          >
+            Enter
+          </button>
+        </form>
+      </div>
+    );
+  }
+
+  return children;
+}
+
 export default function App() {
   const [activeSection, setActiveSection] = useState("home");
 
@@ -161,33 +256,41 @@ export default function App() {
           }
         />
 
-        {/* STUDENTS */}
-        {/* <Route
+        {/* STUDENTS PROTECTED */}
+        <Route
           path="/students"
           element={
-            <Students
-              navItems={navItems}
-              activeSection={activeSection}
-              scrollTo={scrollTo}
-              menuOpen={menuOpen}
-              setMenuOpen={setMenuOpen}
-            />
+            <ProtectedRoute>
+              <StudentsHome />
+            </ProtectedRoute>
           }
-        /> */}
+        />
 
-        {/* STUDENTS HOME */}
-        <Route path="/students" element={<StudentsHome />} />
+        <Route
+          path="/students/:classId"
+          element={
+            <ProtectedRoute>
+              <ClassPage />
+            </ProtectedRoute>
+          }
+        />
 
-        {/* CLASS PAGE */}
-        <Route path="/students/:classId" element={<ClassPage />} />
+        <Route
+          path="/students/:classId/:category"
+          element={
+            <ProtectedRoute>
+              <CategoryPage />
+            </ProtectedRoute>
+          }
+        />
 
-        {/* CATEGORY PAGE */}
-        <Route path="/students/:classId/:category" element={<CategoryPage />} />
-
-        {/* CONTENT PAGE */}
         <Route
           path="/students/:classId/:category/:id"
-          element={<ContentPage />}
+          element={
+            <ProtectedRoute>
+              <ContentPage />
+            </ProtectedRoute>
+          }
         />
 
         {/* TRAINERS */}
@@ -214,6 +317,9 @@ export default function App() {
 
         {/* CONTACT */}
         <Route path="/contact" element={<Footer />} />
+
+        {/* FALLBACK */}
+        <Route path="*" element={<Navigate to="/" />} />
       </Routes>
     </div>
   );
