@@ -10,7 +10,7 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
 import Programs from "./components/Programs";
-import Students from "./components/Students";
+// import Students from "./components/Students";
 import Trainers from "./components/Trainers";
 import FreeDemo from "./components/FreeDemo";
 import Footer from "./components/Footer";
@@ -24,9 +24,15 @@ import ContentPage from "./components/students/ContentPage";
 /* PASSWORD PROTECTION */
 function ProtectedRoute({ children }) {
   const [password, setPassword] = useState("");
-  const [isAuthenticated, setIsAuthenticated] = useState(
-    localStorage.getItem("studentAccess") === "true",
-  );
+
+  // CHECK SAVED LOGIN
+  const savedLogin = JSON.parse(localStorage.getItem("studentAccess"));
+
+  // CHECK IF LOGIN IS STILL VALID
+  const isStillValid =
+    savedLogin && savedLogin.loggedIn && Date.now() < savedLogin.expiry;
+
+  const [isAuthenticated, setIsAuthenticated] = useState(isStillValid);
 
   const correctPassword = "excellencestudents"; // change password here
 
@@ -34,12 +40,27 @@ function ProtectedRoute({ children }) {
     e.preventDefault();
 
     if (password === correctPassword) {
-      localStorage.setItem("studentAccess", "true");
+      // 1 DAY LOGIN
+      const oneDay = 24 * 60 * 60 * 1000;
+
+      localStorage.setItem(
+        "studentAccess",
+        JSON.stringify({
+          loggedIn: true,
+          expiry: Date.now() + oneDay,
+        }),
+      );
+
       setIsAuthenticated(true);
     } else {
       alert("Wrong Password");
     }
   };
+
+  // REMOVE LOGIN IF EXPIRED
+  if (!isStillValid) {
+    localStorage.removeItem("studentAccess");
+  }
 
   if (!isAuthenticated) {
     return (
