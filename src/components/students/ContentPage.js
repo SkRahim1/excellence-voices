@@ -221,9 +221,9 @@ export default function ContentPage() {
       await new Promise((resolve) => {
         const speech = new SpeechSynthesisUtterance(text);
 
-        speech.lang = "en-US";
+        speech.lang = "en-IN";
 
-        speech.rate = 0.9;
+        speech.rate = 0.8;
 
         speech.pitch = 1;
 
