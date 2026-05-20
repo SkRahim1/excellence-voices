@@ -243,105 +243,110 @@ export default function App() {
         menuOpen={menuOpen}
         setMenuOpen={setMenuOpen}
       />
+      <>
+        {/* BACKGROUND BLOBS */}
+        <div className="bg-blur bg1"></div>
+        <div className="bg-blur bg2"></div>
+        <div className="bg-blur bg3"></div>
+        <Routes>
+          {/* HOME */}
+          <Route
+            path="/"
+            element={
+              <>
+                <Hero scrollTo={scrollTo} activeSection={activeSection} />
 
-      <Routes>
-        {/* HOME */}
-        <Route
-          path="/"
-          element={
-            <>
-              <Hero scrollTo={scrollTo} activeSection={activeSection} />
+                <About activeSection={activeSection} />
 
-              <About activeSection={activeSection} />
+                <Programs activeSection={activeSection} services={services} />
 
+                <FreeDemo activeSection={activeSection} scrollTo={scrollTo} />
+
+                <Footer />
+              </>
+            }
+          />
+
+          {/* ABOUT */}
+          <Route
+            path="/about"
+            element={<About activeSection={activeSection} />}
+          />
+
+          {/* PROGRAMS */}
+          <Route
+            path="/programs"
+            element={
               <Programs activeSection={activeSection} services={services} />
+            }
+          />
 
+          {/* STUDENTS PROTECTED */}
+          <Route
+            path="/students"
+            element={
+              <ProtectedRoute>
+                <StudentsHome />
+              </ProtectedRoute>
+            }
+          />
+
+          <Route
+            path="/students/:classId"
+            element={
+              <ProtectedRoute>
+                <ClassPage />
+              </ProtectedRoute>
+            }
+          />
+
+          <Route
+            path="/students/:classId/:category"
+            element={
+              <ProtectedRoute>
+                <CategoryPage />
+              </ProtectedRoute>
+            }
+          />
+
+          <Route
+            path="/students/:classId/:category/:id"
+            element={
+              <ProtectedRoute>
+                <ContentPage />
+              </ProtectedRoute>
+            }
+          />
+
+          {/* TRAINERS */}
+          <Route
+            path="/trainers"
+            element={
+              <Trainers
+                navItems={navItems}
+                activeSection={activeSection}
+                scrollTo={scrollTo}
+                menuOpen={menuOpen}
+                setMenuOpen={setMenuOpen}
+              />
+            }
+          />
+
+          {/* FREE DEMO */}
+          <Route
+            path="/free-demo"
+            element={
               <FreeDemo activeSection={activeSection} scrollTo={scrollTo} />
+            }
+          />
 
-              <Footer />
-            </>
-          }
-        />
+          {/* CONTACT */}
+          <Route path="/contact" element={<Footer />} />
 
-        {/* ABOUT */}
-        <Route
-          path="/about"
-          element={<About activeSection={activeSection} />}
-        />
-
-        {/* PROGRAMS */}
-        <Route
-          path="/programs"
-          element={
-            <Programs activeSection={activeSection} services={services} />
-          }
-        />
-
-        {/* STUDENTS PROTECTED */}
-        <Route
-          path="/students"
-          element={
-            <ProtectedRoute>
-              <StudentsHome />
-            </ProtectedRoute>
-          }
-        />
-
-        <Route
-          path="/students/:classId"
-          element={
-            <ProtectedRoute>
-              <ClassPage />
-            </ProtectedRoute>
-          }
-        />
-
-        <Route
-          path="/students/:classId/:category"
-          element={
-            <ProtectedRoute>
-              <CategoryPage />
-            </ProtectedRoute>
-          }
-        />
-
-        <Route
-          path="/students/:classId/:category/:id"
-          element={
-            <ProtectedRoute>
-              <ContentPage />
-            </ProtectedRoute>
-          }
-        />
-
-        {/* TRAINERS */}
-        <Route
-          path="/trainers"
-          element={
-            <Trainers
-              navItems={navItems}
-              activeSection={activeSection}
-              scrollTo={scrollTo}
-              menuOpen={menuOpen}
-              setMenuOpen={setMenuOpen}
-            />
-          }
-        />
-
-        {/* FREE DEMO */}
-        <Route
-          path="/free-demo"
-          element={
-            <FreeDemo activeSection={activeSection} scrollTo={scrollTo} />
-          }
-        />
-
-        {/* CONTACT */}
-        <Route path="/contact" element={<Footer />} />
-
-        {/* FALLBACK */}
-        <Route path="*" element={<Navigate to="/" />} />
-      </Routes>
+          {/* FALLBACK */}
+          <Route path="*" element={<Navigate to="/" />} />
+        </Routes>
+      </>
     </div>
   );
 }

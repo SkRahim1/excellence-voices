@@ -3,7 +3,7 @@ import React from "react";
 import { ArrowRight, Menu, X } from "lucide-react";
 
 import { Link, useLocation } from "react-router-dom";
-
+import "./Navbar.css";
 export default function Navbar({
   navItems,
   activeSection,
