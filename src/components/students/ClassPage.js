@@ -5,7 +5,14 @@ import { Link, useParams } from "react-router-dom";
 export default function ClassPage() {
   const { classId } = useParams();
 
-  const categories = ["roleplays", "activities", "skits", "stories"];
+  const categories = [
+    "roleplays",
+    "activities",
+    "skits",
+    "stories",
+    "goodThoughts",
+    "publicSpeaking",
+  ];
 
   return (
     <div className="container">

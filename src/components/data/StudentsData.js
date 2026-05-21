@@ -990,6 +990,759 @@ Moral: Kindness makes others happy.
 `,
       },
     ],
+    goodThoughts: [
+      {
+        id: 1,
+        title: "Keep Smiling",
+
+        content: `
+Always be happy and keep smiling.
+A smile makes every day brighter.
+`,
+      },
+      {
+        id: 2,
+        title: "Respect Elders",
+
+        content: `
+Respect your teachers and parents.
+Respect shows good character.
+`,
+      },
+      {
+        id: 3,
+        title: "Good Manners",
+
+        content: `
+Good manners make you a good child.
+Politeness wins everyone’s heart.
+`,
+      },
+      {
+        id: 4,
+        title: "Learn Happily",
+
+        content: `
+Learn with joy every day.
+Happy learning brings success.
+`,
+      },
+      {
+        id: 5,
+        title: "Be Kind",
+
+        content: `
+Be kind to everyone around you.
+Kindness spreads happiness everywhere.
+`,
+      },
+      {
+        id: 6,
+        title: "Sharing is Caring",
+
+        content: `
+Sharing is caring.
+Helping others brings joy.
+`,
+      },
+      {
+        id: 7,
+        title: "Speak Politely",
+
+        content: `
+Speak politely with others.
+Kind words create friendship.
+`,
+      },
+      {
+        id: 8,
+        title: "Be Honest",
+
+        content: `
+Honesty is the best habit.
+Truthfulness builds trust.
+`,
+      },
+      {
+        id: 9,
+        title: "Read More Books",
+
+        content: `
+Read books and grow smarter.
+Books are our best teachers.
+`,
+      },
+      {
+        id: 10,
+        title: "Keep Learning",
+
+        content: `
+Never stop learning new things.
+Learning helps us grow daily.
+`,
+      },
+      {
+        id: 11,
+        title: "Stay Clean",
+
+        content: `
+Keep your classroom clean.
+Clean places help us learn better.
+`,
+      },
+      {
+        id: 12,
+        title: "Help Friends",
+
+        content: `
+Help your friends whenever possible.
+Helping others is a good habit.
+`,
+      },
+      {
+        id: 13,
+        title: "Hard Work Wins",
+
+        content: `
+Hard work always gives success.
+Effort leads to achievement.
+`,
+      },
+      {
+        id: 14,
+        title: "Listen Carefully",
+
+        content: `
+Listen carefully in the classroom.
+Good listening improves learning.
+`,
+      },
+      {
+        id: 15,
+        title: "Practice Daily",
+
+        content: `
+Practice daily to become better.
+Regular practice builds confidence.
+`,
+      },
+      {
+        id: 16,
+        title: "Self Confidence",
+
+        content: `
+Believe in yourself.
+Confidence helps you achieve great things.
+`,
+      },
+      {
+        id: 17,
+        title: "Every Child is Special",
+
+        content: `
+Every child is special.
+Everyone has unique talents.
+`,
+      },
+      {
+        id: 18,
+        title: "Build Good Habits",
+
+        content: `
+Good habits build a bright future.
+Small habits create big success.
+`,
+      },
+      {
+        id: 19,
+        title: "Use Time Wisely",
+
+        content: `
+Time is precious, use it wisely.
+Every minute matters.
+`,
+      },
+      {
+        id: 20,
+        title: "Tell the Truth",
+
+        content: `
+Always tell the truth.
+Truth makes you trustworthy.
+`,
+      },
+      {
+        id: 21,
+        title: "Be Thankful",
+
+        content: `
+Be thankful for everything.
+Gratitude brings happiness.
+`,
+      },
+      {
+        id: 22,
+        title: "Stay Healthy",
+
+        content: `
+Stay active and healthy.
+Health helps you stay strong.
+`,
+      },
+      {
+        id: 23,
+        title: "Learn from Mistakes",
+
+        content: `
+Learn from your mistakes.
+Mistakes teach valuable lessons.
+`,
+      },
+      {
+        id: 24,
+        title: "Positive Thinking",
+
+        content: `
+A positive mind brings happiness.
+Positive thoughts create confidence.
+`,
+      },
+      {
+        id: 25,
+        title: "Make Good Friends",
+
+        content: `
+Be friendly and make good friends.
+Friendship makes life joyful.
+`,
+      },
+      {
+        id: 26,
+        title: "Complete Homework",
+
+        content: `
+Always complete your homework on time.
+Responsibility leads to success.
+`,
+      },
+      {
+        id: 27,
+        title: "Protect Nature",
+
+        content: `
+Respect nature and keep it clean.
+Nature gives us life and beauty.
+`,
+      },
+      {
+        id: 28,
+        title: "Kind Words Matter",
+
+        content: `
+Kind words make people happy.
+Words can spread love and joy.
+`,
+      },
+      {
+        id: 29,
+        title: "Keep Trying",
+
+        content: `
+Try again until you succeed.
+Success comes through effort.
+`,
+      },
+      {
+        id: 30,
+        title: "Grow with Confidence",
+
+        content: `
+Confidence helps you grow.
+Believe in your abilities.
+`,
+      },
+      {
+        id: 31,
+        title: "Ask Questions",
+
+        content: `
+Never be afraid to ask questions.
+Questions help you learn more.
+`,
+      },
+      {
+        id: 32,
+        title: "Be Disciplined",
+
+        content: `
+Discipline is the key to success.
+Good discipline creates a better future.
+`,
+      },
+      {
+        id: 33,
+        title: "Dream Big",
+
+        content: `
+Dream big and work hard.
+Big dreams lead to great success.
+`,
+      },
+      {
+        id: 34,
+        title: "Help Others",
+
+        content: `
+Good children help others.
+Helping hands make the world better.
+`,
+      },
+      {
+        id: 35,
+        title: "Spread Happiness",
+
+        content: `
+Smile and spread happiness.
+A happy face inspires others.
+`,
+      },
+      {
+        id: 36,
+        title: "Small Steps Matter",
+
+        content: `
+Small steps lead to big success.
+Keep moving forward every day.
+`,
+      },
+      {
+        id: 37,
+        title: "Stay Curious",
+
+        content: `
+Always stay curious to learn.
+Curiosity opens new ideas.
+`,
+      },
+      {
+        id: 38,
+        title: "Be Patient",
+
+        content: `
+Be patient and calm.
+Patience helps you make good decisions.
+`,
+      },
+      {
+        id: 39,
+        title: "Love Your Family",
+
+        content: `
+Love and respect your family.
+Family gives support and care.
+`,
+      },
+      {
+        id: 40,
+        title: "Never Give Up",
+
+        content: `
+Keep trying and never give up.
+Success comes to those who continue.
+`,
+      },
+      {
+        id: 41,
+        title: "Learning is Fun",
+
+        content: `
+Learning is fun.
+Every lesson teaches something valuable.
+`,
+      },
+      {
+        id: 42,
+        title: "Use Magic Words",
+
+        content: `
+Use magic words like please and sorry.
+Good manners make everyone happy.
+`,
+      },
+      {
+        id: 43,
+        title: "Honesty Always",
+
+        content: `
+Be honest even when no one is watching.
+True honesty shows strong character.
+`,
+      },
+      {
+        id: 44,
+        title: "Fresh Beginning",
+
+        content: `
+Every day is a fresh beginning.
+Start each day with positivity.
+`,
+      },
+      {
+        id: 45,
+        title: "Follow Rules",
+
+        content: `
+Obey rules and stay safe.
+Rules help everyone live peacefully.
+`,
+      },
+      {
+        id: 46,
+        title: "Practice for Success",
+
+        content: `
+Success comes with practice.
+Practice improves your skills.
+`,
+      },
+      {
+        id: 47,
+        title: "Be Proud",
+
+        content: `
+Be proud of your good work.
+Good effort deserves appreciation.
+`,
+      },
+      {
+        id: 48,
+        title: "Friendship at School",
+
+        content: `
+Friendship makes school fun.
+Friends make learning enjoyable.
+`,
+      },
+      {
+        id: 49,
+        title: "Think Good",
+
+        content: `
+Think good and do good.
+Good actions create a better world.
+`,
+      },
+      {
+        id: 50,
+        title: "Eager to Learn",
+
+        content: `
+A good student is always eager to learn.
+Learning brings wisdom and growth.
+`,
+      },
+    ],
+    publicSpeaking: [
+      {
+        id: 1,
+
+        title: "1. My Best Friend",
+
+        content: `
+My best friend’s name is ____________. We study, play, and help each other every day. A true friend always supports us and makes life happier. I feel lucky to have such a wonderful friend.
+`,
+      },
+
+      {
+        id: 2,
+
+        title: "2. My Favorite Teacher",
+
+        content: `
+My favorite teacher’s name is ____________. She teaches us kindly and explains every lesson clearly. Teachers help students become successful and confident. I respect my teacher very much.
+`,
+      },
+
+      {
+        id: 3,
+
+        title: "3. Importance of Cleanliness",
+
+        content: `
+Cleanliness keeps us healthy and active. We should keep our classroom, home, and surroundings neat and clean. Clean habits protect us from diseases. Clean places always look beautiful.
+`,
+      },
+
+      {
+        id: 4,
+
+        title: "4. My School",
+
+        content: `
+My school’s name is ____________. It is a wonderful place for learning and making friends. My teachers guide us with care and patience. I enjoy going to school every day.
+`,
+      },
+
+      {
+        id: 5,
+
+        title: "5. Healthy Food",
+
+        content: `
+My favorite healthy food is ____________. Healthy food gives us energy and strength. Fruits and vegetables keep our body fit and active. We should avoid eating too much junk food.
+`,
+      },
+
+      {
+        id: 6,
+
+        title: "6. Importance of Time",
+
+        content: `
+Time is very valuable in life. Once time is lost, it never comes back again. We should use our time wisely for study and good activities. Good time management leads to success.
+`,
+      },
+
+      {
+        id: 7,
+
+        title: "7. My Family",
+
+        content: `
+There are ____________ members in my family. My family loves and supports me always. We help each other and spend happy moments together. Family teaches us good values and manners.
+`,
+      },
+
+      {
+        id: 8,
+
+        title: "8. Good Manners",
+
+        content: `
+Good manners make us respectful and lovable people. We should speak politely and behave kindly with everyone. Saying “please,” “sorry,” and “thank you” shows good manners. Good behavior earns respect everywhere.
+`,
+      },
+
+      {
+        id: 9,
+
+        title: "9. Importance of Trees",
+
+        content: `
+Trees give us oxygen, fruits, and shade. They help keep the environment clean and fresh. Trees are very important for all living beings. We should plant and protect more trees.
+`,
+      },
+
+      {
+        id: 10,
+
+        title: "10. My Favorite Hobby",
+
+        content: `
+My favorite hobby is ____________. Hobbies help us relax and enjoy our free time. They improve our creativity and confidence. Everyone should develop a good hobby.
+`,
+      },
+
+      {
+        id: 11,
+
+        title: "11. Importance of Exercise",
+
+        content: `
+My favorite exercise is ____________. Exercise keeps our body healthy and energetic. Daily exercise improves strength and concentration. Healthy students can learn better.
+`,
+      },
+
+      {
+        id: 12,
+
+        title: "12. Helping Others",
+
+        content: `
+Helping others is a wonderful habit. Kind people make the world happier and better. Even small help can bring a smile to someone’s face. We should always help people in need.
+`,
+      },
+
+      {
+        id: 13,
+
+        title: "13. Save Water",
+
+        content: `
+Water is very important for all living beings. We should never waste water unnecessarily. Saving water today will protect our future tomorrow. Every drop of water is precious.
+`,
+      },
+
+      {
+        id: 14,
+
+        title: "14. Importance of Education",
+
+        content: `
+I want to become a ____________ in the future. Education helps us gain knowledge and wisdom. Educated people can achieve their dreams successfully. Education is the key to success.
+`,
+      },
+
+      {
+        id: 15,
+
+        title: "15. Honesty",
+
+        content: `
+Honesty is one of the best qualities in life. Honest people are trusted and respected everywhere. Speaking the truth creates peace and confidence. We should always be honest.
+`,
+      },
+
+      {
+        id: 16,
+
+        title: "16. My Favorite Festival",
+
+        content: `
+My favorite festival is ____________. We celebrate it with happiness and excitement. Festivals teach us love, unity, and togetherness. They make our lives colorful and joyful.
+`,
+      },
+
+      {
+        id: 17,
+
+        title: "17. Kindness",
+
+        content: `
+Kindness makes people happy and comfortable. Kind words and actions spread positivity everywhere. Helping and respecting others are signs of kindness. Kind people are loved by everyone.
+`,
+      },
+
+      {
+        id: 18,
+
+        title: "18. Importance of Discipline",
+
+        content: `
+Discipline helps us become responsible students. It teaches us to follow rules and respect others. Disciplined students achieve success in every field. Discipline makes life peaceful and organized.
+`,
+      },
+
+      {
+        id: 19,
+
+        title: "19. Self-Confidence",
+
+        content: `
+I feel confident when I ____________. Self-confidence helps us face challenges bravely. Believing in ourselves increases courage and motivation. Confidence is important for success.
+`,
+      },
+
+      {
+        id: 20,
+
+        title: "20. Reading Books",
+
+        content: `
+My favorite book is ____________. Reading books increases knowledge and imagination. Books teach us many useful lessons and values. Reading daily improves vocabulary and communication skills.
+`,
+      },
+
+      {
+        id: 21,
+
+        title: "21. My Favorite Game",
+
+        content: `
+My favorite game is ____________. Playing games keeps our body active and healthy. Games teach teamwork, discipline, and confidence. Sports also make life enjoyable and exciting.
+`,
+      },
+
+      {
+        id: 22,
+
+        title: "22. Importance of Friendship",
+
+        content: `
+Friendship is a beautiful relationship in life. Good friends support and encourage each other always. True friendship brings happiness and trust. We should always choose good friends.
+`,
+      },
+
+      {
+        id: 23,
+
+        title: "23. My Daily Routine",
+
+        content: `
+I wake up at ____________. A good daily routine helps us stay disciplined and organized. It gives enough time for study, play, and rest. Regular habits make life better.
+`,
+      },
+
+      {
+        id: 24,
+
+        title: "24. Importance of Respect",
+
+        content: `
+We should respect parents, teachers, and elders always. Respectful behavior creates strong relationships everywhere. Good students speak politely and behave kindly. Respect is a sign of good character.
+`,
+      },
+
+      {
+        id: 25,
+
+        title: "25. My Favorite Subject",
+
+        content: `
+My favorite subject is ____________. I enjoy learning it because it is interesting and useful. It helps me gain knowledge and confidence. Studying sincerely improves our future.
+`,
+      },
+
+      {
+        id: 26,
+
+        title: "26. Importance of Nature",
+
+        content: `
+Nature gives us fresh air, water, and food. Beautiful trees, rivers, and animals make Earth special. We should protect nature from pollution and harm. Nature is very important for life.
+`,
+      },
+
+      {
+        id: 27,
+
+        title: "27. Importance of Sharing",
+
+        content: `
+Sharing is a wonderful habit for everyone. Sharing things with others spreads happiness and kindness. Caring people are respected and loved everywhere. Sharing also strengthens friendships.
+`,
+      },
+
+      {
+        id: 28,
+
+        title: "28. My Dream",
+
+        content: `
+My dream is to become a ____________. Dreams give direction and purpose in life. We should work hard to achieve our goals. Determination and confidence help us succeed.
+`,
+      },
+
+      {
+        id: 29,
+
+        title: "29. Importance of Punctuality",
+
+        content: `
+Punctuality means doing work on time. Students who are punctual become disciplined and responsible. Time management improves success and confidence. Good habits create a bright future.
+`,
+      },
+
+      {
+        id: 30,
+
+        title: "30. My Favorite Animal",
+
+        content: `
+My favorite animal is ____________. Animals are an important part of nature. They teach us love, loyalty, and care. We should protect animals and treat them kindly.
+`,
+      },
+    ],
   },
 
   "class-2": {
@@ -1975,6 +2728,458 @@ The crocodile took him back.
 The monkey jumped onto the tree and escaped.
 
 Moral: Be clever in danger.
+`,
+      },
+    ],
+    goodThoughts: [
+      {
+        id: 1,
+        title: "1. Listen Carefully",
+
+        content: `
+A good student always listens carefully.
+Listening helps us understand better.
+`,
+      },
+      {
+        id: 2,
+        title: "2. Love Learning",
+
+        content: `
+Learning new things is always exciting.
+Knowledge makes life more beautiful.
+`,
+      },
+      {
+        id: 3,
+        title: "3. Value Respect",
+
+        content: `
+Respect makes everyone happy.
+Respect builds strong relationships.
+`,
+      },
+      {
+        id: 4,
+        title: "4. Speak Kindly",
+
+        content: `
+Always speak with kindness and love.
+Kind words spread happiness everywhere.
+`,
+      },
+      {
+        id: 5,
+        title: "5. Read Daily",
+
+        content: `
+Reading daily improves your knowledge.
+Books help us learn many things.
+`,
+      },
+      {
+        id: 6,
+        title: "6. Learn from Mistakes",
+
+        content: `
+Never be afraid of mistakes.
+Mistakes help us grow stronger.
+`,
+      },
+      {
+        id: 7,
+        title: "7. Work Hard",
+
+        content: `
+Hard work makes dreams come true.
+Success comes through effort.
+`,
+      },
+      {
+        id: 8,
+        title: "8. Power of a Smile",
+
+        content: `
+A smile can brighten someone’s day.
+Smiling spreads joy everywhere.
+`,
+      },
+      {
+        id: 9,
+        title: "9. Joy of Sharing",
+
+        content: `
+Sharing brings happiness to everyone.
+Sharing shows kindness and care.
+`,
+      },
+      {
+        id: 10,
+        title: "10. Be Thankful",
+
+        content: `
+Be thankful for what you have.
+Gratitude brings peace and joy.
+`,
+      },
+      {
+        id: 11,
+        title: "11. Good Habits",
+
+        content: `
+Good habits build a strong future.
+Small habits create big success.
+`,
+      },
+      {
+        id: 12,
+        title: "12. Practice Daily",
+
+        content: `
+Practice every day to become better.
+Practice improves your skills.
+`,
+      },
+      {
+        id: 13,
+        title: "13. Stay Clean",
+
+        content: `
+Cleanliness keeps us healthy.
+Clean places create happy minds.
+`,
+      },
+      {
+        id: 14,
+        title: "14. Help Others",
+
+        content: `
+Helping others is a great quality.
+Helping hands make the world better.
+`,
+      },
+      {
+        id: 15,
+        title: "15. Believe in Yourself",
+
+        content: `
+Believe in yourself and stay confident.
+Confidence helps you achieve success.
+`,
+      },
+      {
+        id: 16,
+        title: "16. Finish Work on Time",
+
+        content: `
+Always complete your work on time.
+Responsibility leads to achievement.
+`,
+      },
+      {
+        id: 17,
+        title: "17. Use Kind Words",
+
+        content: `
+Kind words create good friendships.
+Politeness wins every heart.
+`,
+      },
+      {
+        id: 18,
+        title: "18. Learn Every Day",
+
+        content: `
+Every day is a chance to learn.
+Each day teaches something new.
+`,
+      },
+      {
+        id: 19,
+        title: "19. Respect School",
+
+        content: `
+Respect your school and teachers.
+Respect creates a positive environment.
+`,
+      },
+      {
+        id: 20,
+        title: "20. Stay Positive",
+
+        content: `
+Stay positive and keep trying.
+Positive thinking leads to success.
+`,
+      },
+      {
+        id: 21,
+        title: "21. Speak the Truth",
+
+        content: `
+Good children always tell the truth.
+Truth builds trust and honesty.
+`,
+      },
+      {
+        id: 22,
+        title: "22. Be Honest",
+
+        content: `
+Be honest in every situation.
+Honesty shows strong character.
+`,
+      },
+      {
+        id: 23,
+        title: "23. Value Discipline",
+
+        content: `
+Discipline leads to success.
+Good discipline creates a bright future.
+`,
+      },
+      {
+        id: 24,
+        title: "24. Stay Curious",
+
+        content: `
+Keep your mind active and curious.
+Curiosity helps us learn more.
+`,
+      },
+      {
+        id: 25,
+        title: "25. Use Time Wisely",
+
+        content: `
+Never waste your valuable time.
+Time once lost never returns.
+`,
+      },
+      {
+        id: 26,
+        title: "26. Healthy Body Healthy Mind",
+
+        content: `
+A healthy body helps you learn better.
+Health gives us strength and energy.
+`,
+      },
+      {
+        id: 27,
+        title: "27. Be Caring",
+
+        content: `
+Be gentle and caring to everyone.
+Care and kindness spread love.
+`,
+      },
+      {
+        id: 28,
+        title: "28. Be Courageous",
+
+        content: `
+Courage helps us face challenges.
+Bravery gives us confidence.
+`,
+      },
+      {
+        id: 29,
+        title: "29. Listen and Learn",
+
+        content: `
+Listen more and learn more.
+Good listening improves understanding.
+`,
+      },
+      {
+        id: 30,
+        title: "30. Friendship and Kindness",
+
+        content: `
+Friendship grows with kindness.
+Kind hearts create true friends.
+`,
+      },
+      {
+        id: 31,
+        title: "31. Ask Questions",
+
+        content: `
+Never stop asking questions.
+Questions increase knowledge.
+`,
+      },
+      {
+        id: 32,
+        title: "32. Cheerful Heart",
+
+        content: `
+A cheerful heart learns faster.
+Happiness makes learning easy.
+`,
+      },
+      {
+        id: 33,
+        title: "33. Good Behavior",
+
+        content: `
+Good behavior is everyone’s strength.
+Respectful actions inspire others.
+`,
+      },
+      {
+        id: 34,
+        title: "34. Learn Happily",
+
+        content: `
+Learn with happiness and confidence.
+Joyful learning brings success.
+`,
+      },
+      {
+        id: 35,
+        title: "35. Protect Nature",
+
+        content: `
+Respect nature and protect it.
+Nature gives us life and beauty.
+`,
+      },
+      {
+        id: 36,
+        title: "36. Small Efforts Matter",
+
+        content: `
+Small efforts bring big results.
+Little steps lead to success.
+`,
+      },
+      {
+        id: 37,
+        title: "37. Stay Calm",
+
+        content: `
+Stay calm and think wisely.
+Patience helps us make better decisions.
+`,
+      },
+      {
+        id: 38,
+        title: "38. Every Child Can Succeed",
+
+        content: `
+Every child can achieve success.
+Believe in your abilities.
+`,
+      },
+      {
+        id: 39,
+        title: "39. Good Words Matter",
+
+        content: `
+Good words leave a good impression.
+Positive words make people happy.
+`,
+      },
+      {
+        id: 40,
+        title: "40. Improve Yourself",
+
+        content: `
+Always try to improve yourself.
+Growth comes through learning.
+`,
+      },
+      {
+        id: 41,
+        title: "41. Discipline First",
+
+        content: `
+Success starts with discipline.
+Discipline creates strong character.
+`,
+      },
+      {
+        id: 42,
+        title: "42. Love Family",
+
+        content: `
+Love your family and respect elders.
+Family gives support and care.
+`,
+      },
+      {
+        id: 43,
+        title: "43. Keep Surroundings Clean",
+
+        content: `
+Keep your surroundings neat and clean.
+Clean places keep us healthy.
+`,
+      },
+      {
+        id: 44,
+        title: "44. Think Positive",
+
+        content: `
+Positive thinking brings positive results.
+A positive mind creates confidence.
+`,
+      },
+      {
+        id: 45,
+        title: "45. Be Patient",
+
+        content: `
+Patience helps us become stronger.
+Patience leads to better success.
+`,
+      },
+      {
+        id: 46,
+        title: "46. Be Proud of Honest Work",
+
+        content: `
+Be proud of your honest work.
+Honesty makes every achievement valuable.
+`,
+      },
+      {
+        id: 47,
+        title: "47. Learn Useful Things",
+
+        content: `
+Learn something useful every day.
+Knowledge helps us grow wiser.
+`,
+      },
+      {
+        id: 48,
+        title: "48. Start Small",
+
+        content: `
+Great things begin with small steps.
+Every big success starts small.
+`,
+      },
+      {
+        id: 49,
+        title: "49. Share Happiness",
+
+        content: `
+Happiness grows when shared with others.
+Sharing joy makes life beautiful.
+`,
+      },
+      {
+        id: 50,
+        title: "50. Value Education",
+
+        content: `
+Education is the key to a bright future.
+Learning opens the door to success.
 `,
       },
     ],
@@ -3041,6 +4246,929 @@ The foolish crocodile took him back.
 The monkey jumped onto the tree and saved himself.
 
 Moral: Presence of mind can save us from danger.
+`,
+      },
+    ],
+    goodThoughts: [
+      {
+        id: 1,
+        title: "1. Respect Teachers",
+
+        content: `
+Respect your teachers every day.
+They guide you toward success.
+Good students always listen carefully.
+`,
+      },
+      {
+        id: 2,
+        title: "2. Hard Work Wins",
+
+        content: `
+Hard work brings great success.
+Keep trying without giving up.
+Every effort makes you stronger.
+`,
+      },
+      {
+        id: 3,
+        title: "3. Love Reading",
+
+        content: `
+Reading books improves knowledge.
+Books teach many valuable lessons.
+A good reader becomes wiser daily.
+`,
+      },
+      {
+        id: 4,
+        title: "4. Speak Politely",
+
+        content: `
+Always speak politely with others.
+Kind words make people happy.
+Good manners show good character.
+`,
+      },
+      {
+        id: 5,
+        title: "5. Believe in Yourself",
+
+        content: `
+Believe in your abilities always.
+Confidence helps you face challenges.
+Never think you are weak.
+`,
+      },
+      {
+        id: 6,
+        title: "6. Value Education",
+
+        content: `
+Education is a precious gift.
+Learning opens many new doors.
+Knowledge helps you achieve dreams.
+`,
+      },
+      {
+        id: 7,
+        title: "7. Help Others",
+
+        content: `
+Help others whenever possible.
+Helping people spreads happiness everywhere.
+Kindness makes the world better.
+`,
+      },
+      {
+        id: 8,
+        title: "8. Learn from Mistakes",
+
+        content: `
+Every mistake teaches something useful.
+Learn and move forward confidently.
+Mistakes help us grow stronger.
+`,
+      },
+      {
+        id: 9,
+        title: "9. Follow Discipline",
+
+        content: `
+Discipline leads to a better life.
+Follow rules with honesty and care.
+Responsible students become successful people.
+`,
+      },
+      {
+        id: 10,
+        title: "10. Use Time Wisely",
+
+        content: `
+Time is very valuable.
+Use every minute wisely.
+Never waste your learning time.
+`,
+      },
+      {
+        id: 11,
+        title: "11. Value Friendship",
+
+        content: `
+Friendship grows through kindness.
+Good friends support each other.
+True friendship brings happiness.
+`,
+      },
+      {
+        id: 12,
+        title: "12. Practice Daily",
+
+        content: `
+Practice daily to improve skills.
+Regular practice builds confidence slowly.
+Success comes through consistent effort.
+`,
+      },
+      {
+        id: 13,
+        title: "13. Stay Positive",
+
+        content: `
+Stay positive in difficult times.
+Positive thoughts create positive results.
+Hope gives strength to continue.
+`,
+      },
+      {
+        id: 14,
+        title: "14. Keep Clean",
+
+        content: `
+Keep your classroom clean always.
+Clean surroundings create better learning.
+Cleanliness shows responsibility and care.
+`,
+      },
+      {
+        id: 15,
+        title: "15. Dream Big",
+
+        content: `
+Dream big and work hard.
+Goals become real through effort.
+Determination leads to great success.
+`,
+      },
+      {
+        id: 16,
+        title: "16. Listen Carefully",
+
+        content: `
+Listen carefully during lessons.
+Attention helps you understand better.
+Focused students learn more quickly.
+`,
+      },
+      {
+        id: 17,
+        title: "17. Choose Honesty",
+
+        content: `
+Honesty is a wonderful quality.
+Truthful people earn everyone’s trust.
+Always choose honesty in life.
+`,
+      },
+      {
+        id: 18,
+        title: "18. Never Fear Failure",
+
+        content: `
+Never be afraid of failure.
+Failures teach important life lessons.
+Try again with more confidence.
+`,
+      },
+      {
+        id: 19,
+        title: "19. Respect Everyone",
+
+        content: `
+Respect everyone around you.
+Respect creates strong relationships everywhere.
+Good behavior earns true respect.
+`,
+      },
+      {
+        id: 20,
+        title: "20. Keep Smiling",
+
+        content: `
+A smile spreads happiness everywhere.
+Happy faces brighten every place.
+Always carry joy in your heart.
+`,
+      },
+      {
+        id: 21,
+        title: "21. Enjoy Learning",
+
+        content: `
+Learning new things is exciting.
+Knowledge makes life more meaningful.
+Curious minds grow every day.
+`,
+      },
+      {
+        id: 22,
+        title: "22. Be Patient",
+
+        content: `
+Patience helps achieve big goals.
+Good things take time and effort.
+Stay calm and keep trying.
+`,
+      },
+      {
+        id: 23,
+        title: "23. Share Happiness",
+
+        content: `
+Share your happiness with others.
+Sharing creates love and friendship.
+Caring hearts are always respected.
+`,
+      },
+      {
+        id: 24,
+        title: "24. Build Good Habits",
+
+        content: `
+Good habits shape your future.
+Healthy habits build strong character.
+Start practicing good habits today.
+`,
+      },
+      {
+        id: 25,
+        title: "25. Finish Work on Time",
+
+        content: `
+Always complete your work on time.
+Punctuality shows responsibility and discipline.
+Successful students value time greatly.
+`,
+      },
+      {
+        id: 26,
+        title: "26. Be Courageous",
+
+        content: `
+Courage helps us face difficulties.
+Brave students never lose hope.
+Confidence defeats fear and doubt.
+`,
+      },
+      {
+        id: 27,
+        title: "27. Be Thankful",
+
+        content: `
+Be thankful for your education.
+Learning is a valuable opportunity.
+Education changes lives forever.
+`,
+      },
+      {
+        id: 28,
+        title: "28. Protect Nature",
+
+        content: `
+Respect nature and keep it clean.
+Nature gives us many blessings.
+Protecting Earth is our duty.
+`,
+      },
+      {
+        id: 29,
+        title: "29. Stay Healthy",
+
+        content: `
+Stay active and healthy daily.
+Healthy bodies support healthy minds.
+Exercise keeps us energetic always.
+`,
+      },
+      {
+        id: 30,
+        title: "30. Ask Questions",
+
+        content: `
+Never stop asking questions.
+Questions help you gain knowledge.
+Curious students learn more deeply.
+`,
+      },
+      {
+        id: 31,
+        title: "31. Stay Determined",
+
+        content: `
+Success begins with determination.
+Strong determination overcomes all challenges.
+Keep moving toward your dreams.
+`,
+      },
+      {
+        id: 32,
+        title: "32. Stay Focused",
+
+        content: `
+Good students stay focused always.
+Focus improves learning and understanding.
+Concentration leads to better results.
+`,
+      },
+      {
+        id: 33,
+        title: "33. Speak Truth",
+
+        content: `
+Speak truth in every situation.
+Truth builds trust and respect.
+Honesty makes life peaceful.
+`,
+      },
+      {
+        id: 34,
+        title: "34. Spread Kindness",
+
+        content: `
+Happiness comes from helping others.
+Helping hearts spread love everywhere.
+Kindness brings inner peace always.
+`,
+      },
+      {
+        id: 35,
+        title: "35. Believe You Can",
+
+        content: `
+Believe that you can succeed.
+Positive thinking increases confidence greatly.
+Self-belief leads to achievement.
+`,
+      },
+      {
+        id: 36,
+        title: "36. Lifelong Learning",
+
+        content: `
+Learning is a lifelong journey.
+Every day teaches something valuable.
+Never stop gaining knowledge.
+`,
+      },
+      {
+        id: 37,
+        title: "37. Respect Parents",
+
+        content: `
+Respect your parents sincerely.
+Parents always want your success.
+Their blessings make you stronger.
+`,
+      },
+      {
+        id: 38,
+        title: "38. Value Teamwork",
+
+        content: `
+Teamwork helps achieve big goals.
+Working together brings better results.
+Unity creates strength and success.
+`,
+      },
+      {
+        id: 39,
+        title: "39. Stay Calm",
+
+        content: `
+Stay calm during difficult moments.
+Patience helps solve many problems.
+Wise minds remain peaceful always.
+`,
+      },
+      {
+        id: 40,
+        title: "40. Use Kind Words",
+
+        content: `
+Use kind words every day.
+Gentle speech wins many hearts.
+Politeness makes conversations beautiful.
+`,
+      },
+      {
+        id: 41,
+        title: "41. Discover Talent",
+
+        content: `
+Every child has unique talent.
+Discover and improve your abilities.
+Talent grows through hard work.
+`,
+      },
+      {
+        id: 42,
+        title: "42. Think Positive",
+
+        content: `
+A positive mind brings success.
+Good thoughts create better actions.
+Optimism makes life brighter always.
+`,
+      },
+      {
+        id: 43,
+        title: "43. Be Responsible",
+
+        content: `
+Be responsible for your actions.
+Responsibility builds strong character slowly.
+Responsible students earn trust easily.
+`,
+      },
+      {
+        id: 44,
+        title: "44. Learn from Great People",
+
+        content: `
+Learn from successful people.
+Good examples inspire great actions.
+Wise students observe and improve.
+`,
+      },
+      {
+        id: 45,
+        title: "45. Stay Humble",
+
+        content: `
+Never laugh at others’ mistakes.
+Encourage people with kindness instead.
+Respect feelings and stay humble.
+`,
+      },
+      {
+        id: 46,
+        title: "46. Be Patient for Success",
+
+        content: `
+Great achievements need patience.
+Success does not come instantly.
+Keep working with dedication daily.
+`,
+      },
+      {
+        id: 47,
+        title: "47. Show Good Behavior",
+
+        content: `
+Good behavior reflects good upbringing.
+Respectful children are loved everywhere.
+Character is more valuable than wealth.
+`,
+      },
+      {
+        id: 48,
+        title: "48. Never Give Up",
+
+        content: `
+Keep trying until you succeed.
+Persistence defeats every difficulty eventually.
+Winners never stop believing themselves.
+`,
+      },
+      {
+        id: 49,
+        title: "49. Learn Useful Things",
+
+        content: `
+Spend time learning useful things.
+Knowledge helps build a better future.
+Wise students value education highly.
+`,
+      },
+      {
+        id: 50,
+        title: "50. Keep Improving",
+
+        content: `
+Always aim to become better.
+Self-improvement brings real success.
+Learning never truly ends.
+`,
+      },
+    ],
+    publicSpeaking: [
+      {
+        id: 1,
+
+        title: "1. Importance of Discipline",
+
+        content: `
+Discipline teaches us to follow rules and behave responsibly in every situation.
+Disciplined students complete their work on time and respect teachers, parents, and elders.
+Discipline helps us stay organized, focused, and confident in life.
+It also improves our habits, personality, and decision-making skills.
+A disciplined person can achieve success and earn respect everywhere.
+`,
+      },
+
+      {
+        id: 2,
+
+        title: "2. Save Water",
+
+        content: `
+Water is necessary for all living beings on Earth.
+We use water for drinking, cooking, cleaning, farming, and many other daily activities.
+We should never waste water carelessly in our homes or schools.
+Saving water today will protect our future tomorrow.
+Every drop of water is precious and important for life.
+`,
+      },
+
+      {
+        id: 3,
+
+        title: "3. Importance of Trees",
+
+        content: `
+Trees give us oxygen, fruits, flowers, medicine, and shade.
+They help keep the environment clean, green, and beautiful.
+Trees also provide shelter to birds and animals.
+Without trees, life on Earth would become difficult and unhealthy.
+We should plant more trees and protect them from being cut down unnecessarily.
+`,
+      },
+
+      {
+        id: 4,
+
+        title: "4. Healthy Food",
+
+        content: `
+My favorite healthy food is ____________.
+Healthy food keeps our body strong, active, and energetic throughout the day.
+Fruits, vegetables, milk, and nuts improve our health and immunity greatly.
+Healthy eating also improves concentration and physical growth in children.
+We should avoid eating too much junk food because it harms our health.
+`,
+      },
+
+      {
+        id: 5,
+
+        title: "5. Good Manners",
+
+        content: `
+Good manners make us respectful and lovable people in society.
+We should speak politely and behave kindly with everyone around us.
+Saying “please,” “sorry,” and “thank you” shows respect and good behavior.
+Good manners help us create strong friendships and positive relationships.
+People always admire students who have polite and respectful behavior.
+`,
+      },
+
+      {
+        id: 6,
+
+        title: "6. Importance of Education",
+
+        content: `
+I want to become a ____________ in the future.
+Education helps us gain knowledge, wisdom, confidence, and important life skills.
+Educated people can achieve their dreams and contribute positively to society.
+Schools teach discipline, responsibility, honesty, and teamwork along with studies.
+Education is the key to success and a bright future.
+`,
+      },
+
+      {
+        id: 7,
+
+        title: "7. Importance of Cleanliness",
+
+        content: `
+Cleanliness keeps us healthy, fresh, and active every day.
+We should keep our classroom, home, playground, and surroundings neat and clean.
+Clean habits protect us from diseases, germs, and infections.
+A clean environment also looks beautiful, peaceful, and pleasant.
+Cleanliness is an important part of a healthy and happy life.
+`,
+      },
+
+      {
+        id: 8,
+
+        title: "8. Helping Others",
+
+        content: `
+Helping others is a wonderful quality that makes the world better and happier.
+Even small help can bring comfort and joy to someone’s life.
+Helping people teaches kindness, humanity, and responsibility.
+Kind people are respected and loved everywhere in society.
+We should always help those who are in need whenever possible.
+`,
+      },
+
+      {
+        id: 9,
+
+        title: "9. Importance of Exercise",
+
+        content: `
+My favorite exercise is ____________.
+Exercise keeps our body healthy, active, and energetic every day.
+Daily exercise improves strength, concentration, flexibility, and physical fitness.
+It also protects us from many diseases and laziness.
+Healthy students can study better and perform well in different activities.
+`,
+      },
+
+      {
+        id: 10,
+
+        title: "10. Honesty",
+
+        content: `
+Honesty is one of the best and most valuable qualities in life.
+Honest people are trusted, respected, and admired everywhere in society.
+Speaking the truth gives confidence, peace of mind, and self-respect.
+Honest students build strong relationships with teachers, parents, and friends.
+We should always be honest in every situation.
+`,
+      },
+
+      {
+        id: 11,
+
+        title: "11. Kindness",
+
+        content: `
+Kindness makes people feel happy, comfortable, and peaceful.
+Kind words and actions spread positivity and joy everywhere around us.
+Helping and respecting others are important signs of kindness.
+Kind people are loved and appreciated by everyone in society.
+Kindness makes the world a better and more beautiful place to live.
+`,
+      },
+
+      {
+        id: 12,
+
+        title: "12. Importance of Friendship",
+
+        content: `
+Friendship is a beautiful and valuable relationship in life.
+Good friends support and encourage each other during happy and difficult times.
+True friendship brings happiness, trust, confidence, and emotional support.
+Friends make school life more enjoyable and memorable.
+We should always choose honest, caring, and positive friends.
+`,
+      },
+
+      {
+        id: 13,
+
+        title: "13. Importance of Time",
+
+        content: `
+Time is very precious and valuable in life.
+Once time is lost, it never returns again.
+We should use our time wisely for study, exercise, and useful activities.
+Good time management helps students complete their work properly and peacefully.
+Students who value time often become successful in life.
+`,
+      },
+
+      {
+        id: 14,
+
+        title: "14. Positive Thinking",
+
+        content: `
+Positive thinking helps us stay happy, confident, and peaceful in life.
+Optimistic students face problems bravely and calmly without losing hope.
+Good thoughts create positive actions, habits, and relationships.
+Positive people inspire others with their attitude and behavior.
+Positive thinking helps us achieve success and happiness.
+`,
+      },
+
+      {
+        id: 15,
+
+        title: "15. Importance of Nature",
+
+        content: `
+Nature gives us fresh air, water, food, and beautiful surroundings.
+Trees, rivers, mountains, animals, and flowers make Earth peaceful and attractive.
+Nature supports all living beings on this planet.
+We should protect nature from pollution and harmful activities.
+Caring for nature helps create a healthier and better future.
+`,
+      },
+
+      {
+        id: 16,
+
+        title: "16. Reading Books",
+
+        content: `
+My favorite book is ____________.
+Reading books increases our knowledge, imagination, creativity, and vocabulary.
+Books teach valuable lessons and improve communication skills greatly.
+Reading daily also improves concentration and thinking abilities.
+Books are like true friends because they guide us toward learning and wisdom.
+`,
+      },
+
+      {
+        id: 17,
+
+        title: "17. Importance of Sharing",
+
+        content: `
+Sharing is a wonderful habit that spreads happiness and kindness everywhere.
+Sharing things with others shows care, love, and humanity.
+Sharing also strengthens friendships and relationships greatly.
+Caring and helpful people are respected and loved by everyone.
+We should always learn to share happily with others.
+`,
+      },
+
+      {
+        id: 18,
+
+        title: "18. Importance of Respect",
+
+        content: `
+We should respect parents, teachers, elders, friends, and everyone around us.
+Respectful behavior creates strong and peaceful relationships everywhere.
+Good students speak politely and behave kindly with others.
+Respect is a sign of good character, discipline, and maturity.
+Respecting others also helps us earn respect from society.
+`,
+      },
+
+      {
+        id: 19,
+
+        title: "19. My Daily Routine",
+
+        content: `
+I wake up at ____________.
+A good daily routine helps us stay disciplined, active, and organized in life.
+It gives enough time for study, play, exercise, rest, and family.
+Regular habits improve our health, concentration, and time management skills.
+A proper routine helps students become responsible and successful people.
+`,
+      },
+
+      {
+        id: 20,
+
+        title: "20. Importance of Punctuality",
+
+        content: `
+Punctuality means doing every work on time without delay.
+Students who are punctual become disciplined and responsible people.
+Time management improves confidence, productivity, and performance greatly.
+Punctual students complete their tasks peacefully and properly.
+Good habits create a bright and successful future.
+`,
+      },
+
+      {
+        id: 21,
+
+        title: "21. Teamwork",
+
+        content: `
+Teamwork helps people achieve goals together successfully and peacefully.
+Working together improves understanding, friendship, and cooperation among students.
+Team spirit teaches sharing, patience, and responsibility.
+Unity always creates strength, confidence, and success.
+Teamwork is important in both school and daily life.
+`,
+      },
+
+      {
+        id: 22,
+
+        title: "22. Importance of Self-Confidence",
+
+        content: `
+I feel confident when I ____________.
+Self-confidence helps us face challenges bravely and positively in life.
+Confident students speak clearly and perform better in studies and activities.
+Believing in ourselves increases courage, motivation, and determination.
+Confidence is very important for achieving success in life.
+`,
+      },
+
+      {
+        id: 23,
+
+        title: "23. Caring for Animals",
+
+        content: `
+Animals are an important part of nature and our environment.
+They teach us love, loyalty, care, and friendship.
+Some animals help humans in farming, transportation, and protection.
+Animals also make nature beautiful and balanced.
+We should protect animals and treat them kindly and responsibly.
+`,
+      },
+
+      {
+        id: 24,
+
+        title: "24. Importance of Hard Work",
+
+        content: `
+Hard work is the key to success in every field of life.
+Successful people achieve their goals through dedication, patience, and effort.
+Students should work sincerely toward their dreams and ambitions.
+Hard work improves confidence, skills, and knowledge greatly.
+Hard work always brings positive results in the future.
+`,
+      },
+
+      {
+        id: 25,
+
+        title: "25. Importance of Healthy Habits",
+
+        content: `
+Healthy habits keep our body and mind active, fresh, and strong.
+Eating nutritious food and exercising daily improve our health greatly.
+Good habits also improve discipline, concentration, and confidence.
+Healthy students can learn better and perform well in school activities.
+Healthy habits create a happy and successful life.
+`,
+      },
+
+      {
+        id: 26,
+
+        title: "26. Role of Teachers",
+
+        content: `
+Teachers guide students toward knowledge, wisdom, and success.
+They teach us important lessons and good values in life.
+Teachers encourage students to work hard and believe in themselves.
+They help students improve their skills and confidence daily.
+We should always respect and obey our teachers.
+`,
+      },
+
+      {
+        id: 27,
+
+        title: "27. Importance of Saving Electricity",
+
+        content: `
+Electricity is very important in our daily life and modern world.
+We use electricity for lights, fans, computers, and many other things.
+We should switch off electrical appliances when not needed.
+Saving electricity helps protect natural resources and the environment.
+Responsible students use electricity carefully and wisely.
+`,
+      },
+
+      {
+        id: 28,
+
+        title: "28. Importance of Patience",
+
+        content: `
+Patience helps us stay calm during difficult situations and challenges.
+Good things take time, effort, and dedication to achieve.
+Patient students solve problems more wisely and peacefully.
+Patience improves relationships and decision-making abilities.
+Patience leads toward success, happiness, and inner peace.
+`,
+      },
+
+      {
+        id: 29,
+
+        title: "29. Importance of Responsibility",
+
+        content: `
+Responsible students complete their work properly and on time.
+Responsibility teaches discipline, honesty, and good behavior.
+Responsible people are trusted and respected everywhere in society.
+Responsibility helps students become independent and confident individuals.
+Good responsibility builds strong character and leadership qualities.
+`,
+      },
+
+      {
+        id: 30,
+
+        title: "30. Importance of Smiling",
+
+        content: `
+A smile spreads happiness and positivity everywhere around us.
+Smiling makes people feel comfortable, peaceful, and welcomed.
+Happy faces create better friendships and stronger relationships.
+A simple smile can brighten someone’s difficult day.
+Smiling also improves confidence and creates a positive atmosphere.
 `,
       },
     ],
@@ -4119,6 +6247,809 @@ The audience clapped loudly for him.
 Ayaan won second prize, but he felt proud because he had overcome his fear.
 
 Moral: Practice and confidence help us succeed.
+`,
+      },
+    ],
+    goodThoughts: [
+      {
+        id: 1,
+        title: "1. Hard Work Brings Success",
+
+        content: `
+Success comes through hard work.
+Keep learning with full dedication.
+Every effort brings improvement.
+`,
+      },
+      {
+        id: 2,
+        title: "2. Respect Everyone",
+
+        content: `
+Respect is earned through behavior.
+Speak politely with everyone always.
+Kindness creates strong friendships.
+`,
+      },
+      {
+        id: 3,
+        title: "3. Value Education",
+
+        content: `
+Education lights the path forward.
+Knowledge helps achieve big dreams.
+Learning makes life meaningful.
+`,
+      },
+      {
+        id: 4,
+        title: "4. Believe in Yourself",
+
+        content: `
+Never stop believing in yourself.
+Confidence helps overcome every challenge.
+Positive minds achieve great things.
+`,
+      },
+      {
+        id: 5,
+        title: "5. Follow Discipline",
+
+        content: `
+Discipline creates successful students.
+Follow rules with honesty daily.
+Responsible habits build strong character.
+`,
+      },
+      {
+        id: 6,
+        title: "6. Read More Books",
+
+        content: `
+Reading books increases wisdom.
+Books teach valuable life lessons.
+Readers become better thinkers.
+`,
+      },
+      {
+        id: 7,
+        title: "7. Use Time Wisely",
+
+        content: `
+Time is extremely precious.
+Use every moment wisely today.
+Good students value their time.
+`,
+      },
+      {
+        id: 8,
+        title: "8. Help Others",
+
+        content: `
+Helping others brings happiness.
+Kind hearts are always respected.
+Kindness makes the world beautiful.
+`,
+      },
+      {
+        id: 9,
+        title: "9. Learn from Mistakes",
+
+        content: `
+Every mistake teaches something important.
+Learn and improve from failures.
+Mistakes help us grow stronger.
+`,
+      },
+      {
+        id: 10,
+        title: "10. Work for Dreams",
+
+        content: `
+Dreams become real through effort.
+Work hard toward your goals.
+Determination leads to success.
+`,
+      },
+      {
+        id: 11,
+        title: "11. Respect Teachers",
+
+        content: `
+Always listen to your teachers.
+Teachers guide students toward knowledge.
+Respect their valuable teachings.
+`,
+      },
+      {
+        id: 12,
+        title: "12. True Friendship",
+
+        content: `
+Friendship grows through honesty.
+True friends support each other.
+Good friendships bring happiness.
+`,
+      },
+      {
+        id: 13,
+        title: "13. Stay Positive",
+
+        content: `
+Stay positive during difficulties.
+Positive thinking gives inner strength.
+Hope helps us move forward.
+`,
+      },
+      {
+        id: 14,
+        title: "14. Keep Clean",
+
+        content: `
+A clean classroom inspires learning.
+Clean surroundings create healthy minds.
+Cleanliness shows good responsibility.
+`,
+      },
+      {
+        id: 15,
+        title: "15. Ask Questions",
+
+        content: `
+Never be afraid to ask questions.
+Questions increase understanding and knowledge.
+Curious students learn faster.
+`,
+      },
+      {
+        id: 16,
+        title: "16. Be Courageous",
+
+        content: `
+Courage helps defeat fear.
+Brave hearts face every challenge.
+Confidence builds strong personalities.
+`,
+      },
+      {
+        id: 17,
+        title: "17. Practice Daily",
+
+        content: `
+Practice daily to improve skills.
+Regular practice creates perfection slowly.
+Success needs continuous effort.
+`,
+      },
+      {
+        id: 18,
+        title: "18. Choose Honesty",
+
+        content: `
+Honest people earn true respect.
+Truthfulness builds trust everywhere.
+Always choose honesty in life.
+`,
+      },
+      {
+        id: 19,
+        title: "19. Be Patient",
+
+        content: `
+Patience leads to better results.
+Good things need time and effort.
+Stay calm while working hard.
+`,
+      },
+      {
+        id: 20,
+        title: "20. Build Good Habits",
+
+        content: `
+Good habits shape your future.
+Healthy habits create successful lives.
+Start practicing them today.
+`,
+      },
+      {
+        id: 21,
+        title: "21. Respect Parents",
+
+        content: `
+Respect your parents always.
+Parents sacrifice for your happiness.
+Their blessings give true strength.
+`,
+      },
+      {
+        id: 22,
+        title: "22. Keep Learning",
+
+        content: `
+Learning never truly ends.
+Every day teaches something valuable.
+Wise students stay curious always.
+`,
+      },
+      {
+        id: 23,
+        title: "23. Spread Happiness",
+
+        content: `
+Smile and spread happiness.
+Happy faces brighten every place.
+Joy makes learning more enjoyable.
+`,
+      },
+      {
+        id: 24,
+        title: "24. Value Teamwork",
+
+        content: `
+Teamwork creates greater success.
+Working together solves problems easily.
+Unity makes everyone stronger.
+`,
+      },
+      {
+        id: 25,
+        title: "25. Speak Kindly",
+
+        content: `
+Speak kindly to everyone.
+Gentle words win many hearts.
+Politeness shows true character.
+`,
+      },
+      {
+        id: 26,
+        title: "26. Stay Focused",
+
+        content: `
+Stay focused on your studies.
+Focus improves learning greatly.
+Concentration leads to achievement.
+`,
+      },
+      {
+        id: 27,
+        title: "27. Small Efforts Matter",
+
+        content: `
+Success begins with small efforts.
+Little steps create big achievements.
+Never ignore small improvements.
+`,
+      },
+      {
+        id: 28,
+        title: "28. Protect Nature",
+
+        content: `
+Respect nature and protect it.
+Nature gives us many blessings.
+Saving Earth is our duty.
+`,
+      },
+      {
+        id: 29,
+        title: "29. Respect Feelings",
+
+        content: `
+Never laugh at others.
+Encourage people with kindness instead.
+Respect everyone’s feelings sincerely.
+`,
+      },
+      {
+        id: 30,
+        title: "30. Self Confidence",
+
+        content: `
+Self-confidence creates strong students.
+Believe in your own abilities.
+Confidence leads to achievement.
+`,
+      },
+      {
+        id: 31,
+        title: "31. Learn from Failures",
+
+        content: `
+Learn from your failures wisely.
+Failures teach important life lessons.
+Never lose hope after mistakes.
+`,
+      },
+      {
+        id: 32,
+        title: "32. Positive Attitude",
+
+        content: `
+A positive attitude changes life.
+Positive thoughts create better actions.
+Optimism brings inner happiness.
+`,
+      },
+      {
+        id: 33,
+        title: "33. Stay Healthy",
+
+        content: `
+Stay healthy and active daily.
+Healthy bodies support healthy minds.
+Exercise keeps us energetic.
+`,
+      },
+      {
+        id: 34,
+        title: "34. Work with Dedication",
+
+        content: `
+Great success needs dedication.
+Work sincerely toward your dreams.
+Hard work never goes wasted.
+`,
+      },
+      {
+        id: 35,
+        title: "35. Be Responsible",
+
+        content: `
+Responsible students complete tasks timely.
+Punctuality shows discipline and maturity.
+Time management improves success.
+`,
+      },
+      {
+        id: 36,
+        title: "36. Respect All Beings",
+
+        content: `
+Respect all living beings.
+Compassion creates peaceful relationships everywhere.
+Kind hearts are truly beautiful.
+`,
+      },
+      {
+        id: 37,
+        title: "37. Share Happiness",
+
+        content: `
+Sharing increases happiness greatly.
+Helping others creates lasting joy.
+Caring people inspire everyone.
+`,
+      },
+      {
+        id: 38,
+        title: "38. Never Give Up",
+
+        content: `
+Good students never give up.
+Persistence defeats every difficulty eventually.
+Keep trying with determination.
+`,
+      },
+      {
+        id: 39,
+        title: "39. Power of Education",
+
+        content: `
+Education is a powerful weapon.
+Knowledge changes lives for better.
+Learning creates endless opportunities.
+`,
+      },
+      {
+        id: 40,
+        title: "40. Stay Calm",
+
+        content: `
+Calm minds make wise decisions.
+Patience helps solve many problems.
+Stay peaceful in difficulties.
+`,
+      },
+      {
+        id: 41,
+        title: "41. Stay Humble",
+
+        content: `
+Great leaders stay humble.
+Humility earns love and respect.
+Proud hearts lose true friendships.
+`,
+      },
+      {
+        id: 42,
+        title: "42. Keep Improving",
+
+        content: `
+Success requires continuous learning.
+Keep improving your abilities daily.
+Growth comes through consistent practice.
+`,
+      },
+      {
+        id: 43,
+        title: "43. Show Good Manners",
+
+        content: `
+Good manners show good upbringing.
+Respectful behavior impresses everyone greatly.
+Character matters more than wealth.
+`,
+      },
+      {
+        id: 44,
+        title: "44. Use Opportunities",
+
+        content: `
+Never waste valuable opportunities.
+Every chance teaches something useful.
+Use opportunities to improve yourself.
+`,
+      },
+      {
+        id: 45,
+        title: "45. Listen Carefully",
+
+        content: `
+Listening carefully improves understanding.
+Attention helps remember lessons better.
+Focused students achieve higher success.
+`,
+      },
+      {
+        id: 46,
+        title: "46. Be Grateful",
+
+        content: `
+Happiness comes from gratitude.
+Be thankful for every blessing.
+Grateful hearts stay peaceful.
+`,
+      },
+      {
+        id: 47,
+        title: "47. Think Creatively",
+
+        content: `
+Creative minds solve problems easily.
+Think differently and stay innovative.
+Creativity makes learning enjoyable.
+`,
+      },
+      {
+        id: 48,
+        title: "48. Learn Forgiveness",
+
+        content: `
+Learn to forgive others.
+Forgiveness brings peace and happiness.
+Kind hearts stay free from anger.
+`,
+      },
+      {
+        id: 49,
+        title: "49. Stay Goal Focused",
+
+        content: `
+Keep your goals clear always.
+Focused goals guide your actions.
+Determination helps achieve success.
+`,
+      },
+      {
+        id: 50,
+        title: "50. Improve Daily",
+
+        content: `
+Always try becoming better daily.
+Self-improvement creates true success.
+Learning makes life brighter.
+`,
+      },
+    ],
+    publicSpeaking: [
+      {
+        id: 1,
+
+        title: "1. My Best Friend",
+
+        content: `
+My best friend’s name is ____________. We study, play, and help each other every day. A true friend always supports us during happy and difficult times. We share our ideas, secrets, and joyful moments together. I feel very lucky to have such a caring and wonderful friend in my life.
+`,
+      },
+
+      {
+        id: 2,
+
+        title: "2. Importance of Education",
+
+        content: `
+I want to become a ____________ in the future. Education helps us gain knowledge, wisdom, and confidence. Educated people can achieve their dreams and help society grow. Schools teach us discipline, values, and important life skills. Education is the key to success and a bright future.
+`,
+      },
+
+      {
+        id: 3,
+
+        title: "3. My School",
+
+        content: `
+My school’s name is ____________. It is a wonderful place where we learn many new things every day. My teachers guide us with care, patience, and kindness. Our school also teaches discipline, honesty, and teamwork. I enjoy going to school because it helps me become a better student and person.
+`,
+      },
+
+      {
+        id: 4,
+
+        title: "4. Healthy Food",
+
+        content: `
+My favorite healthy food is ____________. Healthy food keeps our body strong, active, and energetic. Fruits, vegetables, milk, and nuts are very good for our health. Healthy eating improves our concentration and keeps us fit. We should avoid eating too much junk food because it can harm our health.
+`,
+      },
+
+      {
+        id: 5,
+
+        title: "5. Importance of Discipline",
+
+        content: `
+Discipline teaches us to follow rules and behave responsibly. Disciplined students complete their work on time and respect others. Discipline helps us stay organized and focused in life. It also improves our habits and personality. A disciplined person can achieve success and earn respect everywhere.
+`,
+      },
+
+      {
+        id: 6,
+
+        title: "6. My Favorite Teacher",
+
+        content: `
+My favorite teacher’s name is ____________. She teaches every lesson clearly and kindly. She always encourages students to work hard and believe in themselves. Teachers guide us toward knowledge and success in life. I respect my teacher because she inspires me to become a good student.
+`,
+      },
+
+      {
+        id: 7,
+
+        title: "7. Importance of Time",
+
+        content: `
+Time is very precious in life. Once time is lost, it never returns again. We should use our time wisely for study, exercise, and good activities. Students who manage time properly become more successful and confident. Good time management helps us complete our work without stress.
+`,
+      },
+
+      {
+        id: 8,
+
+        title: "8. My Family",
+
+        content: `
+There are ____________ members in my family. My family always loves, supports, and cares for me. We spend happy moments together and help each other during difficult times. Family teaches us good manners, values, and responsibilities. I feel safe and happy with my family.
+`,
+      },
+
+      {
+        id: 9,
+
+        title: "9. Reading Books",
+
+        content: `
+My favorite book is ____________. Reading books increases our knowledge, imagination, and creativity. Books teach us valuable lessons and improve our vocabulary. Reading daily also improves communication and thinking skills. Books are like true friends because they guide us toward learning and wisdom.
+`,
+      },
+
+      {
+        id: 10,
+
+        title: "10. Importance of Trees",
+
+        content: `
+Trees give us oxygen, fruits, flowers, medicine, and shade. They help keep the environment clean, green, and beautiful. Trees are very important for human life and nature. Birds and animals also depend on trees for shelter. We should plant more trees and protect them from being cut down.
+`,
+      },
+
+      {
+        id: 11,
+
+        title: "11. My Favorite Hobby",
+
+        content: `
+My favorite hobby is ____________. Hobbies help us relax and enjoy our free time in a useful way. They improve our creativity, confidence, and special talents. Hobbies also make us feel fresh and happy. Everyone should develop a good hobby to learn new skills and stay active.
+`,
+      },
+
+      {
+        id: 12,
+
+        title: "12. Importance of Cleanliness",
+
+        content: `
+Cleanliness keeps us healthy, fresh, and active every day. We should keep our classroom, home, and surroundings neat and clean. Clean habits protect us from diseases and infections. A clean environment also looks beautiful and peaceful. Cleanliness is an important part of a healthy life.
+`,
+      },
+
+      {
+        id: 13,
+
+        title: "13. Helping Others",
+
+        content: `
+Helping others is a wonderful quality in life. Kind people make the world happier and better through their actions. Even small help can bring comfort and happiness to others. Helping people in need teaches us kindness and humanity. We should always help others whenever possible.
+`,
+      },
+
+      {
+        id: 14,
+
+        title: "14. Good Manners",
+
+        content: `
+Good manners make us respectful and lovable people. We should speak politely and behave kindly with everyone around us. Saying “please,” “sorry,” and “thank you” shows good manners. Good behavior creates strong friendships and positive relationships. People always respect students with good manners.
+`,
+      },
+
+      {
+        id: 15,
+
+        title: "15. Save Water",
+
+        content: `
+Water is necessary for all living beings on Earth. We should never waste water carelessly in our daily life. Saving water today will protect our future tomorrow. Water is used for drinking, farming, cooking, and cleaning. Every drop of water is precious and important.
+`,
+      },
+
+      {
+        id: 16,
+
+        title: "16. My Favorite Festival",
+
+        content: `
+My favorite festival is ____________. We celebrate it with happiness, excitement, and togetherness. Festivals bring family and friends together and spread joy everywhere. They teach us love, unity, and cultural values. Festivals make our lives colorful, meaningful, and memorable.
+`,
+      },
+
+      {
+        id: 17,
+
+        title: "17. Importance of Exercise",
+
+        content: `
+My favorite exercise is ____________. Exercise keeps our body healthy, active, and energetic every day. Daily exercise improves strength, concentration, and fitness. It also protects us from many diseases and laziness. Healthy students can study better and feel more confident.
+`,
+      },
+
+      {
+        id: 18,
+
+        title: "18. Honesty",
+
+        content: `
+Honesty is one of the best qualities in life. Honest people are trusted and respected everywhere in society. Speaking the truth gives confidence, peace, and self-respect. Honest students build strong relationships with others. We should always be honest in every situation.
+`,
+      },
+
+      {
+        id: 19,
+
+        title: "19. Kindness",
+
+        content: `
+Kindness makes people happy, comfortable, and peaceful. Kind words and actions spread positivity everywhere around us. Helping and respecting others are important signs of kindness. Kind people are loved and appreciated by everyone. Kindness makes the world a better place to live.
+`,
+      },
+
+      {
+        id: 20,
+
+        title: "20. Importance of Friendship",
+
+        content: `
+Friendship is a beautiful and valuable relationship in life. Good friends support and encourage each other in every situation. True friendship brings happiness, trust, and confidence. Friends make school life more enjoyable and memorable. We should always choose good and honest friends.
+`,
+      },
+
+      {
+        id: 21,
+
+        title: "21. My Favorite Subject",
+
+        content: `
+My favorite subject is ____________. I enjoy learning it because it is interesting and useful. It helps me gain knowledge, confidence, and better understanding. I always try to study this subject sincerely and regularly. Learning subjects properly helps students build a bright future.
+`,
+      },
+
+      {
+        id: 22,
+
+        title: "22. Importance of Respect",
+
+        content: `
+We should respect parents, teachers, elders, and everyone around us. Respectful behavior creates strong and peaceful relationships everywhere. Good students speak politely and behave kindly with others. Respect is a sign of good character and discipline. Respecting others also helps us earn respect.
+`,
+      },
+
+      {
+        id: 23,
+
+        title: "23. My Daily Routine",
+
+        content: `
+I wake up at ____________. A good daily routine helps us stay disciplined, active, and organized. It gives enough time for study, play, exercise, and rest. Regular habits improve our health and time management skills. A proper routine helps students become more responsible and successful.
+`,
+      },
+
+      {
+        id: 24,
+
+        title: "24. Importance of Nature",
+
+        content: `
+Nature gives us fresh air, water, food, and beautiful surroundings. Trees, rivers, mountains, and animals make Earth beautiful and peaceful. Nature supports all living beings on this planet. We should protect nature from pollution and harmful activities. Caring for nature helps create a better future.
+`,
+      },
+
+      {
+        id: 25,
+
+        title: "25. Self-Confidence",
+
+        content: `
+I feel confident when I ____________. Self-confidence helps us face challenges bravely and positively. Confident students speak clearly and perform better in studies and activities. Believing in ourselves increases courage and motivation. Confidence is very important for achieving success in life.
+`,
+      },
+
+      {
+        id: 26,
+
+        title: "26. Importance of Sharing",
+
+        content: `
+Sharing is a wonderful habit that spreads happiness everywhere. Sharing things with others shows kindness, care, and love. Caring people are respected and loved by everyone. Sharing also strengthens friendships and relationships greatly. We should always learn to share with others happily.
+`,
+      },
+
+      {
+        id: 27,
+
+        title: "27. My Dream",
+
+        content: `
+My dream is to become a ____________. Dreams give direction and purpose to our life. We should work hard with determination to achieve our goals. Confidence, discipline, and dedication help us succeed. Every student should dream big and work sincerely.
+`,
+      },
+
+      {
+        id: 28,
+
+        title: "28. Importance of Punctuality",
+
+        content: `
+Punctuality means doing every work on time without delay. Students who are punctual become disciplined and responsible people. Time management improves confidence, productivity, and success. Punctual students complete their tasks peacefully and properly. Good habits create a bright and successful future.
+`,
+      },
+
+      {
+        id: 29,
+
+        title: "29. My Favorite Animal",
+
+        content: `
+My favorite animal is ____________. Animals are an important part of nature and our environment. They teach us love, loyalty, care, and friendship. Some animals help humans in many useful ways. We should protect animals and treat them kindly and responsibly.
+`,
+      },
+
+      {
+        id: 30,
+
+        title: "30. Positive Thinking",
+
+        content: `
+Positive thinking helps us stay happy, confident, and peaceful. Optimistic students face problems bravely and calmly. Good thoughts create positive actions, habits, and relationships. Positive people inspire others with their attitude and behavior. Positive thinking helps us achieve success in life.
 `,
       },
     ],
@@ -5415,6 +8346,929 @@ Everyone cheered happily.
 The trip taught them confidence, teamwork, and courage.
 
 Moral: Challenges make us stronger and more confident.
+`,
+      },
+    ],
+    goodThoughts: [
+      {
+        id: 1,
+        title: "1. Education and Success",
+
+        content: `
+Education is the foundation of success.
+Knowledge gives strength and confidence.
+Learning creates a brighter future.
+`,
+      },
+      {
+        id: 2,
+        title: "2. Hard Work Rewards",
+
+        content: `
+Hard work always brings rewards.
+Success comes through dedication and effort.
+Never stop trying to improve.
+`,
+      },
+      {
+        id: 3,
+        title: "3. Respect Parents and Teachers",
+
+        content: `
+Respect your parents and teachers.
+They guide you toward greatness.
+Their blessings bring true success.
+`,
+      },
+      {
+        id: 4,
+        title: "4. Value Time",
+
+        content: `
+Time is the most valuable gift.
+Use every minute wisely today.
+Lost time never returns again.
+`,
+      },
+      {
+        id: 5,
+        title: "5. Discipline Builds Character",
+
+        content: `
+Discipline builds strong character.
+Good habits create successful people.
+Responsible students shine everywhere.
+`,
+      },
+      {
+        id: 6,
+        title: "6. Believe in Yourself",
+
+        content: `
+Confidence helps achieve great goals.
+Believe in your own abilities.
+Self-belief leads to victory.
+`,
+      },
+      {
+        id: 7,
+        title: "7. Reading Increases Knowledge",
+
+        content: `
+Reading books increases knowledge greatly.
+Books teach important life lessons.
+Readers become wise thinkers.
+`,
+      },
+      {
+        id: 8,
+        title: "8. Learn from Mistakes",
+
+        content: `
+Every mistake teaches a lesson.
+Failures help us become stronger.
+Learn and move forward confidently.
+`,
+      },
+      {
+        id: 9,
+        title: "9. Kindness Matters",
+
+        content: `
+Kindness makes the world beautiful.
+Helping others spreads happiness everywhere.
+Good hearts are always respected.
+`,
+      },
+      {
+        id: 10,
+        title: "10. Practice Daily",
+
+        content: `
+Practice is the key to mastery.
+Daily effort improves every skill.
+Consistency brings amazing results.
+`,
+      },
+      {
+        id: 11,
+        title: "11. Stay Focused",
+
+        content: `
+Stay focused on your goals.
+Concentration improves learning and success.
+Focused minds achieve great things.
+`,
+      },
+      {
+        id: 12,
+        title: "12. Choose Honesty",
+
+        content: `
+Honesty is a priceless quality.
+Truthful people earn true respect.
+Always choose honesty in life.
+`,
+      },
+      {
+        id: 13,
+        title: "13. Positive Thinking",
+
+        content: `
+Positive thinking changes everything.
+Good thoughts create better actions.
+Optimism leads to happiness.
+`,
+      },
+      {
+        id: 14,
+        title: "14. True Friendship",
+
+        content: `
+Friendship grows through trust.
+True friends support each other.
+Good friendships make life joyful.
+`,
+      },
+      {
+        id: 15,
+        title: "15. Be Courageous",
+
+        content: `
+Courage helps face difficulties bravely.
+Fear disappears with confidence slowly.
+Brave students never give up.
+`,
+      },
+      {
+        id: 16,
+        title: "16. Education Opens Doors",
+
+        content: `
+Education opens many opportunities.
+Learning helps achieve big dreams.
+Knowledge changes lives forever.
+`,
+      },
+      {
+        id: 17,
+        title: "17. Patience Brings Success",
+
+        content: `
+Patience leads to better results.
+Good things need time and effort.
+Stay calm while working hard.
+`,
+      },
+      {
+        id: 18,
+        title: "18. Respect Everyone",
+
+        content: `
+Respect everyone around you.
+Respect creates peace and friendship.
+Good behavior earns admiration.
+`,
+      },
+      {
+        id: 19,
+        title: "19. Keep Learning",
+
+        content: `
+Learning never truly ends.
+Every day teaches something valuable.
+Curious minds grow continuously.
+`,
+      },
+      {
+        id: 20,
+        title: "20. Stay Determined",
+
+        content: `
+Success begins with determination.
+Strong determination defeats difficulties easily.
+Keep moving toward your dreams.
+`,
+      },
+      {
+        id: 21,
+        title: "21. Keep Surroundings Clean",
+
+        content: `
+Clean surroundings inspire healthy living.
+Cleanliness reflects good responsibility always.
+Neat places improve concentration.
+`,
+      },
+      {
+        id: 22,
+        title: "22. Share Happiness",
+
+        content: `
+Sharing happiness increases joy.
+Helping others creates inner peace.
+Caring hearts inspire many people.
+`,
+      },
+      {
+        id: 23,
+        title: "23. Value Teamwork",
+
+        content: `
+Teamwork brings better achievements.
+Working together solves problems quickly.
+Unity creates strength and success.
+`,
+      },
+      {
+        id: 24,
+        title: "24. Stay Healthy",
+
+        content: `
+Stay active and healthy daily.
+Healthy bodies support active minds.
+Exercise improves energy and focus.
+`,
+      },
+      {
+        id: 25,
+        title: "25. Ask Questions",
+
+        content: `
+Never fear asking questions.
+Questions increase understanding and wisdom.
+Curious students learn more deeply.
+`,
+      },
+      {
+        id: 26,
+        title: "26. Dream Big",
+
+        content: `
+Dream big and work sincerely.
+Goals require effort and dedication.
+Determined students achieve greatness.
+`,
+      },
+      {
+        id: 27,
+        title: "27. Show Good Manners",
+
+        content: `
+Good manners reflect strong values.
+Polite words win many hearts.
+Respectful children are loved everywhere.
+`,
+      },
+      {
+        id: 28,
+        title: "28. Learn from Great People",
+
+        content: `
+Learn from successful people wisely.
+Good examples inspire positive actions.
+Wise students observe and improve.
+`,
+      },
+      {
+        id: 29,
+        title: "29. Great Achievements Need Patience",
+
+        content: `
+Great achievements need patience.
+Success never comes overnight easily.
+Keep trying with full dedication.
+`,
+      },
+      {
+        id: 30,
+        title: "30. Be Grateful",
+
+        content: `
+Happiness comes from gratitude.
+Be thankful for every blessing.
+Grateful hearts stay peaceful always.
+`,
+      },
+      {
+        id: 31,
+        title: "31. Believe You Can Succeed",
+
+        content: `
+Believe that you can succeed.
+Confidence creates strong personalities.
+Self-belief leads toward achievement.
+`,
+      },
+      {
+        id: 32,
+        title: "32. Discover Your Talent",
+
+        content: `
+Every child has unique talent.
+Discover and improve your abilities.
+Talent grows through practice daily.
+`,
+      },
+      {
+        id: 33,
+        title: "33. Respect Feelings",
+
+        content: `
+Never laugh at others’ mistakes.
+Encourage people with kindness instead.
+Respect everyone’s feelings sincerely.
+`,
+      },
+      {
+        id: 34,
+        title: "34. Positive Attitude",
+
+        content: `
+A positive attitude inspires success.
+Optimistic minds solve problems wisely.
+Hope gives strength during struggles.
+`,
+      },
+      {
+        id: 35,
+        title: "35. Be Responsible",
+
+        content: `
+Responsible students value their duties.
+Responsibility builds trust and respect.
+Reliable people succeed in life.
+`,
+      },
+      {
+        id: 36,
+        title: "36. Stay Calm",
+
+        content: `
+Stay calm during difficult situations.
+Patience helps solve problems wisely.
+Peaceful minds make better decisions.
+`,
+      },
+      {
+        id: 37,
+        title: "37. Build Good Habits",
+
+        content: `
+Good habits create bright futures.
+Healthy routines improve daily life.
+Strong habits build strong character.
+`,
+      },
+      {
+        id: 38,
+        title: "38. Knowledge is Treasure",
+
+        content: `
+Knowledge is more valuable than money.
+Education remains forever with you.
+Learning is the greatest treasure.
+`,
+      },
+      {
+        id: 39,
+        title: "39. Protect Nature",
+
+        content: `
+Respect nature and protect it.
+Nature supports every living being.
+Saving Earth is everyone’s duty.
+`,
+      },
+      {
+        id: 40,
+        title: "40. Stay Humble",
+
+        content: `
+Great leaders remain humble always.
+Humility earns love and admiration.
+Proud behavior damages relationships.
+`,
+      },
+      {
+        id: 41,
+        title: "41. Improve Yourself",
+
+        content: `
+Never stop improving yourself.
+Self-improvement creates lasting success.
+Learning makes you better daily.
+`,
+      },
+      {
+        id: 42,
+        title: "42. Listen Carefully",
+
+        content: `
+Listening carefully improves understanding.
+Attention helps remember lessons better.
+Focused students achieve excellent results.
+`,
+      },
+      {
+        id: 43,
+        title: "43. True Success Needs Effort",
+
+        content: `
+True success needs hard work.
+Effort brings confidence and growth.
+Dedication leads toward achievement.
+`,
+      },
+      {
+        id: 44,
+        title: "44. Keep Smiling",
+
+        content: `
+Smiling spreads positivity everywhere.
+Happy faces brighten every environment.
+Joy creates better friendships.
+`,
+      },
+      {
+        id: 45,
+        title: "45. Learn Forgiveness",
+
+        content: `
+Forgiveness brings peace and happiness.
+Kind hearts avoid unnecessary anger.
+Forgiving others shows true strength.
+`,
+      },
+      {
+        id: 46,
+        title: "46. Think Creatively",
+
+        content: `
+Creativity makes learning more enjoyable.
+Creative thinking solves problems differently.
+Innovative minds achieve amazing things.
+`,
+      },
+      {
+        id: 47,
+        title: "47. Manage Time Properly",
+
+        content: `
+Wise students manage time properly.
+Good planning improves productivity greatly.
+Time management leads to success.
+`,
+      },
+      {
+        id: 48,
+        title: "48. Continuous Learning",
+
+        content: `
+Success grows through continuous learning.
+Keep gaining knowledge every day.
+Learning creates endless possibilities.
+`,
+      },
+      {
+        id: 49,
+        title: "49. Face Challenges Bravely",
+
+        content: `
+Challenges help us become stronger.
+Difficulties teach important life lessons.
+Face problems with courage confidently.
+`,
+      },
+      {
+        id: 50,
+        title: "50. Become Better Daily",
+
+        content: `
+Always aim to become better.
+Growth comes through constant learning.
+Success follows determined students.
+`,
+      },
+    ],
+    publicSpeaking: [
+      {
+        id: 1,
+
+        title: "1. If I Were a Scientist",
+
+        content: `
+If I were a scientist, I would invent useful things to help people.
+I would create machines to clean pollution and protect nature.
+I would also discover medicines for dangerous diseases.
+Scientists make the world smarter and better through their inventions.
+I would feel proud to help society as a scientist.
+`,
+      },
+
+      {
+        id: 2,
+
+        title: "2. My Dream Country",
+
+        content: `
+My dream country would be clean, peaceful, and developed.
+Every child would get proper education and healthcare there.
+People would respect each other and follow rules sincerely.
+There would be greenery, safety, and happiness everywhere.
+I would love to live in such a beautiful country.
+`,
+      },
+
+      {
+        id: 3,
+
+        title: "3. A Day Without Mobile Phones",
+
+        content: `
+Life without mobile phones would feel very different today.
+People would spend more time talking to family and friends directly.
+Children would play outdoor games and enjoy nature more.
+We would read books and learn new activities instead of using screens.
+Sometimes living without phones can be healthy and peaceful.
+`,
+      },
+
+      {
+        id: 4,
+
+        title: "4. If Animals Could Talk",
+
+        content: `
+If animals could talk, they would share their feelings and problems with humans.
+They might ask people to protect forests and stop pollution.
+Animals would also teach us kindness, loyalty, and love.
+Talking animals would make the world more interesting and exciting.
+We should always care for animals and protect them.
+`,
+      },
+
+      {
+        id: 5,
+
+        title: "5. My Superpower",
+
+        content: `
+If I had a superpower, I would use it to help people.
+I would remove poverty, sadness, and problems from society.
+I would protect nature and make the world peaceful.
+Superpowers should always be used for good purposes.
+Helping others would make me truly happy.
+`,
+      },
+
+      {
+        id: 6,
+
+        title: "6. The Smartest Person I Know",
+
+        content: `
+The smartest person I know is ____________.
+This person always gives useful advice and solves problems wisely.
+Intelligent people inspire others through their knowledge and behavior.
+Smart people also continue learning every day.
+I admire this person very much.
+`,
+      },
+
+      {
+        id: 7,
+
+        title: "7. What Makes a Good Leader",
+
+        content: `
+A good leader is honest, confident, and responsible.
+Leaders guide people in the right direction and help others grow.
+They listen carefully and make fair decisions for everyone.
+Good leaders inspire people through their actions and behavior.
+Leadership qualities are important for success in life.
+`,
+      },
+
+      {
+        id: 8,
+
+        title: "8. My Dream School",
+
+        content: `
+My dream school would have smart classrooms and beautiful playgrounds.
+Students would learn through fun activities and creative projects.
+Teachers would encourage every child to speak confidently and think differently.
+There would be libraries, sports areas, and technology labs everywhere.
+Learning would become exciting and enjoyable in my dream school.
+`,
+      },
+
+      {
+        id: 9,
+
+        title: "9. If I Could Fly",
+
+        content: `
+If I could fly, I would travel around the world freely.
+I would visit mountains, oceans, forests, and famous places.
+Flying would make me feel excited and adventurous.
+I would also help people during emergencies and disasters.
+It would be an amazing experience to fly in the sky.
+`,
+      },
+
+      {
+        id: 10,
+
+        title: "10. Why Reading Is Important",
+
+        content: `
+Reading increases knowledge, imagination, and creativity greatly.
+Books teach us valuable lessons about life and success.
+Reading daily improves vocabulary and communication skills.
+It also helps students become better thinkers and learners.
+Reading is one of the best habits for students.
+`,
+      },
+
+      {
+        id: 11,
+
+        title: "11. A World Without Trees",
+
+        content: `
+A world without trees would become dangerous and unhealthy.
+We would not get enough oxygen, fruits, or shade.
+Animals and birds would lose their homes and food.
+Pollution and global warming would increase greatly.
+Trees are necessary for life, so we should protect them.
+`,
+      },
+
+      {
+        id: 12,
+
+        title: "12. My Favorite Invention",
+
+        content: `
+My favorite invention is ____________.
+This invention makes life easier, faster, and more comfortable.
+Many inventions help people communicate and learn better.
+Inventors use creativity and intelligence to solve problems.
+Inventions improve the world in many useful ways.
+`,
+      },
+
+      {
+        id: 13,
+
+        title: "13. The Importance of Teamwork",
+
+        content: `
+Teamwork helps people achieve goals together successfully.
+Working in groups improves cooperation and understanding among students.
+Team members support each other during difficult tasks and challenges.
+Unity creates strength and confidence in every activity.
+Teamwork is important both in school and life.
+`,
+      },
+
+      {
+        id: 14,
+
+        title: "14. If I Became the Principal",
+
+        content: `
+If I became the principal, I would make learning more enjoyable for students.
+I would encourage sports, creativity, and public speaking activities.
+I would also plant more trees and keep the school clean.
+Every student would feel safe, respected, and motivated.
+I would work hard to make my school the best.
+`,
+      },
+
+      {
+        id: 15,
+
+        title: "15. My Favorite Historical Hero",
+
+        content: `
+My favorite historical hero is ____________.
+This hero inspired people through courage and leadership.
+Great leaders work for the country and help society progress.
+Historical heroes teach us bravery, discipline, and sacrifice.
+We should learn from their inspiring lives.
+`,
+      },
+
+      {
+        id: 16,
+
+        title: "16. Why Students Should Learn Public Speaking",
+
+        content: `
+Public speaking helps students express ideas clearly and confidently.
+It improves communication skills and reduces fear while speaking.
+Public speaking also increases leadership and personality development.
+Good speakers can inspire and motivate other people.
+Every student should learn public speaking skills.
+`,
+      },
+
+      {
+        id: 17,
+
+        title: "17. My Dream Business",
+
+        content: `
+My dream business is ____________.
+I want to create something useful that helps people and society.
+A successful business requires creativity, honesty, and hard work.
+Business also creates jobs and opportunities for others.
+I would work sincerely to achieve my dream.
+`,
+      },
+
+      {
+        id: 18,
+
+        title: "18. The Power of Positive Thinking",
+
+        content: `
+Positive thinking helps people stay calm and confident during problems.
+Positive students never lose hope easily in difficult situations.
+Good thoughts create better actions and habits in life.
+Optimistic people inspire others with their attitude and behavior.
+Positive thinking leads toward success and happiness.
+`,
+      },
+
+      {
+        id: 19,
+
+        title: "19. If I Could Change One School Rule",
+
+        content: `
+If I could change one school rule, I would ____________.
+Students should enjoy learning in creative and exciting ways.
+Schools should encourage confidence, innovation, and teamwork.
+Positive changes can improve learning and happiness for students.
+Good rules help students grow into responsible people.
+`,
+      },
+
+      {
+        id: 20,
+
+        title: "20. How Technology Helps Students",
+
+        content: `
+Technology helps students learn faster and more effectively today.
+Smart classes, computers, and educational apps improve understanding greatly.
+Students can learn new topics through videos and online resources.
+Technology also makes difficult subjects easier to understand.
+It should be used wisely for learning and growth.
+`,
+      },
+
+      {
+        id: 21,
+
+        title: "21. The Importance of Confidence",
+
+        content: `
+Confidence helps students face challenges bravely and positively.
+Confident students participate actively in studies and activities.
+Self-confidence improves communication and decision-making skills greatly.
+Believing in ourselves increases courage and motivation.
+Confidence is important for achieving success in life.
+`,
+      },
+
+      {
+        id: 22,
+
+        title: "22. My Role Model",
+
+        content: `
+My role model is ____________.
+This person inspires me through hard work and positive actions.
+Role models teach us discipline, honesty, and determination in life.
+They motivate people to achieve their dreams successfully.
+I want to learn many good qualities from my role model.
+`,
+      },
+
+      {
+        id: 23,
+
+        title: "23. Why Helping Others Matters",
+
+        content: `
+Helping others spreads kindness, happiness, and positivity everywhere.
+Even small help can bring comfort to someone’s life.
+Helping people teaches humanity, care, and responsibility.
+Kind and helpful students are respected by everyone.
+We should always support people in need.
+`,
+      },
+
+      {
+        id: 24,
+
+        title: "24. What Makes a True Friend",
+
+        content: `
+A true friend supports us during both happy and difficult times.
+Good friends encourage each other to become better people.
+True friendship is based on honesty, trust, and kindness.
+Friends make life more enjoyable and memorable.
+We should always value true friendship.
+`,
+      },
+
+      {
+        id: 25,
+
+        title: "25. If I Visited Space",
+
+        content: `
+If I visited space, I would feel very excited and curious.
+I would love to see planets, stars, and Earth from space.
+Space travel teaches us about science and the universe.
+Astronauts work very hard and courageously during missions.
+Visiting space would be an unforgettable experience.
+`,
+      },
+
+      {
+        id: 26,
+
+        title: "26. The Importance of Healthy Habits",
+
+        content: `
+Healthy habits keep our body and mind active and strong.
+Eating nutritious food and exercising daily improve health greatly.
+Good habits also improve discipline and confidence.
+Healthy students can learn better and stay energetic.
+Healthy habits create a happy and successful life.
+`,
+      },
+
+      {
+        id: 27,
+
+        title: "27. My Dream for India",
+
+        content: `
+My dream for India is a clean, educated, and developed country.
+Every child should get proper education and opportunities.
+People should respect each other and protect nature responsibly.
+India should become stronger in science, sports, and technology.
+Together we can build a better future for our country.
+`,
+      },
+
+      {
+        id: 28,
+
+        title: "28. Why Discipline Is Important",
+
+        content: `
+Discipline teaches students to follow rules and behave responsibly.
+Disciplined students complete work on time and stay focused.
+Discipline improves habits, concentration, and decision-making abilities.
+It also helps people achieve success in every field.
+Discipline is the foundation of a successful life.
+`,
+      },
+
+      {
+        id: 29,
+
+        title: "29. The Best Day of My Life",
+
+        content: `
+The best day of my life was ____________.
+It was a very happy and memorable experience for me.
+I enjoyed spending time with my family and friends that day.
+Special moments teach us the importance of happiness and gratitude.
+I will always remember that wonderful day.
+`,
+      },
+
+      {
+        id: 30,
+
+        title: "30. How to Become Successful",
+
+        content: `
+Success comes through hard work, confidence, and discipline.
+Successful people never give up during difficult situations.
+Good habits, positive thinking, and determination help achieve goals.
+Students should learn continuously and use time wisely.
+Success is possible for everyone who works sincerely.
 `,
       },
     ],
@@ -7156,6 +11010,929 @@ Later, he realized his mistake and apologized.
 The teacher appreciated Sameer’s honesty and courage.
 
 Moral: Speaking the truth requires courage.
+`,
+      },
+    ],
+    goodThoughts: [
+      {
+        id: 1,
+        title: "1. Self Discipline",
+
+        content: `
+Success begins with self-discipline.
+Good habits shape a better future.
+Responsible students achieve great things.
+`,
+      },
+      {
+        id: 2,
+        title: "2. Power of Education",
+
+        content: `
+Education is the strongest weapon.
+Knowledge gives confidence and wisdom.
+Learning changes lives forever.
+`,
+      },
+      {
+        id: 3,
+        title: "3. Hard Work Brings Success",
+
+        content: `
+Hard work always brings success.
+Effort never goes completely wasted.
+Keep working toward your dreams.
+`,
+      },
+      {
+        id: 4,
+        title: "4. Earn Respect",
+
+        content: `
+Respect is earned through behavior.
+Kind words create strong relationships.
+Good manners impress everyone.
+`,
+      },
+      {
+        id: 5,
+        title: "5. Believe in Yourself",
+
+        content: `
+Believe in your abilities always.
+Confidence removes fear and doubt.
+Self-belief leads toward achievement.
+`,
+      },
+      {
+        id: 6,
+        title: "6. Reading Improves Knowledge",
+
+        content: `
+Reading improves imagination and knowledge.
+Books teach valuable life lessons.
+Readers become better thinkers.
+`,
+      },
+      {
+        id: 7,
+        title: "7. Learn from Mistakes",
+
+        content: `
+Every mistake teaches something important.
+Failures help us grow stronger.
+Learn and move forward positively.
+`,
+      },
+      {
+        id: 8,
+        title: "8. Value Time",
+
+        content: `
+Time is more valuable than money.
+Use every moment wisely today.
+Lost time never returns again.
+`,
+      },
+      {
+        id: 9,
+        title: "9. Discipline Leads Success",
+
+        content: `
+Discipline leads to true success.
+Rules help build strong character.
+Organized students perform better.
+`,
+      },
+      {
+        id: 10,
+        title: "10. True Friendship",
+
+        content: `
+Friendship grows through honesty and trust.
+True friends support each other.
+Good friendships bring happiness.
+`,
+      },
+      {
+        id: 11,
+        title: "11. Positive Thinking",
+
+        content: `
+Positive thinking creates positive results.
+Optimistic minds solve problems better.
+Hope gives strength during struggles.
+`,
+      },
+      {
+        id: 12,
+        title: "12. Keep Learning",
+
+        content: `
+Never stop learning new things.
+Knowledge increases day by day.
+Curious minds become successful.
+`,
+      },
+      {
+        id: 13,
+        title: "13. Respect Parents and Teachers",
+
+        content: `
+Respect your parents and teachers.
+They guide you toward success.
+Their blessings give real strength.
+`,
+      },
+      {
+        id: 14,
+        title: "14. Practice Daily",
+
+        content: `
+Practice makes every skill stronger.
+Daily effort improves performance greatly.
+Consistency creates amazing achievements.
+`,
+      },
+      {
+        id: 15,
+        title: "15. Be Patient",
+
+        content: `
+Patience helps achieve difficult goals.
+Great success needs time and effort.
+Stay calm while working hard.
+`,
+      },
+      {
+        id: 16,
+        title: "16. Help Others",
+
+        content: `
+Helping others spreads happiness everywhere.
+Kind hearts are always respected.
+Kindness makes the world beautiful.
+`,
+      },
+      {
+        id: 17,
+        title: "17. Stay Focused",
+
+        content: `
+Stay focused on your studies.
+Concentration improves learning and memory.
+Focused students achieve excellent results.
+`,
+      },
+      {
+        id: 18,
+        title: "18. Choose Honesty",
+
+        content: `
+Honesty builds trust and respect.
+Truthful people are admired everywhere.
+Always choose the path of truth.
+`,
+      },
+      {
+        id: 19,
+        title: "19. Be Courageous",
+
+        content: `
+Courage helps face every challenge.
+Brave hearts never lose hope.
+Confidence defeats fear completely.
+`,
+      },
+      {
+        id: 20,
+        title: "20. Keep Clean",
+
+        content: `
+Clean surroundings inspire healthy minds.
+Cleanliness shows good responsibility always.
+Neat places improve concentration.
+`,
+      },
+      {
+        id: 21,
+        title: "21. Dream Big",
+
+        content: `
+Great dreams need strong determination.
+Goals become real through hard work.
+Never stop believing in yourself.
+`,
+      },
+      {
+        id: 22,
+        title: "22. Lifelong Learning",
+
+        content: `
+Learning is a lifelong journey.
+Every day teaches valuable lessons.
+Wise students remain curious always.
+`,
+      },
+      {
+        id: 23,
+        title: "23. Teamwork Matters",
+
+        content: `
+Teamwork creates greater achievements.
+Working together solves problems quickly.
+Unity brings strength and success.
+`,
+      },
+      {
+        id: 24,
+        title: "24. Stay Healthy",
+
+        content: `
+Stay healthy and active daily.
+Healthy bodies support active minds.
+Exercise improves focus and energy.
+`,
+      },
+      {
+        id: 25,
+        title: "25. Ask Questions",
+
+        content: `
+Questions increase understanding and wisdom.
+Never fear asking for clarification.
+Curious students learn more deeply.
+`,
+      },
+      {
+        id: 26,
+        title: "26. Protect Nature",
+
+        content: `
+Respect nature and protect it.
+Nature gives countless blessings daily.
+Saving Earth is everyone’s responsibility.
+`,
+      },
+      {
+        id: 27,
+        title: "27. Share Happiness",
+
+        content: `
+Happiness grows when shared with others.
+Helping people creates inner peace.
+Caring hearts inspire everyone around.
+`,
+      },
+      {
+        id: 28,
+        title: "28. Be Responsible",
+
+        content: `
+Responsible students complete work on time.
+Punctuality reflects discipline and maturity.
+Time management improves success greatly.
+`,
+      },
+      {
+        id: 29,
+        title: "29. Face Challenges",
+
+        content: `
+Challenges make people mentally stronger.
+Difficulties teach valuable life lessons.
+Face problems with confidence always.
+`,
+      },
+      {
+        id: 30,
+        title: "30. Positive Attitude",
+
+        content: `
+Positive attitudes inspire better actions.
+Good thoughts create better results.
+Optimism leads toward happiness.
+`,
+      },
+      {
+        id: 31,
+        title: "31. Stay Humble",
+
+        content: `
+Great leaders stay humble always.
+Humility earns love and respect.
+Proud behavior destroys relationships.
+`,
+      },
+      {
+        id: 32,
+        title: "32. Build Good Habits",
+
+        content: `
+Good habits build strong character.
+Healthy routines improve daily life.
+Strong character leads to success.
+`,
+      },
+      {
+        id: 33,
+        title: "33. Listen Carefully",
+
+        content: `
+Listening carefully improves understanding.
+Attention helps remember lessons better.
+Focused learners achieve greater success.
+`,
+      },
+      {
+        id: 34,
+        title: "34. Improve Daily",
+
+        content: `
+Success requires continuous improvement.
+Keep developing your skills daily.
+Growth comes through regular practice.
+`,
+      },
+      {
+        id: 35,
+        title: "35. Learn Forgiveness",
+
+        content: `
+Forgiveness brings peace and happiness.
+Kind hearts avoid unnecessary anger.
+Forgiving others shows true strength.
+`,
+      },
+      {
+        id: 36,
+        title: "36. Discover Talents",
+
+        content: `
+Every child has unique talents.
+Discover and improve your abilities.
+Talent grows through dedication daily.
+`,
+      },
+      {
+        id: 37,
+        title: "37. Respect Feelings",
+
+        content: `
+Never laugh at others’ mistakes.
+Encourage people with kindness instead.
+Respect everyone’s feelings sincerely.
+`,
+      },
+      {
+        id: 38,
+        title: "38. Be Grateful",
+
+        content: `
+Gratitude brings inner happiness.
+Be thankful for every opportunity.
+Grateful hearts stay peaceful always.
+`,
+      },
+      {
+        id: 39,
+        title: "39. Think Creatively",
+
+        content: `
+Creativity makes learning more exciting.
+Innovative thinking solves problems differently.
+Creative minds achieve amazing results.
+`,
+      },
+      {
+        id: 40,
+        title: "40. Education Creates Opportunities",
+
+        content: `
+Education creates endless opportunities.
+Learning helps build a brighter future.
+Knowledge is a priceless treasure.
+`,
+      },
+      {
+        id: 41,
+        title: "41. Stay Calm",
+
+        content: `
+Calm minds make wise decisions.
+Patience helps solve difficult problems.
+Peaceful thinking improves understanding greatly.
+`,
+      },
+      {
+        id: 42,
+        title: "42. Good Communication",
+
+        content: `
+Good communication builds strong relationships.
+Polite speech wins many hearts.
+Respectful words create positive impressions.
+`,
+      },
+      {
+        id: 43,
+        title: "43. Determination and Dedication",
+
+        content: `
+Success needs determination and dedication.
+Strong efforts defeat every difficulty.
+Persistent students achieve greatness.
+`,
+      },
+      {
+        id: 44,
+        title: "44. Learn from Successful People",
+
+        content: `
+Learn from successful people wisely.
+Good examples inspire positive habits.
+Observation helps improve personality.
+`,
+      },
+      {
+        id: 45,
+        title: "45. Keep Smiling",
+
+        content: `
+Smiling spreads positivity everywhere.
+Happy faces brighten every environment.
+Joy improves friendships and learning.
+`,
+      },
+      {
+        id: 46,
+        title: "46. Use Opportunities",
+
+        content: `
+Never waste valuable opportunities.
+Every chance teaches something useful.
+Use opportunities to improve yourself.
+`,
+      },
+      {
+        id: 47,
+        title: "47. Stay Confident",
+
+        content: `
+Confidence helps during difficult situations.
+Strong minds overcome every obstacle.
+Believe in your inner strength.
+`,
+      },
+      {
+        id: 48,
+        title: "48. Responsible Actions",
+
+        content: `
+Responsible actions create better futures.
+Wise decisions improve life greatly.
+Good choices lead toward success.
+`,
+      },
+      {
+        id: 49,
+        title: "49. Learn from Failures",
+
+        content: `
+Learning from failures brings improvement.
+Mistakes help build experience and wisdom.
+Never lose hope after failure.
+`,
+      },
+      {
+        id: 50,
+        title: "50. Self Improvement",
+
+        content: `
+Always aim for self-improvement.
+Growth comes through constant learning.
+Successful students never stop improving.
+`,
+      },
+    ],
+    publicSpeaking: [
+      {
+        id: 1,
+
+        title: "1. If I Were a Scientist",
+
+        content: `
+If I were a scientist, I would invent useful things to help people.
+I would create machines to clean pollution and protect nature.
+I would also discover medicines for dangerous diseases.
+Scientists make the world smarter and better through their inventions.
+I would feel proud to help society as a scientist.
+`,
+      },
+
+      {
+        id: 2,
+
+        title: "2. My Dream Country",
+
+        content: `
+My dream country would be clean, peaceful, and developed.
+Every child would get proper education and healthcare there.
+People would respect each other and follow rules sincerely.
+There would be greenery, safety, and happiness everywhere.
+I would love to live in such a beautiful country.
+`,
+      },
+
+      {
+        id: 3,
+
+        title: "3. A Day Without Mobile Phones",
+
+        content: `
+Life without mobile phones would feel very different today.
+People would spend more time talking to family and friends directly.
+Children would play outdoor games and enjoy nature more.
+We would read books and learn new activities instead of using screens.
+Sometimes living without phones can be healthy and peaceful.
+`,
+      },
+
+      {
+        id: 4,
+
+        title: "4. If Animals Could Talk",
+
+        content: `
+If animals could talk, they would share their feelings and problems with humans.
+They might ask people to protect forests and stop pollution.
+Animals would also teach us kindness, loyalty, and love.
+Talking animals would make the world more interesting and exciting.
+We should always care for animals and protect them.
+`,
+      },
+
+      {
+        id: 5,
+
+        title: "5. My Superpower",
+
+        content: `
+If I had a superpower, I would use it to help people.
+I would remove poverty, sadness, and problems from society.
+I would protect nature and make the world peaceful.
+Superpowers should always be used for good purposes.
+Helping others would make me truly happy.
+`,
+      },
+
+      {
+        id: 6,
+
+        title: "6. The Smartest Person I Know",
+
+        content: `
+The smartest person I know is ____________.
+This person always gives useful advice and solves problems wisely.
+Intelligent people inspire others through their knowledge and behavior.
+Smart people also continue learning every day.
+I admire this person very much.
+`,
+      },
+
+      {
+        id: 7,
+
+        title: "7. What Makes a Good Leader",
+
+        content: `
+A good leader is honest, confident, and responsible.
+Leaders guide people in the right direction and help others grow.
+They listen carefully and make fair decisions for everyone.
+Good leaders inspire people through their actions and behavior.
+Leadership qualities are important for success in life.
+`,
+      },
+
+      {
+        id: 8,
+
+        title: "8. My Dream School",
+
+        content: `
+My dream school would have smart classrooms and beautiful playgrounds.
+Students would learn through fun activities and creative projects.
+Teachers would encourage every child to speak confidently and think differently.
+There would be libraries, sports areas, and technology labs everywhere.
+Learning would become exciting and enjoyable in my dream school.
+`,
+      },
+
+      {
+        id: 9,
+
+        title: "9. If I Could Fly",
+
+        content: `
+If I could fly, I would travel around the world freely.
+I would visit mountains, oceans, forests, and famous places.
+Flying would make me feel excited and adventurous.
+I would also help people during emergencies and disasters.
+It would be an amazing experience to fly in the sky.
+`,
+      },
+
+      {
+        id: 10,
+
+        title: "10. Why Reading Is Important",
+
+        content: `
+Reading increases knowledge, imagination, and creativity greatly.
+Books teach us valuable lessons about life and success.
+Reading daily improves vocabulary and communication skills.
+It also helps students become better thinkers and learners.
+Reading is one of the best habits for students.
+`,
+      },
+
+      {
+        id: 11,
+
+        title: "11. A World Without Trees",
+
+        content: `
+A world without trees would become dangerous and unhealthy.
+We would not get enough oxygen, fruits, or shade.
+Animals and birds would lose their homes and food.
+Pollution and global warming would increase greatly.
+Trees are necessary for life, so we should protect them.
+`,
+      },
+
+      {
+        id: 12,
+
+        title: "12. My Favorite Invention",
+
+        content: `
+My favorite invention is ____________.
+This invention makes life easier, faster, and more comfortable.
+Many inventions help people communicate and learn better.
+Inventors use creativity and intelligence to solve problems.
+Inventions improve the world in many useful ways.
+`,
+      },
+
+      {
+        id: 13,
+
+        title: "13. The Importance of Teamwork",
+
+        content: `
+Teamwork helps people achieve goals together successfully.
+Working in groups improves cooperation and understanding among students.
+Team members support each other during difficult tasks and challenges.
+Unity creates strength and confidence in every activity.
+Teamwork is important both in school and life.
+`,
+      },
+
+      {
+        id: 14,
+
+        title: "14. If I Became the Principal",
+
+        content: `
+If I became the principal, I would make learning more enjoyable for students.
+I would encourage sports, creativity, and public speaking activities.
+I would also plant more trees and keep the school clean.
+Every student would feel safe, respected, and motivated.
+I would work hard to make my school the best.
+`,
+      },
+
+      {
+        id: 15,
+
+        title: "15. My Favorite Historical Hero",
+
+        content: `
+My favorite historical hero is ____________.
+This hero inspired people through courage and leadership.
+Great leaders work for the country and help society progress.
+Historical heroes teach us bravery, discipline, and sacrifice.
+We should learn from their inspiring lives.
+`,
+      },
+
+      {
+        id: 16,
+
+        title: "16. Why Students Should Learn Public Speaking",
+
+        content: `
+Public speaking helps students express ideas clearly and confidently.
+It improves communication skills and reduces fear while speaking.
+Public speaking also increases leadership and personality development.
+Good speakers can inspire and motivate other people.
+Every student should learn public speaking skills.
+`,
+      },
+
+      {
+        id: 17,
+
+        title: "17. My Dream Business",
+
+        content: `
+My dream business is ____________.
+I want to create something useful that helps people and society.
+A successful business requires creativity, honesty, and hard work.
+Business also creates jobs and opportunities for others.
+I would work sincerely to achieve my dream.
+`,
+      },
+
+      {
+        id: 18,
+
+        title: "18. The Power of Positive Thinking",
+
+        content: `
+Positive thinking helps people stay calm and confident during problems.
+Positive students never lose hope easily in difficult situations.
+Good thoughts create better actions and habits in life.
+Optimistic people inspire others with their attitude and behavior.
+Positive thinking leads toward success and happiness.
+`,
+      },
+
+      {
+        id: 19,
+
+        title: "19. If I Could Change One School Rule",
+
+        content: `
+If I could change one school rule, I would ____________.
+Students should enjoy learning in creative and exciting ways.
+Schools should encourage confidence, innovation, and teamwork.
+Positive changes can improve learning and happiness for students.
+Good rules help students grow into responsible people.
+`,
+      },
+
+      {
+        id: 20,
+
+        title: "20. How Technology Helps Students",
+
+        content: `
+Technology helps students learn faster and more effectively today.
+Smart classes, computers, and educational apps improve understanding greatly.
+Students can learn new topics through videos and online resources.
+Technology also makes difficult subjects easier to understand.
+It should be used wisely for learning and growth.
+`,
+      },
+
+      {
+        id: 21,
+
+        title: "21. The Importance of Confidence",
+
+        content: `
+Confidence helps students face challenges bravely and positively.
+Confident students participate actively in studies and activities.
+Self-confidence improves communication and decision-making skills greatly.
+Believing in ourselves increases courage and motivation.
+Confidence is important for achieving success in life.
+`,
+      },
+
+      {
+        id: 22,
+
+        title: "22. My Role Model",
+
+        content: `
+My role model is ____________.
+This person inspires me through hard work and positive actions.
+Role models teach us discipline, honesty, and determination in life.
+They motivate people to achieve their dreams successfully.
+I want to learn many good qualities from my role model.
+`,
+      },
+
+      {
+        id: 23,
+
+        title: "23. Why Helping Others Matters",
+
+        content: `
+Helping others spreads kindness, happiness, and positivity everywhere.
+Even small help can bring comfort to someone’s life.
+Helping people teaches humanity, care, and responsibility.
+Kind and helpful students are respected by everyone.
+We should always support people in need.
+`,
+      },
+
+      {
+        id: 24,
+
+        title: "24. What Makes a True Friend",
+
+        content: `
+A true friend supports us during both happy and difficult times.
+Good friends encourage each other to become better people.
+True friendship is based on honesty, trust, and kindness.
+Friends make life more enjoyable and memorable.
+We should always value true friendship.
+`,
+      },
+
+      {
+        id: 25,
+
+        title: "25. If I Visited Space",
+
+        content: `
+If I visited space, I would feel very excited and curious.
+I would love to see planets, stars, and Earth from space.
+Space travel teaches us about science and the universe.
+Astronauts work very hard and courageously during missions.
+Visiting space would be an unforgettable experience.
+`,
+      },
+
+      {
+        id: 26,
+
+        title: "26. The Importance of Healthy Habits",
+
+        content: `
+Healthy habits keep our body and mind active and strong.
+Eating nutritious food and exercising daily improve health greatly.
+Good habits also improve discipline and confidence.
+Healthy students can learn better and stay energetic.
+Healthy habits create a happy and successful life.
+`,
+      },
+
+      {
+        id: 27,
+
+        title: "27. My Dream for India",
+
+        content: `
+My dream for India is a clean, educated, and developed country.
+Every child should get proper education and opportunities.
+People should respect each other and protect nature responsibly.
+India should become stronger in science, sports, and technology.
+Together we can build a better future for our country.
+`,
+      },
+
+      {
+        id: 28,
+
+        title: "28. Why Discipline Is Important",
+
+        content: `
+Discipline teaches students to follow rules and behave responsibly.
+Disciplined students complete work on time and stay focused.
+Discipline improves habits, concentration, and decision-making abilities.
+It also helps people achieve success in every field.
+Discipline is the foundation of a successful life.
+`,
+      },
+
+      {
+        id: 29,
+
+        title: "29. The Best Day of My Life",
+
+        content: `
+The best day of my life was ____________.
+It was a very happy and memorable experience for me.
+I enjoyed spending time with my family and friends that day.
+Special moments teach us the importance of happiness and gratitude.
+I will always remember that wonderful day.
+`,
+      },
+
+      {
+        id: 30,
+
+        title: "30. How to Become Successful",
+
+        content: `
+Success comes through hard work, confidence, and discipline.
+Successful people never give up during difficult situations.
+Good habits, positive thinking, and determination help achieve goals.
+Students should learn continuously and use time wisely.
+Success is possible for everyone who works sincerely.
 `,
       },
     ],
@@ -9224,6 +14001,929 @@ The judges appreciated their creativity and effort.
 Their project won first prize, and the students felt proud of their achievement.
 
 Moral: Hard work and determination lead to success.
+`,
+      },
+    ],
+    goodThoughts: [
+      {
+        id: 1,
+        title: "1. Pathway to Success",
+
+        content: `
+Education is the pathway to success.
+Knowledge gives confidence and wisdom.
+Learning creates endless opportunities.
+`,
+      },
+      {
+        id: 2,
+        title: "2. Hard Work Wins",
+
+        content: `
+Hard work turns dreams into reality.
+Success comes through dedication and effort.
+Never stop striving toward greatness.
+`,
+      },
+      {
+        id: 3,
+        title: "3. Power of Discipline",
+
+        content: `
+Discipline builds a strong personality.
+Good habits shape a bright future.
+Responsible students achieve great success.
+`,
+      },
+      {
+        id: 4,
+        title: "4. Respect Everyone",
+
+        content: `
+Respect everyone around you.
+Kind behavior earns true admiration.
+Respect creates peaceful relationships.
+`,
+      },
+      {
+        id: 5,
+        title: "5. Believe in Yourself",
+
+        content: `
+Believe in your abilities always.
+Confidence removes fear and doubt.
+Self-belief leads toward achievement.
+`,
+      },
+      {
+        id: 6,
+        title: "6. Reading Builds Wisdom",
+
+        content: `
+Reading books increases understanding deeply.
+Books teach valuable lessons and ideas.
+Readers become wiser every day.
+`,
+      },
+      {
+        id: 7,
+        title: "7. Face Challenges Bravely",
+
+        content: `
+Every challenge teaches an important lesson.
+Difficulties help build inner strength.
+Face problems with courage confidently.
+`,
+      },
+      {
+        id: 8,
+        title: "8. Value Time",
+
+        content: `
+Time is your greatest treasure.
+Use every moment wisely and carefully.
+Lost time never returns again.
+`,
+      },
+      {
+        id: 9,
+        title: "9. Positive Thinking",
+
+        content: `
+Positive thinking creates positive results.
+Optimistic minds solve problems wisely.
+Hope brings strength during struggles.
+`,
+      },
+      {
+        id: 10,
+        title: "10. True Friendship",
+
+        content: `
+Friendship grows through honesty and trust.
+True friends support one another.
+Good friendships make life meaningful.
+`,
+      },
+      {
+        id: 11,
+        title: "11. Respect Parents and Teachers",
+
+        content: `
+Respect your parents and teachers.
+They guide you toward a better future.
+Their blessings bring true success.
+`,
+      },
+      {
+        id: 12,
+        title: "12. Practice Daily",
+
+        content: `
+Practice improves every skill gradually.
+Regular effort creates excellent results.
+Consistency leads toward perfection.
+`,
+      },
+      {
+        id: 13,
+        title: "13. Choose Honesty",
+
+        content: `
+Honesty is a powerful quality.
+Truthful people gain trust everywhere.
+Always choose honesty in life.
+`,
+      },
+      {
+        id: 14,
+        title: "14. Be Patient",
+
+        content: `
+Patience leads toward great achievements.
+Success needs time and dedication.
+Stay calm while working hard.
+`,
+      },
+      {
+        id: 15,
+        title: "15. Help Others",
+
+        content: `
+Helping others spreads happiness widely.
+Kind hearts inspire positive changes.
+Compassion makes the world beautiful.
+`,
+      },
+      {
+        id: 16,
+        title: "16. Stay Focused",
+
+        content: `
+Stay focused on your goals.
+Concentration improves learning and performance.
+Focused minds achieve greater success.
+`,
+      },
+      {
+        id: 17,
+        title: "17. Keep Learning",
+
+        content: `
+Learning never truly ends.
+Every day teaches something valuable.
+Curious students continue growing always.
+`,
+      },
+      {
+        id: 18,
+        title: "18. Be Courageous",
+
+        content: `
+Courage helps defeat fear completely.
+Brave students face challenges confidently.
+Confidence builds strong personalities.
+`,
+      },
+      {
+        id: 19,
+        title: "19. Keep Clean",
+
+        content: `
+Clean surroundings improve concentration greatly.
+Cleanliness reflects responsibility and discipline.
+Neat environments support better learning.
+`,
+      },
+      {
+        id: 20,
+        title: "20. Value Teamwork",
+
+        content: `
+Teamwork creates stronger achievements together.
+Working together solves problems effectively.
+Unity brings success and strength.
+`,
+      },
+      {
+        id: 21,
+        title: "21. Dream Big",
+
+        content: `
+Dream big and work sincerely.
+Goals require determination and effort.
+Hard work turns dreams real.
+`,
+      },
+      {
+        id: 22,
+        title: "22. Stay Healthy",
+
+        content: `
+Stay healthy and active daily.
+Healthy bodies support active minds.
+Exercise improves focus and energy.
+`,
+      },
+      {
+        id: 23,
+        title: "23. Ask Questions",
+
+        content: `
+Questions increase understanding and knowledge.
+Never hesitate to ask doubts.
+Curious learners become successful thinkers.
+`,
+      },
+      {
+        id: 24,
+        title: "24. Protect Nature",
+
+        content: `
+Respect nature and protect it.
+Nature supports every living being.
+Protecting Earth is everyone’s responsibility.
+`,
+      },
+      {
+        id: 25,
+        title: "25. Share Happiness",
+
+        content: `
+Happiness increases when shared with others.
+Helping people creates inner peace.
+Caring hearts are always respected.
+`,
+      },
+      {
+        id: 26,
+        title: "26. Be Punctual",
+
+        content: `
+Responsible students value punctuality always.
+Time management improves daily productivity.
+Organized students perform better consistently.
+`,
+      },
+      {
+        id: 27,
+        title: "27. Learn from Failure",
+
+        content: `
+Failure teaches valuable life lessons.
+Mistakes help us improve ourselves.
+Never lose hope after failure.
+`,
+      },
+      {
+        id: 28,
+        title: "28. Positive Attitude",
+
+        content: `
+Positive attitudes inspire better actions.
+Good thoughts create better outcomes.
+Optimism leads toward happiness and growth.
+`,
+      },
+      {
+        id: 29,
+        title: "29. Stay Humble",
+
+        content: `
+Great leaders remain humble always.
+Humility earns respect and admiration.
+Pride damages valuable relationships.
+`,
+      },
+      {
+        id: 30,
+        title: "30. Build Good Habits",
+
+        content: `
+Good habits create successful futures.
+Healthy routines improve overall personality.
+Character matters more than wealth.
+`,
+      },
+      {
+        id: 31,
+        title: "31. Listen Carefully",
+
+        content: `
+Listening carefully improves understanding deeply.
+Attention helps remember lessons clearly.
+Focused learners achieve excellent results.
+`,
+      },
+      {
+        id: 32,
+        title: "32. Improve Yourself",
+
+        content: `
+Success requires continuous self-improvement.
+Keep developing your abilities daily.
+Growth comes through constant practice.
+`,
+      },
+      {
+        id: 33,
+        title: "33. Learn Forgiveness",
+
+        content: `
+Forgiveness brings peace and happiness.
+Kind hearts avoid unnecessary anger.
+Forgiving others shows true strength.
+`,
+      },
+      {
+        id: 34,
+        title: "34. Discover Talents",
+
+        content: `
+Every student has unique talent.
+Discover and improve your abilities.
+Talent grows through hard work.
+`,
+      },
+      {
+        id: 35,
+        title: "35. Encourage Others",
+
+        content: `
+Never insult or discourage others.
+Encourage people with positive words.
+Respect everyone’s feelings sincerely.
+`,
+      },
+      {
+        id: 36,
+        title: "36. Be Grateful",
+
+        content: `
+Gratitude brings lasting inner peace.
+Be thankful for every opportunity.
+Grateful hearts remain truly happy.
+`,
+      },
+      {
+        id: 37,
+        title: "37. Think Creatively",
+
+        content: `
+Creativity makes learning more enjoyable.
+Innovative ideas solve problems differently.
+Creative minds achieve amazing success.
+`,
+      },
+      {
+        id: 38,
+        title: "38. Education is Treasure",
+
+        content: `
+Education is a priceless treasure.
+Knowledge stays with you forever.
+Learning builds a brighter future.
+`,
+      },
+      {
+        id: 39,
+        title: "39. Stay Calm",
+
+        content: `
+Calm minds make better decisions.
+Patience helps solve difficult situations.
+Peaceful thinking improves understanding greatly.
+`,
+      },
+      {
+        id: 40,
+        title: "40. Communication Skills",
+
+        content: `
+Communication skills improve relationships strongly.
+Polite speech wins many hearts.
+Respectful words create positive impressions.
+`,
+      },
+      {
+        id: 41,
+        title: "41. Determination and Persistence",
+
+        content: `
+Success needs determination and persistence.
+Strong efforts defeat every obstacle.
+Dedicated students achieve great goals.
+`,
+      },
+      {
+        id: 42,
+        title: "42. Learn from Successful People",
+
+        content: `
+Learn from successful individuals wisely.
+Good examples inspire positive actions.
+Observation helps improve personality.
+`,
+      },
+      {
+        id: 43,
+        title: "43. Keep Smiling",
+
+        content: `
+Smiling spreads positivity everywhere around.
+Happy faces brighten every environment.
+Joy strengthens friendships and relationships.
+`,
+      },
+      {
+        id: 44,
+        title: "44. Use Opportunities",
+
+        content: `
+Never waste valuable opportunities carelessly.
+Every chance teaches useful lessons.
+Use opportunities to improve yourself.
+`,
+      },
+      {
+        id: 45,
+        title: "45. Stay Confident",
+
+        content: `
+Confidence helps during difficult moments.
+Strong minds overcome every challenge.
+Believe in your inner abilities.
+`,
+      },
+      {
+        id: 46,
+        title: "46. Responsible Actions",
+
+        content: `
+Responsible actions shape better futures.
+Wise decisions improve life greatly.
+Good choices lead toward success.
+`,
+      },
+      {
+        id: 47,
+        title: "47. Learn from Mistakes",
+
+        content: `
+Learning from mistakes brings wisdom.
+Failures help develop experience and maturity.
+Keep moving forward confidently always.
+`,
+      },
+      {
+        id: 48,
+        title: "48. Knowledge is Valuable",
+
+        content: `
+Knowledge is more valuable than wealth.
+Education creates endless opportunities in life.
+Learning is the key to growth.
+`,
+      },
+      {
+        id: 49,
+        title: "49. Stay Determined",
+
+        content: `
+Determination turns impossible into possible.
+Persistent students never quit easily.
+Strong willpower brings true success.
+`,
+      },
+      {
+        id: 50,
+        title: "50. Self Improvement",
+
+        content: `
+Always strive to become better.
+Self-improvement leads toward greatness.
+Successful students never stop learning.
+`,
+      },
+    ],
+    publicSpeaking: [
+      {
+        id: 1,
+
+        title: "1. The Importance of Emotional Intelligence",
+
+        content: `
+Emotional intelligence helps people understand and control their emotions wisely.
+Students with emotional intelligence stay calm during difficult situations.
+It also improves relationships, communication, and decision-making abilities.
+Understanding others’ feelings creates kindness and respect in society.
+Emotional intelligence is important for personal and professional success.
+`,
+      },
+
+      {
+        id: 2,
+
+        title: "2. The Role of Students in Society",
+
+        content: `
+Students are the future leaders and responsible citizens of the nation.
+They should focus on education, discipline, and good values in life.
+Students can bring positive changes through knowledge and hard work.
+Responsible students inspire others with their actions and behavior.
+A strong nation is built by educated and responsible students.
+`,
+      },
+
+      {
+        id: 3,
+
+        title: "3. Artificial Intelligence in Daily Life",
+
+        content: `
+Artificial Intelligence is changing the world rapidly through modern technology.
+AI helps people in education, healthcare, transportation, and communication.
+Smart machines and applications make work faster and easier.
+However, technology should always be used wisely and responsibly.
+Artificial Intelligence will continue shaping the future of humanity.
+`,
+      },
+
+      {
+        id: 4,
+
+        title: "4. The Importance of Critical Thinking",
+
+        content: `
+Critical thinking helps students analyze problems and make wise decisions.
+It encourages logical thinking and better understanding of situations.
+Students with critical thinking skills solve problems more effectively.
+It also improves creativity and independent learning abilities.
+Critical thinking is an important skill for future success.
+`,
+      },
+
+      {
+        id: 5,
+
+        title: "5. If I Could Change the Education System",
+
+        content: `
+If I could change the education system, I would make learning more practical and creative.
+Students would learn through activities, experiments, and teamwork.
+Schools would focus more on communication and life skills development.
+Exams would test understanding instead of only memorization.
+Education should prepare students for real-life challenges.
+`,
+      },
+
+      {
+        id: 6,
+
+        title: "6. The Power of Communication Skills",
+
+        content: `
+Communication skills help people express ideas confidently and clearly.
+Good communication improves relationships, teamwork, and leadership abilities.
+Students with strong speaking skills perform better in presentations and discussions.
+Communication also increases confidence during public speaking.
+It is an important skill for every successful person.
+`,
+      },
+
+      {
+        id: 7,
+
+        title: "7. Climate Change and Our Responsibility",
+
+        content: `
+Climate change is affecting nature, weather, and human life seriously.
+Pollution, deforestation, and waste increase environmental problems greatly.
+Students should protect nature by planting trees and reducing pollution.
+Saving electricity and water also helps protect the environment.
+Everyone should work together to save our planet.
+`,
+      },
+
+      {
+        id: 8,
+
+        title: "8. The Importance of Self-Discipline",
+
+        content: `
+Self-discipline means controlling our habits, actions, and behavior wisely.
+Self-disciplined students stay focused on goals and responsibilities.
+It helps students avoid distractions and manage time properly.
+Self-discipline improves confidence, productivity, and decision-making abilities.
+Strong self-discipline leads toward success and growth.
+`,
+      },
+
+      {
+        id: 9,
+
+        title: "9. Social Media: Advantages and Disadvantages",
+
+        content: `
+Social media helps people communicate and learn information quickly.
+Students can use it for education, creativity, and communication.
+However, excessive use of social media wastes time and affects concentration.
+It may also reduce physical activity and personal interaction.
+Social media should always be used wisely and carefully.
+`,
+      },
+
+      {
+        id: 10,
+
+        title: "10. Importance of Leadership Skills",
+
+        content: `
+Leadership skills help students guide and inspire others positively.
+Good leaders are responsible, confident, and fair in decision-making.
+Leadership improves teamwork, communication, and problem-solving abilities.
+Students should develop leadership qualities from an early age.
+Strong leaders create positive changes in society.
+`,
+      },
+
+      {
+        id: 11,
+
+        title: "11. The Importance of Reading",
+
+        content: `
+Reading books improves vocabulary, creativity, and imagination greatly.
+Books teach valuable lessons about life, success, and knowledge.
+Reading also improves concentration and communication skills.
+Students who read regularly become better thinkers and learners.
+Reading is one of the most powerful habits for growth.
+`,
+      },
+
+      {
+        id: 12,
+
+        title: "12. If I Became a Young Entrepreneur",
+
+        content: `
+If I became a young entrepreneur, I would create a useful business for society.
+I would use creativity and innovation to solve problems.
+A successful business requires honesty, hard work, and smart planning.
+Entrepreneurship also creates opportunities for other people.
+I would work sincerely to achieve success in business.
+`,
+      },
+
+      {
+        id: 13,
+
+        title: "13. The Importance of Mental Strength",
+
+        content: `
+Mental strength helps people face difficulties bravely and calmly.
+Strong-minded students never lose hope during challenges.
+Mental strength improves confidence, patience, and emotional control.
+Positive thinking also helps build mental strength gradually.
+Mentally strong people achieve success more effectively.
+`,
+      },
+
+      {
+        id: 14,
+
+        title: "14. Technology: A Boon or a Curse",
+
+        content: `
+Technology has made life easier, faster, and more comfortable.
+It helps students learn through smart classes and online resources.
+However, too much dependence on technology can create problems.
+Excessive screen time may affect health and concentration negatively.
+Technology should always be used in a balanced way.
+`,
+      },
+
+      {
+        id: 15,
+
+        title: "15. Why Public Speaking Matters",
+
+        content: `
+Public speaking helps students express ideas confidently in front of others.
+It improves communication skills and reduces stage fear gradually.
+Public speaking also develops leadership and personality skills.
+Good speakers can inspire and motivate people effectively.
+Public speaking is an essential skill for future success.
+`,
+      },
+
+      {
+        id: 16,
+
+        title: "16. The Importance of Teamwork",
+
+        content: `
+Teamwork teaches students cooperation, understanding, and responsibility.
+Working together improves communication and problem-solving abilities.
+Team members support each other during challenges and activities.
+Unity creates strength, confidence, and better performance.
+Teamwork is important in both education and daily life.
+`,
+      },
+
+      {
+        id: 17,
+
+        title: "17. The Importance of Positive Thinking",
+
+        content: `
+Positive thinking helps students stay hopeful and confident during difficulties.
+Optimistic students find solutions instead of losing confidence.
+Positive thoughts create better habits, actions, and relationships.
+Positive people inspire others with their attitude and behavior.
+Positive thinking leads toward happiness and success.
+`,
+      },
+
+      {
+        id: 18,
+
+        title: "18. If I Could Create a New App",
+
+        content: `
+If I could create a new app, it would help students learn creatively.
+The app would include games, quizzes, and communication activities.
+Technology can make education more enjoyable and effective.
+Useful apps save time and improve learning greatly.
+I would design an app that benefits students worldwide.
+`,
+      },
+
+      {
+        id: 19,
+
+        title: "19. The Importance of Healthy Lifestyle",
+
+        content: `
+A healthy lifestyle keeps the body and mind active and strong.
+Healthy food and exercise improve concentration and physical fitness greatly.
+Good habits also reduce stress and improve confidence.
+Healthy students perform better in studies and sports activities.
+Health is one of the greatest treasures in life.
+`,
+      },
+
+      {
+        id: 20,
+
+        title: "20. The Importance of Responsibility",
+
+        content: `
+Responsible students complete their work sincerely and on time.
+Responsibility teaches discipline, honesty, and maturity in life.
+Responsible people are trusted and respected by society.
+Responsibility also helps students become independent and confident.
+Good responsibility builds strong character and leadership qualities.
+`,
+      },
+
+      {
+        id: 21,
+
+        title: "21. If I Were the Mayor of My City",
+
+        content: `
+If I were the mayor of my city, I would improve cleanliness and public safety.
+I would plant more trees and reduce pollution everywhere.
+Better schools, hospitals, and transportation would also be my focus.
+Good leaders should work honestly for the people.
+I would try to make my city peaceful and developed.
+`,
+      },
+
+      {
+        id: 22,
+
+        title: "22. Why Failures Are Important",
+
+        content: `
+Failures teach important lessons and help people grow stronger mentally.
+Successful people often learn through mistakes and challenges.
+Failures improve experience, patience, and problem-solving abilities.
+Students should never lose hope after failure.
+Failure is an important step toward success.
+`,
+      },
+
+      {
+        id: 23,
+
+        title: "23. The Importance of Creativity",
+
+        content: `
+Creativity helps students think differently and solve problems wisely.
+Creative activities improve imagination, confidence, and innovation greatly.
+Music, art, writing, and design develop creativity in students.
+Creative people often create useful inventions and ideas.
+Creativity makes learning more exciting and meaningful.
+`,
+      },
+
+      {
+        id: 24,
+
+        title: "24. The Importance of Environmental Awareness",
+
+        content: `
+Environmental awareness teaches people to protect nature responsibly.
+Pollution harms animals, plants, and human health greatly.
+Students should reduce waste and keep surroundings clean.
+Planting trees and saving water help protect the environment.
+Environmental awareness is necessary for a better future.
+`,
+      },
+
+      {
+        id: 25,
+
+        title: "25. If I Could Travel Into the Future",
+
+        content: `
+If I could travel into the future, I would see advanced technology and inventions.
+I would learn how people solve future challenges and problems.
+Future cities might become smarter and more environmentally friendly.
+Traveling into the future would be educational and exciting.
+It would help me understand how the world changes over time.
+`,
+      },
+
+      {
+        id: 26,
+
+        title: "26. The Importance of Respect",
+
+        content: `
+Respect creates peaceful and positive relationships in society.
+Students should respect parents, teachers, elders, and friends sincerely.
+Respectful behavior reflects discipline and good character.
+Respecting others also helps us earn respect from people.
+Respect is one of the most important human values.
+`,
+      },
+
+      {
+        id: 27,
+
+        title: "27. The Importance of Goal Setting",
+
+        content: `
+Goals give direction and purpose to our life and future.
+Students who set goals stay focused and motivated toward success.
+Clear goals improve confidence, discipline, and determination greatly.
+Achieving goals gives happiness and self-satisfaction.
+Every student should work sincerely toward meaningful goals.
+`,
+      },
+
+      {
+        id: 28,
+
+        title: "28. If I Could Solve One World Problem",
+
+        content: `
+If I could solve one world problem, I would choose ____________.
+Problems like poverty, pollution, and hunger affect millions of people.
+Everyone deserves education, healthcare, and peaceful living conditions.
+Solving global problems requires unity and responsibility from all people.
+Helping humanity would make the world better and safer.
+`,
+      },
+
+      {
+        id: 29,
+
+        title: "29. The Importance of Honesty",
+
+        content: `
+Honesty is one of the strongest qualities in a person’s character.
+Honest people are trusted, respected, and admired everywhere.
+Speaking the truth gives confidence and peace of mind.
+Honest students build strong relationships with others.
+We should always remain truthful and sincere.
+`,
+      },
+
+      {
+        id: 30,
+
+        title: "30. How to Become a Successful Student",
+
+        content: `
+Successful students work hard and stay disciplined every day.
+They manage time properly and focus sincerely on their goals.
+Good habits and positive thinking improve learning greatly.
+Successful students continue learning and improving themselves regularly.
+Success comes through dedication, confidence, and responsibility.
 `,
       },
     ],
@@ -11321,6 +17021,1009 @@ Moral: Innovation and persistence can solve real-life problems.
 `,
       },
     ],
+    goodThoughts: [
+      {
+        id: 1,
+        title: "1. Education is Powerful",
+
+        content: `
+Education is the strongest tool in life.
+Knowledge helps people make wise decisions.
+Learning opens doors to endless opportunities.
+A good education creates a bright future.
+`,
+      },
+      {
+        id: 2,
+        title: "2. Hard Work Brings Success",
+
+        content: `
+Hard work always brings positive results.
+Success never comes without real effort.
+Dedicated students achieve their goals confidently.
+Consistency is the secret of achievement.
+`,
+      },
+      {
+        id: 3,
+        title: "3. Respect Parents and Teachers",
+
+        content: `
+Respect your parents and teachers sincerely.
+They guide you with love and wisdom.
+Their advice helps shape your future.
+Respect brings blessings and happiness.
+`,
+      },
+      {
+        id: 4,
+        title: "4. Discipline Leads Success",
+
+        content: `
+Discipline is the key to success.
+Organized students manage their time wisely.
+Good habits build strong character slowly.
+Discipline leads toward a successful life.
+`,
+      },
+      {
+        id: 5,
+        title: "5. Believe in Yourself",
+
+        content: `
+Believe in your abilities every day.
+Confidence removes fear and negative thoughts.
+Self-belief helps face every challenge bravely.
+Strong minds achieve great things.
+`,
+      },
+      {
+        id: 6,
+        title: "6. Reading Improves Knowledge",
+
+        content: `
+Reading books improves knowledge and imagination.
+Books teach valuable lessons about life.
+Readers develop better thinking and understanding.
+Reading daily creates intelligent minds.
+`,
+      },
+      {
+        id: 7,
+        title: "7. Learn from Mistakes",
+
+        content: `
+Every mistake teaches an important lesson.
+Failures help people grow mentally stronger.
+Learning from mistakes improves future decisions.
+Never fear failure in life.
+`,
+      },
+      {
+        id: 8,
+        title: "8. Value Time",
+
+        content: `
+Time is more valuable than money.
+Lost time can never return again.
+Wise students use time productively daily.
+Good time management improves success greatly.
+`,
+      },
+      {
+        id: 9,
+        title: "9. Positive Thinking",
+
+        content: `
+Positive thinking creates positive outcomes.
+Optimistic minds solve problems more effectively.
+Hope gives strength during difficult situations.
+Positive attitudes inspire better actions.
+`,
+      },
+      {
+        id: 10,
+        title: "10. True Friendship",
+
+        content: `
+Friendship grows through trust and honesty.
+True friends support each other sincerely.
+Good friendships make life more enjoyable.
+Kindness strengthens every relationship deeply.
+`,
+      },
+      {
+        id: 11,
+        title: "11. Stay Focused",
+
+        content: `
+Stay focused on your studies always.
+Concentration improves learning and memory power.
+Focused students perform better in exams.
+Attention leads toward academic success.
+`,
+      },
+      {
+        id: 12,
+        title: "12. Practice Daily",
+
+        content: `
+Practice helps improve every important skill.
+Regular effort creates excellent performance gradually.
+Consistency builds confidence and stronger abilities.
+Success requires continuous practice daily.
+`,
+      },
+      {
+        id: 13,
+        title: "13. Choose Honesty",
+
+        content: `
+Honesty is a valuable human quality.
+Truthful people earn trust and respect.
+Honesty creates peace in relationships everywhere.
+Always choose truth over lies.
+`,
+      },
+      {
+        id: 14,
+        title: "14. Be Patient",
+
+        content: `
+Patience helps achieve difficult goals successfully.
+Great achievements require time and dedication.
+Calm minds handle problems more wisely.
+Patience brings long-term success and happiness.
+`,
+      },
+      {
+        id: 15,
+        title: "15. Help Others",
+
+        content: `
+Helping others spreads kindness and happiness.
+Compassion makes the world more beautiful.
+Kind people inspire positive changes everywhere.
+Helping others brings inner satisfaction.
+`,
+      },
+      {
+        id: 16,
+        title: "16. Be Courageous",
+
+        content: `
+Courage helps people face every challenge.
+Brave students never lose hope easily.
+Confidence removes fear from the mind.
+Strong determination defeats every obstacle.
+`,
+      },
+      {
+        id: 17,
+        title: "17. Lifelong Learning",
+
+        content: `
+Learning is a lifelong journey always.
+Every day teaches something meaningful and useful.
+Curious minds continue growing with knowledge.
+Never stop learning new things.
+`,
+      },
+      {
+        id: 18,
+        title: "18. Keep Surroundings Clean",
+
+        content: `
+Clean surroundings create healthy environments everywhere.
+Cleanliness reflects discipline and responsibility clearly.
+Neat places improve concentration and productivity.
+Clean habits create better lifestyles.
+`,
+      },
+      {
+        id: 19,
+        title: "19. Teamwork Matters",
+
+        content: `
+Teamwork creates stronger and better achievements.
+Working together solves problems more efficiently.
+Unity builds trust and cooperation among people.
+Team spirit leads toward success.
+`,
+      },
+      {
+        id: 20,
+        title: "20. Dream Big",
+
+        content: `
+Dream big and work sincerely daily.
+Goals require dedication and determination always.
+Hard work turns dreams into reality.
+Success begins with strong ambition.
+`,
+      },
+      {
+        id: 21,
+        title: "21. Stay Healthy",
+
+        content: `
+Healthy habits improve physical and mental strength.
+Exercise keeps the body active and energetic.
+Healthy students concentrate better on studies.
+Fitness supports a balanced lifestyle.
+`,
+      },
+      {
+        id: 22,
+        title: "22. Ask Questions",
+
+        content: `
+Questions increase understanding and deeper knowledge.
+Curious students learn concepts more effectively.
+Never hesitate to clear your doubts.
+Asking questions builds intellectual confidence.
+`,
+      },
+      {
+        id: 23,
+        title: "23. Protect Nature",
+
+        content: `
+Respect nature and protect the environment.
+Nature provides everything needed for survival.
+Protecting Earth is everyone’s responsibility today.
+Clean environments create healthier communities.
+`,
+      },
+      {
+        id: 24,
+        title: "24. Share Happiness",
+
+        content: `
+Happiness grows when shared with others.
+Helping people creates strong emotional connections.
+Kind hearts spread positivity everywhere around.
+Sharing brings peace and joy.
+`,
+      },
+      {
+        id: 25,
+        title: "25. Be Responsible",
+
+        content: `
+Responsible students complete tasks on time.
+Punctuality reflects discipline and maturity clearly.
+Time management improves productivity and performance.
+Responsible behavior earns trust and respect.
+`,
+      },
+      {
+        id: 26,
+        title: "26. Learn from Failure",
+
+        content: `
+Failure is not the end of success.
+Mistakes help develop wisdom and experience.
+Strong people learn from every setback.
+Never stop trying after failure.
+`,
+      },
+      {
+        id: 27,
+        title: "27. Positive Attitude",
+
+        content: `
+Positive attitudes inspire stronger relationships daily.
+Good thoughts create better actions and habits.
+Optimistic people handle struggles more calmly.
+Positivity leads toward inner happiness.
+`,
+      },
+      {
+        id: 28,
+        title: "28. Stay Humble",
+
+        content: `
+Great leaders remain humble and respectful.
+Humility earns admiration from other people.
+Pride damages relationships and personal growth.
+Humble personalities inspire true greatness.
+`,
+      },
+      {
+        id: 29,
+        title: "29. Build Good Habits",
+
+        content: `
+Good habits shape a successful future.
+Healthy routines improve personal development greatly.
+Strong character builds trust and respect.
+Habits influence success in every field.
+`,
+      },
+      {
+        id: 30,
+        title: "30. Listen Carefully",
+
+        content: `
+Listening carefully improves understanding and learning.
+Attention helps students remember lessons longer.
+Focused listening prevents unnecessary misunderstandings completely.
+Good listeners become successful learners.
+`,
+      },
+      {
+        id: 31,
+        title: "31. Self Improvement",
+
+        content: `
+Success requires constant self-improvement and dedication.
+Learning new skills increases confidence and ability.
+Growth comes through continuous effort and practice.
+Successful students never stop improving themselves.
+`,
+      },
+      {
+        id: 32,
+        title: "32. Learn Forgiveness",
+
+        content: `
+Forgiveness brings peace to the heart.
+Kind people avoid unnecessary anger and hatred.
+Forgiving others shows emotional strength and maturity.
+Peaceful minds remain happier in life.
+`,
+      },
+      {
+        id: 33,
+        title: "33. Discover Talents",
+
+        content: `
+Every student has unique hidden talents.
+Discover your abilities through practice and effort.
+Talent grows stronger with proper guidance daily.
+Believe in your own potential always.
+`,
+      },
+      {
+        id: 34,
+        title: "34. Encourage Others",
+
+        content: `
+Never insult or discourage other people.
+Encourage others using kind and positive words.
+Respect everyone’s feelings and emotions sincerely.
+Good behavior reflects true character.
+`,
+      },
+      {
+        id: 35,
+        title: "35. Be Grateful",
+
+        content: `
+Gratitude creates happiness and inner peace.
+Thankfulness helps people value every opportunity.
+Grateful minds remain positive during difficulties.
+Appreciation strengthens relationships with others.
+`,
+      },
+      {
+        id: 36,
+        title: "36. Think Creatively",
+
+        content: `
+Creativity makes learning more exciting and enjoyable.
+Innovative ideas solve problems in better ways.
+Creative thinking improves imagination and understanding.
+Creative minds achieve amazing success.
+`,
+      },
+      {
+        id: 37,
+        title: "37. Education is Valuable",
+
+        content: `
+Education is more valuable than wealth.
+Knowledge stays with people forever in life.
+Learning creates opportunities for future growth.
+Education builds a powerful personality.
+`,
+      },
+      {
+        id: 38,
+        title: "38. Stay Calm",
+
+        content: `
+Calm minds make wise and balanced decisions.
+Patience helps solve difficult situations peacefully.
+Emotional control improves relationships and understanding.
+Peaceful thinking creates better solutions.
+`,
+      },
+      {
+        id: 39,
+        title: "39. Communication Skills",
+
+        content: `
+Communication skills improve confidence and relationships.
+Polite speech creates positive impressions everywhere.
+Good communication prevents confusion and misunderstanding.
+Strong communication leads toward better opportunities.
+`,
+      },
+      {
+        id: 40,
+        title: "40. Determination and Persistence",
+
+        content: `
+Success needs determination and strong persistence.
+Dedicated students never quit during struggles.
+Consistent effort defeats every major obstacle.
+Persistence leads toward meaningful achievements.
+`,
+      },
+      {
+        id: 41,
+        title: "41. Learn from Others",
+
+        content: `
+Learn from successful people around you.
+Good examples inspire positive actions and habits.
+Observation helps improve personality and confidence.
+Wise students learn from everyone.
+`,
+      },
+      {
+        id: 42,
+        title: "42. Keep Smiling",
+
+        content: `
+Smiling spreads positivity in every environment.
+Happy faces make others feel comfortable.
+Joy strengthens friendships and emotional connections.
+A smile can brighten someone’s day.
+`,
+      },
+      {
+        id: 43,
+        title: "43. Use Opportunities",
+
+        content: `
+Never waste valuable opportunities carelessly.
+Every chance teaches something important and useful.
+Use opportunities to improve your abilities.
+Wise students value every opportunity.
+`,
+      },
+      {
+        id: 44,
+        title: "44. Stay Confident",
+
+        content: `
+Confidence helps during difficult situations always.
+Strong minds handle pressure more effectively.
+Believing yourself increases courage and motivation.
+Confidence leads toward personal success.
+`,
+      },
+      {
+        id: 45,
+        title: "45. Responsible Actions",
+
+        content: `
+Responsible actions shape a better future.
+Wise decisions improve life and relationships greatly.
+Good choices lead toward lasting success.
+Responsibility reflects maturity and discipline.
+`,
+      },
+      {
+        id: 46,
+        title: "46. Learn from Mistakes",
+
+        content: `
+Learning from mistakes increases wisdom greatly.
+Failures teach lessons that success cannot teach.
+Experience helps improve future performance and decisions.
+Mistakes should become learning opportunities.
+`,
+      },
+      {
+        id: 47,
+        title: "47. Power of Knowledge",
+
+        content: `
+Knowledge gives people true inner strength.
+Education improves thinking and decision-making abilities.
+Learning helps people achieve independence successfully.
+Knowledge is the key to progress.
+`,
+      },
+      {
+        id: 48,
+        title: "48. Stay Determined",
+
+        content: `
+Determination turns impossible dreams into reality.
+Strong willpower defeats every difficult obstacle.
+Persistent students achieve goals through hard work.
+Determination creates extraordinary success stories.
+`,
+      },
+      {
+        id: 49,
+        title: "49. Face Challenges",
+
+        content: `
+Challenges help develop courage and experience.
+Difficult situations teach important lessons in life.
+Strong people grow through facing struggles bravely.
+Challenges build stronger personalities and confidence.
+`,
+      },
+      {
+        id: 50,
+        title: "50. Become Better Daily",
+
+        content: `
+Always try to become better daily.
+Self-improvement creates confidence and inner satisfaction.
+Learning continuously leads toward greater success.
+Growth is the journey of excellence.
+`,
+      },
+    ],
+    publicSpeaking: [
+      {
+        id: 1,
+
+        title: "1. The Importance of Emotional Intelligence",
+
+        content: `
+Emotional intelligence helps people understand and control their emotions wisely.
+Students with emotional intelligence stay calm during difficult situations and challenges.
+It also improves relationships, communication, and decision-making abilities greatly.
+Understanding others’ feelings creates kindness, empathy, and respect in society.
+Emotionally intelligent people solve problems peacefully and confidently.
+Emotional intelligence is important for both personal and professional success.
+`,
+      },
+
+      {
+        id: 2,
+
+        title: "2. The Role of Students in Society",
+
+        content: `
+Students are the future leaders and responsible citizens of the nation.
+They should focus on education, discipline, and good values in life.
+Students can bring positive changes through knowledge, creativity, and hard work.
+Responsible students inspire others with their actions and behavior.
+They should also help society by spreading awareness and kindness.
+A strong nation is built by educated and responsible students.
+`,
+      },
+
+      {
+        id: 3,
+
+        title: "3. Artificial Intelligence in Daily Life",
+
+        content: `
+Artificial Intelligence is changing the world rapidly through modern technology.
+AI helps people in education, healthcare, transportation, and communication systems.
+Smart machines and applications make work faster, easier, and more accurate.
+However, technology should always be used wisely and responsibly by people.
+Artificial Intelligence will continue shaping the future of humanity and innovation.
+Students should learn technology skills to succeed in the future.
+`,
+      },
+
+      {
+        id: 4,
+
+        title: "4. The Importance of Critical Thinking",
+
+        content: `
+Critical thinking helps students analyze problems and make wise decisions.
+It encourages logical thinking and better understanding of different situations.
+Students with critical thinking skills solve problems more effectively and confidently.
+It also improves creativity, innovation, and independent learning abilities greatly.
+Critical thinking helps students avoid confusion and make smart choices.
+It is an important skill for future success and leadership.
+`,
+      },
+
+      {
+        id: 5,
+
+        title: "5. If I Could Change the Education System",
+
+        content: `
+If I could change the education system, I would make learning more practical and creative.
+Students would learn through activities, experiments, teamwork, and communication exercises.
+Schools would focus more on life skills and personality development.
+Exams would test understanding instead of only memorization and writing.
+Every student would get equal opportunities to grow confidently.
+Education should prepare students for real-life challenges and future careers.
+`,
+      },
+
+      {
+        id: 6,
+
+        title: "6. The Power of Communication Skills",
+
+        content: `
+Communication skills help people express ideas confidently and clearly.
+Good communication improves relationships, teamwork, and leadership abilities in life.
+Students with strong speaking skills perform better in presentations and discussions.
+Communication also increases confidence during public speaking and group activities.
+Good communication helps avoid misunderstandings and improves social interaction greatly.
+It is an important skill for every successful person in society.
+`,
+      },
+
+      {
+        id: 7,
+
+        title: "7. Climate Change and Our Responsibility",
+
+        content: `
+Climate change is affecting nature, weather, and human life seriously today.
+Pollution, deforestation, and waste increase environmental problems greatly across the world.
+Students should protect nature by planting trees and reducing pollution.
+Saving electricity, fuel, and water also helps protect the environment.
+Everyone should work together to save our planet for future generations.
+Small actions by individuals can create big positive changes.
+`,
+      },
+
+      {
+        id: 8,
+
+        title: "8. The Importance of Self-Discipline",
+
+        content: `
+Self-discipline means controlling our habits, actions, and behavior wisely.
+Self-disciplined students stay focused on goals and responsibilities without distractions.
+It helps students avoid wasting time and manage their daily activities properly.
+Self-discipline improves confidence, productivity, and decision-making abilities greatly.
+Strong self-discipline helps students achieve success in studies and life.
+It also builds strong character and leadership qualities.
+`,
+      },
+
+      {
+        id: 9,
+
+        title: "9. Social Media: Advantages and Disadvantages",
+
+        content: `
+Social media helps people communicate and learn information quickly and easily.
+Students can use it for education, creativity, entertainment, and communication.
+However, excessive use of social media wastes time and affects concentration.
+It may also reduce physical activity and real-life interaction among people.
+Social media should always be used wisely and carefully by students.
+Balanced use of technology helps maintain both learning and health.
+`,
+      },
+
+      {
+        id: 10,
+
+        title: "10. Importance of Leadership Skills",
+
+        content: `
+Leadership skills help students guide and inspire others positively and confidently.
+Good leaders are responsible, honest, and fair in decision-making situations.
+Leadership improves teamwork, communication, and problem-solving abilities greatly.
+Students should develop leadership qualities from an early stage of life.
+Strong leaders motivate people through positive actions and good behavior.
+Leadership skills are necessary for success in every field.
+`,
+      },
+
+      {
+        id: 11,
+
+        title: "11. The Importance of Reading",
+
+        content: `
+Reading books improves vocabulary, creativity, imagination, and knowledge greatly.
+Books teach valuable lessons about life, history, science, and success.
+Reading also improves concentration, communication skills, and thinking abilities.
+Students who read regularly become better learners and intelligent thinkers.
+Reading helps people understand different cultures, ideas, and experiences.
+It is one of the most powerful habits for personal growth.
+`,
+      },
+
+      {
+        id: 12,
+
+        title: "12. If I Became a Young Entrepreneur",
+
+        content: `
+If I became a young entrepreneur, I would create a useful business for society.
+I would use creativity and innovation to solve common daily problems.
+A successful business requires honesty, hard work, planning, and patience.
+Entrepreneurship also creates opportunities and jobs for many people.
+I would work sincerely to achieve success and help society grow.
+Young entrepreneurs can bring new ideas and positive changes.
+`,
+      },
+
+      {
+        id: 13,
+
+        title: "13. The Importance of Mental Strength",
+
+        content: `
+Mental strength helps people face difficulties bravely and calmly in life.
+Strong-minded students never lose hope during challenges and failures.
+Mental strength improves confidence, patience, emotional control, and decision-making abilities.
+Positive thinking and regular practice help build mental strength gradually.
+Mentally strong people handle stress and pressure more effectively.
+Mental strength is necessary for achieving long-term success and happiness.
+`,
+      },
+
+      {
+        id: 14,
+
+        title: "14. Technology: A Boon or a Curse",
+
+        content: `
+Technology has made life easier, faster, and more comfortable for everyone.
+It helps students learn through smart classes and online educational resources.
+However, too much dependence on technology can create many problems.
+Excessive screen time may affect health, concentration, and social interaction negatively.
+Technology should always be used in a balanced and responsible way.
+Proper use of technology can improve learning and human life greatly.
+`,
+      },
+
+      {
+        id: 15,
+
+        title: "15. Why Public Speaking Matters",
+
+        content: `
+Public speaking helps students express ideas confidently in front of others.
+It improves communication skills and reduces stage fear gradually over time.
+Public speaking also develops leadership, creativity, and personality development skills.
+Good speakers can inspire, motivate, and influence people effectively.
+Students who practice speaking regularly become more confident and successful.
+Public speaking is an essential skill for future careers and leadership.
+`,
+      },
+
+      {
+        id: 16,
+
+        title: "16. The Importance of Teamwork",
+
+        content: `
+Teamwork teaches students cooperation, understanding, and responsibility in group activities.
+Working together improves communication and problem-solving abilities among students.
+Team members support each other during challenges, projects, and competitions.
+Unity creates strength, confidence, friendship, and better performance in every activity.
+Teamwork is important in both education and daily life situations.
+Great achievements are often possible through strong teamwork and cooperation.
+`,
+      },
+
+      {
+        id: 17,
+
+        title: "17. The Importance of Positive Thinking",
+
+        content: `
+Positive thinking helps students stay hopeful and confident during difficult situations.
+Optimistic students find solutions instead of losing confidence or motivation easily.
+Positive thoughts create better habits, actions, relationships, and decision-making abilities.
+Positive people inspire others with their attitude, energy, and behavior.
+Positive thinking also improves mental health and emotional strength greatly.
+It leads toward happiness, success, and peaceful living.
+`,
+      },
+
+      {
+        id: 18,
+
+        title: "18. If I Could Create a New App",
+
+        content: `
+If I could create a new app, it would help students learn creatively and easily.
+The app would include games, quizzes, communication activities, and study materials.
+Technology can make education more enjoyable and effective for children today.
+Useful apps save time and improve learning experiences greatly.
+I would design an app that benefits students around the world.
+Creative technology can solve many educational challenges effectively.
+`,
+      },
+
+      {
+        id: 19,
+
+        title: "19. The Importance of Healthy Lifestyle",
+
+        content: `
+A healthy lifestyle keeps the body and mind active and strong.
+Healthy food and exercise improve concentration, fitness, and energy greatly.
+Good habits also reduce stress and improve confidence in students.
+Healthy students perform better in studies, sports, and other activities.
+A healthy lifestyle protects people from diseases and weakness.
+Health is one of the greatest treasures in human life.
+`,
+      },
+
+      {
+        id: 20,
+
+        title: "20. The Importance of Responsibility",
+
+        content: `
+Responsible students complete their work sincerely and always on time.
+Responsibility teaches discipline, honesty, maturity, and respect toward others.
+Responsible people are trusted and respected by society and family members.
+Responsibility also helps students become independent and self-confident individuals.
+Good responsibility builds strong character and leadership qualities in life.
+Responsible citizens help create a better and safer society.
+`,
+      },
+
+      {
+        id: 21,
+
+        title: "21. If I Were the Mayor of My City",
+
+        content: `
+If I were the mayor of my city, I would improve cleanliness and public safety.
+I would plant more trees and reduce pollution in every area.
+Better schools, hospitals, roads, and transportation would also be my focus.
+Good leaders should work honestly and responsibly for the people.
+I would try to make my city peaceful, modern, and developed.
+Citizens would also be encouraged to keep the city clean.
+`,
+      },
+
+      {
+        id: 22,
+
+        title: "22. Why Failures Are Important",
+
+        content: `
+Failures teach important lessons and help people grow stronger mentally and emotionally.
+Successful people often learn through mistakes, struggles, and difficult experiences.
+Failures improve patience, confidence, experience, and problem-solving abilities greatly.
+Students should never lose hope after facing failure or disappointment.
+Every failure gives a new opportunity to improve and learn better.
+Failure is an important step toward future success and growth.
+`,
+      },
+
+      {
+        id: 23,
+
+        title: "23. The Importance of Creativity",
+
+        content: `
+Creativity helps students think differently and solve problems wisely and effectively.
+Creative activities improve imagination, confidence, innovation, and learning abilities greatly.
+Music, art, writing, design, and projects develop creativity in students.
+Creative people often create useful inventions, ideas, and solutions for society.
+Creativity makes learning more exciting, meaningful, and enjoyable for children.
+Creative thinking is very important in today’s modern world.
+`,
+      },
+
+      {
+        id: 24,
+
+        title: "24. The Importance of Environmental Awareness",
+
+        content: `
+Environmental awareness teaches people to protect nature responsibly and carefully.
+Pollution harms animals, plants, natural resources, and human health greatly.
+Students should reduce waste and keep surroundings neat and clean.
+Planting trees and saving water help protect the environment effectively.
+Environmental awareness is necessary for a cleaner and healthier future.
+Every individual should contribute toward protecting the Earth.
+`,
+      },
+
+      {
+        id: 25,
+
+        title: "25. If I Could Travel Into the Future",
+
+        content: `
+If I could travel into the future, I would see advanced technology and inventions.
+I would learn how people solve future challenges and environmental problems.
+Future cities might become smarter, cleaner, and more environmentally friendly.
+Traveling into the future would be both educational and exciting for me.
+It would help me understand how the world changes over time.
+I would also love to see future transportation and scientific discoveries.
+`,
+      },
+
+      {
+        id: 26,
+
+        title: "26. The Importance of Respect",
+
+        content: `
+Respect creates peaceful and positive relationships in society and daily life.
+Students should respect parents, teachers, elders, and friends sincerely and politely.
+Respectful behavior reflects discipline, kindness, maturity, and good character.
+Respecting others also helps us earn love and respect from people.
+Respect improves communication and creates harmony among individuals and communities.
+It is one of the most important human values in life.
+`,
+      },
+
+      {
+        id: 27,
+
+        title: "27. The Importance of Goal Setting",
+
+        content: `
+Goals give direction and purpose to our life and future success.
+Students who set goals stay focused, motivated, and disciplined in studies.
+Clear goals improve confidence, determination, and decision-making abilities greatly.
+Achieving goals gives happiness, satisfaction, and motivation for future achievements.
+Every student should work sincerely and consistently toward meaningful goals.
+Goal setting helps students use time wisely and productively.
+`,
+      },
+
+      {
+        id: 28,
+
+        title: "28. If I Could Solve One World Problem",
+
+        content: `
+If I could solve one world problem, I would choose ____________.
+Problems like poverty, pollution, hunger, and inequality affect millions of people.
+Everyone deserves education, healthcare, safety, and peaceful living conditions in life.
+Solving global problems requires unity, awareness, and responsibility from all people.
+Helping humanity would make the world safer, happier, and more developed.
+Students can also contribute by spreading awareness and kindness.
+`,
+      },
+
+      {
+        id: 29,
+
+        title: "29. The Importance of Honesty",
+
+        content: `
+Honesty is one of the strongest qualities in a person’s character and personality.
+Honest people are trusted, respected, and admired everywhere in society.
+Speaking the truth gives confidence, peace of mind, and self-respect.
+Honest students build strong relationships with teachers, parents, and friends.
+Honesty helps create fairness and trust in every situation.
+We should always remain truthful and sincere in life.
+`,
+      },
+
+      {
+        id: 30,
+
+        title: "30. How to Become a Successful Student",
+
+        content: `
+Successful students work hard and stay disciplined every single day.
+They manage time properly and focus sincerely on their goals and studies.
+Good habits and positive thinking improve learning and confidence greatly.
+Successful students continue learning and improving themselves regularly with dedication.
+They respect teachers, complete responsibilities, and avoid wasting valuable time.
+Success comes through hard work, confidence, discipline, and responsibility.
+`,
+      },
+    ],
   },
 
   "class-9": {
@@ -13270,6 +19973,1009 @@ The principal praised the team for their creativity, confidence, and teamwork.
 The students felt proud of their achievement.
 
 Moral: Creativity and teamwork can turn ideas into success.
+`,
+      },
+    ],
+    goodThoughts: [
+      {
+        id: 1,
+        title: "1. Education Builds Success",
+
+        content: `
+Education is the foundation of a successful life.
+Knowledge gives people confidence and wisdom.
+Learning helps us understand the world better.
+An educated person can achieve great success.
+`,
+      },
+      {
+        id: 2,
+        title: "2. Hard Work Leads Achievement",
+
+        content: `
+Hard work is the key to achievement.
+Nothing valuable comes without sincere effort.
+Dedicated students always move toward success.
+Consistency and discipline create excellent results.
+`,
+      },
+      {
+        id: 3,
+        title: "3. Value Time",
+
+        content: `
+Time is the most precious resource.
+Once lost, time can never return.
+Wise students use every moment productively.
+Good time management leads toward success.
+`,
+      },
+      {
+        id: 4,
+        title: "4. Stay Confident",
+
+        content: `
+Confidence is necessary for personal growth.
+Self-belief removes fear and negative thinking.
+Confident students face challenges courageously.
+Strong confidence creates strong personalities.
+`,
+      },
+      {
+        id: 5,
+        title: "5. Respect Everyone",
+
+        content: `
+Respect is earned through good behavior.
+Polite words create positive impressions everywhere.
+Kindness strengthens relationships among people.
+Respectful students are admired by everyone.
+`,
+      },
+      {
+        id: 6,
+        title: "6. Reading Improves Knowledge",
+
+        content: `
+Reading books increases knowledge and imagination.
+Books teach lessons beyond classroom education.
+Readers develop better thinking and communication skills.
+Reading regularly improves vocabulary and creativity.
+`,
+      },
+      {
+        id: 7,
+        title: "7. Learn from Mistakes",
+
+        content: `
+Every mistake teaches an important lesson.
+Failures help people become mentally stronger.
+Learning from mistakes improves future decisions.
+Success often begins after many failures.
+`,
+      },
+      {
+        id: 8,
+        title: "8. Discipline Creates Success",
+
+        content: `
+Discipline creates a well-organized life.
+Students with discipline achieve goals efficiently.
+Good habits build strong character gradually.
+Discipline is necessary for lasting success.
+`,
+      },
+      {
+        id: 9,
+        title: "9. Positive Thinking",
+
+        content: `
+Positive thinking creates positive outcomes in life.
+Optimistic minds solve problems more effectively.
+Hope gives strength during difficult situations.
+Positive attitudes inspire confidence and growth.
+`,
+      },
+      {
+        id: 10,
+        title: "10. True Friendship",
+
+        content: `
+Friendship should be based on honesty and trust.
+True friends support each other sincerely.
+Good friendships make life more meaningful.
+Strong friendships create emotional strength and happiness.
+`,
+      },
+      {
+        id: 11,
+        title: "11. Patience and Dedication",
+
+        content: `
+Success requires patience and dedication always.
+Great achievements need continuous hard work.
+Calm minds handle struggles more wisely.
+Patience leads toward long-term success.
+`,
+      },
+      {
+        id: 12,
+        title: "12. Respect Parents and Teachers",
+
+        content: `
+Teachers and parents guide us sincerely.
+Their advice helps shape a better future.
+Respecting them brings blessings and happiness.
+Wise students value their guidance deeply.
+`,
+      },
+      {
+        id: 13,
+        title: "13. Lifelong Learning",
+
+        content: `
+Learning is a lifelong journey for everyone.
+Every day teaches something meaningful and useful.
+Curious students continue growing with knowledge.
+Continuous learning improves personality and wisdom.
+`,
+      },
+      {
+        id: 14,
+        title: "14. Practice Daily",
+
+        content: `
+Practice improves every important skill gradually.
+Regular effort creates confidence and excellence.
+Consistency strengthens ability and performance greatly.
+Successful people practice continuously without giving up.
+`,
+      },
+      {
+        id: 15,
+        title: "15. Choose Honesty",
+
+        content: `
+Honesty is one of the greatest virtues.
+Truthful people earn trust and admiration.
+Honesty creates peace in every relationship.
+Always choose truth over dishonesty.
+`,
+      },
+      {
+        id: 16,
+        title: "16. Be Courageous",
+
+        content: `
+Courage helps people face difficult challenges.
+Brave students never lose hope easily.
+Confidence removes fear from the human mind.
+Strong determination defeats every obstacle successfully.
+`,
+      },
+      {
+        id: 17,
+        title: "17. Teamwork Matters",
+
+        content: `
+Teamwork creates stronger and better achievements.
+Working together solves problems more efficiently.
+Unity builds trust and cooperation among people.
+Team spirit increases success and productivity.
+`,
+      },
+      {
+        id: 18,
+        title: "18. Stay Healthy",
+
+        content: `
+Healthy habits improve physical and mental strength.
+Exercise keeps the body active and energetic.
+Healthy students concentrate better on studies.
+Fitness supports a balanced and productive lifestyle.
+`,
+      },
+      {
+        id: 19,
+        title: "19. Protect Nature",
+
+        content: `
+Respect nature and protect the environment.
+Nature provides everything necessary for survival.
+Protecting Earth is everyone’s responsibility today.
+Clean environments create healthier communities everywhere.
+`,
+      },
+      {
+        id: 20,
+        title: "20. Dream Big",
+
+        content: `
+Goals give direction and purpose in life.
+Students should work sincerely toward their dreams.
+Determination helps achieve difficult ambitions successfully.
+Clear goals inspire focus and dedication.
+`,
+      },
+      {
+        id: 21,
+        title: "21. Communication Skills",
+
+        content: `
+Communication skills improve confidence and relationships.
+Polite speech creates positive impressions everywhere.
+Good communication prevents misunderstandings and confusion.
+Effective communication leads toward better opportunities.
+`,
+      },
+      {
+        id: 22,
+        title: "22. Never Fear Failure",
+
+        content: `
+Failure is not the end of success.
+Mistakes help develop wisdom and experience.
+Strong people learn from every setback bravely.
+Never stop trying after facing failure.
+`,
+      },
+      {
+        id: 23,
+        title: "23. Be Responsible",
+
+        content: `
+Responsibility reflects maturity and good character.
+Responsible students complete tasks on time.
+Wise decisions improve life and relationships greatly.
+Responsibility earns trust and respect everywhere.
+`,
+      },
+      {
+        id: 24,
+        title: "24. Think Creatively",
+
+        content: `
+Creativity makes learning more exciting and meaningful.
+Innovative ideas solve problems in better ways.
+Creative thinking improves imagination and understanding greatly.
+Creative minds achieve remarkable success in life.
+`,
+      },
+      {
+        id: 25,
+        title: "25. Share Happiness",
+
+        content: `
+Happiness grows when shared with others.
+Helping people creates emotional satisfaction and peace.
+Kind hearts spread positivity in society.
+Sharing kindness strengthens human relationships deeply.
+`,
+      },
+      {
+        id: 26,
+        title: "26. Stay Calm",
+
+        content: `
+Calm minds make wise and balanced decisions.
+Patience helps solve difficult situations peacefully.
+Emotional control improves understanding and relationships greatly.
+Peaceful thinking creates better solutions in life.
+`,
+      },
+      {
+        id: 27,
+        title: "27. Encourage Others",
+
+        content: `
+Never insult or discourage other people.
+Encourage others using kind and positive words.
+Respect everyone’s feelings and emotions sincerely.
+Good behavior reflects true inner character.
+`,
+      },
+      {
+        id: 28,
+        title: "28. Be Grateful",
+
+        content: `
+Gratitude creates happiness and inner peace.
+Thankfulness helps people value every opportunity.
+Grateful minds remain positive during struggles.
+Appreciation strengthens relationships with others greatly.
+`,
+      },
+      {
+        id: 29,
+        title: "29. Education is Valuable",
+
+        content: `
+Education is more valuable than material wealth.
+Knowledge stays with people forever in life.
+Learning creates opportunities for future growth.
+Education builds a powerful and confident personality.
+`,
+      },
+      {
+        id: 30,
+        title: "30. Face Challenges",
+
+        content: `
+Challenges help develop courage and experience.
+Difficult situations teach valuable lessons in life.
+Strong people grow through facing struggles bravely.
+Challenges build confidence and stronger personalities.
+`,
+      },
+      {
+        id: 31,
+        title: "31. Build Good Habits",
+
+        content: `
+Good habits shape a successful future.
+Healthy routines improve personal development greatly.
+Strong character builds trust and admiration everywhere.
+Habits influence success in every field.
+`,
+      },
+      {
+        id: 32,
+        title: "32. Listen Carefully",
+
+        content: `
+Listening carefully improves understanding and learning.
+Attention helps students remember lessons more effectively.
+Focused listening prevents unnecessary misunderstandings completely.
+Good listeners become successful learners and leaders.
+`,
+      },
+      {
+        id: 33,
+        title: "33. Keep Smiling",
+
+        content: `
+Smiling spreads positivity in every environment.
+Happy faces make others feel comfortable and welcomed.
+Joy strengthens friendships and emotional connections deeply.
+A simple smile can brighten someone’s day.
+`,
+      },
+      {
+        id: 34,
+        title: "34. Stay Determined",
+
+        content: `
+Determination turns impossible dreams into reality.
+Strong willpower defeats difficult obstacles successfully.
+Persistent students achieve goals through sincere effort.
+Determination creates extraordinary success stories in life.
+`,
+      },
+      {
+        id: 35,
+        title: "35. Power of Knowledge",
+
+        content: `
+Knowledge gives people true inner strength.
+Education improves thinking and decision-making abilities greatly.
+Learning helps people achieve independence successfully.
+Knowledge is the key to human progress.
+`,
+      },
+      {
+        id: 36,
+        title: "36. Self Improvement",
+
+        content: `
+Self-improvement is necessary for continuous growth.
+Students should improve their skills every day.
+Learning new things increases confidence and ability.
+Growth comes through regular practice and dedication.
+`,
+      },
+      {
+        id: 37,
+        title: "37. Stay Humble",
+
+        content: `
+Humility is the sign of true greatness.
+Humble people earn admiration and respect naturally.
+Pride damages relationships and personal development.
+Humility creates peaceful and meaningful relationships.
+`,
+      },
+      {
+        id: 38,
+        title: "38. Use Opportunities",
+
+        content: `
+Opportunities should never be wasted carelessly.
+Every chance teaches something valuable and important.
+Wise students use opportunities for self-improvement.
+Opportunities often lead toward future success.
+`,
+      },
+      {
+        id: 39,
+        title: "39. Stay Confident",
+
+        content: `
+Confidence helps during difficult situations always.
+Strong minds handle pressure more effectively and calmly.
+Believing in yourself increases courage and motivation.
+Confidence leads toward personal and academic success.
+`,
+      },
+      {
+        id: 40,
+        title: "40. Learn Forgiveness",
+
+        content: `
+Forgiveness brings peace to the human heart.
+Kind people avoid unnecessary anger and hatred.
+Forgiving others shows emotional strength and maturity.
+Peaceful minds remain happier throughout life.
+`,
+      },
+      {
+        id: 41,
+        title: "41. Stay Curious",
+
+        content: `
+Curiosity increases knowledge and understanding deeply.
+Questions help students learn concepts more effectively.
+Curious minds continue discovering new opportunities always.
+Curiosity is the beginning of wisdom.
+`,
+      },
+      {
+        id: 42,
+        title: "42. Persistence Leads Success",
+
+        content: `
+Success requires continuous effort and persistence.
+Dedicated students never quit during difficult struggles.
+Consistent hard work defeats every major obstacle.
+Persistence leads toward meaningful achievements in life.
+`,
+      },
+      {
+        id: 43,
+        title: "43. Good Communication",
+
+        content: `
+Good communication builds stronger relationships everywhere.
+Respectful words create trust among people naturally.
+Effective speaking improves confidence and personality greatly.
+Communication skills are important for future success.
+`,
+      },
+      {
+        id: 44,
+        title: "44. Learn from Successful People",
+
+        content: `
+Learning from successful people is beneficial.
+Good examples inspire positive habits and actions.
+Observation helps improve personality and confidence continuously.
+Wise students learn from experienced individuals.
+`,
+      },
+      {
+        id: 45,
+        title: "45. Responsible Actions",
+
+        content: `
+Responsible actions shape a better future.
+Wise choices improve personal and social life greatly.
+Good decisions lead toward lasting happiness and success.
+Responsibility reflects discipline and maturity clearly.
+`,
+      },
+      {
+        id: 46,
+        title: "46. Discover Talents",
+
+        content: `
+Every student has unique hidden talents.
+Talents grow stronger through practice and dedication.
+Students should discover their abilities confidently.
+Believing in talent increases motivation and success.
+`,
+      },
+      {
+        id: 47,
+        title: "47. Positive Attitude",
+
+        content: `
+Positive attitudes inspire stronger relationships daily.
+Good thoughts create better actions and habits.
+Optimistic people handle struggles with greater confidence.
+Positivity leads toward happiness and inner peace.
+`,
+      },
+      {
+        id: 48,
+        title: "48. Education Removes Ignorance",
+
+        content: `
+Education helps remove ignorance from society.
+Knowledge encourages understanding and wise decision-making.
+Educated people contribute positively to the nation.
+Learning creates responsible and capable citizens.
+`,
+      },
+      {
+        id: 49,
+        title: "49. Strong Character Matters",
+
+        content: `
+Strong character is more valuable than wealth.
+Character reflects honesty, discipline, and kindness clearly.
+People respect individuals with good moral values.
+Strong character creates a meaningful and respected life.
+`,
+      },
+      {
+        id: 50,
+        title: "50. Become Better Daily",
+
+        content: `
+Always strive to become better every day.
+Self-improvement creates confidence and inner satisfaction deeply.
+Continuous learning leads toward greater achievements in life.
+Growth is the true journey of excellence.
+`,
+      },
+    ],
+    publicSpeaking: [
+      {
+        id: 1,
+
+        title: "1. The Power of Dreams",
+
+        content: `
+Dreams give direction, purpose, and meaning to our life.
+Every successful person once started with a simple dream and strong determination.
+Students should dream big and work sincerely toward their goals every day.
+Dreams inspire people to overcome fear, failure, and difficult situations bravely.
+Hard work, confidence, and discipline can turn dreams into reality.
+Never stop believing in your dreams because they shape your future.
+`,
+      },
+
+      {
+        id: 2,
+
+        title: "2. Why Confidence Changes Everything",
+
+        content: `
+Confidence helps students face challenges with courage and positivity.
+Confident people speak clearly, take risks, and believe in their abilities.
+Self-confidence removes fear and increases motivation during difficult situations.
+Students with confidence perform better in studies, sports, and public speaking.
+Confidence grows through practice, learning, and positive thinking every day.
+Believing in yourself is the first step toward success.
+`,
+      },
+
+      {
+        id: 3,
+
+        title: "3. Success Begins with Discipline",
+
+        content: `
+Discipline is the foundation of every successful and meaningful life.
+Disciplined students use time wisely and stay focused on their goals.
+Good discipline improves habits, concentration, and decision-making abilities greatly.
+Successful people follow routines and remain committed to their responsibilities.
+Discipline also builds self-control, patience, and strong character.
+Without discipline, achieving long-term success becomes very difficult.
+`,
+      },
+
+      {
+        id: 4,
+
+        title: "4. The Importance of Never Giving Up",
+
+        content: `
+Life is full of challenges, failures, and unexpected difficulties.
+Strong people continue moving forward even after facing failure many times.
+Every mistake teaches valuable lessons and improves experience greatly.
+Students should never lose hope during difficult situations or disappointments.
+Persistence and determination help people achieve impossible goals successfully.
+Winners are not people who never fail, but people who never quit.
+`,
+      },
+
+      {
+        id: 5,
+
+        title: "5. The Power of Positive Thinking",
+
+        content: `
+Positive thinking changes the way people face problems and challenges.
+Optimistic students stay hopeful and calm during difficult situations in life.
+Positive thoughts improve confidence, emotional strength, and decision-making abilities.
+Positive people inspire others through their attitude, energy, and behavior.
+A positive mindset helps students achieve success and inner peace.
+Good thoughts create good actions and better opportunities.
+`,
+      },
+
+      {
+        id: 6,
+
+        title: "6. Why Students Should Learn Leadership",
+
+        content: `
+Leadership is not only about giving orders but helping and inspiring others.
+Good leaders are confident, responsible, honest, and hardworking individuals.
+Leadership skills improve teamwork, communication, and problem-solving abilities greatly.
+Students with leadership qualities become more active and responsible in life.
+Strong leaders create positive changes in schools, communities, and society.
+Every student should develop leadership qualities from a young age.
+`,
+      },
+
+      {
+        id: 7,
+
+        title: "7. Failure Is the Road to Success",
+
+        content: `
+Failures are not the end of success but the beginning of learning.
+Every successful person has experienced difficulties and failures in life.
+Failures teach patience, experience, confidence, and mental strength gradually.
+Students should learn from mistakes instead of becoming disappointed.
+Failure helps people become stronger, wiser, and more determined.
+Success becomes more meaningful after overcoming struggles and challenges.
+`,
+      },
+
+      {
+        id: 8,
+
+        title: "8. The Importance of Self-Belief",
+
+        content: `
+Self-belief is the strongest power a person can have in life.
+Students who believe in themselves face challenges more confidently and positively.
+Self-belief improves communication, creativity, and decision-making abilities greatly.
+Doubting yourself creates fear and stops personal growth and progress.
+Believing in your abilities increases courage and motivation every day.
+Self-belief helps people achieve extraordinary success in life.
+`,
+      },
+
+      {
+        id: 9,
+
+        title: "9. How Hard Work Creates Success",
+
+        content: `
+Success never comes without effort, dedication, and continuous hard work.
+Hardworking students improve their skills and knowledge every single day.
+Hard work increases confidence, discipline, and determination greatly over time.
+Talented people also need hard work to achieve greatness successfully.
+Students should avoid laziness and stay focused on their responsibilities.
+Hard work always brings positive results in the future.
+`,
+      },
+
+      {
+        id: 10,
+
+        title: "10. The Importance of Communication Skills",
+
+        content: `
+Communication skills help people express ideas clearly and confidently everywhere.
+Good communication improves relationships, teamwork, and leadership abilities greatly.
+Students with strong speaking skills perform better in presentations and discussions.
+Communication also reduces misunderstandings and improves social interaction positively.
+Confident speakers often inspire and influence people through their words.
+Communication is an important skill for future success and personality development.
+`,
+      },
+
+      {
+        id: 11,
+
+        title: "11. Why Time Is More Valuable Than Money",
+
+        content: `
+Money lost can be earned again, but lost time never returns.
+Successful students use every minute wisely and productively every day.
+Time management helps students complete work without stress or confusion.
+Wasting time today can create problems and regrets in the future.
+Good use of time improves discipline, productivity, and personal growth greatly.
+Time is one of the most valuable resources in human life.
+`,
+      },
+
+      {
+        id: 12,
+
+        title: "12. The Importance of Mental Strength",
+
+        content: `
+Mental strength helps people stay calm during difficult and stressful situations.
+Mentally strong students never lose hope after failures or disappointments.
+Mental strength improves confidence, emotional control, and decision-making abilities.
+Positive thinking and regular practice help build inner strength gradually.
+Strong-minded people face challenges with courage and determination.
+Mental strength is necessary for achieving success and happiness in life.
+`,
+      },
+
+      {
+        id: 13,
+
+        title: "13. Why Reading Can Change Your Life",
+
+        content: `
+Reading books improves knowledge, imagination, vocabulary, and thinking abilities greatly.
+Books teach valuable lessons about success, leadership, and life experiences.
+Reading regularly increases concentration and communication skills in students.
+Books inspire creativity, confidence, and positive thinking in life.
+Great readers often become great thinkers and successful individuals.
+Reading is one of the most powerful habits for personal growth.
+`,
+      },
+
+      {
+        id: 14,
+
+        title: "14. The Importance of Goal Setting",
+
+        content: `
+Goals give direction, purpose, and motivation to our life journey.
+Students who set goals stay focused and disciplined toward success.
+Clear goals improve confidence, determination, and time management skills greatly.
+Achieving goals creates happiness, satisfaction, and self-confidence in life.
+Every student should have meaningful short-term and long-term goals.
+Goals help transform dreams into reality through hard work.
+`,
+      },
+
+      {
+        id: 15,
+
+        title: "15. Technology: A Tool or a Distraction",
+
+        content: `
+Technology helps students learn faster and communicate more effectively today.
+Smart classes, educational apps, and online resources improve learning greatly.
+However, excessive screen time can reduce concentration and productivity badly.
+Students should use technology wisely for learning and self-improvement.
+Balanced use of technology creates better opportunities and personal growth.
+Technology becomes useful only when used responsibly and positively.
+`,
+      },
+
+      {
+        id: 16,
+
+        title: "16. The Importance of Public Speaking",
+
+        content: `
+Public speaking helps students express ideas confidently in front of others.
+It reduces stage fear and improves communication abilities gradually over time.
+Public speaking also develops leadership and personality development skills greatly.
+Good speakers inspire, motivate, and influence people through their words.
+Students who practice speaking become more confident and successful individuals.
+Public speaking is an essential life skill for future careers.
+`,
+      },
+
+      {
+        id: 17,
+
+        title: "17. Why Creativity Matters",
+
+        content: `
+Creativity helps students think differently and solve problems effectively and wisely.
+Creative students develop innovative ideas and unique solutions for challenges.
+Art, writing, music, and design improve imagination and creativity greatly.
+Creativity also increases confidence, curiosity, and learning abilities in students.
+Creative thinking is important in today’s modern and competitive world.
+Innovation and creativity often lead toward extraordinary achievements and success.
+`,
+      },
+
+      {
+        id: 18,
+
+        title: "18. The Importance of Teamwork",
+
+        content: `
+Teamwork teaches students cooperation, understanding, and responsibility during group activities.
+Working together improves communication and problem-solving abilities among students.
+Team members support each other during challenges, projects, and competitions successfully.
+Unity creates strength, confidence, friendship, and better performance in every situation.
+Teamwork is important in schools, workplaces, sports, and daily life.
+Great achievements often become possible through strong teamwork and cooperation.
+`,
+      },
+
+      {
+        id: 19,
+
+        title: "19. Why Students Should Think Big",
+
+        content: `
+Students who think big achieve greater success and opportunities in life.
+Big dreams inspire people to work harder and overcome difficulties bravely.
+Fear and negative thinking often stop people from reaching their potential.
+Students should believe in their abilities and aim for meaningful goals.
+Thinking big increases motivation, creativity, and confidence greatly over time.
+Great achievements begin with great dreams and strong determination.
+`,
+      },
+
+      {
+        id: 20,
+
+        title: "20. The Importance of Emotional Intelligence",
+
+        content: `
+Emotional intelligence helps people understand and manage emotions wisely and calmly.
+Students with emotional intelligence build stronger relationships and communication skills.
+It improves patience, empathy, and decision-making abilities during difficult situations.
+Emotionally intelligent students solve problems peacefully and confidently.
+Understanding emotions also helps students reduce stress and avoid unnecessary conflicts.
+Emotional intelligence is important for both personal and professional success.
+`,
+      },
+
+      {
+        id: 21,
+
+        title: "21. How Challenges Make Us Stronger",
+
+        content: `
+Challenges help people grow mentally, emotionally, and personally in life.
+Difficult situations teach patience, courage, and problem-solving abilities gradually.
+Students should see challenges as opportunities to learn and improve themselves.
+Every obstacle makes people stronger, wiser, and more experienced over time.
+Successful people become stronger because they face difficulties bravely.
+Challenges are necessary for personal growth and future success.
+`,
+      },
+
+      {
+        id: 22,
+
+        title: "22. The Importance of Healthy Lifestyle",
+
+        content: `
+A healthy lifestyle keeps the body and mind active and energetic.
+Healthy food and exercise improve concentration, fitness, and emotional balance greatly.
+Good habits also reduce stress and improve confidence in students.
+Healthy students perform better in studies, sports, and creative activities.
+Proper sleep and exercise are important for maintaining good health.
+Health is one of the greatest treasures in human life.
+`,
+      },
+
+      {
+        id: 23,
+
+        title: "23. Why Honesty Still Matters",
+
+        content: `
+Honesty builds trust, respect, and strong relationships in every situation.
+Honest people are admired because they remain truthful and sincere always.
+Speaking the truth gives confidence, peace of mind, and self-respect.
+Honest students create positive relationships with teachers, parents, and friends.
+Dishonesty may give temporary benefits but creates long-term problems later.
+Honesty is one of the strongest values in human character.
+`,
+      },
+
+      {
+        id: 24,
+
+        title: "24. The Importance of Environmental Awareness",
+
+        content: `
+Environmental awareness teaches people to protect nature responsibly and carefully.
+Pollution and deforestation are creating serious problems across the world today.
+Students should reduce waste, save water, and plant more trees regularly.
+Protecting nature helps create a healthier and safer future for everyone.
+Small environmental actions can create big positive changes in society.
+Every individual has a responsibility to protect the Earth.
+`,
+      },
+
+      {
+        id: 25,
+
+        title: "25. Why Learning Never Stops",
+
+        content: `
+Learning is a continuous journey that never truly ends in life.
+Every experience teaches valuable lessons and improves understanding gradually over time.
+Successful people continue learning new skills and knowledge every day.
+Students should stay curious and open-minded toward learning opportunities always.
+Learning improves creativity, confidence, and problem-solving abilities greatly.
+Continuous learning helps people adapt and grow in a changing world.
+`,
+      },
+
+      {
+        id: 26,
+
+        title: "26. The Importance of Responsibility",
+
+        content: `
+Responsibility teaches discipline, honesty, and maturity in daily life situations.
+Responsible students complete their work sincerely and always on time.
+Responsibility also helps students become independent and self-confident individuals.
+Responsible people are trusted and respected by family and society.
+Taking responsibility improves leadership and decision-making abilities greatly.
+Responsible citizens help create a safer and better society for everyone.
+`,
+      },
+
+      {
+        id: 27,
+
+        title: "27. Why Kindness Is a Superpower",
+
+        content: `
+Kindness spreads happiness, positivity, and peace everywhere in society.
+Kind words and actions make people feel respected and emotionally supported.
+Helping others teaches humanity, empathy, and responsibility in life.
+Kind students build stronger friendships and positive relationships with everyone.
+Kindness also improves emotional well-being and creates inner satisfaction.
+Small acts of kindness can create powerful changes in people’s lives.
+`,
+      },
+
+      {
+        id: 28,
+
+        title: "28. The Importance of Self-Discipline",
+
+        content: `
+Self-discipline means controlling habits, actions, and emotions wisely and positively.
+Self-disciplined students stay focused on goals without unnecessary distractions.
+It helps students manage time properly and improve productivity greatly.
+Self-discipline also increases confidence, responsibility, and emotional control over time.
+Strong self-discipline helps people achieve long-term success in life.
+Discipline is the bridge between goals and achievement.
+`,
+      },
+
+      {
+        id: 29,
+
+        title: "29. If I Could Change the World",
+
+        content: `
+If I could change the world, I would remove poverty and pollution everywhere.
+Every child would receive proper education, healthcare, and equal opportunities.
+People would live peacefully and respect each other without discrimination or hatred.
+Nature and animals would also be protected carefully and responsibly.
+I would work to create a happier, cleaner, and safer world.
+Positive changes begin when people work together sincerely.
+`,
+      },
+
+      {
+        id: 30,
+
+        title: "30. How to Become a Successful Person",
+
+        content: `
+Success comes through hard work, confidence, discipline, and positive thinking.
+Successful people never stop learning and improving themselves every day.
+They use time wisely and stay focused on meaningful goals.
+Success also requires patience, responsibility, and determination during difficult situations.
+Students should avoid negativity and continue moving forward with confidence.
+True success comes from growth, contribution, and continuous self-improvement.
 `,
       },
     ],
