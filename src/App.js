@@ -4,7 +4,7 @@ import "./App.css";
 import { Routes, Route, Navigate } from "react-router-dom";
 
 import { Mic, School, Users, Sparkles } from "lucide-react";
-
+import Popup from "./components/Popup";
 import Topbar from "./components/Topbar";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
@@ -248,6 +248,8 @@ export default function App() {
         <div className="bg-blur bg1"></div>
         <div className="bg-blur bg2"></div>
         <div className="bg-blur bg3"></div>
+
+        <Popup />
         <Routes>
           {/* HOME */}
           <Route
