@@ -1,0 +1,110 @@
+/* TRAINER POPUP OVERLAY */
+.trainer-popup-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(6, 10, 25, 0.75);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99999;
+    padding: 20px;
+    animation: trainerFadeIn 0.35s ease;
+}
+
+@keyframes trainerFadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* POPUP BOX */
+.trainer-popup-box {
+    width: 100%;
+    max-width: 400px;
+    background: #ffffff;
+    padding: 48px 36px;
+    border-radius: 28px;
+    text-align: center;
+    box-shadow: 0 25px 60px rgba(13, 45, 89, 0.25);
+    border: 1px solid rgba(13, 45, 89, 0.05);
+    animation: trainerScaleUp 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+@keyframes trainerScaleUp {
+    from { transform: scale(0.9); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+.trainer-popup-box h1 {
+    color: var(--primary, #0d2d59);
+    margin: 0 0 10px 0;
+    font-size: 28px;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+}
+
+.trainer-popup-box p {
+    color: var(--text-muted, #64748b);
+    margin: 0 0 28px 0;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.6;
+}
+
+/* FORM FIELDS */
+.trainer-popup-box input {
+    width: 100%;
+    padding: 14px 18px;
+    border-radius: 14px;
+    border: 1px solid rgba(13, 45, 89, 0.12);
+    outline: none;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-main, #1e293b);
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+    background: rgba(13, 45, 89, 0.02);
+}
+
+.trainer-popup-box input:focus {
+    border-color: var(--primary, #0d2d59);
+    background: #ffffff;
+    box-shadow: 0 0 0 4px rgba(13, 45, 89, 0.08);
+}
+
+/* BUTTON */
+.trainer-popup-box button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 14px;
+    background: linear-gradient(135deg, var(--primary, #0d2d59) 0%, #1e40af 100%);
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 16px rgba(13, 45, 89, 0.15);
+}
+
+.trainer-popup-box button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 22px rgba(13, 45, 89, 0.25);
+    background: linear-gradient(135deg, #1e40af 0%, #2563eb 100%);
+}
+
+.trainer-popup-box button:active {
+    transform: scale(0.98);
+}
+
+/* ERROR STATE */
+.trainer-popup-box span {
+    display: block;
+    color: #ef4444;
+    margin-bottom: 16px;
+    font-size: 14px;
+    font-weight: 600;
+}

@@ -1743,6 +1743,135 @@ My favorite animal is ____________. Animals are an important part of nature. The
 `,
       },
     ],
+    stockSentences: [
+      {
+        id: 1,
+
+        title: "1.Everyday",
+
+        content: `
+1.Do you wake up early every day?
+Yes, I wake up early every day.
+No, I do not wake up early every day.
+
+2.Does she go to school every day?
+Yes, she goes to school every day.
+No, she does not go to school every day.
+
+3.Do they play cricket every evening?
+Yes, they play cricket every evening.
+No, they do not play cricket every evening.
+
+4.Does he study English every night?
+Yes, he studies English every night.
+No, he does not study English every night.
+
+5.Do you drink milk every morning?
+Yes, I drink milk every morning.
+No, I do not drink milk every morning.
+
+6.Does your father read the newspaper every day?
+Yes, my father reads the newspaper every day.
+No, my father does not read the newspaper every day.
+
+7.Does the teacher check homework every day?
+Yes, the teacher checks homework every day.
+No, the teacher does not check homework every day.
+
+8.Do you practice spoken English every day?
+Yes, I practice spoken English every day.
+No, I do not practice spoken English every day.
+
+9.Does Rahul help his mother every day?
+Yes, Rahul helps his mother every day.
+No, Rahul does not help his mother every day.
+
+10.Do the students attend classes every day?
+Yes, the students attend classes every day.
+No, the students do not attend classes every day.
+
+11.Does she write new words every day?
+Yes, she writes new words every day.
+No, she does not write new words every day.
+
+12.Do you clean your classroom every day?
+Yes, we clean our classroom every day.
+No, we do not clean our classroom every day.
+
+13.Does your brother watch cartoons every day?
+Yes, my brother watches cartoons every day.
+No, my brother does not watch cartoons every day.
+
+14.Do they visit the library every week?
+Yes, they visit the library every week.
+No, they do not visit the library every week.
+
+15.Do you complete your homework every evening?
+Yes, I complete my homework every evening.
+No, I do not complete my homework every evening.
+
+16.Does the baby sleep early every night?
+Yes, the baby sleeps early every night.
+No, the baby does not sleep early every night.
+
+17.Does he speak politely every day?
+Yes, he speaks politely every day.
+No, he does not speak politely every day.
+
+18.Do you revise lessons every weekend?
+Yes, we revise lessons every weekend.
+No, we do not revise lessons every weekend.
+
+19.Does your sister sing songs every day?
+Yes, my sister sings songs every day.
+No, my sister does not sing songs every day.
+
+20.Do the boys play football every afternoon?
+Yes, the boys play football every afternoon.
+No, the boys do not play football every afternoon.
+
+21.Do you read storybooks every night?
+Yes, I read storybooks every night.
+No, I do not read storybooks every night.
+
+22.Does she water the plants every morning?
+Yes, she waters the plants every morning.
+No, she does not water the plants every morning.
+
+23.Do they practice dancing every evening?
+Yes, they practice dancing every evening.
+No, they do not practice dancing every evening.
+
+24.Does your uncle walk in the park every morning?
+Yes, my uncle walks in the park every morning.
+No, my uncle does not walk in the park every morning.
+
+25.Do you learn new vocabulary every day?
+Yes, I learn new vocabulary every day.
+No, I do not learn new vocabulary every day.
+
+26.Does he brush his teeth twice every day?
+Yes, he brushes his teeth twice every day.
+No, he does not brush his teeth twice every day.
+
+27.Do the girls participate in activities every week?
+Yes, the girls participate in activities every week.
+No, the girls do not participate in activities every week.
+
+28.Do you talk to your friend every night?
+Yes, I talk to my friend every night.
+No, I do not talk to my friend every night.
+
+29.Does she prepare breakfast every morning?
+Yes, she prepares breakfast every morning.
+No, she does not prepare breakfast every morning.
+
+30.Do they respect their teachers every day?
+Yes, they respect their teachers every day.
+No, they do not respect their teachers every day.
+`,
+      },
+    ],
   },
 
   "class-2": {

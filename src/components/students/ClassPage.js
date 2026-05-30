@@ -12,6 +12,7 @@ export default function ClassPage() {
     "stories",
     "goodThoughts",
     "publicSpeaking",
+    "stockSentences",
   ];
 
   return (
@@ -23,7 +24,15 @@ export default function ClassPage() {
       <div className="cards">
         {categories.map((cat) => (
           <Link key={cat} to={`/students/${classId}/${cat}`} className="card">
-            <h2>{cat.toUpperCase()}</h2>
+            <h2>
+              {cat === "goodThoughts"
+                ? "GOOD THOUGHTS"
+                : cat === "publicSpeaking"
+                  ? "PUBLIC SPEAKING"
+                  : cat === "stockSentences"
+                    ? "STOCK SENTENCES"
+                    : cat.toUpperCase()}
+            </h2>
           </Link>
         ))}
       </div>

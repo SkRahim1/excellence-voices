@@ -14,6 +14,11 @@ export default function ContentPage() {
   const [currentLine, setCurrentLine] = useState(-1);
   const lineRefs = useRef([]);
 
+  // Reset scroll to top of the page when navigating to a new item
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "instant" });
+  }, [classId, category, id]);
+
   useEffect(() => {
     if (currentLine >= 0 && lineRefs.current[currentLine]) {
       lineRefs.current[currentLine].scrollIntoView({
@@ -22,9 +27,32 @@ export default function ContentPage() {
       });
     }
   }, [currentLine]);
+
   const item = studentsData[classId]?.[category]?.find(
     (i) => i.id === Number(id),
   );
+
+  // Parse clean lines: trim outer spaces, and collapse multiple empty lines
+  const cleanLines = React.useMemo(() => {
+    if (!item || !item.content) return [];
+    const rawLines = item.content.trim().split("\n");
+    const result = [];
+    let lastWasEmpty = false;
+    
+    rawLines.forEach((line) => {
+      const trimmed = line.trim();
+      if (trimmed === "") {
+        if (!lastWasEmpty) {
+          result.push("");
+          lastWasEmpty = true;
+        }
+      } else {
+        result.push(line);
+        lastWasEmpty = false;
+      }
+    });
+    return result;
+  }, [item]);
 
   if (!item) {
     return (
@@ -96,7 +124,7 @@ export default function ContentPage() {
 
     y += 18;
 
-    const lines = item.content.split("\n");
+    const lines = cleanLines;
 
     lines.forEach((line) => {
       if (y > pageHeight - 25) {
@@ -209,7 +237,7 @@ export default function ContentPage() {
   const speakContent = async () => {
     window.speechSynthesis.cancel();
 
-    const lines = item.content.split("\n");
+    const lines = cleanLines;
 
     for (let i = 0; i < lines.length; i++) {
       const text = lines[i].trim();
@@ -258,7 +286,7 @@ export default function ContentPage() {
       </div>
 
       <div className="content-box">
-        {item.content.split("\n").map((line, index) => {
+        {cleanLines.map((line, index) => {
           if (line.trim() === "") {
             return <br key={index} />;
           }

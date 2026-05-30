@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./App.css";
 
-import { Routes, Route, Navigate } from "react-router-dom";
+import { Routes, Route, Navigate, useLocation } from "react-router-dom";
 
 import { Mic, School, Users, Sparkles } from "lucide-react";
 import Popup from "./components/Popup";
@@ -20,7 +20,9 @@ import StudentsHome from "./components/students/StudentsHome";
 import ClassPage from "./components/students/ClassPage";
 import CategoryPage from "./components/students/CategoryPage";
 import ContentPage from "./components/students/ContentPage";
-
+//trainer route protection
+import TrainerProtectedPopup from "./components/TrainerProtectedPopup";
+import VoiceBot from "./components/students/VoiceBot";
 /* PASSWORD PROTECTION */
 function ProtectedRoute({ children }) {
   const [password, setPassword] = useState("");
@@ -136,6 +138,7 @@ function ProtectedRoute({ children }) {
 }
 
 export default function App() {
+  const location = useLocation();
   const [activeSection, setActiveSection] = useState("home");
 
   const [menuOpen, setMenuOpen] = useState(false);
@@ -250,6 +253,7 @@ export default function App() {
         <div className="bg-blur bg3"></div>
 
         <Popup />
+        {location.pathname.startsWith("/students") && <VoiceBot />}
         <Routes>
           {/* HOME */}
           <Route
@@ -324,13 +328,15 @@ export default function App() {
           <Route
             path="/trainers"
             element={
-              <Trainers
-                navItems={navItems}
-                activeSection={activeSection}
-                scrollTo={scrollTo}
-                menuOpen={menuOpen}
-                setMenuOpen={setMenuOpen}
-              />
+              <TrainerProtectedPopup>
+                <Trainers
+                  navItems={navItems}
+                  activeSection={activeSection}
+                  scrollTo={scrollTo}
+                  menuOpen={menuOpen}
+                  setMenuOpen={setMenuOpen}
+                />
+              </TrainerProtectedPopup>
             }
           />
 

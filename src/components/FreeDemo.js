@@ -1,5 +1,6 @@
 import React from "react";
 import { ArrowRight } from "lucide-react";
+import { motion } from "framer-motion";
 
 export default function FreeDemo({ activeSection, scrollTo }) {
   return (
@@ -8,27 +9,50 @@ export default function FreeDemo({ activeSection, scrollTo }) {
       className={`section ${activeSection === "free-demo" ? "highlight" : ""}`}
     >
       <div className="container">
-        <h2 className="heading">Free Demo Session</h2>
+        {/* Title */}
+        <motion.h2 
+          className="heading"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.7 }}
+        >
+          Free Demo Session
+        </motion.h2>
 
-        <p className="para">
+        {/* Subtitle */}
+        <motion.p 
+          className="para"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.7, delay: 0.1 }}
+        >
           Excellence provides a <b>Free Demo Session</b> only for school
           students. In this demo, we check speaking level, correct mistakes, and
           guide students with confidence-building activities.
-        </p>
+        </motion.p>
 
-        <div className="demo-box">
+        {/* Floating Demo Details Box */}
+        <motion.div 
+          className="demo-box"
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ type: "spring", stiffness: 70, damping: 15, delay: 0.2 }}
+        >
           <h3>What Students Learn in Free Demo?</h3>
 
           <ul>
-            <li>✔ Fluency check and speaking assessment</li>
+            <li>Fluency check and speaking assessment</li>
 
-            <li>✔ Pronunciation correction</li>
+            <li>Pronunciation correction</li>
 
-            <li>✔ Roleplay and Q&A practice</li>
+            <li>Roleplay and Q&A practice</li>
 
-            <li>✔ Confidence building activities</li>
+            <li>Confidence building activities</li>
 
-            <li>✔ Personal roadmap for improvement</li>
+            <li>Personal roadmap for improvement</li>
           </ul>
 
           <div className="demo-contact">
@@ -44,7 +68,7 @@ export default function FreeDemo({ activeSection, scrollTo }) {
           <button className="main-btn" onClick={() => scrollTo("contact")}>
             Book Free Demo <ArrowRight size={18} />
           </button>
-        </div>
+        </motion.div>
       </div>
     </section>
   );
