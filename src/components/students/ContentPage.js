@@ -110,6 +110,17 @@ export default function ContentPage() {
       );
     };
 
+    const addWatermark = () => {
+      doc.setFont("helvetica", "bold");
+      doc.setFontSize(60);
+      doc.setTextColor(240, 240, 240);
+      doc.text("Excellence Voices", pageWidth / 2, pageHeight / 2, {
+        align: "center",
+        angle: 315,
+      });
+    };
+
+    addWatermark();
     addHeader();
 
     doc.setFont("helvetica", "bold");
@@ -131,6 +142,8 @@ export default function ContentPage() {
         addFooter();
 
         doc.addPage();
+
+        addWatermark();
 
         addHeader();
 
