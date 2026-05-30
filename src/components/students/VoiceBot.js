@@ -43,6 +43,7 @@ export default function VoiceBot() {
   const recognitionRef = useRef(null);
   const activeUtteranceRef = useRef(null);
   const captionTimersRef = useRef([]);
+  const isOpenRef = useRef(false);
 
   const readingLinesRef = useRef([]);
   const readingIndexRef = useRef(-1);
@@ -59,6 +60,7 @@ export default function VoiceBot() {
   // Sync refs with state
   useEffect(() => { appStateRef.current = appState; }, [appState]);
   useEffect(() => { modeRef.current = mode; }, [mode]);
+  useEffect(() => { isOpenRef.current = isOpen; }, [isOpen]);
   useEffect(() => { readingLinesRef.current = readingLines; }, [readingLines]);
   useEffect(() => { readingIndexRef.current = readingIndex; }, [readingIndex]);
   useEffect(() => { readingTitleRef.current = readingTitle; }, [readingTitle]);
@@ -144,10 +146,17 @@ export default function VoiceBot() {
       clearTimeout(watchdog);
       activeUtteranceRef.current = null;
       clearCaptionTimers();
+      
+      if (!isOpenRef.current) {
+        return;
+      }
+
       if (callback) {
         callback();
       } else {
-        setAppState("LISTENING");
+        if (appStateRef.current !== "IDLE") {
+          setAppState("LISTENING");
+        }
       }
     };
 
@@ -182,6 +191,7 @@ export default function VoiceBot() {
   // Stop session
   const stopVoiceMode = () => {
     setIsOpen(false);
+    isOpenRef.current = false; // set immediately to prevent race conditions
     setAppState("IDLE");
     setMode("NAVIGATION");
     clearCaptionTimers();
@@ -587,6 +597,7 @@ export default function VoiceBot() {
 
     const intro = `Now reading: ${item.title}. Let's listen!`;
     speak(intro, () => {
+      if (modeRef.current !== "READING" || appStateRef.current === "IDLE") return;
       playReadingTurn(0, storyLines);
     });
   };
@@ -600,6 +611,7 @@ export default function VoiceBot() {
     // Render the caption line
     setCurrentCaptionLine(lines[idx]);
     speak(lines[idx], () => {
+      if (modeRef.current !== "READING" || appStateRef.current === "IDLE") return;
       const nextIdx = idx + 1;
       setReadingIndex(nextIdx);
       playReadingTurn(nextIdx, lines);
@@ -620,6 +632,10 @@ export default function VoiceBot() {
   };
 
   const endReading = () => {
+    if (window.speechSynthesis) {
+      window.speechSynthesis.cancel();
+    }
+    clearCaptionTimers();
     setMode("NAVIGATION");
     setReadingIndex(-1);
     setReadingLines([]);
@@ -745,6 +761,7 @@ export default function VoiceBot() {
 
     const intro = `Starting Skit: ${item.title}. I will speak as ${cBot}, and you will speak as ${cUser}. Let's begin!`;
     speak(intro, () => {
+      if (modeRef.current !== "ROLEPLAY" || appStateRef.current === "IDLE") return;
       playRoleplayTurn(0, dialogueLines, cBot, cUser);
     });
   };
@@ -767,6 +784,7 @@ export default function VoiceBot() {
     if (isBotLine) {
       setCurrentCaptionLine(currentLine);
       speak(dialogueText, () => {
+        if (modeRef.current !== "ROLEPLAY" || appStateRef.current === "IDLE") return;
         const nextIdx = idx + 1;
         setRoleplayIndex(nextIdx);
         playRoleplayTurn(nextIdx, lines, bChar, uChar);
@@ -793,6 +811,7 @@ export default function VoiceBot() {
 
     setCurrentCaptionLine(`(Praveena Reading) ${currentLine}`);
     speak(dialogueText, () => {
+      if (modeRef.current !== "ROLEPLAY" || appStateRef.current === "IDLE") return;
       const nextIdx = roleplayIndexRef.current + 1;
       setRoleplayIndex(nextIdx);
       playRoleplayTurn(nextIdx);
@@ -800,6 +819,10 @@ export default function VoiceBot() {
   };
 
   const endRoleplay = () => {
+    if (window.speechSynthesis) {
+      window.speechSynthesis.cancel();
+    }
+    clearCaptionTimers();
     setMode("NAVIGATION");
     setRoleplayIndex(-1);
     setRoleplayLines([]);
