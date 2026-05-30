@@ -3312,6 +3312,1015 @@ Learning opens the door to success.
 `,
       },
     ],
+    stockSentences: [
+      {
+        id: 1,
+        title: "1.Everyday",
+        content: `
+1.Do you wake up early every day?
+Yes, I wake up early every day.
+No, I do not wake up early every day.
+
+2.Does she go to school every day?
+Yes, she goes to school every day.
+No, she does not go to school every day.
+
+3.Do they play cricket every evening?
+Yes, they play cricket every evening.
+No, they do not play cricket every evening.
+
+4.Does he study English every night?
+Yes, he studies English every night.
+No, he does not study English every night.
+
+5.Do you drink milk every morning?
+Yes, I drink milk every morning.
+No, I do not drink milk every morning.
+
+6.Does she draw pictures every weekend?
+Yes, she draws pictures every weekend.
+No, she does not draw pictures every weekend.
+
+7.Do they watch television every evening?
+Yes, they watch television every evening.
+No, they do not watch television every evening.
+
+8.Does he play football every Sunday?
+Yes, he plays football every Sunday.
+No, he does not play football every Sunday.
+
+9.Do you read storybooks every night?
+Yes, I read storybooks every night.
+No, I do not read storybooks every night.
+
+10.Does she clean her room every Sunday?
+Yes, she cleans her room every Sunday.
+No, she does not clean her room every Sunday.
+
+11.Do they visit their grandparents every summer?
+Yes, they visit their grandparents every summer.
+No, they do not visit their grandparents every summer.
+
+12.Does he wash his hands before meals?
+Yes, he washes his hands before meals.
+No, he does not wash his hands before meals.
+
+13.Do you brush your teeth every morning?
+Yes, I brush my teeth every morning.
+No, I do not brush my teeth every morning.
+
+14.Does she help her mother every day?
+Yes, she helps her mother every day.
+No, she does not help her mother every day.
+
+15.Do they practice singing every week?
+Yes, they practice singing every week.
+No, they do not practice singing every week.
+
+16.Does he drive a car every day?
+Yes, he drives a car every day.
+No, he does not drive a car every day.
+
+17.Do you water the plants every evening?
+Yes, I water the plants every evening.
+No, I do not water the plants every evening.
+
+18.Does she walk in the park every morning?
+Yes, she walks in the park every morning.
+No, she does not walk in the park every morning.
+
+19.Do they write letters every month?
+Yes, they write letters every month.
+No, they do not write letters every month.
+
+20.Does he eat fruits every day?
+Yes, he eats fruits every day.
+No, he does not eat fruits every day.
+
+21.Do you sleep early every night?
+Yes, I sleep early every night.
+No, I do not sleep early every night.
+
+22.Does she cook food every day?
+Yes, she cooks food every day.
+No, she does not cook food every day.
+
+23.Do they practice dancing every evening?
+Yes, they practice dancing every evening.
+No, they do not practice dancing every evening.
+
+24.Does your uncle walk in the park every morning?
+Yes, my uncle walks in the park every morning.
+No, my uncle does not walk in the park every morning.
+
+25.Do you learn new vocabulary every day?
+Yes, I learn new vocabulary every day.
+No, I do not learn new vocabulary every day.
+
+26.Does he brush his teeth twice every day?
+Yes, he brushes his teeth twice every day.
+No, he does not brush his teeth twice every day.
+
+27.Do the girls participate in activities every week?
+Yes, the girls participate in activities every week.
+No, the girls do not participate in activities every week.
+
+28.Do you talk to your friend every night?
+Yes, I talk to my friend every night.
+No, I do not talk to my friend every night.
+
+29.Does she prepare breakfast every morning?
+Yes, she prepares breakfast every morning.
+No, she does not prepare breakfast every morning.
+
+30.Do they respect their teachers every day?
+Yes, they respect their teachers every day.
+No, they do not respect their teachers every day.
+`
+      },
+
+      {
+        id: 2,
+        title: "2.Yesterday",
+        content: `
+1.Did you wake up early yesterday?
+Yes, I woke up early yesterday.
+No, I did not wake up early yesterday.
+
+2.Did she go to school yesterday?
+Yes, she went to school yesterday.
+No, she did not go to school yesterday.
+
+3.Did they play cricket yesterday?
+Yes, they played cricket yesterday.
+No, they did not play cricket yesterday.
+
+4.Did he study English yesterday?
+Yes, he studied English yesterday.
+No, he did not study English yesterday.
+
+5.Did you drink milk yesterday?
+Yes, I drank milk yesterday.
+No, I did not drink milk yesterday.
+
+6.Did she draw pictures yesterday?
+Yes, she drew pictures yesterday.
+No, she did not draw pictures yesterday.
+
+7.Did they watch television yesterday?
+Yes, they watched television yesterday.
+No, they did not watch television yesterday.
+
+8.Did he play football yesterday?
+Yes, he played football yesterday.
+No, he did not play football yesterday.
+
+9.Did you read storybooks yesterday?
+Yes, I read storybooks yesterday.
+No, I did not read storybooks yesterday.
+
+10.Did she clean her room yesterday?
+Yes, she cleaned her room yesterday.
+No, she did not clean her room yesterday.
+
+11.Did they visit their grandparents yesterday?
+Yes, they visited their grandparents yesterday.
+No, they did not visit their grandparents yesterday.
+
+12.Did he wash his hands yesterday?
+Yes, he washed his hands yesterday.
+No, he did not wash his hands yesterday.
+
+13.Did you brush your teeth yesterday?
+Yes, I brushed my teeth yesterday.
+No, I did not brush my teeth yesterday.
+
+14.Did she help her mother yesterday?
+Yes, she helped her mother yesterday.
+No, she did not help her mother yesterday.
+
+15.Did they practice singing yesterday?
+Yes, they practiced singing yesterday.
+No, they did not practice singing yesterday.
+
+16.Did he drive a car yesterday?
+Yes, he drove a car yesterday.
+No, he did not drive a car yesterday.
+
+17.Did you water the plants yesterday?
+Yes, I watered the plants yesterday.
+No, I did not water the plants yesterday.
+
+18.Did she walk in the park yesterday?
+Yes, she walked in the park yesterday.
+No, she did not walk in the park yesterday.
+
+19.Did they write letters yesterday?
+Yes, they wrote letters yesterday.
+No, they did not write letters yesterday.
+
+20.Did he eat fruits yesterday?
+Yes, he ate fruits yesterday.
+No, he did not eat fruits yesterday.
+
+21.Did you sleep early yesterday?
+Yes, I slept early yesterday.
+No, I did not sleep early yesterday.
+
+22.Did she cook food yesterday?
+Yes, she cooked food yesterday.
+No, she did not cook food yesterday.
+
+23.Did they practice dancing yesterday?
+Yes, they practiced dancing yesterday.
+No, they did not practice dancing yesterday.
+
+24.Did your uncle walk in the park yesterday?
+Yes, my uncle walked in the park yesterday.
+No, my uncle did not walk in the park yesterday.
+
+25.Did you learn new vocabulary yesterday?
+Yes, I learned new vocabulary yesterday.
+No, I did not learn new vocabulary yesterday.
+
+26.Did he brush his teeth twice yesterday?
+Yes, he brushed his teeth twice yesterday.
+No, he did not brush his teeth twice yesterday.
+
+27.Did the girls participate in activities yesterday?
+Yes, the girls participated in activities yesterday.
+No, the girls did not participate in activities yesterday.
+
+28.Did you talk to your friend yesterday?
+Yes, I talked to my friend yesterday.
+No, I did not talk to my friend yesterday.
+
+29.Did she prepare breakfast yesterday?
+Yes, she prepared breakfast yesterday.
+No, she did not prepare breakfast yesterday.
+
+30.Did they respect their teachers yesterday?
+Yes, they respected their teachers yesterday.
+No, they did not respect their teachers yesterday.
+`
+      },
+
+      {
+        id: 3,
+        title: "3.Tomorrow",
+        content: `
+1.Will you wake up early tomorrow?
+Yes, I will wake up early tomorrow.
+No, I will not wake up early tomorrow.
+
+2.Will she go to school tomorrow?
+Yes, she will go to school tomorrow.
+No, she will not go to school tomorrow.
+
+3.Will they play cricket tomorrow?
+Yes, they will play cricket tomorrow.
+No, they will not play cricket tomorrow.
+
+4.Will he study English tomorrow?
+Yes, he will study English tomorrow.
+No, he will not study English tomorrow.
+
+5.Will you drink milk tomorrow?
+Yes, I will drink milk tomorrow.
+No, I will not drink milk tomorrow.
+
+6.Will she draw pictures tomorrow?
+Yes, she will draw pictures tomorrow.
+No, she will not draw pictures tomorrow.
+
+7.Will they watch television tomorrow?
+Yes, they will watch television tomorrow.
+No, they will not watch television tomorrow.
+
+8.Will he play football tomorrow?
+Yes, he will play football tomorrow.
+No, he will not play football tomorrow.
+
+9.Will you read storybooks tomorrow?
+Yes, I will read storybooks tomorrow.
+No, I will not read storybooks tomorrow.
+
+10.Will she clean her room tomorrow?
+Yes, she will clean her room tomorrow.
+No, she will not clean her room tomorrow.
+
+11.Will they visit their grandparents tomorrow?
+Yes, they will visit their grandparents tomorrow.
+No, they will not visit their grandparents tomorrow.
+
+12.Will he wash his hands tomorrow?
+Yes, he will wash his hands tomorrow.
+No, he will not wash his hands tomorrow.
+
+13.Will you brush your teeth tomorrow?
+Yes, I will brush my teeth tomorrow.
+No, I will not brush my teeth tomorrow.
+
+14.Will she help her mother tomorrow?
+Yes, she will help her mother tomorrow.
+No, she will not help her mother tomorrow.
+
+15.Will they practice singing tomorrow?
+Yes, they will practice singing tomorrow.
+No, they will not practice singing tomorrow.
+
+16.Will he drive a car tomorrow?
+Yes, he will drive a car tomorrow.
+No, he will not drive a car tomorrow.
+
+17.Will you water the plants tomorrow?
+Yes, I will water the plants tomorrow.
+No, I will not water the plants tomorrow.
+
+18.Will she walk in the park tomorrow?
+Yes, she will walk in the park tomorrow.
+No, she will not walk in the park tomorrow.
+
+19.Will they write letters tomorrow?
+Yes, they will write letters tomorrow.
+No, they will not write letters tomorrow.
+
+20.Will he eat fruits tomorrow?
+Yes, he will eat fruits tomorrow.
+No, he will not eat fruits tomorrow.
+
+21.Will you sleep early tomorrow?
+Yes, I will sleep early tomorrow.
+No, I will not sleep early tomorrow.
+
+22.Will she cook food tomorrow?
+Yes, she will cook food tomorrow.
+No, she will not cook food tomorrow.
+
+23.Will they practice dancing tomorrow?
+Yes, they will practice dancing tomorrow.
+No, they will not practice dancing tomorrow.
+
+24.Will your uncle walk in the park tomorrow?
+Yes, my uncle will walk in the park tomorrow.
+No, my uncle will not walk in the park tomorrow.
+
+25.Will you learn new vocabulary tomorrow?
+Yes, I will learn new vocabulary tomorrow.
+No, I will not learn new vocabulary tomorrow.
+
+26.Will he brush his teeth twice tomorrow?
+Yes, he will brush his teeth twice tomorrow.
+No, he will not brush his teeth twice tomorrow.
+
+27.Will the girls participate in activities tomorrow?
+Yes, the girls will participate in activities tomorrow.
+No, the girls will not participate in activities tomorrow.
+
+28.Will you talk to your friend tomorrow?
+Yes, I will talk to my friend tomorrow.
+No, I will not talk to my friend tomorrow.
+
+29.Will she prepare breakfast tomorrow?
+Yes, she will prepare breakfast tomorrow.
+No, she will not prepare breakfast tomorrow.
+
+30.Will they respect their teachers tomorrow?
+Yes, they will respect their teachers tomorrow.
+No, they will not respect their teachers tomorrow.
+`
+      },
+
+      {
+        id: 4,
+        title: "4.Now",
+        content: `
+1.Are you waking up early now?
+Yes, I am waking up early now.
+No, I am not waking up early now.
+
+2.Is she going to school now?
+Yes, she is going to school now.
+No, she is not going to school now.
+
+3.Are they playing cricket now?
+Yes, they are playing cricket now.
+No, they are not playing cricket now.
+
+4.Is he studying English now?
+Yes, he is studying English now.
+No, he is not studying English now.
+
+5.Are you drinking milk now?
+Yes, I am drinking milk now.
+No, I am not drinking milk now.
+
+6.Is she drawing pictures now?
+Yes, she is drawing pictures now.
+No, she is not drawing pictures now.
+
+7.Are they watching television now?
+Yes, they are watching television now.
+No, they are not watching television now.
+
+8.Is he playing football now?
+Yes, he is playing football now.
+No, he is not playing football now.
+
+9.Are you reading storybooks now?
+Yes, I am reading storybooks now.
+No, I am not reading storybooks now.
+
+10.Is she cleaning her room now?
+Yes, she is cleaning her room now.
+No, she is not cleaning her room now.
+
+11.Are they visiting their grandparents now?
+Yes, they are visiting their grandparents now.
+No, they are not visiting their grandparents now.
+
+12.Is he washing his hands now?
+Yes, he is washing his hands now.
+No, he is not washing his hands now.
+
+13.Are you brushing your teeth now?
+Yes, I am brushing my teeth now.
+No, I am not brushing my teeth now.
+
+14.Is she helping her mother now?
+Yes, she is helping her mother now.
+No, she is not helping her mother now.
+
+15.Are they practicing singing now?
+Yes, they are practicing singing now.
+No, they are not practicing singing now.
+
+16.Is he driving a car now?
+Yes, he is driving a car now.
+No, he is not driving a car now.
+
+17.Are you watering the plants now?
+Yes, I am watering the plants now.
+No, I am not watering the plants now.
+
+18.Is she walking in the park now?
+Yes, she is walking in the park now.
+No, she is not walking in the park now.
+
+19.Are they writing letters now?
+Yes, they are writing letters now.
+No, they are not writing letters now.
+
+20.Is he eating fruits now?
+Yes, he is eating fruits now.
+No, he is not eating fruits now.
+
+21.Are you sleeping early now?
+Yes, I am sleeping early now.
+No, I am not sleeping early now.
+
+22.Is she cooking food now?
+Yes, she is cooking food now.
+No, she is not cooking food now.
+
+23.Are they practicing dancing now?
+Yes, they are practicing dancing now.
+No, they are not practicing dancing now.
+
+24.Is your uncle walking in the park now?
+Yes, my uncle is walking in the park now.
+No, my uncle is not walking in the park now.
+
+25.Are you learning new vocabulary now?
+Yes, I am learning new vocabulary now.
+No, I am not learning new vocabulary now.
+
+26.Is he brushing his teeth twice now?
+Yes, he is brushing his teeth twice now.
+No, he is not brushing his teeth twice now.
+
+27.Are the girls participating in activities now?
+Yes, the girls are participating in activities now.
+No, the girls are not participating in activities now.
+
+28.Are you talking to your friend now?
+Yes, I am talking to my friend now.
+No, I am not talking to my friend now.
+
+29.Is she preparing breakfast now?
+Yes, she is preparing breakfast now.
+No, she is not preparing breakfast now.
+
+30.Are they respecting their teachers now?
+Yes, they are respecting their teachers now.
+No, they are not respecting their teachers now.
+`
+      },
+
+      {
+        id: 5,
+        title: "5.At 9 O'Clock Yesterday",
+        content: `
+1.Were you waking up early at 9 o'clock yesterday?
+Yes, I was waking up early at 9 o'clock yesterday.
+No, I was not waking up early at 9 o'clock yesterday.
+
+2.Was she going to school at 9 o'clock yesterday?
+Yes, she was going to school at 9 o'clock yesterday.
+No, she was not going to school at 9 o'clock yesterday.
+
+3.Were they playing cricket at 9 o'clock yesterday?
+Yes, they were playing cricket at 9 o'clock yesterday.
+No, they were not playing cricket at 9 o'clock yesterday.
+
+4.Was he studying English at 9 o'clock yesterday?
+Yes, he was studying English at 9 o'clock yesterday.
+No, he was not studying English at 9 o'clock yesterday.
+
+5.Were you drinking milk at 9 o'clock yesterday?
+Yes, I was drinking milk at 9 o'clock yesterday.
+No, I was not drinking milk at 9 o'clock yesterday.
+
+6.Was she drawing pictures at 9 o'clock yesterday?
+Yes, she was drawing pictures at 9 o'clock yesterday.
+No, she was not drawing pictures at 9 o'clock yesterday.
+
+7.Were they watching television at 9 o'clock yesterday?
+Yes, they were watching television at 9 o'clock yesterday.
+No, they were not watching television at 9 o'clock yesterday.
+
+8.Was he playing football at 9 o'clock yesterday?
+Yes, he was playing football at 9 o'clock yesterday.
+No, he was not playing football at 9 o'clock yesterday.
+
+9.Were you reading storybooks at 9 o'clock yesterday?
+Yes, I was reading storybooks at 9 o'clock yesterday.
+No, I was not reading storybooks at 9 o'clock yesterday.
+
+10.Was she cleaning her room at 9 o'clock yesterday?
+Yes, she was cleaning her room at 9 o'clock yesterday.
+No, she was not cleaning her room at 9 o'clock yesterday.
+
+11.Were they visiting their grandparents at 9 o'clock yesterday?
+Yes, they were visiting their grandparents at 9 o'clock yesterday.
+No, they were not visiting their grandparents at 9 o'clock yesterday.
+
+12.Was he washing his hands at 9 o'clock yesterday?
+Yes, he was washing his hands at 9 o'clock yesterday.
+No, he was not washing his hands at 9 o'clock yesterday.
+
+13.Were you brushing your teeth at 9 o'clock yesterday?
+Yes, I was brushing my teeth at 9 o'clock yesterday.
+No, I was not brushing my teeth at 9 o'clock yesterday.
+
+14.Was she helping her mother at 9 o'clock yesterday?
+Yes, she was helping her mother at 9 o'clock yesterday.
+No, she was not helping her mother at 9 o'clock yesterday.
+
+15.Were they practicing singing at 9 o'clock yesterday?
+Yes, they were practicing singing at 9 o'clock yesterday.
+No, they were not practicing singing at 9 o'clock yesterday.
+
+16.Was he driving a car at 9 o'clock yesterday?
+Yes, he was driving a car at 9 o'clock yesterday.
+No, he was not driving a car at 9 o'clock yesterday.
+
+17.Were you watering the plants at 9 o'clock yesterday?
+Yes, I was watering the plants at 9 o'clock yesterday.
+No, I was not watering the plants at 9 o'clock yesterday.
+
+18.Was she walking in the park at 9 o'clock yesterday?
+Yes, she was walking in the park at 9 o'clock yesterday.
+No, she was not walking in the park at 9 o'clock yesterday.
+
+19.Were they writing letters at 9 o'clock yesterday?
+Yes, they were writing letters at 9 o'clock yesterday.
+No, they were not writing letters at 9 o'clock yesterday.
+
+20.Was he eating fruits at 9 o'clock yesterday?
+Yes, he was eating fruits at 9 o'clock yesterday.
+No, he was not eating fruits at 9 o'clock yesterday.
+
+21.Were you sleeping early at 9 o'clock yesterday?
+Yes, I was sleeping early at 9 o'clock yesterday.
+No, I was not sleeping early at 9 o'clock yesterday.
+
+22.Was she cooking food at 9 o'clock yesterday?
+Yes, she was cooking food at 9 o'clock yesterday.
+No, she was not cooking food at 9 o'clock yesterday.
+
+23.Were they practicing dancing at 9 o'clock yesterday?
+Yes, they were practicing dancing at 9 o'clock yesterday.
+No, they were not practicing dancing at 9 o'clock yesterday.
+
+24.Was your uncle walking in the park at 9 o'clock yesterday?
+Yes, my uncle was walking in the park at 9 o'clock yesterday.
+No, my uncle was not walking in the park at 9 o'clock yesterday.
+
+25.Were you learning new vocabulary at 9 o'clock yesterday?
+Yes, I was learning new vocabulary at 9 o'clock yesterday.
+No, I was not learning new vocabulary at 9 o'clock yesterday.
+
+26.Was he brushing his teeth twice at 9 o'clock yesterday?
+Yes, he was brushing his teeth twice at 9 o'clock yesterday.
+No, he was not brushing his teeth twice at 9 o'clock yesterday.
+
+27.Were the girls participating in activities at 9 o'clock yesterday?
+Yes, the girls were participating in activities at 9 o'clock yesterday.
+No, the girls were not participating in activities at 9 o'clock yesterday.
+
+28.Were you talking to your friend at 9 o'clock yesterday?
+Yes, I was talking to my friend at 9 o'clock yesterday.
+No, I was not talking to my friend at 9 o'clock yesterday.
+
+29.Was she preparing breakfast at 9 o'clock yesterday?
+Yes, she was preparing breakfast at 9 o'clock yesterday.
+No, she was not preparing breakfast at 9 o'clock yesterday.
+
+30.Were they respecting their teachers at 9 o'clock yesterday?
+Yes, they were respecting their teachers at 9 o'clock yesterday.
+No, they were not respecting their teachers at 9 o'clock yesterday.
+`
+      },
+
+      {
+        id: 6,
+        title: "6.At 9 O'Clock Tomorrow",
+        content: `
+1.Will you be waking up early at 9 o'clock tomorrow?
+Yes, I will be waking up early at 9 o'clock tomorrow.
+No, I will not be waking up early at 9 o'clock tomorrow.
+
+2.Will she be going to school at 9 o'clock tomorrow?
+Yes, she will be going to school at 9 o'clock tomorrow.
+No, she will not be going to school at 9 o'clock tomorrow.
+
+3.Will they be playing cricket at 9 o'clock tomorrow?
+Yes, they will be playing cricket at 9 o'clock tomorrow.
+No, they will not be playing cricket at 9 o'clock tomorrow.
+
+4.Will he be studying English at 9 o'clock tomorrow?
+Yes, he will be studying English at 9 o'clock tomorrow.
+No, he will not be studying English at 9 o'clock tomorrow.
+
+5.Will you be drinking milk at 9 o'clock tomorrow?
+Yes, I will be drinking milk at 9 o'clock tomorrow.
+No, I will not be drinking milk at 9 o'clock tomorrow.
+
+6.Will she be drawing pictures at 9 o'clock tomorrow?
+Yes, she will be drawing pictures at 9 o'clock tomorrow.
+No, she will not be drawing pictures at 9 o'clock tomorrow.
+
+7.Will they be watching television at 9 o'clock tomorrow?
+Yes, they will be watching television at 9 o'clock tomorrow.
+No, they will not be watching television at 9 o'clock tomorrow.
+
+8.Will he be playing football at 9 o'clock tomorrow?
+Yes, he will be playing football at 9 o'clock tomorrow.
+No, he will not be playing football at 9 o'clock tomorrow.
+
+9.Will you be reading storybooks at 9 o'clock tomorrow?
+Yes, I will be reading storybooks at 9 o'clock tomorrow.
+No, I will not be reading storybooks at 9 o'clock tomorrow.
+
+10.Will she be cleaning her room at 9 o'clock tomorrow?
+Yes, she will be cleaning her room at 9 o'clock tomorrow.
+No, she will not be cleaning her room at 9 o'clock tomorrow.
+
+11.Will they be visiting their grandparents at 9 o'clock tomorrow?
+Yes, they will be visiting their grandparents at 9 o'clock tomorrow.
+No, they will not be visiting their grandparents at 9 o'clock tomorrow.
+
+12.Will he be washing his hands at 9 o'clock tomorrow?
+Yes, he will be washing his hands at 9 o'clock tomorrow.
+No, he will not be washing his hands at 9 o'clock tomorrow.
+
+13.Will you be brushing your teeth at 9 o'clock tomorrow?
+Yes, I will be brushing my teeth at 9 o'clock tomorrow.
+No, I will not be brushing my teeth at 9 o'clock tomorrow.
+
+14.Will she be helping her mother at 9 o'clock tomorrow?
+Yes, she will be helping her mother at 9 o'clock tomorrow.
+No, she will not be helping her mother at 9 o'clock tomorrow.
+
+15.Will they be practicing singing at 9 o'clock tomorrow?
+Yes, they will be practicing singing at 9 o'clock tomorrow.
+No, they will not be practicing singing at 9 o'clock tomorrow.
+
+16.Will he be driving a car at 9 o'clock tomorrow?
+Yes, he will be driving a car at 9 o'clock tomorrow.
+No, he will not be driving a car at 9 o'clock tomorrow.
+
+17.Will you be watering the plants at 9 o'clock tomorrow?
+Yes, I will be watering the plants at 9 o'clock tomorrow.
+No, I will not be watering the plants at 9 o'clock tomorrow.
+
+18.Will she be walking in the park at 9 o'clock tomorrow?
+Yes, she will be walking in the park at 9 o'clock tomorrow.
+No, she will not be walking in the park at 9 o'clock tomorrow.
+
+19.Will they be writing letters at 9 o'clock tomorrow?
+Yes, they will be writing letters at 9 o'clock tomorrow.
+No, they will not be writing letters at 9 o'clock tomorrow.
+
+20.Will he be eating fruits at 9 o'clock tomorrow?
+Yes, he will be eating fruits at 9 o'clock tomorrow.
+No, he will not be eating fruits at 9 o'clock tomorrow.
+
+21.Will you be sleeping early at 9 o'clock tomorrow?
+Yes, I will be sleeping early at 9 o'clock tomorrow.
+No, I will not be sleeping early at 9 o'clock tomorrow.
+
+22.Will she be cooking food at 9 o'clock tomorrow?
+Yes, she will be cooking food at 9 o'clock tomorrow.
+No, she will not be cooking food at 9 o'clock tomorrow.
+
+23.Will they be practicing dancing at 9 o'clock tomorrow?
+Yes, they will be practicing dancing at 9 o'clock tomorrow.
+No, they will not be practicing dancing at 9 o'clock tomorrow.
+
+24.Will your uncle be walking in the park at 9 o'clock tomorrow?
+Yes, my uncle will be walking in the park at 9 o'clock tomorrow.
+No, my uncle will not be walking in the park at 9 o'clock tomorrow.
+
+25.Will you be learning new vocabulary at 9 o'clock tomorrow?
+Yes, I will be learning new vocabulary at 9 o'clock tomorrow.
+No, I will not be learning new vocabulary at 9 o'clock tomorrow.
+
+26.Will he be brushing his teeth twice at 9 o'clock tomorrow?
+Yes, he will be brushing his teeth twice at 9 o'clock tomorrow.
+No, he will not be brushing his teeth twice at 9 o'clock tomorrow.
+
+27.Will the girls be participating in activities at 9 o'clock tomorrow?
+Yes, the girls will be participating in activities at 9 o'clock tomorrow.
+No, the girls will not be participating in activities at 9 o'clock tomorrow.
+
+28.Will you be talking to your friend at 9 o'clock tomorrow?
+Yes, I will be talking to my friend at 9 o'clock tomorrow.
+No, I will not be talking to my friend at 9 o'clock tomorrow.
+
+29.Will she be preparing breakfast at 9 o'clock tomorrow?
+Yes, she will be preparing breakfast at 9 o'clock tomorrow.
+No, she will not be preparing breakfast at 9 o'clock tomorrow.
+
+30.Will they be respecting their teachers at 9 o'clock tomorrow?
+Yes, they will be respecting their teachers at 9 o'clock tomorrow.
+No, they will not be respecting their teachers at 9 o'clock tomorrow.
+`
+      },
+
+      {
+        id: 7,
+        title: "7.Already",
+        content: `
+1.Have you already woken up early?
+Yes, I have already woken up early.
+No, I have not already woken up early.
+
+2.Has she already gone to school?
+Yes, she has already gone to school.
+No, she has not already gone to school.
+
+3.Have they already played cricket?
+Yes, they have already played cricket.
+No, they have not already played cricket.
+
+4.Has he already studied English?
+Yes, he has already studied English.
+No, he has not already studied English.
+
+5.Have you already drunk milk?
+Yes, I have already drunk milk.
+No, I have not already drunk milk.
+
+6.Has she already drawn pictures?
+Yes, she has already drawn pictures.
+No, she has not already drawn pictures.
+
+7.Have they already watched television?
+Yes, they have already watched television.
+No, they have not already watched television.
+
+8.Has he already played football?
+Yes, he has already played football.
+No, he has not already played football.
+
+9.Have you already read storybooks?
+Yes, I have already read storybooks.
+No, I have not already read storybooks.
+
+10.Has she already cleaned her room?
+Yes, she has already cleaned her room.
+No, she has not already cleaned her room.
+
+11.Have they already visited their grandparents?
+Yes, they have already visited their grandparents.
+No, they have not already visited their grandparents.
+
+12.Has he already washed his hands?
+Yes, he has already washed his hands.
+No, he has not already washed his hands.
+
+13.Have you already brushed your teeth?
+Yes, I have already brushed my teeth.
+No, I have not already brushed my teeth.
+
+14.Has she already helped her mother?
+Yes, she has already helped her mother.
+No, she has not already helped her mother.
+
+15.Have they already practiced singing?
+Yes, they have already practiced singing.
+No, they have not already practiced singing.
+
+16.Has he already driven a car?
+Yes, he has already driven a car.
+No, he has not already driven a car.
+
+17.Have you already watered the plants?
+Yes, I have already watered the plants.
+No, I have not already watered the plants.
+
+18.Has she already walked in the park?
+Yes, she has already walked in the park.
+No, she has not already walked in the park.
+
+19.Have they already written letters?
+Yes, they have already written letters.
+No, they have not already written letters.
+
+20.Has he already eaten fruits?
+Yes, he has already eaten fruits.
+No, he has not already eaten fruits.
+
+21.Have you already slept early?
+Yes, I have already slept early.
+No, I have not already slept early.
+
+22.Has she already cooked food?
+Yes, she has already cooked food.
+No, she has not already cooked food.
+
+23.Have they already practiced dancing?
+Yes, they have already practiced dancing.
+No, they have not already practiced dancing.
+
+24.Has your uncle already walked in the park?
+Yes, my uncle has already walked in the park.
+No, my uncle has not already walked in the park.
+
+25.Have you already learned new vocabulary?
+Yes, I have already learned new vocabulary.
+No, I have not already learned new vocabulary.
+
+26.Has he already brushed his teeth twice?
+Yes, he has already brushed his teeth twice.
+No, he has not already brushed his teeth twice.
+
+27.Have the girls already participated in activities?
+Yes, the girls have already participated in activities.
+No, the girls have not already participated in activities.
+
+28.Have you already talked to your friend?
+Yes, I have already talked to my friend.
+No, I have not already talked to my friend.
+
+29.Has she already prepared breakfast?
+Yes, she has already prepared breakfast.
+No, she has not already prepared breakfast.
+
+30.Have they already respected their teachers?
+Yes, they have already respected their teachers.
+No, they have not already respected their teachers.
+`
+      },
+
+      {
+        id: 8,
+        title: "8.For 2 Hours",
+        content: `
+1.Have you been waking up early for 2 hours?
+Yes, I have been waking up early for 2 hours.
+No, I have not been waking up early for 2 hours.
+
+2.Has she been going to school for 2 hours?
+Yes, she has been going to school for 2 hours.
+No, she has not been going to school for 2 hours.
+
+3.Have they been playing cricket for 2 hours?
+Yes, they have been playing cricket for 2 hours.
+No, they have not been playing cricket for 2 hours.
+
+4.Has he been studying English for 2 hours?
+Yes, he has been studying English for 2 hours.
+No, he has not been studying English for 2 hours.
+
+5.Have you been drinking milk for 2 hours?
+Yes, I have been drinking milk for 2 hours.
+No, I have not been drinking milk for 2 hours.
+
+6.Has she been drawing pictures for 2 hours?
+Yes, she has been drawing pictures for 2 hours.
+No, she has not been drawing pictures for 2 hours.
+
+7.Have they been watching television for 2 hours?
+Yes, they have been watching television for 2 hours.
+No, they have not been watching television for 2 hours.
+
+8.Has he been playing football for 2 hours?
+Yes, he has been playing football for 2 hours.
+No, he has not been playing football for 2 hours.
+
+9.Have you been reading storybooks for 2 hours?
+Yes, I have been reading storybooks for 2 hours.
+No, I have not been reading storybooks for 2 hours.
+
+10.Has she been cleaning her room for 2 hours?
+Yes, she has been cleaning her room for 2 hours.
+No, she has not been cleaning her room for 2 hours.
+
+11.Have they been visiting their grandparents for 2 hours?
+Yes, they have been visiting their grandparents for 2 hours.
+No, they have not been visiting their grandparents for 2 hours.
+
+12.Has he been washing his hands for 2 hours?
+Yes, he has been washing his hands for 2 hours.
+No, he has not been washing his hands for 2 hours.
+
+13.Have you been brushing your teeth for 2 hours?
+Yes, I have been brushing my teeth for 2 hours.
+No, I have not been brushing my teeth for 2 hours.
+
+14.Has she been helping her mother for 2 hours?
+Yes, she has been helping her mother for 2 hours.
+No, she has not been helping her mother for 2 hours.
+
+15.Have they been practicing singing for 2 hours?
+Yes, they have been practicing singing for 2 hours.
+No, they have not been practicing singing for 2 hours.
+
+16.Has he been driving a car for 2 hours?
+Yes, he has been driving a car for 2 hours.
+No, he has not been driving a car for 2 hours.
+
+17.Have you been watering the plants for 2 hours?
+Yes, I have been watering the plants for 2 hours.
+No, I have not been watering the plants for 2 hours.
+
+18.Has she been walking in the park for 2 hours?
+Yes, she has been walking in the park for 2 hours.
+No, she has not been walking in the park for 2 hours.
+
+19.Have they been writing letters for 2 hours?
+Yes, they have been writing letters for 2 hours.
+No, they have not been writing letters for 2 hours.
+
+20.Has he been eating fruits for 2 hours?
+Yes, he has been eating fruits for 2 hours.
+No, he has not been eating fruits for 2 hours.
+
+21.Have you been sleeping early for 2 hours?
+Yes, I have been sleeping early for 2 hours.
+No, I have not been sleeping early for 2 hours.
+
+22.Has she been cooking food for 2 hours?
+Yes, she has been cooking food for 2 hours.
+No, she has not been cooking food for 2 hours.
+
+23.Have they been practicing dancing for 2 hours?
+Yes, they have been practicing dancing for 2 hours.
+No, they have not been practicing dancing for 2 hours.
+
+24.Has your uncle been walking in the park for 2 hours?
+Yes, my uncle has been walking in the park for 2 hours.
+No, my uncle has not been walking in the park for 2 hours.
+
+25.Have you been learning new vocabulary for 2 hours?
+Yes, I have been learning new vocabulary for 2 hours.
+No, I have not been learning new vocabulary for 2 hours.
+
+26.Has he been brushing his teeth twice for 2 hours?
+Yes, he has been brushing his teeth twice for 2 hours.
+No, he has not been brushing his teeth twice for 2 hours.
+
+27.Have the girls been participating in activities for 2 hours?
+Yes, the girls have been participating in activities for 2 hours.
+No, the girls have not been participating in activities for 2 hours.
+
+28.Have you been talking to your friend for 2 hours?
+Yes, I have been talking to my friend for 2 hours.
+No, I have not been talking to my friend for 2 hours.
+
+29.Has she been preparing breakfast for 2 hours?
+Yes, she has been preparing breakfast for 2 hours.
+No, she has not been preparing breakfast for 2 hours.
+
+30.Have they been respecting their teachers for 2 hours?
+Yes, they have been respecting their teachers for 2 hours.
+No, they have not been respecting their teachers for 2 hours.
+`
+      }
+    ],
   },
 
   "class-3": {
@@ -5301,6 +6310,1015 @@ Smiling also improves confidence and creates a positive atmosphere.
 `,
       },
     ],
+    stockSentences: [
+      {
+        id: 1,
+        title: "1.Everyday",
+        content: `
+1.Do you wake up early every day?
+Yes, I wake up early every day.
+No, I do not wake up early every day.
+
+2.Does she go to school every day?
+Yes, she goes to school every day.
+No, she does not go to school every day.
+
+3.Do they play cricket every evening?
+Yes, they play cricket every evening.
+No, they do not play cricket every evening.
+
+4.Does he study English every night?
+Yes, he studies English every night.
+No, he does not study English every night.
+
+5.Do you drink milk every morning?
+Yes, I drink milk every morning.
+No, I do not drink milk every morning.
+
+6.Does she draw pictures every weekend?
+Yes, she draws pictures every weekend.
+No, she does not draw pictures every weekend.
+
+7.Do they watch television every evening?
+Yes, they watch television every evening.
+No, they do not watch television every evening.
+
+8.Does he play football every Sunday?
+Yes, he plays football every Sunday.
+No, he does not play football every Sunday.
+
+9.Do you read storybooks every night?
+Yes, I read storybooks every night.
+No, I do not read storybooks every night.
+
+10.Does she clean her room every Sunday?
+Yes, she cleans her room every Sunday.
+No, she does not clean her room every Sunday.
+
+11.Do they visit their grandparents every summer?
+Yes, they visit their grandparents every summer.
+No, they do not visit their grandparents every summer.
+
+12.Does he wash his hands before meals?
+Yes, he washes his hands before meals.
+No, he does not wash his hands before meals.
+
+13.Do you brush your teeth every morning?
+Yes, I brush my teeth every morning.
+No, I do not brush my teeth every morning.
+
+14.Does she help her mother every day?
+Yes, she helps her mother every day.
+No, she does not help her mother every day.
+
+15.Do they practice singing every week?
+Yes, they practice singing every week.
+No, they do not practice singing every week.
+
+16.Does he drive a car every day?
+Yes, he drives a car every day.
+No, he does not drive a car every day.
+
+17.Do you water the plants every evening?
+Yes, I water the plants every evening.
+No, I do not water the plants every evening.
+
+18.Does she walk in the park every morning?
+Yes, she walks in the park every morning.
+No, she does not walk in the park every morning.
+
+19.Do they write letters every month?
+Yes, they write letters every month.
+No, they do not write letters every month.
+
+20.Does he eat fruits every day?
+Yes, he eats fruits every day.
+No, he does not eat fruits every day.
+
+21.Do you sleep early every night?
+Yes, I sleep early every night.
+No, I do not sleep early every night.
+
+22.Does she cook food every day?
+Yes, she cooks food every day.
+No, she does not cook food every day.
+
+23.Do they practice dancing every evening?
+Yes, they practice dancing every evening.
+No, they do not practice dancing every evening.
+
+24.Does your uncle walk in the park every morning?
+Yes, my uncle walks in the park every morning.
+No, my uncle does not walk in the park every morning.
+
+25.Do you learn new vocabulary every day?
+Yes, I learn new vocabulary every day.
+No, I do not learn new vocabulary every day.
+
+26.Does he brush his teeth twice every day?
+Yes, he brushes his teeth twice every day.
+No, he does not brush his teeth twice every day.
+
+27.Do the girls participate in activities every week?
+Yes, the girls participate in activities every week.
+No, the girls do not participate in activities every week.
+
+28.Do you talk to your friend every night?
+Yes, I talk to my friend every night.
+No, I do not talk to my friend every night.
+
+29.Does she prepare breakfast every morning?
+Yes, she prepares breakfast every morning.
+No, she does not prepare breakfast every morning.
+
+30.Do they respect their teachers every day?
+Yes, they respect their teachers every day.
+No, they do not respect their teachers every day.
+`
+      },
+
+      {
+        id: 2,
+        title: "2.Yesterday",
+        content: `
+1.Did you wake up early yesterday?
+Yes, I woke up early yesterday.
+No, I did not wake up early yesterday.
+
+2.Did she go to school yesterday?
+Yes, she went to school yesterday.
+No, she did not go to school yesterday.
+
+3.Did they play cricket yesterday?
+Yes, they played cricket yesterday.
+No, they did not play cricket yesterday.
+
+4.Did he study English yesterday?
+Yes, he studied English yesterday.
+No, he did not study English yesterday.
+
+5.Did you drink milk yesterday?
+Yes, I drank milk yesterday.
+No, I did not drink milk yesterday.
+
+6.Did she draw pictures yesterday?
+Yes, she drew pictures yesterday.
+No, she did not draw pictures yesterday.
+
+7.Did they watch television yesterday?
+Yes, they watched television yesterday.
+No, they did not watch television yesterday.
+
+8.Did he play football yesterday?
+Yes, he played football yesterday.
+No, he did not play football yesterday.
+
+9.Did you read storybooks yesterday?
+Yes, I read storybooks yesterday.
+No, I did not read storybooks yesterday.
+
+10.Did she clean her room yesterday?
+Yes, she cleaned her room yesterday.
+No, she did not clean her room yesterday.
+
+11.Did they visit their grandparents yesterday?
+Yes, they visited their grandparents yesterday.
+No, they did not visit their grandparents yesterday.
+
+12.Did he wash his hands yesterday?
+Yes, he washed his hands yesterday.
+No, he did not wash his hands yesterday.
+
+13.Did you brush your teeth yesterday?
+Yes, I brushed my teeth yesterday.
+No, I did not brush my teeth yesterday.
+
+14.Did she help her mother yesterday?
+Yes, she helped her mother yesterday.
+No, she did not help her mother yesterday.
+
+15.Did they practice singing yesterday?
+Yes, they practiced singing yesterday.
+No, they did not practice singing yesterday.
+
+16.Did he drive a car yesterday?
+Yes, he drove a car yesterday.
+No, he did not drive a car yesterday.
+
+17.Did you water the plants yesterday?
+Yes, I watered the plants yesterday.
+No, I did not water the plants yesterday.
+
+18.Did she walk in the park yesterday?
+Yes, she walked in the park yesterday.
+No, she did not walk in the park yesterday.
+
+19.Did they write letters yesterday?
+Yes, they wrote letters yesterday.
+No, they did not write letters yesterday.
+
+20.Did he eat fruits yesterday?
+Yes, he ate fruits yesterday.
+No, he did not eat fruits yesterday.
+
+21.Did you sleep early yesterday?
+Yes, I slept early yesterday.
+No, I did not sleep early yesterday.
+
+22.Did she cook food yesterday?
+Yes, she cooked food yesterday.
+No, she did not cook food yesterday.
+
+23.Did they practice dancing yesterday?
+Yes, they practiced dancing yesterday.
+No, they did not practice dancing yesterday.
+
+24.Did your uncle walk in the park yesterday?
+Yes, my uncle walked in the park yesterday.
+No, my uncle did not walk in the park yesterday.
+
+25.Did you learn new vocabulary yesterday?
+Yes, I learned new vocabulary yesterday.
+No, I did not learn new vocabulary yesterday.
+
+26.Did he brush his teeth twice yesterday?
+Yes, he brushed his teeth twice yesterday.
+No, he did not brush his teeth twice yesterday.
+
+27.Did the girls participate in activities yesterday?
+Yes, the girls participated in activities yesterday.
+No, the girls did not participate in activities yesterday.
+
+28.Did you talk to your friend yesterday?
+Yes, I talked to my friend yesterday.
+No, I did not talk to my friend yesterday.
+
+29.Did she prepare breakfast yesterday?
+Yes, she prepared breakfast yesterday.
+No, she did not prepare breakfast yesterday.
+
+30.Did they respect their teachers yesterday?
+Yes, they respected their teachers yesterday.
+No, they did not respect their teachers yesterday.
+`
+      },
+
+      {
+        id: 3,
+        title: "3.Tomorrow",
+        content: `
+1.Will you wake up early tomorrow?
+Yes, I will wake up early tomorrow.
+No, I will not wake up early tomorrow.
+
+2.Will she go to school tomorrow?
+Yes, she will go to school tomorrow.
+No, she will not go to school tomorrow.
+
+3.Will they play cricket tomorrow?
+Yes, they will play cricket tomorrow.
+No, they will not play cricket tomorrow.
+
+4.Will he study English tomorrow?
+Yes, he will study English tomorrow.
+No, he will not study English tomorrow.
+
+5.Will you drink milk tomorrow?
+Yes, I will drink milk tomorrow.
+No, I will not drink milk tomorrow.
+
+6.Will she draw pictures tomorrow?
+Yes, she will draw pictures tomorrow.
+No, she will not draw pictures tomorrow.
+
+7.Will they watch television tomorrow?
+Yes, they will watch television tomorrow.
+No, they will not watch television tomorrow.
+
+8.Will he play football tomorrow?
+Yes, he will play football tomorrow.
+No, he will not play football tomorrow.
+
+9.Will you read storybooks tomorrow?
+Yes, I will read storybooks tomorrow.
+No, I will not read storybooks tomorrow.
+
+10.Will she clean her room tomorrow?
+Yes, she will clean her room tomorrow.
+No, she will not clean her room tomorrow.
+
+11.Will they visit their grandparents tomorrow?
+Yes, they will visit their grandparents tomorrow.
+No, they will not visit their grandparents tomorrow.
+
+12.Will he wash his hands tomorrow?
+Yes, he will wash his hands tomorrow.
+No, he will not wash his hands tomorrow.
+
+13.Will you brush your teeth tomorrow?
+Yes, I will brush my teeth tomorrow.
+No, I will not brush my teeth tomorrow.
+
+14.Will she help her mother tomorrow?
+Yes, she will help her mother tomorrow.
+No, she will not help her mother tomorrow.
+
+15.Will they practice singing tomorrow?
+Yes, they will practice singing tomorrow.
+No, they will not practice singing tomorrow.
+
+16.Will he drive a car tomorrow?
+Yes, he will drive a car tomorrow.
+No, he will not drive a car tomorrow.
+
+17.Will you water the plants tomorrow?
+Yes, I will water the plants tomorrow.
+No, I will not water the plants tomorrow.
+
+18.Will she walk in the park tomorrow?
+Yes, she will walk in the park tomorrow.
+No, she will not walk in the park tomorrow.
+
+19.Will they write letters tomorrow?
+Yes, they will write letters tomorrow.
+No, they will not write letters tomorrow.
+
+20.Will he eat fruits tomorrow?
+Yes, he will eat fruits tomorrow.
+No, he will not eat fruits tomorrow.
+
+21.Will you sleep early tomorrow?
+Yes, I will sleep early tomorrow.
+No, I will not sleep early tomorrow.
+
+22.Will she cook food tomorrow?
+Yes, she will cook food tomorrow.
+No, she will not cook food tomorrow.
+
+23.Will they practice dancing tomorrow?
+Yes, they will practice dancing tomorrow.
+No, they will not practice dancing tomorrow.
+
+24.Will your uncle walk in the park tomorrow?
+Yes, my uncle will walk in the park tomorrow.
+No, my uncle will not walk in the park tomorrow.
+
+25.Will you learn new vocabulary tomorrow?
+Yes, I will learn new vocabulary tomorrow.
+No, I will not learn new vocabulary tomorrow.
+
+26.Will he brush his teeth twice tomorrow?
+Yes, he will brush his teeth twice tomorrow.
+No, he will not brush his teeth twice tomorrow.
+
+27.Will the girls participate in activities tomorrow?
+Yes, the girls will participate in activities tomorrow.
+No, the girls will not participate in activities tomorrow.
+
+28.Will you talk to your friend tomorrow?
+Yes, I will talk to my friend tomorrow.
+No, I will not talk to my friend tomorrow.
+
+29.Will she prepare breakfast tomorrow?
+Yes, she will prepare breakfast tomorrow.
+No, she will not prepare breakfast tomorrow.
+
+30.Will they respect their teachers tomorrow?
+Yes, they will respect their teachers tomorrow.
+No, they will not respect their teachers tomorrow.
+`
+      },
+
+      {
+        id: 4,
+        title: "4.Now",
+        content: `
+1.Are you waking up early now?
+Yes, I am waking up early now.
+No, I am not waking up early now.
+
+2.Is she going to school now?
+Yes, she is going to school now.
+No, she is not going to school now.
+
+3.Are they playing cricket now?
+Yes, they are playing cricket now.
+No, they are not playing cricket now.
+
+4.Is he studying English now?
+Yes, he is studying English now.
+No, he is not studying English now.
+
+5.Are you drinking milk now?
+Yes, I am drinking milk now.
+No, I am not drinking milk now.
+
+6.Is she drawing pictures now?
+Yes, she is drawing pictures now.
+No, she is not drawing pictures now.
+
+7.Are they watching television now?
+Yes, they are watching television now.
+No, they are not watching television now.
+
+8.Is he playing football now?
+Yes, he is playing football now.
+No, he is not playing football now.
+
+9.Are you reading storybooks now?
+Yes, I am reading storybooks now.
+No, I am not reading storybooks now.
+
+10.Is she cleaning her room now?
+Yes, she is cleaning her room now.
+No, she is not cleaning her room now.
+
+11.Are they visiting their grandparents now?
+Yes, they are visiting their grandparents now.
+No, they are not visiting their grandparents now.
+
+12.Is he washing his hands now?
+Yes, he is washing his hands now.
+No, he is not washing his hands now.
+
+13.Are you brushing your teeth now?
+Yes, I am brushing my teeth now.
+No, I am not brushing my teeth now.
+
+14.Is she helping her mother now?
+Yes, she is helping her mother now.
+No, she is not helping her mother now.
+
+15.Are they practicing singing now?
+Yes, they are practicing singing now.
+No, they are not practicing singing now.
+
+16.Is he driving a car now?
+Yes, he is driving a car now.
+No, he is not driving a car now.
+
+17.Are you watering the plants now?
+Yes, I am watering the plants now.
+No, I am not watering the plants now.
+
+18.Is she walking in the park now?
+Yes, she is walking in the park now.
+No, she is not walking in the park now.
+
+19.Are they writing letters now?
+Yes, they are writing letters now.
+No, they are not writing letters now.
+
+20.Is he eating fruits now?
+Yes, he is eating fruits now.
+No, he is not eating fruits now.
+
+21.Are you sleeping early now?
+Yes, I am sleeping early now.
+No, I am not sleeping early now.
+
+22.Is she cooking food now?
+Yes, she is cooking food now.
+No, she is not cooking food now.
+
+23.Are they practicing dancing now?
+Yes, they are practicing dancing now.
+No, they are not practicing dancing now.
+
+24.Is your uncle walking in the park now?
+Yes, my uncle is walking in the park now.
+No, my uncle is not walking in the park now.
+
+25.Are you learning new vocabulary now?
+Yes, I am learning new vocabulary now.
+No, I am not learning new vocabulary now.
+
+26.Is he brushing his teeth twice now?
+Yes, he is brushing his teeth twice now.
+No, he is not brushing his teeth twice now.
+
+27.Are the girls participating in activities now?
+Yes, the girls are participating in activities now.
+No, the girls are not participating in activities now.
+
+28.Are you talking to your friend now?
+Yes, I am talking to my friend now.
+No, I am not talking to my friend now.
+
+29.Is she preparing breakfast now?
+Yes, she is preparing breakfast now.
+No, she is not preparing breakfast now.
+
+30.Are they respecting their teachers now?
+Yes, they are respecting their teachers now.
+No, they are not respecting their teachers now.
+`
+      },
+
+      {
+        id: 5,
+        title: "5.At 9 O'Clock Yesterday",
+        content: `
+1.Were you waking up early at 9 o'clock yesterday?
+Yes, I was waking up early at 9 o'clock yesterday.
+No, I was not waking up early at 9 o'clock yesterday.
+
+2.Was she going to school at 9 o'clock yesterday?
+Yes, she was going to school at 9 o'clock yesterday.
+No, she was not going to school at 9 o'clock yesterday.
+
+3.Were they playing cricket at 9 o'clock yesterday?
+Yes, they were playing cricket at 9 o'clock yesterday.
+No, they were not playing cricket at 9 o'clock yesterday.
+
+4.Was he studying English at 9 o'clock yesterday?
+Yes, he was studying English at 9 o'clock yesterday.
+No, he was not studying English at 9 o'clock yesterday.
+
+5.Were you drinking milk at 9 o'clock yesterday?
+Yes, I was drinking milk at 9 o'clock yesterday.
+No, I was not drinking milk at 9 o'clock yesterday.
+
+6.Was she drawing pictures at 9 o'clock yesterday?
+Yes, she was drawing pictures at 9 o'clock yesterday.
+No, she was not drawing pictures at 9 o'clock yesterday.
+
+7.Were they watching television at 9 o'clock yesterday?
+Yes, they were watching television at 9 o'clock yesterday.
+No, they were not watching television at 9 o'clock yesterday.
+
+8.Was he playing football at 9 o'clock yesterday?
+Yes, he was playing football at 9 o'clock yesterday.
+No, he was not playing football at 9 o'clock yesterday.
+
+9.Were you reading storybooks at 9 o'clock yesterday?
+Yes, I was reading storybooks at 9 o'clock yesterday.
+No, I was not reading storybooks at 9 o'clock yesterday.
+
+10.Was she cleaning her room at 9 o'clock yesterday?
+Yes, she was cleaning her room at 9 o'clock yesterday.
+No, she was not cleaning her room at 9 o'clock yesterday.
+
+11.Were they visiting their grandparents at 9 o'clock yesterday?
+Yes, they were visiting their grandparents at 9 o'clock yesterday.
+No, they were not visiting their grandparents at 9 o'clock yesterday.
+
+12.Was he washing his hands at 9 o'clock yesterday?
+Yes, he was washing his hands at 9 o'clock yesterday.
+No, he was not washing his hands at 9 o'clock yesterday.
+
+13.Were you brushing your teeth at 9 o'clock yesterday?
+Yes, I was brushing my teeth at 9 o'clock yesterday.
+No, I was not brushing my teeth at 9 o'clock yesterday.
+
+14.Was she helping her mother at 9 o'clock yesterday?
+Yes, she was helping her mother at 9 o'clock yesterday.
+No, she was not helping her mother at 9 o'clock yesterday.
+
+15.Were they practicing singing at 9 o'clock yesterday?
+Yes, they were practicing singing at 9 o'clock yesterday.
+No, they were not practicing singing at 9 o'clock yesterday.
+
+16.Was he driving a car at 9 o'clock yesterday?
+Yes, he was driving a car at 9 o'clock yesterday.
+No, he was not driving a car at 9 o'clock yesterday.
+
+17.Were you watering the plants at 9 o'clock yesterday?
+Yes, I was watering the plants at 9 o'clock yesterday.
+No, I was not watering the plants at 9 o'clock yesterday.
+
+18.Was she walking in the park at 9 o'clock yesterday?
+Yes, she was walking in the park at 9 o'clock yesterday.
+No, she was not walking in the park at 9 o'clock yesterday.
+
+19.Were they writing letters at 9 o'clock yesterday?
+Yes, they were writing letters at 9 o'clock yesterday.
+No, they were not writing letters at 9 o'clock yesterday.
+
+20.Was he eating fruits at 9 o'clock yesterday?
+Yes, he was eating fruits at 9 o'clock yesterday.
+No, he was not eating fruits at 9 o'clock yesterday.
+
+21.Were you sleeping early at 9 o'clock yesterday?
+Yes, I was sleeping early at 9 o'clock yesterday.
+No, I was not sleeping early at 9 o'clock yesterday.
+
+22.Was she cooking food at 9 o'clock yesterday?
+Yes, she was cooking food at 9 o'clock yesterday.
+No, she was not cooking food at 9 o'clock yesterday.
+
+23.Were they practicing dancing at 9 o'clock yesterday?
+Yes, they were practicing dancing at 9 o'clock yesterday.
+No, they were not practicing dancing at 9 o'clock yesterday.
+
+24.Was your uncle walking in the park at 9 o'clock yesterday?
+Yes, my uncle was walking in the park at 9 o'clock yesterday.
+No, my uncle was not walking in the park at 9 o'clock yesterday.
+
+25.Were you learning new vocabulary at 9 o'clock yesterday?
+Yes, I was learning new vocabulary at 9 o'clock yesterday.
+No, I was not learning new vocabulary at 9 o'clock yesterday.
+
+26.Was he brushing his teeth twice at 9 o'clock yesterday?
+Yes, he was brushing his teeth twice at 9 o'clock yesterday.
+No, he was not brushing his teeth twice at 9 o'clock yesterday.
+
+27.Were the girls participating in activities at 9 o'clock yesterday?
+Yes, the girls were participating in activities at 9 o'clock yesterday.
+No, the girls were not participating in activities at 9 o'clock yesterday.
+
+28.Were you talking to your friend at 9 o'clock yesterday?
+Yes, I was talking to my friend at 9 o'clock yesterday.
+No, I was not talking to my friend at 9 o'clock yesterday.
+
+29.Was she preparing breakfast at 9 o'clock yesterday?
+Yes, she was preparing breakfast at 9 o'clock yesterday.
+No, she was not preparing breakfast at 9 o'clock yesterday.
+
+30.Were they respecting their teachers at 9 o'clock yesterday?
+Yes, they were respecting their teachers at 9 o'clock yesterday.
+No, they were not respecting their teachers at 9 o'clock yesterday.
+`
+      },
+
+      {
+        id: 6,
+        title: "6.At 9 O'Clock Tomorrow",
+        content: `
+1.Will you be waking up early at 9 o'clock tomorrow?
+Yes, I will be waking up early at 9 o'clock tomorrow.
+No, I will not be waking up early at 9 o'clock tomorrow.
+
+2.Will she be going to school at 9 o'clock tomorrow?
+Yes, she will be going to school at 9 o'clock tomorrow.
+No, she will not be going to school at 9 o'clock tomorrow.
+
+3.Will they be playing cricket at 9 o'clock tomorrow?
+Yes, they will be playing cricket at 9 o'clock tomorrow.
+No, they will not be playing cricket at 9 o'clock tomorrow.
+
+4.Will he be studying English at 9 o'clock tomorrow?
+Yes, he will be studying English at 9 o'clock tomorrow.
+No, he will not be studying English at 9 o'clock tomorrow.
+
+5.Will you be drinking milk at 9 o'clock tomorrow?
+Yes, I will be drinking milk at 9 o'clock tomorrow.
+No, I will not be drinking milk at 9 o'clock tomorrow.
+
+6.Will she be drawing pictures at 9 o'clock tomorrow?
+Yes, she will be drawing pictures at 9 o'clock tomorrow.
+No, she will not be drawing pictures at 9 o'clock tomorrow.
+
+7.Will they be watching television at 9 o'clock tomorrow?
+Yes, they will be watching television at 9 o'clock tomorrow.
+No, they will not be watching television at 9 o'clock tomorrow.
+
+8.Will he be playing football at 9 o'clock tomorrow?
+Yes, he will be playing football at 9 o'clock tomorrow.
+No, he will not be playing football at 9 o'clock tomorrow.
+
+9.Will you be reading storybooks at 9 o'clock tomorrow?
+Yes, I will be reading storybooks at 9 o'clock tomorrow.
+No, I will not be reading storybooks at 9 o'clock tomorrow.
+
+10.Will she be cleaning her room at 9 o'clock tomorrow?
+Yes, she will be cleaning her room at 9 o'clock tomorrow.
+No, she will not be cleaning her room at 9 o'clock tomorrow.
+
+11.Will they be visiting their grandparents at 9 o'clock tomorrow?
+Yes, they will be visiting their grandparents at 9 o'clock tomorrow.
+No, they will not be visiting their grandparents at 9 o'clock tomorrow.
+
+12.Will he be washing his hands at 9 o'clock tomorrow?
+Yes, he will be washing his hands at 9 o'clock tomorrow.
+No, he will not be washing his hands at 9 o'clock tomorrow.
+
+13.Will you be brushing your teeth at 9 o'clock tomorrow?
+Yes, I will be brushing my teeth at 9 o'clock tomorrow.
+No, I will not be brushing my teeth at 9 o'clock tomorrow.
+
+14.Will she be helping her mother at 9 o'clock tomorrow?
+Yes, she will be helping her mother at 9 o'clock tomorrow.
+No, she will not be helping her mother at 9 o'clock tomorrow.
+
+15.Will they be practicing singing at 9 o'clock tomorrow?
+Yes, they will be practicing singing at 9 o'clock tomorrow.
+No, they will not be practicing singing at 9 o'clock tomorrow.
+
+16.Will he be driving a car at 9 o'clock tomorrow?
+Yes, he will be driving a car at 9 o'clock tomorrow.
+No, he will not be driving a car at 9 o'clock tomorrow.
+
+17.Will you be watering the plants at 9 o'clock tomorrow?
+Yes, I will be watering the plants at 9 o'clock tomorrow.
+No, I will not be watering the plants at 9 o'clock tomorrow.
+
+18.Will she be walking in the park at 9 o'clock tomorrow?
+Yes, she will be walking in the park at 9 o'clock tomorrow.
+No, she will not be walking in the park at 9 o'clock tomorrow.
+
+19.Will they be writing letters at 9 o'clock tomorrow?
+Yes, they will be writing letters at 9 o'clock tomorrow.
+No, they will not be writing letters at 9 o'clock tomorrow.
+
+20.Will he be eating fruits at 9 o'clock tomorrow?
+Yes, he will be eating fruits at 9 o'clock tomorrow.
+No, he will not be eating fruits at 9 o'clock tomorrow.
+
+21.Will you be sleeping early at 9 o'clock tomorrow?
+Yes, I will be sleeping early at 9 o'clock tomorrow.
+No, I will not be sleeping early at 9 o'clock tomorrow.
+
+22.Will she be cooking food at 9 o'clock tomorrow?
+Yes, she will be cooking food at 9 o'clock tomorrow.
+No, she will not be cooking food at 9 o'clock tomorrow.
+
+23.Will they be practicing dancing at 9 o'clock tomorrow?
+Yes, they will be practicing dancing at 9 o'clock tomorrow.
+No, they will not be practicing dancing at 9 o'clock tomorrow.
+
+24.Will your uncle be walking in the park at 9 o'clock tomorrow?
+Yes, my uncle will be walking in the park at 9 o'clock tomorrow.
+No, my uncle will not be walking in the park at 9 o'clock tomorrow.
+
+25.Will you be learning new vocabulary at 9 o'clock tomorrow?
+Yes, I will be learning new vocabulary at 9 o'clock tomorrow.
+No, I will not be learning new vocabulary at 9 o'clock tomorrow.
+
+26.Will he be brushing his teeth twice at 9 o'clock tomorrow?
+Yes, he will be brushing his teeth twice at 9 o'clock tomorrow.
+No, he will not be brushing his teeth twice at 9 o'clock tomorrow.
+
+27.Will the girls be participating in activities at 9 o'clock tomorrow?
+Yes, the girls will be participating in activities at 9 o'clock tomorrow.
+No, the girls will not be participating in activities at 9 o'clock tomorrow.
+
+28.Will you be talking to your friend at 9 o'clock tomorrow?
+Yes, I will be talking to my friend at 9 o'clock tomorrow.
+No, I will not be talking to my friend at 9 o'clock tomorrow.
+
+29.Will she be preparing breakfast at 9 o'clock tomorrow?
+Yes, she will be preparing breakfast at 9 o'clock tomorrow.
+No, she will not be preparing breakfast at 9 o'clock tomorrow.
+
+30.Will they be respecting their teachers at 9 o'clock tomorrow?
+Yes, they will be respecting their teachers at 9 o'clock tomorrow.
+No, they will not be respecting their teachers at 9 o'clock tomorrow.
+`
+      },
+
+      {
+        id: 7,
+        title: "7.Already",
+        content: `
+1.Have you already woken up early?
+Yes, I have already woken up early.
+No, I have not already woken up early.
+
+2.Has she already gone to school?
+Yes, she has already gone to school.
+No, she has not already gone to school.
+
+3.Have they already played cricket?
+Yes, they have already played cricket.
+No, they have not already played cricket.
+
+4.Has he already studied English?
+Yes, he has already studied English.
+No, he has not already studied English.
+
+5.Have you already drunk milk?
+Yes, I have already drunk milk.
+No, I have not already drunk milk.
+
+6.Has she already drawn pictures?
+Yes, she has already drawn pictures.
+No, she has not already drawn pictures.
+
+7.Have they already watched television?
+Yes, they have already watched television.
+No, they have not already watched television.
+
+8.Has he already played football?
+Yes, he has already played football.
+No, he has not already played football.
+
+9.Have you already read storybooks?
+Yes, I have already read storybooks.
+No, I have not already read storybooks.
+
+10.Has she already cleaned her room?
+Yes, she has already cleaned her room.
+No, she has not already cleaned her room.
+
+11.Have they already visited their grandparents?
+Yes, they have already visited their grandparents.
+No, they have not already visited their grandparents.
+
+12.Has he already washed his hands?
+Yes, he has already washed his hands.
+No, he has not already washed his hands.
+
+13.Have you already brushed your teeth?
+Yes, I have already brushed my teeth.
+No, I have not already brushed my teeth.
+
+14.Has she already helped her mother?
+Yes, she has already helped her mother.
+No, she has not already helped her mother.
+
+15.Have they already practiced singing?
+Yes, they have already practiced singing.
+No, they have not already practiced singing.
+
+16.Has he already driven a car?
+Yes, he has already driven a car.
+No, he has not already driven a car.
+
+17.Have you already watered the plants?
+Yes, I have already watered the plants.
+No, I have not already watered the plants.
+
+18.Has she already walked in the park?
+Yes, she has already walked in the park.
+No, she has not already walked in the park.
+
+19.Have they already written letters?
+Yes, they have already written letters.
+No, they have not already written letters.
+
+20.Has he already eaten fruits?
+Yes, he has already eaten fruits.
+No, he has not already eaten fruits.
+
+21.Have you already slept early?
+Yes, I have already slept early.
+No, I have not already slept early.
+
+22.Has she already cooked food?
+Yes, she has already cooked food.
+No, she has not already cooked food.
+
+23.Have they already practiced dancing?
+Yes, they have already practiced dancing.
+No, they have not already practiced dancing.
+
+24.Has your uncle already walked in the park?
+Yes, my uncle has already walked in the park.
+No, my uncle has not already walked in the park.
+
+25.Have you already learned new vocabulary?
+Yes, I have already learned new vocabulary.
+No, I have not already learned new vocabulary.
+
+26.Has he already brushed his teeth twice?
+Yes, he has already brushed his teeth twice.
+No, he has not already brushed his teeth twice.
+
+27.Have the girls already participated in activities?
+Yes, the girls have already participated in activities.
+No, the girls have not already participated in activities.
+
+28.Have you already talked to your friend?
+Yes, I have already talked to my friend.
+No, I have not already talked to my friend.
+
+29.Has she already prepared breakfast?
+Yes, she has already prepared breakfast.
+No, she has not already prepared breakfast.
+
+30.Have they already respected their teachers?
+Yes, they have already respected their teachers.
+No, they have not already respected their teachers.
+`
+      },
+
+      {
+        id: 8,
+        title: "8.For 2 Hours",
+        content: `
+1.Have you been waking up early for 2 hours?
+Yes, I have been waking up early for 2 hours.
+No, I have not been waking up early for 2 hours.
+
+2.Has she been going to school for 2 hours?
+Yes, she has been going to school for 2 hours.
+No, she has not been going to school for 2 hours.
+
+3.Have they been playing cricket for 2 hours?
+Yes, they have been playing cricket for 2 hours.
+No, they have not been playing cricket for 2 hours.
+
+4.Has he been studying English for 2 hours?
+Yes, he has been studying English for 2 hours.
+No, he has not been studying English for 2 hours.
+
+5.Have you been drinking milk for 2 hours?
+Yes, I have been drinking milk for 2 hours.
+No, I have not been drinking milk for 2 hours.
+
+6.Has she been drawing pictures for 2 hours?
+Yes, she has been drawing pictures for 2 hours.
+No, she has not been drawing pictures for 2 hours.
+
+7.Have they been watching television for 2 hours?
+Yes, they have been watching television for 2 hours.
+No, they have not been watching television for 2 hours.
+
+8.Has he been playing football for 2 hours?
+Yes, he has been playing football for 2 hours.
+No, he has not been playing football for 2 hours.
+
+9.Have you been reading storybooks for 2 hours?
+Yes, I have been reading storybooks for 2 hours.
+No, I have not been reading storybooks for 2 hours.
+
+10.Has she been cleaning her room for 2 hours?
+Yes, she has been cleaning her room for 2 hours.
+No, she has not been cleaning her room for 2 hours.
+
+11.Have they been visiting their grandparents for 2 hours?
+Yes, they have been visiting their grandparents for 2 hours.
+No, they have not been visiting their grandparents for 2 hours.
+
+12.Has he been washing his hands for 2 hours?
+Yes, he has been washing his hands for 2 hours.
+No, he has not been washing his hands for 2 hours.
+
+13.Have you been brushing your teeth for 2 hours?
+Yes, I have been brushing my teeth for 2 hours.
+No, I have not been brushing my teeth for 2 hours.
+
+14.Has she been helping her mother for 2 hours?
+Yes, she has been helping her mother for 2 hours.
+No, she has not been helping her mother for 2 hours.
+
+15.Have they been practicing singing for 2 hours?
+Yes, they have been practicing singing for 2 hours.
+No, they have not been practicing singing for 2 hours.
+
+16.Has he been driving a car for 2 hours?
+Yes, he has been driving a car for 2 hours.
+No, he has not been driving a car for 2 hours.
+
+17.Have you been watering the plants for 2 hours?
+Yes, I have been watering the plants for 2 hours.
+No, I have not been watering the plants for 2 hours.
+
+18.Has she been walking in the park for 2 hours?
+Yes, she has been walking in the park for 2 hours.
+No, she has not been walking in the park for 2 hours.
+
+19.Have they been writing letters for 2 hours?
+Yes, they have been writing letters for 2 hours.
+No, they have not been writing letters for 2 hours.
+
+20.Has he been eating fruits for 2 hours?
+Yes, he has been eating fruits for 2 hours.
+No, he has not been eating fruits for 2 hours.
+
+21.Have you been sleeping early for 2 hours?
+Yes, I have been sleeping early for 2 hours.
+No, I have not been sleeping early for 2 hours.
+
+22.Has she been cooking food for 2 hours?
+Yes, she has been cooking food for 2 hours.
+No, she has not been cooking food for 2 hours.
+
+23.Have they been practicing dancing for 2 hours?
+Yes, they have been practicing dancing for 2 hours.
+No, they have not been practicing dancing for 2 hours.
+
+24.Has your uncle been walking in the park for 2 hours?
+Yes, my uncle has been walking in the park for 2 hours.
+No, my uncle has not been walking in the park for 2 hours.
+
+25.Have you been learning new vocabulary for 2 hours?
+Yes, I have been learning new vocabulary for 2 hours.
+No, I have not been learning new vocabulary for 2 hours.
+
+26.Has he been brushing his teeth twice for 2 hours?
+Yes, he has been brushing his teeth twice for 2 hours.
+No, he has not been brushing his teeth twice for 2 hours.
+
+27.Have the girls been participating in activities for 2 hours?
+Yes, the girls have been participating in activities for 2 hours.
+No, the girls have not been participating in activities for 2 hours.
+
+28.Have you been talking to your friend for 2 hours?
+Yes, I have been talking to my friend for 2 hours.
+No, I have not been talking to my friend for 2 hours.
+
+29.Has she been preparing breakfast for 2 hours?
+Yes, she has been preparing breakfast for 2 hours.
+No, she has not been preparing breakfast for 2 hours.
+
+30.Have they been respecting their teachers for 2 hours?
+Yes, they have been respecting their teachers for 2 hours.
+No, they have not been respecting their teachers for 2 hours.
+`
+      }
+    ],
   },
 
   "class-4": {
@@ -7181,6 +9199,1015 @@ My favorite animal is ____________. Animals are an important part of nature and 
 Positive thinking helps us stay happy, confident, and peaceful. Optimistic students face problems bravely and calmly. Good thoughts create positive actions, habits, and relationships. Positive people inspire others with their attitude and behavior. Positive thinking helps us achieve success in life.
 `,
       },
+    ],
+    stockSentences: [
+      {
+        id: 1,
+        title: "1.Everyday",
+        content: `
+1.Do you wake up early every day?
+Yes, I wake up early every day.
+No, I do not wake up early every day.
+
+2.Does she go to school every day?
+Yes, she goes to school every day.
+No, she does not go to school every day.
+
+3.Do they play cricket every evening?
+Yes, they play cricket every evening.
+No, they do not play cricket every evening.
+
+4.Does he study English every night?
+Yes, he studies English every night.
+No, he does not study English every night.
+
+5.Do you drink milk every morning?
+Yes, I drink milk every morning.
+No, I do not drink milk every morning.
+
+6.Does she draw pictures every weekend?
+Yes, she draws pictures every weekend.
+No, she does not draw pictures every weekend.
+
+7.Do they watch television every evening?
+Yes, they watch television every evening.
+No, they do not watch television every evening.
+
+8.Does he play football every Sunday?
+Yes, he plays football every Sunday.
+No, he does not play football every Sunday.
+
+9.Do you read storybooks every night?
+Yes, I read storybooks every night.
+No, I do not read storybooks every night.
+
+10.Does she clean her room every Sunday?
+Yes, she cleans her room every Sunday.
+No, she does not clean her room every Sunday.
+
+11.Do they visit their grandparents every summer?
+Yes, they visit their grandparents every summer.
+No, they do not visit their grandparents every summer.
+
+12.Does he wash his hands before meals?
+Yes, he washes his hands before meals.
+No, he does not wash his hands before meals.
+
+13.Do you brush your teeth every morning?
+Yes, I brush my teeth every morning.
+No, I do not brush my teeth every morning.
+
+14.Does she help her mother every day?
+Yes, she helps her mother every day.
+No, she does not help her mother every day.
+
+15.Do they practice singing every week?
+Yes, they practice singing every week.
+No, they do not practice singing every week.
+
+16.Does he drive a car every day?
+Yes, he drives a car every day.
+No, he does not drive a car every day.
+
+17.Do you water the plants every evening?
+Yes, I water the plants every evening.
+No, I do not water the plants every evening.
+
+18.Does she walk in the park every morning?
+Yes, she walks in the park every morning.
+No, she does not walk in the park every morning.
+
+19.Do they write letters every month?
+Yes, they write letters every month.
+No, they do not write letters every month.
+
+20.Does he eat fruits every day?
+Yes, he eats fruits every day.
+No, he does not eat fruits every day.
+
+21.Do you sleep early every night?
+Yes, I sleep early every night.
+No, I do not sleep early every night.
+
+22.Does she cook food every day?
+Yes, she cooks food every day.
+No, she does not cook food every day.
+
+23.Do they practice dancing every evening?
+Yes, they practice dancing every evening.
+No, they do not practice dancing every evening.
+
+24.Does your uncle walk in the park every morning?
+Yes, my uncle walks in the park every morning.
+No, my uncle does not walk in the park every morning.
+
+25.Do you learn new vocabulary every day?
+Yes, I learn new vocabulary every day.
+No, I do not learn new vocabulary every day.
+
+26.Does he brush his teeth twice every day?
+Yes, he brushes his teeth twice every day.
+No, he does not brush his teeth twice every day.
+
+27.Do the girls participate in activities every week?
+Yes, the girls participate in activities every week.
+No, the girls do not participate in activities every week.
+
+28.Do you talk to your friend every night?
+Yes, I talk to my friend every night.
+No, I do not talk to my friend every night.
+
+29.Does she prepare breakfast every morning?
+Yes, she prepares breakfast every morning.
+No, she does not prepare breakfast every morning.
+
+30.Do they respect their teachers every day?
+Yes, they respect their teachers every day.
+No, they do not respect their teachers every day.
+`
+      },
+
+      {
+        id: 2,
+        title: "2.Yesterday",
+        content: `
+1.Did you wake up early yesterday?
+Yes, I woke up early yesterday.
+No, I did not wake up early yesterday.
+
+2.Did she go to school yesterday?
+Yes, she went to school yesterday.
+No, she did not go to school yesterday.
+
+3.Did they play cricket yesterday?
+Yes, they played cricket yesterday.
+No, they did not play cricket yesterday.
+
+4.Did he study English yesterday?
+Yes, he studied English yesterday.
+No, he did not study English yesterday.
+
+5.Did you drink milk yesterday?
+Yes, I drank milk yesterday.
+No, I did not drink milk yesterday.
+
+6.Did she draw pictures yesterday?
+Yes, she drew pictures yesterday.
+No, she did not draw pictures yesterday.
+
+7.Did they watch television yesterday?
+Yes, they watched television yesterday.
+No, they did not watch television yesterday.
+
+8.Did he play football yesterday?
+Yes, he played football yesterday.
+No, he did not play football yesterday.
+
+9.Did you read storybooks yesterday?
+Yes, I read storybooks yesterday.
+No, I did not read storybooks yesterday.
+
+10.Did she clean her room yesterday?
+Yes, she cleaned her room yesterday.
+No, she did not clean her room yesterday.
+
+11.Did they visit their grandparents yesterday?
+Yes, they visited their grandparents yesterday.
+No, they did not visit their grandparents yesterday.
+
+12.Did he wash his hands yesterday?
+Yes, he washed his hands yesterday.
+No, he did not wash his hands yesterday.
+
+13.Did you brush your teeth yesterday?
+Yes, I brushed my teeth yesterday.
+No, I did not brush my teeth yesterday.
+
+14.Did she help her mother yesterday?
+Yes, she helped her mother yesterday.
+No, she did not help her mother yesterday.
+
+15.Did they practice singing yesterday?
+Yes, they practiced singing yesterday.
+No, they did not practice singing yesterday.
+
+16.Did he drive a car yesterday?
+Yes, he drove a car yesterday.
+No, he did not drive a car yesterday.
+
+17.Did you water the plants yesterday?
+Yes, I watered the plants yesterday.
+No, I did not water the plants yesterday.
+
+18.Did she walk in the park yesterday?
+Yes, she walked in the park yesterday.
+No, she did not walk in the park yesterday.
+
+19.Did they write letters yesterday?
+Yes, they wrote letters yesterday.
+No, they did not write letters yesterday.
+
+20.Did he eat fruits yesterday?
+Yes, he ate fruits yesterday.
+No, he did not eat fruits yesterday.
+
+21.Did you sleep early yesterday?
+Yes, I slept early yesterday.
+No, I did not sleep early yesterday.
+
+22.Did she cook food yesterday?
+Yes, she cooked food yesterday.
+No, she did not cook food yesterday.
+
+23.Did they practice dancing yesterday?
+Yes, they practiced dancing yesterday.
+No, they did not practice dancing yesterday.
+
+24.Did your uncle walk in the park yesterday?
+Yes, my uncle walked in the park yesterday.
+No, my uncle did not walk in the park yesterday.
+
+25.Did you learn new vocabulary yesterday?
+Yes, I learned new vocabulary yesterday.
+No, I did not learn new vocabulary yesterday.
+
+26.Did he brush his teeth twice yesterday?
+Yes, he brushed his teeth twice yesterday.
+No, he did not brush his teeth twice yesterday.
+
+27.Did the girls participate in activities yesterday?
+Yes, the girls participated in activities yesterday.
+No, the girls did not participate in activities yesterday.
+
+28.Did you talk to your friend yesterday?
+Yes, I talked to my friend yesterday.
+No, I did not talk to my friend yesterday.
+
+29.Did she prepare breakfast yesterday?
+Yes, she prepared breakfast yesterday.
+No, she did not prepare breakfast yesterday.
+
+30.Did they respect their teachers yesterday?
+Yes, they respected their teachers yesterday.
+No, they did not respect their teachers yesterday.
+`
+      },
+
+      {
+        id: 3,
+        title: "3.Tomorrow",
+        content: `
+1.Will you wake up early tomorrow?
+Yes, I will wake up early tomorrow.
+No, I will not wake up early tomorrow.
+
+2.Will she go to school tomorrow?
+Yes, she will go to school tomorrow.
+No, she will not go to school tomorrow.
+
+3.Will they play cricket tomorrow?
+Yes, they will play cricket tomorrow.
+No, they will not play cricket tomorrow.
+
+4.Will he study English tomorrow?
+Yes, he will study English tomorrow.
+No, he will not study English tomorrow.
+
+5.Will you drink milk tomorrow?
+Yes, I will drink milk tomorrow.
+No, I will not drink milk tomorrow.
+
+6.Will she draw pictures tomorrow?
+Yes, she will draw pictures tomorrow.
+No, she will not draw pictures tomorrow.
+
+7.Will they watch television tomorrow?
+Yes, they will watch television tomorrow.
+No, they will not watch television tomorrow.
+
+8.Will he play football tomorrow?
+Yes, he will play football tomorrow.
+No, he will not play football tomorrow.
+
+9.Will you read storybooks tomorrow?
+Yes, I will read storybooks tomorrow.
+No, I will not read storybooks tomorrow.
+
+10.Will she clean her room tomorrow?
+Yes, she will clean her room tomorrow.
+No, she will not clean her room tomorrow.
+
+11.Will they visit their grandparents tomorrow?
+Yes, they will visit their grandparents tomorrow.
+No, they will not visit their grandparents tomorrow.
+
+12.Will he wash his hands tomorrow?
+Yes, he will wash his hands tomorrow.
+No, he will not wash his hands tomorrow.
+
+13.Will you brush your teeth tomorrow?
+Yes, I will brush my teeth tomorrow.
+No, I will not brush my teeth tomorrow.
+
+14.Will she help her mother tomorrow?
+Yes, she will help her mother tomorrow.
+No, she will not help her mother tomorrow.
+
+15.Will they practice singing tomorrow?
+Yes, they will practice singing tomorrow.
+No, they will not practice singing tomorrow.
+
+16.Will he drive a car tomorrow?
+Yes, he will drive a car tomorrow.
+No, he will not drive a car tomorrow.
+
+17.Will you water the plants tomorrow?
+Yes, I will water the plants tomorrow.
+No, I will not water the plants tomorrow.
+
+18.Will she walk in the park tomorrow?
+Yes, she will walk in the park tomorrow.
+No, she will not walk in the park tomorrow.
+
+19.Will they write letters tomorrow?
+Yes, they will write letters tomorrow.
+No, they will not write letters tomorrow.
+
+20.Will he eat fruits tomorrow?
+Yes, he will eat fruits tomorrow.
+No, he will not eat fruits tomorrow.
+
+21.Will you sleep early tomorrow?
+Yes, I will sleep early tomorrow.
+No, I will not sleep early tomorrow.
+
+22.Will she cook food tomorrow?
+Yes, she will cook food tomorrow.
+No, she will not cook food tomorrow.
+
+23.Will they practice dancing tomorrow?
+Yes, they will practice dancing tomorrow.
+No, they will not practice dancing tomorrow.
+
+24.Will your uncle walk in the park tomorrow?
+Yes, my uncle will walk in the park tomorrow.
+No, my uncle will not walk in the park tomorrow.
+
+25.Will you learn new vocabulary tomorrow?
+Yes, I will learn new vocabulary tomorrow.
+No, I will not learn new vocabulary tomorrow.
+
+26.Will he brush his teeth twice tomorrow?
+Yes, he will brush his teeth twice tomorrow.
+No, he will not brush his teeth twice tomorrow.
+
+27.Will the girls participate in activities tomorrow?
+Yes, the girls will participate in activities tomorrow.
+No, the girls will not participate in activities tomorrow.
+
+28.Will you talk to your friend tomorrow?
+Yes, I will talk to my friend tomorrow.
+No, I will not talk to my friend tomorrow.
+
+29.Will she prepare breakfast tomorrow?
+Yes, she will prepare breakfast tomorrow.
+No, she will not prepare breakfast tomorrow.
+
+30.Will they respect their teachers tomorrow?
+Yes, they will respect their teachers tomorrow.
+No, they will not respect their teachers tomorrow.
+`
+      },
+
+      {
+        id: 4,
+        title: "4.Now",
+        content: `
+1.Are you waking up early now?
+Yes, I am waking up early now.
+No, I am not waking up early now.
+
+2.Is she going to school now?
+Yes, she is going to school now.
+No, she is not going to school now.
+
+3.Are they playing cricket now?
+Yes, they are playing cricket now.
+No, they are not playing cricket now.
+
+4.Is he studying English now?
+Yes, he is studying English now.
+No, he is not studying English now.
+
+5.Are you drinking milk now?
+Yes, I am drinking milk now.
+No, I am not drinking milk now.
+
+6.Is she drawing pictures now?
+Yes, she is drawing pictures now.
+No, she is not drawing pictures now.
+
+7.Are they watching television now?
+Yes, they are watching television now.
+No, they are not watching television now.
+
+8.Is he playing football now?
+Yes, he is playing football now.
+No, he is not playing football now.
+
+9.Are you reading storybooks now?
+Yes, I am reading storybooks now.
+No, I am not reading storybooks now.
+
+10.Is she cleaning her room now?
+Yes, she is cleaning her room now.
+No, she is not cleaning her room now.
+
+11.Are they visiting their grandparents now?
+Yes, they are visiting their grandparents now.
+No, they are not visiting their grandparents now.
+
+12.Is he washing his hands now?
+Yes, he is washing his hands now.
+No, he is not washing his hands now.
+
+13.Are you brushing your teeth now?
+Yes, I am brushing my teeth now.
+No, I am not brushing my teeth now.
+
+14.Is she helping her mother now?
+Yes, she is helping her mother now.
+No, she is not helping her mother now.
+
+15.Are they practicing singing now?
+Yes, they are practicing singing now.
+No, they are not practicing singing now.
+
+16.Is he driving a car now?
+Yes, he is driving a car now.
+No, he is not driving a car now.
+
+17.Are you watering the plants now?
+Yes, I am watering the plants now.
+No, I am not watering the plants now.
+
+18.Is she walking in the park now?
+Yes, she is walking in the park now.
+No, she is not walking in the park now.
+
+19.Are they writing letters now?
+Yes, they are writing letters now.
+No, they are not writing letters now.
+
+20.Is he eating fruits now?
+Yes, he is eating fruits now.
+No, he is not eating fruits now.
+
+21.Are you sleeping early now?
+Yes, I am sleeping early now.
+No, I am not sleeping early now.
+
+22.Is she cooking food now?
+Yes, she is cooking food now.
+No, she is not cooking food now.
+
+23.Are they practicing dancing now?
+Yes, they are practicing dancing now.
+No, they are not practicing dancing now.
+
+24.Is your uncle walking in the park now?
+Yes, my uncle is walking in the park now.
+No, my uncle is not walking in the park now.
+
+25.Are you learning new vocabulary now?
+Yes, I am learning new vocabulary now.
+No, I am not learning new vocabulary now.
+
+26.Is he brushing his teeth twice now?
+Yes, he is brushing his teeth twice now.
+No, he is not brushing his teeth twice now.
+
+27.Are the girls participating in activities now?
+Yes, the girls are participating in activities now.
+No, the girls are not participating in activities now.
+
+28.Are you talking to your friend now?
+Yes, I am talking to my friend now.
+No, I am not talking to my friend now.
+
+29.Is she preparing breakfast now?
+Yes, she is preparing breakfast now.
+No, she is not preparing breakfast now.
+
+30.Are they respecting their teachers now?
+Yes, they are respecting their teachers now.
+No, they are not respecting their teachers now.
+`
+      },
+
+      {
+        id: 5,
+        title: "5.At 9 O'Clock Yesterday",
+        content: `
+1.Were you waking up early at 9 o'clock yesterday?
+Yes, I was waking up early at 9 o'clock yesterday.
+No, I was not waking up early at 9 o'clock yesterday.
+
+2.Was she going to school at 9 o'clock yesterday?
+Yes, she was going to school at 9 o'clock yesterday.
+No, she was not going to school at 9 o'clock yesterday.
+
+3.Were they playing cricket at 9 o'clock yesterday?
+Yes, they were playing cricket at 9 o'clock yesterday.
+No, they were not playing cricket at 9 o'clock yesterday.
+
+4.Was he studying English at 9 o'clock yesterday?
+Yes, he was studying English at 9 o'clock yesterday.
+No, he was not studying English at 9 o'clock yesterday.
+
+5.Were you drinking milk at 9 o'clock yesterday?
+Yes, I was drinking milk at 9 o'clock yesterday.
+No, I was not drinking milk at 9 o'clock yesterday.
+
+6.Was she drawing pictures at 9 o'clock yesterday?
+Yes, she was drawing pictures at 9 o'clock yesterday.
+No, she was not drawing pictures at 9 o'clock yesterday.
+
+7.Were they watching television at 9 o'clock yesterday?
+Yes, they were watching television at 9 o'clock yesterday.
+No, they were not watching television at 9 o'clock yesterday.
+
+8.Was he playing football at 9 o'clock yesterday?
+Yes, he was playing football at 9 o'clock yesterday.
+No, he was not playing football at 9 o'clock yesterday.
+
+9.Were you reading storybooks at 9 o'clock yesterday?
+Yes, I was reading storybooks at 9 o'clock yesterday.
+No, I was not reading storybooks at 9 o'clock yesterday.
+
+10.Was she cleaning her room at 9 o'clock yesterday?
+Yes, she was cleaning her room at 9 o'clock yesterday.
+No, she was not cleaning her room at 9 o'clock yesterday.
+
+11.Were they visiting their grandparents at 9 o'clock yesterday?
+Yes, they were visiting their grandparents at 9 o'clock yesterday.
+No, they were not visiting their grandparents at 9 o'clock yesterday.
+
+12.Was he washing his hands at 9 o'clock yesterday?
+Yes, he was washing his hands at 9 o'clock yesterday.
+No, he was not washing his hands at 9 o'clock yesterday.
+
+13.Were you brushing your teeth at 9 o'clock yesterday?
+Yes, I was brushing my teeth at 9 o'clock yesterday.
+No, I was not brushing my teeth at 9 o'clock yesterday.
+
+14.Was she helping her mother at 9 o'clock yesterday?
+Yes, she was helping her mother at 9 o'clock yesterday.
+No, she was not helping her mother at 9 o'clock yesterday.
+
+15.Were they practicing singing at 9 o'clock yesterday?
+Yes, they were practicing singing at 9 o'clock yesterday.
+No, they were not practicing singing at 9 o'clock yesterday.
+
+16.Was he driving a car at 9 o'clock yesterday?
+Yes, he was driving a car at 9 o'clock yesterday.
+No, he was not driving a car at 9 o'clock yesterday.
+
+17.Were you watering the plants at 9 o'clock yesterday?
+Yes, I was watering the plants at 9 o'clock yesterday.
+No, I was not watering the plants at 9 o'clock yesterday.
+
+18.Was she walking in the park at 9 o'clock yesterday?
+Yes, she was walking in the park at 9 o'clock yesterday.
+No, she was not walking in the park at 9 o'clock yesterday.
+
+19.Were they writing letters at 9 o'clock yesterday?
+Yes, they were writing letters at 9 o'clock yesterday.
+No, they were not writing letters at 9 o'clock yesterday.
+
+20.Was he eating fruits at 9 o'clock yesterday?
+Yes, he was eating fruits at 9 o'clock yesterday.
+No, he was not eating fruits at 9 o'clock yesterday.
+
+21.Were you sleeping early at 9 o'clock yesterday?
+Yes, I was sleeping early at 9 o'clock yesterday.
+No, I was not sleeping early at 9 o'clock yesterday.
+
+22.Was she cooking food at 9 o'clock yesterday?
+Yes, she was cooking food at 9 o'clock yesterday.
+No, she was not cooking food at 9 o'clock yesterday.
+
+23.Were they practicing dancing at 9 o'clock yesterday?
+Yes, they were practicing dancing at 9 o'clock yesterday.
+No, they were not practicing dancing at 9 o'clock yesterday.
+
+24.Was your uncle walking in the park at 9 o'clock yesterday?
+Yes, my uncle was walking in the park at 9 o'clock yesterday.
+No, my uncle was not walking in the park at 9 o'clock yesterday.
+
+25.Were you learning new vocabulary at 9 o'clock yesterday?
+Yes, I was learning new vocabulary at 9 o'clock yesterday.
+No, I was not learning new vocabulary at 9 o'clock yesterday.
+
+26.Was he brushing his teeth twice at 9 o'clock yesterday?
+Yes, he was brushing his teeth twice at 9 o'clock yesterday.
+No, he was not brushing his teeth twice at 9 o'clock yesterday.
+
+27.Were the girls participating in activities at 9 o'clock yesterday?
+Yes, the girls were participating in activities at 9 o'clock yesterday.
+No, the girls were not participating in activities at 9 o'clock yesterday.
+
+28.Were you talking to your friend at 9 o'clock yesterday?
+Yes, I was talking to my friend at 9 o'clock yesterday.
+No, I was not talking to my friend at 9 o'clock yesterday.
+
+29.Was she preparing breakfast at 9 o'clock yesterday?
+Yes, she was preparing breakfast at 9 o'clock yesterday.
+No, she was not preparing breakfast at 9 o'clock yesterday.
+
+30.Were they respecting their teachers at 9 o'clock yesterday?
+Yes, they were respecting their teachers at 9 o'clock yesterday.
+No, they were not respecting their teachers at 9 o'clock yesterday.
+`
+      },
+
+      {
+        id: 6,
+        title: "6.At 9 O'Clock Tomorrow",
+        content: `
+1.Will you be waking up early at 9 o'clock tomorrow?
+Yes, I will be waking up early at 9 o'clock tomorrow.
+No, I will not be waking up early at 9 o'clock tomorrow.
+
+2.Will she be going to school at 9 o'clock tomorrow?
+Yes, she will be going to school at 9 o'clock tomorrow.
+No, she will not be going to school at 9 o'clock tomorrow.
+
+3.Will they be playing cricket at 9 o'clock tomorrow?
+Yes, they will be playing cricket at 9 o'clock tomorrow.
+No, they will not be playing cricket at 9 o'clock tomorrow.
+
+4.Will he be studying English at 9 o'clock tomorrow?
+Yes, he will be studying English at 9 o'clock tomorrow.
+No, he will not be studying English at 9 o'clock tomorrow.
+
+5.Will you be drinking milk at 9 o'clock tomorrow?
+Yes, I will be drinking milk at 9 o'clock tomorrow.
+No, I will not be drinking milk at 9 o'clock tomorrow.
+
+6.Will she be drawing pictures at 9 o'clock tomorrow?
+Yes, she will be drawing pictures at 9 o'clock tomorrow.
+No, she will not be drawing pictures at 9 o'clock tomorrow.
+
+7.Will they be watching television at 9 o'clock tomorrow?
+Yes, they will be watching television at 9 o'clock tomorrow.
+No, they will not be watching television at 9 o'clock tomorrow.
+
+8.Will he be playing football at 9 o'clock tomorrow?
+Yes, he will be playing football at 9 o'clock tomorrow.
+No, he will not be playing football at 9 o'clock tomorrow.
+
+9.Will you be reading storybooks at 9 o'clock tomorrow?
+Yes, I will be reading storybooks at 9 o'clock tomorrow.
+No, I will not be reading storybooks at 9 o'clock tomorrow.
+
+10.Will she be cleaning her room at 9 o'clock tomorrow?
+Yes, she will be cleaning her room at 9 o'clock tomorrow.
+No, she will not be cleaning her room at 9 o'clock tomorrow.
+
+11.Will they be visiting their grandparents at 9 o'clock tomorrow?
+Yes, they will be visiting their grandparents at 9 o'clock tomorrow.
+No, they will not be visiting their grandparents at 9 o'clock tomorrow.
+
+12.Will he be washing his hands at 9 o'clock tomorrow?
+Yes, he will be washing his hands at 9 o'clock tomorrow.
+No, he will not be washing his hands at 9 o'clock tomorrow.
+
+13.Will you be brushing your teeth at 9 o'clock tomorrow?
+Yes, I will be brushing my teeth at 9 o'clock tomorrow.
+No, I will not be brushing my teeth at 9 o'clock tomorrow.
+
+14.Will she be helping her mother at 9 o'clock tomorrow?
+Yes, she will be helping her mother at 9 o'clock tomorrow.
+No, she will not be helping her mother at 9 o'clock tomorrow.
+
+15.Will they be practicing singing at 9 o'clock tomorrow?
+Yes, they will be practicing singing at 9 o'clock tomorrow.
+No, they will not be practicing singing at 9 o'clock tomorrow.
+
+16.Will he be driving a car at 9 o'clock tomorrow?
+Yes, he will be driving a car at 9 o'clock tomorrow.
+No, he will not be driving a car at 9 o'clock tomorrow.
+
+17.Will you be watering the plants at 9 o'clock tomorrow?
+Yes, I will be watering the plants at 9 o'clock tomorrow.
+No, I will not be watering the plants at 9 o'clock tomorrow.
+
+18.Will she be walking in the park at 9 o'clock tomorrow?
+Yes, she will be walking in the park at 9 o'clock tomorrow.
+No, she will not be walking in the park at 9 o'clock tomorrow.
+
+19.Will they be writing letters at 9 o'clock tomorrow?
+Yes, they will be writing letters at 9 o'clock tomorrow.
+No, they will not be writing letters at 9 o'clock tomorrow.
+
+20.Will he be eating fruits at 9 o'clock tomorrow?
+Yes, he will be eating fruits at 9 o'clock tomorrow.
+No, he will not be eating fruits at 9 o'clock tomorrow.
+
+21.Will you be sleeping early at 9 o'clock tomorrow?
+Yes, I will be sleeping early at 9 o'clock tomorrow.
+No, I will not be sleeping early at 9 o'clock tomorrow.
+
+22.Will she be cooking food at 9 o'clock tomorrow?
+Yes, she will be cooking food at 9 o'clock tomorrow.
+No, she will not be cooking food at 9 o'clock tomorrow.
+
+23.Will they be practicing dancing at 9 o'clock tomorrow?
+Yes, they will be practicing dancing at 9 o'clock tomorrow.
+No, they will not be practicing dancing at 9 o'clock tomorrow.
+
+24.Will your uncle be walking in the park at 9 o'clock tomorrow?
+Yes, my uncle will be walking in the park at 9 o'clock tomorrow.
+No, my uncle will not be walking in the park at 9 o'clock tomorrow.
+
+25.Will you be learning new vocabulary at 9 o'clock tomorrow?
+Yes, I will be learning new vocabulary at 9 o'clock tomorrow.
+No, I will not be learning new vocabulary at 9 o'clock tomorrow.
+
+26.Will he be brushing his teeth twice at 9 o'clock tomorrow?
+Yes, he will be brushing his teeth twice at 9 o'clock tomorrow.
+No, he will not be brushing his teeth twice at 9 o'clock tomorrow.
+
+27.Will the girls be participating in activities at 9 o'clock tomorrow?
+Yes, the girls will be participating in activities at 9 o'clock tomorrow.
+No, the girls will not be participating in activities at 9 o'clock tomorrow.
+
+28.Will you be talking to your friend at 9 o'clock tomorrow?
+Yes, I will be talking to my friend at 9 o'clock tomorrow.
+No, I will not be talking to my friend at 9 o'clock tomorrow.
+
+29.Will she be preparing breakfast at 9 o'clock tomorrow?
+Yes, she will be preparing breakfast at 9 o'clock tomorrow.
+No, she will not be preparing breakfast at 9 o'clock tomorrow.
+
+30.Will they be respecting their teachers at 9 o'clock tomorrow?
+Yes, they will be respecting their teachers at 9 o'clock tomorrow.
+No, they will not be respecting their teachers at 9 o'clock tomorrow.
+`
+      },
+
+      {
+        id: 7,
+        title: "7.Already",
+        content: `
+1.Have you already woken up early?
+Yes, I have already woken up early.
+No, I have not already woken up early.
+
+2.Has she already gone to school?
+Yes, she has already gone to school.
+No, she has not already gone to school.
+
+3.Have they already played cricket?
+Yes, they have already played cricket.
+No, they have not already played cricket.
+
+4.Has he already studied English?
+Yes, he has already studied English.
+No, he has not already studied English.
+
+5.Have you already drunk milk?
+Yes, I have already drunk milk.
+No, I have not already drunk milk.
+
+6.Has she already drawn pictures?
+Yes, she has already drawn pictures.
+No, she has not already drawn pictures.
+
+7.Have they already watched television?
+Yes, they have already watched television.
+No, they have not already watched television.
+
+8.Has he already played football?
+Yes, he has already played football.
+No, he has not already played football.
+
+9.Have you already read storybooks?
+Yes, I have already read storybooks.
+No, I have not already read storybooks.
+
+10.Has she already cleaned her room?
+Yes, she has already cleaned her room.
+No, she has not already cleaned her room.
+
+11.Have they already visited their grandparents?
+Yes, they have already visited their grandparents.
+No, they have not already visited their grandparents.
+
+12.Has he already washed his hands?
+Yes, he has already washed his hands.
+No, he has not already washed his hands.
+
+13.Have you already brushed your teeth?
+Yes, I have already brushed my teeth.
+No, I have not already brushed my teeth.
+
+14.Has she already helped her mother?
+Yes, she has already helped her mother.
+No, she has not already helped her mother.
+
+15.Have they already practiced singing?
+Yes, they have already practiced singing.
+No, they have not already practiced singing.
+
+16.Has he already driven a car?
+Yes, he has already driven a car.
+No, he has not already driven a car.
+
+17.Have you already watered the plants?
+Yes, I have already watered the plants.
+No, I have not already watered the plants.
+
+18.Has she already walked in the park?
+Yes, she has already walked in the park.
+No, she has not already walked in the park.
+
+19.Have they already written letters?
+Yes, they have already written letters.
+No, they have not already written letters.
+
+20.Has he already eaten fruits?
+Yes, he has already eaten fruits.
+No, he has not already eaten fruits.
+
+21.Have you already slept early?
+Yes, I have already slept early.
+No, I have not already slept early.
+
+22.Has she already cooked food?
+Yes, she has already cooked food.
+No, she has not already cooked food.
+
+23.Have they already practiced dancing?
+Yes, they have already practiced dancing.
+No, they have not already practiced dancing.
+
+24.Has your uncle already walked in the park?
+Yes, my uncle has already walked in the park.
+No, my uncle has not already walked in the park.
+
+25.Have you already learned new vocabulary?
+Yes, I have already learned new vocabulary.
+No, I have not already learned new vocabulary.
+
+26.Has he already brushed his teeth twice?
+Yes, he has already brushed his teeth twice.
+No, he has not already brushed his teeth twice.
+
+27.Have the girls already participated in activities?
+Yes, the girls have already participated in activities.
+No, the girls have not already participated in activities.
+
+28.Have you already talked to your friend?
+Yes, I have already talked to my friend.
+No, I have not already talked to my friend.
+
+29.Has she already prepared breakfast?
+Yes, she has already prepared breakfast.
+No, she has not already prepared breakfast.
+
+30.Have they already respected their teachers?
+Yes, they have already respected their teachers.
+No, they have not already respected their teachers.
+`
+      },
+
+      {
+        id: 8,
+        title: "8.For 2 Hours",
+        content: `
+1.Have you been waking up early for 2 hours?
+Yes, I have been waking up early for 2 hours.
+No, I have not been waking up early for 2 hours.
+
+2.Has she been going to school for 2 hours?
+Yes, she has been going to school for 2 hours.
+No, she has not been going to school for 2 hours.
+
+3.Have they been playing cricket for 2 hours?
+Yes, they have been playing cricket for 2 hours.
+No, they have not been playing cricket for 2 hours.
+
+4.Has he been studying English for 2 hours?
+Yes, he has been studying English for 2 hours.
+No, he has not been studying English for 2 hours.
+
+5.Have you been drinking milk for 2 hours?
+Yes, I have been drinking milk for 2 hours.
+No, I have not been drinking milk for 2 hours.
+
+6.Has she been drawing pictures for 2 hours?
+Yes, she has been drawing pictures for 2 hours.
+No, she has not been drawing pictures for 2 hours.
+
+7.Have they been watching television for 2 hours?
+Yes, they have been watching television for 2 hours.
+No, they have not been watching television for 2 hours.
+
+8.Has he been playing football for 2 hours?
+Yes, he has been playing football for 2 hours.
+No, he has not been playing football for 2 hours.
+
+9.Have you been reading storybooks for 2 hours?
+Yes, I have been reading storybooks for 2 hours.
+No, I have not been reading storybooks for 2 hours.
+
+10.Has she been cleaning her room for 2 hours?
+Yes, she has been cleaning her room for 2 hours.
+No, she has not been cleaning her room for 2 hours.
+
+11.Have they been visiting their grandparents for 2 hours?
+Yes, they have been visiting their grandparents for 2 hours.
+No, they have not been visiting their grandparents for 2 hours.
+
+12.Has he been washing his hands for 2 hours?
+Yes, he has been washing his hands for 2 hours.
+No, he has not been washing his hands for 2 hours.
+
+13.Have you been brushing your teeth for 2 hours?
+Yes, I have been brushing my teeth for 2 hours.
+No, I have not been brushing my teeth for 2 hours.
+
+14.Has she been helping her mother for 2 hours?
+Yes, she has been helping her mother for 2 hours.
+No, she has not been helping her mother for 2 hours.
+
+15.Have they been practicing singing for 2 hours?
+Yes, they have been practicing singing for 2 hours.
+No, they have not been practicing singing for 2 hours.
+
+16.Has he been driving a car for 2 hours?
+Yes, he has been driving a car for 2 hours.
+No, he has not been driving a car for 2 hours.
+
+17.Have you been watering the plants for 2 hours?
+Yes, I have been watering the plants for 2 hours.
+No, I have not been watering the plants for 2 hours.
+
+18.Has she been walking in the park for 2 hours?
+Yes, she has been walking in the park for 2 hours.
+No, she has not been walking in the park for 2 hours.
+
+19.Have they been writing letters for 2 hours?
+Yes, they have been writing letters for 2 hours.
+No, they have not been writing letters for 2 hours.
+
+20.Has he been eating fruits for 2 hours?
+Yes, he has been eating fruits for 2 hours.
+No, he has not been eating fruits for 2 hours.
+
+21.Have you been sleeping early for 2 hours?
+Yes, I have been sleeping early for 2 hours.
+No, I have not been sleeping early for 2 hours.
+
+22.Has she been cooking food for 2 hours?
+Yes, she has been cooking food for 2 hours.
+No, she has not been cooking food for 2 hours.
+
+23.Have they been practicing dancing for 2 hours?
+Yes, they have been practicing dancing for 2 hours.
+No, they have not been practicing dancing for 2 hours.
+
+24.Has your uncle been walking in the park for 2 hours?
+Yes, my uncle has been walking in the park for 2 hours.
+No, my uncle has not been walking in the park for 2 hours.
+
+25.Have you been learning new vocabulary for 2 hours?
+Yes, I have been learning new vocabulary for 2 hours.
+No, I have not been learning new vocabulary for 2 hours.
+
+26.Has he been brushing his teeth twice for 2 hours?
+Yes, he has been brushing his teeth twice for 2 hours.
+No, he has not been brushing his teeth twice for 2 hours.
+
+27.Have the girls been participating in activities for 2 hours?
+Yes, the girls have been participating in activities for 2 hours.
+No, the girls have not been participating in activities for 2 hours.
+
+28.Have you been talking to your friend for 2 hours?
+Yes, I have been talking to my friend for 2 hours.
+No, I have not been talking to my friend for 2 hours.
+
+29.Has she been preparing breakfast for 2 hours?
+Yes, she has been preparing breakfast for 2 hours.
+No, she has not been preparing breakfast for 2 hours.
+
+30.Have they been respecting their teachers for 2 hours?
+Yes, they have been respecting their teachers for 2 hours.
+No, they have not been respecting their teachers for 2 hours.
+`
+      }
     ],
   },
 
@@ -9400,6 +12427,1015 @@ Students should learn continuously and use time wisely.
 Success is possible for everyone who works sincerely.
 `,
       },
+    ],
+    stockSentences: [
+      {
+        id: 1,
+        title: "1.Everyday",
+        content: `
+1.Do you wake up early every day?
+Yes, I wake up early every day.
+No, I do not wake up early every day.
+
+2.Does she go to school every day?
+Yes, she goes to school every day.
+No, she does not go to school every day.
+
+3.Do they play cricket every evening?
+Yes, they play cricket every evening.
+No, they do not play cricket every evening.
+
+4.Does he study English every night?
+Yes, he studies English every night.
+No, he does not study English every night.
+
+5.Do you drink milk every morning?
+Yes, I drink milk every morning.
+No, I do not drink milk every morning.
+
+6.Does she draw pictures every weekend?
+Yes, she draws pictures every weekend.
+No, she does not draw pictures every weekend.
+
+7.Do they watch television every evening?
+Yes, they watch television every evening.
+No, they do not watch television every evening.
+
+8.Does he play football every Sunday?
+Yes, he plays football every Sunday.
+No, he does not play football every Sunday.
+
+9.Do you read storybooks every night?
+Yes, I read storybooks every night.
+No, I do not read storybooks every night.
+
+10.Does she clean her room every Sunday?
+Yes, she cleans her room every Sunday.
+No, she does not clean her room every Sunday.
+
+11.Do they visit their grandparents every summer?
+Yes, they visit their grandparents every summer.
+No, they do not visit their grandparents every summer.
+
+12.Does he wash his hands before meals?
+Yes, he washes his hands before meals.
+No, he does not wash his hands before meals.
+
+13.Do you brush your teeth every morning?
+Yes, I brush my teeth every morning.
+No, I do not brush my teeth every morning.
+
+14.Does she help her mother every day?
+Yes, she helps her mother every day.
+No, she does not help her mother every day.
+
+15.Do they practice singing every week?
+Yes, they practice singing every week.
+No, they do not practice singing every week.
+
+16.Does he drive a car every day?
+Yes, he drives a car every day.
+No, he does not drive a car every day.
+
+17.Do you water the plants every evening?
+Yes, I water the plants every evening.
+No, I do not water the plants every evening.
+
+18.Does she walk in the park every morning?
+Yes, she walks in the park every morning.
+No, she does not walk in the park every morning.
+
+19.Do they write letters every month?
+Yes, they write letters every month.
+No, they do not write letters every month.
+
+20.Does he eat fruits every day?
+Yes, he eats fruits every day.
+No, he does not eat fruits every day.
+
+21.Do you sleep early every night?
+Yes, I sleep early every night.
+No, I do not sleep early every night.
+
+22.Does she cook food every day?
+Yes, she cooks food every day.
+No, she does not cook food every day.
+
+23.Do they practice dancing every evening?
+Yes, they practice dancing every evening.
+No, they do not practice dancing every evening.
+
+24.Does your uncle walk in the park every morning?
+Yes, my uncle walks in the park every morning.
+No, my uncle does not walk in the park every morning.
+
+25.Do you learn new vocabulary every day?
+Yes, I learn new vocabulary every day.
+No, I do not learn new vocabulary every day.
+
+26.Does he brush his teeth twice every day?
+Yes, he brushes his teeth twice every day.
+No, he does not brush his teeth twice every day.
+
+27.Do the girls participate in activities every week?
+Yes, the girls participate in activities every week.
+No, the girls do not participate in activities every week.
+
+28.Do you talk to your friend every night?
+Yes, I talk to my friend every night.
+No, I do not talk to my friend every night.
+
+29.Does she prepare breakfast every morning?
+Yes, she prepares breakfast every morning.
+No, she does not prepare breakfast every morning.
+
+30.Do they respect their teachers every day?
+Yes, they respect their teachers every day.
+No, they do not respect their teachers every day.
+`
+      },
+
+      {
+        id: 2,
+        title: "2.Yesterday",
+        content: `
+1.Did you wake up early yesterday?
+Yes, I woke up early yesterday.
+No, I did not wake up early yesterday.
+
+2.Did she go to school yesterday?
+Yes, she went to school yesterday.
+No, she did not go to school yesterday.
+
+3.Did they play cricket yesterday?
+Yes, they played cricket yesterday.
+No, they did not play cricket yesterday.
+
+4.Did he study English yesterday?
+Yes, he studied English yesterday.
+No, he did not study English yesterday.
+
+5.Did you drink milk yesterday?
+Yes, I drank milk yesterday.
+No, I did not drink milk yesterday.
+
+6.Did she draw pictures yesterday?
+Yes, she drew pictures yesterday.
+No, she did not draw pictures yesterday.
+
+7.Did they watch television yesterday?
+Yes, they watched television yesterday.
+No, they did not watch television yesterday.
+
+8.Did he play football yesterday?
+Yes, he played football yesterday.
+No, he did not play football yesterday.
+
+9.Did you read storybooks yesterday?
+Yes, I read storybooks yesterday.
+No, I did not read storybooks yesterday.
+
+10.Did she clean her room yesterday?
+Yes, she cleaned her room yesterday.
+No, she did not clean her room yesterday.
+
+11.Did they visit their grandparents yesterday?
+Yes, they visited their grandparents yesterday.
+No, they did not visit their grandparents yesterday.
+
+12.Did he wash his hands yesterday?
+Yes, he washed his hands yesterday.
+No, he did not wash his hands yesterday.
+
+13.Did you brush your teeth yesterday?
+Yes, I brushed my teeth yesterday.
+No, I did not brush my teeth yesterday.
+
+14.Did she help her mother yesterday?
+Yes, she helped her mother yesterday.
+No, she did not help her mother yesterday.
+
+15.Did they practice singing yesterday?
+Yes, they practiced singing yesterday.
+No, they did not practice singing yesterday.
+
+16.Did he drive a car yesterday?
+Yes, he drove a car yesterday.
+No, he did not drive a car yesterday.
+
+17.Did you water the plants yesterday?
+Yes, I watered the plants yesterday.
+No, I did not water the plants yesterday.
+
+18.Did she walk in the park yesterday?
+Yes, she walked in the park yesterday.
+No, she did not walk in the park yesterday.
+
+19.Did they write letters yesterday?
+Yes, they wrote letters yesterday.
+No, they did not write letters yesterday.
+
+20.Did he eat fruits yesterday?
+Yes, he ate fruits yesterday.
+No, he did not eat fruits yesterday.
+
+21.Did you sleep early yesterday?
+Yes, I slept early yesterday.
+No, I did not sleep early yesterday.
+
+22.Did she cook food yesterday?
+Yes, she cooked food yesterday.
+No, she did not cook food yesterday.
+
+23.Did they practice dancing yesterday?
+Yes, they practiced dancing yesterday.
+No, they did not practice dancing yesterday.
+
+24.Did your uncle walk in the park yesterday?
+Yes, my uncle walked in the park yesterday.
+No, my uncle did not walk in the park yesterday.
+
+25.Did you learn new vocabulary yesterday?
+Yes, I learned new vocabulary yesterday.
+No, I did not learn new vocabulary yesterday.
+
+26.Did he brush his teeth twice yesterday?
+Yes, he brushed his teeth twice yesterday.
+No, he did not brush his teeth twice yesterday.
+
+27.Did the girls participate in activities yesterday?
+Yes, the girls participated in activities yesterday.
+No, the girls did not participate in activities yesterday.
+
+28.Did you talk to your friend yesterday?
+Yes, I talked to my friend yesterday.
+No, I did not talk to my friend yesterday.
+
+29.Did she prepare breakfast yesterday?
+Yes, she prepared breakfast yesterday.
+No, she did not prepare breakfast yesterday.
+
+30.Did they respect their teachers yesterday?
+Yes, they respected their teachers yesterday.
+No, they did not respect their teachers yesterday.
+`
+      },
+
+      {
+        id: 3,
+        title: "3.Tomorrow",
+        content: `
+1.Will you wake up early tomorrow?
+Yes, I will wake up early tomorrow.
+No, I will not wake up early tomorrow.
+
+2.Will she go to school tomorrow?
+Yes, she will go to school tomorrow.
+No, she will not go to school tomorrow.
+
+3.Will they play cricket tomorrow?
+Yes, they will play cricket tomorrow.
+No, they will not play cricket tomorrow.
+
+4.Will he study English tomorrow?
+Yes, he will study English tomorrow.
+No, he will not study English tomorrow.
+
+5.Will you drink milk tomorrow?
+Yes, I will drink milk tomorrow.
+No, I will not drink milk tomorrow.
+
+6.Will she draw pictures tomorrow?
+Yes, she will draw pictures tomorrow.
+No, she will not draw pictures tomorrow.
+
+7.Will they watch television tomorrow?
+Yes, they will watch television tomorrow.
+No, they will not watch television tomorrow.
+
+8.Will he play football tomorrow?
+Yes, he will play football tomorrow.
+No, he will not play football tomorrow.
+
+9.Will you read storybooks tomorrow?
+Yes, I will read storybooks tomorrow.
+No, I will not read storybooks tomorrow.
+
+10.Will she clean her room tomorrow?
+Yes, she will clean her room tomorrow.
+No, she will not clean her room tomorrow.
+
+11.Will they visit their grandparents tomorrow?
+Yes, they will visit their grandparents tomorrow.
+No, they will not visit their grandparents tomorrow.
+
+12.Will he wash his hands tomorrow?
+Yes, he will wash his hands tomorrow.
+No, he will not wash his hands tomorrow.
+
+13.Will you brush your teeth tomorrow?
+Yes, I will brush my teeth tomorrow.
+No, I will not brush my teeth tomorrow.
+
+14.Will she help her mother tomorrow?
+Yes, she will help her mother tomorrow.
+No, she will not help her mother tomorrow.
+
+15.Will they practice singing tomorrow?
+Yes, they will practice singing tomorrow.
+No, they will not practice singing tomorrow.
+
+16.Will he drive a car tomorrow?
+Yes, he will drive a car tomorrow.
+No, he will not drive a car tomorrow.
+
+17.Will you water the plants tomorrow?
+Yes, I will water the plants tomorrow.
+No, I will not water the plants tomorrow.
+
+18.Will she walk in the park tomorrow?
+Yes, she will walk in the park tomorrow.
+No, she will not walk in the park tomorrow.
+
+19.Will they write letters tomorrow?
+Yes, they will write letters tomorrow.
+No, they will not write letters tomorrow.
+
+20.Will he eat fruits tomorrow?
+Yes, he will eat fruits tomorrow.
+No, he will not eat fruits tomorrow.
+
+21.Will you sleep early tomorrow?
+Yes, I will sleep early tomorrow.
+No, I will not sleep early tomorrow.
+
+22.Will she cook food tomorrow?
+Yes, she will cook food tomorrow.
+No, she will not cook food tomorrow.
+
+23.Will they practice dancing tomorrow?
+Yes, they will practice dancing tomorrow.
+No, they will not practice dancing tomorrow.
+
+24.Will your uncle walk in the park tomorrow?
+Yes, my uncle will walk in the park tomorrow.
+No, my uncle will not walk in the park tomorrow.
+
+25.Will you learn new vocabulary tomorrow?
+Yes, I will learn new vocabulary tomorrow.
+No, I will not learn new vocabulary tomorrow.
+
+26.Will he brush his teeth twice tomorrow?
+Yes, he will brush his teeth twice tomorrow.
+No, he will not brush his teeth twice tomorrow.
+
+27.Will the girls participate in activities tomorrow?
+Yes, the girls will participate in activities tomorrow.
+No, the girls will not participate in activities tomorrow.
+
+28.Will you talk to your friend tomorrow?
+Yes, I will talk to my friend tomorrow.
+No, I will not talk to my friend tomorrow.
+
+29.Will she prepare breakfast tomorrow?
+Yes, she will prepare breakfast tomorrow.
+No, she will not prepare breakfast tomorrow.
+
+30.Will they respect their teachers tomorrow?
+Yes, they will respect their teachers tomorrow.
+No, they will not respect their teachers tomorrow.
+`
+      },
+
+      {
+        id: 4,
+        title: "4.Now",
+        content: `
+1.Are you waking up early now?
+Yes, I am waking up early now.
+No, I am not waking up early now.
+
+2.Is she going to school now?
+Yes, she is going to school now.
+No, she is not going to school now.
+
+3.Are they playing cricket now?
+Yes, they are playing cricket now.
+No, they are not playing cricket now.
+
+4.Is he studying English now?
+Yes, he is studying English now.
+No, he is not studying English now.
+
+5.Are you drinking milk now?
+Yes, I am drinking milk now.
+No, I am not drinking milk now.
+
+6.Is she drawing pictures now?
+Yes, she is drawing pictures now.
+No, she is not drawing pictures now.
+
+7.Are they watching television now?
+Yes, they are watching television now.
+No, they are not watching television now.
+
+8.Is he playing football now?
+Yes, he is playing football now.
+No, he is not playing football now.
+
+9.Are you reading storybooks now?
+Yes, I am reading storybooks now.
+No, I am not reading storybooks now.
+
+10.Is she cleaning her room now?
+Yes, she is cleaning her room now.
+No, she is not cleaning her room now.
+
+11.Are they visiting their grandparents now?
+Yes, they are visiting their grandparents now.
+No, they are not visiting their grandparents now.
+
+12.Is he washing his hands now?
+Yes, he is washing his hands now.
+No, he is not washing his hands now.
+
+13.Are you brushing your teeth now?
+Yes, I am brushing my teeth now.
+No, I am not brushing my teeth now.
+
+14.Is she helping her mother now?
+Yes, she is helping her mother now.
+No, she is not helping her mother now.
+
+15.Are they practicing singing now?
+Yes, they are practicing singing now.
+No, they are not practicing singing now.
+
+16.Is he driving a car now?
+Yes, he is driving a car now.
+No, he is not driving a car now.
+
+17.Are you watering the plants now?
+Yes, I am watering the plants now.
+No, I am not watering the plants now.
+
+18.Is she walking in the park now?
+Yes, she is walking in the park now.
+No, she is not walking in the park now.
+
+19.Are they writing letters now?
+Yes, they are writing letters now.
+No, they are not writing letters now.
+
+20.Is he eating fruits now?
+Yes, he is eating fruits now.
+No, he is not eating fruits now.
+
+21.Are you sleeping early now?
+Yes, I am sleeping early now.
+No, I am not sleeping early now.
+
+22.Is she cooking food now?
+Yes, she is cooking food now.
+No, she is not cooking food now.
+
+23.Are they practicing dancing now?
+Yes, they are practicing dancing now.
+No, they are not practicing dancing now.
+
+24.Is your uncle walking in the park now?
+Yes, my uncle is walking in the park now.
+No, my uncle is not walking in the park now.
+
+25.Are you learning new vocabulary now?
+Yes, I am learning new vocabulary now.
+No, I am not learning new vocabulary now.
+
+26.Is he brushing his teeth twice now?
+Yes, he is brushing his teeth twice now.
+No, he is not brushing his teeth twice now.
+
+27.Are the girls participating in activities now?
+Yes, the girls are participating in activities now.
+No, the girls are not participating in activities now.
+
+28.Are you talking to your friend now?
+Yes, I am talking to my friend now.
+No, I am not talking to my friend now.
+
+29.Is she preparing breakfast now?
+Yes, she is preparing breakfast now.
+No, she is not preparing breakfast now.
+
+30.Are they respecting their teachers now?
+Yes, they are respecting their teachers now.
+No, they are not respecting their teachers now.
+`
+      },
+
+      {
+        id: 5,
+        title: "5.At 9 O'Clock Yesterday",
+        content: `
+1.Were you waking up early at 9 o'clock yesterday?
+Yes, I was waking up early at 9 o'clock yesterday.
+No, I was not waking up early at 9 o'clock yesterday.
+
+2.Was she going to school at 9 o'clock yesterday?
+Yes, she was going to school at 9 o'clock yesterday.
+No, she was not going to school at 9 o'clock yesterday.
+
+3.Were they playing cricket at 9 o'clock yesterday?
+Yes, they were playing cricket at 9 o'clock yesterday.
+No, they were not playing cricket at 9 o'clock yesterday.
+
+4.Was he studying English at 9 o'clock yesterday?
+Yes, he was studying English at 9 o'clock yesterday.
+No, he was not studying English at 9 o'clock yesterday.
+
+5.Were you drinking milk at 9 o'clock yesterday?
+Yes, I was drinking milk at 9 o'clock yesterday.
+No, I was not drinking milk at 9 o'clock yesterday.
+
+6.Was she drawing pictures at 9 o'clock yesterday?
+Yes, she was drawing pictures at 9 o'clock yesterday.
+No, she was not drawing pictures at 9 o'clock yesterday.
+
+7.Were they watching television at 9 o'clock yesterday?
+Yes, they were watching television at 9 o'clock yesterday.
+No, they were not watching television at 9 o'clock yesterday.
+
+8.Was he playing football at 9 o'clock yesterday?
+Yes, he was playing football at 9 o'clock yesterday.
+No, he was not playing football at 9 o'clock yesterday.
+
+9.Were you reading storybooks at 9 o'clock yesterday?
+Yes, I was reading storybooks at 9 o'clock yesterday.
+No, I was not reading storybooks at 9 o'clock yesterday.
+
+10.Was she cleaning her room at 9 o'clock yesterday?
+Yes, she was cleaning her room at 9 o'clock yesterday.
+No, she was not cleaning her room at 9 o'clock yesterday.
+
+11.Were they visiting their grandparents at 9 o'clock yesterday?
+Yes, they were visiting their grandparents at 9 o'clock yesterday.
+No, they were not visiting their grandparents at 9 o'clock yesterday.
+
+12.Was he washing his hands at 9 o'clock yesterday?
+Yes, he was washing his hands at 9 o'clock yesterday.
+No, he was not washing his hands at 9 o'clock yesterday.
+
+13.Were you brushing your teeth at 9 o'clock yesterday?
+Yes, I was brushing my teeth at 9 o'clock yesterday.
+No, I was not brushing my teeth at 9 o'clock yesterday.
+
+14.Was she helping her mother at 9 o'clock yesterday?
+Yes, she was helping her mother at 9 o'clock yesterday.
+No, she was not helping her mother at 9 o'clock yesterday.
+
+15.Were they practicing singing at 9 o'clock yesterday?
+Yes, they were practicing singing at 9 o'clock yesterday.
+No, they were not practicing singing at 9 o'clock yesterday.
+
+16.Was he driving a car at 9 o'clock yesterday?
+Yes, he was driving a car at 9 o'clock yesterday.
+No, he was not driving a car at 9 o'clock yesterday.
+
+17.Were you watering the plants at 9 o'clock yesterday?
+Yes, I was watering the plants at 9 o'clock yesterday.
+No, I was not watering the plants at 9 o'clock yesterday.
+
+18.Was she walking in the park at 9 o'clock yesterday?
+Yes, she was walking in the park at 9 o'clock yesterday.
+No, she was not walking in the park at 9 o'clock yesterday.
+
+19.Were they writing letters at 9 o'clock yesterday?
+Yes, they were writing letters at 9 o'clock yesterday.
+No, they were not writing letters at 9 o'clock yesterday.
+
+20.Was he eating fruits at 9 o'clock yesterday?
+Yes, he was eating fruits at 9 o'clock yesterday.
+No, he was not eating fruits at 9 o'clock yesterday.
+
+21.Were you sleeping early at 9 o'clock yesterday?
+Yes, I was sleeping early at 9 o'clock yesterday.
+No, I was not sleeping early at 9 o'clock yesterday.
+
+22.Was she cooking food at 9 o'clock yesterday?
+Yes, she was cooking food at 9 o'clock yesterday.
+No, she was not cooking food at 9 o'clock yesterday.
+
+23.Were they practicing dancing at 9 o'clock yesterday?
+Yes, they were practicing dancing at 9 o'clock yesterday.
+No, they were not practicing dancing at 9 o'clock yesterday.
+
+24.Was your uncle walking in the park at 9 o'clock yesterday?
+Yes, my uncle was walking in the park at 9 o'clock yesterday.
+No, my uncle was not walking in the park at 9 o'clock yesterday.
+
+25.Were you learning new vocabulary at 9 o'clock yesterday?
+Yes, I was learning new vocabulary at 9 o'clock yesterday.
+No, I was not learning new vocabulary at 9 o'clock yesterday.
+
+26.Was he brushing his teeth twice at 9 o'clock yesterday?
+Yes, he was brushing his teeth twice at 9 o'clock yesterday.
+No, he was not brushing his teeth twice at 9 o'clock yesterday.
+
+27.Were the girls participating in activities at 9 o'clock yesterday?
+Yes, the girls were participating in activities at 9 o'clock yesterday.
+No, the girls were not participating in activities at 9 o'clock yesterday.
+
+28.Were you talking to your friend at 9 o'clock yesterday?
+Yes, I was talking to my friend at 9 o'clock yesterday.
+No, I was not talking to my friend at 9 o'clock yesterday.
+
+29.Was she preparing breakfast at 9 o'clock yesterday?
+Yes, she was preparing breakfast at 9 o'clock yesterday.
+No, she was not preparing breakfast at 9 o'clock yesterday.
+
+30.Were they respecting their teachers at 9 o'clock yesterday?
+Yes, they were respecting their teachers at 9 o'clock yesterday.
+No, they were not respecting their teachers at 9 o'clock yesterday.
+`
+      },
+
+      {
+        id: 6,
+        title: "6.At 9 O'Clock Tomorrow",
+        content: `
+1.Will you be waking up early at 9 o'clock tomorrow?
+Yes, I will be waking up early at 9 o'clock tomorrow.
+No, I will not be waking up early at 9 o'clock tomorrow.
+
+2.Will she be going to school at 9 o'clock tomorrow?
+Yes, she will be going to school at 9 o'clock tomorrow.
+No, she will not be going to school at 9 o'clock tomorrow.
+
+3.Will they be playing cricket at 9 o'clock tomorrow?
+Yes, they will be playing cricket at 9 o'clock tomorrow.
+No, they will not be playing cricket at 9 o'clock tomorrow.
+
+4.Will he be studying English at 9 o'clock tomorrow?
+Yes, he will be studying English at 9 o'clock tomorrow.
+No, he will not be studying English at 9 o'clock tomorrow.
+
+5.Will you be drinking milk at 9 o'clock tomorrow?
+Yes, I will be drinking milk at 9 o'clock tomorrow.
+No, I will not be drinking milk at 9 o'clock tomorrow.
+
+6.Will she be drawing pictures at 9 o'clock tomorrow?
+Yes, she will be drawing pictures at 9 o'clock tomorrow.
+No, she will not be drawing pictures at 9 o'clock tomorrow.
+
+7.Will they be watching television at 9 o'clock tomorrow?
+Yes, they will be watching television at 9 o'clock tomorrow.
+No, they will not be watching television at 9 o'clock tomorrow.
+
+8.Will he be playing football at 9 o'clock tomorrow?
+Yes, he will be playing football at 9 o'clock tomorrow.
+No, he will not be playing football at 9 o'clock tomorrow.
+
+9.Will you be reading storybooks at 9 o'clock tomorrow?
+Yes, I will be reading storybooks at 9 o'clock tomorrow.
+No, I will not be reading storybooks at 9 o'clock tomorrow.
+
+10.Will she be cleaning her room at 9 o'clock tomorrow?
+Yes, she will be cleaning her room at 9 o'clock tomorrow.
+No, she will not be cleaning her room at 9 o'clock tomorrow.
+
+11.Will they be visiting their grandparents at 9 o'clock tomorrow?
+Yes, they will be visiting their grandparents at 9 o'clock tomorrow.
+No, they will not be visiting their grandparents at 9 o'clock tomorrow.
+
+12.Will he be washing his hands at 9 o'clock tomorrow?
+Yes, he will be washing his hands at 9 o'clock tomorrow.
+No, he will not be washing his hands at 9 o'clock tomorrow.
+
+13.Will you be brushing your teeth at 9 o'clock tomorrow?
+Yes, I will be brushing my teeth at 9 o'clock tomorrow.
+No, I will not be brushing my teeth at 9 o'clock tomorrow.
+
+14.Will she be helping her mother at 9 o'clock tomorrow?
+Yes, she will be helping her mother at 9 o'clock tomorrow.
+No, she will not be helping her mother at 9 o'clock tomorrow.
+
+15.Will they be practicing singing at 9 o'clock tomorrow?
+Yes, they will be practicing singing at 9 o'clock tomorrow.
+No, they will not be practicing singing at 9 o'clock tomorrow.
+
+16.Will he be driving a car at 9 o'clock tomorrow?
+Yes, he will be driving a car at 9 o'clock tomorrow.
+No, he will not be driving a car at 9 o'clock tomorrow.
+
+17.Will you be watering the plants at 9 o'clock tomorrow?
+Yes, I will be watering the plants at 9 o'clock tomorrow.
+No, I will not be watering the plants at 9 o'clock tomorrow.
+
+18.Will she be walking in the park at 9 o'clock tomorrow?
+Yes, she will be walking in the park at 9 o'clock tomorrow.
+No, she will not be walking in the park at 9 o'clock tomorrow.
+
+19.Will they be writing letters at 9 o'clock tomorrow?
+Yes, they will be writing letters at 9 o'clock tomorrow.
+No, they will not be writing letters at 9 o'clock tomorrow.
+
+20.Will he be eating fruits at 9 o'clock tomorrow?
+Yes, he will be eating fruits at 9 o'clock tomorrow.
+No, he will not be eating fruits at 9 o'clock tomorrow.
+
+21.Will you be sleeping early at 9 o'clock tomorrow?
+Yes, I will be sleeping early at 9 o'clock tomorrow.
+No, I will not be sleeping early at 9 o'clock tomorrow.
+
+22.Will she be cooking food at 9 o'clock tomorrow?
+Yes, she will be cooking food at 9 o'clock tomorrow.
+No, she will not be cooking food at 9 o'clock tomorrow.
+
+23.Will they be practicing dancing at 9 o'clock tomorrow?
+Yes, they will be practicing dancing at 9 o'clock tomorrow.
+No, they will not be practicing dancing at 9 o'clock tomorrow.
+
+24.Will your uncle be walking in the park at 9 o'clock tomorrow?
+Yes, my uncle will be walking in the park at 9 o'clock tomorrow.
+No, my uncle will not be walking in the park at 9 o'clock tomorrow.
+
+25.Will you be learning new vocabulary at 9 o'clock tomorrow?
+Yes, I will be learning new vocabulary at 9 o'clock tomorrow.
+No, I will not be learning new vocabulary at 9 o'clock tomorrow.
+
+26.Will he be brushing his teeth twice at 9 o'clock tomorrow?
+Yes, he will be brushing his teeth twice at 9 o'clock tomorrow.
+No, he will not be brushing his teeth twice at 9 o'clock tomorrow.
+
+27.Will the girls be participating in activities at 9 o'clock tomorrow?
+Yes, the girls will be participating in activities at 9 o'clock tomorrow.
+No, the girls will not be participating in activities at 9 o'clock tomorrow.
+
+28.Will you be talking to your friend at 9 o'clock tomorrow?
+Yes, I will be talking to my friend at 9 o'clock tomorrow.
+No, I will not be talking to my friend at 9 o'clock tomorrow.
+
+29.Will she be preparing breakfast at 9 o'clock tomorrow?
+Yes, she will be preparing breakfast at 9 o'clock tomorrow.
+No, she will not be preparing breakfast at 9 o'clock tomorrow.
+
+30.Will they be respecting their teachers at 9 o'clock tomorrow?
+Yes, they will be respecting their teachers at 9 o'clock tomorrow.
+No, they will not be respecting their teachers at 9 o'clock tomorrow.
+`
+      },
+
+      {
+        id: 7,
+        title: "7.Already",
+        content: `
+1.Have you already woken up early?
+Yes, I have already woken up early.
+No, I have not already woken up early.
+
+2.Has she already gone to school?
+Yes, she has already gone to school.
+No, she has not already gone to school.
+
+3.Have they already played cricket?
+Yes, they have already played cricket.
+No, they have not already played cricket.
+
+4.Has he already studied English?
+Yes, he has already studied English.
+No, he has not already studied English.
+
+5.Have you already drunk milk?
+Yes, I have already drunk milk.
+No, I have not already drunk milk.
+
+6.Has she already drawn pictures?
+Yes, she has already drawn pictures.
+No, she has not already drawn pictures.
+
+7.Have they already watched television?
+Yes, they have already watched television.
+No, they have not already watched television.
+
+8.Has he already played football?
+Yes, he has already played football.
+No, he has not already played football.
+
+9.Have you already read storybooks?
+Yes, I have already read storybooks.
+No, I have not already read storybooks.
+
+10.Has she already cleaned her room?
+Yes, she has already cleaned her room.
+No, she has not already cleaned her room.
+
+11.Have they already visited their grandparents?
+Yes, they have already visited their grandparents.
+No, they have not already visited their grandparents.
+
+12.Has he already washed his hands?
+Yes, he has already washed his hands.
+No, he has not already washed his hands.
+
+13.Have you already brushed your teeth?
+Yes, I have already brushed my teeth.
+No, I have not already brushed my teeth.
+
+14.Has she already helped her mother?
+Yes, she has already helped her mother.
+No, she has not already helped her mother.
+
+15.Have they already practiced singing?
+Yes, they have already practiced singing.
+No, they have not already practiced singing.
+
+16.Has he already driven a car?
+Yes, he has already driven a car.
+No, he has not already driven a car.
+
+17.Have you already watered the plants?
+Yes, I have already watered the plants.
+No, I have not already watered the plants.
+
+18.Has she already walked in the park?
+Yes, she has already walked in the park.
+No, she has not already walked in the park.
+
+19.Have they already written letters?
+Yes, they have already written letters.
+No, they have not already written letters.
+
+20.Has he already eaten fruits?
+Yes, he has already eaten fruits.
+No, he has not already eaten fruits.
+
+21.Have you already slept early?
+Yes, I have already slept early.
+No, I have not already slept early.
+
+22.Has she already cooked food?
+Yes, she has already cooked food.
+No, she has not already cooked food.
+
+23.Have they already practiced dancing?
+Yes, they have already practiced dancing.
+No, they have not already practiced dancing.
+
+24.Has your uncle already walked in the park?
+Yes, my uncle has already walked in the park.
+No, my uncle has not already walked in the park.
+
+25.Have you already learned new vocabulary?
+Yes, I have already learned new vocabulary.
+No, I have not already learned new vocabulary.
+
+26.Has he already brushed his teeth twice?
+Yes, he has already brushed his teeth twice.
+No, he has not already brushed his teeth twice.
+
+27.Have the girls already participated in activities?
+Yes, the girls have already participated in activities.
+No, the girls have not already participated in activities.
+
+28.Have you already talked to your friend?
+Yes, I have already talked to my friend.
+No, I have not already talked to my friend.
+
+29.Has she already prepared breakfast?
+Yes, she has already prepared breakfast.
+No, she has not already prepared breakfast.
+
+30.Have they already respected their teachers?
+Yes, they have already respected their teachers.
+No, they have not already respected their teachers.
+`
+      },
+
+      {
+        id: 8,
+        title: "8.For 2 Hours",
+        content: `
+1.Have you been waking up early for 2 hours?
+Yes, I have been waking up early for 2 hours.
+No, I have not been waking up early for 2 hours.
+
+2.Has she been going to school for 2 hours?
+Yes, she has been going to school for 2 hours.
+No, she has not been going to school for 2 hours.
+
+3.Have they been playing cricket for 2 hours?
+Yes, they have been playing cricket for 2 hours.
+No, they have not been playing cricket for 2 hours.
+
+4.Has he been studying English for 2 hours?
+Yes, he has been studying English for 2 hours.
+No, he has not been studying English for 2 hours.
+
+5.Have you been drinking milk for 2 hours?
+Yes, I have been drinking milk for 2 hours.
+No, I have not been drinking milk for 2 hours.
+
+6.Has she been drawing pictures for 2 hours?
+Yes, she has been drawing pictures for 2 hours.
+No, she has not been drawing pictures for 2 hours.
+
+7.Have they been watching television for 2 hours?
+Yes, they have been watching television for 2 hours.
+No, they have not been watching television for 2 hours.
+
+8.Has he been playing football for 2 hours?
+Yes, he has been playing football for 2 hours.
+No, he has not been playing football for 2 hours.
+
+9.Have you been reading storybooks for 2 hours?
+Yes, I have been reading storybooks for 2 hours.
+No, I have not been reading storybooks for 2 hours.
+
+10.Has she been cleaning her room for 2 hours?
+Yes, she has been cleaning her room for 2 hours.
+No, she has not been cleaning her room for 2 hours.
+
+11.Have they been visiting their grandparents for 2 hours?
+Yes, they have been visiting their grandparents for 2 hours.
+No, they have not been visiting their grandparents for 2 hours.
+
+12.Has he been washing his hands for 2 hours?
+Yes, he has been washing his hands for 2 hours.
+No, he has not been washing his hands for 2 hours.
+
+13.Have you been brushing your teeth for 2 hours?
+Yes, I have been brushing my teeth for 2 hours.
+No, I have not been brushing my teeth for 2 hours.
+
+14.Has she been helping her mother for 2 hours?
+Yes, she has been helping her mother for 2 hours.
+No, she has not been helping her mother for 2 hours.
+
+15.Have they been practicing singing for 2 hours?
+Yes, they have been practicing singing for 2 hours.
+No, they have not been practicing singing for 2 hours.
+
+16.Has he been driving a car for 2 hours?
+Yes, he has been driving a car for 2 hours.
+No, he has not been driving a car for 2 hours.
+
+17.Have you been watering the plants for 2 hours?
+Yes, I have been watering the plants for 2 hours.
+No, I have not been watering the plants for 2 hours.
+
+18.Has she been walking in the park for 2 hours?
+Yes, she has been walking in the park for 2 hours.
+No, she has not been walking in the park for 2 hours.
+
+19.Have they been writing letters for 2 hours?
+Yes, they have been writing letters for 2 hours.
+No, they have not been writing letters for 2 hours.
+
+20.Has he been eating fruits for 2 hours?
+Yes, he has been eating fruits for 2 hours.
+No, he has not been eating fruits for 2 hours.
+
+21.Have you been sleeping early for 2 hours?
+Yes, I have been sleeping early for 2 hours.
+No, I have not been sleeping early for 2 hours.
+
+22.Has she been cooking food for 2 hours?
+Yes, she has been cooking food for 2 hours.
+No, she has not been cooking food for 2 hours.
+
+23.Have they been practicing dancing for 2 hours?
+Yes, they have been practicing dancing for 2 hours.
+No, they have not been practicing dancing for 2 hours.
+
+24.Has your uncle been walking in the park for 2 hours?
+Yes, my uncle has been walking in the park for 2 hours.
+No, my uncle has not been walking in the park for 2 hours.
+
+25.Have you been learning new vocabulary for 2 hours?
+Yes, I have been learning new vocabulary for 2 hours.
+No, I have not been learning new vocabulary for 2 hours.
+
+26.Has he been brushing his teeth twice for 2 hours?
+Yes, he has been brushing his teeth twice for 2 hours.
+No, he has not been brushing his teeth twice for 2 hours.
+
+27.Have the girls been participating in activities for 2 hours?
+Yes, the girls have been participating in activities for 2 hours.
+No, the girls have not been participating in activities for 2 hours.
+
+28.Have you been talking to your friend for 2 hours?
+Yes, I have been talking to my friend for 2 hours.
+No, I have not been talking to my friend for 2 hours.
+
+29.Has she been preparing breakfast for 2 hours?
+Yes, she has been preparing breakfast for 2 hours.
+No, she has not been preparing breakfast for 2 hours.
+
+30.Have they been respecting their teachers for 2 hours?
+Yes, they have been respecting their teachers for 2 hours.
+No, they have not been respecting their teachers for 2 hours.
+`
+      }
     ],
   },
 
@@ -12064,6 +16100,1015 @@ Students should learn continuously and use time wisely.
 Success is possible for everyone who works sincerely.
 `,
       },
+    ],
+    stockSentences: [
+      {
+        id: 1,
+        title: "1.Everyday",
+        content: `
+1.Do you wake up early every day?
+Yes, I wake up early every day.
+No, I do not wake up early every day.
+
+2.Does she go to school every day?
+Yes, she goes to school every day.
+No, she does not go to school every day.
+
+3.Do they play cricket every evening?
+Yes, they play cricket every evening.
+No, they do not play cricket every evening.
+
+4.Does he study English every night?
+Yes, he studies English every night.
+No, he does not study English every night.
+
+5.Do you drink milk every morning?
+Yes, I drink milk every morning.
+No, I do not drink milk every morning.
+
+6.Does she draw pictures every weekend?
+Yes, she draws pictures every weekend.
+No, she does not draw pictures every weekend.
+
+7.Do they watch television every evening?
+Yes, they watch television every evening.
+No, they do not watch television every evening.
+
+8.Does he play football every Sunday?
+Yes, he plays football every Sunday.
+No, he does not play football every Sunday.
+
+9.Do you read storybooks every night?
+Yes, I read storybooks every night.
+No, I do not read storybooks every night.
+
+10.Does she clean her room every Sunday?
+Yes, she cleans her room every Sunday.
+No, she does not clean her room every Sunday.
+
+11.Do they visit their grandparents every summer?
+Yes, they visit their grandparents every summer.
+No, they do not visit their grandparents every summer.
+
+12.Does he wash his hands before meals?
+Yes, he washes his hands before meals.
+No, he does not wash his hands before meals.
+
+13.Do you brush your teeth every morning?
+Yes, I brush my teeth every morning.
+No, I do not brush my teeth every morning.
+
+14.Does she help her mother every day?
+Yes, she helps her mother every day.
+No, she does not help her mother every day.
+
+15.Do they practice singing every week?
+Yes, they practice singing every week.
+No, they do not practice singing every week.
+
+16.Does he drive a car every day?
+Yes, he drives a car every day.
+No, he does not drive a car every day.
+
+17.Do you water the plants every evening?
+Yes, I water the plants every evening.
+No, I do not water the plants every evening.
+
+18.Does she walk in the park every morning?
+Yes, she walks in the park every morning.
+No, she does not walk in the park every morning.
+
+19.Do they write letters every month?
+Yes, they write letters every month.
+No, they do not write letters every month.
+
+20.Does he eat fruits every day?
+Yes, he eats fruits every day.
+No, he does not eat fruits every day.
+
+21.Do you sleep early every night?
+Yes, I sleep early every night.
+No, I do not sleep early every night.
+
+22.Does she cook food every day?
+Yes, she cooks food every day.
+No, she does not cook food every day.
+
+23.Do they practice dancing every evening?
+Yes, they practice dancing every evening.
+No, they do not practice dancing every evening.
+
+24.Does your uncle walk in the park every morning?
+Yes, my uncle walks in the park every morning.
+No, my uncle does not walk in the park every morning.
+
+25.Do you learn new vocabulary every day?
+Yes, I learn new vocabulary every day.
+No, I do not learn new vocabulary every day.
+
+26.Does he brush his teeth twice every day?
+Yes, he brushes his teeth twice every day.
+No, he does not brush his teeth twice every day.
+
+27.Do the girls participate in activities every week?
+Yes, the girls participate in activities every week.
+No, the girls do not participate in activities every week.
+
+28.Do you talk to your friend every night?
+Yes, I talk to my friend every night.
+No, I do not talk to my friend every night.
+
+29.Does she prepare breakfast every morning?
+Yes, she prepares breakfast every morning.
+No, she does not prepare breakfast every morning.
+
+30.Do they respect their teachers every day?
+Yes, they respect their teachers every day.
+No, they do not respect their teachers every day.
+`
+      },
+
+      {
+        id: 2,
+        title: "2.Yesterday",
+        content: `
+1.Did you wake up early yesterday?
+Yes, I woke up early yesterday.
+No, I did not wake up early yesterday.
+
+2.Did she go to school yesterday?
+Yes, she went to school yesterday.
+No, she did not go to school yesterday.
+
+3.Did they play cricket yesterday?
+Yes, they played cricket yesterday.
+No, they did not play cricket yesterday.
+
+4.Did he study English yesterday?
+Yes, he studied English yesterday.
+No, he did not study English yesterday.
+
+5.Did you drink milk yesterday?
+Yes, I drank milk yesterday.
+No, I did not drink milk yesterday.
+
+6.Did she draw pictures yesterday?
+Yes, she drew pictures yesterday.
+No, she did not draw pictures yesterday.
+
+7.Did they watch television yesterday?
+Yes, they watched television yesterday.
+No, they did not watch television yesterday.
+
+8.Did he play football yesterday?
+Yes, he played football yesterday.
+No, he did not play football yesterday.
+
+9.Did you read storybooks yesterday?
+Yes, I read storybooks yesterday.
+No, I did not read storybooks yesterday.
+
+10.Did she clean her room yesterday?
+Yes, she cleaned her room yesterday.
+No, she did not clean her room yesterday.
+
+11.Did they visit their grandparents yesterday?
+Yes, they visited their grandparents yesterday.
+No, they did not visit their grandparents yesterday.
+
+12.Did he wash his hands yesterday?
+Yes, he washed his hands yesterday.
+No, he did not wash his hands yesterday.
+
+13.Did you brush your teeth yesterday?
+Yes, I brushed my teeth yesterday.
+No, I did not brush my teeth yesterday.
+
+14.Did she help her mother yesterday?
+Yes, she helped her mother yesterday.
+No, she did not help her mother yesterday.
+
+15.Did they practice singing yesterday?
+Yes, they practiced singing yesterday.
+No, they did not practice singing yesterday.
+
+16.Did he drive a car yesterday?
+Yes, he drove a car yesterday.
+No, he did not drive a car yesterday.
+
+17.Did you water the plants yesterday?
+Yes, I watered the plants yesterday.
+No, I did not water the plants yesterday.
+
+18.Did she walk in the park yesterday?
+Yes, she walked in the park yesterday.
+No, she did not walk in the park yesterday.
+
+19.Did they write letters yesterday?
+Yes, they wrote letters yesterday.
+No, they did not write letters yesterday.
+
+20.Did he eat fruits yesterday?
+Yes, he ate fruits yesterday.
+No, he did not eat fruits yesterday.
+
+21.Did you sleep early yesterday?
+Yes, I slept early yesterday.
+No, I did not sleep early yesterday.
+
+22.Did she cook food yesterday?
+Yes, she cooked food yesterday.
+No, she did not cook food yesterday.
+
+23.Did they practice dancing yesterday?
+Yes, they practiced dancing yesterday.
+No, they did not practice dancing yesterday.
+
+24.Did your uncle walk in the park yesterday?
+Yes, my uncle walked in the park yesterday.
+No, my uncle did not walk in the park yesterday.
+
+25.Did you learn new vocabulary yesterday?
+Yes, I learned new vocabulary yesterday.
+No, I did not learn new vocabulary yesterday.
+
+26.Did he brush his teeth twice yesterday?
+Yes, he brushed his teeth twice yesterday.
+No, he did not brush his teeth twice yesterday.
+
+27.Did the girls participate in activities yesterday?
+Yes, the girls participated in activities yesterday.
+No, the girls did not participate in activities yesterday.
+
+28.Did you talk to your friend yesterday?
+Yes, I talked to my friend yesterday.
+No, I did not talk to my friend yesterday.
+
+29.Did she prepare breakfast yesterday?
+Yes, she prepared breakfast yesterday.
+No, she did not prepare breakfast yesterday.
+
+30.Did they respect their teachers yesterday?
+Yes, they respected their teachers yesterday.
+No, they did not respect their teachers yesterday.
+`
+      },
+
+      {
+        id: 3,
+        title: "3.Tomorrow",
+        content: `
+1.Will you wake up early tomorrow?
+Yes, I will wake up early tomorrow.
+No, I will not wake up early tomorrow.
+
+2.Will she go to school tomorrow?
+Yes, she will go to school tomorrow.
+No, she will not go to school tomorrow.
+
+3.Will they play cricket tomorrow?
+Yes, they will play cricket tomorrow.
+No, they will not play cricket tomorrow.
+
+4.Will he study English tomorrow?
+Yes, he will study English tomorrow.
+No, he will not study English tomorrow.
+
+5.Will you drink milk tomorrow?
+Yes, I will drink milk tomorrow.
+No, I will not drink milk tomorrow.
+
+6.Will she draw pictures tomorrow?
+Yes, she will draw pictures tomorrow.
+No, she will not draw pictures tomorrow.
+
+7.Will they watch television tomorrow?
+Yes, they will watch television tomorrow.
+No, they will not watch television tomorrow.
+
+8.Will he play football tomorrow?
+Yes, he will play football tomorrow.
+No, he will not play football tomorrow.
+
+9.Will you read storybooks tomorrow?
+Yes, I will read storybooks tomorrow.
+No, I will not read storybooks tomorrow.
+
+10.Will she clean her room tomorrow?
+Yes, she will clean her room tomorrow.
+No, she will not clean her room tomorrow.
+
+11.Will they visit their grandparents tomorrow?
+Yes, they will visit their grandparents tomorrow.
+No, they will not visit their grandparents tomorrow.
+
+12.Will he wash his hands tomorrow?
+Yes, he will wash his hands tomorrow.
+No, he will not wash his hands tomorrow.
+
+13.Will you brush your teeth tomorrow?
+Yes, I will brush my teeth tomorrow.
+No, I will not brush my teeth tomorrow.
+
+14.Will she help her mother tomorrow?
+Yes, she will help her mother tomorrow.
+No, she will not help her mother tomorrow.
+
+15.Will they practice singing tomorrow?
+Yes, they will practice singing tomorrow.
+No, they will not practice singing tomorrow.
+
+16.Will he drive a car tomorrow?
+Yes, he will drive a car tomorrow.
+No, he will not drive a car tomorrow.
+
+17.Will you water the plants tomorrow?
+Yes, I will water the plants tomorrow.
+No, I will not water the plants tomorrow.
+
+18.Will she walk in the park tomorrow?
+Yes, she will walk in the park tomorrow.
+No, she will not walk in the park tomorrow.
+
+19.Will they write letters tomorrow?
+Yes, they will write letters tomorrow.
+No, they will not write letters tomorrow.
+
+20.Will he eat fruits tomorrow?
+Yes, he will eat fruits tomorrow.
+No, he will not eat fruits tomorrow.
+
+21.Will you sleep early tomorrow?
+Yes, I will sleep early tomorrow.
+No, I will not sleep early tomorrow.
+
+22.Will she cook food tomorrow?
+Yes, she will cook food tomorrow.
+No, she will not cook food tomorrow.
+
+23.Will they practice dancing tomorrow?
+Yes, they will practice dancing tomorrow.
+No, they will not practice dancing tomorrow.
+
+24.Will your uncle walk in the park tomorrow?
+Yes, my uncle will walk in the park tomorrow.
+No, my uncle will not walk in the park tomorrow.
+
+25.Will you learn new vocabulary tomorrow?
+Yes, I will learn new vocabulary tomorrow.
+No, I will not learn new vocabulary tomorrow.
+
+26.Will he brush his teeth twice tomorrow?
+Yes, he will brush his teeth twice tomorrow.
+No, he will not brush his teeth twice tomorrow.
+
+27.Will the girls participate in activities tomorrow?
+Yes, the girls will participate in activities tomorrow.
+No, the girls will not participate in activities tomorrow.
+
+28.Will you talk to your friend tomorrow?
+Yes, I will talk to my friend tomorrow.
+No, I will not talk to my friend tomorrow.
+
+29.Will she prepare breakfast tomorrow?
+Yes, she will prepare breakfast tomorrow.
+No, she will not prepare breakfast tomorrow.
+
+30.Will they respect their teachers tomorrow?
+Yes, they will respect their teachers tomorrow.
+No, they will not respect their teachers tomorrow.
+`
+      },
+
+      {
+        id: 4,
+        title: "4.Now",
+        content: `
+1.Are you waking up early now?
+Yes, I am waking up early now.
+No, I am not waking up early now.
+
+2.Is she going to school now?
+Yes, she is going to school now.
+No, she is not going to school now.
+
+3.Are they playing cricket now?
+Yes, they are playing cricket now.
+No, they are not playing cricket now.
+
+4.Is he studying English now?
+Yes, he is studying English now.
+No, he is not studying English now.
+
+5.Are you drinking milk now?
+Yes, I am drinking milk now.
+No, I am not drinking milk now.
+
+6.Is she drawing pictures now?
+Yes, she is drawing pictures now.
+No, she is not drawing pictures now.
+
+7.Are they watching television now?
+Yes, they are watching television now.
+No, they are not watching television now.
+
+8.Is he playing football now?
+Yes, he is playing football now.
+No, he is not playing football now.
+
+9.Are you reading storybooks now?
+Yes, I am reading storybooks now.
+No, I am not reading storybooks now.
+
+10.Is she cleaning her room now?
+Yes, she is cleaning her room now.
+No, she is not cleaning her room now.
+
+11.Are they visiting their grandparents now?
+Yes, they are visiting their grandparents now.
+No, they are not visiting their grandparents now.
+
+12.Is he washing his hands now?
+Yes, he is washing his hands now.
+No, he is not washing his hands now.
+
+13.Are you brushing your teeth now?
+Yes, I am brushing my teeth now.
+No, I am not brushing my teeth now.
+
+14.Is she helping her mother now?
+Yes, she is helping her mother now.
+No, she is not helping her mother now.
+
+15.Are they practicing singing now?
+Yes, they are practicing singing now.
+No, they are not practicing singing now.
+
+16.Is he driving a car now?
+Yes, he is driving a car now.
+No, he is not driving a car now.
+
+17.Are you watering the plants now?
+Yes, I am watering the plants now.
+No, I am not watering the plants now.
+
+18.Is she walking in the park now?
+Yes, she is walking in the park now.
+No, she is not walking in the park now.
+
+19.Are they writing letters now?
+Yes, they are writing letters now.
+No, they are not writing letters now.
+
+20.Is he eating fruits now?
+Yes, he is eating fruits now.
+No, he is not eating fruits now.
+
+21.Are you sleeping early now?
+Yes, I am sleeping early now.
+No, I am not sleeping early now.
+
+22.Is she cooking food now?
+Yes, she is cooking food now.
+No, she is not cooking food now.
+
+23.Are they practicing dancing now?
+Yes, they are practicing dancing now.
+No, they are not practicing dancing now.
+
+24.Is your uncle walking in the park now?
+Yes, my uncle is walking in the park now.
+No, my uncle is not walking in the park now.
+
+25.Are you learning new vocabulary now?
+Yes, I am learning new vocabulary now.
+No, I am not learning new vocabulary now.
+
+26.Is he brushing his teeth twice now?
+Yes, he is brushing his teeth twice now.
+No, he is not brushing his teeth twice now.
+
+27.Are the girls participating in activities now?
+Yes, the girls are participating in activities now.
+No, the girls are not participating in activities now.
+
+28.Are you talking to your friend now?
+Yes, I am talking to my friend now.
+No, I am not talking to my friend now.
+
+29.Is she preparing breakfast now?
+Yes, she is preparing breakfast now.
+No, she is not preparing breakfast now.
+
+30.Are they respecting their teachers now?
+Yes, they are respecting their teachers now.
+No, they are not respecting their teachers now.
+`
+      },
+
+      {
+        id: 5,
+        title: "5.At 9 O'Clock Yesterday",
+        content: `
+1.Were you waking up early at 9 o'clock yesterday?
+Yes, I was waking up early at 9 o'clock yesterday.
+No, I was not waking up early at 9 o'clock yesterday.
+
+2.Was she going to school at 9 o'clock yesterday?
+Yes, she was going to school at 9 o'clock yesterday.
+No, she was not going to school at 9 o'clock yesterday.
+
+3.Were they playing cricket at 9 o'clock yesterday?
+Yes, they were playing cricket at 9 o'clock yesterday.
+No, they were not playing cricket at 9 o'clock yesterday.
+
+4.Was he studying English at 9 o'clock yesterday?
+Yes, he was studying English at 9 o'clock yesterday.
+No, he was not studying English at 9 o'clock yesterday.
+
+5.Were you drinking milk at 9 o'clock yesterday?
+Yes, I was drinking milk at 9 o'clock yesterday.
+No, I was not drinking milk at 9 o'clock yesterday.
+
+6.Was she drawing pictures at 9 o'clock yesterday?
+Yes, she was drawing pictures at 9 o'clock yesterday.
+No, she was not drawing pictures at 9 o'clock yesterday.
+
+7.Were they watching television at 9 o'clock yesterday?
+Yes, they were watching television at 9 o'clock yesterday.
+No, they were not watching television at 9 o'clock yesterday.
+
+8.Was he playing football at 9 o'clock yesterday?
+Yes, he was playing football at 9 o'clock yesterday.
+No, he was not playing football at 9 o'clock yesterday.
+
+9.Were you reading storybooks at 9 o'clock yesterday?
+Yes, I was reading storybooks at 9 o'clock yesterday.
+No, I was not reading storybooks at 9 o'clock yesterday.
+
+10.Was she cleaning her room at 9 o'clock yesterday?
+Yes, she was cleaning her room at 9 o'clock yesterday.
+No, she was not cleaning her room at 9 o'clock yesterday.
+
+11.Were they visiting their grandparents at 9 o'clock yesterday?
+Yes, they were visiting their grandparents at 9 o'clock yesterday.
+No, they were not visiting their grandparents at 9 o'clock yesterday.
+
+12.Was he washing his hands at 9 o'clock yesterday?
+Yes, he was washing his hands at 9 o'clock yesterday.
+No, he was not washing his hands at 9 o'clock yesterday.
+
+13.Were you brushing your teeth at 9 o'clock yesterday?
+Yes, I was brushing my teeth at 9 o'clock yesterday.
+No, I was not brushing my teeth at 9 o'clock yesterday.
+
+14.Was she helping her mother at 9 o'clock yesterday?
+Yes, she was helping her mother at 9 o'clock yesterday.
+No, she was not helping her mother at 9 o'clock yesterday.
+
+15.Were they practicing singing at 9 o'clock yesterday?
+Yes, they were practicing singing at 9 o'clock yesterday.
+No, they were not practicing singing at 9 o'clock yesterday.
+
+16.Was he driving a car at 9 o'clock yesterday?
+Yes, he was driving a car at 9 o'clock yesterday.
+No, he was not driving a car at 9 o'clock yesterday.
+
+17.Were you watering the plants at 9 o'clock yesterday?
+Yes, I was watering the plants at 9 o'clock yesterday.
+No, I was not watering the plants at 9 o'clock yesterday.
+
+18.Was she walking in the park at 9 o'clock yesterday?
+Yes, she was walking in the park at 9 o'clock yesterday.
+No, she was not walking in the park at 9 o'clock yesterday.
+
+19.Were they writing letters at 9 o'clock yesterday?
+Yes, they were writing letters at 9 o'clock yesterday.
+No, they were not writing letters at 9 o'clock yesterday.
+
+20.Was he eating fruits at 9 o'clock yesterday?
+Yes, he was eating fruits at 9 o'clock yesterday.
+No, he was not eating fruits at 9 o'clock yesterday.
+
+21.Were you sleeping early at 9 o'clock yesterday?
+Yes, I was sleeping early at 9 o'clock yesterday.
+No, I was not sleeping early at 9 o'clock yesterday.
+
+22.Was she cooking food at 9 o'clock yesterday?
+Yes, she was cooking food at 9 o'clock yesterday.
+No, she was not cooking food at 9 o'clock yesterday.
+
+23.Were they practicing dancing at 9 o'clock yesterday?
+Yes, they were practicing dancing at 9 o'clock yesterday.
+No, they were not practicing dancing at 9 o'clock yesterday.
+
+24.Was your uncle walking in the park at 9 o'clock yesterday?
+Yes, my uncle was walking in the park at 9 o'clock yesterday.
+No, my uncle was not walking in the park at 9 o'clock yesterday.
+
+25.Were you learning new vocabulary at 9 o'clock yesterday?
+Yes, I was learning new vocabulary at 9 o'clock yesterday.
+No, I was not learning new vocabulary at 9 o'clock yesterday.
+
+26.Was he brushing his teeth twice at 9 o'clock yesterday?
+Yes, he was brushing his teeth twice at 9 o'clock yesterday.
+No, he was not brushing his teeth twice at 9 o'clock yesterday.
+
+27.Were the girls participating in activities at 9 o'clock yesterday?
+Yes, the girls were participating in activities at 9 o'clock yesterday.
+No, the girls were not participating in activities at 9 o'clock yesterday.
+
+28.Were you talking to your friend at 9 o'clock yesterday?
+Yes, I was talking to my friend at 9 o'clock yesterday.
+No, I was not talking to my friend at 9 o'clock yesterday.
+
+29.Was she preparing breakfast at 9 o'clock yesterday?
+Yes, she was preparing breakfast at 9 o'clock yesterday.
+No, she was not preparing breakfast at 9 o'clock yesterday.
+
+30.Were they respecting their teachers at 9 o'clock yesterday?
+Yes, they were respecting their teachers at 9 o'clock yesterday.
+No, they were not respecting their teachers at 9 o'clock yesterday.
+`
+      },
+
+      {
+        id: 6,
+        title: "6.At 9 O'Clock Tomorrow",
+        content: `
+1.Will you be waking up early at 9 o'clock tomorrow?
+Yes, I will be waking up early at 9 o'clock tomorrow.
+No, I will not be waking up early at 9 o'clock tomorrow.
+
+2.Will she be going to school at 9 o'clock tomorrow?
+Yes, she will be going to school at 9 o'clock tomorrow.
+No, she will not be going to school at 9 o'clock tomorrow.
+
+3.Will they be playing cricket at 9 o'clock tomorrow?
+Yes, they will be playing cricket at 9 o'clock tomorrow.
+No, they will not be playing cricket at 9 o'clock tomorrow.
+
+4.Will he be studying English at 9 o'clock tomorrow?
+Yes, he will be studying English at 9 o'clock tomorrow.
+No, he will not be studying English at 9 o'clock tomorrow.
+
+5.Will you be drinking milk at 9 o'clock tomorrow?
+Yes, I will be drinking milk at 9 o'clock tomorrow.
+No, I will not be drinking milk at 9 o'clock tomorrow.
+
+6.Will she be drawing pictures at 9 o'clock tomorrow?
+Yes, she will be drawing pictures at 9 o'clock tomorrow.
+No, she will not be drawing pictures at 9 o'clock tomorrow.
+
+7.Will they be watching television at 9 o'clock tomorrow?
+Yes, they will be watching television at 9 o'clock tomorrow.
+No, they will not be watching television at 9 o'clock tomorrow.
+
+8.Will he be playing football at 9 o'clock tomorrow?
+Yes, he will be playing football at 9 o'clock tomorrow.
+No, he will not be playing football at 9 o'clock tomorrow.
+
+9.Will you be reading storybooks at 9 o'clock tomorrow?
+Yes, I will be reading storybooks at 9 o'clock tomorrow.
+No, I will not be reading storybooks at 9 o'clock tomorrow.
+
+10.Will she be cleaning her room at 9 o'clock tomorrow?
+Yes, she will be cleaning her room at 9 o'clock tomorrow.
+No, she will not be cleaning her room at 9 o'clock tomorrow.
+
+11.Will they be visiting their grandparents at 9 o'clock tomorrow?
+Yes, they will be visiting their grandparents at 9 o'clock tomorrow.
+No, they will not be visiting their grandparents at 9 o'clock tomorrow.
+
+12.Will he be washing his hands at 9 o'clock tomorrow?
+Yes, he will be washing his hands at 9 o'clock tomorrow.
+No, he will not be washing his hands at 9 o'clock tomorrow.
+
+13.Will you be brushing your teeth at 9 o'clock tomorrow?
+Yes, I will be brushing my teeth at 9 o'clock tomorrow.
+No, I will not be brushing my teeth at 9 o'clock tomorrow.
+
+14.Will she be helping her mother at 9 o'clock tomorrow?
+Yes, she will be helping her mother at 9 o'clock tomorrow.
+No, she will not be helping her mother at 9 o'clock tomorrow.
+
+15.Will they be practicing singing at 9 o'clock tomorrow?
+Yes, they will be practicing singing at 9 o'clock tomorrow.
+No, they will not be practicing singing at 9 o'clock tomorrow.
+
+16.Will he be driving a car at 9 o'clock tomorrow?
+Yes, he will be driving a car at 9 o'clock tomorrow.
+No, he will not be driving a car at 9 o'clock tomorrow.
+
+17.Will you be watering the plants at 9 o'clock tomorrow?
+Yes, I will be watering the plants at 9 o'clock tomorrow.
+No, I will not be watering the plants at 9 o'clock tomorrow.
+
+18.Will she be walking in the park at 9 o'clock tomorrow?
+Yes, she will be walking in the park at 9 o'clock tomorrow.
+No, she will not be walking in the park at 9 o'clock tomorrow.
+
+19.Will they be writing letters at 9 o'clock tomorrow?
+Yes, they will be writing letters at 9 o'clock tomorrow.
+No, they will not be writing letters at 9 o'clock tomorrow.
+
+20.Will he be eating fruits at 9 o'clock tomorrow?
+Yes, he will be eating fruits at 9 o'clock tomorrow.
+No, he will not be eating fruits at 9 o'clock tomorrow.
+
+21.Will you be sleeping early at 9 o'clock tomorrow?
+Yes, I will be sleeping early at 9 o'clock tomorrow.
+No, I will not be sleeping early at 9 o'clock tomorrow.
+
+22.Will she be cooking food at 9 o'clock tomorrow?
+Yes, she will be cooking food at 9 o'clock tomorrow.
+No, she will not be cooking food at 9 o'clock tomorrow.
+
+23.Will they be practicing dancing at 9 o'clock tomorrow?
+Yes, they will be practicing dancing at 9 o'clock tomorrow.
+No, they will not be practicing dancing at 9 o'clock tomorrow.
+
+24.Will your uncle be walking in the park at 9 o'clock tomorrow?
+Yes, my uncle will be walking in the park at 9 o'clock tomorrow.
+No, my uncle will not be walking in the park at 9 o'clock tomorrow.
+
+25.Will you be learning new vocabulary at 9 o'clock tomorrow?
+Yes, I will be learning new vocabulary at 9 o'clock tomorrow.
+No, I will not be learning new vocabulary at 9 o'clock tomorrow.
+
+26.Will he be brushing his teeth twice at 9 o'clock tomorrow?
+Yes, he will be brushing his teeth twice at 9 o'clock tomorrow.
+No, he will not be brushing his teeth twice at 9 o'clock tomorrow.
+
+27.Will the girls be participating in activities at 9 o'clock tomorrow?
+Yes, the girls will be participating in activities at 9 o'clock tomorrow.
+No, the girls will not be participating in activities at 9 o'clock tomorrow.
+
+28.Will you be talking to your friend at 9 o'clock tomorrow?
+Yes, I will be talking to my friend at 9 o'clock tomorrow.
+No, I will not be talking to my friend at 9 o'clock tomorrow.
+
+29.Will she be preparing breakfast at 9 o'clock tomorrow?
+Yes, she will be preparing breakfast at 9 o'clock tomorrow.
+No, she will not be preparing breakfast at 9 o'clock tomorrow.
+
+30.Will they be respecting their teachers at 9 o'clock tomorrow?
+Yes, they will be respecting their teachers at 9 o'clock tomorrow.
+No, they will not be respecting their teachers at 9 o'clock tomorrow.
+`
+      },
+
+      {
+        id: 7,
+        title: "7.Already",
+        content: `
+1.Have you already woken up early?
+Yes, I have already woken up early.
+No, I have not already woken up early.
+
+2.Has she already gone to school?
+Yes, she has already gone to school.
+No, she has not already gone to school.
+
+3.Have they already played cricket?
+Yes, they have already played cricket.
+No, they have not already played cricket.
+
+4.Has he already studied English?
+Yes, he has already studied English.
+No, he has not already studied English.
+
+5.Have you already drunk milk?
+Yes, I have already drunk milk.
+No, I have not already drunk milk.
+
+6.Has she already drawn pictures?
+Yes, she has already drawn pictures.
+No, she has not already drawn pictures.
+
+7.Have they already watched television?
+Yes, they have already watched television.
+No, they have not already watched television.
+
+8.Has he already played football?
+Yes, he has already played football.
+No, he has not already played football.
+
+9.Have you already read storybooks?
+Yes, I have already read storybooks.
+No, I have not already read storybooks.
+
+10.Has she already cleaned her room?
+Yes, she has already cleaned her room.
+No, she has not already cleaned her room.
+
+11.Have they already visited their grandparents?
+Yes, they have already visited their grandparents.
+No, they have not already visited their grandparents.
+
+12.Has he already washed his hands?
+Yes, he has already washed his hands.
+No, he has not already washed his hands.
+
+13.Have you already brushed your teeth?
+Yes, I have already brushed my teeth.
+No, I have not already brushed my teeth.
+
+14.Has she already helped her mother?
+Yes, she has already helped her mother.
+No, she has not already helped her mother.
+
+15.Have they already practiced singing?
+Yes, they have already practiced singing.
+No, they have not already practiced singing.
+
+16.Has he already driven a car?
+Yes, he has already driven a car.
+No, he has not already driven a car.
+
+17.Have you already watered the plants?
+Yes, I have already watered the plants.
+No, I have not already watered the plants.
+
+18.Has she already walked in the park?
+Yes, she has already walked in the park.
+No, she has not already walked in the park.
+
+19.Have they already written letters?
+Yes, they have already written letters.
+No, they have not already written letters.
+
+20.Has he already eaten fruits?
+Yes, he has already eaten fruits.
+No, he has not already eaten fruits.
+
+21.Have you already slept early?
+Yes, I have already slept early.
+No, I have not already slept early.
+
+22.Has she already cooked food?
+Yes, she has already cooked food.
+No, she has not already cooked food.
+
+23.Have they already practiced dancing?
+Yes, they have already practiced dancing.
+No, they have not already practiced dancing.
+
+24.Has your uncle already walked in the park?
+Yes, my uncle has already walked in the park.
+No, my uncle has not already walked in the park.
+
+25.Have you already learned new vocabulary?
+Yes, I have already learned new vocabulary.
+No, I have not already learned new vocabulary.
+
+26.Has he already brushed his teeth twice?
+Yes, he has already brushed his teeth twice.
+No, he has not already brushed his teeth twice.
+
+27.Have the girls already participated in activities?
+Yes, the girls have already participated in activities.
+No, the girls have not already participated in activities.
+
+28.Have you already talked to your friend?
+Yes, I have already talked to my friend.
+No, I have not already talked to my friend.
+
+29.Has she already prepared breakfast?
+Yes, she has already prepared breakfast.
+No, she has not already prepared breakfast.
+
+30.Have they already respected their teachers?
+Yes, they have already respected their teachers.
+No, they have not already respected their teachers.
+`
+      },
+
+      {
+        id: 8,
+        title: "8.For 2 Hours",
+        content: `
+1.Have you been waking up early for 2 hours?
+Yes, I have been waking up early for 2 hours.
+No, I have not been waking up early for 2 hours.
+
+2.Has she been going to school for 2 hours?
+Yes, she has been going to school for 2 hours.
+No, she has not been going to school for 2 hours.
+
+3.Have they been playing cricket for 2 hours?
+Yes, they have been playing cricket for 2 hours.
+No, they have not been playing cricket for 2 hours.
+
+4.Has he been studying English for 2 hours?
+Yes, he has been studying English for 2 hours.
+No, he has not been studying English for 2 hours.
+
+5.Have you been drinking milk for 2 hours?
+Yes, I have been drinking milk for 2 hours.
+No, I have not been drinking milk for 2 hours.
+
+6.Has she been drawing pictures for 2 hours?
+Yes, she has been drawing pictures for 2 hours.
+No, she has not been drawing pictures for 2 hours.
+
+7.Have they been watching television for 2 hours?
+Yes, they have been watching television for 2 hours.
+No, they have not been watching television for 2 hours.
+
+8.Has he been playing football for 2 hours?
+Yes, he has been playing football for 2 hours.
+No, he has not been playing football for 2 hours.
+
+9.Have you been reading storybooks for 2 hours?
+Yes, I have been reading storybooks for 2 hours.
+No, I have not been reading storybooks for 2 hours.
+
+10.Has she been cleaning her room for 2 hours?
+Yes, she has been cleaning her room for 2 hours.
+No, she has not been cleaning her room for 2 hours.
+
+11.Have they been visiting their grandparents for 2 hours?
+Yes, they have been visiting their grandparents for 2 hours.
+No, they have not been visiting their grandparents for 2 hours.
+
+12.Has he been washing his hands for 2 hours?
+Yes, he has been washing his hands for 2 hours.
+No, he has not been washing his hands for 2 hours.
+
+13.Have you been brushing your teeth for 2 hours?
+Yes, I have been brushing my teeth for 2 hours.
+No, I have not been brushing my teeth for 2 hours.
+
+14.Has she been helping her mother for 2 hours?
+Yes, she has been helping her mother for 2 hours.
+No, she has not been helping her mother for 2 hours.
+
+15.Have they been practicing singing for 2 hours?
+Yes, they have been practicing singing for 2 hours.
+No, they have not been practicing singing for 2 hours.
+
+16.Has he been driving a car for 2 hours?
+Yes, he has been driving a car for 2 hours.
+No, he has not been driving a car for 2 hours.
+
+17.Have you been watering the plants for 2 hours?
+Yes, I have been watering the plants for 2 hours.
+No, I have not been watering the plants for 2 hours.
+
+18.Has she been walking in the park for 2 hours?
+Yes, she has been walking in the park for 2 hours.
+No, she has not been walking in the park for 2 hours.
+
+19.Have they been writing letters for 2 hours?
+Yes, they have been writing letters for 2 hours.
+No, they have not been writing letters for 2 hours.
+
+20.Has he been eating fruits for 2 hours?
+Yes, he has been eating fruits for 2 hours.
+No, he has not been eating fruits for 2 hours.
+
+21.Have you been sleeping early for 2 hours?
+Yes, I have been sleeping early for 2 hours.
+No, I have not been sleeping early for 2 hours.
+
+22.Has she been cooking food for 2 hours?
+Yes, she has been cooking food for 2 hours.
+No, she has not been cooking food for 2 hours.
+
+23.Have they been practicing dancing for 2 hours?
+Yes, they have been practicing dancing for 2 hours.
+No, they have not been practicing dancing for 2 hours.
+
+24.Has your uncle been walking in the park for 2 hours?
+Yes, my uncle has been walking in the park for 2 hours.
+No, my uncle has not been walking in the park for 2 hours.
+
+25.Have you been learning new vocabulary for 2 hours?
+Yes, I have been learning new vocabulary for 2 hours.
+No, I have not been learning new vocabulary for 2 hours.
+
+26.Has he been brushing his teeth twice for 2 hours?
+Yes, he has been brushing his teeth twice for 2 hours.
+No, he has not been brushing his teeth twice for 2 hours.
+
+27.Have the girls been participating in activities for 2 hours?
+Yes, the girls have been participating in activities for 2 hours.
+No, the girls have not been participating in activities for 2 hours.
+
+28.Have you been talking to your friend for 2 hours?
+Yes, I have been talking to my friend for 2 hours.
+No, I have not been talking to my friend for 2 hours.
+
+29.Has she been preparing breakfast for 2 hours?
+Yes, she has been preparing breakfast for 2 hours.
+No, she has not been preparing breakfast for 2 hours.
+
+30.Have they been respecting their teachers for 2 hours?
+Yes, they have been respecting their teachers for 2 hours.
+No, they have not been respecting their teachers for 2 hours.
+`
+      }
     ],
   },
 
@@ -15055,6 +20100,1015 @@ Successful students continue learning and improving themselves regularly.
 Success comes through dedication, confidence, and responsibility.
 `,
       },
+    ],
+    stockSentences: [
+      {
+        id: 1,
+        title: "1.Everyday",
+        content: `
+1.Do you wake up early every day?
+Yes, I wake up early every day.
+No, I do not wake up early every day.
+
+2.Does she go to school every day?
+Yes, she goes to school every day.
+No, she does not go to school every day.
+
+3.Do they play cricket every evening?
+Yes, they play cricket every evening.
+No, they do not play cricket every evening.
+
+4.Does he study English every night?
+Yes, he studies English every night.
+No, he does not study English every night.
+
+5.Do you drink milk every morning?
+Yes, I drink milk every morning.
+No, I do not drink milk every morning.
+
+6.Does she draw pictures every weekend?
+Yes, she draws pictures every weekend.
+No, she does not draw pictures every weekend.
+
+7.Do they watch television every evening?
+Yes, they watch television every evening.
+No, they do not watch television every evening.
+
+8.Does he play football every Sunday?
+Yes, he plays football every Sunday.
+No, he does not play football every Sunday.
+
+9.Do you read storybooks every night?
+Yes, I read storybooks every night.
+No, I do not read storybooks every night.
+
+10.Does she clean her room every Sunday?
+Yes, she cleans her room every Sunday.
+No, she does not clean her room every Sunday.
+
+11.Do they visit their grandparents every summer?
+Yes, they visit their grandparents every summer.
+No, they do not visit their grandparents every summer.
+
+12.Does he wash his hands before meals?
+Yes, he washes his hands before meals.
+No, he does not wash his hands before meals.
+
+13.Do you brush your teeth every morning?
+Yes, I brush my teeth every morning.
+No, I do not brush my teeth every morning.
+
+14.Does she help her mother every day?
+Yes, she helps her mother every day.
+No, she does not help her mother every day.
+
+15.Do they practice singing every week?
+Yes, they practice singing every week.
+No, they do not practice singing every week.
+
+16.Does he drive a car every day?
+Yes, he drives a car every day.
+No, he does not drive a car every day.
+
+17.Do you water the plants every evening?
+Yes, I water the plants every evening.
+No, I do not water the plants every evening.
+
+18.Does she walk in the park every morning?
+Yes, she walks in the park every morning.
+No, she does not walk in the park every morning.
+
+19.Do they write letters every month?
+Yes, they write letters every month.
+No, they do not write letters every month.
+
+20.Does he eat fruits every day?
+Yes, he eats fruits every day.
+No, he does not eat fruits every day.
+
+21.Do you sleep early every night?
+Yes, I sleep early every night.
+No, I do not sleep early every night.
+
+22.Does she cook food every day?
+Yes, she cooks food every day.
+No, she does not cook food every day.
+
+23.Do they practice dancing every evening?
+Yes, they practice dancing every evening.
+No, they do not practice dancing every evening.
+
+24.Does your uncle walk in the park every morning?
+Yes, my uncle walks in the park every morning.
+No, my uncle does not walk in the park every morning.
+
+25.Do you learn new vocabulary every day?
+Yes, I learn new vocabulary every day.
+No, I do not learn new vocabulary every day.
+
+26.Does he brush his teeth twice every day?
+Yes, he brushes his teeth twice every day.
+No, he does not brush his teeth twice every day.
+
+27.Do the girls participate in activities every week?
+Yes, the girls participate in activities every week.
+No, the girls do not participate in activities every week.
+
+28.Do you talk to your friend every night?
+Yes, I talk to my friend every night.
+No, I do not talk to my friend every night.
+
+29.Does she prepare breakfast every morning?
+Yes, she prepares breakfast every morning.
+No, she does not prepare breakfast every morning.
+
+30.Do they respect their teachers every day?
+Yes, they respect their teachers every day.
+No, they do not respect their teachers every day.
+`
+      },
+
+      {
+        id: 2,
+        title: "2.Yesterday",
+        content: `
+1.Did you wake up early yesterday?
+Yes, I woke up early yesterday.
+No, I did not wake up early yesterday.
+
+2.Did she go to school yesterday?
+Yes, she went to school yesterday.
+No, she did not go to school yesterday.
+
+3.Did they play cricket yesterday?
+Yes, they played cricket yesterday.
+No, they did not play cricket yesterday.
+
+4.Did he study English yesterday?
+Yes, he studied English yesterday.
+No, he did not study English yesterday.
+
+5.Did you drink milk yesterday?
+Yes, I drank milk yesterday.
+No, I did not drink milk yesterday.
+
+6.Did she draw pictures yesterday?
+Yes, she drew pictures yesterday.
+No, she did not draw pictures yesterday.
+
+7.Did they watch television yesterday?
+Yes, they watched television yesterday.
+No, they did not watch television yesterday.
+
+8.Did he play football yesterday?
+Yes, he played football yesterday.
+No, he did not play football yesterday.
+
+9.Did you read storybooks yesterday?
+Yes, I read storybooks yesterday.
+No, I did not read storybooks yesterday.
+
+10.Did she clean her room yesterday?
+Yes, she cleaned her room yesterday.
+No, she did not clean her room yesterday.
+
+11.Did they visit their grandparents yesterday?
+Yes, they visited their grandparents yesterday.
+No, they did not visit their grandparents yesterday.
+
+12.Did he wash his hands yesterday?
+Yes, he washed his hands yesterday.
+No, he did not wash his hands yesterday.
+
+13.Did you brush your teeth yesterday?
+Yes, I brushed my teeth yesterday.
+No, I did not brush my teeth yesterday.
+
+14.Did she help her mother yesterday?
+Yes, she helped her mother yesterday.
+No, she did not help her mother yesterday.
+
+15.Did they practice singing yesterday?
+Yes, they practiced singing yesterday.
+No, they did not practice singing yesterday.
+
+16.Did he drive a car yesterday?
+Yes, he drove a car yesterday.
+No, he did not drive a car yesterday.
+
+17.Did you water the plants yesterday?
+Yes, I watered the plants yesterday.
+No, I did not water the plants yesterday.
+
+18.Did she walk in the park yesterday?
+Yes, she walked in the park yesterday.
+No, she did not walk in the park yesterday.
+
+19.Did they write letters yesterday?
+Yes, they wrote letters yesterday.
+No, they did not write letters yesterday.
+
+20.Did he eat fruits yesterday?
+Yes, he ate fruits yesterday.
+No, he did not eat fruits yesterday.
+
+21.Did you sleep early yesterday?
+Yes, I slept early yesterday.
+No, I did not sleep early yesterday.
+
+22.Did she cook food yesterday?
+Yes, she cooked food yesterday.
+No, she did not cook food yesterday.
+
+23.Did they practice dancing yesterday?
+Yes, they practiced dancing yesterday.
+No, they did not practice dancing yesterday.
+
+24.Did your uncle walk in the park yesterday?
+Yes, my uncle walked in the park yesterday.
+No, my uncle did not walk in the park yesterday.
+
+25.Did you learn new vocabulary yesterday?
+Yes, I learned new vocabulary yesterday.
+No, I did not learn new vocabulary yesterday.
+
+26.Did he brush his teeth twice yesterday?
+Yes, he brushed his teeth twice yesterday.
+No, he did not brush his teeth twice yesterday.
+
+27.Did the girls participate in activities yesterday?
+Yes, the girls participated in activities yesterday.
+No, the girls did not participate in activities yesterday.
+
+28.Did you talk to your friend yesterday?
+Yes, I talked to my friend yesterday.
+No, I did not talk to my friend yesterday.
+
+29.Did she prepare breakfast yesterday?
+Yes, she prepared breakfast yesterday.
+No, she did not prepare breakfast yesterday.
+
+30.Did they respect their teachers yesterday?
+Yes, they respected their teachers yesterday.
+No, they did not respect their teachers yesterday.
+`
+      },
+
+      {
+        id: 3,
+        title: "3.Tomorrow",
+        content: `
+1.Will you wake up early tomorrow?
+Yes, I will wake up early tomorrow.
+No, I will not wake up early tomorrow.
+
+2.Will she go to school tomorrow?
+Yes, she will go to school tomorrow.
+No, she will not go to school tomorrow.
+
+3.Will they play cricket tomorrow?
+Yes, they will play cricket tomorrow.
+No, they will not play cricket tomorrow.
+
+4.Will he study English tomorrow?
+Yes, he will study English tomorrow.
+No, he will not study English tomorrow.
+
+5.Will you drink milk tomorrow?
+Yes, I will drink milk tomorrow.
+No, I will not drink milk tomorrow.
+
+6.Will she draw pictures tomorrow?
+Yes, she will draw pictures tomorrow.
+No, she will not draw pictures tomorrow.
+
+7.Will they watch television tomorrow?
+Yes, they will watch television tomorrow.
+No, they will not watch television tomorrow.
+
+8.Will he play football tomorrow?
+Yes, he will play football tomorrow.
+No, he will not play football tomorrow.
+
+9.Will you read storybooks tomorrow?
+Yes, I will read storybooks tomorrow.
+No, I will not read storybooks tomorrow.
+
+10.Will she clean her room tomorrow?
+Yes, she will clean her room tomorrow.
+No, she will not clean her room tomorrow.
+
+11.Will they visit their grandparents tomorrow?
+Yes, they will visit their grandparents tomorrow.
+No, they will not visit their grandparents tomorrow.
+
+12.Will he wash his hands tomorrow?
+Yes, he will wash his hands tomorrow.
+No, he will not wash his hands tomorrow.
+
+13.Will you brush your teeth tomorrow?
+Yes, I will brush my teeth tomorrow.
+No, I will not brush my teeth tomorrow.
+
+14.Will she help her mother tomorrow?
+Yes, she will help her mother tomorrow.
+No, she will not help her mother tomorrow.
+
+15.Will they practice singing tomorrow?
+Yes, they will practice singing tomorrow.
+No, they will not practice singing tomorrow.
+
+16.Will he drive a car tomorrow?
+Yes, he will drive a car tomorrow.
+No, he will not drive a car tomorrow.
+
+17.Will you water the plants tomorrow?
+Yes, I will water the plants tomorrow.
+No, I will not water the plants tomorrow.
+
+18.Will she walk in the park tomorrow?
+Yes, she will walk in the park tomorrow.
+No, she will not walk in the park tomorrow.
+
+19.Will they write letters tomorrow?
+Yes, they will write letters tomorrow.
+No, they will not write letters tomorrow.
+
+20.Will he eat fruits tomorrow?
+Yes, he will eat fruits tomorrow.
+No, he will not eat fruits tomorrow.
+
+21.Will you sleep early tomorrow?
+Yes, I will sleep early tomorrow.
+No, I will not sleep early tomorrow.
+
+22.Will she cook food tomorrow?
+Yes, she will cook food tomorrow.
+No, she will not cook food tomorrow.
+
+23.Will they practice dancing tomorrow?
+Yes, they will practice dancing tomorrow.
+No, they will not practice dancing tomorrow.
+
+24.Will your uncle walk in the park tomorrow?
+Yes, my uncle will walk in the park tomorrow.
+No, my uncle will not walk in the park tomorrow.
+
+25.Will you learn new vocabulary tomorrow?
+Yes, I will learn new vocabulary tomorrow.
+No, I will not learn new vocabulary tomorrow.
+
+26.Will he brush his teeth twice tomorrow?
+Yes, he will brush his teeth twice tomorrow.
+No, he will not brush his teeth twice tomorrow.
+
+27.Will the girls participate in activities tomorrow?
+Yes, the girls will participate in activities tomorrow.
+No, the girls will not participate in activities tomorrow.
+
+28.Will you talk to your friend tomorrow?
+Yes, I will talk to my friend tomorrow.
+No, I will not talk to my friend tomorrow.
+
+29.Will she prepare breakfast tomorrow?
+Yes, she will prepare breakfast tomorrow.
+No, she will not prepare breakfast tomorrow.
+
+30.Will they respect their teachers tomorrow?
+Yes, they will respect their teachers tomorrow.
+No, they will not respect their teachers tomorrow.
+`
+      },
+
+      {
+        id: 4,
+        title: "4.Now",
+        content: `
+1.Are you waking up early now?
+Yes, I am waking up early now.
+No, I am not waking up early now.
+
+2.Is she going to school now?
+Yes, she is going to school now.
+No, she is not going to school now.
+
+3.Are they playing cricket now?
+Yes, they are playing cricket now.
+No, they are not playing cricket now.
+
+4.Is he studying English now?
+Yes, he is studying English now.
+No, he is not studying English now.
+
+5.Are you drinking milk now?
+Yes, I am drinking milk now.
+No, I am not drinking milk now.
+
+6.Is she drawing pictures now?
+Yes, she is drawing pictures now.
+No, she is not drawing pictures now.
+
+7.Are they watching television now?
+Yes, they are watching television now.
+No, they are not watching television now.
+
+8.Is he playing football now?
+Yes, he is playing football now.
+No, he is not playing football now.
+
+9.Are you reading storybooks now?
+Yes, I am reading storybooks now.
+No, I am not reading storybooks now.
+
+10.Is she cleaning her room now?
+Yes, she is cleaning her room now.
+No, she is not cleaning her room now.
+
+11.Are they visiting their grandparents now?
+Yes, they are visiting their grandparents now.
+No, they are not visiting their grandparents now.
+
+12.Is he washing his hands now?
+Yes, he is washing his hands now.
+No, he is not washing his hands now.
+
+13.Are you brushing your teeth now?
+Yes, I am brushing my teeth now.
+No, I am not brushing my teeth now.
+
+14.Is she helping her mother now?
+Yes, she is helping her mother now.
+No, she is not helping her mother now.
+
+15.Are they practicing singing now?
+Yes, they are practicing singing now.
+No, they are not practicing singing now.
+
+16.Is he driving a car now?
+Yes, he is driving a car now.
+No, he is not driving a car now.
+
+17.Are you watering the plants now?
+Yes, I am watering the plants now.
+No, I am not watering the plants now.
+
+18.Is she walking in the park now?
+Yes, she is walking in the park now.
+No, she is not walking in the park now.
+
+19.Are they writing letters now?
+Yes, they are writing letters now.
+No, they are not writing letters now.
+
+20.Is he eating fruits now?
+Yes, he is eating fruits now.
+No, he is not eating fruits now.
+
+21.Are you sleeping early now?
+Yes, I am sleeping early now.
+No, I am not sleeping early now.
+
+22.Is she cooking food now?
+Yes, she is cooking food now.
+No, she is not cooking food now.
+
+23.Are they practicing dancing now?
+Yes, they are practicing dancing now.
+No, they are not practicing dancing now.
+
+24.Is your uncle walking in the park now?
+Yes, my uncle is walking in the park now.
+No, my uncle is not walking in the park now.
+
+25.Are you learning new vocabulary now?
+Yes, I am learning new vocabulary now.
+No, I am not learning new vocabulary now.
+
+26.Is he brushing his teeth twice now?
+Yes, he is brushing his teeth twice now.
+No, he is not brushing his teeth twice now.
+
+27.Are the girls participating in activities now?
+Yes, the girls are participating in activities now.
+No, the girls are not participating in activities now.
+
+28.Are you talking to your friend now?
+Yes, I am talking to my friend now.
+No, I am not talking to my friend now.
+
+29.Is she preparing breakfast now?
+Yes, she is preparing breakfast now.
+No, she is not preparing breakfast now.
+
+30.Are they respecting their teachers now?
+Yes, they are respecting their teachers now.
+No, they are not respecting their teachers now.
+`
+      },
+
+      {
+        id: 5,
+        title: "5.At 9 O'Clock Yesterday",
+        content: `
+1.Were you waking up early at 9 o'clock yesterday?
+Yes, I was waking up early at 9 o'clock yesterday.
+No, I was not waking up early at 9 o'clock yesterday.
+
+2.Was she going to school at 9 o'clock yesterday?
+Yes, she was going to school at 9 o'clock yesterday.
+No, she was not going to school at 9 o'clock yesterday.
+
+3.Were they playing cricket at 9 o'clock yesterday?
+Yes, they were playing cricket at 9 o'clock yesterday.
+No, they were not playing cricket at 9 o'clock yesterday.
+
+4.Was he studying English at 9 o'clock yesterday?
+Yes, he was studying English at 9 o'clock yesterday.
+No, he was not studying English at 9 o'clock yesterday.
+
+5.Were you drinking milk at 9 o'clock yesterday?
+Yes, I was drinking milk at 9 o'clock yesterday.
+No, I was not drinking milk at 9 o'clock yesterday.
+
+6.Was she drawing pictures at 9 o'clock yesterday?
+Yes, she was drawing pictures at 9 o'clock yesterday.
+No, she was not drawing pictures at 9 o'clock yesterday.
+
+7.Were they watching television at 9 o'clock yesterday?
+Yes, they were watching television at 9 o'clock yesterday.
+No, they were not watching television at 9 o'clock yesterday.
+
+8.Was he playing football at 9 o'clock yesterday?
+Yes, he was playing football at 9 o'clock yesterday.
+No, he was not playing football at 9 o'clock yesterday.
+
+9.Were you reading storybooks at 9 o'clock yesterday?
+Yes, I was reading storybooks at 9 o'clock yesterday.
+No, I was not reading storybooks at 9 o'clock yesterday.
+
+10.Was she cleaning her room at 9 o'clock yesterday?
+Yes, she was cleaning her room at 9 o'clock yesterday.
+No, she was not cleaning her room at 9 o'clock yesterday.
+
+11.Were they visiting their grandparents at 9 o'clock yesterday?
+Yes, they were visiting their grandparents at 9 o'clock yesterday.
+No, they were not visiting their grandparents at 9 o'clock yesterday.
+
+12.Was he washing his hands at 9 o'clock yesterday?
+Yes, he was washing his hands at 9 o'clock yesterday.
+No, he was not washing his hands at 9 o'clock yesterday.
+
+13.Were you brushing your teeth at 9 o'clock yesterday?
+Yes, I was brushing my teeth at 9 o'clock yesterday.
+No, I was not brushing my teeth at 9 o'clock yesterday.
+
+14.Was she helping her mother at 9 o'clock yesterday?
+Yes, she was helping her mother at 9 o'clock yesterday.
+No, she was not helping her mother at 9 o'clock yesterday.
+
+15.Were they practicing singing at 9 o'clock yesterday?
+Yes, they were practicing singing at 9 o'clock yesterday.
+No, they were not practicing singing at 9 o'clock yesterday.
+
+16.Was he driving a car at 9 o'clock yesterday?
+Yes, he was driving a car at 9 o'clock yesterday.
+No, he was not driving a car at 9 o'clock yesterday.
+
+17.Were you watering the plants at 9 o'clock yesterday?
+Yes, I was watering the plants at 9 o'clock yesterday.
+No, I was not watering the plants at 9 o'clock yesterday.
+
+18.Was she walking in the park at 9 o'clock yesterday?
+Yes, she was walking in the park at 9 o'clock yesterday.
+No, she was not walking in the park at 9 o'clock yesterday.
+
+19.Were they writing letters at 9 o'clock yesterday?
+Yes, they were writing letters at 9 o'clock yesterday.
+No, they were not writing letters at 9 o'clock yesterday.
+
+20.Was he eating fruits at 9 o'clock yesterday?
+Yes, he was eating fruits at 9 o'clock yesterday.
+No, he was not eating fruits at 9 o'clock yesterday.
+
+21.Were you sleeping early at 9 o'clock yesterday?
+Yes, I was sleeping early at 9 o'clock yesterday.
+No, I was not sleeping early at 9 o'clock yesterday.
+
+22.Was she cooking food at 9 o'clock yesterday?
+Yes, she was cooking food at 9 o'clock yesterday.
+No, she was not cooking food at 9 o'clock yesterday.
+
+23.Were they practicing dancing at 9 o'clock yesterday?
+Yes, they were practicing dancing at 9 o'clock yesterday.
+No, they were not practicing dancing at 9 o'clock yesterday.
+
+24.Was your uncle walking in the park at 9 o'clock yesterday?
+Yes, my uncle was walking in the park at 9 o'clock yesterday.
+No, my uncle was not walking in the park at 9 o'clock yesterday.
+
+25.Were you learning new vocabulary at 9 o'clock yesterday?
+Yes, I was learning new vocabulary at 9 o'clock yesterday.
+No, I was not learning new vocabulary at 9 o'clock yesterday.
+
+26.Was he brushing his teeth twice at 9 o'clock yesterday?
+Yes, he was brushing his teeth twice at 9 o'clock yesterday.
+No, he was not brushing his teeth twice at 9 o'clock yesterday.
+
+27.Were the girls participating in activities at 9 o'clock yesterday?
+Yes, the girls were participating in activities at 9 o'clock yesterday.
+No, the girls were not participating in activities at 9 o'clock yesterday.
+
+28.Were you talking to your friend at 9 o'clock yesterday?
+Yes, I was talking to my friend at 9 o'clock yesterday.
+No, I was not talking to my friend at 9 o'clock yesterday.
+
+29.Was she preparing breakfast at 9 o'clock yesterday?
+Yes, she was preparing breakfast at 9 o'clock yesterday.
+No, she was not preparing breakfast at 9 o'clock yesterday.
+
+30.Were they respecting their teachers at 9 o'clock yesterday?
+Yes, they were respecting their teachers at 9 o'clock yesterday.
+No, they were not respecting their teachers at 9 o'clock yesterday.
+`
+      },
+
+      {
+        id: 6,
+        title: "6.At 9 O'Clock Tomorrow",
+        content: `
+1.Will you be waking up early at 9 o'clock tomorrow?
+Yes, I will be waking up early at 9 o'clock tomorrow.
+No, I will not be waking up early at 9 o'clock tomorrow.
+
+2.Will she be going to school at 9 o'clock tomorrow?
+Yes, she will be going to school at 9 o'clock tomorrow.
+No, she will not be going to school at 9 o'clock tomorrow.
+
+3.Will they be playing cricket at 9 o'clock tomorrow?
+Yes, they will be playing cricket at 9 o'clock tomorrow.
+No, they will not be playing cricket at 9 o'clock tomorrow.
+
+4.Will he be studying English at 9 o'clock tomorrow?
+Yes, he will be studying English at 9 o'clock tomorrow.
+No, he will not be studying English at 9 o'clock tomorrow.
+
+5.Will you be drinking milk at 9 o'clock tomorrow?
+Yes, I will be drinking milk at 9 o'clock tomorrow.
+No, I will not be drinking milk at 9 o'clock tomorrow.
+
+6.Will she be drawing pictures at 9 o'clock tomorrow?
+Yes, she will be drawing pictures at 9 o'clock tomorrow.
+No, she will not be drawing pictures at 9 o'clock tomorrow.
+
+7.Will they be watching television at 9 o'clock tomorrow?
+Yes, they will be watching television at 9 o'clock tomorrow.
+No, they will not be watching television at 9 o'clock tomorrow.
+
+8.Will he be playing football at 9 o'clock tomorrow?
+Yes, he will be playing football at 9 o'clock tomorrow.
+No, he will not be playing football at 9 o'clock tomorrow.
+
+9.Will you be reading storybooks at 9 o'clock tomorrow?
+Yes, I will be reading storybooks at 9 o'clock tomorrow.
+No, I will not be reading storybooks at 9 o'clock tomorrow.
+
+10.Will she be cleaning her room at 9 o'clock tomorrow?
+Yes, she will be cleaning her room at 9 o'clock tomorrow.
+No, she will not be cleaning her room at 9 o'clock tomorrow.
+
+11.Will they be visiting their grandparents at 9 o'clock tomorrow?
+Yes, they will be visiting their grandparents at 9 o'clock tomorrow.
+No, they will not be visiting their grandparents at 9 o'clock tomorrow.
+
+12.Will he be washing his hands at 9 o'clock tomorrow?
+Yes, he will be washing his hands at 9 o'clock tomorrow.
+No, he will not be washing his hands at 9 o'clock tomorrow.
+
+13.Will you be brushing your teeth at 9 o'clock tomorrow?
+Yes, I will be brushing my teeth at 9 o'clock tomorrow.
+No, I will not be brushing my teeth at 9 o'clock tomorrow.
+
+14.Will she be helping her mother at 9 o'clock tomorrow?
+Yes, she will be helping her mother at 9 o'clock tomorrow.
+No, she will not be helping her mother at 9 o'clock tomorrow.
+
+15.Will they be practicing singing at 9 o'clock tomorrow?
+Yes, they will be practicing singing at 9 o'clock tomorrow.
+No, they will not be practicing singing at 9 o'clock tomorrow.
+
+16.Will he be driving a car at 9 o'clock tomorrow?
+Yes, he will be driving a car at 9 o'clock tomorrow.
+No, he will not be driving a car at 9 o'clock tomorrow.
+
+17.Will you be watering the plants at 9 o'clock tomorrow?
+Yes, I will be watering the plants at 9 o'clock tomorrow.
+No, I will not be watering the plants at 9 o'clock tomorrow.
+
+18.Will she be walking in the park at 9 o'clock tomorrow?
+Yes, she will be walking in the park at 9 o'clock tomorrow.
+No, she will not be walking in the park at 9 o'clock tomorrow.
+
+19.Will they be writing letters at 9 o'clock tomorrow?
+Yes, they will be writing letters at 9 o'clock tomorrow.
+No, they will not be writing letters at 9 o'clock tomorrow.
+
+20.Will he be eating fruits at 9 o'clock tomorrow?
+Yes, he will be eating fruits at 9 o'clock tomorrow.
+No, he will not be eating fruits at 9 o'clock tomorrow.
+
+21.Will you be sleeping early at 9 o'clock tomorrow?
+Yes, I will be sleeping early at 9 o'clock tomorrow.
+No, I will not be sleeping early at 9 o'clock tomorrow.
+
+22.Will she be cooking food at 9 o'clock tomorrow?
+Yes, she will be cooking food at 9 o'clock tomorrow.
+No, she will not be cooking food at 9 o'clock tomorrow.
+
+23.Will they be practicing dancing at 9 o'clock tomorrow?
+Yes, they will be practicing dancing at 9 o'clock tomorrow.
+No, they will not be practicing dancing at 9 o'clock tomorrow.
+
+24.Will your uncle be walking in the park at 9 o'clock tomorrow?
+Yes, my uncle will be walking in the park at 9 o'clock tomorrow.
+No, my uncle will not be walking in the park at 9 o'clock tomorrow.
+
+25.Will you be learning new vocabulary at 9 o'clock tomorrow?
+Yes, I will be learning new vocabulary at 9 o'clock tomorrow.
+No, I will not be learning new vocabulary at 9 o'clock tomorrow.
+
+26.Will he be brushing his teeth twice at 9 o'clock tomorrow?
+Yes, he will be brushing his teeth twice at 9 o'clock tomorrow.
+No, he will not be brushing his teeth twice at 9 o'clock tomorrow.
+
+27.Will the girls be participating in activities at 9 o'clock tomorrow?
+Yes, the girls will be participating in activities at 9 o'clock tomorrow.
+No, the girls will not be participating in activities at 9 o'clock tomorrow.
+
+28.Will you be talking to your friend at 9 o'clock tomorrow?
+Yes, I will be talking to my friend at 9 o'clock tomorrow.
+No, I will not be talking to my friend at 9 o'clock tomorrow.
+
+29.Will she be preparing breakfast at 9 o'clock tomorrow?
+Yes, she will be preparing breakfast at 9 o'clock tomorrow.
+No, she will not be preparing breakfast at 9 o'clock tomorrow.
+
+30.Will they be respecting their teachers at 9 o'clock tomorrow?
+Yes, they will be respecting their teachers at 9 o'clock tomorrow.
+No, they will not be respecting their teachers at 9 o'clock tomorrow.
+`
+      },
+
+      {
+        id: 7,
+        title: "7.Already",
+        content: `
+1.Have you already woken up early?
+Yes, I have already woken up early.
+No, I have not already woken up early.
+
+2.Has she already gone to school?
+Yes, she has already gone to school.
+No, she has not already gone to school.
+
+3.Have they already played cricket?
+Yes, they have already played cricket.
+No, they have not already played cricket.
+
+4.Has he already studied English?
+Yes, he has already studied English.
+No, he has not already studied English.
+
+5.Have you already drunk milk?
+Yes, I have already drunk milk.
+No, I have not already drunk milk.
+
+6.Has she already drawn pictures?
+Yes, she has already drawn pictures.
+No, she has not already drawn pictures.
+
+7.Have they already watched television?
+Yes, they have already watched television.
+No, they have not already watched television.
+
+8.Has he already played football?
+Yes, he has already played football.
+No, he has not already played football.
+
+9.Have you already read storybooks?
+Yes, I have already read storybooks.
+No, I have not already read storybooks.
+
+10.Has she already cleaned her room?
+Yes, she has already cleaned her room.
+No, she has not already cleaned her room.
+
+11.Have they already visited their grandparents?
+Yes, they have already visited their grandparents.
+No, they have not already visited their grandparents.
+
+12.Has he already washed his hands?
+Yes, he has already washed his hands.
+No, he has not already washed his hands.
+
+13.Have you already brushed your teeth?
+Yes, I have already brushed my teeth.
+No, I have not already brushed my teeth.
+
+14.Has she already helped her mother?
+Yes, she has already helped her mother.
+No, she has not already helped her mother.
+
+15.Have they already practiced singing?
+Yes, they have already practiced singing.
+No, they have not already practiced singing.
+
+16.Has he already driven a car?
+Yes, he has already driven a car.
+No, he has not already driven a car.
+
+17.Have you already watered the plants?
+Yes, I have already watered the plants.
+No, I have not already watered the plants.
+
+18.Has she already walked in the park?
+Yes, she has already walked in the park.
+No, she has not already walked in the park.
+
+19.Have they already written letters?
+Yes, they have already written letters.
+No, they have not already written letters.
+
+20.Has he already eaten fruits?
+Yes, he has already eaten fruits.
+No, he has not already eaten fruits.
+
+21.Have you already slept early?
+Yes, I have already slept early.
+No, I have not already slept early.
+
+22.Has she already cooked food?
+Yes, she has already cooked food.
+No, she has not already cooked food.
+
+23.Have they already practiced dancing?
+Yes, they have already practiced dancing.
+No, they have not already practiced dancing.
+
+24.Has your uncle already walked in the park?
+Yes, my uncle has already walked in the park.
+No, my uncle has not already walked in the park.
+
+25.Have you already learned new vocabulary?
+Yes, I have already learned new vocabulary.
+No, I have not already learned new vocabulary.
+
+26.Has he already brushed his teeth twice?
+Yes, he has already brushed his teeth twice.
+No, he has not already brushed his teeth twice.
+
+27.Have the girls already participated in activities?
+Yes, the girls have already participated in activities.
+No, the girls have not already participated in activities.
+
+28.Have you already talked to your friend?
+Yes, I have already talked to my friend.
+No, I have not already talked to my friend.
+
+29.Has she already prepared breakfast?
+Yes, she has already prepared breakfast.
+No, she has not already prepared breakfast.
+
+30.Have they already respected their teachers?
+Yes, they have already respected their teachers.
+No, they have not already respected their teachers.
+`
+      },
+
+      {
+        id: 8,
+        title: "8.For 2 Hours",
+        content: `
+1.Have you been waking up early for 2 hours?
+Yes, I have been waking up early for 2 hours.
+No, I have not been waking up early for 2 hours.
+
+2.Has she been going to school for 2 hours?
+Yes, she has been going to school for 2 hours.
+No, she has not been going to school for 2 hours.
+
+3.Have they been playing cricket for 2 hours?
+Yes, they have been playing cricket for 2 hours.
+No, they have not been playing cricket for 2 hours.
+
+4.Has he been studying English for 2 hours?
+Yes, he has been studying English for 2 hours.
+No, he has not been studying English for 2 hours.
+
+5.Have you been drinking milk for 2 hours?
+Yes, I have been drinking milk for 2 hours.
+No, I have not been drinking milk for 2 hours.
+
+6.Has she been drawing pictures for 2 hours?
+Yes, she has been drawing pictures for 2 hours.
+No, she has not been drawing pictures for 2 hours.
+
+7.Have they been watching television for 2 hours?
+Yes, they have been watching television for 2 hours.
+No, they have not been watching television for 2 hours.
+
+8.Has he been playing football for 2 hours?
+Yes, he has been playing football for 2 hours.
+No, he has not been playing football for 2 hours.
+
+9.Have you been reading storybooks for 2 hours?
+Yes, I have been reading storybooks for 2 hours.
+No, I have not been reading storybooks for 2 hours.
+
+10.Has she been cleaning her room for 2 hours?
+Yes, she has been cleaning her room for 2 hours.
+No, she has not been cleaning her room for 2 hours.
+
+11.Have they been visiting their grandparents for 2 hours?
+Yes, they have been visiting their grandparents for 2 hours.
+No, they have not been visiting their grandparents for 2 hours.
+
+12.Has he been washing his hands for 2 hours?
+Yes, he has been washing his hands for 2 hours.
+No, he has not been washing his hands for 2 hours.
+
+13.Have you been brushing your teeth for 2 hours?
+Yes, I have been brushing my teeth for 2 hours.
+No, I have not been brushing my teeth for 2 hours.
+
+14.Has she been helping her mother for 2 hours?
+Yes, she has been helping her mother for 2 hours.
+No, she has not been helping her mother for 2 hours.
+
+15.Have they been practicing singing for 2 hours?
+Yes, they have been practicing singing for 2 hours.
+No, they have not been practicing singing for 2 hours.
+
+16.Has he been driving a car for 2 hours?
+Yes, he has been driving a car for 2 hours.
+No, he has not been driving a car for 2 hours.
+
+17.Have you been watering the plants for 2 hours?
+Yes, I have been watering the plants for 2 hours.
+No, I have not been watering the plants for 2 hours.
+
+18.Has she been walking in the park for 2 hours?
+Yes, she has been walking in the park for 2 hours.
+No, she has not been walking in the park for 2 hours.
+
+19.Have they been writing letters for 2 hours?
+Yes, they have been writing letters for 2 hours.
+No, they have not been writing letters for 2 hours.
+
+20.Has he been eating fruits for 2 hours?
+Yes, he has been eating fruits for 2 hours.
+No, he has not been eating fruits for 2 hours.
+
+21.Have you been sleeping early for 2 hours?
+Yes, I have been sleeping early for 2 hours.
+No, I have not been sleeping early for 2 hours.
+
+22.Has she been cooking food for 2 hours?
+Yes, she has been cooking food for 2 hours.
+No, she has not been cooking food for 2 hours.
+
+23.Have they been practicing dancing for 2 hours?
+Yes, they have been practicing dancing for 2 hours.
+No, they have not been practicing dancing for 2 hours.
+
+24.Has your uncle been walking in the park for 2 hours?
+Yes, my uncle has been walking in the park for 2 hours.
+No, my uncle has not been walking in the park for 2 hours.
+
+25.Have you been learning new vocabulary for 2 hours?
+Yes, I have been learning new vocabulary for 2 hours.
+No, I have not been learning new vocabulary for 2 hours.
+
+26.Has he been brushing his teeth twice for 2 hours?
+Yes, he has been brushing his teeth twice for 2 hours.
+No, he has not been brushing his teeth twice for 2 hours.
+
+27.Have the girls been participating in activities for 2 hours?
+Yes, the girls have been participating in activities for 2 hours.
+No, the girls have not been participating in activities for 2 hours.
+
+28.Have you been talking to your friend for 2 hours?
+Yes, I have been talking to my friend for 2 hours.
+No, I have not been talking to my friend for 2 hours.
+
+29.Has she been preparing breakfast for 2 hours?
+Yes, she has been preparing breakfast for 2 hours.
+No, she has not been preparing breakfast for 2 hours.
+
+30.Have they been respecting their teachers for 2 hours?
+Yes, they have been respecting their teachers for 2 hours.
+No, they have not been respecting their teachers for 2 hours.
+`
+      }
     ],
   },
 
@@ -18153,6 +24207,1015 @@ Success comes through hard work, confidence, discipline, and responsibility.
 `,
       },
     ],
+    stockSentences: [
+      {
+        id: 1,
+        title: "1.Everyday",
+        content: `
+1.Do you wake up early every day?
+Yes, I wake up early every day.
+No, I do not wake up early every day.
+
+2.Does she go to school every day?
+Yes, she goes to school every day.
+No, she does not go to school every day.
+
+3.Do they play cricket every evening?
+Yes, they play cricket every evening.
+No, they do not play cricket every evening.
+
+4.Does he study English every night?
+Yes, he studies English every night.
+No, he does not study English every night.
+
+5.Do you drink milk every morning?
+Yes, I drink milk every morning.
+No, I do not drink milk every morning.
+
+6.Does she draw pictures every weekend?
+Yes, she draws pictures every weekend.
+No, she does not draw pictures every weekend.
+
+7.Do they watch television every evening?
+Yes, they watch television every evening.
+No, they do not watch television every evening.
+
+8.Does he play football every Sunday?
+Yes, he plays football every Sunday.
+No, he does not play football every Sunday.
+
+9.Do you read storybooks every night?
+Yes, I read storybooks every night.
+No, I do not read storybooks every night.
+
+10.Does she clean her room every Sunday?
+Yes, she cleans her room every Sunday.
+No, she does not clean her room every Sunday.
+
+11.Do they visit their grandparents every summer?
+Yes, they visit their grandparents every summer.
+No, they do not visit their grandparents every summer.
+
+12.Does he wash his hands before meals?
+Yes, he washes his hands before meals.
+No, he does not wash his hands before meals.
+
+13.Do you brush your teeth every morning?
+Yes, I brush my teeth every morning.
+No, I do not brush my teeth every morning.
+
+14.Does she help her mother every day?
+Yes, she helps her mother every day.
+No, she does not help her mother every day.
+
+15.Do they practice singing every week?
+Yes, they practice singing every week.
+No, they do not practice singing every week.
+
+16.Does he drive a car every day?
+Yes, he drives a car every day.
+No, he does not drive a car every day.
+
+17.Do you water the plants every evening?
+Yes, I water the plants every evening.
+No, I do not water the plants every evening.
+
+18.Does she walk in the park every morning?
+Yes, she walks in the park every morning.
+No, she does not walk in the park every morning.
+
+19.Do they write letters every month?
+Yes, they write letters every month.
+No, they do not write letters every month.
+
+20.Does he eat fruits every day?
+Yes, he eats fruits every day.
+No, he does not eat fruits every day.
+
+21.Do you sleep early every night?
+Yes, I sleep early every night.
+No, I do not sleep early every night.
+
+22.Does she cook food every day?
+Yes, she cooks food every day.
+No, she does not cook food every day.
+
+23.Do they practice dancing every evening?
+Yes, they practice dancing every evening.
+No, they do not practice dancing every evening.
+
+24.Does your uncle walk in the park every morning?
+Yes, my uncle walks in the park every morning.
+No, my uncle does not walk in the park every morning.
+
+25.Do you learn new vocabulary every day?
+Yes, I learn new vocabulary every day.
+No, I do not learn new vocabulary every day.
+
+26.Does he brush his teeth twice every day?
+Yes, he brushes his teeth twice every day.
+No, he does not brush his teeth twice every day.
+
+27.Do the girls participate in activities every week?
+Yes, the girls participate in activities every week.
+No, the girls do not participate in activities every week.
+
+28.Do you talk to your friend every night?
+Yes, I talk to my friend every night.
+No, I do not talk to my friend every night.
+
+29.Does she prepare breakfast every morning?
+Yes, she prepares breakfast every morning.
+No, she does not prepare breakfast every morning.
+
+30.Do they respect their teachers every day?
+Yes, they respect their teachers every day.
+No, they do not respect their teachers every day.
+`
+      },
+
+      {
+        id: 2,
+        title: "2.Yesterday",
+        content: `
+1.Did you wake up early yesterday?
+Yes, I woke up early yesterday.
+No, I did not wake up early yesterday.
+
+2.Did she go to school yesterday?
+Yes, she went to school yesterday.
+No, she did not go to school yesterday.
+
+3.Did they play cricket yesterday?
+Yes, they played cricket yesterday.
+No, they did not play cricket yesterday.
+
+4.Did he study English yesterday?
+Yes, he studied English yesterday.
+No, he did not study English yesterday.
+
+5.Did you drink milk yesterday?
+Yes, I drank milk yesterday.
+No, I did not drink milk yesterday.
+
+6.Did she draw pictures yesterday?
+Yes, she drew pictures yesterday.
+No, she did not draw pictures yesterday.
+
+7.Did they watch television yesterday?
+Yes, they watched television yesterday.
+No, they did not watch television yesterday.
+
+8.Did he play football yesterday?
+Yes, he played football yesterday.
+No, he did not play football yesterday.
+
+9.Did you read storybooks yesterday?
+Yes, I read storybooks yesterday.
+No, I did not read storybooks yesterday.
+
+10.Did she clean her room yesterday?
+Yes, she cleaned her room yesterday.
+No, she did not clean her room yesterday.
+
+11.Did they visit their grandparents yesterday?
+Yes, they visited their grandparents yesterday.
+No, they did not visit their grandparents yesterday.
+
+12.Did he wash his hands yesterday?
+Yes, he washed his hands yesterday.
+No, he did not wash his hands yesterday.
+
+13.Did you brush your teeth yesterday?
+Yes, I brushed my teeth yesterday.
+No, I did not brush my teeth yesterday.
+
+14.Did she help her mother yesterday?
+Yes, she helped her mother yesterday.
+No, she did not help her mother yesterday.
+
+15.Did they practice singing yesterday?
+Yes, they practiced singing yesterday.
+No, they did not practice singing yesterday.
+
+16.Did he drive a car yesterday?
+Yes, he drove a car yesterday.
+No, he did not drive a car yesterday.
+
+17.Did you water the plants yesterday?
+Yes, I watered the plants yesterday.
+No, I did not water the plants yesterday.
+
+18.Did she walk in the park yesterday?
+Yes, she walked in the park yesterday.
+No, she did not walk in the park yesterday.
+
+19.Did they write letters yesterday?
+Yes, they wrote letters yesterday.
+No, they did not write letters yesterday.
+
+20.Did he eat fruits yesterday?
+Yes, he ate fruits yesterday.
+No, he did not eat fruits yesterday.
+
+21.Did you sleep early yesterday?
+Yes, I slept early yesterday.
+No, I did not sleep early yesterday.
+
+22.Did she cook food yesterday?
+Yes, she cooked food yesterday.
+No, she did not cook food yesterday.
+
+23.Did they practice dancing yesterday?
+Yes, they practiced dancing yesterday.
+No, they did not practice dancing yesterday.
+
+24.Did your uncle walk in the park yesterday?
+Yes, my uncle walked in the park yesterday.
+No, my uncle did not walk in the park yesterday.
+
+25.Did you learn new vocabulary yesterday?
+Yes, I learned new vocabulary yesterday.
+No, I did not learn new vocabulary yesterday.
+
+26.Did he brush his teeth twice yesterday?
+Yes, he brushed his teeth twice yesterday.
+No, he did not brush his teeth twice yesterday.
+
+27.Did the girls participate in activities yesterday?
+Yes, the girls participated in activities yesterday.
+No, the girls did not participate in activities yesterday.
+
+28.Did you talk to your friend yesterday?
+Yes, I talked to my friend yesterday.
+No, I did not talk to my friend yesterday.
+
+29.Did she prepare breakfast yesterday?
+Yes, she prepared breakfast yesterday.
+No, she did not prepare breakfast yesterday.
+
+30.Did they respect their teachers yesterday?
+Yes, they respected their teachers yesterday.
+No, they did not respect their teachers yesterday.
+`
+      },
+
+      {
+        id: 3,
+        title: "3.Tomorrow",
+        content: `
+1.Will you wake up early tomorrow?
+Yes, I will wake up early tomorrow.
+No, I will not wake up early tomorrow.
+
+2.Will she go to school tomorrow?
+Yes, she will go to school tomorrow.
+No, she will not go to school tomorrow.
+
+3.Will they play cricket tomorrow?
+Yes, they will play cricket tomorrow.
+No, they will not play cricket tomorrow.
+
+4.Will he study English tomorrow?
+Yes, he will study English tomorrow.
+No, he will not study English tomorrow.
+
+5.Will you drink milk tomorrow?
+Yes, I will drink milk tomorrow.
+No, I will not drink milk tomorrow.
+
+6.Will she draw pictures tomorrow?
+Yes, she will draw pictures tomorrow.
+No, she will not draw pictures tomorrow.
+
+7.Will they watch television tomorrow?
+Yes, they will watch television tomorrow.
+No, they will not watch television tomorrow.
+
+8.Will he play football tomorrow?
+Yes, he will play football tomorrow.
+No, he will not play football tomorrow.
+
+9.Will you read storybooks tomorrow?
+Yes, I will read storybooks tomorrow.
+No, I will not read storybooks tomorrow.
+
+10.Will she clean her room tomorrow?
+Yes, she will clean her room tomorrow.
+No, she will not clean her room tomorrow.
+
+11.Will they visit their grandparents tomorrow?
+Yes, they will visit their grandparents tomorrow.
+No, they will not visit their grandparents tomorrow.
+
+12.Will he wash his hands tomorrow?
+Yes, he will wash his hands tomorrow.
+No, he will not wash his hands tomorrow.
+
+13.Will you brush your teeth tomorrow?
+Yes, I will brush my teeth tomorrow.
+No, I will not brush my teeth tomorrow.
+
+14.Will she help her mother tomorrow?
+Yes, she will help her mother tomorrow.
+No, she will not help her mother tomorrow.
+
+15.Will they practice singing tomorrow?
+Yes, they will practice singing tomorrow.
+No, they will not practice singing tomorrow.
+
+16.Will he drive a car tomorrow?
+Yes, he will drive a car tomorrow.
+No, he will not drive a car tomorrow.
+
+17.Will you water the plants tomorrow?
+Yes, I will water the plants tomorrow.
+No, I will not water the plants tomorrow.
+
+18.Will she walk in the park tomorrow?
+Yes, she will walk in the park tomorrow.
+No, she will not walk in the park tomorrow.
+
+19.Will they write letters tomorrow?
+Yes, they will write letters tomorrow.
+No, they will not write letters tomorrow.
+
+20.Will he eat fruits tomorrow?
+Yes, he will eat fruits tomorrow.
+No, he will not eat fruits tomorrow.
+
+21.Will you sleep early tomorrow?
+Yes, I will sleep early tomorrow.
+No, I will not sleep early tomorrow.
+
+22.Will she cook food tomorrow?
+Yes, she will cook food tomorrow.
+No, she will not cook food tomorrow.
+
+23.Will they practice dancing tomorrow?
+Yes, they will practice dancing tomorrow.
+No, they will not practice dancing tomorrow.
+
+24.Will your uncle walk in the park tomorrow?
+Yes, my uncle will walk in the park tomorrow.
+No, my uncle will not walk in the park tomorrow.
+
+25.Will you learn new vocabulary tomorrow?
+Yes, I will learn new vocabulary tomorrow.
+No, I will not learn new vocabulary tomorrow.
+
+26.Will he brush his teeth twice tomorrow?
+Yes, he will brush his teeth twice tomorrow.
+No, he will not brush his teeth twice tomorrow.
+
+27.Will the girls participate in activities tomorrow?
+Yes, the girls will participate in activities tomorrow.
+No, the girls will not participate in activities tomorrow.
+
+28.Will you talk to your friend tomorrow?
+Yes, I will talk to my friend tomorrow.
+No, I will not talk to my friend tomorrow.
+
+29.Will she prepare breakfast tomorrow?
+Yes, she will prepare breakfast tomorrow.
+No, she will not prepare breakfast tomorrow.
+
+30.Will they respect their teachers tomorrow?
+Yes, they will respect their teachers tomorrow.
+No, they will not respect their teachers tomorrow.
+`
+      },
+
+      {
+        id: 4,
+        title: "4.Now",
+        content: `
+1.Are you waking up early now?
+Yes, I am waking up early now.
+No, I am not waking up early now.
+
+2.Is she going to school now?
+Yes, she is going to school now.
+No, she is not going to school now.
+
+3.Are they playing cricket now?
+Yes, they are playing cricket now.
+No, they are not playing cricket now.
+
+4.Is he studying English now?
+Yes, he is studying English now.
+No, he is not studying English now.
+
+5.Are you drinking milk now?
+Yes, I am drinking milk now.
+No, I am not drinking milk now.
+
+6.Is she drawing pictures now?
+Yes, she is drawing pictures now.
+No, she is not drawing pictures now.
+
+7.Are they watching television now?
+Yes, they are watching television now.
+No, they are not watching television now.
+
+8.Is he playing football now?
+Yes, he is playing football now.
+No, he is not playing football now.
+
+9.Are you reading storybooks now?
+Yes, I am reading storybooks now.
+No, I am not reading storybooks now.
+
+10.Is she cleaning her room now?
+Yes, she is cleaning her room now.
+No, she is not cleaning her room now.
+
+11.Are they visiting their grandparents now?
+Yes, they are visiting their grandparents now.
+No, they are not visiting their grandparents now.
+
+12.Is he washing his hands now?
+Yes, he is washing his hands now.
+No, he is not washing his hands now.
+
+13.Are you brushing your teeth now?
+Yes, I am brushing my teeth now.
+No, I am not brushing my teeth now.
+
+14.Is she helping her mother now?
+Yes, she is helping her mother now.
+No, she is not helping her mother now.
+
+15.Are they practicing singing now?
+Yes, they are practicing singing now.
+No, they are not practicing singing now.
+
+16.Is he driving a car now?
+Yes, he is driving a car now.
+No, he is not driving a car now.
+
+17.Are you watering the plants now?
+Yes, I am watering the plants now.
+No, I am not watering the plants now.
+
+18.Is she walking in the park now?
+Yes, she is walking in the park now.
+No, she is not walking in the park now.
+
+19.Are they writing letters now?
+Yes, they are writing letters now.
+No, they are not writing letters now.
+
+20.Is he eating fruits now?
+Yes, he is eating fruits now.
+No, he is not eating fruits now.
+
+21.Are you sleeping early now?
+Yes, I am sleeping early now.
+No, I am not sleeping early now.
+
+22.Is she cooking food now?
+Yes, she is cooking food now.
+No, she is not cooking food now.
+
+23.Are they practicing dancing now?
+Yes, they are practicing dancing now.
+No, they are not practicing dancing now.
+
+24.Is your uncle walking in the park now?
+Yes, my uncle is walking in the park now.
+No, my uncle is not walking in the park now.
+
+25.Are you learning new vocabulary now?
+Yes, I am learning new vocabulary now.
+No, I am not learning new vocabulary now.
+
+26.Is he brushing his teeth twice now?
+Yes, he is brushing his teeth twice now.
+No, he is not brushing his teeth twice now.
+
+27.Are the girls participating in activities now?
+Yes, the girls are participating in activities now.
+No, the girls are not participating in activities now.
+
+28.Are you talking to your friend now?
+Yes, I am talking to my friend now.
+No, I am not talking to my friend now.
+
+29.Is she preparing breakfast now?
+Yes, she is preparing breakfast now.
+No, she is not preparing breakfast now.
+
+30.Are they respecting their teachers now?
+Yes, they are respecting their teachers now.
+No, they are not respecting their teachers now.
+`
+      },
+
+      {
+        id: 5,
+        title: "5.At 9 O'Clock Yesterday",
+        content: `
+1.Were you waking up early at 9 o'clock yesterday?
+Yes, I was waking up early at 9 o'clock yesterday.
+No, I was not waking up early at 9 o'clock yesterday.
+
+2.Was she going to school at 9 o'clock yesterday?
+Yes, she was going to school at 9 o'clock yesterday.
+No, she was not going to school at 9 o'clock yesterday.
+
+3.Were they playing cricket at 9 o'clock yesterday?
+Yes, they were playing cricket at 9 o'clock yesterday.
+No, they were not playing cricket at 9 o'clock yesterday.
+
+4.Was he studying English at 9 o'clock yesterday?
+Yes, he was studying English at 9 o'clock yesterday.
+No, he was not studying English at 9 o'clock yesterday.
+
+5.Were you drinking milk at 9 o'clock yesterday?
+Yes, I was drinking milk at 9 o'clock yesterday.
+No, I was not drinking milk at 9 o'clock yesterday.
+
+6.Was she drawing pictures at 9 o'clock yesterday?
+Yes, she was drawing pictures at 9 o'clock yesterday.
+No, she was not drawing pictures at 9 o'clock yesterday.
+
+7.Were they watching television at 9 o'clock yesterday?
+Yes, they were watching television at 9 o'clock yesterday.
+No, they were not watching television at 9 o'clock yesterday.
+
+8.Was he playing football at 9 o'clock yesterday?
+Yes, he was playing football at 9 o'clock yesterday.
+No, he was not playing football at 9 o'clock yesterday.
+
+9.Were you reading storybooks at 9 o'clock yesterday?
+Yes, I was reading storybooks at 9 o'clock yesterday.
+No, I was not reading storybooks at 9 o'clock yesterday.
+
+10.Was she cleaning her room at 9 o'clock yesterday?
+Yes, she was cleaning her room at 9 o'clock yesterday.
+No, she was not cleaning her room at 9 o'clock yesterday.
+
+11.Were they visiting their grandparents at 9 o'clock yesterday?
+Yes, they were visiting their grandparents at 9 o'clock yesterday.
+No, they were not visiting their grandparents at 9 o'clock yesterday.
+
+12.Was he washing his hands at 9 o'clock yesterday?
+Yes, he was washing his hands at 9 o'clock yesterday.
+No, he was not washing his hands at 9 o'clock yesterday.
+
+13.Were you brushing your teeth at 9 o'clock yesterday?
+Yes, I was brushing my teeth at 9 o'clock yesterday.
+No, I was not brushing my teeth at 9 o'clock yesterday.
+
+14.Was she helping her mother at 9 o'clock yesterday?
+Yes, she was helping her mother at 9 o'clock yesterday.
+No, she was not helping her mother at 9 o'clock yesterday.
+
+15.Were they practicing singing at 9 o'clock yesterday?
+Yes, they were practicing singing at 9 o'clock yesterday.
+No, they were not practicing singing at 9 o'clock yesterday.
+
+16.Was he driving a car at 9 o'clock yesterday?
+Yes, he was driving a car at 9 o'clock yesterday.
+No, he was not driving a car at 9 o'clock yesterday.
+
+17.Were you watering the plants at 9 o'clock yesterday?
+Yes, I was watering the plants at 9 o'clock yesterday.
+No, I was not watering the plants at 9 o'clock yesterday.
+
+18.Was she walking in the park at 9 o'clock yesterday?
+Yes, she was walking in the park at 9 o'clock yesterday.
+No, she was not walking in the park at 9 o'clock yesterday.
+
+19.Were they writing letters at 9 o'clock yesterday?
+Yes, they were writing letters at 9 o'clock yesterday.
+No, they were not writing letters at 9 o'clock yesterday.
+
+20.Was he eating fruits at 9 o'clock yesterday?
+Yes, he was eating fruits at 9 o'clock yesterday.
+No, he was not eating fruits at 9 o'clock yesterday.
+
+21.Were you sleeping early at 9 o'clock yesterday?
+Yes, I was sleeping early at 9 o'clock yesterday.
+No, I was not sleeping early at 9 o'clock yesterday.
+
+22.Was she cooking food at 9 o'clock yesterday?
+Yes, she was cooking food at 9 o'clock yesterday.
+No, she was not cooking food at 9 o'clock yesterday.
+
+23.Were they practicing dancing at 9 o'clock yesterday?
+Yes, they were practicing dancing at 9 o'clock yesterday.
+No, they were not practicing dancing at 9 o'clock yesterday.
+
+24.Was your uncle walking in the park at 9 o'clock yesterday?
+Yes, my uncle was walking in the park at 9 o'clock yesterday.
+No, my uncle was not walking in the park at 9 o'clock yesterday.
+
+25.Were you learning new vocabulary at 9 o'clock yesterday?
+Yes, I was learning new vocabulary at 9 o'clock yesterday.
+No, I was not learning new vocabulary at 9 o'clock yesterday.
+
+26.Was he brushing his teeth twice at 9 o'clock yesterday?
+Yes, he was brushing his teeth twice at 9 o'clock yesterday.
+No, he was not brushing his teeth twice at 9 o'clock yesterday.
+
+27.Were the girls participating in activities at 9 o'clock yesterday?
+Yes, the girls were participating in activities at 9 o'clock yesterday.
+No, the girls were not participating in activities at 9 o'clock yesterday.
+
+28.Were you talking to your friend at 9 o'clock yesterday?
+Yes, I was talking to my friend at 9 o'clock yesterday.
+No, I was not talking to my friend at 9 o'clock yesterday.
+
+29.Was she preparing breakfast at 9 o'clock yesterday?
+Yes, she was preparing breakfast at 9 o'clock yesterday.
+No, she was not preparing breakfast at 9 o'clock yesterday.
+
+30.Were they respecting their teachers at 9 o'clock yesterday?
+Yes, they were respecting their teachers at 9 o'clock yesterday.
+No, they were not respecting their teachers at 9 o'clock yesterday.
+`
+      },
+
+      {
+        id: 6,
+        title: "6.At 9 O'Clock Tomorrow",
+        content: `
+1.Will you be waking up early at 9 o'clock tomorrow?
+Yes, I will be waking up early at 9 o'clock tomorrow.
+No, I will not be waking up early at 9 o'clock tomorrow.
+
+2.Will she be going to school at 9 o'clock tomorrow?
+Yes, she will be going to school at 9 o'clock tomorrow.
+No, she will not be going to school at 9 o'clock tomorrow.
+
+3.Will they be playing cricket at 9 o'clock tomorrow?
+Yes, they will be playing cricket at 9 o'clock tomorrow.
+No, they will not be playing cricket at 9 o'clock tomorrow.
+
+4.Will he be studying English at 9 o'clock tomorrow?
+Yes, he will be studying English at 9 o'clock tomorrow.
+No, he will not be studying English at 9 o'clock tomorrow.
+
+5.Will you be drinking milk at 9 o'clock tomorrow?
+Yes, I will be drinking milk at 9 o'clock tomorrow.
+No, I will not be drinking milk at 9 o'clock tomorrow.
+
+6.Will she be drawing pictures at 9 o'clock tomorrow?
+Yes, she will be drawing pictures at 9 o'clock tomorrow.
+No, she will not be drawing pictures at 9 o'clock tomorrow.
+
+7.Will they be watching television at 9 o'clock tomorrow?
+Yes, they will be watching television at 9 o'clock tomorrow.
+No, they will not be watching television at 9 o'clock tomorrow.
+
+8.Will he be playing football at 9 o'clock tomorrow?
+Yes, he will be playing football at 9 o'clock tomorrow.
+No, he will not be playing football at 9 o'clock tomorrow.
+
+9.Will you be reading storybooks at 9 o'clock tomorrow?
+Yes, I will be reading storybooks at 9 o'clock tomorrow.
+No, I will not be reading storybooks at 9 o'clock tomorrow.
+
+10.Will she be cleaning her room at 9 o'clock tomorrow?
+Yes, she will be cleaning her room at 9 o'clock tomorrow.
+No, she will not be cleaning her room at 9 o'clock tomorrow.
+
+11.Will they be visiting their grandparents at 9 o'clock tomorrow?
+Yes, they will be visiting their grandparents at 9 o'clock tomorrow.
+No, they will not be visiting their grandparents at 9 o'clock tomorrow.
+
+12.Will he be washing his hands at 9 o'clock tomorrow?
+Yes, he will be washing his hands at 9 o'clock tomorrow.
+No, he will not be washing his hands at 9 o'clock tomorrow.
+
+13.Will you be brushing your teeth at 9 o'clock tomorrow?
+Yes, I will be brushing my teeth at 9 o'clock tomorrow.
+No, I will not be brushing my teeth at 9 o'clock tomorrow.
+
+14.Will she be helping her mother at 9 o'clock tomorrow?
+Yes, she will be helping her mother at 9 o'clock tomorrow.
+No, she will not be helping her mother at 9 o'clock tomorrow.
+
+15.Will they be practicing singing at 9 o'clock tomorrow?
+Yes, they will be practicing singing at 9 o'clock tomorrow.
+No, they will not be practicing singing at 9 o'clock tomorrow.
+
+16.Will he be driving a car at 9 o'clock tomorrow?
+Yes, he will be driving a car at 9 o'clock tomorrow.
+No, he will not be driving a car at 9 o'clock tomorrow.
+
+17.Will you be watering the plants at 9 o'clock tomorrow?
+Yes, I will be watering the plants at 9 o'clock tomorrow.
+No, I will not be watering the plants at 9 o'clock tomorrow.
+
+18.Will she be walking in the park at 9 o'clock tomorrow?
+Yes, she will be walking in the park at 9 o'clock tomorrow.
+No, she will not be walking in the park at 9 o'clock tomorrow.
+
+19.Will they be writing letters at 9 o'clock tomorrow?
+Yes, they will be writing letters at 9 o'clock tomorrow.
+No, they will not be writing letters at 9 o'clock tomorrow.
+
+20.Will he be eating fruits at 9 o'clock tomorrow?
+Yes, he will be eating fruits at 9 o'clock tomorrow.
+No, he will not be eating fruits at 9 o'clock tomorrow.
+
+21.Will you be sleeping early at 9 o'clock tomorrow?
+Yes, I will be sleeping early at 9 o'clock tomorrow.
+No, I will not be sleeping early at 9 o'clock tomorrow.
+
+22.Will she be cooking food at 9 o'clock tomorrow?
+Yes, she will be cooking food at 9 o'clock tomorrow.
+No, she will not be cooking food at 9 o'clock tomorrow.
+
+23.Will they be practicing dancing at 9 o'clock tomorrow?
+Yes, they will be practicing dancing at 9 o'clock tomorrow.
+No, they will not be practicing dancing at 9 o'clock tomorrow.
+
+24.Will your uncle be walking in the park at 9 o'clock tomorrow?
+Yes, my uncle will be walking in the park at 9 o'clock tomorrow.
+No, my uncle will not be walking in the park at 9 o'clock tomorrow.
+
+25.Will you be learning new vocabulary at 9 o'clock tomorrow?
+Yes, I will be learning new vocabulary at 9 o'clock tomorrow.
+No, I will not be learning new vocabulary at 9 o'clock tomorrow.
+
+26.Will he be brushing his teeth twice at 9 o'clock tomorrow?
+Yes, he will be brushing his teeth twice at 9 o'clock tomorrow.
+No, he will not be brushing his teeth twice at 9 o'clock tomorrow.
+
+27.Will the girls be participating in activities at 9 o'clock tomorrow?
+Yes, the girls will be participating in activities at 9 o'clock tomorrow.
+No, the girls will not be participating in activities at 9 o'clock tomorrow.
+
+28.Will you be talking to your friend at 9 o'clock tomorrow?
+Yes, I will be talking to my friend at 9 o'clock tomorrow.
+No, I will not be talking to my friend at 9 o'clock tomorrow.
+
+29.Will she be preparing breakfast at 9 o'clock tomorrow?
+Yes, she will be preparing breakfast at 9 o'clock tomorrow.
+No, she will not be preparing breakfast at 9 o'clock tomorrow.
+
+30.Will they be respecting their teachers at 9 o'clock tomorrow?
+Yes, they will be respecting their teachers at 9 o'clock tomorrow.
+No, they will not be respecting their teachers at 9 o'clock tomorrow.
+`
+      },
+
+      {
+        id: 7,
+        title: "7.Already",
+        content: `
+1.Have you already woken up early?
+Yes, I have already woken up early.
+No, I have not already woken up early.
+
+2.Has she already gone to school?
+Yes, she has already gone to school.
+No, she has not already gone to school.
+
+3.Have they already played cricket?
+Yes, they have already played cricket.
+No, they have not already played cricket.
+
+4.Has he already studied English?
+Yes, he has already studied English.
+No, he has not already studied English.
+
+5.Have you already drunk milk?
+Yes, I have already drunk milk.
+No, I have not already drunk milk.
+
+6.Has she already drawn pictures?
+Yes, she has already drawn pictures.
+No, she has not already drawn pictures.
+
+7.Have they already watched television?
+Yes, they have already watched television.
+No, they have not already watched television.
+
+8.Has he already played football?
+Yes, he has already played football.
+No, he has not already played football.
+
+9.Have you already read storybooks?
+Yes, I have already read storybooks.
+No, I have not already read storybooks.
+
+10.Has she already cleaned her room?
+Yes, she has already cleaned her room.
+No, she has not already cleaned her room.
+
+11.Have they already visited their grandparents?
+Yes, they have already visited their grandparents.
+No, they have not already visited their grandparents.
+
+12.Has he already washed his hands?
+Yes, he has already washed his hands.
+No, he has not already washed his hands.
+
+13.Have you already brushed your teeth?
+Yes, I have already brushed my teeth.
+No, I have not already brushed my teeth.
+
+14.Has she already helped her mother?
+Yes, she has already helped her mother.
+No, she has not already helped her mother.
+
+15.Have they already practiced singing?
+Yes, they have already practiced singing.
+No, they have not already practiced singing.
+
+16.Has he already driven a car?
+Yes, he has already driven a car.
+No, he has not already driven a car.
+
+17.Have you already watered the plants?
+Yes, I have already watered the plants.
+No, I have not already watered the plants.
+
+18.Has she already walked in the park?
+Yes, she has already walked in the park.
+No, she has not already walked in the park.
+
+19.Have they already written letters?
+Yes, they have already written letters.
+No, they have not already written letters.
+
+20.Has he already eaten fruits?
+Yes, he has already eaten fruits.
+No, he has not already eaten fruits.
+
+21.Have you already slept early?
+Yes, I have already slept early.
+No, I have not already slept early.
+
+22.Has she already cooked food?
+Yes, she has already cooked food.
+No, she has not already cooked food.
+
+23.Have they already practiced dancing?
+Yes, they have already practiced dancing.
+No, they have not already practiced dancing.
+
+24.Has your uncle already walked in the park?
+Yes, my uncle has already walked in the park.
+No, my uncle has not already walked in the park.
+
+25.Have you already learned new vocabulary?
+Yes, I have already learned new vocabulary.
+No, I have not already learned new vocabulary.
+
+26.Has he already brushed his teeth twice?
+Yes, he has already brushed his teeth twice.
+No, he has not already brushed his teeth twice.
+
+27.Have the girls already participated in activities?
+Yes, the girls have already participated in activities.
+No, the girls have not already participated in activities.
+
+28.Have you already talked to your friend?
+Yes, I have already talked to my friend.
+No, I have not already talked to my friend.
+
+29.Has she already prepared breakfast?
+Yes, she has already prepared breakfast.
+No, she has not already prepared breakfast.
+
+30.Have they already respected their teachers?
+Yes, they have already respected their teachers.
+No, they have not already respected their teachers.
+`
+      },
+
+      {
+        id: 8,
+        title: "8.For 2 Hours",
+        content: `
+1.Have you been waking up early for 2 hours?
+Yes, I have been waking up early for 2 hours.
+No, I have not been waking up early for 2 hours.
+
+2.Has she been going to school for 2 hours?
+Yes, she has been going to school for 2 hours.
+No, she has not been going to school for 2 hours.
+
+3.Have they been playing cricket for 2 hours?
+Yes, they have been playing cricket for 2 hours.
+No, they have not been playing cricket for 2 hours.
+
+4.Has he been studying English for 2 hours?
+Yes, he has been studying English for 2 hours.
+No, he has not been studying English for 2 hours.
+
+5.Have you been drinking milk for 2 hours?
+Yes, I have been drinking milk for 2 hours.
+No, I have not been drinking milk for 2 hours.
+
+6.Has she been drawing pictures for 2 hours?
+Yes, she has been drawing pictures for 2 hours.
+No, she has not been drawing pictures for 2 hours.
+
+7.Have they been watching television for 2 hours?
+Yes, they have been watching television for 2 hours.
+No, they have not been watching television for 2 hours.
+
+8.Has he been playing football for 2 hours?
+Yes, he has been playing football for 2 hours.
+No, he has not been playing football for 2 hours.
+
+9.Have you been reading storybooks for 2 hours?
+Yes, I have been reading storybooks for 2 hours.
+No, I have not been reading storybooks for 2 hours.
+
+10.Has she been cleaning her room for 2 hours?
+Yes, she has been cleaning her room for 2 hours.
+No, she has not been cleaning her room for 2 hours.
+
+11.Have they been visiting their grandparents for 2 hours?
+Yes, they have been visiting their grandparents for 2 hours.
+No, they have not been visiting their grandparents for 2 hours.
+
+12.Has he been washing his hands for 2 hours?
+Yes, he has been washing his hands for 2 hours.
+No, he has not been washing his hands for 2 hours.
+
+13.Have you been brushing your teeth for 2 hours?
+Yes, I have been brushing my teeth for 2 hours.
+No, I have not been brushing my teeth for 2 hours.
+
+14.Has she been helping her mother for 2 hours?
+Yes, she has been helping her mother for 2 hours.
+No, she has not been helping her mother for 2 hours.
+
+15.Have they been practicing singing for 2 hours?
+Yes, they have been practicing singing for 2 hours.
+No, they have not been practicing singing for 2 hours.
+
+16.Has he been driving a car for 2 hours?
+Yes, he has been driving a car for 2 hours.
+No, he has not been driving a car for 2 hours.
+
+17.Have you been watering the plants for 2 hours?
+Yes, I have been watering the plants for 2 hours.
+No, I have not been watering the plants for 2 hours.
+
+18.Has she been walking in the park for 2 hours?
+Yes, she has been walking in the park for 2 hours.
+No, she has not been walking in the park for 2 hours.
+
+19.Have they been writing letters for 2 hours?
+Yes, they have been writing letters for 2 hours.
+No, they have not been writing letters for 2 hours.
+
+20.Has he been eating fruits for 2 hours?
+Yes, he has been eating fruits for 2 hours.
+No, he has not been eating fruits for 2 hours.
+
+21.Have you been sleeping early for 2 hours?
+Yes, I have been sleeping early for 2 hours.
+No, I have not been sleeping early for 2 hours.
+
+22.Has she been cooking food for 2 hours?
+Yes, she has been cooking food for 2 hours.
+No, she has not been cooking food for 2 hours.
+
+23.Have they been practicing dancing for 2 hours?
+Yes, they have been practicing dancing for 2 hours.
+No, they have not been practicing dancing for 2 hours.
+
+24.Has your uncle been walking in the park for 2 hours?
+Yes, my uncle has been walking in the park for 2 hours.
+No, my uncle has not been walking in the park for 2 hours.
+
+25.Have you been learning new vocabulary for 2 hours?
+Yes, I have been learning new vocabulary for 2 hours.
+No, I have not been learning new vocabulary for 2 hours.
+
+26.Has he been brushing his teeth twice for 2 hours?
+Yes, he has been brushing his teeth twice for 2 hours.
+No, he has not been brushing his teeth twice for 2 hours.
+
+27.Have the girls been participating in activities for 2 hours?
+Yes, the girls have been participating in activities for 2 hours.
+No, the girls have not been participating in activities for 2 hours.
+
+28.Have you been talking to your friend for 2 hours?
+Yes, I have been talking to my friend for 2 hours.
+No, I have not been talking to my friend for 2 hours.
+
+29.Has she been preparing breakfast for 2 hours?
+Yes, she has been preparing breakfast for 2 hours.
+No, she has not been preparing breakfast for 2 hours.
+
+30.Have they been respecting their teachers for 2 hours?
+Yes, they have been respecting their teachers for 2 hours.
+No, they have not been respecting their teachers for 2 hours.
+`
+      }
+    ],
   },
 
   "class-9": {
@@ -21107,6 +28170,1015 @@ Students should avoid negativity and continue moving forward with confidence.
 True success comes from growth, contribution, and continuous self-improvement.
 `,
       },
+    ],
+    stockSentences: [
+      {
+        id: 1,
+        title: "1.Everyday",
+        content: `
+1.Do you wake up early every day?
+Yes, I wake up early every day.
+No, I do not wake up early every day.
+
+2.Does she go to school every day?
+Yes, she goes to school every day.
+No, she does not go to school every day.
+
+3.Do they play cricket every evening?
+Yes, they play cricket every evening.
+No, they do not play cricket every evening.
+
+4.Does he study English every night?
+Yes, he studies English every night.
+No, he does not study English every night.
+
+5.Do you drink milk every morning?
+Yes, I drink milk every morning.
+No, I do not drink milk every morning.
+
+6.Does she draw pictures every weekend?
+Yes, she draws pictures every weekend.
+No, she does not draw pictures every weekend.
+
+7.Do they watch television every evening?
+Yes, they watch television every evening.
+No, they do not watch television every evening.
+
+8.Does he play football every Sunday?
+Yes, he plays football every Sunday.
+No, he does not play football every Sunday.
+
+9.Do you read storybooks every night?
+Yes, I read storybooks every night.
+No, I do not read storybooks every night.
+
+10.Does she clean her room every Sunday?
+Yes, she cleans her room every Sunday.
+No, she does not clean her room every Sunday.
+
+11.Do they visit their grandparents every summer?
+Yes, they visit their grandparents every summer.
+No, they do not visit their grandparents every summer.
+
+12.Does he wash his hands before meals?
+Yes, he washes his hands before meals.
+No, he does not wash his hands before meals.
+
+13.Do you brush your teeth every morning?
+Yes, I brush my teeth every morning.
+No, I do not brush my teeth every morning.
+
+14.Does she help her mother every day?
+Yes, she helps her mother every day.
+No, she does not help her mother every day.
+
+15.Do they practice singing every week?
+Yes, they practice singing every week.
+No, they do not practice singing every week.
+
+16.Does he drive a car every day?
+Yes, he drives a car every day.
+No, he does not drive a car every day.
+
+17.Do you water the plants every evening?
+Yes, I water the plants every evening.
+No, I do not water the plants every evening.
+
+18.Does she walk in the park every morning?
+Yes, she walks in the park every morning.
+No, she does not walk in the park every morning.
+
+19.Do they write letters every month?
+Yes, they write letters every month.
+No, they do not write letters every month.
+
+20.Does he eat fruits every day?
+Yes, he eats fruits every day.
+No, he does not eat fruits every day.
+
+21.Do you sleep early every night?
+Yes, I sleep early every night.
+No, I do not sleep early every night.
+
+22.Does she cook food every day?
+Yes, she cooks food every day.
+No, she does not cook food every day.
+
+23.Do they practice dancing every evening?
+Yes, they practice dancing every evening.
+No, they do not practice dancing every evening.
+
+24.Does your uncle walk in the park every morning?
+Yes, my uncle walks in the park every morning.
+No, my uncle does not walk in the park every morning.
+
+25.Do you learn new vocabulary every day?
+Yes, I learn new vocabulary every day.
+No, I do not learn new vocabulary every day.
+
+26.Does he brush his teeth twice every day?
+Yes, he brushes his teeth twice every day.
+No, he does not brush his teeth twice every day.
+
+27.Do the girls participate in activities every week?
+Yes, the girls participate in activities every week.
+No, the girls do not participate in activities every week.
+
+28.Do you talk to your friend every night?
+Yes, I talk to my friend every night.
+No, I do not talk to my friend every night.
+
+29.Does she prepare breakfast every morning?
+Yes, she prepares breakfast every morning.
+No, she does not prepare breakfast every morning.
+
+30.Do they respect their teachers every day?
+Yes, they respect their teachers every day.
+No, they do not respect their teachers every day.
+`
+      },
+
+      {
+        id: 2,
+        title: "2.Yesterday",
+        content: `
+1.Did you wake up early yesterday?
+Yes, I woke up early yesterday.
+No, I did not wake up early yesterday.
+
+2.Did she go to school yesterday?
+Yes, she went to school yesterday.
+No, she did not go to school yesterday.
+
+3.Did they play cricket yesterday?
+Yes, they played cricket yesterday.
+No, they did not play cricket yesterday.
+
+4.Did he study English yesterday?
+Yes, he studied English yesterday.
+No, he did not study English yesterday.
+
+5.Did you drink milk yesterday?
+Yes, I drank milk yesterday.
+No, I did not drink milk yesterday.
+
+6.Did she draw pictures yesterday?
+Yes, she drew pictures yesterday.
+No, she did not draw pictures yesterday.
+
+7.Did they watch television yesterday?
+Yes, they watched television yesterday.
+No, they did not watch television yesterday.
+
+8.Did he play football yesterday?
+Yes, he played football yesterday.
+No, he did not play football yesterday.
+
+9.Did you read storybooks yesterday?
+Yes, I read storybooks yesterday.
+No, I did not read storybooks yesterday.
+
+10.Did she clean her room yesterday?
+Yes, she cleaned her room yesterday.
+No, she did not clean her room yesterday.
+
+11.Did they visit their grandparents yesterday?
+Yes, they visited their grandparents yesterday.
+No, they did not visit their grandparents yesterday.
+
+12.Did he wash his hands yesterday?
+Yes, he washed his hands yesterday.
+No, he did not wash his hands yesterday.
+
+13.Did you brush your teeth yesterday?
+Yes, I brushed my teeth yesterday.
+No, I did not brush my teeth yesterday.
+
+14.Did she help her mother yesterday?
+Yes, she helped her mother yesterday.
+No, she did not help her mother yesterday.
+
+15.Did they practice singing yesterday?
+Yes, they practiced singing yesterday.
+No, they did not practice singing yesterday.
+
+16.Did he drive a car yesterday?
+Yes, he drove a car yesterday.
+No, he did not drive a car yesterday.
+
+17.Did you water the plants yesterday?
+Yes, I watered the plants yesterday.
+No, I did not water the plants yesterday.
+
+18.Did she walk in the park yesterday?
+Yes, she walked in the park yesterday.
+No, she did not walk in the park yesterday.
+
+19.Did they write letters yesterday?
+Yes, they wrote letters yesterday.
+No, they did not write letters yesterday.
+
+20.Did he eat fruits yesterday?
+Yes, he ate fruits yesterday.
+No, he did not eat fruits yesterday.
+
+21.Did you sleep early yesterday?
+Yes, I slept early yesterday.
+No, I did not sleep early yesterday.
+
+22.Did she cook food yesterday?
+Yes, she cooked food yesterday.
+No, she did not cook food yesterday.
+
+23.Did they practice dancing yesterday?
+Yes, they practiced dancing yesterday.
+No, they did not practice dancing yesterday.
+
+24.Did your uncle walk in the park yesterday?
+Yes, my uncle walked in the park yesterday.
+No, my uncle did not walk in the park yesterday.
+
+25.Did you learn new vocabulary yesterday?
+Yes, I learned new vocabulary yesterday.
+No, I did not learn new vocabulary yesterday.
+
+26.Did he brush his teeth twice yesterday?
+Yes, he brushed his teeth twice yesterday.
+No, he did not brush his teeth twice yesterday.
+
+27.Did the girls participate in activities yesterday?
+Yes, the girls participated in activities yesterday.
+No, the girls did not participate in activities yesterday.
+
+28.Did you talk to your friend yesterday?
+Yes, I talked to my friend yesterday.
+No, I did not talk to my friend yesterday.
+
+29.Did she prepare breakfast yesterday?
+Yes, she prepared breakfast yesterday.
+No, she did not prepare breakfast yesterday.
+
+30.Did they respect their teachers yesterday?
+Yes, they respected their teachers yesterday.
+No, they did not respect their teachers yesterday.
+`
+      },
+
+      {
+        id: 3,
+        title: "3.Tomorrow",
+        content: `
+1.Will you wake up early tomorrow?
+Yes, I will wake up early tomorrow.
+No, I will not wake up early tomorrow.
+
+2.Will she go to school tomorrow?
+Yes, she will go to school tomorrow.
+No, she will not go to school tomorrow.
+
+3.Will they play cricket tomorrow?
+Yes, they will play cricket tomorrow.
+No, they will not play cricket tomorrow.
+
+4.Will he study English tomorrow?
+Yes, he will study English tomorrow.
+No, he will not study English tomorrow.
+
+5.Will you drink milk tomorrow?
+Yes, I will drink milk tomorrow.
+No, I will not drink milk tomorrow.
+
+6.Will she draw pictures tomorrow?
+Yes, she will draw pictures tomorrow.
+No, she will not draw pictures tomorrow.
+
+7.Will they watch television tomorrow?
+Yes, they will watch television tomorrow.
+No, they will not watch television tomorrow.
+
+8.Will he play football tomorrow?
+Yes, he will play football tomorrow.
+No, he will not play football tomorrow.
+
+9.Will you read storybooks tomorrow?
+Yes, I will read storybooks tomorrow.
+No, I will not read storybooks tomorrow.
+
+10.Will she clean her room tomorrow?
+Yes, she will clean her room tomorrow.
+No, she will not clean her room tomorrow.
+
+11.Will they visit their grandparents tomorrow?
+Yes, they will visit their grandparents tomorrow.
+No, they will not visit their grandparents tomorrow.
+
+12.Will he wash his hands tomorrow?
+Yes, he will wash his hands tomorrow.
+No, he will not wash his hands tomorrow.
+
+13.Will you brush your teeth tomorrow?
+Yes, I will brush my teeth tomorrow.
+No, I will not brush my teeth tomorrow.
+
+14.Will she help her mother tomorrow?
+Yes, she will help her mother tomorrow.
+No, she will not help her mother tomorrow.
+
+15.Will they practice singing tomorrow?
+Yes, they will practice singing tomorrow.
+No, they will not practice singing tomorrow.
+
+16.Will he drive a car tomorrow?
+Yes, he will drive a car tomorrow.
+No, he will not drive a car tomorrow.
+
+17.Will you water the plants tomorrow?
+Yes, I will water the plants tomorrow.
+No, I will not water the plants tomorrow.
+
+18.Will she walk in the park tomorrow?
+Yes, she will walk in the park tomorrow.
+No, she will not walk in the park tomorrow.
+
+19.Will they write letters tomorrow?
+Yes, they will write letters tomorrow.
+No, they will not write letters tomorrow.
+
+20.Will he eat fruits tomorrow?
+Yes, he will eat fruits tomorrow.
+No, he will not eat fruits tomorrow.
+
+21.Will you sleep early tomorrow?
+Yes, I will sleep early tomorrow.
+No, I will not sleep early tomorrow.
+
+22.Will she cook food tomorrow?
+Yes, she will cook food tomorrow.
+No, she will not cook food tomorrow.
+
+23.Will they practice dancing tomorrow?
+Yes, they will practice dancing tomorrow.
+No, they will not practice dancing tomorrow.
+
+24.Will your uncle walk in the park tomorrow?
+Yes, my uncle will walk in the park tomorrow.
+No, my uncle will not walk in the park tomorrow.
+
+25.Will you learn new vocabulary tomorrow?
+Yes, I will learn new vocabulary tomorrow.
+No, I will not learn new vocabulary tomorrow.
+
+26.Will he brush his teeth twice tomorrow?
+Yes, he will brush his teeth twice tomorrow.
+No, he will not brush his teeth twice tomorrow.
+
+27.Will the girls participate in activities tomorrow?
+Yes, the girls will participate in activities tomorrow.
+No, the girls will not participate in activities tomorrow.
+
+28.Will you talk to your friend tomorrow?
+Yes, I will talk to my friend tomorrow.
+No, I will not talk to my friend tomorrow.
+
+29.Will she prepare breakfast tomorrow?
+Yes, she will prepare breakfast tomorrow.
+No, she will not prepare breakfast tomorrow.
+
+30.Will they respect their teachers tomorrow?
+Yes, they will respect their teachers tomorrow.
+No, they will not respect their teachers tomorrow.
+`
+      },
+
+      {
+        id: 4,
+        title: "4.Now",
+        content: `
+1.Are you waking up early now?
+Yes, I am waking up early now.
+No, I am not waking up early now.
+
+2.Is she going to school now?
+Yes, she is going to school now.
+No, she is not going to school now.
+
+3.Are they playing cricket now?
+Yes, they are playing cricket now.
+No, they are not playing cricket now.
+
+4.Is he studying English now?
+Yes, he is studying English now.
+No, he is not studying English now.
+
+5.Are you drinking milk now?
+Yes, I am drinking milk now.
+No, I am not drinking milk now.
+
+6.Is she drawing pictures now?
+Yes, she is drawing pictures now.
+No, she is not drawing pictures now.
+
+7.Are they watching television now?
+Yes, they are watching television now.
+No, they are not watching television now.
+
+8.Is he playing football now?
+Yes, he is playing football now.
+No, he is not playing football now.
+
+9.Are you reading storybooks now?
+Yes, I am reading storybooks now.
+No, I am not reading storybooks now.
+
+10.Is she cleaning her room now?
+Yes, she is cleaning her room now.
+No, she is not cleaning her room now.
+
+11.Are they visiting their grandparents now?
+Yes, they are visiting their grandparents now.
+No, they are not visiting their grandparents now.
+
+12.Is he washing his hands now?
+Yes, he is washing his hands now.
+No, he is not washing his hands now.
+
+13.Are you brushing your teeth now?
+Yes, I am brushing my teeth now.
+No, I am not brushing my teeth now.
+
+14.Is she helping her mother now?
+Yes, she is helping her mother now.
+No, she is not helping her mother now.
+
+15.Are they practicing singing now?
+Yes, they are practicing singing now.
+No, they are not practicing singing now.
+
+16.Is he driving a car now?
+Yes, he is driving a car now.
+No, he is not driving a car now.
+
+17.Are you watering the plants now?
+Yes, I am watering the plants now.
+No, I am not watering the plants now.
+
+18.Is she walking in the park now?
+Yes, she is walking in the park now.
+No, she is not walking in the park now.
+
+19.Are they writing letters now?
+Yes, they are writing letters now.
+No, they are not writing letters now.
+
+20.Is he eating fruits now?
+Yes, he is eating fruits now.
+No, he is not eating fruits now.
+
+21.Are you sleeping early now?
+Yes, I am sleeping early now.
+No, I am not sleeping early now.
+
+22.Is she cooking food now?
+Yes, she is cooking food now.
+No, she is not cooking food now.
+
+23.Are they practicing dancing now?
+Yes, they are practicing dancing now.
+No, they are not practicing dancing now.
+
+24.Is your uncle walking in the park now?
+Yes, my uncle is walking in the park now.
+No, my uncle is not walking in the park now.
+
+25.Are you learning new vocabulary now?
+Yes, I am learning new vocabulary now.
+No, I am not learning new vocabulary now.
+
+26.Is he brushing his teeth twice now?
+Yes, he is brushing his teeth twice now.
+No, he is not brushing his teeth twice now.
+
+27.Are the girls participating in activities now?
+Yes, the girls are participating in activities now.
+No, the girls are not participating in activities now.
+
+28.Are you talking to your friend now?
+Yes, I am talking to my friend now.
+No, I am not talking to my friend now.
+
+29.Is she preparing breakfast now?
+Yes, she is preparing breakfast now.
+No, she is not preparing breakfast now.
+
+30.Are they respecting their teachers now?
+Yes, they are respecting their teachers now.
+No, they are not respecting their teachers now.
+`
+      },
+
+      {
+        id: 5,
+        title: "5.At 9 O'Clock Yesterday",
+        content: `
+1.Were you waking up early at 9 o'clock yesterday?
+Yes, I was waking up early at 9 o'clock yesterday.
+No, I was not waking up early at 9 o'clock yesterday.
+
+2.Was she going to school at 9 o'clock yesterday?
+Yes, she was going to school at 9 o'clock yesterday.
+No, she was not going to school at 9 o'clock yesterday.
+
+3.Were they playing cricket at 9 o'clock yesterday?
+Yes, they were playing cricket at 9 o'clock yesterday.
+No, they were not playing cricket at 9 o'clock yesterday.
+
+4.Was he studying English at 9 o'clock yesterday?
+Yes, he was studying English at 9 o'clock yesterday.
+No, he was not studying English at 9 o'clock yesterday.
+
+5.Were you drinking milk at 9 o'clock yesterday?
+Yes, I was drinking milk at 9 o'clock yesterday.
+No, I was not drinking milk at 9 o'clock yesterday.
+
+6.Was she drawing pictures at 9 o'clock yesterday?
+Yes, she was drawing pictures at 9 o'clock yesterday.
+No, she was not drawing pictures at 9 o'clock yesterday.
+
+7.Were they watching television at 9 o'clock yesterday?
+Yes, they were watching television at 9 o'clock yesterday.
+No, they were not watching television at 9 o'clock yesterday.
+
+8.Was he playing football at 9 o'clock yesterday?
+Yes, he was playing football at 9 o'clock yesterday.
+No, he was not playing football at 9 o'clock yesterday.
+
+9.Were you reading storybooks at 9 o'clock yesterday?
+Yes, I was reading storybooks at 9 o'clock yesterday.
+No, I was not reading storybooks at 9 o'clock yesterday.
+
+10.Was she cleaning her room at 9 o'clock yesterday?
+Yes, she was cleaning her room at 9 o'clock yesterday.
+No, she was not cleaning her room at 9 o'clock yesterday.
+
+11.Were they visiting their grandparents at 9 o'clock yesterday?
+Yes, they were visiting their grandparents at 9 o'clock yesterday.
+No, they were not visiting their grandparents at 9 o'clock yesterday.
+
+12.Was he washing his hands at 9 o'clock yesterday?
+Yes, he was washing his hands at 9 o'clock yesterday.
+No, he was not washing his hands at 9 o'clock yesterday.
+
+13.Were you brushing your teeth at 9 o'clock yesterday?
+Yes, I was brushing my teeth at 9 o'clock yesterday.
+No, I was not brushing my teeth at 9 o'clock yesterday.
+
+14.Was she helping her mother at 9 o'clock yesterday?
+Yes, she was helping her mother at 9 o'clock yesterday.
+No, she was not helping her mother at 9 o'clock yesterday.
+
+15.Were they practicing singing at 9 o'clock yesterday?
+Yes, they were practicing singing at 9 o'clock yesterday.
+No, they were not practicing singing at 9 o'clock yesterday.
+
+16.Was he driving a car at 9 o'clock yesterday?
+Yes, he was driving a car at 9 o'clock yesterday.
+No, he was not driving a car at 9 o'clock yesterday.
+
+17.Were you watering the plants at 9 o'clock yesterday?
+Yes, I was watering the plants at 9 o'clock yesterday.
+No, I was not watering the plants at 9 o'clock yesterday.
+
+18.Was she walking in the park at 9 o'clock yesterday?
+Yes, she was walking in the park at 9 o'clock yesterday.
+No, she was not walking in the park at 9 o'clock yesterday.
+
+19.Were they writing letters at 9 o'clock yesterday?
+Yes, they were writing letters at 9 o'clock yesterday.
+No, they were not writing letters at 9 o'clock yesterday.
+
+20.Was he eating fruits at 9 o'clock yesterday?
+Yes, he was eating fruits at 9 o'clock yesterday.
+No, he was not eating fruits at 9 o'clock yesterday.
+
+21.Were you sleeping early at 9 o'clock yesterday?
+Yes, I was sleeping early at 9 o'clock yesterday.
+No, I was not sleeping early at 9 o'clock yesterday.
+
+22.Was she cooking food at 9 o'clock yesterday?
+Yes, she was cooking food at 9 o'clock yesterday.
+No, she was not cooking food at 9 o'clock yesterday.
+
+23.Were they practicing dancing at 9 o'clock yesterday?
+Yes, they were practicing dancing at 9 o'clock yesterday.
+No, they were not practicing dancing at 9 o'clock yesterday.
+
+24.Was your uncle walking in the park at 9 o'clock yesterday?
+Yes, my uncle was walking in the park at 9 o'clock yesterday.
+No, my uncle was not walking in the park at 9 o'clock yesterday.
+
+25.Were you learning new vocabulary at 9 o'clock yesterday?
+Yes, I was learning new vocabulary at 9 o'clock yesterday.
+No, I was not learning new vocabulary at 9 o'clock yesterday.
+
+26.Was he brushing his teeth twice at 9 o'clock yesterday?
+Yes, he was brushing his teeth twice at 9 o'clock yesterday.
+No, he was not brushing his teeth twice at 9 o'clock yesterday.
+
+27.Were the girls participating in activities at 9 o'clock yesterday?
+Yes, the girls were participating in activities at 9 o'clock yesterday.
+No, the girls were not participating in activities at 9 o'clock yesterday.
+
+28.Were you talking to your friend at 9 o'clock yesterday?
+Yes, I was talking to my friend at 9 o'clock yesterday.
+No, I was not talking to my friend at 9 o'clock yesterday.
+
+29.Was she preparing breakfast at 9 o'clock yesterday?
+Yes, she was preparing breakfast at 9 o'clock yesterday.
+No, she was not preparing breakfast at 9 o'clock yesterday.
+
+30.Were they respecting their teachers at 9 o'clock yesterday?
+Yes, they were respecting their teachers at 9 o'clock yesterday.
+No, they were not respecting their teachers at 9 o'clock yesterday.
+`
+      },
+
+      {
+        id: 6,
+        title: "6.At 9 O'Clock Tomorrow",
+        content: `
+1.Will you be waking up early at 9 o'clock tomorrow?
+Yes, I will be waking up early at 9 o'clock tomorrow.
+No, I will not be waking up early at 9 o'clock tomorrow.
+
+2.Will she be going to school at 9 o'clock tomorrow?
+Yes, she will be going to school at 9 o'clock tomorrow.
+No, she will not be going to school at 9 o'clock tomorrow.
+
+3.Will they be playing cricket at 9 o'clock tomorrow?
+Yes, they will be playing cricket at 9 o'clock tomorrow.
+No, they will not be playing cricket at 9 o'clock tomorrow.
+
+4.Will he be studying English at 9 o'clock tomorrow?
+Yes, he will be studying English at 9 o'clock tomorrow.
+No, he will not be studying English at 9 o'clock tomorrow.
+
+5.Will you be drinking milk at 9 o'clock tomorrow?
+Yes, I will be drinking milk at 9 o'clock tomorrow.
+No, I will not be drinking milk at 9 o'clock tomorrow.
+
+6.Will she be drawing pictures at 9 o'clock tomorrow?
+Yes, she will be drawing pictures at 9 o'clock tomorrow.
+No, she will not be drawing pictures at 9 o'clock tomorrow.
+
+7.Will they be watching television at 9 o'clock tomorrow?
+Yes, they will be watching television at 9 o'clock tomorrow.
+No, they will not be watching television at 9 o'clock tomorrow.
+
+8.Will he be playing football at 9 o'clock tomorrow?
+Yes, he will be playing football at 9 o'clock tomorrow.
+No, he will not be playing football at 9 o'clock tomorrow.
+
+9.Will you be reading storybooks at 9 o'clock tomorrow?
+Yes, I will be reading storybooks at 9 o'clock tomorrow.
+No, I will not be reading storybooks at 9 o'clock tomorrow.
+
+10.Will she be cleaning her room at 9 o'clock tomorrow?
+Yes, she will be cleaning her room at 9 o'clock tomorrow.
+No, she will not be cleaning her room at 9 o'clock tomorrow.
+
+11.Will they be visiting their grandparents at 9 o'clock tomorrow?
+Yes, they will be visiting their grandparents at 9 o'clock tomorrow.
+No, they will not be visiting their grandparents at 9 o'clock tomorrow.
+
+12.Will he be washing his hands at 9 o'clock tomorrow?
+Yes, he will be washing his hands at 9 o'clock tomorrow.
+No, he will not be washing his hands at 9 o'clock tomorrow.
+
+13.Will you be brushing your teeth at 9 o'clock tomorrow?
+Yes, I will be brushing my teeth at 9 o'clock tomorrow.
+No, I will not be brushing my teeth at 9 o'clock tomorrow.
+
+14.Will she be helping her mother at 9 o'clock tomorrow?
+Yes, she will be helping her mother at 9 o'clock tomorrow.
+No, she will not be helping her mother at 9 o'clock tomorrow.
+
+15.Will they be practicing singing at 9 o'clock tomorrow?
+Yes, they will be practicing singing at 9 o'clock tomorrow.
+No, they will not be practicing singing at 9 o'clock tomorrow.
+
+16.Will he be driving a car at 9 o'clock tomorrow?
+Yes, he will be driving a car at 9 o'clock tomorrow.
+No, he will not be driving a car at 9 o'clock tomorrow.
+
+17.Will you be watering the plants at 9 o'clock tomorrow?
+Yes, I will be watering the plants at 9 o'clock tomorrow.
+No, I will not be watering the plants at 9 o'clock tomorrow.
+
+18.Will she be walking in the park at 9 o'clock tomorrow?
+Yes, she will be walking in the park at 9 o'clock tomorrow.
+No, she will not be walking in the park at 9 o'clock tomorrow.
+
+19.Will they be writing letters at 9 o'clock tomorrow?
+Yes, they will be writing letters at 9 o'clock tomorrow.
+No, they will not be writing letters at 9 o'clock tomorrow.
+
+20.Will he be eating fruits at 9 o'clock tomorrow?
+Yes, he will be eating fruits at 9 o'clock tomorrow.
+No, he will not be eating fruits at 9 o'clock tomorrow.
+
+21.Will you be sleeping early at 9 o'clock tomorrow?
+Yes, I will be sleeping early at 9 o'clock tomorrow.
+No, I will not be sleeping early at 9 o'clock tomorrow.
+
+22.Will she be cooking food at 9 o'clock tomorrow?
+Yes, she will be cooking food at 9 o'clock tomorrow.
+No, she will not be cooking food at 9 o'clock tomorrow.
+
+23.Will they be practicing dancing at 9 o'clock tomorrow?
+Yes, they will be practicing dancing at 9 o'clock tomorrow.
+No, they will not be practicing dancing at 9 o'clock tomorrow.
+
+24.Will your uncle be walking in the park at 9 o'clock tomorrow?
+Yes, my uncle will be walking in the park at 9 o'clock tomorrow.
+No, my uncle will not be walking in the park at 9 o'clock tomorrow.
+
+25.Will you be learning new vocabulary at 9 o'clock tomorrow?
+Yes, I will be learning new vocabulary at 9 o'clock tomorrow.
+No, I will not be learning new vocabulary at 9 o'clock tomorrow.
+
+26.Will he be brushing his teeth twice at 9 o'clock tomorrow?
+Yes, he will be brushing his teeth twice at 9 o'clock tomorrow.
+No, he will not be brushing his teeth twice at 9 o'clock tomorrow.
+
+27.Will the girls be participating in activities at 9 o'clock tomorrow?
+Yes, the girls will be participating in activities at 9 o'clock tomorrow.
+No, the girls will not be participating in activities at 9 o'clock tomorrow.
+
+28.Will you be talking to your friend at 9 o'clock tomorrow?
+Yes, I will be talking to my friend at 9 o'clock tomorrow.
+No, I will not be talking to my friend at 9 o'clock tomorrow.
+
+29.Will she be preparing breakfast at 9 o'clock tomorrow?
+Yes, she will be preparing breakfast at 9 o'clock tomorrow.
+No, she will not be preparing breakfast at 9 o'clock tomorrow.
+
+30.Will they be respecting their teachers at 9 o'clock tomorrow?
+Yes, they will be respecting their teachers at 9 o'clock tomorrow.
+No, they will not be respecting their teachers at 9 o'clock tomorrow.
+`
+      },
+
+      {
+        id: 7,
+        title: "7.Already",
+        content: `
+1.Have you already woken up early?
+Yes, I have already woken up early.
+No, I have not already woken up early.
+
+2.Has she already gone to school?
+Yes, she has already gone to school.
+No, she has not already gone to school.
+
+3.Have they already played cricket?
+Yes, they have already played cricket.
+No, they have not already played cricket.
+
+4.Has he already studied English?
+Yes, he has already studied English.
+No, he has not already studied English.
+
+5.Have you already drunk milk?
+Yes, I have already drunk milk.
+No, I have not already drunk milk.
+
+6.Has she already drawn pictures?
+Yes, she has already drawn pictures.
+No, she has not already drawn pictures.
+
+7.Have they already watched television?
+Yes, they have already watched television.
+No, they have not already watched television.
+
+8.Has he already played football?
+Yes, he has already played football.
+No, he has not already played football.
+
+9.Have you already read storybooks?
+Yes, I have already read storybooks.
+No, I have not already read storybooks.
+
+10.Has she already cleaned her room?
+Yes, she has already cleaned her room.
+No, she has not already cleaned her room.
+
+11.Have they already visited their grandparents?
+Yes, they have already visited their grandparents.
+No, they have not already visited their grandparents.
+
+12.Has he already washed his hands?
+Yes, he has already washed his hands.
+No, he has not already washed his hands.
+
+13.Have you already brushed your teeth?
+Yes, I have already brushed my teeth.
+No, I have not already brushed my teeth.
+
+14.Has she already helped her mother?
+Yes, she has already helped her mother.
+No, she has not already helped her mother.
+
+15.Have they already practiced singing?
+Yes, they have already practiced singing.
+No, they have not already practiced singing.
+
+16.Has he already driven a car?
+Yes, he has already driven a car.
+No, he has not already driven a car.
+
+17.Have you already watered the plants?
+Yes, I have already watered the plants.
+No, I have not already watered the plants.
+
+18.Has she already walked in the park?
+Yes, she has already walked in the park.
+No, she has not already walked in the park.
+
+19.Have they already written letters?
+Yes, they have already written letters.
+No, they have not already written letters.
+
+20.Has he already eaten fruits?
+Yes, he has already eaten fruits.
+No, he has not already eaten fruits.
+
+21.Have you already slept early?
+Yes, I have already slept early.
+No, I have not already slept early.
+
+22.Has she already cooked food?
+Yes, she has already cooked food.
+No, she has not already cooked food.
+
+23.Have they already practiced dancing?
+Yes, they have already practiced dancing.
+No, they have not already practiced dancing.
+
+24.Has your uncle already walked in the park?
+Yes, my uncle has already walked in the park.
+No, my uncle has not already walked in the park.
+
+25.Have you already learned new vocabulary?
+Yes, I have already learned new vocabulary.
+No, I have not already learned new vocabulary.
+
+26.Has he already brushed his teeth twice?
+Yes, he has already brushed his teeth twice.
+No, he has not already brushed his teeth twice.
+
+27.Have the girls already participated in activities?
+Yes, the girls have already participated in activities.
+No, the girls have not already participated in activities.
+
+28.Have you already talked to your friend?
+Yes, I have already talked to my friend.
+No, I have not already talked to my friend.
+
+29.Has she already prepared breakfast?
+Yes, she has already prepared breakfast.
+No, she has not already prepared breakfast.
+
+30.Have they already respected their teachers?
+Yes, they have already respected their teachers.
+No, they have not already respected their teachers.
+`
+      },
+
+      {
+        id: 8,
+        title: "8.For 2 Hours",
+        content: `
+1.Have you been waking up early for 2 hours?
+Yes, I have been waking up early for 2 hours.
+No, I have not been waking up early for 2 hours.
+
+2.Has she been going to school for 2 hours?
+Yes, she has been going to school for 2 hours.
+No, she has not been going to school for 2 hours.
+
+3.Have they been playing cricket for 2 hours?
+Yes, they have been playing cricket for 2 hours.
+No, they have not been playing cricket for 2 hours.
+
+4.Has he been studying English for 2 hours?
+Yes, he has been studying English for 2 hours.
+No, he has not been studying English for 2 hours.
+
+5.Have you been drinking milk for 2 hours?
+Yes, I have been drinking milk for 2 hours.
+No, I have not been drinking milk for 2 hours.
+
+6.Has she been drawing pictures for 2 hours?
+Yes, she has been drawing pictures for 2 hours.
+No, she has not been drawing pictures for 2 hours.
+
+7.Have they been watching television for 2 hours?
+Yes, they have been watching television for 2 hours.
+No, they have not been watching television for 2 hours.
+
+8.Has he been playing football for 2 hours?
+Yes, he has been playing football for 2 hours.
+No, he has not been playing football for 2 hours.
+
+9.Have you been reading storybooks for 2 hours?
+Yes, I have been reading storybooks for 2 hours.
+No, I have not been reading storybooks for 2 hours.
+
+10.Has she been cleaning her room for 2 hours?
+Yes, she has been cleaning her room for 2 hours.
+No, she has not been cleaning her room for 2 hours.
+
+11.Have they been visiting their grandparents for 2 hours?
+Yes, they have been visiting their grandparents for 2 hours.
+No, they have not been visiting their grandparents for 2 hours.
+
+12.Has he been washing his hands for 2 hours?
+Yes, he has been washing his hands for 2 hours.
+No, he has not been washing his hands for 2 hours.
+
+13.Have you been brushing your teeth for 2 hours?
+Yes, I have been brushing my teeth for 2 hours.
+No, I have not been brushing my teeth for 2 hours.
+
+14.Has she been helping her mother for 2 hours?
+Yes, she has been helping her mother for 2 hours.
+No, she has not been helping her mother for 2 hours.
+
+15.Have they been practicing singing for 2 hours?
+Yes, they have been practicing singing for 2 hours.
+No, they have not been practicing singing for 2 hours.
+
+16.Has he been driving a car for 2 hours?
+Yes, he has been driving a car for 2 hours.
+No, he has not been driving a car for 2 hours.
+
+17.Have you been watering the plants for 2 hours?
+Yes, I have been watering the plants for 2 hours.
+No, I have not been watering the plants for 2 hours.
+
+18.Has she been walking in the park for 2 hours?
+Yes, she has been walking in the park for 2 hours.
+No, she has not been walking in the park for 2 hours.
+
+19.Have they been writing letters for 2 hours?
+Yes, they have been writing letters for 2 hours.
+No, they have not been writing letters for 2 hours.
+
+20.Has he been eating fruits for 2 hours?
+Yes, he has been eating fruits for 2 hours.
+No, he has not been eating fruits for 2 hours.
+
+21.Have you been sleeping early for 2 hours?
+Yes, I have been sleeping early for 2 hours.
+No, I have not been sleeping early for 2 hours.
+
+22.Has she been cooking food for 2 hours?
+Yes, she has been cooking food for 2 hours.
+No, she has not been cooking food for 2 hours.
+
+23.Have they been practicing dancing for 2 hours?
+Yes, they have been practicing dancing for 2 hours.
+No, they have not been practicing dancing for 2 hours.
+
+24.Has your uncle been walking in the park for 2 hours?
+Yes, my uncle has been walking in the park for 2 hours.
+No, my uncle has not been walking in the park for 2 hours.
+
+25.Have you been learning new vocabulary for 2 hours?
+Yes, I have been learning new vocabulary for 2 hours.
+No, I have not been learning new vocabulary for 2 hours.
+
+26.Has he been brushing his teeth twice for 2 hours?
+Yes, he has been brushing his teeth twice for 2 hours.
+No, he has not been brushing his teeth twice for 2 hours.
+
+27.Have the girls been participating in activities for 2 hours?
+Yes, the girls have been participating in activities for 2 hours.
+No, the girls have not been participating in activities for 2 hours.
+
+28.Have you been talking to your friend for 2 hours?
+Yes, I have been talking to my friend for 2 hours.
+No, I have not been talking to my friend for 2 hours.
+
+29.Has she been preparing breakfast for 2 hours?
+Yes, she has been preparing breakfast for 2 hours.
+No, she has not been preparing breakfast for 2 hours.
+
+30.Have they been respecting their teachers for 2 hours?
+Yes, they have been respecting their teachers for 2 hours.
+No, they have not been respecting their teachers for 2 hours.
+`
+      }
     ],
   },
 };
