@@ -121,18 +121,17 @@ export default function VoiceBot() {
     const utterance = new SpeechSynthesisUtterance(text);
     activeUtteranceRef.current = utterance;
 
+    // Chrome's Indian English voice — find en-IN, which Chrome provides natively
     const voices = window.speechSynthesis.getVoices();
-    const femaleVoice = voices.find(v => 
-      (v.name.toLowerCase().includes("female") || 
-       v.name.toLowerCase().includes("zira") || 
-       v.name.toLowerCase().includes("google") || 
-       v.name.toLowerCase().includes("samantha")) && 
-      v.lang.includes("en")
-    );
 
-    if (femaleVoice) {
-      utterance.voice = femaleVoice;
+    // Pick the first en-IN voice Chrome provides (e.g. "Google हिन्दी" / Indian English)
+    const selectedVoice = voices.find(v => v.lang === "en-IN");
+
+    if (selectedVoice) {
+      utterance.voice = selectedVoice;
     }
+    // Always set lang to en-IN so Chrome uses Indian English pronunciation
+    utterance.lang = "en-IN";
     
     utterance.pitch = 1.15;
     utterance.rate = 0.95;
@@ -184,7 +183,7 @@ export default function VoiceBot() {
     setMode("NAVIGATION");
     setAppState("SPEAKING");
 
-    const welcome = "Welcome to Excellence Voices! I am Praveena, your Excellence AI Trainer. You can tell me to: Go to Class 9, Read a story, or Practice dialogues.";
+    const welcome = "Welcome to Excellence Voices! I am Praveena, your Excellence AI Trainer. You can say: Go to Class 9, Read 1st story of Class 2, Read 3rd skit, or just Read 4th story if you are already in a class.";
     speak(welcome);
   };
 
@@ -334,70 +333,139 @@ export default function VoiceBot() {
     return null;
   };
 
-  // Helper to parse ordinal commands like "read 1st story of class 1st"
-  const parseOrdinalCommand = (query) => {
-    let normalized = query.toLowerCase()
-      .replace(/first/g, "1st")
-      .replace(/second/g, "2nd")
-      .replace(/third/g, "3rd")
-      .replace(/fourth/g, "4th")
-      .replace(/fifth/g, "5th")
-      .replace(/sixth/g, "6th")
-      .replace(/seventh/g, "7th")
-      .replace(/eighth/g, "8th")
-      .replace(/ninth/g, "9th")
-      .replace(/tenth/g, "10th")
-      .replace(/eleventh/g, "11th")
-      .replace(/twelfth/g, "12th")
-      .replace(/one/g, "1")
-      .replace(/two/g, "2")
-      .replace(/three/g, "3")
-      .replace(/four/g, "4")
-      .replace(/five/g, "5")
-      .replace(/six/g, "6")
-      .replace(/seven/g, "7")
-      .replace(/eight/g, "8")
-      .replace(/nine/g, "9")
-      .replace(/ten/g, "10")
-      .replace(/eleven/g, "11")
-      .replace(/twelve/g, "12");
+  // Normalize number words to digits/ordinals
+  // Uses simple string replacement (no \b) for max compatibility across browsers/mobile
+  const normalizeNumbers = (text) => {
+    let t = text.toLowerCase();
+    // Ordinal words first (longer matches first to avoid partial replacements)
+    t = t.replace(/\btwelfth\b/g, "12th").replace(/\beleventh\b/g, "11th").replace(/\btenth\b/g, "10th");
+    t = t.replace(/\bninth\b/g, "9th").replace(/\beighth\b/g, "8th").replace(/\bseventh\b/g, "7th");
+    t = t.replace(/\bsixth\b/g, "6th").replace(/\bfifth\b/g, "5th").replace(/\bfourth\b/g, "4th");
+    t = t.replace(/\bthird\b/g, "3rd").replace(/\bsecond\b/g, "2nd").replace(/\bfirst\b/g, "1st");
+    // Cardinal words (longer first to avoid 'twelve' matching inside nothing, but still safe)
+    t = t.replace(/\btwelve\b/g, "12").replace(/\beleven\b/g, "11").replace(/\bten\b/g, "10");
+    t = t.replace(/\bnine\b/g, "9").replace(/\beight\b/g, "8").replace(/\bseven\b/g, "7");
+    t = t.replace(/\bsix\b/g, "6").replace(/\bfive\b/g, "5").replace(/\bfour\b/g, "4");
+    t = t.replace(/\bthree\b/g, "3").replace(/\btwo\b/g, "2").replace(/\bone\b/g, "1");
+    return t;
+  };
 
+  /**
+   * Smart ordinal command parser — handles flexible word order & context-awareness.
+   *
+   * Supported patterns:
+   *  - "read 1st story of class 2"           → item 1 in class-2 stories
+   *  - "read 1st story of 2nd class"          → item 1 in class-2 stories
+   *  - "go to 1st class read 4th story"       → item 4 in class-1 stories
+   *  - "read 4th story" (when on class-8 page)→ item 4 in class-8 stories (uses URL context)
+   *  - "read 3rd skit" (on class-8 skits page)→ item 3 in class-8 skits (uses URL+category context)
+   *
+   * @param {string} query Raw voice transcript
+   * @param {string} currentPath Current URL pathname for context fallback
+   */
+  const parseOrdinalCommand = (query, currentPath = "") => {
+    const normalized = normalizeNumbers(query);
+
+    // Determine action verb
     let action = "";
     if (normalized.includes("read")) action = "read";
     else if (normalized.includes("practice") || normalized.includes("start")) action = "practice";
     else if (normalized.includes("open") || normalized.includes("go to")) action = "open";
-
     if (!action) return null;
 
-    // Ordinal match for the item index (e.g. "1st story")
-    const ordinalMatch = normalized.match(/([1-9]|10|11|12)(?:st|nd|rd|th)?/);
-    if (!ordinalMatch) return null;
-    const ordinalIndex = parseInt(ordinalMatch[1], 10) - 1;
-
-    // Category match
+    // Detect category keyword
     let category = "";
-    if (normalized.includes("story") || normalized.includes("stories")) category = "stories";
-    else if (normalized.includes("roleplay") || normalized.includes("role plays") || normalized.includes("role play")) category = "roleplays";
-    else if (normalized.includes("skit") || normalized.includes("skits")) category = "skits";
-    else if (normalized.includes("activity") || normalized.includes("activities")) category = "activities";
-    else if (normalized.includes("thought") || normalized.includes("thoughts")) category = "goodThoughts";
+    if (normalized.includes("stor")) category = "stories";           // story / stories
+    else if (normalized.includes("roleplay") || normalized.includes("role play")) category = "roleplays";
+    else if (normalized.includes("skit")) category = "skits";
+    else if (normalized.includes("activit")) category = "activities"; // activity / activities
+    else if (normalized.includes("thought")) category = "goodThoughts";
     else if (normalized.includes("speaking") || normalized.includes("speech")) category = "publicSpeaking";
-    else if (normalized.includes("sentence") || normalized.includes("sentences")) category = "stockSentences";
+    else if (normalized.includes("sentence")) category = "stockSentences";
+
+    // Extract ALL numbers with optional ordinal suffix, preserving their position
+    const numPattern = /(\d+)(?:st|nd|rd|th)?/g;
+    const allNums = [];
+    let m;
+    while ((m = numPattern.exec(normalized)) !== null) {
+      allNums.push({ value: parseInt(m[1], 10), index: m.index });
+    }
+
+    if (allNums.length === 0) return null;
+
+    // --- Resolve CLASS number ---
+    let classNum = null;
+
+    // Strategy 1: number immediately after the word "class"
+    const classWordPos = normalized.lastIndexOf("class");
+    if (classWordPos !== -1) {
+      // find the first number AFTER "class"
+      const afterClass = allNums.filter(n => n.index > classWordPos);
+      if (afterClass.length > 0) classNum = afterClass[0].value;
+    }
+
+    // Strategy 2: number immediately BEFORE the word "class" (e.g. "2nd class")
+    if (classNum === null && classWordPos !== -1) {
+      const beforeClass = allNums.filter(n => n.index < classWordPos);
+      if (beforeClass.length > 0) classNum = beforeClass[beforeClass.length - 1].value;
+    }
+
+    // Strategy 3: fall back to URL context (current class from path)
+    if (classNum === null && currentPath) {
+      const pathParts = currentPath.split("/");
+      // e.g. /students/class-8/skits/3  → pathParts[2] = "class-8"
+      const classSegment = pathParts.find(p => p.startsWith("class-"));
+      if (classSegment) classNum = parseInt(classSegment.replace("class-", ""), 10);
+    }
+
+    if (classNum === null) return null;
+    const classKey = `class-${classNum}`;
+
+    // --- Resolve ITEM (category) category from URL context if not said ---
+    if (!category && currentPath) {
+      const pathParts = currentPath.split("/");
+      // e.g. /students/class-8/skits/3 → pathParts[3] = "skits"
+      const knownCategories = ["stories", "roleplays", "skits", "activities", "goodThoughts", "publicSpeaking", "stockSentences"];
+      const urlCat = pathParts.find(p => knownCategories.includes(p));
+      if (urlCat) category = urlCat;
+    }
 
     if (!category) return null;
 
-    // Class match: extract the number after the word "class"
-    const classSection = normalized.split("class")[1];
-    if (!classSection) return null;
+    // --- Resolve ITEM ordinal index ---
+    // It's the number NOT used for class.
+    // If class was resolved from URL context, all numbers are candidates for item index.
+    let itemOrdinal = null;
+    if (allNums.length === 1) {
+      // Only one number found → it is the item index (class came from URL context)
+      itemOrdinal = allNums[0].value;
+    } else {
+      // Multiple numbers: pick the one NOT used as the class number.
+      // The class number we matched is 'classNum'. Find the OTHER number.
+      // Prefer the number associated with a category keyword (nearest to category word).
+      const catWordPos = normalized.search(/stor|roleplay|skit|activit|thought|speaking|sentence/);
+      if (catWordPos !== -1) {
+        // closest number to the category word that is not classNum
+        const candidates = allNums.filter(n => n.value !== classNum || allNums.filter(x => x.value === classNum).length > 1);
+        if (candidates.length > 0) {
+          const nearest = candidates.reduce((a, b) =>
+            Math.abs(a.index - catWordPos) < Math.abs(b.index - catWordPos) ? a : b
+          );
+          itemOrdinal = nearest.value;
+        }
+      }
+      // Fallback: use the first number that isn't classNum
+      if (itemOrdinal === null) {
+        const other = allNums.find(n => n.value !== classNum);
+        itemOrdinal = other ? other.value : allNums[0].value;
+      }
+    }
 
-    const classMatch = classSection.match(/([1-9]|10|11|12)/);
-    if (!classMatch) return null;
-    const classNum = classMatch[1];
-    const classKey = `class-${classNum}`;
+    if (itemOrdinal === null) return null;
 
     return {
       action,
-      ordinalIndex,
+      ordinalIndex: itemOrdinal - 1,   // convert 1-based to 0-based
       category,
       classKey
     };
@@ -405,7 +473,9 @@ export default function VoiceBot() {
 
   // Routing speech transcripts
   const handleSpeechInput = (transcript) => {
-    const query = transcript.toLowerCase().trim();
+    // Normalize number words immediately so ALL checks below work correctly
+    // e.g. speech API gives "read first story from class eight" → "read 1st story from class 8"
+    const query = normalizeNumbers(transcript.trim());
 
     // Global Exit Check
     const exitKeywords = ["stop", "cancel", "exit", "bye", "close", "quit"];
@@ -472,8 +542,10 @@ export default function VoiceBot() {
     }
 
     // --- 3. GENERAL NAVIGATION & INITIATION COMMANDS ---
-    // Ordinal Voice Commands, e.g. "read 1st story of class 1st"
-    const ordinalCmd = parseOrdinalCommand(query);
+    // Ordinal Voice Commands — now context-aware, e.g.:
+    //  "read 1st story of class 2", "read 1st story of 2nd class",
+    //  "go to 1st class read 4th story", "read 4th story" (when on a class page)
+    const ordinalCmd = parseOrdinalCommand(query, location.pathname);
     if (ordinalCmd) {
       const { action, ordinalIndex, category, classKey } = ordinalCmd;
       const classData = studentsData[classKey];
@@ -503,9 +575,9 @@ export default function VoiceBot() {
       }
     }
 
-    // Class Navigation
-    if (query.includes("go to class") || query.includes("open class")) {
-      const match = query.match(/(?:class)\s*([1-9]|10|11|12)/);
+    // Class Navigation — supports both "class 8" and "class eight" (already normalized)
+    if (query.includes("go to class") || query.includes("open class") || query.includes("go class")) {
+      const match = query.match(/class\s*(\d+)/);
       if (match) {
         const classNum = match[1];
         navigate(`/students/class-${classNum}`);
@@ -561,7 +633,7 @@ export default function VoiceBot() {
 
     // Help command
     if (query.includes("help") || query.includes("what can i say")) {
-      speak("You can say: Go to Class 9, Read [Story Title], Practice [Skit Title], or Go Back.", () => {
+      speak("You can say: Go to Class 9. Read 1st story of Class 2. Read 1st story of 2nd class. Or if you are already in a class, just say Read 4th story or Read 3rd skit. You can also say Practice Skit or Go Back.", () => {
         setAppState("LISTENING");
       });
       return;
@@ -1055,14 +1127,18 @@ export default function VoiceBot() {
                           <span style={{ color: "var(--text-secondary)", fontSize: "0.75rem", display: "block", marginTop: "4px" }}>({userRole} dialogue line)</span>
                         </div>
                       ) : appState === "SPEAKING" ? (
-                        <div 
-                          style={{ 
-                            fontSize: "1.3rem", 
-                            color: "var(--accent)", 
-                            fontWeight: "bold", 
-                            textShadow: "0 0 10px rgba(245,158,11,0.2)", 
-                            padding: "0 10px",
-                            lineHeight: "1.4"
+                        <div
+                          style={{
+                            fontSize: "1.35rem",
+                            color: "#ffffff",
+                            fontWeight: "700",
+                            lineHeight: "1.5",
+                            padding: "14px 18px",
+                            background: "rgba(0, 0, 0, 0.45)",
+                            borderRadius: "12px",
+                            border: "1px solid rgba(255,255,255,0.15)",
+                            textShadow: "0 1px 6px rgba(0,0,0,0.8)",
+                            letterSpacing: "0.3px"
                           }}
                         >
                           "{currentCaptionLine}"

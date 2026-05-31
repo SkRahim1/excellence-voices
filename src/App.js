@@ -24,17 +24,14 @@ import ContentPage from "./components/students/ContentPage";
 import TrainerProtectedPopup from "./components/TrainerProtectedPopup";
 import VoiceBot from "./components/students/VoiceBot";
 /* PASSWORD PROTECTION */
-function ProtectedRoute({ children }) {
-  const [password, setPassword] = useState("");
-
-  // CHECK SAVED LOGIN
+/* Check if student is currently authenticated (used to gate VoiceBot too) */
+function getStudentAuthStatus() {
   const savedLogin = JSON.parse(localStorage.getItem("studentAccess"));
+  return savedLogin && savedLogin.loggedIn && Date.now() < savedLogin.expiry;
+}
 
-  // CHECK IF LOGIN IS STILL VALID
-  const isStillValid =
-    savedLogin && savedLogin.loggedIn && Date.now() < savedLogin.expiry;
-
-  const [isAuthenticated, setIsAuthenticated] = useState(isStillValid);
+function ProtectedRoute({ children, isAuthenticated, setIsAuthenticated }) {
+  const [password, setPassword] = useState("");
 
   const correctPassword = "excellencestudents"; // change password here
 
@@ -58,11 +55,6 @@ function ProtectedRoute({ children }) {
       alert("Wrong Password");
     }
   };
-
-  // REMOVE LOGIN IF EXPIRED
-  if (!isStillValid) {
-    localStorage.removeItem("studentAccess");
-  }
 
   if (!isAuthenticated) {
     return (
@@ -140,8 +132,18 @@ function ProtectedRoute({ children }) {
 export default function App() {
   const location = useLocation();
   const [activeSection, setActiveSection] = useState("home");
-
   const [menuOpen, setMenuOpen] = useState(false);
+
+  // Student auth state — lifted up here so VoiceBot can be gated behind it
+  const [isStudentAuthenticated, setIsStudentAuthenticated] = useState(getStudentAuthStatus);
+
+  // Clear expired sessions on mount
+  React.useEffect(() => {
+    if (!getStudentAuthStatus()) {
+      localStorage.removeItem("studentAccess");
+      setIsStudentAuthenticated(false);
+    }
+  }, []);
 
   const scrollTo = (id) => {
     setActiveSection(id);
@@ -253,7 +255,8 @@ export default function App() {
         <div className="bg-blur bg3"></div>
 
         <Popup />
-        {location.pathname.startsWith("/students") && <VoiceBot />}
+        {/* Only show VoiceBot after student password is successfully entered */}
+        {location.pathname.startsWith("/students") && isStudentAuthenticated && <VoiceBot />}
         <Routes>
           {/* HOME */}
           <Route
@@ -291,7 +294,7 @@ export default function App() {
           <Route
             path="/students"
             element={
-              <ProtectedRoute>
+              <ProtectedRoute isAuthenticated={isStudentAuthenticated} setIsAuthenticated={setIsStudentAuthenticated}>
                 <StudentsHome />
               </ProtectedRoute>
             }
@@ -300,7 +303,7 @@ export default function App() {
           <Route
             path="/students/:classId"
             element={
-              <ProtectedRoute>
+              <ProtectedRoute isAuthenticated={isStudentAuthenticated} setIsAuthenticated={setIsStudentAuthenticated}>
                 <ClassPage />
               </ProtectedRoute>
             }
@@ -309,7 +312,7 @@ export default function App() {
           <Route
             path="/students/:classId/:category"
             element={
-              <ProtectedRoute>
+              <ProtectedRoute isAuthenticated={isStudentAuthenticated} setIsAuthenticated={setIsStudentAuthenticated}>
                 <CategoryPage />
               </ProtectedRoute>
             }
@@ -318,7 +321,7 @@ export default function App() {
           <Route
             path="/students/:classId/:category/:id"
             element={
-              <ProtectedRoute>
+              <ProtectedRoute isAuthenticated={isStudentAuthenticated} setIsAuthenticated={setIsStudentAuthenticated}>
                 <ContentPage />
               </ProtectedRoute>
             }
