@@ -597,19 +597,77 @@ export default function VoiceBot() {
       return;
     }
 
-    // Start reading current page story
-    if ((query.includes("read story") || query.includes("read this") || query.includes("read aloud")) && getCurrentItem()) {
+    // Start reading current page item (any category)
+    if ((query.includes("read this") || query.includes("read aloud") || query.includes("read story") || query.includes("read skit") || query.includes("read sentence") || query.includes("read thought") || query.includes("read activity")) && getCurrentItem()) {
       startReading(getCurrentItem());
       return;
     }
 
-    // Start roleplaying current page dialogue
-    if ((query.includes("practice dialogue") || query.includes("practice skit") || query.includes("start practice") || query.includes("practice this")) && getCurrentItem()) {
-      setupRoleplay(getCurrentItem());
-      return;
+    // --- CATEGORY-BASED READING without ordinal number ---
+    // e.g. "read skits", "read stock sentences", "read stories" → reads current page OR first item of that category in current class
+    {
+      // Detect which category the user mentioned
+      let spokenCategory = "";
+      if (query.includes("stock sentence") || query.includes("sentences")) spokenCategory = "stockSentences";
+      else if (query.includes("good thought") || (query.includes("thought") && !query.includes("i thought"))) spokenCategory = "goodThoughts";
+      else if (query.includes("public speaking") || query.includes("speaking")) spokenCategory = "publicSpeaking";
+      else if (query.includes("skit")) spokenCategory = "skits";
+      else if (query.includes("roleplay") || query.includes("role play")) spokenCategory = "roleplays";
+      else if (query.includes("activit")) spokenCategory = "activities";
+      else if (query.includes("stor")) spokenCategory = "stories";
+
+      const isReadCommand = query.includes("read") || query.includes("open") || query.includes("start");
+      const isPracticeCommand = query.includes("practice");
+
+      if (spokenCategory && (isReadCommand || isPracticeCommand)) {
+        // Case 1: Currently on a content page of that same category → read/practice it
+        const pathParts = location.pathname.split("/");
+        const urlCategory = pathParts[3];
+        const urlClassId = pathParts.find(p => p.startsWith("class-"));
+        const currentItem = getCurrentItem();
+
+        if (currentItem && urlCategory === spokenCategory) {
+          if (isPracticeCommand) {
+            setupRoleplay(currentItem);
+          } else {
+            startReading(currentItem);
+          }
+          return;
+        }
+
+        // Case 2: On a class page or any students page → open first item of that category in that class
+        if (urlClassId) {
+          const classData = studentsData[urlClassId];
+          const itemsList = classData?.[spokenCategory];
+          if (itemsList && itemsList.length > 0) {
+            const firstItem = itemsList[0];
+            const displayName = spokenCategory === "stockSentences" ? "stock sentences"
+              : spokenCategory === "goodThoughts" ? "good thoughts"
+              : spokenCategory === "publicSpeaking" ? "public speaking"
+              : spokenCategory;
+            navigate(`/students/${urlClassId}/${spokenCategory}/${firstItem.id}`);
+            if (isPracticeCommand) {
+              speak(`Opening ${displayName}. Starting practice for: ${firstItem.title}.`, () => {
+                setupRoleplay(firstItem);
+              });
+            } else {
+              speak(`Opening ${displayName}. Now reading: ${firstItem.title}.`, () => {
+                startReading(firstItem);
+              });
+            }
+            return;
+          }
+        }
+
+        // Case 3: Not in any class → ask them to navigate first
+        speak(`Please go to a class first. Say: Go to Class 8, then say read ${spokenCategory === "stockSentences" ? "stock sentences" : spokenCategory}.`, () => {
+          setAppState("LISTENING");
+        });
+        return;
+      }
     }
 
-    // Read target story
+    // Read target item by title search
     if (query.startsWith("read ") || query.includes("read story ")) {
       const titleQuery = query.replace("read story", "").replace("read", "").replace("story", "").trim();
       const matchInfo = findItemByTitle(titleQuery);
