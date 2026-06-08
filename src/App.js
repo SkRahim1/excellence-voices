@@ -185,6 +185,13 @@ export default function App() {
     },
 
     {
+      label: "Pro Games",
+      id: "pro-games",
+      path: "https://pro.excellencevoices.in/",
+      isExternal: true,
+    },
+
+    {
       label: "Trainers",
       id: "trainers",
       path: "/trainers",

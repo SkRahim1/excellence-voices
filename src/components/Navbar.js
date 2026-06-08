@@ -56,6 +56,20 @@ export default function Navbar({
       {/* DESKTOP NAV */}
       <nav className="nav-links">
         {navItems.map((item) => {
+          if (item.isExternal) {
+            return (
+              <a
+                key={item.id}
+                href={item.path}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="nav-btn"
+              >
+                {item.label}
+              </a>
+            );
+          }
+
           if (
             item.id === "home" ||
             item.id === "about" ||
@@ -118,6 +132,23 @@ export default function Navbar({
             exit="exit"
           >
             {navItems.map((item) => {
+              if (item.isExternal) {
+                return (
+                  <motion.div key={item.id} variants={itemVariants}>
+                    <a
+                      href={item.path}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="mobile-nav-btn"
+                      onClick={() => setMenuOpen(false)}
+                    >
+                      {item.label}
+                      <ChevronRight size={15} style={{ opacity: 0.5 }} />
+                    </a>
+                  </motion.div>
+                );
+              }
+
               const isActive = location.pathname === item.path;
 
               if (
