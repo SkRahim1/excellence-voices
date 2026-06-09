@@ -27,7 +27,7 @@ import VoiceBot from "./components/students/VoiceBot";
 /* Check if student is currently authenticated (used to gate VoiceBot too) */
 function getStudentAuthStatus() {
   const savedLogin = JSON.parse(localStorage.getItem("studentAccess"));
-  return savedLogin && savedLogin.loggedIn && Date.now() < savedLogin.expiry;
+  return savedLogin && savedLogin.loggedIn;
 }
 
 function ProtectedRoute({ children, isAuthenticated, setIsAuthenticated }) {
@@ -39,14 +39,10 @@ function ProtectedRoute({ children, isAuthenticated, setIsAuthenticated }) {
     e.preventDefault();
 
     if (password === correctPassword) {
-      // 1 DAY LOGIN
-      const oneDay = 24 * 60 * 60 * 1000;
-
       localStorage.setItem(
         "studentAccess",
         JSON.stringify({
           loggedIn: true,
-          expiry: Date.now() + oneDay,
         }),
       );
 
@@ -136,14 +132,6 @@ export default function App() {
 
   // Student auth state — lifted up here so VoiceBot can be gated behind it
   const [isStudentAuthenticated, setIsStudentAuthenticated] = useState(getStudentAuthStatus);
-
-  // Clear expired sessions on mount
-  React.useEffect(() => {
-    if (!getStudentAuthStatus()) {
-      localStorage.removeItem("studentAccess");
-      setIsStudentAuthenticated(false);
-    }
-  }, []);
 
   const scrollTo = (id) => {
     setActiveSection(id);
