@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import { Mic, PhoneOff, Shield, SkipForward, Play, Pause, X, AlertCircle } from "lucide-react";
 import { useNavigate, useLocation } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
-import studentsData from "../data/StudentsData";
+import { findItemByTitle, getContentItem, getClassCategoryItems } from "../../services/dataService";
 import "./VoiceBot.css";
 
 export default function VoiceBot() {
@@ -294,41 +294,14 @@ export default function VoiceBot() {
     }
   };
 
-  // Helper to extract title matching item in studentsData
-  const findItemByTitle = (titleQuery) => {
-    const cleanQuery = titleQuery.toLowerCase().trim();
-    let foundItem = null;
-    let foundClass = "";
-    let foundCategory = "";
-
-    Object.keys(studentsData).forEach((clsKey) => {
-      Object.keys(studentsData[clsKey]).forEach((catKey) => {
-        const itemsList = studentsData[clsKey][catKey];
-        if (Array.isArray(itemsList)) {
-          const matched = itemsList.find((i) => 
-            i.title.toLowerCase().includes(cleanQuery) || 
-            cleanQuery.includes(i.title.toLowerCase())
-          );
-          if (matched) {
-            foundItem = matched;
-            foundClass = clsKey;
-            foundCategory = catKey;
-          }
-        }
-      });
-    });
-
-    return foundItem ? { item: foundItem, classKey: foundClass, categoryKey: foundCategory } : null;
-  };
-
   // Helper to get active item on the current route (if any)
-  const getCurrentItem = () => {
+  const getCurrentItem = async () => {
     const pathParts = location.pathname.split("/");
     if (pathParts.length >= 5) {
       const classId = pathParts[2];
       const category = pathParts[3];
       const id = pathParts[4];
-      return studentsData[classId]?.[category]?.find((i) => i.id === Number(id));
+      return await getContentItem(classId, category, id);
     }
     return null;
   };
@@ -472,7 +445,7 @@ export default function VoiceBot() {
   };
 
   // Routing speech transcripts
-  const handleSpeechInput = (transcript) => {
+  const handleSpeechInput = async (transcript) => {
     // Normalize number words immediately so ALL checks below work correctly
     // e.g. speech API gives "read first story from class eight" → "read 1st story from class 8"
     const query = normalizeNumbers(transcript.trim());
@@ -548,30 +521,27 @@ export default function VoiceBot() {
     const ordinalCmd = parseOrdinalCommand(query, location.pathname);
     if (ordinalCmd) {
       const { action, ordinalIndex, category, classKey } = ordinalCmd;
-      const classData = studentsData[classKey];
-      if (classData) {
-        const itemsList = classData[category];
-        if (itemsList && itemsList[ordinalIndex]) {
-          const item = itemsList[ordinalIndex];
-          navigate(`/students/${classKey}/${category}/${item.id}`);
-          if (action === "read") {
-            startReading(item);
-          } else if (action === "practice") {
-            setupRoleplay(item);
-          } else {
-            speak(`Opening ${item.title}.`, () => {
-              setAppState("LISTENING");
-            });
-          }
-          return;
+      const itemsList = await getClassCategoryItems(classKey, category);
+      if (itemsList && itemsList[ordinalIndex]) {
+        const item = itemsList[ordinalIndex];
+        navigate(`/students/${classKey}/${category}/${item.id}`);
+        if (action === "read") {
+          startReading(item);
+        } else if (action === "practice") {
+          setupRoleplay(item);
         } else {
-          const totalCount = itemsList ? itemsList.length : 0;
-          const displayCategory = category === "goodThoughts" ? "good thoughts" : category === "publicSpeaking" ? "public speaking" : category === "stockSentences" ? "stock sentences" : category;
-          speak(`Class ${classKey.split("-")[1]} only has ${totalCount} ${displayCategory}.`, () => {
+          speak(`Opening ${item.title}.`, () => {
             setAppState("LISTENING");
           });
-          return;
         }
+        return;
+      } else {
+        const totalCount = itemsList ? itemsList.length : 0;
+        const displayCategory = category === "goodThoughts" ? "good thoughts" : category === "publicSpeaking" ? "public speaking" : category === "stockSentences" ? "stock sentences" : category;
+        speak(`Class ${classKey.split("-")[1]} only has ${totalCount} ${displayCategory}.`, () => {
+          setAppState("LISTENING");
+        });
+        return;
       }
     }
 
@@ -598,8 +568,9 @@ export default function VoiceBot() {
     }
 
     // Start reading current page item (any category)
-    if ((query.includes("read this") || query.includes("read aloud") || query.includes("read story") || query.includes("read skit") || query.includes("read sentence") || query.includes("read thought") || query.includes("read activity")) && getCurrentItem()) {
-      startReading(getCurrentItem());
+    const currentItem = await getCurrentItem();
+    if ((query.includes("read this") || query.includes("read aloud") || query.includes("read story") || query.includes("read skit") || query.includes("read sentence") || query.includes("read thought") || query.includes("read activity")) && currentItem) {
+      startReading(currentItem);
       return;
     }
 
@@ -624,7 +595,6 @@ export default function VoiceBot() {
         const pathParts = location.pathname.split("/");
         const urlCategory = pathParts[3];
         const urlClassId = pathParts.find(p => p.startsWith("class-"));
-        const currentItem = getCurrentItem();
 
         if (currentItem && urlCategory === spokenCategory) {
           if (isPracticeCommand) {
@@ -637,8 +607,7 @@ export default function VoiceBot() {
 
         // Case 2: On a class page or any students page → open first item of that category in that class
         if (urlClassId) {
-          const classData = studentsData[urlClassId];
-          const itemsList = classData?.[spokenCategory];
+          const itemsList = await getClassCategoryItems(urlClassId, spokenCategory);
           if (itemsList && itemsList.length > 0) {
             const firstItem = itemsList[0];
             const displayName = spokenCategory === "stockSentences" ? "stock sentences"
@@ -670,7 +639,7 @@ export default function VoiceBot() {
     // Read target item by title search
     if (query.startsWith("read ") || query.includes("read story ")) {
       const titleQuery = query.replace("read story", "").replace("read", "").replace("story", "").trim();
-      const matchInfo = findItemByTitle(titleQuery);
+      const matchInfo = await findItemByTitle(titleQuery);
       if (matchInfo) {
         navigate(`/students/${matchInfo.classKey}/${matchInfo.categoryKey}/${matchInfo.item.id}`);
         startReading(matchInfo.item);
@@ -681,7 +650,7 @@ export default function VoiceBot() {
     // Practice target skit
     if (query.startsWith("practice ") || query.includes("practice skit ") || query.includes("practice dialogue ")) {
       const titleQuery = query.replace("practice skit", "").replace("practice dialogue", "").replace("practice", "").replace("dialogue", "").replace("skit", "").trim();
-      const matchInfo = findItemByTitle(titleQuery);
+      const matchInfo = await findItemByTitle(titleQuery);
       if (matchInfo) {
         navigate(`/students/${matchInfo.classKey}/${matchInfo.categoryKey}/${matchInfo.item.id}`);
         setupRoleplay(matchInfo.item);
@@ -708,7 +677,7 @@ export default function VoiceBot() {
     if (!item || !item.content) return;
 
     // Clean and segment lines (ignore empty lines)
-    const rawLines = item.content.trim().split("\n");
+    const rawLines = item.content.replace(/\r/g, "").trim().split("\n");
     const storyLines = rawLines
       .map(line => line.trim())
       .filter(line => line !== "" && !line.startsWith("Scene") && !line.startsWith("Characters") && !line.startsWith("Props"));
@@ -859,7 +828,7 @@ export default function VoiceBot() {
     if (!item || !item.content) return;
 
     // Extract dialogues
-    const rawLines = item.content.trim().split("\n");
+    const rawLines = item.content.replace(/\r/g, "").trim().split("\n");
     const dialogueLines = rawLines
       .map(l => l.trim())
       .filter(l => l !== "" && l.split(":").length > 1 && !l.startsWith("Scene") && !l.startsWith("Characters") && !l.startsWith("Moral") && !l.startsWith("Props"));

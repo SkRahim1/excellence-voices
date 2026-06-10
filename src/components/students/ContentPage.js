@@ -4,19 +4,35 @@ import { useParams } from "react-router-dom";
 
 import jsPDF from "jspdf";
 
-import studentsData from "../data/StudentsData";
+import { getContentItem } from "../../services/dataService";
 
 import "./ContentPage.css";
 
 export default function ContentPage() {
   const { classId, category, id } = useParams();
 
+  const [item, setItem] = useState(null);
+  const [loading, setLoading] = useState(true);
   const [currentLine, setCurrentLine] = useState(-1);
   const lineRefs = useRef([]);
 
   // Reset scroll to top of the page when navigating to a new item
   useEffect(() => {
     window.scrollTo({ top: 0, left: 0, behavior: "instant" });
+  }, [classId, category, id]);
+
+  useEffect(() => {
+    let active = true;
+    setLoading(true);
+    getContentItem(classId, category, id).then((data) => {
+      if (active) {
+        setItem(data);
+        setLoading(false);
+      }
+    });
+    return () => {
+      active = false;
+    };
   }, [classId, category, id]);
 
   useEffect(() => {
@@ -28,14 +44,10 @@ export default function ContentPage() {
     }
   }, [currentLine]);
 
-  const item = studentsData[classId]?.[category]?.find(
-    (i) => i.id === Number(id),
-  );
-
   // Parse clean lines: trim outer spaces, and collapse multiple empty lines
   const cleanLines = React.useMemo(() => {
     if (!item || !item.content) return [];
-    const rawLines = item.content.trim().split("\n");
+    const rawLines = item.content.replace(/\r/g, "").trim().split("\n");
     const result = [];
     let lastWasEmpty = false;
     
@@ -53,6 +65,14 @@ export default function ContentPage() {
     });
     return result;
   }, [item]);
+
+  if (loading) {
+    return (
+      <div className="container" style={{ textAlign: "center", padding: "80px 0" }}>
+        <h1 className="heading">Loading Content...</h1>
+      </div>
+    );
+  }
 
   if (!item) {
     return (
