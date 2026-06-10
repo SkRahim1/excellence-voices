@@ -321,7 +321,7 @@ export default function ContentPage() {
       <div className="content-box">
         {cleanLines.map((line, index) => {
           if (line.trim() === "") {
-            return <br key={index} />;
+            return <div key={index} className="spacing-line" />;
           }
 
           const activeClass = currentLine === index ? "active-reading" : "";

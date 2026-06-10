@@ -84,6 +84,10 @@
     text-align: left;
 }
 
+.spacing-line {
+    height: 12px;
+}
+
 
 .content-box p {
     font-size: 18px;
@@ -181,5 +185,9 @@
     
     .content-box h3 {
         font-size: 19px;
+    }
+
+    .spacing-line {
+        height: 8px;
     }
 }
