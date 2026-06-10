@@ -419,20 +419,149 @@
   .dashboard-header {
     text-align: center;
     flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .dashboard-header div {
+    margin-bottom: 12px;
+  }
+
+  .add-btn {
+    justify-content: center;
+    width: 100%;
   }
   
   .filter-bar {
     flex-direction: column;
     gap: 16px;
+    padding: 16px;
   }
   
+  /* TABLE TO CARDS CONVERSION FOR MOBILE */
+  .lessons-table-wrapper {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+  }
+
+  .lessons-table, 
+  .lessons-table thead, 
+  .lessons-table tbody, 
+  .lessons-table th, 
+  .lessons-table td, 
+  .lessons-table tr { 
+    display: block; 
+  }
+  
+  .lessons-table thead tr { 
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+  
+  .lessons-table tr {
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    border-radius: 16px;
+    margin-bottom: 16px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02);
+  }
+  
+  .lessons-table td { 
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05); 
+    position: relative;
+    padding: 10px 0 !important;
+    text-align: left;
+  }
+  
+  .lessons-table td:last-child {
+    border-bottom: 0;
+    padding-top: 15px !important;
+  }
+  
+  /* Render Row Labels */
+  .lessons-table td:nth-of-type(1):before { content: "Lesson ID: "; font-weight: 700; color: #0d2d59; }
+  .lessons-table td:nth-of-type(2):before { content: "Title: "; font-weight: 700; color: #0d2d59; }
+  .lessons-table td:nth-of-type(3):before { content: "Preview: \A"; white-space: pre-wrap; font-weight: 700; color: #0d2d59; }
+  
+  .lessons-table td strong {
+    font-size: 1rem;
+  }
+  
+  .lessons-table td .lesson-title {
+    display: inline-block;
+  }
+  
+  .lessons-table td .lesson-preview {
+    max-width: 100%;
+    margin-top: 4px;
+    display: block;
+    white-space: normal;
+  }
+  
+  .lessons-table .action-buttons {
+    justify-content: flex-start;
+    gap: 12px;
+  }
+  
+  .lessons-table .action-btn {
+    padding: 10px 16px;
+    font-size: 0.9rem;
+    flex: 1;
+    display: inline-flex;
+    gap: 8px;
+  }
+  
+  .lessons-table .action-btn.edit:after {
+    content: " Edit";
+    font-weight: 600;
+  }
+  
+  .lessons-table .action-btn.delete:after {
+    content: " Delete";
+    font-weight: 600;
+  }
+
+  /* MODAL MOBILE OPTIMIZATION */
+  .modal-box {
+    max-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    border-radius: 16px;
+  }
+
+  .modal-form {
+    padding: 20px;
+    overflow-y: auto;
+    flex: 1;
+  }
+
   .form-row {
     flex-direction: column;
     gap: 0;
   }
+
+  .form-actions {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .form-actions button {
+    width: 100%;
+    text-align: center;
+  }
   
-  .modal-form {
-    padding: 20px;
+  .seed-banner {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 16px;
+  }
+
+  .seed-banner-btn {
+    width: 100%;
+    text-align: center;
   }
 }
 
