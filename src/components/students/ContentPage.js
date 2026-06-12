@@ -15,10 +15,16 @@ export default function ContentPage() {
   const [loading, setLoading] = useState(true);
   const [currentLine, setCurrentLine] = useState(-1);
   const lineRefs = useRef([]);
+  const readingSessionIdRef = useRef(0);
 
-  // Reset scroll to top of the page when navigating to a new item
+  // Reset scroll to top of the page and stop reading when navigating to a new item or unmounting
   useEffect(() => {
     window.scrollTo({ top: 0, left: 0, behavior: "instant" });
+    setCurrentLine(-1);
+    return () => {
+      readingSessionIdRef.current = 0;
+      window.speechSynthesis.cancel();
+    };
   }, [classId, category, id]);
 
   useEffect(() => {
@@ -268,11 +274,14 @@ export default function ContentPage() {
 
   // READ CONTENT
   const speakContent = async () => {
+    const sessionId = ++readingSessionIdRef.current;
     window.speechSynthesis.cancel();
 
     const lines = cleanLines;
 
     for (let i = 0; i < lines.length; i++) {
+      if (readingSessionIdRef.current !== sessionId) break;
+
       const text = lines[i].trim();
 
       if (!text) continue;
@@ -280,6 +289,11 @@ export default function ContentPage() {
       setCurrentLine(i);
 
       await new Promise((resolve) => {
+        if (readingSessionIdRef.current !== sessionId) {
+          resolve();
+          return;
+        }
+
         const speech = new SpeechSynthesisUtterance(text);
 
         speech.lang = "en-IN";
@@ -288,19 +302,22 @@ export default function ContentPage() {
 
         speech.pitch = 1;
 
-        speech.onend = resolve;
+        speech.onend = () => resolve();
+        speech.onerror = () => resolve();
 
         window.speechSynthesis.speak(speech);
       });
     }
 
-    setCurrentLine(-1);
+    if (readingSessionIdRef.current === sessionId) {
+      setCurrentLine(-1);
+    }
   };
 
   // STOP
   const stopSpeaking = () => {
+    readingSessionIdRef.current = 0;
     window.speechSynthesis.cancel();
-
     setCurrentLine(-1);
   };
 

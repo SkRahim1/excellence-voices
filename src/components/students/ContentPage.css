@@ -11,9 +11,10 @@
     justify-content: center;
     gap: 16px;
     margin: 32px 0;
-    flex-wrap: wrap;
-    position: relative;
-    z-index: 2;
+    flex-wrap: nowrap;
+    position: sticky;
+    top: 86px;
+    z-index: 99;
 }
 
 /* READ ALOUD BUTTON */

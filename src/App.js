@@ -22,7 +22,9 @@ import CategoryPage from "./components/students/CategoryPage";
 import ContentPage from "./components/students/ContentPage";
 //trainer route protection
 import TrainerProtectedPopup from "./components/TrainerProtectedPopup";
+import TeacherProtectedPopup from "./components/TeacherProtectedPopup";
 import VoiceBot from "./components/students/VoiceBot";
+import TeachersHome from "./components/teachers/TeachersHome";
 /* PASSWORD PROTECTION */
 /* Check if student is currently authenticated (used to gate VoiceBot too) */
 function getStudentAuthStatus() {
@@ -173,6 +175,12 @@ export default function App() {
     },
 
     {
+      label: "Teachers",
+      id: "teachers",
+      path: "/teachers",
+    },
+
+    {
       label: "Pro Games",
       id: "pro-games",
       path: "https://pro.excellencevoices.in/",
@@ -319,6 +327,16 @@ export default function App() {
               <ProtectedRoute isAuthenticated={isStudentAuthenticated} setIsAuthenticated={setIsStudentAuthenticated}>
                 <ContentPage />
               </ProtectedRoute>
+            }
+          />
+
+          {/* TEACHERS */}
+          <Route
+            path="/teachers"
+            element={
+              <TeacherProtectedPopup>
+                {(teacherName) => <TeachersHome teacherName={teacherName} />}
+              </TeacherProtectedPopup>
             }
           />
 
