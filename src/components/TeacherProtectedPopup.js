@@ -90,6 +90,10 @@ export default function TeacherProtectedPopup({ children }) {
         {error && <span className="teacher-popup-error">{error}</span>}
 
         <button onClick={handleLogin}>Unlock Access</button>
+
+        <div className="teacher-popup-brand" style={{ fontSize: "0.8em", opacity: 0.7, marginTop: "15px", textAlign: "center" }}>
+          A product of <a href="https://renvixteach.in" target="_blank" rel="noopener noreferrer" style={{ color: "#38bdf8", textDecoration: "underline" }}>Renvix Technologies</a>
+        </div>
       </div>
     </div>
   );

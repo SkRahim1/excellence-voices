@@ -38,8 +38,11 @@ export default function Footer({ activeSection }) {
         </div>
       </div>
 
-      <footer className="footer">
-        © 2026 Excellence - Empowering Young Voices. All Rights Reserved.
+      <footer className="footer" style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "6px" }}>
+        <div>© 2026 Excellence - Empowering Young Voices. All Rights Reserved.</div>
+        <div style={{ fontSize: "0.85em", opacity: 0.8, marginTop: "2px" }}>
+          A product of <a href="https://renvixteach.in" target="_blank" rel="noopener noreferrer" style={{ color: "#38bdf8", textDecoration: "underline", fontWeight: "500" }}>Renvix Technologies</a>
+        </div>
       </footer>
     </section>
   );
