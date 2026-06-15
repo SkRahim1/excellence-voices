@@ -8,8 +8,12 @@ export default function TeacherProtectedPopup({ children }) {
   const [name, setName] = useState(
     localStorage.getItem("teacherName") || ""
   );
-  const [password, setPassword] = useState("");
+  const [subject, setSubject] = useState(
+    localStorage.getItem("teacherSubject") || "english"
+  );
   const [nameInput, setNameInput] = useState("");
+  const [subjectInput, setSubjectInput] = useState("english");
+  const [password, setPassword] = useState("");
   const [error, setError] = useState("");
 
   const handleLogin = () => {
@@ -20,7 +24,9 @@ export default function TeacherProtectedPopup({ children }) {
     if (password === "excellenceteachers24") {
       localStorage.setItem("teacherAuth", "true");
       localStorage.setItem("teacherName", nameInput.trim());
+      localStorage.setItem("teacherSubject", subjectInput);
       setName(nameInput.trim());
+      setSubject(subjectInput);
       setAuthenticated(true);
     } else {
       setError("Incorrect Password");
@@ -31,8 +37,17 @@ export default function TeacherProtectedPopup({ children }) {
     if (e.key === "Enter") handleLogin();
   };
 
+  const handleLogout = () => {
+    localStorage.removeItem("teacherAuth");
+    localStorage.removeItem("teacherName");
+    localStorage.removeItem("teacherSubject");
+    setName("");
+    setSubject("english");
+    setAuthenticated(false);
+  };
+
   if (authenticated) {
-    return typeof children === "function" ? children(name) : children;
+    return typeof children === "function" ? children(name, subject, handleLogout) : children;
   }
 
   return (
@@ -40,7 +55,7 @@ export default function TeacherProtectedPopup({ children }) {
       <div className="teacher-popup-box">
         <div className="teacher-popup-icon">👩‍🏫</div>
         <h1>Teachers Portal</h1>
-        <p>Enter your name and password to access resources.</p>
+        <p>Enter details to access your portal.</p>
 
         <input
           type="text"
@@ -50,6 +65,19 @@ export default function TeacherProtectedPopup({ children }) {
           onKeyDown={handleKeyDown}
           autoFocus
         />
+
+        <select
+          value={subjectInput}
+          onChange={(e) => setSubjectInput(e.target.value)}
+        >
+          <option value="english">English</option>
+          <option value="mathematics">Mathematics</option>
+          <option value="science">Science</option>
+          <option value="evs">EVS</option>
+          <option value="socialStudies">Social Studies</option>
+          <option value="computerScience">Computer Science</option>
+          <option value="physicalTraining">Physical Training</option>
+        </select>
 
         <input
           type="password"

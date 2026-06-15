@@ -335,7 +335,13 @@ export default function App() {
             path="/teachers"
             element={
               <TeacherProtectedPopup>
-                {(teacherName) => <TeachersHome teacherName={teacherName} />}
+                {(teacherName, teacherSubject, handleLogout) => (
+                  <TeachersHome 
+                    teacherName={teacherName} 
+                    teacherSubject={teacherSubject} 
+                    onLogout={handleLogout} 
+                  />
+                )}
               </TeacherProtectedPopup>
             }
           />

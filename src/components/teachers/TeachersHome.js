@@ -1,4 +1,4 @@
-import React, { useState, useCallback, useEffect, useMemo } from "react";
+import React, { useState, useCallback, useEffect, useMemo, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import {
   GraduationCap,
@@ -23,16 +23,31 @@ import {
   Target,
   UserCircle,
   Lock,
-  Clock
+  Clock,
+  Dumbbell
 } from "lucide-react";
 import teachersData from "../data/TeachersData";
 import "./TeachersHome.css";
 
-export default function TeachersHome({ teacherName }) {
+export default function TeachersHome({ teacherName, teacherSubject, onLogout }) {
   const [activeWeek, setActiveWeek] = useState("week-1");
-  const [activeSubject, setActiveSubject] = useState("english");
+  const [activeSubject, setActiveSubject] = useState(teacherSubject || "english");
   const [activeCategory, setActiveCategory] = useState("instructions");
   const [isSpeaking, setIsSpeaking] = useState(false);
+  const [currentLang, setCurrentLang] = useState("en"); // "en", "hi", "te"
+  const [isTranslating, setIsTranslating] = useState(false);
+  const translationCacheRef = useRef({});
+  const [translatedList, setTranslatedList] = useState([]);
+  const [translatedRoleplay, setTranslatedRoleplay] = useState([]);
+  const [translatedChallenge, setTranslatedChallenge] = useState("");
+  const [selectedWordInfo, setSelectedWordInfo] = useState(null); // { word, translation, x, y }
+  const touchStartRef = useRef(null);
+
+  useEffect(() => {
+    if (teacherSubject) {
+      setActiveSubject(teacherSubject);
+    }
+  }, [teacherSubject]);
 
   // Progress tracking via localStorage
   const [completedWeeks, setCompletedWeeks] = useState(() => {
@@ -125,27 +140,34 @@ export default function TeachersHome({ teacherName }) {
     setLastCompletionDate(todayStr);
   };
 
-  const progressPercent = Math.round((completedWeeks.length / 24) * 100);
+  const progressPercent = Math.round((completedWeeks.length / 10) * 100);
 
   const milestones = [
-    { week: 6, label: "Emerging Communicator", icon: <Target size={14} /> },
-    { week: 12, label: "Classroom Speaker", icon: <GraduationCap size={14} /> },
-    { week: 18, label: "Confident Communicator", icon: <Sparkles size={14} /> },
-    { week: 24, label: "Fluent Facilitator", icon: <Trophy size={14} /> }
+    { week: 3, label: "Emerging Communicator", icon: <Target size={14} /> },
+    { week: 6, label: "Classroom Speaker", icon: <GraduationCap size={14} /> },
+    { week: 8, label: "Confident Communicator", icon: <Sparkles size={14} /> },
+    { week: 10, label: "Fluent Facilitator", icon: <Trophy size={14} /> }
   ];
 
   const currentMilestone = milestones.filter(m => completedWeeks.length >= m.week).pop();
 
-  const weeks = Array.from({ length: 24 }, (_, i) => `week-${i + 1}`);
+  const weeks = Array.from({ length: 10 }, (_, i) => `week-${i + 1}`);
 
-  const subjects = [
-    { id: "english", label: "English", icon: <Book size={18} /> },
-    { id: "mathematics", label: "Mathematics", icon: <Calculator size={18} /> },
-    { id: "science", label: "Science", icon: <FlaskConical size={18} /> },
-    { id: "evs", label: "EVS", icon: <Leaf size={18} /> },
-    { id: "socialStudies", label: "Social Studies", icon: <Globe size={18} /> },
-    { id: "computerScience", label: "Computer Science", icon: <Cpu size={18} /> }
-  ];
+  const subjects = useMemo(() => {
+    const allSubjects = [
+      { id: "english", label: "English", icon: <Book size={18} /> },
+      { id: "mathematics", label: "Mathematics", icon: <Calculator size={18} /> },
+      { id: "science", label: "Science", icon: <FlaskConical size={18} /> },
+      { id: "evs", label: "EVS", icon: <Leaf size={18} /> },
+      { id: "socialStudies", label: "Social Studies", icon: <Globe size={18} /> },
+      { id: "computerScience", label: "Computer Science", icon: <Cpu size={18} /> },
+      { id: "physicalTraining", label: "Physical Training", icon: <Dumbbell size={18} /> }
+    ];
+    if (teacherSubject) {
+      return allSubjects.filter(sub => sub.id === teacherSubject);
+    }
+    return allSubjects;
+  }, [teacherSubject]);
 
   const categories = [
     { id: "instructions", label: "Instructions", icon: <Info size={16} />, title: "Classroom Commands (10)" },
@@ -161,10 +183,199 @@ export default function TeachersHome({ teacherName }) {
   const activeCategoryDetail = categories.find((c) => c.id === activeCategory);
 
   // Retrieve contents depending on active category selection
-  let contentList = [];
-  if (["instructions", "questions", "stockSentences", "explanationSentences"].includes(activeCategory)) {
-    contentList = currentSubjectData[activeCategory] || [];
-  }
+  const rawContentList = useMemo(() => {
+    if (["instructions", "questions", "stockSentences", "explanationSentences"].includes(activeCategory)) {
+      return currentSubjectData[activeCategory] || [];
+    }
+    return [];
+  }, [activeCategory, currentSubjectData]);
+
+  // Translate helper using public gtx API
+  const translateText = useCallback(async (text, targetLang) => {
+    if (!text || targetLang === "en") return text;
+    const cacheKey = `${targetLang}-${text}`;
+    
+    if (translationCacheRef.current[cacheKey]) {
+      return translationCacheRef.current[cacheKey];
+    }
+
+    try {
+      const res = await fetch(
+        `https://translate.googleapis.com/translate_a/single?client=gtx&sl=auto&tl=${targetLang}&dt=t&q=${encodeURIComponent(text)}`
+      );
+      const data = await res.json();
+      const translated = data[0].map(item => item[0]).join("");
+      translationCacheRef.current[cacheKey] = translated;
+      return translated;
+    } catch (error) {
+      console.error("Translation error:", error);
+      return text;
+    }
+  }, []);
+
+  // Selection change tooltip cleaner
+  useEffect(() => {
+    const closeTooltip = () => setSelectedWordInfo(null);
+    document.addEventListener("click", closeTooltip);
+    return () => document.removeEventListener("click", closeTooltip);
+  }, []);
+
+  // Selection change translator
+  const handleTextSelection = async (e) => {
+    const selection = window.getSelection();
+    const selectedText = selection.toString().trim();
+    
+    // We only translate if it's a single word (no spaces, length 2 to 30)
+    if (!selectedText || selectedText.includes(" ") || selectedText.length < 2 || selectedText.length > 30) {
+      return;
+    }
+
+    // Clean punctuation
+    const cleanWord = selectedText.replace(/[.,/#!$%^&*;:{}=\-_`~()?"]/g, "");
+    if (!cleanWord || cleanWord.length < 2) return;
+
+    // Get position for the tooltip relative to viewport
+    let x = 0;
+    let y = 0;
+    if (selection.rangeCount > 0) {
+      const range = selection.getRangeAt(0);
+      const rect = range.getBoundingClientRect();
+      x = rect.left + window.scrollX + rect.width / 2;
+      y = rect.top + window.scrollY - 10;
+    } else {
+      x = e.pageX;
+      y = e.pageY - 10;
+    }
+
+    setSelectedWordInfo({ word: cleanWord, translation: "...", x, y });
+
+    const telugu = await translateText(cleanWord, "te");
+    setSelectedWordInfo({ word: cleanWord, translation: telugu, x, y });
+  };
+
+  // Touch long press translator helpers for mobile layout
+  const handleTouchStart = (e) => {
+    const touch = e.touches[0];
+    touchStartRef.current = {
+      time: Date.now(),
+      x: touch.clientX,
+      y: touch.clientY
+    };
+  };
+
+  const handleTouchEnd = async (e) => {
+    if (!touchStartRef.current) return;
+    const touch = e.changedTouches[0];
+    const duration = Date.now() - touchStartRef.current.time;
+    const diffX = Math.abs(touch.clientX - touchStartRef.current.x);
+    const diffY = Math.abs(touch.clientY - touchStartRef.current.y);
+
+    // If held for > 500ms and didn't drag/move much
+    if (duration > 500 && diffX < 10 && diffY < 10) {
+      e.preventDefault();
+      
+      let range;
+      let textNode;
+      let offset;
+
+      if (document.caretRangeFromPoint) {
+        range = document.caretRangeFromPoint(touch.clientX, touch.clientY);
+        if (range) {
+          textNode = range.startContainer;
+          offset = range.startOffset;
+        }
+      } else if (document.caretPositionFromPoint) {
+        const position = document.caretPositionFromPoint(touch.clientX, touch.clientY);
+        if (position) {
+          textNode = position.offsetNode;
+          offset = position.offset;
+        }
+      }
+
+      if (textNode && textNode.nodeType === Node.TEXT_NODE) {
+        const text = textNode.textContent;
+        let start = offset;
+        while (start > 0 && /\w/.test(text[start - 1])) {
+          start--;
+        }
+        let end = offset;
+        while (end < text.length && /\w/.test(text[end])) {
+          end++;
+        }
+        
+        const word = text.slice(start, end).replace(/[.,/#!$%^&*;:{}=\-_`~()?"]/g, "").trim();
+        if (word && word.length >= 2 && word.length <= 30) {
+          const x = touch.pageX;
+          const y = touch.pageY - 10;
+          
+          setSelectedWordInfo({ word, translation: "...", x, y });
+          const telugu = await translateText(word, "te");
+          setSelectedWordInfo({ word, translation: telugu, x, y });
+        }
+      }
+    }
+    touchStartRef.current = null;
+  };
+
+  const handleContextMenu = (e) => {
+    if (window.innerWidth <= 768) {
+      e.preventDefault();
+    }
+  };
+
+  // Synchronize translation lists
+  useEffect(() => {
+    let active = true;
+    if (currentLang === "en") {
+      setTranslatedList(rawContentList);
+      setTranslatedRoleplay(currentSubjectData.roleplays || []);
+      setTranslatedChallenge(currentSubjectData.challenge || activeWeekData.challenge || "");
+      setIsTranslating(false);
+      return;
+    }
+
+    setIsTranslating(true);
+    const translateCurrentView = async () => {
+      try {
+        if (["instructions", "questions", "stockSentences", "explanationSentences"].includes(activeCategory)) {
+          const translated = await Promise.all(
+            rawContentList.map(item => translateText(item, currentLang))
+          );
+          if (active) {
+            setTranslatedList(translated);
+            setIsTranslating(false);
+          }
+        } else if (activeCategory === "roleplay") {
+          const rawRoleplay = currentSubjectData.roleplays || [];
+          const translated = await Promise.all(
+            rawRoleplay.map(async item => ({
+              speaker: item.speaker,
+              text: await translateText(item.text, currentLang)
+            }))
+          );
+          if (active) {
+            setTranslatedRoleplay(translated);
+            setIsTranslating(false);
+          }
+        } else if (activeCategory === "challenge") {
+          const rawChallenge = currentSubjectData.challenge || activeWeekData.challenge || "";
+          const translated = await translateText(rawChallenge, currentLang);
+          if (active) {
+            setTranslatedChallenge(translated);
+            setIsTranslating(false);
+          }
+        }
+      } catch (err) {
+        console.error("Translation run error:", err);
+        if (active) setIsTranslating(false);
+      }
+    };
+
+    translateCurrentView();
+    return () => {
+      active = false;
+    };
+  }, [activeWeek, activeSubject, activeCategory, currentLang, rawContentList, currentSubjectData, activeWeekData, translateText]);
 
   // Stop speech when switching tabs/weeks/subjects
   useEffect(() => {
@@ -187,19 +398,25 @@ export default function TeachersHome({ teacherName }) {
     let textToRead = "";
 
     if (["instructions", "questions", "stockSentences", "explanationSentences"].includes(activeCategory)) {
-      const items = currentSubjectData[activeCategory] || [];
-      textToRead = items.map((item, i) => `${i + 1}. ${item}`).join(". ");
+      textToRead = translatedList.map((item, i) => `${i + 1}. ${item}`).join(". ");
     } else if (activeCategory === "roleplay") {
-      const dialogues = currentSubjectData.roleplays || [];
-      textToRead = dialogues.map(d => `${d.speaker}: ${d.text}`).join(". ");
+      textToRead = translatedRoleplay.map(d => `${d.speaker}: ${d.text}`).join(". ");
     } else if (activeCategory === "challenge") {
-      textToRead = activeWeekData.challenge || "";
+      textToRead = translatedChallenge || "";
     }
 
     if (!textToRead) return;
 
     const utterance = new SpeechSynthesisUtterance(textToRead);
-    utterance.lang = "en-IN";
+    
+    if (currentLang === "hi") {
+      utterance.lang = "hi-IN";
+    } else if (currentLang === "te") {
+      utterance.lang = "te-IN";
+    } else {
+      utterance.lang = "en-IN";
+    }
+
     utterance.rate = 0.9;
     utterance.pitch = 1;
     utterance.onend = () => setIsSpeaking(false);
@@ -208,7 +425,7 @@ export default function TeachersHome({ teacherName }) {
     window.speechSynthesis.cancel();
     window.speechSynthesis.speak(utterance);
     setIsSpeaking(true);
-  }, [isSpeaking, activeCategory, currentSubjectData, activeWeekData]);
+  }, [isSpeaking, activeCategory, translatedList, translatedRoleplay, translatedChallenge, currentLang]);
 
   return (
     <div className="teachers-portal container">
@@ -226,6 +443,11 @@ export default function TeachersHome({ teacherName }) {
           <div className="teacher-welcome">
             <UserCircle size={22} />
             <span>Welcome, <strong>{teacherName}</strong></span>
+            {onLogout && (
+              <button className="teacher-logout-btn" onClick={onLogout} title="Change Subject or Logout">
+                Log Out
+              </button>
+            )}
           </div>
         )}
         <h1 className="hero-title">
@@ -249,7 +471,7 @@ export default function TeachersHome({ teacherName }) {
             <span>Your Progress</span>
           </div>
           <div className="progress-stats">
-            <span className="progress-fraction">{completedWeeks.length}/24 Weeks</span>
+            <span className="progress-fraction">{completedWeeks.length}/10 Weeks</span>
             <span className="progress-percentage">{progressPercent}%</span>
           </div>
         </div>
@@ -264,7 +486,7 @@ export default function TeachersHome({ teacherName }) {
             <div
               key={m.week}
               className={`milestone-marker ${completedWeeks.length >= m.week ? "reached" : ""}`}
-              style={{ left: `${(m.week / 24) * 100}%` }}
+              style={{ left: `${(m.week / 10) * 100}%` }}
               title={m.label}
             />
           ))}
@@ -330,10 +552,10 @@ export default function TeachersHome({ teacherName }) {
       >
         <div className="curriculum-banner-left">
           <div className="curriculum-focus">
-            <strong>Focus:</strong> {activeWeekData.focus}
+            <strong>Focus:</strong> {currentSubjectData.focus || activeWeekData.focus}
           </div>
           <div className="curriculum-theme">
-            <strong>Weekly Theme:</strong> {activeWeekData.theme}
+            <strong>Weekly Theme:</strong> {currentSubjectData.theme || activeWeekData.theme}
           </div>
         </div>
         <div className="curriculum-banner-right">
@@ -440,6 +662,26 @@ export default function TeachersHome({ teacherName }) {
               <div className="details-header">
                 <h3>{currentSubjectData.title || activeSubject.toUpperCase()}</h3>
                 <div className="details-header-right">
+                  <div className="language-selector">
+                    <button 
+                      className={`lang-btn ${currentLang === "en" ? "active" : ""}`} 
+                      onClick={() => setCurrentLang("en")}
+                    >
+                      English
+                    </button>
+                    <button 
+                      className={`lang-btn ${currentLang === "hi" ? "active" : ""}`} 
+                      onClick={() => setCurrentLang("hi")}
+                    >
+                      हिन्दी
+                    </button>
+                    <button 
+                      className={`lang-btn ${currentLang === "te" ? "active" : ""}`} 
+                      onClick={() => setCurrentLang("te")}
+                    >
+                      తెలుగు
+                    </button>
+                  </div>
                   <button
                     className={`read-aloud-btn ${isSpeaking ? "speaking" : ""}`}
                     onClick={handleReadAloud}
@@ -457,81 +699,128 @@ export default function TeachersHome({ teacherName }) {
                 </div>
               </div>
 
-              <div className="details-body">
-                {/* Standard sentence lists (10 items) */}
-                {["instructions", "questions", "stockSentences", "explanationSentences"].includes(activeCategory) && (
-                  <ul className="content-list">
-                    {contentList.map((item, index) => (
-                      <motion.li
-                        key={index}
-                        className="content-item"
-                        initial={{ opacity: 0, x: -10 }}
-                        animate={{ opacity: 1, x: 0 }}
-                        transition={{ delay: index * 0.05 }}
-                      >
-                        <div className="bullet-point">{index + 1}</div>
-                        <div className="content-text">{item}</div>
-                      </motion.li>
-                    ))}
-                  </ul>
-                )}
-
-                {/* Roleplays view */}
-                {activeCategory === "roleplay" && (
-                  <div className="roleplay-chat">
-                    <p className="roleplay-intro-text">
-                      Review the following classroom dialogue. Practice reading both sides aloud to build natural conversational flow.
+              <div className="details-body" onMouseUp={handleTextSelection} onTouchStart={handleTouchStart} onTouchEnd={handleTouchEnd} onContextMenu={handleContextMenu}>
+                {isTranslating ? (
+                  <div className="translation-loading" style={{ textAlign: "center", padding: "40px" }}>
+                    <div className="spinner" />
+                    <p style={{ marginTop: "12px", color: "var(--text-muted)", fontSize: "14px" }}>
+                      Translating to {currentLang === "hi" ? "Hindi" : "Telugu"}...
                     </p>
-                    <div className="dialogue-container">
-                      {(currentSubjectData.roleplays || []).map((utterance, index) => {
-                        const isTeacher = utterance.speaker === "Teacher";
-                        return (
-                          <motion.div
-                            key={index}
-                            className={`dialogue-bubble-wrapper ${isTeacher ? "teacher-wrapper" : "student-wrapper"}`}
-                            initial={{ opacity: 0, y: 10 }}
-                            animate={{ opacity: 1, y: 0 }}
-                            transition={{ delay: index * 0.1 }}
-                          >
-                            <span className="speaker-tag">{utterance.speaker}</span>
-                            <div className={`dialogue-bubble ${isTeacher ? "teacher-bubble" : "student-bubble"}`}>
-                              {utterance.text}
-                            </div>
-                          </motion.div>
-                        );
-                      })}
-                    </div>
                   </div>
-                )}
-
-                {/* Challenge view */}
-                {activeCategory === "challenge" && (
-                  <motion.div
-                    className="challenge-card"
-                    initial={{ opacity: 0, scale: 0.97 }}
-                    animate={{ opacity: 1, scale: 1 }}
-                  >
-                    <div className="challenge-icon-container">
-                      <Sparkles size={32} />
-                    </div>
-                    <h4>Practice Challenge</h4>
-                    <p className="challenge-main-text">{activeWeekData.challenge}</p>
-                    <div className="challenge-action-steps">
-                      <h5>Action Plan:</h5>
-                      <ul>
-                        <li>Pick 5 classroom instructions from the list and use them repeatedly.</li>
-                        <li>Ask at least 3 queries from the questions section during your lesson.</li>
-                        <li>Deliver at least 2 verbal praises using the stock sentences provided.</li>
-                        <li>Observe student responsiveness and note improvements daily.</li>
+                ) : (
+                  <>
+                    {/* Standard sentence lists (10 items) */}
+                    {["instructions", "questions", "stockSentences", "explanationSentences"].includes(activeCategory) && (
+                      <ul className="content-list">
+                        {translatedList.map((item, index) => (
+                          <motion.li
+                            key={index}
+                            className="content-item"
+                            initial={{ opacity: 0, x: -10 }}
+                            animate={{ opacity: 1, x: 0 }}
+                            transition={{ delay: index * 0.05 }}
+                          >
+                            <div className="bullet-point">{index + 1}</div>
+                            <div className="content-text">{item}</div>
+                          </motion.li>
+                        ))}
                       </ul>
-                    </div>
-                  </motion.div>
+                    )}
+
+                    {/* Roleplays view */}
+                    {activeCategory === "roleplay" && (
+                      <div className="roleplay-chat">
+                        <p className="roleplay-intro-text">
+                          Review the following classroom dialogue. Practice reading both sides aloud to build natural conversational flow.
+                        </p>
+                        <div className="dialogue-container">
+                          {translatedRoleplay.map((utterance, index) => {
+                            const isTeacher = utterance.speaker === "Teacher";
+                            return (
+                              <motion.div
+                                key={index}
+                                className={`dialogue-bubble-wrapper ${isTeacher ? "teacher-wrapper" : "student-wrapper"}`}
+                                initial={{ opacity: 0, y: 10 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                transition={{ delay: index * 0.1 }}
+                              >
+                                <span className="speaker-tag">{utterance.speaker}</span>
+                                <div className={`dialogue-bubble ${isTeacher ? "teacher-bubble" : "student-bubble"}`}>
+                                  {utterance.text}
+                                </div>
+                              </motion.div>
+                            );
+                          })}
+                        </div>
+                      </div>
+                    )}
+
+                    {/* Challenge view */}
+                    {activeCategory === "challenge" && (
+                      <motion.div
+                        className="challenge-card"
+                        initial={{ opacity: 0, scale: 0.97 }}
+                        animate={{ opacity: 1, scale: 1 }}
+                      >
+                        <div className="challenge-icon-container">
+                          <Sparkles size={32} />
+                        </div>
+                        <h4>Practice Challenge</h4>
+                        <p className="challenge-main-text">{translatedChallenge}</p>
+                        <div className="challenge-action-steps">
+                          <h5>Action Plan:</h5>
+                          <ul>
+                            <li>Pick 5 classroom instructions from the list and use them repeatedly.</li>
+                            <li>Ask at least 3 queries from the questions section during your lesson.</li>
+                            <li>Deliver at least 2 verbal praises using the stock sentences provided.</li>
+                            <li>Observe student responsiveness and note improvements daily.</li>
+                          </ul>
+                        </div>
+                      </motion.div>
+                    )}
+                  </>
                 )}
               </div>
             </motion.div>
           </AnimatePresence>
         </div>
       </div>
+      {selectedWordInfo && (
+        <div 
+          className="word-translation-tooltip"
+          style={{
+            position: "absolute",
+            left: `${selectedWordInfo.x}px`,
+            top: `${selectedWordInfo.y}px`,
+            transform: "translate(-50%, -100%)",
+            zIndex: 10000,
+            background: "var(--primary)",
+            color: "white",
+            padding: "6px 12px",
+            borderRadius: "8px",
+            fontSize: "12.5px",
+            fontWeight: "600",
+            boxShadow: "0 4px 15px rgba(13, 45, 89, 0.25)",
+            pointerEvents: "none",
+            animation: "fadeInUp 0.15s ease-out"
+          }}
+        >
+          <span style={{ opacity: 0.8, marginRight: "6px" }}>{selectedWordInfo.word} →</span>
+          <span>{selectedWordInfo.translation}</span>
+          <div 
+            className="tooltip-arrow"
+            style={{
+              position: "absolute",
+              bottom: "-4px",
+              left: "50%",
+              transform: "translateX(-50%) rotate(45deg)",
+              width: "8px",
+              height: "8px",
+              background: "var(--primary)"
+            }}
+          />
+        </div>
+      )}
     </div>
   );
 }
