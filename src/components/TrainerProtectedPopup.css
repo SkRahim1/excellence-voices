@@ -20,6 +20,7 @@
 
 /* POPUP BOX */
 .trainer-popup-box {
+    position: relative;
     width: 100%;
     max-width: 400px;
     background: #ffffff;
@@ -29,6 +30,40 @@
     box-shadow: 0 25px 60px rgba(13, 45, 89, 0.25);
     border: 1px solid rgba(13, 45, 89, 0.05);
     animation: trainerScaleUp 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+/* CLOSE BUTTON */
+.trainer-close-btn {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 32px;
+  height: 32px;
+  border: none;
+  border-radius: 50%;
+  background: rgba(239, 68, 68, 0.08);
+  color: #ef4444;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 0;
+  outline: none;
+}
+
+.trainer-close-btn:hover {
+  background: rgba(239, 68, 68, 0.18);
+  transform: rotate(90deg);
+}
+
+@media (max-width: 768px) {
+  .trainer-close-btn {
+    top: 12px;
+    right: 12px;
+    width: 28px;
+    height: 28px;
+  }
 }
 
 @keyframes trainerScaleUp {
@@ -75,7 +110,7 @@
 }
 
 /* BUTTON */
-.trainer-popup-box button {
+.trainer-submit-btn {
     width: 100%;
     padding: 15px;
     border: none;
@@ -90,13 +125,13 @@
     box-shadow: 0 6px 16px rgba(13, 45, 89, 0.15);
 }
 
-.trainer-popup-box button:hover {
+.trainer-submit-btn:hover {
     transform: translateY(-2px);
     box-shadow: 0 10px 22px rgba(13, 45, 89, 0.25);
     background: linear-gradient(135deg, #1e40af 0%, #2563eb 100%);
 }
 
-.trainer-popup-box button:active {
+.trainer-submit-btn:active {
     transform: scale(0.98);
 }
 

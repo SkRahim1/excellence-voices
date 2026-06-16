@@ -1,34 +1,30 @@
 import React, { useState } from "react";
-import { SCHOOL_MAPPING, SCHOOL_TEACHER_PASSWORDS, normalizeSchoolCode } from "../services/schoolConfig";
-import "./TeacherProtectedPopup.css";
+import { SCHOOL_MAPPING, SCHOOL_PRINCIPAL_PASSWORDS, normalizeSchoolCode } from "../services/schoolConfig";
+import "./PrincipalProtectedPopup.css";
 import { X } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import { db } from "../firebase";
 import { doc, getDoc, setDoc } from "firebase/firestore";
 
-export default function TeacherProtectedPopup({ children }) {
+export default function PrincipalProtectedPopup({ children }) {
   const navigate = useNavigate();
   const [authenticated, setAuthenticated] = useState(
-    localStorage.getItem("teacherAuth") === "true"
+    localStorage.getItem("principalAuth") === "true"
   );
   const [name, setName] = useState(
-    localStorage.getItem("teacherName") || ""
-  );
-  const [subject, setSubject] = useState(
-    localStorage.getItem("teacherSubject") || "english"
+    localStorage.getItem("principalName") || ""
   );
   const [schoolCode, setSchoolCode] = useState(
-    localStorage.getItem("teacherSchoolCode") || "exscl-01"
+    localStorage.getItem("principalSchoolCode") || "exscl-01"
   );
   const [mobileNumber, setMobileNumber] = useState(
-    localStorage.getItem("teacherMobileNumber") || ""
+    localStorage.getItem("principalMobileNumber") || ""
   );
 
   const [activeTab, setActiveTab] = useState("register"); // "register" | "login"
   const [nameInput, setNameInput] = useState("");
   const [mobileInput, setMobileInput] = useState("");
   const [schoolInput, setSchoolInput] = useState("exscl-01");
-  const [subjectInput, setSubjectInput] = useState("english");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
@@ -46,8 +42,9 @@ export default function TeacherProtectedPopup({ children }) {
       setError("Please enter a valid 10-digit mobile number");
       return;
     }
+
     const normalizedSelectedCode = normalizeSchoolCode(schoolInput);
-    const expectedPassword = SCHOOL_TEACHER_PASSWORDS[normalizedSelectedCode];
+    const expectedPassword = SCHOOL_PRINCIPAL_PASSWORDS[normalizedSelectedCode];
 
     if (password !== expectedPassword) {
       setError("Incorrect Password");
@@ -58,7 +55,7 @@ export default function TeacherProtectedPopup({ children }) {
     setError("");
 
     try {
-      const docRef = doc(db, "teachers", mobileInput);
+      const docRef = doc(db, "principals", mobileInput);
       const docSnap = await getDoc(docRef);
 
       if (docSnap.exists()) {
@@ -68,31 +65,20 @@ export default function TeacherProtectedPopup({ children }) {
       }
 
       const newProfile = {
-        teacherName: nameInput.trim(),
+        principalName: nameInput.trim(),
         mobileNumber: mobileInput,
         schoolCode: normalizedSelectedCode,
-        subject: subjectInput,
-        completedWeeks: [],
-        sessionSeconds: 0,
-        lastActiveDate: new Date().toISOString().split("T")[0],
-        updatedAt: new Date().toISOString()
+        createdAt: new Date().toISOString()
       };
 
       await setDoc(docRef, newProfile);
 
-      localStorage.setItem("teacherAuth", "true");
-      localStorage.setItem("teacherName", nameInput.trim());
-      localStorage.setItem("teacherSubject", subjectInput);
-      localStorage.setItem("teacherSchoolCode", normalizedSelectedCode);
-      localStorage.setItem("teacherMobileNumber", mobileInput);
-      localStorage.setItem("teacherProgress", JSON.stringify([]));
-      localStorage.setItem("teacherSessionTime", JSON.stringify({
-        date: new Date().toDateString(),
-        seconds: 0
-      }));
+      localStorage.setItem("principalAuth", "true");
+      localStorage.setItem("principalName", nameInput.trim());
+      localStorage.setItem("principalSchoolCode", normalizedSelectedCode);
+      localStorage.setItem("principalMobileNumber", mobileInput);
 
       setName(nameInput.trim());
-      setSubject(subjectInput);
       setSchoolCode(normalizedSelectedCode);
       setMobileNumber(mobileInput);
       setAuthenticated(true);
@@ -114,7 +100,7 @@ export default function TeacherProtectedPopup({ children }) {
     setError("");
 
     try {
-      const docRef = doc(db, "teachers", mobileInput);
+      const docRef = doc(db, "principals", mobileInput);
       const docSnap = await getDoc(docRef);
 
       if (!docSnap.exists()) {
@@ -124,22 +110,13 @@ export default function TeacherProtectedPopup({ children }) {
       }
 
       const data = docSnap.data();
-      const weeks = data.completedWeeks || [];
-      const seconds = data.sessionSeconds || 0;
 
-      localStorage.setItem("teacherAuth", "true");
-      localStorage.setItem("teacherName", data.teacherName);
-      localStorage.setItem("teacherSubject", data.subject || "english");
-      localStorage.setItem("teacherSchoolCode", data.schoolCode || "exscl-01");
-      localStorage.setItem("teacherMobileNumber", mobileInput);
-      localStorage.setItem("teacherProgress", JSON.stringify(weeks));
-      localStorage.setItem("teacherSessionTime", JSON.stringify({
-        date: new Date().toDateString(),
-        seconds: seconds
-      }));
+      localStorage.setItem("principalAuth", "true");
+      localStorage.setItem("principalName", data.principalName);
+      localStorage.setItem("principalSchoolCode", data.schoolCode || "exscl-01");
+      localStorage.setItem("principalMobileNumber", mobileInput);
 
-      setName(data.teacherName);
-      setSubject(data.subject || "english");
+      setName(data.principalName);
       setSchoolCode(data.schoolCode || "exscl-01");
       setMobileNumber(mobileInput);
       setAuthenticated(true);
@@ -152,38 +129,34 @@ export default function TeacherProtectedPopup({ children }) {
   };
 
   const handleLogout = () => {
-    localStorage.removeItem("teacherAuth");
-    localStorage.removeItem("teacherName");
-    localStorage.removeItem("teacherSubject");
-    localStorage.removeItem("teacherSchoolCode");
-    localStorage.removeItem("teacherMobileNumber");
-    localStorage.removeItem("teacherProgress");
-    localStorage.removeItem("teacherSessionTime");
+    localStorage.removeItem("principalAuth");
+    localStorage.removeItem("principalName");
+    localStorage.removeItem("principalSchoolCode");
+    localStorage.removeItem("principalMobileNumber");
     setName("");
-    setSubject("english");
     setSchoolCode("exscl-01");
     setMobileNumber("");
     setAuthenticated(false);
   };
 
   if (authenticated) {
-    return typeof children === "function" ? children(name, subject, schoolCode, mobileNumber, handleLogout) : children;
+    return typeof children === "function" ? children(name, schoolCode, mobileNumber, handleLogout) : children;
   }
 
   return (
-    <div className="teacher-popup-overlay">
-      <div className="teacher-popup-box">
+    <div className="principal-popup-overlay">
+      <div className="principal-popup-box animate-scaleUp">
         {/* CLOSE BUTTON */}
-        <button className="teacher-close-btn" onClick={() => navigate("/")} aria-label="Close">
+        <button className="principal-close-btn" onClick={() => navigate("/")} aria-label="Close">
           <X size={20} />
         </button>
 
-        <div className="teacher-popup-icon">👩‍🏫</div>
-        <h1>Teachers Portal</h1>
-        <p>Access your training portal dashboard.</p>
+        <div className="principal-popup-icon">🎓</div>
+        <h1>Principals Portal</h1>
+        <p>Access your administration dashboard.</p>
 
         {/* Tab Switcher */}
-        <div className="teacher-tab-switcher">
+        <div className="principal-tab-switcher">
           <button
             type="button"
             className={activeTab === "register" ? "active" : ""}
@@ -204,7 +177,7 @@ export default function TeacherProtectedPopup({ children }) {
           <>
             <input
               type="text"
-              placeholder="Enter Your Name"
+              placeholder="Enter Principal Name"
               value={nameInput}
               onChange={(e) => { setNameInput(e.target.value); setError(""); }}
             />
@@ -227,29 +200,16 @@ export default function TeacherProtectedPopup({ children }) {
               ))}
             </select>
 
-            <select
-              value={subjectInput}
-              onChange={(e) => setSubjectInput(e.target.value)}
-            >
-              <option value="english">English</option>
-              <option value="mathematics">Mathematics</option>
-              <option value="science">Science</option>
-              <option value="evs">EVS</option>
-              <option value="socialStudies">Social Studies</option>
-              <option value="computerScience">Computer Science</option>
-              <option value="physicalTraining">Physical Training</option>
-            </select>
-
             <input
               type="password"
-              placeholder="Enter School Password"
+              placeholder="Enter School Admin Password"
               value={password}
               onChange={(e) => { setPassword(e.target.value); setError(""); }}
             />
 
-            {error && <span className="teacher-popup-error">{error}</span>}
+            {error && <span className="principal-popup-error">{error}</span>}
 
-            <button className="teacher-submit-btn" onClick={handleRegister} disabled={loading}>
+            <button className="principal-submit-btn" onClick={handleRegister} disabled={loading}>
               {loading ? "Registering..." : "Register Profile"}
             </button>
           </>
@@ -262,9 +222,9 @@ export default function TeacherProtectedPopup({ children }) {
               onChange={(e) => { setMobileInput(e.target.value.replace(/\D/g, "").slice(0, 10)); setError(""); }}
             />
 
-            {error && <span className="teacher-popup-error">{error}</span>}
+            {error && <span className="principal-popup-error">{error}</span>}
 
-            <button className="teacher-submit-btn" onClick={handleLogin} disabled={loading}>
+            <button className="principal-submit-btn" onClick={handleLogin} disabled={loading}>
               {loading ? "Logging In..." : "Unlock Access"}
             </button>
           </>
@@ -273,5 +233,3 @@ export default function TeacherProtectedPopup({ children }) {
     </div>
   );
 }
-
-

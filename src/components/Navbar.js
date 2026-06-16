@@ -76,6 +76,7 @@ export default function Navbar({
             item.id === "programs" ||
             item.id === "students" ||
             item.id === "teachers" ||
+            item.id === "principals" ||
             item.id === "trainers" ||
             item.id === "free-demo" ||
             item.id === "contact"
@@ -158,6 +159,7 @@ export default function Navbar({
                 item.id === "programs" ||
                 item.id === "students" ||
                 item.id === "teachers" ||
+                item.id === "principals" ||
                 item.id === "trainers" ||
                 item.id === "free-demo" ||
                 item.id === "contact"

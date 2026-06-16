@@ -28,8 +28,10 @@ import {
 } from "lucide-react";
 import teachersData from "../data/TeachersData";
 import "./TeachersHome.css";
+import { db } from "../../firebase";
+import { doc, setDoc } from "firebase/firestore";
 
-export default function TeachersHome({ teacherName, teacherSubject, onLogout }) {
+export default function TeachersHome({ teacherName, teacherSubject, teacherSchoolCode, teacherMobileNumber, onLogout }) {
   const [activeWeek, setActiveWeek] = useState("week-1");
   const [activeSubject, setActiveSubject] = useState(teacherSubject || "english");
   const [activeCategory, setActiveCategory] = useState("instructions");
@@ -69,6 +71,36 @@ export default function TeachersHome({ teacherName, teacherSubject, onLogout }) 
       return stored.date === today ? stored.seconds : 0;
     } catch { return 0; }
   });
+
+  const syncToFirestore = useCallback(async (weeksVal, secondsVal) => {
+    if (!teacherMobileNumber && (!teacherName || !teacherSchoolCode)) return;
+    try {
+      const docId = teacherMobileNumber || `${teacherSchoolCode}_${teacherName.trim().replace(/\s+/g, "_")}_${activeSubject}`;
+      await setDoc(doc(db, "teachers", docId), {
+        teacherName: teacherName.trim(),
+        schoolCode: teacherSchoolCode,
+        subject: activeSubject,
+        completedWeeks: weeksVal,
+        sessionSeconds: secondsVal,
+        lastActiveDate: new Date().toISOString().split("T")[0],
+        updatedAt: new Date().toISOString()
+      }, { merge: true });
+    } catch (err) {
+      console.error("Error syncing teacher progress to Firestore:", err);
+    }
+  }, [teacherName, teacherSchoolCode, activeSubject, teacherMobileNumber]);
+
+  // Initial load sync
+  useEffect(() => {
+    syncToFirestore(completedWeeks, sessionSeconds);
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps
+
+  // Periodic sync every 60 seconds of active session duration
+  useEffect(() => {
+    if (sessionSeconds > 0 && sessionSeconds % 60 === 0) {
+      syncToFirestore(completedWeeks, sessionSeconds);
+    }
+  }, [sessionSeconds, completedWeeks, syncToFirestore]);
 
   // Timer - count up every second
   useEffect(() => {
@@ -138,6 +170,7 @@ export default function TeachersHome({ teacherName, teacherSubject, onLogout }) 
     localStorage.setItem("teacherProgress", JSON.stringify(updated));
     localStorage.setItem("teacherLastCompleteDate", todayStr);
     setLastCompletionDate(todayStr);
+    syncToFirestore(updated, sessionSeconds);
   };
 
   const progressPercent = Math.round((completedWeeks.length / 10) * 100);

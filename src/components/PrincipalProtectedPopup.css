@@ -1,25 +1,25 @@
-/* TEACHER POPUP OVERLAY */
-.teacher-popup-overlay {
+/* PRINCIPAL POPUP OVERLAY */
+.principal-popup-overlay {
   position: fixed;
   inset: 0;
-  background: rgba(6, 10, 25, 0.75);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+  background: rgba(10, 12, 22, 0.82);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 99999;
   padding: 20px;
-  animation: teacherFadeIn 0.35s ease;
+  animation: principalFadeIn 0.35s ease;
 }
 
-@keyframes teacherFadeIn {
+@keyframes principalFadeIn {
   from { opacity: 0; }
   to { opacity: 1; }
 }
 
 /* POPUP BOX */
-.teacher-popup-box {
+.principal-popup-box {
   position: relative;
   width: 100%;
   max-width: 420px;
@@ -27,13 +27,13 @@
   padding: 44px 32px;
   border-radius: 28px;
   text-align: center;
-  box-shadow: 0 25px 60px rgba(13, 45, 89, 0.25);
-  border: 1px solid rgba(13, 45, 89, 0.05);
-  animation: teacherScaleUp 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+  box-shadow: 0 25px 60px rgba(180, 120, 20, 0.18);
+  border: 1px solid rgba(251, 191, 36, 0.15);
+  animation: principalScaleUp 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
 /* CLOSE BUTTON */
-.teacher-close-btn {
+.principal-close-btn {
   position: absolute;
   top: 16px;
   right: 16px;
@@ -52,13 +52,13 @@
   outline: none;
 }
 
-.teacher-close-btn:hover {
+.principal-close-btn:hover {
   background: rgba(239, 68, 68, 0.18);
   transform: rotate(90deg);
 }
 
 @media (max-width: 768px) {
-  .teacher-close-btn {
+  .principal-close-btn {
     top: 12px;
     right: 12px;
     width: 28px;
@@ -66,26 +66,26 @@
   }
 }
 
-@keyframes teacherScaleUp {
+@keyframes principalScaleUp {
   from { transform: scale(0.9); opacity: 0; }
   to { transform: scale(1); opacity: 1; }
 }
 
-.teacher-popup-icon {
-  font-size: 48px;
-  margin-bottom: 8px;
+.principal-popup-icon {
+  font-size: 52px;
+  margin-bottom: 12px;
   line-height: 1;
 }
 
-.teacher-popup-box h1 {
-  color: var(--primary, #0d2d59);
+.principal-popup-box h1 {
+  color: #854d0e; /* Amber-800 */
   margin: 0 0 8px 0;
   font-size: 26px;
   font-weight: 800;
   letter-spacing: -0.5px;
 }
 
-.teacher-popup-box p {
+.principal-popup-box p {
   color: var(--text-muted, #64748b);
   margin: 0 0 24px 0;
   font-size: 14px;
@@ -94,11 +94,11 @@
 }
 
 /* FORM FIELDS */
-.teacher-popup-box input {
+.principal-popup-box input {
   width: 100%;
   padding: 14px 18px;
   border-radius: 14px;
-  border: 1px solid rgba(13, 45, 89, 0.12);
+  border: 1px solid rgba(217, 119, 6, 0.15);
   outline: none;
   font-size: 15px;
   font-family: 'Poppins', sans-serif;
@@ -106,25 +106,25 @@
   margin-bottom: 12px;
   box-sizing: border-box;
   transition: all 0.3s ease;
-  background: rgba(13, 45, 89, 0.02);
+  background: rgba(251, 191, 36, 0.02);
 }
 
-.teacher-popup-box input:focus {
-  border-color: var(--primary, #0d2d59);
+.principal-popup-box input:focus {
+  border-color: #fbbf24;
   background: #ffffff;
-  box-shadow: 0 0 0 4px rgba(13, 45, 89, 0.08);
+  box-shadow: 0 0 0 4px rgba(251, 191, 36, 0.12);
 }
 
-.teacher-popup-box input::placeholder {
+.principal-popup-box input::placeholder {
   color: #94a3b8;
   font-weight: 500;
 }
 
-.teacher-popup-box select {
+.principal-popup-box select {
   width: 100%;
   padding: 14px 18px;
   border-radius: 14px;
-  border: 1px solid rgba(13, 45, 89, 0.12);
+  border: 1px solid rgba(217, 119, 6, 0.15);
   outline: none;
   font-size: 15px;
   font-family: 'Poppins', sans-serif;
@@ -132,51 +132,51 @@
   margin-bottom: 12px;
   box-sizing: border-box;
   transition: all 0.3s ease;
-  background: rgba(13, 45, 89, 0.02);
+  background: rgba(251, 191, 36, 0.02);
   cursor: pointer;
   appearance: none;
   -webkit-appearance: none;
-  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%230d2d59' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23d97706' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
   background-repeat: no-repeat;
   background-position: right 18px center;
   background-size: 16px;
 }
 
-.teacher-popup-box select:focus {
-  border-color: var(--primary, #0d2d59);
+.principal-popup-box select:focus {
+  border-color: #fbbf24;
   background-color: #ffffff;
-  box-shadow: 0 0 0 4px rgba(13, 45, 89, 0.08);
+  box-shadow: 0 0 0 4px rgba(251, 191, 36, 0.12);
 }
 
 /* BUTTON */
-.teacher-submit-btn {
+.principal-submit-btn {
   width: 100%;
   padding: 15px;
   border: none;
   border-radius: 14px;
-  background: linear-gradient(135deg, var(--primary, #0d2d59) 0%, #1e40af 100%);
+  background: linear-gradient(135deg, #d97706 0%, #b45309 100%);
   color: white;
   font-size: 16px;
   font-weight: 600;
   font-family: 'Poppins', sans-serif;
   cursor: pointer;
   transition: all 0.3s ease;
-  box-shadow: 0 6px 16px rgba(13, 45, 89, 0.15);
+  box-shadow: 0 6px 16px rgba(217, 119, 6, 0.15);
   margin-top: 4px;
 }
 
-.teacher-submit-btn:hover {
+.principal-submit-btn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 10px 22px rgba(13, 45, 89, 0.25);
-  background: linear-gradient(135deg, #1e40af 0%, #2563eb 100%);
+  box-shadow: 0 10px 22px rgba(217, 119, 6, 0.25);
+  background: linear-gradient(135deg, #b45309 0%, #78350f 100%);
 }
 
-.teacher-submit-btn:active {
+.principal-submit-btn:active {
   transform: scale(0.98);
 }
 
 /* ERROR STATE */
-.teacher-popup-error {
+.principal-popup-error {
   display: block;
   color: #ef4444;
   margin-bottom: 12px;
@@ -185,15 +185,15 @@
 }
 
 /* TAB SWITCHER */
-.teacher-tab-switcher {
+.principal-tab-switcher {
   display: flex;
-  background: rgba(13, 45, 89, 0.05);
+  background: rgba(217, 119, 6, 0.05);
   border-radius: 12px;
   padding: 4px;
   margin-bottom: 20px;
 }
 
-.teacher-tab-switcher button {
+.principal-tab-switcher button {
   flex: 1;
   padding: 10px;
   border-radius: 8px;
@@ -205,10 +205,11 @@
   cursor: pointer;
   transition: all 0.25s ease;
   font-family: 'Poppins', sans-serif;
+  outline: none;
 }
 
-.teacher-tab-switcher button.active {
-  background: #0d2d59;
+.principal-tab-switcher button.active {
+  background: #d97706;
   color: #ffffff;
-  box-shadow: 0 4px 10px rgba(13, 45, 89, 0.15);
+  box-shadow: 0 4px 10px rgba(217, 119, 6, 0.15);
 }

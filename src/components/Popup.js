@@ -122,9 +122,6 @@ export default function Popup() {
             {/* FOOTER */}
             <div className="popup-footer" style={{ display: "flex", flexDirection: "column", gap: "5px", alignItems: "center" }}>
               <div>Trusted by Schools • Built for Student Confidence</div>
-              <div style={{ fontSize: "0.85em", opacity: 0.8 }}>
-                A product of <a href="https://renvixteach.in" target="_blank" rel="noopener noreferrer" style={{ color: "#38bdf8", textDecoration: "underline" }}>Renvix Technologies</a>
-              </div>
             </div>
           </motion.div>
         </motion.div>

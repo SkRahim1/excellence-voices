@@ -25,6 +25,8 @@ import TrainerProtectedPopup from "./components/TrainerProtectedPopup";
 import TeacherProtectedPopup from "./components/TeacherProtectedPopup";
 import VoiceBot from "./components/students/VoiceBot";
 import TeachersHome from "./components/teachers/TeachersHome";
+import PrincipalProtectedPopup from "./components/PrincipalProtectedPopup";
+import PrincipalsHome from "./components/principals/PrincipalsHome";
 /* PASSWORD PROTECTION */
 /* Check if student is currently authenticated (used to gate VoiceBot too) */
 function getStudentAuthStatus() {
@@ -178,6 +180,12 @@ export default function App() {
       label: "Teachers",
       id: "teachers",
       path: "/teachers",
+    },
+
+    {
+      label: "Principals",
+      id: "principals",
+      path: "/principals",
     },
 
     {
@@ -335,14 +343,33 @@ export default function App() {
             path="/teachers"
             element={
               <TeacherProtectedPopup>
-                {(teacherName, teacherSubject, handleLogout) => (
+                {(teacherName, teacherSubject, teacherSchoolCode, teacherMobileNumber, handleLogout) => (
                   <TeachersHome 
                     teacherName={teacherName} 
                     teacherSubject={teacherSubject} 
+                    teacherSchoolCode={teacherSchoolCode}
+                    teacherMobileNumber={teacherMobileNumber}
                     onLogout={handleLogout} 
                   />
                 )}
               </TeacherProtectedPopup>
+            }
+          />
+
+          {/* PRINCIPALS */}
+          <Route
+            path="/principals"
+            element={
+              <PrincipalProtectedPopup>
+                {(principalName, principalSchoolCode, principalMobileNumber, handleLogout) => (
+                  <PrincipalsHome 
+                    principalName={principalName} 
+                    principalSchoolCode={principalSchoolCode} 
+                    principalMobileNumber={principalMobileNumber}
+                    onLogout={handleLogout} 
+                  />
+                )}
+              </PrincipalProtectedPopup>
             }
           />
 
