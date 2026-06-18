@@ -90,6 +90,7 @@ export default function TeacherProtectedPopup({ children }) {
         date: new Date().toDateString(),
         seconds: 0
       }));
+      localStorage.setItem("teacherTotalSessionTime", "0");
 
       setName(nameInput.trim());
       setSubject(subjectInput);
@@ -137,6 +138,7 @@ export default function TeacherProtectedPopup({ children }) {
         date: new Date().toDateString(),
         seconds: seconds
       }));
+      localStorage.setItem("teacherTotalSessionTime", seconds.toString());
 
       setName(data.teacherName);
       setSubject(data.subject || "english");
@@ -159,6 +161,15 @@ export default function TeacherProtectedPopup({ children }) {
     localStorage.removeItem("teacherMobileNumber");
     localStorage.removeItem("teacherProgress");
     localStorage.removeItem("teacherSessionTime");
+    localStorage.removeItem("teacherTotalSessionTime");
+    
+    // Clear weekly timers and speech progress from local storage
+    Object.keys(localStorage).forEach(key => {
+      if (key.startsWith("teacherWeeklySessionTime_") || key.startsWith("speechProgress_")) {
+        localStorage.removeItem(key);
+      }
+    });
+
     setName("");
     setSubject("english");
     setSchoolCode("exscl-01");

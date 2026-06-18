@@ -24,7 +24,9 @@ import {
   UserCircle,
   Lock,
   Clock,
-  Dumbbell
+  Dumbbell,
+  Mic,
+  Star
 } from "lucide-react";
 import teachersData from "../data/TeachersData";
 import "./TeachersHome.css";
@@ -45,6 +47,154 @@ export default function TeachersHome({ teacherName, teacherSubject, teacherSchoo
   const [selectedWordInfo, setSelectedWordInfo] = useState(null); // { word, translation, x, y }
   const touchStartRef = useRef(null);
 
+  const [speechProgress, setSpeechProgress] = useState(0);
+  const [activeSpeechItem, setActiveSpeechItem] = useState("");
+  const [isListening, setIsListening] = useState(false);
+  const [speechResult, setSpeechResult] = useState("");
+  const [isSpeechMatch, setIsSpeechMatch] = useState(false);
+  const [speechError, setSpeechError] = useState("");
+  const recognitionRef = useRef(null);
+
+  // Load speech progress and weekly session time when activeWeek changes
+  const [weeklySessionSeconds, setWeeklySessionSeconds] = useState(0);
+
+  useEffect(() => {
+    const savedProgress = localStorage.getItem(`speechProgress_${activeWeek}`) || "0";
+    setSpeechProgress(parseInt(savedProgress, 10));
+
+    const savedWeeklyTime = localStorage.getItem(`teacherWeeklySessionTime_${activeWeek}`) || "0";
+    setWeeklySessionSeconds(parseInt(savedWeeklyTime, 10));
+
+    setActiveSpeechItem("");
+    setSpeechResult("");
+    setIsSpeechMatch(false);
+    setSpeechError("");
+
+    if (isListening) {
+      stopSpeechRecognition();
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [activeWeek]);
+
+  // Clean up recognition on unmount
+  useEffect(() => {
+    return () => {
+      if (recognitionRef.current) {
+        recognitionRef.current.abort();
+      }
+    };
+  }, []);
+
+  const startSpeechRecognition = (targetText) => {
+    const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+    if (!SpeechRecognition) {
+      alert("Speech recognition is not supported in this browser. Please use Google Chrome or Microsoft Edge.");
+      return;
+    }
+
+    if (recognitionRef.current) {
+      try {
+        recognitionRef.current.abort();
+      } catch (err) {
+        console.error("Error aborting previous speech recognition:", err);
+      }
+    }
+
+    setActiveSpeechItem(targetText);
+    setSpeechResult("");
+    setIsSpeechMatch(false);
+    setSpeechError("");
+    setIsListening(true);
+
+    const rec = new SpeechRecognition();
+    rec.continuous = false;
+    rec.interimResults = false;
+
+    if (currentLang === "hi") {
+      rec.lang = "hi-IN";
+    } else if (currentLang === "te") {
+      rec.lang = "te-IN";
+    } else {
+      rec.lang = "en-IN";
+    }
+
+    rec.onstart = () => {
+      if (recognitionRef.current === rec) {
+        setIsListening(true);
+      }
+    };
+
+    rec.onend = () => {
+      if (recognitionRef.current === rec) {
+        setIsListening(false);
+      }
+    };
+
+    rec.onerror = (event) => {
+      console.error("Speech recognition error:", event.error);
+      if (recognitionRef.current === rec) {
+        setIsListening(false);
+        if (event.error === "not-allowed") {
+          setSpeechError("Microphone access blocked. Please click the mic icon in your browser address bar and choose 'Allow'.");
+        } else if (event.error === "no-speech") {
+          setSpeechError("No speech detected. Please try again and speak clearly.");
+        } else if (event.error === "audio-capture") {
+          setSpeechError("No microphone found. Please verify your system settings.");
+        } else {
+          setSpeechError(`Speech recognition failed: ${event.error}`);
+        }
+      }
+    };
+
+    rec.onresult = (event) => {
+      if (recognitionRef.current !== rec) return;
+
+      const transcript = event.results[0][0].transcript;
+      setSpeechResult(transcript);
+
+      const cleanTarget = targetText.toLowerCase().replace(/[.,/#!$%^&*;:{}=\-_`~()?"]/g, "").replace(/\s{2,}/g, " ").trim();
+      const cleanTranscript = transcript.toLowerCase().replace(/[.,/#!$%^&*;:{}=\-_`~()?"]/g, "").replace(/\s{2,}/g, " ").trim();
+
+      const wordsTarget = cleanTarget.split(" ");
+      const wordsTranscript = cleanTranscript.split(" ");
+      const matchCount = wordsTranscript.filter(w => wordsTarget.includes(w)).length;
+      const matchRatio = matchCount / Math.max(wordsTarget.length, 1);
+
+      if (cleanTranscript === cleanTarget || matchRatio >= 0.5 || cleanTarget.includes(cleanTranscript) || cleanTranscript.includes(cleanTarget)) {
+        setIsSpeechMatch(true);
+        setSpeechProgress(prev => {
+          const nextVal = Math.min(3, prev + 1);
+          localStorage.setItem(`speechProgress_${activeWeek}`, nextVal.toString());
+          return nextVal;
+        });
+      } else {
+        setIsSpeechMatch(false);
+      }
+    };
+
+    recognitionRef.current = rec;
+    rec.start();
+  };
+
+  const stopSpeechRecognition = () => {
+    if (recognitionRef.current) {
+      try {
+        recognitionRef.current.stop();
+      } catch (err) {
+        console.error("Error stopping speech recognition:", err);
+      }
+    }
+    setIsListening(false);
+  };
+
+  const toggleListening = () => {
+    if (isListening) {
+      stopSpeechRecognition();
+    } else if (activeSpeechItem) {
+      startSpeechRecognition(activeSpeechItem);
+    }
+  };
+
   useEffect(() => {
     if (teacherSubject) {
       setActiveSubject(teacherSubject);
@@ -63,12 +213,14 @@ export default function TeachersHome({ teacherName, teacherSubject, teacherSchoo
     () => localStorage.getItem("teacherLastCompleteDate") || ""
   );
 
-  // Session time tracker (seconds spent on portal today)
+  // Session time tracker (total seconds spent on portal)
   const [sessionSeconds, setSessionSeconds] = useState(() => {
     try {
-      const stored = JSON.parse(localStorage.getItem("teacherSessionTime")) || {};
-      const today = new Date().toDateString();
-      return stored.date === today ? stored.seconds : 0;
+      const totalStored = localStorage.getItem("teacherTotalSessionTime");
+      if (totalStored) return parseInt(totalStored, 10);
+      
+      const oldStored = JSON.parse(localStorage.getItem("teacherSessionTime")) || {};
+      return oldStored.seconds || 0;
     } catch { return 0; }
   });
 
@@ -95,32 +247,37 @@ export default function TeachersHome({ teacherName, teacherSubject, teacherSchoo
     syncToFirestore(completedWeeks, sessionSeconds);
   }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
-  // Periodic sync every 60 seconds of active session duration
+  // Periodic sync to Firestore: every minute
   useEffect(() => {
     if (sessionSeconds > 0 && sessionSeconds % 60 === 0) {
       syncToFirestore(completedWeeks, sessionSeconds);
     }
   }, [sessionSeconds, completedWeeks, syncToFirestore]);
 
-  // Timer - count up every second
+  // Timer - count up in 1-minute increments (ticks every 60 seconds)
   useEffect(() => {
     const interval = setInterval(() => {
-      setSessionSeconds(prev => {
-        const updated = prev + 1;
-        localStorage.setItem("teacherSessionTime", JSON.stringify({
-          date: new Date().toDateString(),
-          seconds: updated
-        }));
-        return updated;
+      // 1. Increment total session seconds by 60
+      setSessionSeconds(prevTotal => {
+        const nextTotal = prevTotal + 60;
+        localStorage.setItem("teacherTotalSessionTime", nextTotal.toString());
+        return nextTotal;
       });
-    }, 1000);
+
+      // 2. Increment weekly session seconds by 60
+      setWeeklySessionSeconds(prevWeekly => {
+        const nextWeekly = prevWeekly + 60;
+        localStorage.setItem(`teacherWeeklySessionTime_${activeWeek}`, nextWeekly.toString());
+        return nextWeekly;
+      });
+    }, 60000); // Ticks every 1 minute
     return () => clearInterval(interval);
-  }, []);
+  }, [activeWeek]);
 
   const REQUIRED_MINUTES = 60;
   const requiredSeconds = REQUIRED_MINUTES * 60;
-  const timeRemaining = Math.max(0, requiredSeconds - sessionSeconds);
-  const hasSpentEnoughTime = sessionSeconds >= requiredSeconds;
+  const timeRemaining = Math.max(0, requiredSeconds - weeklySessionSeconds);
+  const hasSpentEnoughTime = weeklySessionSeconds >= requiredSeconds;
   const todayStr = new Date().toISOString().split("T")[0];
   const alreadyCompletedToday = lastCompletionDate === todayStr;
 
@@ -143,6 +300,7 @@ export default function TeachersHome({ teacherName, teacherSubject, teacherSchoo
     if (completedWeeks.includes(activeWeek)) return false; // already done
     if (activeWeek !== nextWeekToComplete) return false; // not sequential
     if (alreadyCompletedToday) return false; // one per day
+    if (speechProgress < 3) return false; // need speech practice
     if (!hasSpentEnoughTime) return false; // need 60 min
     return true;
   };
@@ -155,6 +313,9 @@ export default function TeachersHome({ teacherName, teacherSubject, teacherSchoo
       return `Complete Week ${prevWeek} first`;
     }
     if (alreadyCompletedToday) return "1 week per day limit reached";
+    if (speechProgress < 3) {
+      return `Speak 3 items (Done: ${speechProgress}/3)`;
+    }
     if (!hasSpentEnoughTime) {
       const mins = Math.floor(timeRemaining / 60);
       const secs = timeRemaining % 60;
@@ -540,6 +701,29 @@ export default function TeachersHome({ teacherName, teacherSubject, teacherSchoo
             {currentMilestone.icon} Current Level: <strong>{currentMilestone.label}</strong>
           </div>
         )}
+        {!completedWeeks.includes(activeWeek) && activeWeek === nextWeekToComplete && (
+          <div className="weekly-time-progress-bar" style={{ marginTop: "20px", padding: "14px", background: "rgba(13, 45, 89, 0.03)", borderRadius: "12px", border: "1px dashed rgba(13, 45, 89, 0.15)" }}>
+            <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "8px" }}>
+              <div style={{ display: "flex", alignItems: "center", gap: "6px", fontSize: "13px", fontWeight: "600", color: "var(--primary)" }}>
+                <Clock size={15} style={{ color: "var(--secondary)" }} />
+                <span>Time spent this week (Gate):</span>
+              </div>
+              <span style={{ fontSize: "13px", fontWeight: "700", color: hasSpentEnoughTime ? "#10b981" : "#eab308" }}>
+                {Math.floor(weeklySessionSeconds / 60)}m / 60m {hasSpentEnoughTime ? "✓" : ""}
+              </span>
+            </div>
+            <div style={{ width: "100%", height: "6px", background: "rgba(0,0,0,0.06)", borderRadius: "3px", overflow: "hidden" }}>
+              <div 
+                style={{ 
+                  width: `${Math.min(100, (weeklySessionSeconds / 3600) * 100)}%`, 
+                  height: "100%", 
+                  background: hasSpentEnoughTime ? "linear-gradient(90deg, #10b981, #059669)" : "linear-gradient(90deg, #f59e0b, #d97706)",
+                  transition: "width 0.3s ease" 
+                }} 
+              />
+            </div>
+          </div>
+        )}
       </motion.div>
 
       {/* WEEK SELECTION BAR */}
@@ -742,6 +926,89 @@ export default function TeachersHome({ teacherName, teacherSubject, teacherSchoo
                   </div>
                 ) : (
                   <>
+                    {/* SPEECH PRACTICE ZONE */}
+                    {!completedWeeks.includes(activeWeek) && activeWeek === nextWeekToComplete && (
+                      <div className="speech-practice-card">
+                        <div className="speech-practice-header">
+                          <div className="speech-practice-title-wrapper">
+                            <Mic size={18} className={`mic-pulse-icon ${isListening ? "pulse" : ""}`} />
+                            <h4>Speaking Practice (Unlock Gate)</h4>
+                          </div>
+                          <span className="practice-progress-tag">{speechProgress}/3 Completed</span>
+                        </div>
+                        <p className="practice-desc">
+                          To unlock Week {activeWeek.split("-")[1]}, select any instruction, question, or challenge below by clicking its <strong>mic icon 🎙️</strong>, then speak it aloud clearly.
+                        </p>
+                        <div className="practice-stars">
+                          {[1, 2, 3].map(i => (
+                            <Star 
+                              key={i} 
+                              size={22} 
+                              className={i <= speechProgress ? "star-active" : "star-inactive"} 
+                              fill={i <= speechProgress ? "#eba925" : "none"} 
+                            />
+                          ))}
+                        </div>
+                        
+                        {activeSpeechItem ? (
+                          <div className="active-practice-area">
+                            <div className="practice-target">
+                              <strong>Read this sentence:</strong>
+                              <p className="target-text-bubble">"{activeSpeechItem}"</p>
+                            </div>
+                            
+                            {isListening && (
+                              <div className="listening-indicator">
+                                <div className="pulse-ring"></div>
+                                <span>Listening... Speak now</span>
+                              </div>
+                            )}
+                            
+                            {speechError && (
+                              <div className="speech-error-msg" style={{ margin: "10px 0", padding: "10px 14px", background: "#fef2f2", border: "1px solid #fee2e2", borderRadius: "8px", color: "#991b1b", fontSize: "12.5px", fontWeight: "600", display: "flex", alignItems: "center", gap: "6px" }}>
+                                <span>⚠️ {speechError}</span>
+                              </div>
+                            )}
+                            
+                            {speechResult && (
+                              <div className="speech-result-preview">
+                                <strong>We heard:</strong>
+                                <p className="heard-text-bubble">"{speechResult}"</p>
+                                {isSpeechMatch ? (
+                                  <span className="speech-success-msg">✓ Excellent! matches target text.</span>
+                                ) : (
+                                  <span className="speech-retry-msg">✗ Try reading it again clearly.</span>
+                                )}
+                              </div>
+                            )}
+
+                            <div className="practice-actions">
+                              <button 
+                                type="button" 
+                                className={`listen-btn ${isListening ? "active" : ""}`}
+                                onClick={toggleListening}
+                              >
+                                {isListening ? "Stop Listening" : "Start Speaking"}
+                              </button>
+                              <button 
+                                type="button" 
+                                className="cancel-practice-btn"
+                                onClick={() => {
+                                  stopSpeechRecognition();
+                                  setActiveSpeechItem("");
+                                  setSpeechResult("");
+                                }}
+                              >
+                                Cancel
+                              </button>
+                            </div>
+                          </div>
+                        ) : (
+                          <p className="select-tip-text">💡 Click the microphone icon next to any text item below to start speaking practice.</p>
+                        )}
+                      </div>
+                    )}
+
                     {/* Standard sentence lists (10 items) */}
                     {["instructions", "questions", "stockSentences", "explanationSentences"].includes(activeCategory) && (
                       <ul className="content-list">
@@ -755,6 +1022,15 @@ export default function TeachersHome({ teacherName, teacherSubject, teacherSchoo
                           >
                             <div className="bullet-point">{index + 1}</div>
                             <div className="content-text">{item}</div>
+                            {!completedWeeks.includes(activeWeek) && activeWeek === nextWeekToComplete && (
+                              <button 
+                                className={`item-practice-btn ${activeSpeechItem === item ? "active" : ""}`}
+                                onClick={() => startSpeechRecognition(item)}
+                                title="Practice speaking this item"
+                              >
+                                <Mic size={14} />
+                              </button>
+                            )}
                           </motion.li>
                         ))}
                       </ul>
@@ -778,8 +1054,19 @@ export default function TeachersHome({ teacherName, teacherSubject, teacherSchoo
                                 transition={{ delay: index * 0.1 }}
                               >
                                 <span className="speaker-tag">{utterance.speaker}</span>
-                                <div className={`dialogue-bubble ${isTeacher ? "teacher-bubble" : "student-bubble"}`}>
-                                  {utterance.text}
+                                <div className="dialogue-bubble-container" style={{ display: "flex", alignItems: "center", gap: "10px", width: "100%", justifyContent: isTeacher ? "flex-end" : "flex-start" }}>
+                                  <div className={`dialogue-bubble ${isTeacher ? "teacher-bubble" : "student-bubble"}`}>
+                                    {utterance.text}
+                                  </div>
+                                  {!completedWeeks.includes(activeWeek) && activeWeek === nextWeekToComplete && (
+                                    <button 
+                                      className={`item-practice-btn dialogue-mic-btn ${activeSpeechItem === utterance.text ? "active" : ""}`}
+                                      onClick={() => startSpeechRecognition(utterance.text)}
+                                      title="Practice speaking this dialogue line"
+                                    >
+                                      <Mic size={14} />
+                                    </button>
+                                  )}
                                 </div>
                               </motion.div>
                             );
@@ -800,6 +1087,29 @@ export default function TeachersHome({ teacherName, teacherSubject, teacherSchoo
                         </div>
                         <h4>Practice Challenge</h4>
                         <p className="challenge-main-text">{translatedChallenge}</p>
+                        {!completedWeeks.includes(activeWeek) && activeWeek === nextWeekToComplete && (
+                          <button 
+                            type="button"
+                            className={`challenge-practice-btn ${activeSpeechItem === translatedChallenge ? "active" : ""}`}
+                            onClick={() => startSpeechRecognition(translatedChallenge)}
+                            style={{
+                              marginTop: "20px",
+                              display: "inline-flex",
+                              alignItems: "center",
+                              gap: "8px",
+                              padding: "10px 18px",
+                              background: "linear-gradient(135deg, #0d2d59 0%, #1e40af 100%)",
+                              color: "white",
+                              border: "none",
+                              borderRadius: "10px",
+                              cursor: "pointer",
+                              fontWeight: "600",
+                              fontSize: "13.5px"
+                            }}
+                          >
+                            <Mic size={14} /> Practice Speaking Challenge
+                          </button>
+                        )}
                         <div className="challenge-action-steps">
                           <h5>Action Plan:</h5>
                           <ul>

@@ -22,7 +22,9 @@ import {
   BookOpen,
   Trash2,
   Plus,
-  X
+  X,
+  LayoutGrid,
+  Table
 } from "lucide-react";
 import "./PrincipalsHome.css";
 
@@ -32,6 +34,7 @@ export default function PrincipalsHome({ principalName, principalSchoolCode, onL
   const [error, setError] = useState(null);
   const [searchQuery, setSearchQuery] = useState("");
   const [subjectFilter, setSubjectFilter] = useState("all");
+  const [viewMode, setViewMode] = useState("excel"); // "excel" | "grid"
 
   // Add teacher modal states
   const [showAddModal, setShowAddModal] = useState(false);
@@ -258,6 +261,27 @@ export default function PrincipalsHome({ principalName, principalSchoolCode, onL
               </option>
             ))}
           </select>
+
+          <div className="view-switcher">
+            <button
+              type="button"
+              className={`view-btn ${viewMode === "excel" ? "active" : ""}`}
+              onClick={() => setViewMode("excel")}
+              title="Excel View"
+            >
+              <Table size={16} />
+              <span>Excel</span>
+            </button>
+            <button
+              type="button"
+              className={`view-btn ${viewMode === "grid" ? "active" : ""}`}
+              onClick={() => setViewMode("grid")}
+              title="Grid View"
+            >
+              <LayoutGrid size={16} />
+              <span>Grid</span>
+            </button>
+          </div>
         </div>
       </div>
 
@@ -278,7 +302,7 @@ export default function PrincipalsHome({ principalName, principalSchoolCode, onL
             <BookOpen size={48} className="empty-icon" />
             <p>{teachers.length === 0 ? "No teacher accounts registered or synced in this school yet." : "No teachers match your search filter."}</p>
           </div>
-        ) : (
+        ) : viewMode === "excel" ? (
           <table className="progress-table">
             <thead>
               <tr>
@@ -349,6 +373,67 @@ export default function PrincipalsHome({ principalName, principalSchoolCode, onL
               })}
             </tbody>
           </table>
+        ) : (
+          <div className="teachers-grid">
+            {filteredTeachers.map((t) => {
+              const completedCount = t.completedWeeks?.length || 0;
+              const percentage = Math.round((completedCount / 10) * 100);
+              
+              return (
+                <div key={t.id} className="teacher-card-grid">
+                  <div className="teacher-card-header">
+                    <div className="teacher-avatar-name">
+                      <div className="avatar-circle">
+                        {t.teacherName ? t.teacherName.charAt(0).toUpperCase() : "?"}
+                      </div>
+                      <div className="teacher-info-meta">
+                        <span className="name-bold">{t.teacherName || "Unnamed Teacher"}</span>
+                        <span className={`subject-badge ${t.subject || "english"}`}>
+                          {t.subject || "English"}
+                        </span>
+                      </div>
+                    </div>
+                    <button 
+                      onClick={() => handleDeleteTeacher(t.id, t.teacherName || "Teacher")} 
+                      className="delete-btn-row" 
+                      title="Delete Profile"
+                    >
+                      <Trash2 size={16} />
+                    </button>
+                  </div>
+
+                  <div className="teacher-card-body">
+                    <div className="progress-cell">
+                      <div className="progress-header">
+                        <span className="percentage">{percentage}%</span>
+                        <span className="weeks-count">{completedCount}/10 Weeks</span>
+                      </div>
+                      <div className="progress-track-bg">
+                        <div 
+                          className="progress-bar-fill" 
+                          style={{ 
+                            width: `${percentage}%`,
+                            background: percentage >= 100 ? "linear-gradient(135deg, #10b981 0%, #059669 100%)" : "linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%)"
+                          }}
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="teacher-card-footer">
+                    <div className="time-info">
+                      <Clock size={14} className="cell-icon" />
+                      <span>{formatTime(t.sessionSeconds)}</span>
+                    </div>
+                    <div className="date-info">
+                      <Calendar size={14} className="cell-icon" />
+                      <span>{t.lastActiveDate || "Not tracked"}</span>
+                    </div>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
         )}
       </main>
 

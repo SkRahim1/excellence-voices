@@ -95,6 +95,10 @@ export default function PrincipalProtectedPopup({ children }) {
       setError("Please enter your registered 10-digit mobile number");
       return;
     }
+    if (!password) {
+      setError("Please enter your school admin password");
+      return;
+    }
 
     setLoading(true);
     setError("");
@@ -110,14 +114,22 @@ export default function PrincipalProtectedPopup({ children }) {
       }
 
       const data = docSnap.data();
+      const normalizedCode = normalizeSchoolCode(data.schoolCode || "exscl-01");
+      const expectedPassword = SCHOOL_PRINCIPAL_PASSWORDS[normalizedCode];
+
+      if (password !== expectedPassword) {
+        setError("Incorrect Password");
+        setLoading(false);
+        return;
+      }
 
       localStorage.setItem("principalAuth", "true");
       localStorage.setItem("principalName", data.principalName);
-      localStorage.setItem("principalSchoolCode", data.schoolCode || "exscl-01");
+      localStorage.setItem("principalSchoolCode", normalizedCode);
       localStorage.setItem("principalMobileNumber", mobileInput);
 
       setName(data.principalName);
-      setSchoolCode(data.schoolCode || "exscl-01");
+      setSchoolCode(normalizedCode);
       setMobileNumber(mobileInput);
       setAuthenticated(true);
     } catch (err) {
@@ -160,14 +172,14 @@ export default function PrincipalProtectedPopup({ children }) {
           <button
             type="button"
             className={activeTab === "register" ? "active" : ""}
-            onClick={() => { setActiveTab("register"); setError(""); }}
+            onClick={() => { setActiveTab("register"); setError(""); setPassword(""); }}
           >
             Register
           </button>
           <button
             type="button"
             className={activeTab === "login" ? "active" : ""}
-            onClick={() => { setActiveTab("login"); setError(""); }}
+            onClick={() => { setActiveTab("login"); setError(""); setPassword(""); }}
           >
             Log In
           </button>
@@ -220,6 +232,13 @@ export default function PrincipalProtectedPopup({ children }) {
               placeholder="Enter Registered Mobile Number"
               value={mobileInput}
               onChange={(e) => { setMobileInput(e.target.value.replace(/\D/g, "").slice(0, 10)); setError(""); }}
+            />
+
+            <input
+              type="password"
+              placeholder="Enter School Admin Password"
+              value={password}
+              onChange={(e) => { setPassword(e.target.value); setError(""); }}
             />
 
             {error && <span className="principal-popup-error">{error}</span>}
