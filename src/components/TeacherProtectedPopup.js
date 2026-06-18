@@ -165,7 +165,7 @@ export default function TeacherProtectedPopup({ children }) {
     
     // Clear weekly timers and speech progress from local storage
     Object.keys(localStorage).forEach(key => {
-      if (key.startsWith("teacherWeeklySessionTime_") || key.startsWith("speechProgress_")) {
+      if (key.startsWith("teacherWeeklySessionTime_") || key.startsWith("speechProgress_") || key.startsWith("speechCompleted_")) {
         localStorage.removeItem(key);
       }
     });
