@@ -47,7 +47,7 @@ export default function TeachersHome({ teacherName, teacherSubject, teacherSchoo
   const [selectedWordInfo, setSelectedWordInfo] = useState(null); // { word, translation, x, y }
   const touchStartRef = useRef(null);
 
-  const [completedSpeechItems, setCompletedSpeechItems] = useState([]);
+  const [speechCounts, setSpeechCounts] = useState({});
   const [totalSpeechCount, setTotalSpeechCount] = useState(0);
   const [activeSpeechItem, setActiveSpeechItem] = useState("");
   const [isListening, setIsListening] = useState(false);
@@ -55,19 +55,32 @@ export default function TeachersHome({ teacherName, teacherSubject, teacherSchoo
   const [isSpeechMatch, setIsSpeechMatch] = useState(false);
   const [speechError, setSpeechError] = useState("");
   const recognitionRef = useRef(null);
+  const practiceCardRef = useRef(null);
 
   // Load speech progress and weekly session time when activeWeek/activeCategory changes
   const [weeklySessionSeconds, setWeeklySessionSeconds] = useState(0);
 
+  // Helper to get all sentences in the active category
+  const getCategorySentences = useCallback(() => {
+    if (["instructions", "questions", "stockSentences", "explanationSentences"].includes(activeCategory)) {
+      return translatedList;
+    } else if (activeCategory === "roleplay") {
+      return translatedRoleplay.map(r => r.text);
+    } else if (activeCategory === "challenge") {
+      return translatedChallenge ? [translatedChallenge] : [];
+    }
+    return [];
+  }, [activeCategory, translatedList, translatedRoleplay, translatedChallenge]);
+
   useEffect(() => {
-    const savedCategoryItems = JSON.parse(localStorage.getItem(`speechCompleted_${activeWeek}_${activeCategory}`)) || [];
-    setCompletedSpeechItems(savedCategoryItems);
+    const savedCounts = JSON.parse(localStorage.getItem(`speechCounts_${activeWeek}_${activeCategory}`)) || {};
+    setSpeechCounts(savedCounts);
 
     let totalUnique = 0;
     const categoriesList = ["instructions", "questions", "stockSentences", "explanationSentences", "roleplay", "challenge"];
     categoriesList.forEach(cat => {
-      const catItems = JSON.parse(localStorage.getItem(`speechCompleted_${activeWeek}_${cat}`)) || [];
-      totalUnique += catItems.length;
+      const catCounts = JSON.parse(localStorage.getItem(`speechCounts_${activeWeek}_${cat}`)) || {};
+      totalUnique += Object.keys(catCounts).length;
     });
     setTotalSpeechCount(totalUnique);
 
@@ -114,6 +127,13 @@ export default function TeachersHome({ teacherName, teacherSubject, teacherSchoo
     setIsSpeechMatch(false);
     setSpeechError("");
     setIsListening(true);
+
+    // Scroll Speaking Practice card into view dynamically (block center ensures it centers nicely)
+    setTimeout(() => {
+      if (practiceCardRef.current) {
+        practiceCardRef.current.scrollIntoView({ behavior: "smooth", block: "center" });
+      }
+    }, 100);
 
     const rec = new SpeechRecognition();
     rec.continuous = false;
@@ -183,20 +203,19 @@ export default function TeachersHome({ teacherName, teacherSubject, teacherSchoo
       if (isMatch) {
         setIsSpeechMatch(true);
 
-        // 1. Add to category-specific completed items
-        let categoryItems = JSON.parse(localStorage.getItem(`speechCompleted_${activeWeek}_${activeCategory}`)) || [];
-        if (!categoryItems.includes(targetText)) {
-          categoryItems.push(targetText);
-          localStorage.setItem(`speechCompleted_${activeWeek}_${activeCategory}`, JSON.stringify(categoryItems));
-          setCompletedSpeechItems(categoryItems);
-        }
+        // 1. Increment count for this sentence in category dictionary
+        let counts = JSON.parse(localStorage.getItem(`speechCounts_${activeWeek}_${activeCategory}`)) || {};
+        const currentCount = counts[targetText] || 0;
+        counts[targetText] = Math.min(3, currentCount + 1);
+        localStorage.setItem(`speechCounts_${activeWeek}_${activeCategory}`, JSON.stringify(counts));
+        setSpeechCounts(counts);
 
         // 2. Recalculate total unique items for the week across all categories
         let totalUnique = 0;
         const categoriesList = ["instructions", "questions", "stockSentences", "explanationSentences", "roleplay", "challenge"];
         categoriesList.forEach(cat => {
-          const catItems = JSON.parse(localStorage.getItem(`speechCompleted_${activeWeek}_${cat}`)) || [];
-          totalUnique += catItems.length;
+          const catCounts = JSON.parse(localStorage.getItem(`speechCounts_${activeWeek}_${cat}`)) || {};
+          totalUnique += Object.keys(catCounts).length;
         });
         setTotalSpeechCount(totalUnique);
       } else {
@@ -653,6 +672,12 @@ export default function TeachersHome({ teacherName, teacherSubject, teacherSchoo
     setIsSpeaking(true);
   }, [isSpeaking, activeCategory, translatedList, translatedRoleplay, translatedChallenge, currentLang]);
 
+  const categoryStars = useMemo(() => {
+    const currentCategorySentences = getCategorySentences();
+    if (currentCategorySentences.length === 0) return 0;
+    return Math.min(3, ...currentCategorySentences.map(s => speechCounts[s] || 0));
+  }, [getCategorySentences, speechCounts]);
+
   return (
     <div className="teachers-portal container">
       {/* HEADER SECTION */}
@@ -960,13 +985,13 @@ export default function TeachersHome({ teacherName, teacherSubject, teacherSchoo
                   <>
                     {/* SPEECH PRACTICE ZONE */}
                     {!completedWeeks.includes(activeWeek) && activeWeek === nextWeekToComplete && (
-                      <div className="speech-practice-card">
+                      <div ref={practiceCardRef} className="speech-practice-card">
                         <div className="speech-practice-header">
                           <div className="speech-practice-title-wrapper">
                             <Mic size={18} className={`mic-pulse-icon ${isListening ? "pulse" : ""}`} />
                             <h4>Speaking Practice (Unlock Gate)</h4>
                           </div>
-                          <span className="practice-progress-tag">{completedSpeechItems.length}/3 Completed</span>
+                          <span className="practice-progress-tag">{categoryStars}/3 Stars Earned</span>
                         </div>
                         <p className="practice-desc">
                           To unlock Week {activeWeek.split("-")[1]}, select any instruction, question, or challenge below by clicking its <strong>mic icon 🎙️</strong>, then speak it aloud clearly.
@@ -976,8 +1001,8 @@ export default function TeachersHome({ teacherName, teacherSubject, teacherSchoo
                             <Star 
                               key={i} 
                               size={22} 
-                              className={i <= completedSpeechItems.length ? "star-active" : "star-inactive"} 
-                              fill={i <= completedSpeechItems.length ? "#eba925" : "none"} 
+                              className={i <= categoryStars ? "star-active" : "star-inactive"} 
+                              fill={i <= categoryStars ? "#eba925" : "none"} 
                             />
                           ))}
                         </div>
@@ -1056,11 +1081,19 @@ export default function TeachersHome({ teacherName, teacherSubject, teacherSchoo
                             <div className="content-text">{item}</div>
                             {!completedWeeks.includes(activeWeek) && activeWeek === nextWeekToComplete && (
                               <button 
-                                className={`item-practice-btn ${activeSpeechItem === item ? "active" : ""} ${completedSpeechItems.includes(item) ? "completed" : ""}`}
+                                className={`item-practice-btn ${activeSpeechItem === item ? "active" : ""} count-${speechCounts[item] || 0}`}
                                 onClick={() => startSpeechRecognition(item)}
                                 title="Practice speaking this item"
                               >
-                                {completedSpeechItems.includes(item) ? <Check size={14} style={{ color: "#10b981" }} /> : <Mic size={14} />}
+                                {activeSpeechItem === item ? (
+                                  <Mic size={14} />
+                                ) : (speechCounts[item] || 0) === 3 ? (
+                                  <Check size={14} />
+                                ) : (speechCounts[item] || 0) > 0 ? (
+                                  <span>{speechCounts[item]}/3</span>
+                                ) : (
+                                  <Mic size={14} />
+                                )}
                               </button>
                             )}
                           </motion.li>
@@ -1092,11 +1125,19 @@ export default function TeachersHome({ teacherName, teacherSubject, teacherSchoo
                                   </div>
                                   {!completedWeeks.includes(activeWeek) && activeWeek === nextWeekToComplete && (
                                     <button 
-                                      className={`item-practice-btn dialogue-mic-btn ${activeSpeechItem === utterance.text ? "active" : ""} ${completedSpeechItems.includes(utterance.text) ? "completed" : ""}`}
+                                      className={`item-practice-btn dialogue-mic-btn ${activeSpeechItem === utterance.text ? "active" : ""} count-${speechCounts[utterance.text] || 0}`}
                                       onClick={() => startSpeechRecognition(utterance.text)}
                                       title="Practice speaking this dialogue line"
                                     >
-                                      {completedSpeechItems.includes(utterance.text) ? <Check size={14} style={{ color: "#10b981" }} /> : <Mic size={14} />}
+                                      {activeSpeechItem === utterance.text ? (
+                                        <Mic size={14} />
+                                      ) : (speechCounts[utterance.text] || 0) === 3 ? (
+                                        <Check size={14} />
+                                      ) : (speechCounts[utterance.text] || 0) > 0 ? (
+                                        <span>{speechCounts[utterance.text]}/3</span>
+                                      ) : (
+                                        <Mic size={14} />
+                                      )}
                                     </button>
                                   )}
                                 </div>
@@ -1122,7 +1163,7 @@ export default function TeachersHome({ teacherName, teacherSubject, teacherSchoo
                         {!completedWeeks.includes(activeWeek) && activeWeek === nextWeekToComplete && (
                           <button 
                             type="button"
-                            className={`challenge-practice-btn ${activeSpeechItem === translatedChallenge ? "active" : ""} ${completedSpeechItems.includes(translatedChallenge) ? "completed" : ""}`}
+                            className={`challenge-practice-btn ${activeSpeechItem === translatedChallenge ? "active" : ""}`}
                             onClick={() => startSpeechRecognition(translatedChallenge)}
                             style={{
                               marginTop: "20px",
@@ -1130,16 +1171,34 @@ export default function TeachersHome({ teacherName, teacherSubject, teacherSchoo
                               alignItems: "center",
                               gap: "8px",
                               padding: "10px 18px",
-                              background: completedSpeechItems.includes(translatedChallenge) ? "linear-gradient(135deg, #10b981 0%, #059669 100%)" : "linear-gradient(135deg, #0d2d59 0%, #1e40af 100%)",
+                              background: (speechCounts[translatedChallenge] || 0) === 3 
+                                ? "linear-gradient(135deg, #10b981 0%, #059669 100%)" 
+                                : (speechCounts[translatedChallenge] || 0) > 0
+                                ? "linear-gradient(135deg, #f59e0b 0%, #d97706 100%)"
+                                : "linear-gradient(135deg, #0d2d59 0%, #1e40af 100%)",
                               color: "white",
                               border: "none",
                               borderRadius: "10px",
                               cursor: "pointer",
                               fontWeight: "600",
-                              fontSize: "13.5px"
+                              fontSize: "13.5px",
+                              boxShadow: (speechCounts[translatedChallenge] || 0) === 3 
+                                ? "0 4px 12px rgba(16, 185, 129, 0.2)"
+                                : (speechCounts[translatedChallenge] || 0) > 0
+                                ? "0 4px 12px rgba(245, 158, 11, 0.2)"
+                                : "0 4px 12px rgba(13, 45, 89, 0.2)"
                             }}
                           >
-                            {completedSpeechItems.includes(translatedChallenge) ? <Check size={14} /> : <Mic size={14} />} Practice Speaking Challenge
+                            {activeSpeechItem === translatedChallenge ? (
+                              <Mic size={14} />
+                            ) : (speechCounts[translatedChallenge] || 0) === 3 ? (
+                              <Check size={14} />
+                            ) : (speechCounts[translatedChallenge] || 0) > 0 ? (
+                              <span style={{ fontWeight: "700" }}>{speechCounts[translatedChallenge]}/3</span>
+                            ) : (
+                              <Mic size={14} />
+                            )}
+                            <span> Practice Speaking Challenge</span>
                           </button>
                         )}
                         <div className="challenge-action-steps">
