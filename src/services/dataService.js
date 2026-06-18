@@ -36,6 +36,35 @@ export const getClassCategoryItems = async (classId, category) => {
     querySnapshot.forEach((doc) => {
       items.push({ docId: doc.id, ...doc.data() });
     });
+
+    // Auto-seed presentations category if Firestore is missing any items compared to local default data
+    if (category === "presentations") {
+      const localData = localStudentsData[classId]?.[category] || [];
+      const missingLocalData = localData.filter(
+        (localItem) => !items.some((item) => Number(item.id) === Number(localItem.id))
+      );
+      if (missingLocalData.length > 0) {
+        console.log(`Auto-seeding missing presentations for ${classId} to Firestore...`);
+        for (const item of missingLocalData) {
+          const docRef = await addDoc(collection(db, "lessons"), {
+            classId,
+            category,
+            id: Number(item.id),
+            title: item.title,
+            content: item.content,
+          });
+          items.push({
+            docId: docRef.id,
+            classId,
+            category,
+            id: Number(item.id),
+            title: item.title,
+            content: item.content,
+          });
+        }
+      }
+    }
+
     // Sort items by numeric id
     return items.sort((a, b) => Number(a.id) - Number(b.id));
   } catch (error) {

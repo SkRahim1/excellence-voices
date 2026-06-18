@@ -13437,6 +13437,7 @@ No, they have not been respecting their teachers for 2 hours.
 `
       }
     ],
+      presentations: [],
   },
 
   "class-6": {
@@ -17110,6 +17111,7 @@ No, they have not been respecting their teachers for 2 hours.
 `
       }
     ],
+      presentations: [],
   },
 
   "class-7": {
@@ -21110,6 +21112,7 @@ No, they have not been respecting their teachers for 2 hours.
 `
       }
     ],
+      presentations: [],
   },
 
   "class-8": {
@@ -25216,6 +25219,7 @@ No, they have not been respecting their teachers for 2 hours.
 `
       }
     ],
+      presentations: [],
   },
 
   "class-9": {
@@ -29178,6 +29182,1629 @@ No, she has not been preparing breakfast for 2 hours.
 Yes, they have been respecting their teachers for 2 hours.
 No, they have not been respecting their teachers for 2 hours.
 `
+      }
+    ],
+      presentations: [
+
+      {
+        id: 1,
+        title: "Presentation 1: The Art of Effective Communication",
+        content: `\nDuration: 20 Minutes\nPresenters: 4 Students\n\nStudent 1: What is Communication? (4 Minutes)\nGood morning everyone.\nToday, we are going to talk about The Art of Effective Communication.\nCommunication is the process of sharing information, thoughts, feelings, and ideas with others. We communicate every day with our parents, friends, teachers, and classmates.\nImagine a world where people could not communicate. We would not be able to ask questions, share ideas, solve problems, or express our emotions. Communication helps us build relationships and understand one another.\nCommunication is not only about speaking. It also includes listening, writing, reading, and understanding body language.\nEvery successful person, whether a teacher, doctor, engineer, entrepreneur, or leader, depends on good communication skills.\n\nExample: When a teacher explains a lesson and students understand it clearly, effective communication has taken place.\nQuestion to Audience: Can anyone tell us one situation where communication is important?\n\nStudent 2: Types of Communication (5 Minutes)\nCommunication can be divided into two major types:\n1. Verbal Communication\nVerbal communication uses words.\nExamples:\n• Talking with friends\n• Giving a speech\n• Participating in discussions\n• Answering questions in class\n\nGood verbal communication requires:\n• Clear pronunciation\n• Appropriate vocabulary\n• Confidence\n• Proper tone of voice\n\n2. Non-Verbal Communication\nNon-verbal communication does not use words.\nIt includes:\n• Facial expressions\n• Eye contact\n• Gestures\n• Posture\n• Body language\n\nResearch shows that body language often communicates more than words.\nExample: If someone says, "I am happy," but their face looks sad, people will believe the facial expression more than the words.\nAudience Question: What are some examples of body language?\n\nStudent 3: Barriers to Effective Communication (5 Minutes)\nEven though communication is important, many problems can stop communication from being successful.\nThese are called communication barriers.\nBarrier 1: Lack of Listening\nMany people listen only to reply instead of listening to understand.\nBarrier 2: Fear and Nervousness\nStudents often know the answer but hesitate to speak because they fear making mistakes.\nBarrier 3: Language Problems\nLimited vocabulary and incorrect pronunciation can create misunderstandings.\nBarrier 4: Distractions\nNoise, mobile phones, and side conversations can interrupt communication.\nBarrier 5: Negative Attitude\nWhen people refuse to listen or respect others' opinions, communication becomes difficult.\n\nExample: Imagine explaining homework instructions in a noisy classroom. Many students may misunderstand the instructions.\nAudience Question: Which communication barrier do you face most often?\n\nStudent 4: How to Become an Effective Communicator (4 Minutes)\nNow let us discuss how we can improve our communication skills.\nTip 1: Be a Good Listener - Listen carefully before responding.\nTip 2: Speak Clearly - Use simple and understandable language.\nTip 3: Maintain Eye Contact - Eye contact shows confidence and respect.\nTip 4: Practice Regularly - The more you speak, the better you become.\nTip 5: Build Vocabulary - Learning new words improves communication.\nTip 6: Be Respectful - Respect creates positive communication.\n\nReal-Life Example: Many successful leaders and speakers became confident communicators through continuous practice.\nRemember: communication is a skill. Like any skill, it improves with practice.\n\nAudience Activity (2 Minutes)\nAsk students:\nSituation 1: Your friend forgot his notebook. How would you politely ask to borrow it?\nSituation 2: You accidentally stepped on someone's foot. What would you say?\nSituation 3: A teacher asks for volunteers. How would you confidently respond?\nAllow audience members to answer.\n\nConclusion (1 Minute)\nCommunication is one of the most important life skills.\nIt helps us learn, build relationships, solve problems, and achieve success.\nBy listening carefully, speaking clearly, and practicing regularly, we can all become effective communicators.\nThank you everyone.\n\nVocabulary:\n• Communication: Sharing information and ideas\n• Verbal: Using spoken words\n• Non-Verbal: Communication without words\n• Gesture: Movement of hands or body\n• Vocabulary: Collection of words we know\n• Confidence: Belief in oneself\n• Barrier: Something that blocks progress\n• Interaction: Communication between people`
+      },
+      {
+        id: 2,
+        title: "Presentation 2: Public Speaking – The Skill of Leaders",
+        content: `\nPublic Speaking – The Skill of Leaders
+
+Duration: 20 Minutes
+
+Presenters: 4 Students
+
+Student 1: Introduction to Public Speaking (4 Minutes)
+
+Good morning everyone.
+
+Today, we are going to discuss an important skill called *Public Speaking*.
+
+Public speaking means speaking in front of a group of people to share information, ideas, or opinions. It is one of the most powerful skills a person can develop.
+
+From classrooms to offices, from meetings to conferences, public speaking is required everywhere. People who can express their thoughts clearly often become successful leaders.
+
+Many famous leaders, teachers, entrepreneurs, and social reformers influenced people through their speeches. Their words inspired others to take action and bring positive change.
+
+Public speaking is not only for politicians or celebrities. Students also need this skill for presentations, competitions, interviews, and future careers.
+
+Example
+
+When a student confidently presents a project in front of the class, he or she is practicing public speaking.
+
+Question to Audience
+
+How many of you have spoken on a stage before?
+
+Student 2: Qualities of a Good Public Speaker (5 Minutes)
+
+Now let us discuss the qualities that make a person an effective speaker.
+
+1. Confidence
+
+Confidence helps a speaker speak without fear and connect with the audience.
+
+2. Clear Voice
+
+A speaker should speak loudly and clearly so everyone can understand.
+
+3. Good Eye Contact
+
+Eye contact helps build trust and keeps the audience engaged.
+
+4. Positive Body Language
+
+Standing straight, smiling, and using natural hand gestures make the presentation more effective.
+
+5. Proper Preparation
+
+Successful speakers prepare their content well before speaking.
+
+Example
+
+Imagine two students giving the same speech. One speaks confidently with eye contact while the other keeps looking down. The audience will naturally pay more attention to the confident speaker.
+
+Audience Question
+
+Which quality do you think is most important for a speaker?
+
+Student 3: Common Fears in Public Speaking (5 Minutes)
+
+Many people feel nervous while speaking in front of others.
+
+This fear is called *Stage Fear* or *Stage Fright*.
+
+Let us understand some common reasons for this fear.
+
+Fear of Making Mistakes
+
+Many students worry about saying something wrong.
+
+Fear of Being Judged
+
+Some students feel that others might laugh at them.
+
+Lack of Practice
+
+When students do not prepare properly, they become nervous.
+
+Fear of Forgetting
+
+Many speakers worry that they will forget their speech.
+
+Physical Symptoms
+
+When people are nervous, they may experience:
+
+• Sweaty hands
+• Fast heartbeat
+• Shaking voice
+• Dry mouth
+
+Important Fact
+
+Even famous speakers and leaders were nervous when they first started speaking publicly.
+
+Fear is normal. The goal is not to remove fear completely but to learn how to manage it.
+
+Audience Question
+
+Have you ever felt nervous while speaking in class?
+
+Student 4: How to Become a Better Public Speaker (4 Minutes)
+
+The good news is that public speaking is a skill that anyone can learn.
+
+Here are some useful tips.
+
+Tip 1: Practice Regularly
+
+Practice in front of a mirror, family members, or friends.
+
+Tip 2: Prepare Well
+
+Know your topic thoroughly before presenting.
+
+Tip 3: Start Small
+
+Begin by speaking in small groups and gradually move to larger audiences.
+
+Tip 4: Focus on the Message
+
+Think about helping your audience learn instead of worrying about yourself.
+
+Tip 5: Maintain Positive Body Language
+
+Stand confidently, smile, and make eye contact.
+
+Tip 6: Learn from Every Experience
+
+Every presentation helps improve your skills.
+
+Real-Life Example
+
+Many successful leaders were once shy students. Through continuous practice, they became excellent communicators.
+
+Remember: Great speakers are not born. They are made through practice and determination.
+
+Audience Activity (2 Minutes)
+
+One-Minute Speaker Challenge
+
+Ask three volunteers to come forward.
+
+Give them simple topics such as:
+
+• My Favourite Teacher
+• My Best Friend
+• My Favourite Hobby
+
+Each student speaks for one minute.
+
+After the activity, appreciate their effort and confidence.
+
+Conclusion (1 Minute)
+
+Public speaking is a valuable life skill.
+
+It helps us express ideas, build confidence, and become effective leaders.
+
+Every great speaker started as a beginner. With practice, preparation, and confidence, anyone can become an excellent public speaker.
+
+Thank you everyone.
+
+Vocabulary
+
+Vocabulary:
+• Public Speaking: Speaking before an audience
+• Confidence: Belief in one's abilities
+• Audience: People listening to a speaker
+• Gesture: Movement of hands or body
+• Presentation: Sharing information before a group
+• Preparation: Getting ready beforehand
+• Leadership: Ability to guide others
+• Stage Fright: Fear of speaking before people
+
+Reflection Questions
+
+1. Why is public speaking important?
+2. What qualities make a good speaker?
+3. What causes stage fear?
+4. How can students improve their speaking skills?
+5. Which tip will you start following from today?,\n`
+      },
+      {
+        id: 3,
+        title: "Presentation 3: Leadership and Teamwork",
+        content: `\nLeadership and Teamwork
+
+Duration: 20 Minutes
+
+Presenters: 4 Students
+
+Student 1: What is Leadership? (4 Minutes)
+
+Good morning everyone.
+
+Today, we are going to talk about *Leadership and Teamwork*, two important skills that help people achieve success in school, sports, and life.
+
+Let us begin with leadership.
+
+A leader is a person who guides, motivates, and helps others work towards a common goal. Leadership is not about giving orders. It is about taking responsibility, setting a good example, and helping others succeed.
+
+Many people think that only principals, managers, or politicians are leaders. However, students can also be leaders. A class monitor, a team captain, or even a student who helps classmates solve problems is showing leadership.
+
+A good leader earns respect through actions, not through position or power.
+
+Example
+
+Imagine a group project where one student organizes the work, encourages team members, and ensures everyone participates. That student is acting as a leader.
+
+Question to Audience
+
+Can you name a leader whom you admire and explain why?
+
+Student 2: Qualities of a Good Leader (5 Minutes)
+
+Now let us discuss the qualities that make a person a good leader.
+
+1. Responsibility
+
+A leader accepts responsibility for both success and failure.
+
+2. Confidence
+
+Leaders believe in themselves and encourage others to believe in their abilities.
+
+3. Honesty
+
+Trust is built when leaders are truthful and fair.
+
+4. Good Communication
+
+Leaders clearly explain ideas and listen to others.
+
+5. Decision-Making
+
+Leaders often need to make important decisions for the group.
+
+6. Empathy
+
+A good leader understands the feelings and needs of others.
+
+Real-Life Example
+
+During a cricket match, the captain motivates players, makes strategies, and supports teammates even when the team is losing. This demonstrates leadership.
+
+Audience Question
+
+Which leadership quality do you think is the most important?
+
+Student 3: Importance of Teamwork (5 Minutes)
+
+Now let us understand teamwork.
+
+Teamwork means working together to achieve a common goal. When people cooperate and support each other, they can accomplish tasks more effectively.
+
+No great achievement is usually the result of one person alone. Successful projects, sports teams, businesses, and scientific discoveries often involve teamwork.
+
+Benefits of Teamwork
+
+Better Ideas
+
+Different people bring different perspectives and solutions.
+
+Faster Completion of Work
+
+Tasks can be divided among team members.
+
+Learning from Others
+
+People learn new skills by working together.
+
+Strong Relationships
+
+Teamwork builds trust, friendship, and respect.
+
+Example
+
+When students prepare for a school exhibition, one may create charts, another may collect information, and another may present. Together, they produce a successful project.
+
+Audience Question
+
+Have you ever worked in a team? What did you learn from that experience?
+
+Student 4: How to Become a Good Team Player and Leader (4 Minutes)
+
+Leadership and teamwork go hand in hand.
+
+A good leader must also be a good team player.
+
+Here are some tips.
+
+Tip 1: Listen to Others
+
+Respect everyone's opinions and ideas.
+
+Tip 2: Communicate Clearly
+
+Share information openly and politely.
+
+Tip 3: Help Team Members
+
+Support others when they need assistance.
+
+Tip 4: Stay Positive
+
+Encourage teammates during difficult situations.
+
+Tip 5: Solve Problems Together
+
+Focus on finding solutions instead of blaming others.
+
+Tip 6: Respect Differences
+
+Every team member has unique strengths and talents.
+
+Real-Life Example
+
+Many successful companies and organizations achieve great results because people work together with trust and cooperation.
+
+Remember, leadership is not about being the boss. It is about helping the team succeed.
+
+Audience Activity (2 Minutes)
+
+Tower Challenge
+
+Ask 5–6 students to form a team.
+
+Give them notebooks or pencils.
+
+Challenge them to build the tallest standing structure within one minute.
+
+After the activity, discuss:
+
+• Who took leadership?
+• How did the team cooperate?
+• What challenges did they face?
+
+This helps students understand leadership and teamwork through experience.
+
+Conclusion (1 Minute)
+
+Leadership and teamwork are essential life skills.
+
+A good leader inspires others, while a good team works together towards a shared goal.
+
+By being responsible, respectful, and cooperative, we can become better leaders and better teammates.
+
+Remember:
+
+**"Alone we can do so little; together we can do so much."**
+
+Thank you everyone.
+
+Vocabulary
+
+Vocabulary:
+• Leadership: The ability to guide and inspire others
+• Teamwork: Working together towards a common goal
+• Responsibility: Being accountable for actions
+• Cooperation: Working together willingly
+• Empathy: Understanding others' feelings
+• Communication: Sharing ideas and information
+• Motivation: Encouraging people to act
+• Decision-Making: Choosing the best course of action
+
+Reflection Questions
+
+1. What is leadership?
+2. What qualities make a good leader?
+3. Why is teamwork important?
+4. How can students become better team players?
+5. What leadership quality would you like to develop?
+,\n`
+      },
+      {
+        id: 4,
+        title: "Presentation 4: Goal Setting and Success",
+        content: `\nGoal Setting and Success
+
+Duration: 20 Minutes
+
+Presenters: 4 Students
+
+Student 1: What Are Goals and Why Are They Important? (4 Minutes)
+
+Good morning everyone.
+
+Today, we are going to discuss an important topic that can help us achieve success in life—*Goal Setting and Success*.
+
+A goal is something that we want to achieve in the future. Goals give direction to our lives and help us focus our efforts on what truly matters.
+
+Imagine travelling to a new city without knowing the destination. You would not know which road to take. Similarly, without goals, people often feel confused about what they want to achieve.
+
+Goals motivate us to work harder, stay focused, and make better decisions.
+
+Students can have many goals such as:
+
+• Scoring good marks in examinations
+• Improving English communication skills
+• Participating in competitions
+• Learning a new skill
+• Becoming a doctor, engineer, teacher, entrepreneur, or scientist
+
+Example
+
+A student who wants to improve English speaking may set a goal to learn five new words every day and speak in English for ten minutes daily.
+
+Small goals often lead to big achievements.
+
+Question to Audience
+
+What is one goal that you would like to achieve this year?
+
+Student 2: Types of Goals (5 Minutes)
+
+Goals can be divided into different types.
+
+1. Short-Term Goals
+
+These are goals that can be achieved within a few days, weeks, or months.
+
+Examples:
+
+• Completing homework on time
+• Improving handwriting
+• Reading one book every month
+
+2. Long-Term Goals
+
+These goals take several years to achieve.
+
+Examples:
+
+• Becoming a successful professional
+• Starting a business
+• Pursuing higher education
+
+3. Academic Goals
+
+Goals related to studies.
+
+Examples:
+
+• Improving grades
+• Participating in science exhibitions
+• Improving communication skills
+
+4. Personal Goals
+
+Goals related to personal growth.
+
+Examples:
+
+• Becoming more confident
+• Managing time effectively
+• Developing leadership skills
+
+Example
+
+A cricket player may have a short-term goal of improving batting skills and a long-term goal of representing the country.
+
+Both types of goals are important because short-term goals help us reach long-term goals.
+
+Audience Question
+
+Can anyone share one short-term goal and one long-term goal?
+
+Student 3: Obstacles in Achieving Goals (5 Minutes)
+
+Although goals are important, achieving them is not always easy.
+
+Many people face obstacles along the way.
+
+1. Lack of Planning
+
+Some people have goals but do not make a plan to achieve them.
+
+2. Procrastination
+
+Procrastination means delaying important tasks.
+
+Many students say:
+"I will study tomorrow."
+"I will start next week."
+
+As a result, valuable time is lost.
+
+3. Fear of Failure
+
+Some people stop trying because they are afraid of making mistakes.
+
+However, failure is a part of learning and growth.
+
+4. Distractions
+
+Mobile phones, television, video games, and social media can distract students from their goals.
+
+5. Lack of Consistency
+
+Success requires regular effort. Giving up after a few days often prevents people from achieving their goals.
+
+Example
+
+A student may dream of scoring high marks but spends very little time studying. Without consistent effort, success becomes difficult.
+
+Audience Question
+
+What do you think is the biggest obstacle students face today?
+
+Student 4: Steps to Achieve Success (4 Minutes)
+
+Now let us discuss how we can achieve our goals.
+
+Step 1: Set Clear Goals
+
+Know exactly what you want to achieve.
+
+Step 2: Create a Plan
+
+Break your goal into smaller tasks.
+
+Step 3: Work Consistently
+
+Success is the result of daily effort, not occasional effort.
+
+Step 4: Stay Positive
+
+Believe in yourself even when things become difficult.
+
+Step 5: Learn from Mistakes
+
+Mistakes help us improve and grow.
+
+Step 6: Never Give Up
+
+Many successful people faced challenges before achieving success.
+
+Real-Life Example
+
+A. P. J. Abdul Kalam came from a humble background but achieved great success through hard work, discipline, and determination. He set goals and worked continuously to achieve them.
+
+Success does not happen overnight. It is the result of planning, hard work, patience, and perseverance.
+
+Audience Activity (2 Minutes)
+
+My Goal Card
+
+Ask students to write:
+
+1. One goal they want to achieve this year.
+2. Three steps they will take to achieve it.
+
+Allow a few students to share their answers with the class.
+
+This activity helps students think about their own goals and plans.
+
+Conclusion (1 Minute)
+
+Goals give direction to our lives.
+
+They help us stay focused, motivated, and determined.
+
+Every successful person started with a dream and turned it into a goal through hard work and dedication.
+
+Remember:
+
+**"A goal without a plan is just a wish."**
+
+Set your goals, work consistently, and never stop believing in yourself.
+
+Thank you everyone.
+
+Vocabulary
+
+Vocabulary:
+• Goal: Something you want to achieve
+• Success: Achieving a desired result
+• Determination: Strong commitment to achieve something
+• Perseverance: Continuing despite difficulties
+• Procrastination: Delaying important tasks
+• Consistency: Doing something regularly
+• Motivation: The desire to achieve a goal
+• Achievement: Something accomplished successfully
+
+Reflection Questions
+
+1. What is a goal?
+2. Why is goal setting important?
+3. What are short-term and long-term goals?
+4. What obstacles prevent people from achieving goals?
+5. Which step towards success will you start following today?
+,\n`
+      },
+      {
+        id: 5,
+        title: "Presentation 5: Time Management for Students",
+        content: `\nTime Management for Students
+
+Duration: 20 Minutes
+
+Presenters: 4 Students
+
+Student 1: What is Time Management? (4 Minutes)
+
+Good morning everyone.
+
+Today, we are going to discuss a skill that is important for every student and every successful person—*Time Management*.
+
+Time management means planning and using our time wisely so that we can complete our tasks effectively. Every person has 24 hours in a day. However, some people achieve great success while others struggle to complete their work. The difference often lies in how they manage their time.
+
+Time is one of the most valuable resources in life because once it passes, it can never be brought back. Money lost can be earned again, but lost time cannot be recovered.
+
+Students need time for studying, completing homework, playing, helping at home, and spending time with family. Good time management helps us balance all these activities.
+
+Example
+
+Imagine two students preparing for an examination. One studies a little every day, while the other waits until the last day. The first student is usually more confident and performs better because he or she managed time wisely.
+
+Question to Audience
+
+How many of you prepare for exams well before the examination date?
+
+Student 2: Benefits of Time Management (5 Minutes)
+
+Now let us understand the benefits of managing our time effectively.
+
+1. Reduces Stress
+
+When tasks are completed on time, students feel relaxed and confident.
+
+2. Improves Academic Performance
+
+Students who follow a study schedule often perform better in examinations.
+
+3. Increases Productivity
+
+Proper planning allows students to complete more work in less time.
+
+4. Creates Balance
+
+Students can balance studies, hobbies, sports, and family responsibilities.
+
+5. Builds Discipline
+
+Following a timetable develops self-control and responsibility.
+
+Example
+
+A student who allocates one hour daily for revision does not need to panic before examinations.
+
+Real-Life Connection
+
+Successful athletes, scientists, teachers, entrepreneurs, and professionals all follow schedules to make the best use of their time.
+
+Audience Question
+
+What do you think is the biggest benefit of managing time properly?
+
+Student 3: Common Time-Wasting Habits (5 Minutes)
+
+Even though everyone understands the importance of time, many people waste it without realizing it.
+
+Let us discuss some common time-wasting habits.
+
+1. Procrastination
+
+Procrastination means delaying important work.
+
+For example:
+
+• "I will do it tomorrow."
+• "I will start after some time."
+
+This habit often creates pressure later.
+
+2. Excessive Mobile Phone Usage
+
+Spending too much time on social media, videos, or games can reduce productivity.
+
+3. Lack of Planning
+
+Students who do not plan their day often spend time deciding what to do next.
+
+4. Multitasking
+
+Trying to do many things at once can reduce concentration and efficiency.
+
+5. Poor Sleep Habits
+
+Sleeping very late and waking up tired affects concentration and performance.
+
+Example
+
+A student who spends three hours scrolling through social media may later complain about not having enough time to study.
+
+Audience Question
+
+Which time-wasting habit affects students the most today?
+
+Student 4: How to Manage Time Effectively (4 Minutes)
+
+Now let us learn some practical ways to manage our time better.
+
+Tip 1: Make a Daily Schedule
+
+Write down important tasks and allocate time for each activity.
+
+Tip 2: Set Priorities
+
+Complete the most important tasks first.
+
+Tip 3: Avoid Distractions
+
+Keep mobile phones away while studying.
+
+Tip 4: Break Large Tasks into Small Steps
+
+Small tasks feel easier and less stressful.
+
+Tip 5: Follow a Routine
+
+A consistent routine improves productivity.
+
+Tip 6: Review Your Progress
+
+At the end of the day, check what you have completed and what needs improvement.
+
+Real-Life Example
+
+Many successful students create study plans and follow them consistently. Their success is not based on luck but on discipline and proper time management.
+
+Remember:
+
+Time management is not about being busy all the time. It is about using time wisely.
+
+Audience Activity (2 Minutes)
+
+Design Your Perfect Day
+
+Ask students to create a simple timetable for one school day.
+
+Include:
+
+• Wake-up time
+• School time
+• Homework
+• Reading
+• Playtime
+• Family time
+• Sleep time
+
+Invite a few students to share their schedules.
+
+Discuss how balance is important.
+
+Conclusion (1 Minute)
+
+Time is one of the most valuable gifts we have.
+
+Students who manage their time well often feel less stressed, perform better academically, and enjoy a balanced life.
+
+Every successful person values time because they understand that every minute matters.
+
+Remember:
+
+**"Time is life. When you waste time, you waste a part of your life."**
+
+Use your time wisely, stay disciplined, and work consistently towards your goals.
+
+Thank you everyone.
+
+Vocabulary
+
+Vocabulary:
+• Time Management: Planning and using time effectively
+• Productivity: The ability to complete work efficiently
+• Procrastination: Delaying important tasks
+• Discipline: Following rules and routines consistently
+• Schedule: A plan of activities and timings
+• Priority: Something more important than others
+• Distraction: Something that takes away attention
+• Efficiency: Completing work with less wasted time
+
+Reflection Questions
+
+1. What is time management?
+2. Why is time management important for students?
+3. What are some common time-wasting habits?
+4. How can students use their time more effectively?
+5. What change will you make in your daily routine after this presentation?
+,\n`
+      },
+      {
+        id: 6,
+        title: "Presentation 6: Positive Thinking and Confidence Building",
+        content: `\nPositive Thinking and Confidence Building
+
+Duration: 20 Minutes
+
+Presenters: 4 Students
+
+Student 1: What is Positive Thinking? (4 Minutes)
+
+Good morning everyone.
+
+Today, we are going to discuss a topic that can change the way we learn, work, and live our lives—*Positive Thinking and Confidence Building*.
+
+Positive thinking means focusing on possibilities, solutions, and opportunities instead of only focusing on problems and difficulties. It does not mean ignoring challenges. It means believing that challenges can be overcome through effort, learning, and determination.
+
+Every person faces problems, failures, and disappointments. However, people with a positive attitude do not give up easily. They learn from their mistakes and continue moving forward.
+
+Positive thinking helps students remain motivated during difficult situations such as examinations, competitions, and personal challenges.
+
+Example
+
+Imagine a student who scores low marks in a test.
+
+A negative thinker may say:
+"I am not intelligent. I can never improve."
+
+A positive thinker may say:
+"I made mistakes, but I can learn from them and perform better next time."
+
+The situation is the same, but the attitude is different.
+
+Question to Audience
+
+Have you ever faced a difficult situation and successfully overcome it?
+
+Student 2: Benefits of Positive Thinking (5 Minutes)
+
+Now let us discuss how positive thinking helps us in daily life.
+
+1. Reduces Stress
+
+Positive thinkers focus on solutions rather than worrying constantly about problems.
+
+2. Improves Confidence
+
+When we believe in ourselves, we become more willing to take on challenges.
+
+3. Encourages Learning
+
+Positive people view mistakes as opportunities to improve.
+
+4. Builds Better Relationships
+
+A positive attitude helps us communicate better and maintain healthy friendships.
+
+5. Increases Motivation
+
+People with positive thoughts are more likely to stay committed to their goals.
+
+Real-Life Example
+
+A sportsperson may lose several matches before becoming successful. Positive thinking helps them continue practising despite failures.
+
+Important Message
+
+Success is often achieved by people who refuse to stop trying, even when things become difficult.
+
+Audience Question
+
+How does positive thinking help students during examinations?
+
+Student 3: What is Confidence and Why Is It Important? (5 Minutes)
+
+Confidence means believing in your abilities and trusting yourself.
+
+Confidence does not mean thinking that you are better than everyone else. It means believing that you can learn, improve, and handle challenges.
+
+Confident students:
+
+• Participate in classroom discussions
+• Ask questions when they need help
+• Give presentations confidently
+• Try new opportunities
+• Handle mistakes more positively
+
+Signs of Low Confidence
+
+Some students:
+
+• Avoid speaking in class
+• Fear making mistakes
+• Compare themselves constantly with others
+• Give up quickly
+
+Important Fact
+
+Nobody is born confident.
+
+Confidence develops through practice, learning, and experience.
+
+Example
+
+A student may feel nervous during their first presentation. However, after speaking several times, confidence gradually increases.
+
+Audience Question
+
+Can anyone share a situation where confidence helped them succeed?
+
+Student 4: How to Build Confidence and Stay Positive (4 Minutes)
+
+Now let us learn some practical ways to become more positive and confident.
+
+Tip 1: Believe in Yourself
+
+Remind yourself that every skill can be improved through practice.
+
+Tip 2: Use Positive Self-Talk
+
+Instead of saying:
+"I can't do this."
+
+Say:
+"I will try my best and improve."
+
+Tip 3: Set Small Goals
+
+Achieving small goals builds confidence step by step.
+
+Tip 4: Learn from Mistakes
+
+Mistakes are part of learning. Do not be afraid of them.
+
+Tip 5: Practice Speaking and Participating
+
+The more you participate, the more confident you become.
+
+Tip 6: Surround Yourself with Positive People
+
+Supportive friends and teachers can encourage personal growth.
+
+Real-Life Example
+
+Many successful people failed several times before achieving success. Their confidence came from persistence, not perfection.
+
+Remember:
+
+Confidence grows when we take action, not when we wait for fear to disappear.
+
+Audience Activity (2 Minutes)
+
+Confidence Circle
+
+Ask students:
+
+"Tell us one thing you are good at."
+
+Examples:
+
+• Drawing
+• Singing
+• Sports
+• Mathematics
+• Speaking English
+• Helping others
+
+Allow several students to share.
+
+Explain that everyone has unique strengths and talents.
+
+Conclusion (1 Minute)
+
+Positive thinking and confidence are powerful tools for success.
+
+Positive thinking helps us face challenges with courage, while confidence helps us take action and achieve our goals.
+
+Every successful person has faced difficulties, but they continued believing in themselves and working hard.
+
+Remember:
+
+**"Believe you can, and you are halfway there."**
+
+Stay positive, stay confident, and never stop learning.
+
+Thank you everyone.
+
+Vocabulary
+
+Vocabulary:
+• Positive Thinking: Focusing on solutions and opportunities
+• Confidence: Belief in one's abilities
+• Attitude: A way of thinking or feeling
+• Motivation: The desire to achieve something
+• Persistence: Continuing despite difficulties
+• Challenge: A difficult task or situation
+• Self-Talk: The thoughts and words we say to ourselves
+• Opportunity: A chance to do something beneficial
+
+Reflection Questions
+
+1. What is positive thinking?
+2. How does positive thinking help students?
+3. What is confidence?
+4. Why do some students lack confidence?
+5. Which confidence-building technique will you start using today?
+,\n`
+      },
+      {
+        id: 7,
+        title: "Presentation 7: Social Media – Advantages and Disadvantages",
+        content: `\nSocial Media – Advantages and Disadvantages
+
+Duration: 20 Minutes
+
+Presenters: 4 Students
+
+Student 1: Introduction to Social Media (4 Minutes)
+
+Good morning everyone.
+
+Today, we are going to discuss a topic that is a part of almost every student's life—*Social Media: Advantages and Disadvantages*.
+
+Social media refers to online platforms and applications that allow people to communicate, share information, exchange ideas, and connect with others around the world.
+
+Today, millions of people use social media daily for learning, entertainment, communication, and business.
+
+Students use social media to:
+
+• Connect with friends and family
+• Watch educational videos
+• Learn new skills
+• Follow news and current events
+• Share their ideas and creativity
+
+Some commonly used social media platforms include messaging apps, video-sharing platforms, discussion forums, and networking sites.
+
+Social media has changed the way people communicate. Information can travel across the world within seconds.
+
+However, like every technology, social media has both benefits and challenges.
+
+The impact of social media depends on how we use it.
+
+Example
+
+A student can use social media to learn English vocabulary through educational videos, while another student may spend several hours scrolling without learning anything useful.
+
+The platform is the same, but the usage is different.
+
+Question to Audience
+
+How many of you use social media or educational apps regularly?
+
+Student 2: Advantages of Social Media (5 Minutes)
+
+Now let us discuss the positive side of social media.
+
+1. Easy Communication
+
+Social media helps people stay connected with friends, relatives, teachers, and classmates regardless of distance.
+
+2. Access to Educational Content
+
+Students can watch tutorials, attend online classes, and learn from experts across the world.
+
+3. Knowledge and Awareness
+
+Social media provides information about current events, science, technology, sports, and many other topics.
+
+4. Creativity and Self-Expression
+
+Students can share their talents in art, music, writing, photography, and public speaking.
+
+5. Career and Business Opportunities
+
+Many people use social media to promote businesses, build professional networks, and develop careers.
+
+Real-Life Example
+
+Many students learn communication skills, coding, graphic design, and other valuable skills through online educational content.
+
+Important Point
+
+When used wisely, social media can become a powerful learning tool.
+
+Audience Question
+
+Can anyone share something useful they learned through social media?
+
+Student 3: Disadvantages and Risks of Social Media (5 Minutes)
+
+Although social media offers many benefits, it also has some risks.
+
+1. Time Wastage
+
+Many students spend several hours on social media without realizing how much time has passed.
+
+2. Reduced Concentration
+
+Constant notifications and online distractions can affect studies and productivity.
+
+3. Cyberbullying
+
+Some people use social media to spread negativity, insults, or harmful comments.
+
+4. False Information
+
+Not everything shared online is true. Incorrect information can spread very quickly.
+
+5. Privacy and Security Risks
+
+Sharing personal information online may sometimes lead to privacy concerns.
+
+6. Mental Health Concerns
+
+Excessive use of social media may lead to stress, comparison, and reduced self-confidence.
+
+Example
+
+Some students compare themselves with others online and feel unhappy, forgetting that social media often shows only the best moments of people's lives.
+
+Audience Question
+
+What do you think is the biggest problem caused by excessive social media usage?
+
+Student 4: Responsible Use of Social Media (4 Minutes)
+
+Now let us discuss how students can use social media responsibly.
+
+Tip 1: Set Time Limits
+
+Use social media for a limited amount of time each day.
+
+Tip 2: Prioritize Studies
+
+Complete important tasks before spending time online.
+
+Tip 3: Verify Information
+
+Always check whether information comes from reliable sources.
+
+Tip 4: Protect Your Privacy
+
+Avoid sharing personal information with strangers.
+
+Tip 5: Follow Positive Content
+
+Choose educational, motivational, and informative content.
+
+Tip 6: Take Digital Breaks
+
+Spend time reading, exercising, playing sports, and interacting with family and friends.
+
+Real-Life Example
+
+Many successful students use technology as a tool for learning rather than allowing it to become a distraction.
+
+Remember:
+
+Technology should serve us; we should not become dependent on it.
+
+Audience Activity (2 Minutes)
+
+Useful or Harmful?
+
+Ask students the following situations:
+
+Situation 1
+
+Using social media for one hour to learn English vocabulary.
+
+Situation 2
+
+Using social media for five hours during exam preparation.
+
+Situation 3
+
+Watching educational videos to understand science concepts.
+
+Situation 4
+
+Sharing personal information with strangers online.
+
+Students should answer whether the situation is *Useful* or *Harmful* and explain why.
+
+Conclusion (1 Minute)
+
+Social media is a powerful tool that can provide knowledge, opportunities, and communication.
+
+However, it can also create problems if used carelessly or excessively.
+
+The key is balance and responsible usage.
+
+By using social media wisely, students can benefit from technology while avoiding its risks.
+
+Remember:
+
+**"Technology is a useful servant but a dangerous master."**
+
+Use social media smartly, safely, and responsibly.
+
+Thank you everyone.
+
+Vocabulary
+
+Vocabulary:
+• Social Media: Online platforms used for communication and sharing information
+• Communication: Exchange of information and ideas
+• Cyberbullying: Harassing or insulting someone online
+• Privacy: Protection of personal information
+• Distraction: Something that takes attention away
+• Awareness: Knowledge and understanding of a subject
+• Responsible: Acting wisely and carefully
+• Technology: Application of scientific knowledge for practical purposes
+
+Reflection Questions
+
+1. What is social media?
+2. What are the advantages of social media?
+3. What risks can social media create for students?
+4. How can students use social media responsibly?
+5. What changes can you make to improve your digital habits?
+,\n`
+      },
+      {
+        id: 8,
+        title: "Presentation 8: Emotional Intelligence – Understanding and Managing Emotions",
+        content: `\nEmotional Intelligence – Understanding and Managing Emotions
+
+Duration: 20 Minutes
+
+Presenters: 4 Students
+
+Student 1: What is Emotional Intelligence? (4 Minutes)
+
+Good morning everyone.
+
+Today, we are going to discuss an important life skill called *Emotional Intelligence*.
+
+Emotional Intelligence, often called EI or EQ, is the ability to understand, manage, and express our emotions in a healthy way. It also includes understanding the emotions of others.
+
+Every day, we experience different emotions such as happiness, sadness, anger, excitement, fear, disappointment, and pride. These emotions influence our thoughts, decisions, and actions.
+
+Being intelligent is important, but understanding emotions is equally important. A person may have excellent academic knowledge, but if they cannot manage emotions or communicate effectively with others, they may face difficulties in relationships and teamwork.
+
+Emotional intelligence helps us remain calm during challenges, communicate respectfully, and build positive relationships.
+
+Example
+
+Imagine a student receives low marks in an examination.
+
+One student becomes angry, blames others, and gives up.
+
+Another student feels disappointed but calmly analyses mistakes and plans for improvement.
+
+The second student is showing emotional intelligence.
+
+Question to Audience
+
+Can you name some emotions that people experience every day?
+
+Student 2: Understanding and Managing Our Emotions (5 Minutes)
+
+Now let us discuss how we can understand and manage our emotions.
+
+Step 1: Recognize Your Emotions
+
+The first step is identifying what you are feeling.
+
+Ask yourself:
+
+• Am I happy?
+• Am I angry?
+• Am I nervous?
+• Am I disappointed?
+
+Step 2: Understand the Cause
+
+Every emotion has a reason.
+
+For example:
+
+• Happiness may come from success.
+• Anger may come from misunderstanding.
+• Fear may come from uncertainty.
+
+Step 3: Control Your Reactions
+
+We cannot always control situations, but we can control our reactions.
+
+Instead of shouting when angry, we can:
+
+• Take deep breaths
+• Stay calm
+• Think before speaking
+
+Step 4: Express Emotions Respectfully
+
+It is okay to express emotions, but it is important to do so politely and respectfully.
+
+Example
+
+If a friend hurts your feelings, instead of becoming aggressive, you can calmly explain how you feel.
+
+Audience Question
+
+What do you usually do when you feel angry or upset?
+
+Student 3: Empathy – Understanding Others (5 Minutes)
+
+An important part of emotional intelligence is *Empathy*.
+
+Empathy means understanding and respecting the feelings of other people.
+
+Empathy helps us:
+
+• Build strong friendships
+• Resolve conflicts peacefully
+• Become better listeners
+• Support people during difficult times
+
+Example
+
+If your classmate looks sad, an empathetic student may ask:
+
+"Are you okay? Is there anything I can help you with?"
+
+This small act can make a big difference.
+
+Why Empathy is Important
+
+When we understand how others feel, we communicate more effectively and create a positive environment around us.
+
+Empathy in School
+
+Students can show empathy by:
+
+• Helping classmates
+• Including everyone in activities
+• Respecting different opinions
+• Being kind and supportive
+
+Audience Question
+
+Can you share a time when someone showed kindness or understanding towards you?
+
+Student 4: Building Emotional Intelligence in Daily Life (4 Minutes)
+
+The good news is that emotional intelligence can be developed through practice.
+
+Tip 1: Listen Carefully
+
+Listen to understand, not just to respond.
+
+Tip 2: Think Before Speaking
+
+Words can affect people deeply. Choose them carefully.
+
+Tip 3: Stay Calm During Problems
+
+Take a moment to think before reacting emotionally.
+
+Tip 4: Respect Different Opinions
+
+People may think differently, and that is okay.
+
+Tip 5: Learn from Mistakes
+
+Every experience teaches us something valuable.
+
+Tip 6: Practice Gratitude
+
+Appreciating what we have helps create positive emotions.
+
+Real-Life Example
+
+Great leaders are often emotionally intelligent because they understand themselves and others. They communicate effectively, handle pressure calmly, and build strong relationships.
+
+Remember:
+
+Being emotionally intelligent does not mean never feeling negative emotions. It means managing emotions wisely.
+
+Audience Activity (2 Minutes)
+
+Emotion Situations
+
+Ask students how they would react in the following situations:
+
+Situation 1
+
+Your friend accidentally breaks your pencil.
+
+Situation 2
+
+You lose a competition after working hard.
+
+Situation 3
+
+A new student joins your class and feels lonely.
+
+Situation 4
+
+Someone disagrees with your opinion during a discussion.
+
+Discuss healthy and emotionally intelligent responses.
+
+Conclusion (1 Minute)
+
+Emotional intelligence is one of the most important skills for success in school and life.
+
+It helps us understand ourselves, manage emotions, build strong relationships, and communicate effectively.
+
+By practising self-control, empathy, and positive communication, we can become more emotionally intelligent every day.
+
+Remember:
+
+**"It is not our emotions that define us, but how we respond to them."**
+
+Let us learn to understand our emotions and respect the emotions of others.
+
+Thank you everyone.
+
+Vocabulary
+
+Vocabulary:
+• Emotional Intelligence: Ability to understand and manage emotions
+• Emotion: A feeling such as happiness, sadness, or anger
+• Empathy: Understanding another person's feelings
+• Self-Control: Ability to manage emotions and actions
+• Relationship: Connection between people
+• Gratitude: Feeling thankful for what we have
+• Respect: Showing consideration for others
+• Communication: Sharing ideas, feelings, and information
+
+Reflection Questions
+
+1. What is emotional intelligence?
+2. Why is emotional intelligence important?
+3. What is empathy?
+4. How can students manage emotions effectively?
+5. Which emotional intelligence skill would you like to improve?
+,\n`
+      },
+      {
+        id: 9,
+        title: "Presentation 9: The Importance of Reading",
+        content: `\nThe Importance of Reading
+
+Duration: 20 Minutes
+
+Presenters: 4 Students
+
+Student 1: Why Reading Matters (4 Minutes)
+
+Good morning everyone.
+
+Today, we are going to talk about a habit that has the power to transform our lives—*Reading*.
+
+Reading is more than just looking at words on a page. It is a way of gaining knowledge, exploring new ideas, understanding different perspectives, and improving ourselves.
+
+Books allow us to learn from the experiences, discoveries, and wisdom of people from around the world. Through reading, we can travel to different countries, learn about history, explore science, and understand human emotions without leaving our classroom.
+
+Reading is one of the most important habits for students because it helps in academic success and personal growth.
+
+People who read regularly often become better communicators, better thinkers, and lifelong learners.
+
+Example
+
+A student who reads storybooks, newspapers, and educational articles is likely to have more knowledge and vocabulary than someone who rarely reads.
+
+Question to Audience
+
+What is your favourite book, story, or magazine?
+
+Student 2: Benefits of Reading (5 Minutes)
+
+Now let us discuss the many benefits of reading.
+
+1. Increases Knowledge
+
+Every book teaches us something new. Reading helps us learn facts, ideas, and information about different subjects.
+
+2. Improves Vocabulary
+
+While reading, we come across new words and expressions that improve our language skills.
+
+3. Enhances Communication Skills
+
+People who read regularly often express themselves more clearly and confidently.
+
+4. Improves Concentration
+
+Reading requires focus and attention, which helps strengthen concentration.
+
+5. Develops Creativity and Imagination
+
+Books encourage us to imagine situations, characters, and places, making our minds more creative.
+
+Example
+
+When reading a story, students create images in their minds about the characters and events. This develops imagination and creativity.
+
+Audience Question
+
+What new word have you learned recently from a book or article?
+
+Student 3: How Reading Improves Communication Skills (5 Minutes)
+
+One of the greatest benefits of reading is that it improves communication skills.
+
+Better Vocabulary
+
+Reading introduces us to new words, phrases, and sentence structures.
+
+Better Speaking Skills
+
+The more words we know, the more confidently we can express our ideas.
+
+Better Writing Skills
+
+Reading teaches us how sentences and paragraphs are organized.
+
+Better Understanding
+
+Readers often become better listeners and thinkers because they learn to understand information more effectively.
+
+Example
+
+A student who reads regularly may find it easier to participate in discussions, presentations, and debates because they have a larger vocabulary and more ideas to share.
+
+Reading and Confidence
+
+When students understand more words and concepts, they feel more confident while speaking in English.
+
+Audience Question
+
+Do you think reading can help improve speaking skills? Why?
+
+Student 4: Developing a Reading Habit (4 Minutes)
+
+Now let us discuss how students can develop a strong reading habit.
+
+Tip 1: Read Every Day
+
+Even 15–20 minutes of reading daily can make a big difference.
+
+Tip 2: Choose Interesting Books
+
+Start with topics that you enjoy.
+
+Tip 3: Visit Libraries
+
+Libraries provide access to a wide variety of books and resources.
+
+Tip 4: Keep a Vocabulary Notebook
+
+Write down new words and their meanings.
+
+Tip 5: Discuss What You Read
+
+Talking about books helps improve understanding and communication.
+
+Tip 6: Reduce Screen Time
+
+Spend some time reading books instead of always using digital devices.
+
+Real-Life Example
+
+Many successful leaders, scientists, writers, and entrepreneurs are passionate readers. They continue reading throughout their lives because learning never stops.
+
+Remember:
+
+Readers are leaders because knowledge creates opportunities.
+
+Audience Activity (2 Minutes)
+
+Book Recommendation Circle
+
+Ask students:
+
+1. Name a book or story you enjoyed.
+2. Explain why others should read it.
+
+Allow a few students to share their recommendations.
+
+This activity encourages reading and communication.
+
+Conclusion (1 Minute)
+
+Reading is one of the most valuable habits a student can develop.
+
+It increases knowledge, improves vocabulary, strengthens communication skills, and develops creativity.
+
+Every page we read helps us learn something new and become a better version of ourselves.
+
+Remember:
+
+**"Today a reader, tomorrow a leader."**
+
+Make reading a daily habit and continue learning throughout your life.
+
+Thank you everyone.
+
+Vocabulary
+
+Vocabulary:
+• Reading: The process of understanding written words
+• Vocabulary: The collection of words a person knows
+• Knowledge: Information and understanding gained through learning
+• Creativity: Ability to produce new and original ideas
+• Concentration: Focused attention on a task
+• Communication: Sharing ideas and information
+• Imagination: Ability to form mental images and ideas
+<truncated 7175 bytes>
+
+NOTE: The output was truncated because it was too long. Use a more targeted query or a smaller range to get the information you need.\n`
       }
     ],
   },

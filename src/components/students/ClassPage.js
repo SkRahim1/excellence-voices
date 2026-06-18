@@ -5,6 +5,7 @@ import { Link, useParams } from "react-router-dom";
 export default function ClassPage() {
   const { classId } = useParams();
 
+  const classNumber = parseInt(classId.replace("class-", ""), 10);
   const categories = [
     "roleplays",
     "activities",
@@ -14,6 +15,9 @@ export default function ClassPage() {
     "publicSpeaking",
     "stockSentences",
   ];
+  if (classNumber >= 5 && classNumber <= 9) {
+    categories.push("presentations");
+  }
 
   return (
     <div className="container">

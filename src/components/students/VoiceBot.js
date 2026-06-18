@@ -355,6 +355,7 @@ export default function VoiceBot() {
     else if (normalized.includes("thought")) category = "goodThoughts";
     else if (normalized.includes("speaking") || normalized.includes("speech")) category = "publicSpeaking";
     else if (normalized.includes("sentence")) category = "stockSentences";
+    else if (normalized.includes("presentation")) category = "presentations";
 
     // Extract ALL numbers with optional ordinal suffix, preserving their position
     const numPattern = /(\d+)(?:st|nd|rd|th)?/g;
@@ -398,7 +399,7 @@ export default function VoiceBot() {
     if (!category && currentPath) {
       const pathParts = currentPath.split("/");
       // e.g. /students/class-8/skits/3 → pathParts[3] = "skits"
-      const knownCategories = ["stories", "roleplays", "skits", "activities", "goodThoughts", "publicSpeaking", "stockSentences"];
+      const knownCategories = ["stories", "roleplays", "skits", "activities", "goodThoughts", "publicSpeaking", "stockSentences", "presentations"];
       const urlCat = pathParts.find(p => knownCategories.includes(p));
       if (urlCat) category = urlCat;
     }
@@ -569,7 +570,7 @@ export default function VoiceBot() {
 
     // Start reading current page item (any category)
     const currentItem = await getCurrentItem();
-    if ((query.includes("read this") || query.includes("read aloud") || query.includes("read story") || query.includes("read skit") || query.includes("read sentence") || query.includes("read thought") || query.includes("read activity")) && currentItem) {
+    if ((query.includes("read this") || query.includes("read aloud") || query.includes("read story") || query.includes("read skit") || query.includes("read sentence") || query.includes("read thought") || query.includes("read activity") || query.includes("read presentation")) && currentItem) {
       startReading(currentItem);
       return;
     }
@@ -586,6 +587,7 @@ export default function VoiceBot() {
       else if (query.includes("roleplay") || query.includes("role play")) spokenCategory = "roleplays";
       else if (query.includes("activit")) spokenCategory = "activities";
       else if (query.includes("stor")) spokenCategory = "stories";
+      else if (query.includes("presentation")) spokenCategory = "presentations";
 
       const isReadCommand = query.includes("read") || query.includes("open") || query.includes("start");
       const isPracticeCommand = query.includes("practice");

@@ -23,6 +23,11 @@ export default function Trainers() {
     "class-9",
   ];
 
+  // Selected filters
+  const [selectedClass, setSelectedClass] = useState("class-1");
+  const [selectedCategory, setSelectedCategory] = useState("stories");
+
+  const classNumber = parseInt(selectedClass.replace("class-", ""), 10);
   const categoriesList = [
     { value: "stories", label: "Stories" },
     { value: "roleplays", label: "Roleplays" },
@@ -32,10 +37,9 @@ export default function Trainers() {
     { value: "publicSpeaking", label: "Public Speaking" },
     { value: "stockSentences", label: "Stock Sentences" },
   ];
-
-  // Selected filters
-  const [selectedClass, setSelectedClass] = useState("class-1");
-  const [selectedCategory, setSelectedCategory] = useState("stories");
+  if (classNumber >= 5 && classNumber <= 9) {
+    categoriesList.push({ value: "presentations", label: "Presentations" });
+  }
 
   // Lessons list state
   const [lessons, setLessons] = useState([]);
@@ -234,7 +238,14 @@ export default function Trainers() {
           <label>Select Class</label>
           <select
             value={selectedClass}
-            onChange={(e) => setSelectedClass(e.target.value)}
+            onChange={(e) => {
+              const newClass = e.target.value;
+              setSelectedClass(newClass);
+              const classNum = parseInt(newClass.replace("class-", ""), 10);
+              if (classNum < 5 && selectedCategory === "presentations") {
+                setSelectedCategory("stories");
+              }
+            }}
           >
             {classesList.map((cls) => (
               <option key={cls} value={cls}>
