@@ -1109,17 +1109,19 @@ export default function TeachersHome({ teacherName, teacherSubject, teacherSchoo
                 ) : (
                   <>
                     {/* SPEECH PRACTICE ZONE */}
-                    {!completedWeeks.includes(activeWeek) && activeWeek === nextWeekToComplete && (
+                    {!isWeekLocked(activeWeek) && (
                       <div ref={practiceCardRef} className="speech-practice-card">
                         <div className="speech-practice-header">
                           <div className="speech-practice-title-wrapper">
                             <Mic size={18} className={`mic-pulse-icon ${isListening ? "pulse" : ""}`} />
-                            <h4>Speaking Practice (Unlock Gate)</h4>
+                            <h4>{completedWeeks.includes(activeWeek) ? "Speaking Practice (Completed)" : "Speaking Practice (Unlock Gate)"}</h4>
                           </div>
                           <span className="practice-progress-tag">{categoryStars}/3 Stars Earned</span>
                         </div>
                         <p className="practice-desc">
-                          To unlock Week {activeWeek.split("-")[1]}, select any instruction, question, or challenge below by clicking its <strong>mic icon 🎙️</strong>, then speak it aloud clearly.
+                          {completedWeeks.includes(activeWeek) 
+                             ? "Select any instruction, question, or challenge below by clicking its mic icon 🎙️, then speak it aloud clearly to practice your pronunciation."
+                             : `To unlock Week ${activeWeek.split("-")[1]}, select any instruction, question, or challenge below by clicking its mic icon 🎙️, then speak it aloud clearly.`}
                         </p>
                         <div className="practice-stars">
                           {[1, 2, 3].map(i => (
@@ -1204,7 +1206,7 @@ export default function TeachersHome({ teacherName, teacherSubject, teacherSchoo
                           >
                             <div className="bullet-point">{index + 1}</div>
                             <div className="content-text">{item}</div>
-                            {!completedWeeks.includes(activeWeek) && activeWeek === nextWeekToComplete && (
+                            {!isWeekLocked(activeWeek) && (
                               <button 
                                 className={`item-practice-btn ${activeSpeechItem === item ? "active" : ""} count-${speechCounts[item] || 0}`}
                                 onClick={() => startSpeechRecognition(item)}
@@ -1248,7 +1250,7 @@ export default function TeachersHome({ teacherName, teacherSubject, teacherSchoo
                                   <div className={`dialogue-bubble ${isTeacher ? "teacher-bubble" : "student-bubble"}`}>
                                     {utterance.text}
                                   </div>
-                                  {!completedWeeks.includes(activeWeek) && activeWeek === nextWeekToComplete && (
+                                  {!isWeekLocked(activeWeek) && (
                                     <button 
                                       className={`item-practice-btn dialogue-mic-btn ${activeSpeechItem === utterance.text ? "active" : ""} count-${speechCounts[utterance.text] || 0}`}
                                       onClick={() => startSpeechRecognition(utterance.text)}
@@ -1285,7 +1287,7 @@ export default function TeachersHome({ teacherName, teacherSubject, teacherSchoo
                         </div>
                         <h4>Practice Challenge</h4>
                         <p className="challenge-main-text">{translatedChallenge}</p>
-                        {!completedWeeks.includes(activeWeek) && activeWeek === nextWeekToComplete && (
+                        {!isWeekLocked(activeWeek) && (
                           <button 
                             type="button"
                             className={`challenge-practice-btn ${activeSpeechItem === translatedChallenge ? "active" : ""}`}
