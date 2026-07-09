@@ -21,7 +21,7 @@ export default function PrincipalProtectedPopup({ children }) {
     localStorage.getItem("principalMobileNumber") || ""
   );
 
-  const [activeTab, setActiveTab] = useState("register"); // "register" | "login"
+  const [activeTab, setActiveTab] = useState("login"); // "register" | "login"
   const [nameInput, setNameInput] = useState("");
   const [mobileInput, setMobileInput] = useState("");
   const [schoolInput, setSchoolInput] = useState("exscl-01");
@@ -29,16 +29,27 @@ export default function PrincipalProtectedPopup({ children }) {
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
 
+  const normalizeMobileNumber = (value) => {
+    let cleaned = value.replace(/\D/g, "");
+    if (cleaned.startsWith("91") && cleaned.length === 12) {
+      cleaned = cleaned.slice(2);
+    } else if (cleaned.startsWith("0") && cleaned.length === 11) {
+      cleaned = cleaned.slice(1);
+    }
+    return cleaned.slice(0, 10);
+  };
+
   const isValidMobile = (num) => {
     return /^[6-9]\d{9}$/.test(num);
   };
 
   const handleRegister = async () => {
+    const cleanMobile = normalizeMobileNumber(mobileInput);
     if (!nameInput.trim()) {
       setError("Please enter your name");
       return;
     }
-    if (!isValidMobile(mobileInput)) {
+    if (!isValidMobile(cleanMobile)) {
       setError("Please enter a valid 10-digit mobile number");
       return;
     }
@@ -55,7 +66,7 @@ export default function PrincipalProtectedPopup({ children }) {
     setError("");
 
     try {
-      const docRef = doc(db, "principals", mobileInput);
+      const docRef = doc(db, "principals", cleanMobile);
       const docSnap = await getDoc(docRef);
 
       if (docSnap.exists()) {
@@ -66,7 +77,7 @@ export default function PrincipalProtectedPopup({ children }) {
 
       const newProfile = {
         principalName: nameInput.trim(),
-        mobileNumber: mobileInput,
+        mobileNumber: cleanMobile,
         schoolCode: normalizedSelectedCode,
         createdAt: new Date().toISOString()
       };
@@ -76,11 +87,11 @@ export default function PrincipalProtectedPopup({ children }) {
       localStorage.setItem("principalAuth", "true");
       localStorage.setItem("principalName", nameInput.trim());
       localStorage.setItem("principalSchoolCode", normalizedSelectedCode);
-      localStorage.setItem("principalMobileNumber", mobileInput);
+      localStorage.setItem("principalMobileNumber", cleanMobile);
 
       setName(nameInput.trim());
       setSchoolCode(normalizedSelectedCode);
-      setMobileNumber(mobileInput);
+      setMobileNumber(cleanMobile);
       setAuthenticated(true);
     } catch (err) {
       console.error(err);
@@ -91,7 +102,8 @@ export default function PrincipalProtectedPopup({ children }) {
   };
 
   const handleLogin = async () => {
-    if (!isValidMobile(mobileInput)) {
+    const cleanMobile = normalizeMobileNumber(mobileInput);
+    if (!isValidMobile(cleanMobile)) {
       setError("Please enter your registered 10-digit mobile number");
       return;
     }
@@ -104,7 +116,7 @@ export default function PrincipalProtectedPopup({ children }) {
     setError("");
 
     try {
-      const docRef = doc(db, "principals", mobileInput);
+      const docRef = doc(db, "principals", cleanMobile);
       const docSnap = await getDoc(docRef);
 
       if (!docSnap.exists()) {
@@ -126,11 +138,11 @@ export default function PrincipalProtectedPopup({ children }) {
       localStorage.setItem("principalAuth", "true");
       localStorage.setItem("principalName", data.principalName);
       localStorage.setItem("principalSchoolCode", normalizedCode);
-      localStorage.setItem("principalMobileNumber", mobileInput);
+      localStorage.setItem("principalMobileNumber", cleanMobile);
 
       setName(data.principalName);
       setSchoolCode(normalizedCode);
-      setMobileNumber(mobileInput);
+      setMobileNumber(cleanMobile);
       setAuthenticated(true);
     } catch (err) {
       console.error(err);
@@ -198,7 +210,7 @@ export default function PrincipalProtectedPopup({ children }) {
               type="tel"
               placeholder="Enter 10-Digit Mobile Number"
               value={mobileInput}
-              onChange={(e) => { setMobileInput(e.target.value.replace(/\D/g, "").slice(0, 10)); setError(""); }}
+              onChange={(e) => { setMobileInput(normalizeMobileNumber(e.target.value)); setError(""); }}
             />
 
             <select
@@ -231,7 +243,7 @@ export default function PrincipalProtectedPopup({ children }) {
               type="tel"
               placeholder="Enter Registered Mobile Number"
               value={mobileInput}
-              onChange={(e) => { setMobileInput(e.target.value.replace(/\D/g, "").slice(0, 10)); setError(""); }}
+              onChange={(e) => { setMobileInput(normalizeMobileNumber(e.target.value)); setError(""); }}
             />
 
             <input

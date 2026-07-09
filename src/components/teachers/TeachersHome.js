@@ -59,6 +59,8 @@ export default function TeachersHome({ teacherName, teacherSubject, teacherSchoo
 
   // Load speech progress and weekly session time when activeWeek/activeCategory changes
   const [weeklySessionSeconds, setWeeklySessionSeconds] = useState(0);
+  const [showCompletionPopup, setShowCompletionPopup] = useState(false);
+  const [completedWeekName, setCompletedWeekName] = useState("");
 
   // Helper to get all sentences in the active category
   const getCategorySentences = useCallback(() => {
@@ -277,6 +279,36 @@ export default function TeachersHome({ teacherName, teacherSubject, teacherSchoo
 
   const syncToFirestore = useCallback(async (weeksVal, secondsVal) => {
     if (!teacherMobileNumber && (!teacherName || !teacherSchoolCode)) return;
+
+    // Gather all weekly session times from localStorage
+    const weeklySessionSeconds = {};
+    for (let i = 0; i < localStorage.length; i++) {
+      const key = localStorage.key(i);
+      if (key && key.startsWith("teacherWeeklySessionTime_")) {
+        const week = key.replace("teacherWeeklySessionTime_", "");
+        weeklySessionSeconds[week] = parseInt(localStorage.getItem(key) || "0", 10);
+      }
+    }
+
+    // Gather all speech counts from localStorage
+    const speechCounts = {};
+    for (let i = 0; i < localStorage.length; i++) {
+      const key = localStorage.key(i);
+      if (key && key.startsWith("speechCounts_")) {
+        const parts = key.split("_");
+        const week = parts[1];
+        const category = parts[2];
+        try {
+          if (!speechCounts[week]) speechCounts[week] = {};
+          speechCounts[week][category] = JSON.parse(localStorage.getItem(key)) || {};
+        } catch (e) {
+          console.error("Error parsing speechCounts from localStorage:", e);
+        }
+      }
+    }
+
+    const lastCompleteDate = localStorage.getItem("teacherLastCompleteDate") || "";
+
     try {
       const docId = teacherMobileNumber || `${teacherSchoolCode}_${teacherName.trim().replace(/\s+/g, "_")}_${activeSubject}`;
       await setDoc(doc(db, "teachers", docId), {
@@ -285,6 +317,9 @@ export default function TeachersHome({ teacherName, teacherSubject, teacherSchoo
         subject: activeSubject,
         completedWeeks: weeksVal,
         sessionSeconds: secondsVal,
+        weeklySessionSeconds: weeklySessionSeconds,
+        speechCounts: speechCounts,
+        lastCompletionDate: lastCompleteDate,
         lastActiveDate: new Date().toISOString().split("T")[0],
         updatedAt: new Date().toISOString()
       }, { merge: true });
@@ -327,7 +362,6 @@ export default function TeachersHome({ teacherName, teacherSubject, teacherSchoo
 
   const REQUIRED_MINUTES = 60;
   const requiredSeconds = REQUIRED_MINUTES * 60;
-  const timeRemaining = Math.max(0, requiredSeconds - weeklySessionSeconds);
   const hasSpentEnoughTime = weeklySessionSeconds >= requiredSeconds;
   const todayStr = new Date().toISOString().split("T")[0];
   const alreadyCompletedToday = lastCompletionDate === todayStr;
@@ -346,44 +380,33 @@ export default function TeachersHome({ teacherName, teacherSubject, teacherSchoo
     return weekNum > completedWeeks.length + 1;
   };
 
-  // Can the teacher mark the active week as complete?
-  const canMarkComplete = () => {
-    if (completedWeeks.includes(activeWeek)) return false; // already done
-    if (activeWeek !== nextWeekToComplete) return false; // not sequential
-    if (alreadyCompletedToday) return false; // one per day
-    if (totalSpeechCount < 3) return false; // need speech practice
-    if (!hasSpentEnoughTime) return false; // need 60 min
-    return true;
-  };
 
-  // Get the reason why Mark Complete is disabled
-  const getDisabledReason = () => {
-    if (completedWeeks.includes(activeWeek)) return null; // show "Completed"
-    if (activeWeek !== nextWeekToComplete) {
-      const prevWeek = parseInt(activeWeek.split("-")[1]) - 1;
-      return `Complete Week ${prevWeek} first`;
-    }
-    if (alreadyCompletedToday) return "1 week per day limit reached";
-    if (totalSpeechCount < 3) {
-      return `Speak 3 items (Done: ${totalSpeechCount}/3)`;
-    }
-    if (!hasSpentEnoughTime) {
-      const mins = Math.floor(timeRemaining / 60);
-      const secs = timeRemaining % 60;
-      return `${mins}m ${secs < 10 ? "0" : ""}${secs}s remaining`;
-    }
-    return null;
-  };
 
-  const handleMarkComplete = () => {
-    if (!canMarkComplete()) return;
-    const updated = [...completedWeeks, activeWeek];
-    setCompletedWeeks(updated);
-    localStorage.setItem("teacherProgress", JSON.stringify(updated));
-    localStorage.setItem("teacherLastCompleteDate", todayStr);
-    setLastCompletionDate(todayStr);
-    syncToFirestore(updated, sessionSeconds);
-  };
+  // Auto completion observer
+  useEffect(() => {
+    if (
+      !completedWeeks.includes(activeWeek) &&
+      activeWeek === nextWeekToComplete &&
+      !alreadyCompletedToday &&
+      totalSpeechCount >= 3 &&
+      hasSpentEnoughTime
+    ) {
+      const updated = [...completedWeeks, activeWeek];
+      setCompletedWeeks(updated);
+      localStorage.setItem("teacherProgress", JSON.stringify(updated));
+      localStorage.setItem("teacherLastCompleteDate", todayStr);
+      setLastCompletionDate(todayStr);
+      syncToFirestore(updated, sessionSeconds);
+
+      setCompletedWeekName(activeWeek);
+      setShowCompletionPopup(true);
+
+      const nextWeekNum = parseInt(activeWeek.split("-")[1], 10) + 1;
+      if (nextWeekNum <= 10) {
+        setActiveWeek(`week-${nextWeekNum}`);
+      }
+    }
+  }, [activeWeek, completedWeeks, nextWeekToComplete, alreadyCompletedToday, totalSpeechCount, hasSpentEnoughTime, todayStr, syncToFirestore, sessionSeconds]);
 
   const progressPercent = Math.round((completedWeeks.length / 10) * 100);
 
@@ -834,23 +857,41 @@ export default function TeachersHome({ teacherName, teacherSubject, teacherSchoo
         </div>
         <div className="curriculum-banner-right">
           {completedWeeks.includes(activeWeek) ? (
-            <div className="mark-complete-btn completed">
+            <div className="mark-complete-btn completed" style={{ pointerEvents: "none" }}>
               <Check size={14} /> Completed
             </div>
+          ) : activeWeek === nextWeekToComplete ? (
+            <div style={{
+              display: "flex",
+              alignItems: "center",
+              gap: "8px",
+              padding: "10px 16px",
+              background: "rgba(245, 158, 11, 0.08)",
+              border: "1px dashed rgba(245, 158, 11, 0.3)",
+              borderRadius: "12px",
+              color: "#d97706",
+              fontSize: "13px",
+              fontWeight: "600"
+            }}>
+              <Clock size={14} style={{ color: "#f59e0b" }} /> 
+              <span>Active: {totalSpeechCount}/3 stars & {Math.floor(weeklySessionSeconds/60)}m / 60m</span>
+            </div>
           ) : (
-            <>
-              <button
-                className={`mark-complete-btn ${canMarkComplete() ? "ready" : "disabled"}`}
-                onClick={handleMarkComplete}
-                disabled={!canMarkComplete()}
-              >
-                {canMarkComplete() ? (
-                  <><Check size={14} /> Mark Complete</>
-                ) : (
-                  <><Clock size={14} /> {getDisabledReason()}</>
-                )}
-              </button>
-            </>
+            <div style={{
+              display: "flex",
+              alignItems: "center",
+              gap: "8px",
+              padding: "10px 16px",
+              background: "rgba(226, 232, 240, 0.4)",
+              border: "1px solid rgba(226, 232, 240, 0.8)",
+              borderRadius: "12px",
+              color: "#64748b",
+              fontSize: "13px",
+              fontWeight: "600"
+            }}>
+              <Lock size={14} /> 
+              <span>Locked</span>
+            </div>
           )}
         </div>
       </motion.div>
@@ -1219,6 +1260,107 @@ export default function TeachersHome({ teacherName, teacherSubject, teacherSchoo
           </AnimatePresence>
         </div>
       </div>
+      {/* CELEBRATION POPUP */}
+      <AnimatePresence>
+        {showCompletionPopup && (
+          <motion.div 
+            className="completion-popup-overlay"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            style={{
+              position: "fixed",
+              top: 0,
+              left: 0,
+              right: 0,
+              bottom: 0,
+              background: "rgba(13, 45, 89, 0.6)",
+              backdropFilter: "blur(8px)",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              zIndex: 99999,
+              padding: "20px"
+            }}
+          >
+            <motion.div 
+              className="completion-popup-box"
+              initial={{ scale: 0.9, y: 20 }}
+              animate={{ scale: 1, y: 0 }}
+              exit={{ scale: 0.9, y: 20 }}
+              transition={{ type: "spring", damping: 25, stiffness: 350 }}
+              style={{
+                background: "linear-gradient(135deg, #ffffff 0%, #f8fafc 100%)",
+                padding: "40px 30px",
+                borderRadius: "24px",
+                width: "100%",
+                maxWidth: "480px",
+                textAlign: "center",
+                boxShadow: "0 25px 50px -12px rgba(13, 45, 89, 0.4)",
+                border: "1px solid rgba(255, 255, 255, 0.8)",
+                position: "relative",
+                overflow: "hidden"
+              }}
+            >
+              <div style={{ position: "absolute", top: "-50px", left: "-50px", width: "150px", height: "150px", background: "rgba(235, 169, 37, 0.15)", filter: "blur(40px)", borderRadius: "50%" }}></div>
+              <div style={{ position: "absolute", bottom: "-50px", right: "-50px", width: "150px", height: "150px", background: "rgba(13, 45, 89, 0.1)", filter: "blur(40px)", borderRadius: "50%" }}></div>
+
+              <div style={{ fontSize: "64px", marginBottom: "16px" }}>🎉</div>
+              
+              <h2 style={{ fontSize: "28px", fontWeight: "800", color: "#0d2d59", marginBottom: "10px" }}>
+                Week Completed!
+              </h2>
+              
+              <p style={{ fontSize: "16px", color: "#475569", lineHeight: "1.6", marginBottom: "24px" }}>
+                Outstanding effort! You have successfully completed all requirements for <strong>Week {completedWeekName.split("-")[1]}</strong>.
+              </p>
+
+              <div style={{ 
+                background: "rgba(16, 185, 129, 0.08)", 
+                border: "1px solid rgba(16, 185, 129, 0.2)", 
+                borderRadius: "16px", 
+                padding: "16px 20px", 
+                marginBottom: "28px",
+                display: "flex",
+                flexDirection: "column",
+                gap: "8px"
+              }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "10px", color: "#065f46", fontSize: "14.5px", fontWeight: "600" }}>
+                  <Check size={18} style={{ color: "#10b981" }} />
+                  <span>60 Minutes Session Time Logged</span>
+                </div>
+                <div style={{ display: "flex", alignItems: "center", gap: "10px", color: "#065f46", fontSize: "14.5px", fontWeight: "600" }}>
+                  <Check size={18} style={{ color: "#10b981" }} />
+                  <span>3 Speaking Practice Stars Earned</span>
+                </div>
+              </div>
+
+              <div style={{ fontSize: "15px", color: "#64748b", marginBottom: "20px", fontWeight: "500" }}>
+                🚀 <strong>Week {parseInt(completedWeekName.split("-")[1], 10) + 1}</strong> is now unlocked and active!
+              </div>
+
+              <button
+                onClick={() => setShowCompletionPopup(false)}
+                style={{
+                  background: "linear-gradient(135deg, #0d2d59 0%, #1e40af 100%)",
+                  color: "white",
+                  border: "none",
+                  padding: "14px 28px",
+                  borderRadius: "14px",
+                  fontSize: "16px",
+                  fontWeight: "700",
+                  cursor: "pointer",
+                  width: "100%",
+                  boxShadow: "0 10px 20px -5px rgba(13, 45, 89, 0.3)"
+                }}
+              >
+                Continue Training
+              </button>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+
       {selectedWordInfo && (
         <div 
           className="word-translation-tooltip"

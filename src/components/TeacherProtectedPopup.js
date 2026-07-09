@@ -24,7 +24,7 @@ export default function TeacherProtectedPopup({ children }) {
     localStorage.getItem("teacherMobileNumber") || ""
   );
 
-  const [activeTab, setActiveTab] = useState("register"); // "register" | "login"
+  const [activeTab, setActiveTab] = useState("login"); // "register" | "login"
   const [nameInput, setNameInput] = useState("");
   const [mobileInput, setMobileInput] = useState("");
   const [schoolInput, setSchoolInput] = useState("exscl-01");
@@ -33,16 +33,27 @@ export default function TeacherProtectedPopup({ children }) {
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
 
+  const normalizeMobileNumber = (value) => {
+    let cleaned = value.replace(/\D/g, "");
+    if (cleaned.startsWith("91") && cleaned.length === 12) {
+      cleaned = cleaned.slice(2);
+    } else if (cleaned.startsWith("0") && cleaned.length === 11) {
+      cleaned = cleaned.slice(1);
+    }
+    return cleaned.slice(0, 10);
+  };
+
   const isValidMobile = (num) => {
     return /^[6-9]\d{9}$/.test(num);
   };
 
   const handleRegister = async () => {
+    const cleanMobile = normalizeMobileNumber(mobileInput);
     if (!nameInput.trim()) {
       setError("Please enter your name");
       return;
     }
-    if (!isValidMobile(mobileInput)) {
+    if (!isValidMobile(cleanMobile)) {
       setError("Please enter a valid 10-digit mobile number");
       return;
     }
@@ -58,7 +69,7 @@ export default function TeacherProtectedPopup({ children }) {
     setError("");
 
     try {
-      const docRef = doc(db, "teachers", mobileInput);
+      const docRef = doc(db, "teachers", cleanMobile);
       const docSnap = await getDoc(docRef);
 
       if (docSnap.exists()) {
@@ -69,11 +80,14 @@ export default function TeacherProtectedPopup({ children }) {
 
       const newProfile = {
         teacherName: nameInput.trim(),
-        mobileNumber: mobileInput,
+        mobileNumber: cleanMobile,
         schoolCode: normalizedSelectedCode,
         subject: subjectInput,
         completedWeeks: [],
         sessionSeconds: 0,
+        weeklySessionSeconds: {},
+        speechCounts: {},
+        lastCompletionDate: "",
         lastActiveDate: new Date().toISOString().split("T")[0],
         updatedAt: new Date().toISOString()
       };
@@ -84,7 +98,7 @@ export default function TeacherProtectedPopup({ children }) {
       localStorage.setItem("teacherName", nameInput.trim());
       localStorage.setItem("teacherSubject", subjectInput);
       localStorage.setItem("teacherSchoolCode", normalizedSelectedCode);
-      localStorage.setItem("teacherMobileNumber", mobileInput);
+      localStorage.setItem("teacherMobileNumber", cleanMobile);
       localStorage.setItem("teacherProgress", JSON.stringify([]));
       localStorage.setItem("teacherSessionTime", JSON.stringify({
         date: new Date().toDateString(),
@@ -95,7 +109,7 @@ export default function TeacherProtectedPopup({ children }) {
       setName(nameInput.trim());
       setSubject(subjectInput);
       setSchoolCode(normalizedSelectedCode);
-      setMobileNumber(mobileInput);
+      setMobileNumber(cleanMobile);
       setAuthenticated(true);
     } catch (err) {
       console.error(err);
@@ -106,7 +120,8 @@ export default function TeacherProtectedPopup({ children }) {
   };
 
   const handleLogin = async () => {
-    if (!isValidMobile(mobileInput)) {
+    const cleanMobile = normalizeMobileNumber(mobileInput);
+    if (!isValidMobile(cleanMobile)) {
       setError("Please enter your registered 10-digit mobile number");
       return;
     }
@@ -115,7 +130,7 @@ export default function TeacherProtectedPopup({ children }) {
     setError("");
 
     try {
-      const docRef = doc(db, "teachers", mobileInput);
+      const docRef = doc(db, "teachers", cleanMobile);
       const docSnap = await getDoc(docRef);
 
       if (!docSnap.exists()) {
@@ -132,7 +147,7 @@ export default function TeacherProtectedPopup({ children }) {
       localStorage.setItem("teacherName", data.teacherName);
       localStorage.setItem("teacherSubject", data.subject || "english");
       localStorage.setItem("teacherSchoolCode", data.schoolCode || "exscl-01");
-      localStorage.setItem("teacherMobileNumber", mobileInput);
+      localStorage.setItem("teacherMobileNumber", cleanMobile);
       localStorage.setItem("teacherProgress", JSON.stringify(weeks));
       localStorage.setItem("teacherSessionTime", JSON.stringify({
         date: new Date().toDateString(),
@@ -140,10 +155,29 @@ export default function TeacherProtectedPopup({ children }) {
       }));
       localStorage.setItem("teacherTotalSessionTime", seconds.toString());
 
+      // Restore weekly session times
+      const weeklySeconds = data.weeklySessionSeconds || {};
+      Object.entries(weeklySeconds).forEach(([week, secs]) => {
+        localStorage.setItem(`teacherWeeklySessionTime_${week}`, secs.toString());
+      });
+
+      // Restore speech counts
+      const speechCounts = data.speechCounts || {};
+      Object.entries(speechCounts).forEach(([week, catMap]) => {
+        Object.entries(catMap).forEach(([cat, counts]) => {
+          localStorage.setItem(`speechCounts_${week}_${cat}`, JSON.stringify(counts));
+        });
+      });
+
+      // Restore last complete date
+      if (data.lastCompletionDate) {
+        localStorage.setItem("teacherLastCompleteDate", data.lastCompletionDate);
+      }
+
       setName(data.teacherName);
       setSubject(data.subject || "english");
       setSchoolCode(data.schoolCode || "exscl-01");
-      setMobileNumber(mobileInput);
+      setMobileNumber(cleanMobile);
       setAuthenticated(true);
     } catch (err) {
       console.error(err);
@@ -229,7 +263,7 @@ export default function TeacherProtectedPopup({ children }) {
               type="tel"
               placeholder="Enter 10-Digit Mobile Number"
               value={mobileInput}
-              onChange={(e) => { setMobileInput(e.target.value.replace(/\D/g, "").slice(0, 10)); setError(""); }}
+              onChange={(e) => { setMobileInput(normalizeMobileNumber(e.target.value)); setError(""); }}
             />
 
             <select
@@ -275,7 +309,7 @@ export default function TeacherProtectedPopup({ children }) {
               type="tel"
               placeholder="Enter Registered Mobile Number"
               value={mobileInput}
-              onChange={(e) => { setMobileInput(e.target.value.replace(/\D/g, "").slice(0, 10)); setError(""); }}
+              onChange={(e) => { setMobileInput(normalizeMobileNumber(e.target.value)); setError(""); }}
             />
 
             {error && <span className="teacher-popup-error">{error}</span>}

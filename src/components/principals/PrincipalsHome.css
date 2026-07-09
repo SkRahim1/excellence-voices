@@ -524,34 +524,53 @@
 /* RESPONSIVE DESIGN */
 @media (max-width: 768px) {
   .principal-dashboard {
-    margin: 100px auto 40px auto;
+    margin: 90px auto 40px auto;
     padding: 0 16px;
   }
 
   .principal-header {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 20px;
-    padding: 24px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    padding: 18px 20px;
     border-radius: 20px;
+  }
+
+  .header-info h1 {
+    font-size: 18px;
+    margin: 4px 0 0 0;
+  }
+
+  .header-info .subtitle {
+    font-size: 12px;
+  }
+
+  .school-tag {
+    font-size: 10px;
+    padding: 3px 8px;
+    border-radius: 6px;
   }
   
   .header-actions {
-    width: 100%;
+    width: auto;
     display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
+    flex-wrap: nowrap;
+    gap: 8px;
   }
 
   .header-actions .action-btn {
-    flex: 1 1 calc(50% - 10px);
+    padding: 8px 12px;
+    font-size: 12px;
+    border-radius: 10px;
+    height: 38px;
+    display: inline-flex;
+    align-items: center;
     justify-content: center;
-    padding: 10px 16px;
-    font-size: 13px;
   }
 
-  .header-actions .logout-btn {
-    flex: 1 1 100%;
+  .hide-on-mobile {
+    display: none;
   }
   
   .table-controls {
@@ -816,4 +835,184 @@
 
 .principal-modal-submit-btn:active {
   transform: scale(0.98);
+}
+
+/* SETTINGS MODAL & GUIDE */
+.settings-modal-box {
+  max-width: 500px !important;
+  max-height: 85vh;
+  overflow-y: auto;
+}
+
+.settings-section {
+  margin-bottom: 20px;
+  background: rgba(13, 45, 89, 0.02);
+  border: 1px solid rgba(13, 45, 89, 0.05);
+  border-radius: 16px;
+  padding: 18px;
+  text-align: left;
+}
+
+.settings-section h3 {
+  font-size: 14px;
+  font-weight: 700;
+  color: #0d2d59;
+  margin: 0 0 12px 0;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.info-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.info-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.05);
+  padding-bottom: 6px;
+}
+
+.info-item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.info-label {
+  color: #64748b;
+  font-weight: 500;
+}
+
+.info-val {
+  color: #0f172a;
+  font-weight: 600;
+}
+
+.guide-content {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.guide-step {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.step-num {
+  width: 22px;
+  height: 22px;
+  background: #0d2d59;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 11px;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.step-text {
+  font-size: 12.5px;
+  color: #475569;
+  line-height: 1.5;
+}
+
+.settings-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.settings-action-btn {
+  flex: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 13.5px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  border: none;
+  font-family: 'Poppins', sans-serif;
+}
+
+.settings-action-btn.refresh-btn {
+  background: rgba(13, 45, 89, 0.05);
+  color: #0d2d59;
+}
+
+.settings-action-btn.refresh-btn:hover {
+  background: rgba(13, 45, 89, 0.1);
+}
+
+.settings-action-btn.logout-btn {
+  background: #ef4444;
+  color: white;
+  box-shadow: 0 4px 12px rgba(239, 68, 68, 0.1);
+}
+
+.settings-action-btn.logout-btn:hover {
+  background: #dc2626;
+  box-shadow: 0 6px 16px rgba(239, 68, 68, 0.2);
+  transform: translateY(-1px);
+}
+
+/* Settings button styling */
+.settings-btn {
+  background: rgba(13, 45, 89, 0.05);
+  color: #0d2d59;
+}
+
+.settings-btn:hover {
+  background: rgba(13, 45, 89, 0.1);
+}
+
+/* Custom scrollbar for settings modal */
+.settings-modal-box::-webkit-scrollbar {
+  width: 6px;
+}
+
+.settings-modal-box::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.settings-modal-box::-webkit-scrollbar-thumb {
+  background: rgba(13, 45, 89, 0.1);
+  border-radius: 4px;
+}
+
+.settings-modal-box::-webkit-scrollbar-thumb:hover {
+  background: rgba(13, 45, 89, 0.2);
+}
+
+.unlock-btn-row {
+  background: transparent;
+  border: none;
+  color: #10b981;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.unlock-btn-row:hover {
+  background: rgba(16, 185, 129, 0.08);
+  transform: scale(1.1);
+}
+
+.unlock-btn-row:active {
+  transform: scale(0.95);
 }

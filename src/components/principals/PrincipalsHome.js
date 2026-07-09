@@ -24,7 +24,9 @@ import {
   Plus,
   X,
   LayoutGrid,
-  Table
+  Table,
+  Settings,
+  Unlock
 } from "lucide-react";
 import "./PrincipalsHome.css";
 
@@ -34,7 +36,8 @@ export default function PrincipalsHome({ principalName, principalSchoolCode, onL
   const [error, setError] = useState(null);
   const [searchQuery, setSearchQuery] = useState("");
   const [subjectFilter, setSubjectFilter] = useState("all");
-  const [viewMode, setViewMode] = useState("excel"); // "excel" | "grid"
+  const [viewMode, setViewMode] = useState("grid"); // "excel" | "grid"
+  const [showSettingsModal, setShowSettingsModal] = useState(false);
 
   // Add teacher modal states
   const [showAddModal, setShowAddModal] = useState(false);
@@ -45,6 +48,16 @@ export default function PrincipalsHome({ principalName, principalSchoolCode, onL
   const [modalLoading, setModalLoading] = useState(false);
 
   const schoolName = getSchoolName(principalSchoolCode);
+
+  const normalizeMobileNumber = (value) => {
+    let cleaned = value.replace(/\D/g, "");
+    if (cleaned.startsWith("91") && cleaned.length === 12) {
+      cleaned = cleaned.slice(2);
+    } else if (cleaned.startsWith("0") && cleaned.length === 11) {
+      cleaned = cleaned.slice(1);
+    }
+    return cleaned.slice(0, 10);
+  };
 
   const fetchTeachersProgress = useCallback(async () => {
     setLoading(true);
@@ -119,11 +132,12 @@ export default function PrincipalsHome({ principalName, principalSchoolCode, onL
 
   const handleAddTeacherSubmit = async (e) => {
     e.preventDefault();
+    const cleanMobile = normalizeMobileNumber(newTeacherMobile);
     if (!newTeacherName.trim()) {
       setModalError("Please enter teacher name.");
       return;
     }
-    if (!/^[6-9]\d{9}$/.test(newTeacherMobile)) {
+    if (!/^[6-9]\d{9}$/.test(cleanMobile)) {
       setModalError("Please enter a valid 10-digit mobile number.");
       return;
     }
@@ -132,7 +146,7 @@ export default function PrincipalsHome({ principalName, principalSchoolCode, onL
     setModalError("");
 
     try {
-      const docRef = doc(db, "teachers", newTeacherMobile);
+      const docRef = doc(db, "teachers", cleanMobile);
       const docSnap = await getDoc(docRef);
 
       if (docSnap.exists()) {
@@ -143,18 +157,21 @@ export default function PrincipalsHome({ principalName, principalSchoolCode, onL
 
       const newTeacherProfile = {
         teacherName: newTeacherName.trim(),
-        mobileNumber: newTeacherMobile,
+        mobileNumber: cleanMobile,
         schoolCode: principalSchoolCode,
         subject: newTeacherSubject,
         completedWeeks: [],
         sessionSeconds: 0,
+        weeklySessionSeconds: {},
+        speechCounts: {},
+        lastCompletionDate: "",
         lastActiveDate: new Date().toISOString().split("T")[0],
         updatedAt: new Date().toISOString()
       };
 
       await setDoc(docRef, newTeacherProfile);
 
-      setTeachers(prev => [{ id: newTeacherMobile, ...newTeacherProfile }, ...prev]);
+      setTeachers(prev => [{ id: cleanMobile, ...newTeacherProfile }, ...prev]);
       setShowAddModal(false);
       resetForm();
     } catch (err) {
@@ -178,6 +195,43 @@ export default function PrincipalsHome({ principalName, principalSchoolCode, onL
     }
   };
 
+  const handleUnlockNextWeek = async (teacherId, teacherName, completedWeeks) => {
+    const currentCompleted = completedWeeks || [];
+    if (currentCompleted.length >= 10) {
+      alert("All 10 weeks are already unlocked/completed for this teacher.");
+      return;
+    }
+
+    const nextWeekNum = currentCompleted.length + 1;
+    const nextWeekId = `week-${nextWeekNum}`;
+    
+    const confirmUnlock = window.confirm(
+      `Are you sure you want to manually unlock Week ${nextWeekNum} for ${teacherName}? This will mark Week ${nextWeekNum} as completed, allowing the teacher to access Week ${nextWeekNum + 1 === 11 ? "all sessions" : nextWeekNum + 1}.`
+    );
+    if (!confirmUnlock) return;
+
+    try {
+      const updatedWeeks = [...currentCompleted, nextWeekId];
+      const docRef = doc(db, "teachers", teacherId);
+      
+      // Update in Firestore
+      await setDoc(docRef, {
+        completedWeeks: updatedWeeks,
+        updatedAt: new Date().toISOString()
+      }, { merge: true });
+
+      // Update local state
+      setTeachers(prev => 
+        prev.map(t => t.id === teacherId ? { ...t, completedWeeks: updatedWeeks } : t)
+      );
+
+      alert(`Successfully unlocked Week ${nextWeekNum} for ${teacherName}!`);
+    } catch (err) {
+      console.error("Error unlocking week for teacher:", err);
+      alert("Failed to unlock week. Please try again.");
+    }
+  };
+
   return (
     <div className="principal-dashboard">
       {/* HEADER BAR */}
@@ -191,15 +245,11 @@ export default function PrincipalsHome({ principalName, principalSchoolCode, onL
         <div className="header-actions">
           <button onClick={() => setShowAddModal(true)} className="action-btn add-btn" title="Add Teacher Profile">
             <Plus size={16} />
-            Add Teacher
+            <span>Add Teacher</span>
           </button>
-          <button onClick={fetchTeachersProgress} className="action-btn refresh-btn" title="Refresh Live Data">
-            <RefreshCw size={16} className={loading ? "animate-spin" : ""} />
-            Refresh
-          </button>
-          <button onClick={onLogout} className="action-btn logout-btn">
-            <LogOut size={16} />
-            Logout
+          <button onClick={() => setShowSettingsModal(true)} className="action-btn settings-btn" title="Settings & Guide">
+            <Settings size={16} />
+            <span className="hide-on-mobile">Settings</span>
           </button>
         </div>
       </header>
@@ -360,13 +410,24 @@ export default function PrincipalsHome({ principalName, principalSchoolCode, onL
                       {t.lastActiveDate || "Not tracked"}
                     </td>
                     <td className="actions-cell">
-                      <button 
-                        onClick={() => handleDeleteTeacher(t.id, t.teacherName || "Teacher")} 
-                        className="delete-btn-row" 
-                        title="Delete Profile"
-                      >
-                        <Trash2 size={16} />
-                      </button>
+                      <div style={{ display: "flex", gap: "8px", justifyContent: "center" }}>
+                        {completedCount < 10 && (
+                          <button 
+                            onClick={() => handleUnlockNextWeek(t.id, t.teacherName || "Teacher", t.completedWeeks)} 
+                            className="unlock-btn-row" 
+                            title={`Unlock Week ${completedCount + 1}`}
+                          >
+                            <Unlock size={16} />
+                          </button>
+                        )}
+                        <button 
+                          onClick={() => handleDeleteTeacher(t.id, t.teacherName || "Teacher")} 
+                          className="delete-btn-row" 
+                          title="Delete Profile"
+                        >
+                          <Trash2 size={16} />
+                        </button>
+                      </div>
                     </td>
                   </tr>
                 );
@@ -393,13 +454,24 @@ export default function PrincipalsHome({ principalName, principalSchoolCode, onL
                         </span>
                       </div>
                     </div>
-                    <button 
-                      onClick={() => handleDeleteTeacher(t.id, t.teacherName || "Teacher")} 
-                      className="delete-btn-row" 
-                      title="Delete Profile"
-                    >
-                      <Trash2 size={16} />
-                    </button>
+                    <div style={{ display: "flex", gap: "4px" }}>
+                      {completedCount < 10 && (
+                        <button 
+                          onClick={() => handleUnlockNextWeek(t.id, t.teacherName || "Teacher", t.completedWeeks)} 
+                          className="unlock-btn-row" 
+                          title={`Unlock Week ${completedCount + 1}`}
+                        >
+                          <Unlock size={16} />
+                        </button>
+                      )}
+                      <button 
+                        onClick={() => handleDeleteTeacher(t.id, t.teacherName || "Teacher")} 
+                        className="delete-btn-row" 
+                        title="Delete Profile"
+                      >
+                        <Trash2 size={16} />
+                      </button>
+                    </div>
                   </div>
 
                   <div className="teacher-card-body">
@@ -465,7 +537,7 @@ export default function PrincipalsHome({ principalName, principalSchoolCode, onL
                   type="tel"
                   placeholder="Enter 10-Digit Mobile Number"
                   value={newTeacherMobile}
-                  onChange={(e) => { setNewTeacherMobile(e.target.value.replace(/\D/g, "").slice(0, 10)); setModalError(""); }}
+                  onChange={(e) => { setNewTeacherMobile(normalizeMobileNumber(e.target.value)); setModalError(""); }}
                   required
                 />
               </div>
@@ -496,6 +568,78 @@ export default function PrincipalsHome({ principalName, principalSchoolCode, onL
                 {modalLoading ? "Adding..." : "Add Teacher"}
               </button>
             </form>
+          </div>
+        </div>
+      )}
+
+      {/* SETTINGS & GUIDE MODAL */}
+      {showSettingsModal && (
+        <div className="principal-modal-overlay">
+          <div className="principal-modal-box animate-scaleUp settings-modal-box">
+            <button className="principal-modal-close-btn" onClick={() => setShowSettingsModal(false)} aria-label="Close">
+              <X size={20} />
+            </button>
+            <h2>Portal Settings & Guide</h2>
+            <p>Manage your account and learn how to use the portal.</p>
+            
+            <div className="settings-section">
+              <h3>School & Account Info</h3>
+              <div className="info-grid">
+                <div className="info-item">
+                  <span className="info-label">Principal Name</span>
+                  <span className="info-val">{principalName}</span>
+                </div>
+                <div className="info-item">
+                  <span className="info-label">School Code</span>
+                  <span className="info-val">{principalSchoolCode.toUpperCase()}</span>
+                </div>
+                <div className="info-item">
+                  <span className="info-label">School Name</span>
+                  <span className="info-val">{schoolName}</span>
+                </div>
+              </div>
+            </div>
+
+            <div className="settings-section">
+              <h3>How To Use Guide</h3>
+              <div className="guide-content">
+                <div className="guide-step">
+                  <div className="step-num">1</div>
+                  <div className="step-text">
+                    <strong>Add Teacher Profiles:</strong> Use the <strong>+ Add Teacher</strong> button on the dashboard. Enter their name, mobile number, and subject.
+                  </div>
+                </div>
+                <div className="guide-step">
+                  <div className="step-num">2</div>
+                  <div className="step-text">
+                    <strong>Teacher Login:</strong> Once added, teachers can log in on the Teachers Portal using their registered mobile number.
+                  </div>
+                </div>
+                <div className="guide-step">
+                  <div className="step-num">3</div>
+                  <div className="step-text">
+                    <strong>Track Progress:</strong> View how many weeks of training they have completed (out of 10) and see their total training time.
+                  </div>
+                </div>
+                <div className="guide-step">
+                  <div className="step-num">4</div>
+                  <div className="step-text">
+                    <strong>Actions:</strong> Refresh live data anytime. Click the trash icon to delete a teacher's profile and reset their progress records if needed.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="settings-actions">
+              <button onClick={() => { fetchTeachersProgress(); setShowSettingsModal(false); }} className="settings-action-btn refresh-btn">
+                <RefreshCw size={15} className={loading ? "animate-spin" : ""} />
+                <span>Refresh Live Data</span>
+              </button>
+              <button onClick={() => { setShowSettingsModal(false); onLogout(); }} className="settings-action-btn logout-btn">
+                <LogOut size={15} />
+                <span>Logout Session</span>
+              </button>
+            </div>
           </div>
         </div>
       )}
