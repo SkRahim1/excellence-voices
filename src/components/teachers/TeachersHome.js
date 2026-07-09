@@ -72,6 +72,7 @@ export default function TeachersHome({ teacherName, teacherSubject, teacherSchoo
   const [weeklySessionSeconds, setWeeklySessionSeconds] = useState(0);
   const [showCompletionPopup, setShowCompletionPopup] = useState(false);
   const [completedWeekName, setCompletedWeekName] = useState("");
+  const [hasLoadedFromDB, setHasLoadedFromDB] = useState(false);
 
   // Helper to get all sentences in the active category
   const getCategorySentences = useCallback(() => {
@@ -405,8 +406,10 @@ export default function TeachersHome({ teacherName, teacherSubject, teacherSchoo
           setLastCompletionDate(data.lastCompletionDate);
         }
       }
+      setHasLoadedFromDB(true);
     }, (err) => {
       console.error("Error listening to teacher progress:", err);
+      setHasLoadedFromDB(true);
     });
 
     return () => unsubscribe();
@@ -415,10 +418,10 @@ export default function TeachersHome({ teacherName, teacherSubject, teacherSchoo
 
   // Periodic sync to Firestore: every minute
   useEffect(() => {
-    if (sessionSeconds > 0 && sessionSeconds % 60 === 0) {
+    if (hasLoadedFromDB && sessionSeconds > 0 && sessionSeconds % 60 === 0) {
       syncToFirestore(completedWeeks, sessionSeconds);
     }
-  }, [sessionSeconds, completedWeeks, syncToFirestore]);
+  }, [sessionSeconds, completedWeeks, syncToFirestore, hasLoadedFromDB]);
 
   // Timer - count up in 1-minute increments (ticks every 60 seconds)
   useEffect(() => {
@@ -465,6 +468,7 @@ export default function TeachersHome({ teacherName, teacherSubject, teacherSchoo
   // Auto completion observer
   useEffect(() => {
     if (
+      hasLoadedFromDB &&
       !completedWeeks.includes(activeWeek) &&
       activeWeek === nextWeekToComplete &&
       !alreadyCompletedToday &&
@@ -486,7 +490,7 @@ export default function TeachersHome({ teacherName, teacherSubject, teacherSchoo
         setActiveWeek(`week-${nextWeekNum}`);
       }
     }
-  }, [activeWeek, completedWeeks, nextWeekToComplete, alreadyCompletedToday, totalSpeechCount, hasSpentEnoughTime, todayStr, syncToFirestore, sessionSeconds]);
+  }, [activeWeek, completedWeeks, nextWeekToComplete, alreadyCompletedToday, totalSpeechCount, hasSpentEnoughTime, todayStr, syncToFirestore, sessionSeconds, hasLoadedFromDB]);
 
   const progressPercent = Math.round((completedWeeks.length / 10) * 100);
 
