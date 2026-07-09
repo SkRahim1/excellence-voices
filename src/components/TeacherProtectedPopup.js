@@ -20,9 +20,16 @@ export default function TeacherProtectedPopup({ children }) {
   const [schoolCode, setSchoolCode] = useState(
     localStorage.getItem("teacherSchoolCode") || "exscl-01"
   );
-  const [mobileNumber, setMobileNumber] = useState(
-    localStorage.getItem("teacherMobileNumber") || ""
-  );
+  const [mobileNumber, setMobileNumber] = useState(() => {
+    const stored = localStorage.getItem("teacherMobileNumber") || "";
+    let cleaned = stored.replace(/\D/g, "");
+    if (cleaned.startsWith("91") && cleaned.length === 12) {
+      cleaned = cleaned.slice(2);
+    } else if (cleaned.startsWith("0") && cleaned.length === 11) {
+      cleaned = cleaned.slice(1);
+    }
+    return cleaned.slice(0, 10);
+  });
 
   const [activeTab, setActiveTab] = useState("login"); // "register" | "login"
   const [nameInput, setNameInput] = useState("");

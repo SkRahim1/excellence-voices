@@ -31,9 +31,20 @@ import {
 import teachersData from "../data/TeachersData";
 import "./TeachersHome.css";
 import { db } from "../../firebase";
-import { doc, setDoc, getDoc } from "firebase/firestore";
+import { doc, setDoc, onSnapshot } from "firebase/firestore";
 
 export default function TeachersHome({ teacherName, teacherSubject, teacherSchoolCode, teacherMobileNumber, onLogout }) {
+  const normalizeMobileNumber = useCallback((value) => {
+    if (!value) return "";
+    let cleaned = value.replace(/\D/g, "");
+    if (cleaned.startsWith("91") && cleaned.length === 12) {
+      cleaned = cleaned.slice(2);
+    } else if (cleaned.startsWith("0") && cleaned.length === 11) {
+      cleaned = cleaned.slice(1);
+    }
+    return cleaned.slice(0, 10);
+  }, []);
+
   const [activeWeek, setActiveWeek] = useState("week-1");
   const [activeSubject, setActiveSubject] = useState(teacherSubject || "english");
   const [activeCategory, setActiveCategory] = useState("instructions");
@@ -308,9 +319,10 @@ export default function TeachersHome({ teacherName, teacherSubject, teacherSchoo
     }
 
     const lastCompleteDate = localStorage.getItem("teacherLastCompleteDate") || "";
+    const cleanMobile = normalizeMobileNumber(teacherMobileNumber);
 
     try {
-      const docId = teacherMobileNumber || `${teacherSchoolCode}_${teacherName.trim().replace(/\s+/g, "_")}_${activeSubject}`;
+      const docId = cleanMobile || `${teacherSchoolCode}_${teacherName.trim().replace(/\s+/g, "_")}_${activeSubject}`;
       await setDoc(doc(db, "teachers", docId), {
         teacherName: teacherName.trim(),
         schoolCode: teacherSchoolCode,
@@ -326,116 +338,80 @@ export default function TeachersHome({ teacherName, teacherSubject, teacherSchoo
     } catch (err) {
       console.error("Error syncing teacher progress to Firestore:", err);
     }
-  }, [teacherName, teacherSchoolCode, activeSubject, teacherMobileNumber]);
+  }, [teacherName, teacherSchoolCode, activeSubject, teacherMobileNumber, normalizeMobileNumber]);
 
-  // Initial load: Fetch latest from Firestore and merge
+  // Initial load: Listen to Firestore changes in real-time and merge with local state
   useEffect(() => {
-    const fetchAndMergeProgress = async () => {
-      if (!teacherMobileNumber && (!teacherName || !teacherSchoolCode)) return;
-      try {
-        const docId = teacherMobileNumber || `${teacherSchoolCode}_${teacherName.trim().replace(/\s+/g, "_")}_${activeSubject}`;
-        const docRef = doc(db, "teachers", docId);
-        const docSnap = await getDoc(docRef);
-
-        if (docSnap.exists()) {
-          const data = docSnap.data();
-          
-          // 1. Sync completedWeeks (if DB has more or different, restore it)
-          const dbWeeks = data.completedWeeks || [];
-          const localWeeks = JSON.parse(localStorage.getItem("teacherProgress")) || [];
-          const mergedWeeks = Array.from(new Set([...localWeeks, ...dbWeeks]));
-          
-          setCompletedWeeks(mergedWeeks);
-          localStorage.setItem("teacherProgress", JSON.stringify(mergedWeeks));
-
-          // 2. Sync total session time
-          const dbSeconds = data.sessionSeconds || 0;
-          const localSeconds = parseInt(localStorage.getItem("teacherTotalSessionTime") || "0", 10);
-          const maxSeconds = Math.max(dbSeconds, localSeconds);
-          setSessionSeconds(maxSeconds);
-          localStorage.setItem("teacherTotalSessionTime", maxSeconds.toString());
-
-          // 3. Sync weekly session times
-          const dbWeeklySeconds = data.weeklySessionSeconds || {};
-          Object.entries(dbWeeklySeconds).forEach(([week, secs]) => {
-            const localWkSecs = parseInt(localStorage.getItem(`teacherWeeklySessionTime_${week}`) || "0", 10);
-            localStorage.setItem(`teacherWeeklySessionTime_${week}`, Math.max(secs, localWkSecs).toString());
-          });
-          // Update active week session seconds state
-          const activeWeeklyTime = localStorage.getItem(`teacherWeeklySessionTime_${activeWeek}`) || "0";
-          setWeeklySessionSeconds(parseInt(activeWeeklyTime, 10));
-
-          // 4. Sync speech counts
-          const dbSpeechCounts = data.speechCounts || {};
-          Object.entries(dbSpeechCounts).forEach(([week, catMap]) => {
-            Object.entries(catMap).forEach(([cat, counts]) => {
-              try {
-                const localCounts = JSON.parse(localStorage.getItem(`speechCounts_${week}_${cat}`)) || {};
-                const mergedCounts = { ...localCounts };
-                Object.entries(counts).forEach(([sentence, cnt]) => {
-                  mergedCounts[sentence] = Math.max(cnt, mergedCounts[sentence] || 0);
-                });
-                localStorage.setItem(`speechCounts_${week}_${cat}`, JSON.stringify(mergedCounts));
-              } catch (e) {
-                localStorage.setItem(`speechCounts_${week}_${cat}`, JSON.stringify(counts));
-              }
-            });
-          });
-
-          // 5. Restore last complete date
-          if (data.lastCompletionDate) {
-            localStorage.setItem("teacherLastCompleteDate", data.lastCompletionDate);
-            setLastCompletionDate(data.lastCompletionDate);
+    if (!teacherMobileNumber && (!teacherName || !teacherSchoolCode)) return;
+    
+    const cleanMobile = normalizeMobileNumber(teacherMobileNumber);
+    const docId = cleanMobile || `${teacherSchoolCode}_${teacherName.trim().replace(/\s+/g, "_")}_${activeSubject}`;
+    const docRef = doc(db, "teachers", docId);
+    
+    const unsubscribe = onSnapshot(docRef, (docSnap) => {
+      if (docSnap.exists()) {
+        const data = docSnap.data();
+        
+        // 1. Sync completedWeeks (if DB has more or different, merge/restore it)
+        const dbWeeks = data.completedWeeks || [];
+        const localWeeks = JSON.parse(localStorage.getItem("teacherProgress")) || [];
+        const mergedWeeks = Array.from(new Set([...localWeeks, ...dbWeeks]));
+        
+        setCompletedWeeks((prevWeeks) => {
+          if (JSON.stringify(prevWeeks) !== JSON.stringify(mergedWeeks)) {
+            localStorage.setItem("teacherProgress", JSON.stringify(mergedWeeks));
+            return mergedWeeks;
           }
+          return prevWeeks;
+        });
 
-          // Trigger a sync back to Firestore to ensure Firestore has the merged latest state
-          const updatedWeeklySessionSeconds = {};
-          for (let i = 0; i < localStorage.length; i++) {
-            const key = localStorage.key(i);
-            if (key && key.startsWith("teacherWeeklySessionTime_")) {
-              const week = key.replace("teacherWeeklySessionTime_", "");
-              updatedWeeklySessionSeconds[week] = parseInt(localStorage.getItem(key) || "0", 10);
+        // 2. Sync total session time
+        const dbSeconds = data.sessionSeconds || 0;
+        const localSeconds = parseInt(localStorage.getItem("teacherTotalSessionTime") || "0", 10);
+        const maxSeconds = Math.max(dbSeconds, localSeconds);
+        setSessionSeconds(maxSeconds);
+        localStorage.setItem("teacherTotalSessionTime", maxSeconds.toString());
+
+        // 3. Sync weekly session times
+        const dbWeeklySeconds = data.weeklySessionSeconds || {};
+        Object.entries(dbWeeklySeconds).forEach(([week, secs]) => {
+          const localWkSecs = parseInt(localStorage.getItem(`teacherWeeklySessionTime_${week}`) || "0", 10);
+          localStorage.setItem(`teacherWeeklySessionTime_${week}`, Math.max(secs, localWkSecs).toString());
+        });
+        // Update active week session seconds state
+        const activeWeeklyTime = localStorage.getItem(`teacherWeeklySessionTime_${activeWeek}`) || "0";
+        setWeeklySessionSeconds(parseInt(activeWeeklyTime, 10));
+
+        // 4. Sync speech counts
+        const dbSpeechCounts = data.speechCounts || {};
+        Object.entries(dbSpeechCounts).forEach(([week, catMap]) => {
+          Object.entries(catMap).forEach(([cat, counts]) => {
+            try {
+              const localCounts = JSON.parse(localStorage.getItem(`speechCounts_${week}_${cat}`)) || {};
+              const mergedCounts = { ...localCounts };
+              Object.entries(counts).forEach(([sentence, cnt]) => {
+                mergedCounts[sentence] = Math.max(cnt, mergedCounts[sentence] || 0);
+              });
+              localStorage.setItem(`speechCounts_${week}_${cat}`, JSON.stringify(mergedCounts));
+            } catch (e) {
+              localStorage.setItem(`speechCounts_${week}_${cat}`, JSON.stringify(counts));
             }
-          }
+          });
+        });
 
-          const updatedSpeechCounts = {};
-          for (let i = 0; i < localStorage.length; i++) {
-            const key = localStorage.key(i);
-            if (key && key.startsWith("speechCounts_")) {
-              const parts = key.split("_");
-              const week = parts[1];
-              const category = parts[2];
-              try {
-                if (!updatedSpeechCounts[week]) updatedSpeechCounts[week] = {};
-                updatedSpeechCounts[week][category] = JSON.parse(localStorage.getItem(key)) || {};
-              } catch (e) {
-                console.error("Error parsing speechCounts from localStorage:", e);
-              }
-            }
-          }
-
-          const lastCompleteDate = localStorage.getItem("teacherLastCompleteDate") || "";
-
-          await setDoc(docRef, {
-            completedWeeks: mergedWeeks,
-            sessionSeconds: maxSeconds,
-            weeklySessionSeconds: updatedWeeklySessionSeconds,
-            speechCounts: updatedSpeechCounts,
-            lastCompletionDate: lastCompleteDate,
-            lastActiveDate: new Date().toISOString().split("T")[0],
-            updatedAt: new Date().toISOString()
-          }, { merge: true });
-        } else {
-          syncToFirestore(completedWeeks, sessionSeconds);
+        // 5. Restore last complete date
+        if (data.lastCompletionDate) {
+          localStorage.setItem("teacherLastCompleteDate", data.lastCompletionDate);
+          setLastCompletionDate(data.lastCompletionDate);
         }
-      } catch (err) {
-        console.error("Error fetching and merging progress on mount:", err);
       }
-    };
+    }, (err) => {
+      console.error("Error listening to teacher progress:", err);
+    });
 
-    fetchAndMergeProgress();
+    return () => unsubscribe();
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  }, [teacherMobileNumber, teacherName, teacherSchoolCode, activeSubject, activeWeek, normalizeMobileNumber]);
 
   // Periodic sync to Firestore: every minute
   useEffect(() => {
