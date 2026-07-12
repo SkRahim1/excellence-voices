@@ -28,7 +28,7 @@ export default function ClassPage() {
 
       <div className="cards">
         {categories.map((cat) => (
-          <Link key={cat} to={`/students/${classId}/${cat}`} className="card">
+          <Link key={cat} to={cat === "actionWords" ? `/students/${classId}/${cat}/1` : `/students/${classId}/${cat}`} className="card">
             <h2>
               {cat === "goodThoughts"
                 ? "GOOD THOUGHTS"

@@ -305,6 +305,18 @@
     color: #0D2D59;
 }
 
+.verb-number-badge {
+    display: inline-block;
+    padding: 3px 8px;
+    margin-right: 8px;
+    background: rgba(13, 45, 89, 0.06);
+    color: #0d2d59;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 600;
+    border: 1px solid rgba(13, 45, 89, 0.08);
+}
+
 /* Row highlighting */
 .active-reading-row {
     background: linear-gradient(90deg, rgba(235, 169, 37, 0.16) 0%, rgba(235, 169, 37, 0.02) 100%) !important;
@@ -391,15 +403,13 @@
     }
     
     /* Add labels on mobile */
-    .cell-num::before { content: "Number"; font-weight: 600; color: #94a3b8; }
-    .cell-verb::before { content: "Verb"; font-weight: 600; color: #94a3b8; }
     .cell-v1::before { content: "V1 (Base)"; font-weight: 600; color: #94a3b8; }
     .cell-v2::before { content: "V2 (Past)"; font-weight: 600; color: #94a3b8; }
     .cell-v3::before { content: "V3 (Participle)"; font-weight: 600; color: #94a3b8; }
     .cell-v4::before { content: "V4 (-ing)"; font-weight: 600; color: #94a3b8; }
     .cell-v5::before { content: "V5 (Future)"; font-weight: 600; color: #94a3b8; }
     
-    .cell-num, .cell-verb, .cell-v1, .cell-v2, .cell-v3, .cell-v4, .cell-v5 {
+    .cell-v1, .cell-v2, .cell-v3, .cell-v4, .cell-v5 {
         text-align: right;
         width: auto;
     }

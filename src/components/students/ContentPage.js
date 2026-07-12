@@ -403,8 +403,6 @@ export default function ContentPage() {
             <table className="verbs-table">
               <thead>
                 <tr>
-                  <th className="col-num">#</th>
-                  <th className="col-verb">Verb</th>
                   <th className="col-v1">V1 (Base)</th>
                   <th className="col-v2">V2 (Past)</th>
                   <th className="col-v3">V3 (Participle)</th>
@@ -422,9 +420,9 @@ export default function ContentPage() {
                       ref={(el) => (lineRefs.current[row.originalLineIndex] = el)}
                       className={`verb-row ${activeClass}`}
                     >
-                      <td className="cell-num">{row.number}</td>
-                      <td className="cell-verb">{row.baseWord}</td>
-                      <td className="cell-v1">{row.v1}</td>
+                      <td className="cell-v1">
+                        <span className="verb-number-badge">{row.number}.</span> {row.baseWord}
+                      </td>
                       <td className="cell-v2">{row.v2}</td>
                       <td className="cell-v3">{row.v3}</td>
                       <td className="cell-v4">{row.v4}</td>
