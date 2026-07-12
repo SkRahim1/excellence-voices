@@ -36,6 +36,7 @@ export default function Trainers() {
     { value: "goodThoughts", label: "Good Thoughts" },
     { value: "publicSpeaking", label: "Public Speaking" },
     { value: "stockSentences", label: "Stock Sentences" },
+    { value: "actionWords", label: "Action Words" },
   ];
   if (classNumber >= 5 && classNumber <= 9) {
     categoriesList.push({ value: "presentations", label: "Presentations" });

@@ -14,6 +14,7 @@ export default function ClassPage() {
     "goodThoughts",
     "publicSpeaking",
     "stockSentences",
+    "actionWords",
   ];
   if (classNumber >= 5 && classNumber <= 9) {
     categories.push("presentations");
@@ -35,7 +36,9 @@ export default function ClassPage() {
                   ? "PUBLIC SPEAKING"
                   : cat === "stockSentences"
                     ? "STOCK SENTENCES"
-                    : cat.toUpperCase()}
+                    : cat === "actionWords"
+                      ? "ACTION WORDS"
+                      : cat.toUpperCase()}
             </h2>
           </Link>
         ))}

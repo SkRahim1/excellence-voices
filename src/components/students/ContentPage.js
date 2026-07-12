@@ -14,8 +14,75 @@ export default function ContentPage() {
   const [item, setItem] = useState(null);
   const [loading, setLoading] = useState(true);
   const [currentLine, setCurrentLine] = useState(-1);
+  const [searchQuery, setSearchQuery] = useState("");
   const lineRefs = useRef([]);
   const readingSessionIdRef = useRef(0);
+
+  // Parse clean lines: trim outer spaces, and collapse multiple empty lines
+  const cleanLines = React.useMemo(() => {
+    if (!item || !item.content) return [];
+    const rawLines = item.content.replace(/\r/g, "").trim().split("\n");
+    const result = [];
+    let lastWasEmpty = false;
+    
+    rawLines.forEach((line) => {
+      const trimmed = line.trim();
+      if (trimmed === "") {
+        if (!lastWasEmpty) {
+          result.push("");
+          lastWasEmpty = true;
+        }
+      } else {
+        result.push(line);
+        lastWasEmpty = false;
+      }
+    });
+    return result;
+  }, [item]);
+
+  // Parse action words content if current category is actionWords
+  const actionWordsData = React.useMemo(() => {
+    if (category !== "actionWords" || !item || !item.content) return [];
+    
+    return cleanLines.map((line, index) => {
+      const trimmed = line.trim();
+      if (trimmed === "") return null;
+      
+      const parts = trimmed.split(":");
+      if (parts.length < 2) return null;
+      
+      const numWord = parts[0].trim();
+      const wordMatch = numWord.match(/^(\d+)\.\s*(.*)$/);
+      const number = wordMatch ? wordMatch[1] : (index + 1).toString();
+      const baseWord = wordMatch ? wordMatch[2] : numWord;
+      
+      const forms = parts[1].split(",").map(f => f.trim());
+      return {
+        originalLineIndex: index,
+        number,
+        baseWord: baseWord.charAt(0).toUpperCase() + baseWord.slice(1),
+        v1: forms[0] || "",
+        v2: forms[1] || "",
+        v3: forms[2] || "",
+        v4: forms[3] || "",
+        v5: forms[4] || ""
+      };
+    }).filter(x => x !== null);
+  }, [category, item, cleanLines]);
+
+  // Filtered action words based on search query
+  const filteredActionWords = React.useMemo(() => {
+    if (!searchQuery.trim()) return actionWordsData;
+    const query = searchQuery.toLowerCase().trim();
+    return actionWordsData.filter(
+      w => w.baseWord.toLowerCase().includes(query) ||
+           w.v1.toLowerCase().includes(query) ||
+           w.v2.toLowerCase().includes(query) ||
+           w.v3.toLowerCase().includes(query) ||
+           w.v4.toLowerCase().includes(query) ||
+           w.v5.toLowerCase().includes(query)
+    );
+  }, [actionWordsData, searchQuery]);
 
   // Reset scroll to top of the page and stop reading when navigating to a new item or unmounting
   useEffect(() => {
@@ -50,27 +117,7 @@ export default function ContentPage() {
     }
   }, [currentLine]);
 
-  // Parse clean lines: trim outer spaces, and collapse multiple empty lines
-  const cleanLines = React.useMemo(() => {
-    if (!item || !item.content) return [];
-    const rawLines = item.content.replace(/\r/g, "").trim().split("\n");
-    const result = [];
-    let lastWasEmpty = false;
-    
-    rawLines.forEach((line) => {
-      const trimmed = line.trim();
-      if (trimmed === "") {
-        if (!lastWasEmpty) {
-          result.push("");
-          lastWasEmpty = true;
-        }
-      } else {
-        result.push(line);
-        lastWasEmpty = false;
-      }
-    });
-    return result;
-  }, [item]);
+
 
   if (loading) {
     return (
@@ -335,101 +382,162 @@ export default function ContentPage() {
         </button>
       </div>
 
-      <div className="content-box">
-        {cleanLines.map((line, index) => {
-          if (line.trim() === "") {
-            return <div key={index} className="spacing-line" />;
-          }
+      {category === "actionWords" ? (
+        <div className="action-words-container">
+          <div className="search-bar-wrapper">
+            <input
+              type="text"
+              className="action-words-search"
+              placeholder="🔍 Search verbs or forms (e.g. eat, running, walked)..."
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+            />
+            {searchQuery && (
+              <button className="clear-search-btn" onClick={() => setSearchQuery("")}>
+                ✕
+              </button>
+            )}
+          </div>
 
-          const activeClass = currentLine === index ? "active-reading" : "";
+          <div className="verbs-table-wrapper">
+            <table className="verbs-table">
+              <thead>
+                <tr>
+                  <th className="col-num">#</th>
+                  <th className="col-verb">Verb</th>
+                  <th className="col-v1">V1 (Base)</th>
+                  <th className="col-v2">V2 (Past)</th>
+                  <th className="col-v3">V3 (Participle)</th>
+                  <th className="col-v4">V4 (-ing)</th>
+                  <th className="col-v5">V5 (Future)</th>
+                </tr>
+              </thead>
+              <tbody>
+                {filteredActionWords.map((row) => {
+                  const isActive = currentLine === row.originalLineIndex;
+                  const activeClass = isActive ? "active-reading-row" : "";
+                  return (
+                    <tr
+                      key={row.originalLineIndex}
+                      ref={(el) => (lineRefs.current[row.originalLineIndex] = el)}
+                      className={`verb-row ${activeClass}`}
+                    >
+                      <td className="cell-num">{row.number}</td>
+                      <td className="cell-verb">{row.baseWord}</td>
+                      <td className="cell-v1">{row.v1}</td>
+                      <td className="cell-v2">{row.v2}</td>
+                      <td className="cell-v3">{row.v3}</td>
+                      <td className="cell-v4">{row.v4}</td>
+                      <td className="cell-v5">{row.v5}</td>
+                    </tr>
+                  );
+                })}
+              </tbody>
+            </table>
+            {filteredActionWords.length === 0 && (
+              <div className="no-verbs-found">
+                <p>No action words matched your search.</p>
+              </div>
+            )}
+          </div>
+        </div>
+      ) : (
+        <div className="content-box">
+          {cleanLines.map((line, index) => {
+            if (line.trim() === "") {
+              return <div key={index} className="spacing-line" />;
+            }
 
-          // HEADINGS
-          if (
-            line.startsWith("Scene") ||
-            line.startsWith("Characters") ||
-            line.startsWith("Moral") ||
-            line.startsWith("Props Needed")
-          ) {
-            return (
-              <h3
-                ref={(el) => (lineRefs.current[index] = el)}
-                key={index}
-                className={activeClass}
-                style={{
-                  color: "#0D2D59",
-                  marginTop: "20px",
-                  marginBottom: "10px",
-                  fontSize: "24px",
-                  fontWeight: "700",
-                }}
-              >
-                {line}
-              </h3>
-            );
-          }
+            const activeClass = currentLine === index ? "active-reading" : "";
 
-          // BULLETS
-          if (line.startsWith("•")) {
-            return (
-              <li
-                ref={(el) => (lineRefs.current[index] = el)}
-                key={index}
-                className={activeClass}
-                style={{
-                  marginLeft: "25px",
-                  marginBottom: "8px",
-                  fontSize: "19px",
-                }}
-              >
-                {line.replace("•", "")}
-              </li>
-            );
-          }
+            // HEADINGS
+            if (
+              line.startsWith("Scene") ||
+              line.startsWith("Characters") ||
+              line.startsWith("Moral") ||
+              line.startsWith("Props Needed")
+            ) {
+              return (
+                <h3
+                  ref={(el) => (lineRefs.current[index] = el)}
+                  key={index}
+                  className={activeClass}
+                  style={{
+                    color: "#0D2D59",
+                    marginTop: "20px",
+                    marginBottom: "10px",
+                    fontSize: "24px",
+                    fontWeight: "700",
+                  }}
+                >
+                  {line}
+                </h3>
+              );
+            }
 
-          const parts = line.split(":");
+            // BULLETS
+            if (line.startsWith("•")) {
+              return (
+                <li
+                  ref={(el) => (lineRefs.current[index] = el)}
+                  key={index}
+                  className={activeClass}
+                  style={{
+                    marginLeft: "25px",
+                    marginBottom: "8px",
+                    fontSize: "19px",
+                  }}
+                >
+                  {line.replace("•", "")}
+                </li>
+              );
+            }
 
-          // DIALOGUES
-          if (parts.length > 1) {
+            const parts = line.split(":");
+
+            // DIALOGUES
+            if (parts.length > 1) {
+              return (
+                <p
+                  ref={(el) => (lineRefs.current[index] = el)}
+                  key={index}
+                  className={activeClass}
+                  style={{
+                    marginBottom: "0px",
+                    lineHeight: "1.6",
+                  }}
+                >
+                  <span
+                    style={{
+                      fontWeight: "bold",
+                      color: "#0D2D59",
+                      fontSize: "21px",
+                    }}
+                  >
+                    {parts[0]}:
+                  </span>{" "}
+                  <span>{parts.slice(1).join(":")}</span>
+                </p>
+              );
+            }
+
+            // NORMAL TEXT
             return (
               <p
                 ref={(el) => (lineRefs.current[index] = el)}
                 key={index}
                 className={activeClass}
                 style={{
-                  marginBottom: "0px",
+                  marginBottom: "10px",
                   lineHeight: "1.6",
                 }}
               >
-                <span
-                  style={{
-                    fontWeight: "bold",
-                    color: "#0D2D59",
-                    fontSize: "21px",
-                  }}
-                >
-                  {parts[0]}:
-                </span>{" "}
-                <span>{parts.slice(1).join(":")}</span>
+                {line}
               </p>
             );
-          }
-
-          // NORMAL TEXT
-          return (
-            <p
-              ref={(el) => (lineRefs.current[index] = el)}
-              key={index}
-              className={activeClass}
-              style={{
-                marginBottom: "10px",
-                lineHeight: "1.6",
-              }}
-            >
-              {line}
-            </p>
-          );
-        })}
-      </div>
+          })}
+        </div>
+      )}
 
       <button onClick={downloadPDF} className="download-btn">
         Download PDF

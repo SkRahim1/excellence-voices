@@ -192,3 +192,223 @@
         height: 8px;
     }
 }
+
+/* ACTION WORDS CUSTOM STYLING */
+
+.action-words-container {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+/* Search bar styling */
+.search-bar-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.action-words-search {
+    width: 100%;
+    padding: 14px 44px 14px 20px;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    color: #0D2D59;
+    background: #ffffff;
+    border: 1px solid rgba(13, 45, 89, 0.12);
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(13, 45, 89, 0.03);
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.action-words-search:focus {
+    border-color: #eba925;
+    box-shadow: 0 4px 20px rgba(235, 169, 37, 0.15);
+    transform: translateY(-1px);
+}
+
+.clear-search-btn {
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: #999;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: color 0.2s ease;
+}
+
+.clear-search-btn:hover {
+    color: #ef4444;
+}
+
+/* Table wrapper & glassmorphic table */
+.verbs-table-wrapper {
+    background: #ffffff;
+    border: 1px solid rgba(13, 45, 89, 0.06);
+    border-radius: 24px;
+    box-shadow: 0 15px 35px rgba(13, 45, 89, 0.05);
+    overflow-x: auto;
+    padding: 10px;
+}
+
+.verbs-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+    min-width: 600px;
+}
+
+.verbs-table th {
+    background: rgba(13, 45, 89, 0.02);
+    color: #0D2D59;
+    font-weight: 700;
+    font-size: 15px;
+    padding: 18px 16px;
+    border-bottom: 2px solid rgba(13, 45, 89, 0.08);
+}
+
+.verbs-table td {
+    padding: 16px;
+    font-size: 16px;
+    color: #334155;
+    border-bottom: 1px solid rgba(13, 45, 89, 0.04);
+    transition: all 0.2s ease;
+}
+
+.verb-row {
+    transition: all 0.25s ease;
+}
+
+.verb-row:hover {
+    background: rgba(13, 45, 89, 0.01);
+}
+
+.cell-num {
+    font-weight: 600;
+    color: #64748b;
+    width: 50px;
+}
+
+.cell-verb {
+    font-weight: 700;
+    color: #0D2D59;
+}
+
+/* Row highlighting */
+.active-reading-row {
+    background: linear-gradient(90deg, rgba(235, 169, 37, 0.16) 0%, rgba(235, 169, 37, 0.02) 100%) !important;
+    border-left: 5px solid var(--secondary) !important;
+    box-shadow: inset 2px 0 8px rgba(235, 169, 37, 0.1);
+    font-weight: 600;
+    animation: activeRowPulse 2s infinite alternate ease-in-out;
+}
+
+.active-reading-row td {
+    color: #0D2D59;
+    font-weight: 600;
+}
+
+.active-reading-row .cell-verb {
+    color: #eba925;
+}
+
+@keyframes activeRowPulse {
+    0% {
+        background: linear-gradient(90deg, rgba(235, 169, 37, 0.18) 0%, rgba(235, 169, 37, 0.02) 100%);
+        box-shadow: inset 2px 0 8px rgba(235, 169, 37, 0.12);
+    }
+    100% {
+        background: linear-gradient(90deg, rgba(235, 169, 37, 0.08) 0%, rgba(235, 169, 37, 0.01) 100%);
+        box-shadow: inset 2px 0 4px rgba(235, 169, 37, 0.05);
+    }
+}
+
+.no-verbs-found {
+    text-align: center;
+    padding: 40px 0;
+    color: #64748b;
+    font-size: 16px;
+}
+
+/* MOBILE RESPONSIVE CARDS FOR TABLE */
+@media (max-width: 768px) {
+    .verbs-table-wrapper {
+        background: transparent;
+        border: none;
+        box-shadow: none;
+        padding: 0;
+    }
+
+    .verbs-table {
+        min-width: 0;
+    }
+
+    .verbs-table thead {
+        display: none; /* Hide standard headers on mobile */
+    }
+    
+    .verbs-table, 
+    .verbs-table tbody, 
+    .verbs-table tr, 
+    .verbs-table td {
+        display: block;
+        width: 100%;
+    }
+    
+    .verbs-table tr {
+        margin-bottom: 20px;
+        background: #ffffff;
+        border: 1px solid rgba(13, 45, 89, 0.08);
+        border-radius: 18px;
+        padding: 16px;
+        box-shadow: 0 4px 12px rgba(13, 45, 89, 0.02);
+        box-sizing: border-box;
+    }
+    
+    .verbs-table td {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+        padding: 10px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 15px;
+        box-sizing: border-box;
+    }
+    
+    .verbs-table td:last-child {
+        border-bottom: none;
+    }
+    
+    /* Add labels on mobile */
+    .cell-num::before { content: "Number"; font-weight: 600; color: #94a3b8; }
+    .cell-verb::before { content: "Verb"; font-weight: 600; color: #94a3b8; }
+    .cell-v1::before { content: "V1 (Base)"; font-weight: 600; color: #94a3b8; }
+    .cell-v2::before { content: "V2 (Past)"; font-weight: 600; color: #94a3b8; }
+    .cell-v3::before { content: "V3 (Participle)"; font-weight: 600; color: #94a3b8; }
+    .cell-v4::before { content: "V4 (-ing)"; font-weight: 600; color: #94a3b8; }
+    .cell-v5::before { content: "V5 (Future)"; font-weight: 600; color: #94a3b8; }
+    
+    .cell-num, .cell-verb, .cell-v1, .cell-v2, .cell-v3, .cell-v4, .cell-v5 {
+        text-align: right;
+        width: auto;
+    }
+    
+    .active-reading-row {
+        border-left: 5px solid var(--secondary) !important;
+        border-radius: 18px;
+        background: linear-gradient(135deg, rgba(235, 169, 37, 0.08) 0%, rgba(235, 169, 37, 0.01) 100%) !important;
+        transform: translateY(-2px);
+        box-shadow: 0 8px 24px rgba(235, 169, 37, 0.15) !important;
+    }
+}
