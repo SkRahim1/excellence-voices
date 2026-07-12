@@ -19,6 +19,7 @@ export default function ClassPage() {
   if (classNumber >= 5 && classNumber <= 9) {
     categories.push("presentations");
   }
+  categories.push("instructions");
 
   return (
     <div className="container">
@@ -38,7 +39,9 @@ export default function ClassPage() {
                     ? "STOCK SENTENCES"
                     : cat === "actionWords"
                       ? "ACTION WORDS"
-                      : cat.toUpperCase()}
+                      : cat === "instructions"
+                        ? "INSTRUCTIONS"
+                        : cat.toUpperCase()}
             </h2>
           </Link>
         ))}

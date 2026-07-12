@@ -357,6 +357,7 @@ export default function VoiceBot() {
     else if (normalized.includes("sentence")) category = "stockSentences";
     else if (normalized.includes("presentation")) category = "presentations";
     else if (normalized.includes("action")) category = "actionWords";
+    else if (normalized.includes("instruction") || normalized.includes("do's") || normalized.includes("donts") || normalized.includes("does and donts") || normalized.includes("do and don't")) category = "instructions";
 
     // Extract ALL numbers with optional ordinal suffix, preserving their position
     const numPattern = /(\d+)(?:st|nd|rd|th)?/g;
@@ -400,7 +401,7 @@ export default function VoiceBot() {
     if (!category && currentPath) {
       const pathParts = currentPath.split("/");
       // e.g. /students/class-8/skits/3 → pathParts[3] = "skits"
-      const knownCategories = ["stories", "roleplays", "skits", "activities", "goodThoughts", "publicSpeaking", "stockSentences", "presentations", "actionWords"];
+      const knownCategories = ["stories", "roleplays", "skits", "activities", "goodThoughts", "publicSpeaking", "stockSentences", "presentations", "actionWords", "instructions"];
       const urlCat = pathParts.find(p => knownCategories.includes(p));
       if (urlCat) category = urlCat;
     }
@@ -418,7 +419,7 @@ export default function VoiceBot() {
       // Multiple numbers: pick the one NOT used as the class number.
       // The class number we matched is 'classNum'. Find the OTHER number.
       // Prefer the number associated with a category keyword (nearest to category word).
-      const catWordPos = normalized.search(/stor|roleplay|skit|activit|thought|speaking|sentence|action/);
+      const catWordPos = normalized.search(/stor|roleplay|skit|activit|thought|speaking|sentence|action|instruction/);
       if (catWordPos !== -1) {
         // closest number to the category word that is not classNum
         const candidates = allNums.filter(n => n.value !== classNum || allNums.filter(x => x.value === classNum).length > 1);
@@ -539,7 +540,7 @@ export default function VoiceBot() {
         return;
       } else {
         const totalCount = itemsList ? itemsList.length : 0;
-        const displayCategory = category === "goodThoughts" ? "good thoughts" : category === "publicSpeaking" ? "public speaking" : category === "stockSentences" ? "stock sentences" : category === "actionWords" ? "action words" : category;
+        const displayCategory = category === "goodThoughts" ? "good thoughts" : category === "publicSpeaking" ? "public speaking" : category === "stockSentences" ? "stock sentences" : category === "actionWords" ? "action words" : category === "instructions" ? "instructions" : category;
         speak(`Class ${classKey.split("-")[1]} only has ${totalCount} ${displayCategory}.`, () => {
           setAppState("LISTENING");
         });
@@ -571,7 +572,7 @@ export default function VoiceBot() {
 
     // Start reading current page item (any category)
     const currentItem = await getCurrentItem();
-    if ((query.includes("read this") || query.includes("read aloud") || query.includes("read story") || query.includes("read skit") || query.includes("read sentence") || query.includes("read thought") || query.includes("read activity") || query.includes("read presentation") || query.includes("read action")) && currentItem) {
+    if ((query.includes("read this") || query.includes("read aloud") || query.includes("read story") || query.includes("read skit") || query.includes("read sentence") || query.includes("read thought") || query.includes("read activity") || query.includes("read presentation") || query.includes("read action") || query.includes("read instruction")) && currentItem) {
       startReading(currentItem);
       return;
     }
@@ -590,6 +591,7 @@ export default function VoiceBot() {
       else if (query.includes("stor")) spokenCategory = "stories";
       else if (query.includes("presentation")) spokenCategory = "presentations";
       else if (query.includes("action")) spokenCategory = "actionWords";
+      else if (query.includes("instruction") || query.includes("do's") || query.includes("donts") || query.includes("does and donts") || query.includes("do and don't")) spokenCategory = "instructions";
 
       const isReadCommand = query.includes("read") || query.includes("open") || query.includes("start");
       const isPracticeCommand = query.includes("practice");
@@ -618,6 +620,7 @@ export default function VoiceBot() {
               : spokenCategory === "goodThoughts" ? "good thoughts"
               : spokenCategory === "publicSpeaking" ? "public speaking"
               : spokenCategory === "actionWords" ? "action words"
+              : spokenCategory === "instructions" ? "instructions"
               : spokenCategory;
             navigate(`/students/${urlClassId}/${spokenCategory}/${firstItem.id}`);
             if (isPracticeCommand) {

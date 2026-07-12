@@ -84,6 +84,40 @@ export default function ContentPage() {
     );
   }, [actionWordsData, searchQuery]);
 
+  // Parse instructions content if current category is instructions
+  const instructionsData = React.useMemo(() => {
+    if (category !== "instructions" || !item || !item.content) return null;
+    
+    const dos = [];
+    const donts = [];
+    let parsingDos = true;
+    
+    cleanLines.forEach((line, index) => {
+      const trimmed = line.trim();
+      if (trimmed === "") return;
+      
+      if (trimmed.toLowerCase().startsWith("do's") || trimmed.toLowerCase().startsWith("dos")) {
+        parsingDos = true;
+        return;
+      }
+      if (trimmed.toLowerCase().startsWith("don'ts") || trimmed.toLowerCase().startsWith("donts")) {
+        parsingDos = false;
+        return;
+      }
+      
+      const cleanText = trimmed.replace(/^\d+\.\s*/, "").replace(/^•\s*/, "");
+      const itemObj = { text: cleanText, lineIndex: index };
+      
+      if (parsingDos) {
+        dos.push(itemObj);
+      } else {
+        donts.push(itemObj);
+      }
+    });
+    
+    return { dos, donts };
+  }, [category, item, cleanLines]);
+
   // Reset scroll to top of the page and stop reading when navigating to a new item or unmounting
   useEffect(() => {
     window.scrollTo({ top: 0, left: 0, behavior: "instant" });
@@ -403,11 +437,12 @@ export default function ContentPage() {
             <table className="verbs-table">
               <thead>
                 <tr>
-                  <th className="col-v1">V1 (Base)</th>
-                  <th className="col-v2">V2 (Past)</th>
-                  <th className="col-v3">V3 (Participle)</th>
-                  <th className="col-v4">V4 (-ing)</th>
-                  <th className="col-v5">V5 (Future)</th>
+                  <th className="col-num th-num">#</th>
+                  <th className="col-v1 th-v1">BASE FORM<br/><span className="th-sub">(Present)</span></th>
+                  <th className="col-v2 th-v2">PAST FORM<br/><span className="th-sub">(Past)</span></th>
+                  <th className="col-v3 th-v3">PAST PARTICIPLE<br/><span className="th-sub">(Past Participle)</span></th>
+                  <th className="col-v4 th-v4">PRESENT PARTICIPLE<br/><span className="th-sub">(Present Participle)</span></th>
+                  <th className="col-v5 th-v5">FUTURE FORM<br/><span className="th-sub">(Will + Base Form)</span></th>
                 </tr>
               </thead>
               <tbody>
@@ -420,9 +455,8 @@ export default function ContentPage() {
                       ref={(el) => (lineRefs.current[row.originalLineIndex] = el)}
                       className={`verb-row ${activeClass}`}
                     >
-                      <td className="cell-v1">
-                        <span className="verb-number-badge">{row.number}.</span> {row.baseWord}
-                      </td>
+                      <td className="cell-num">{row.number}</td>
+                      <td className="cell-v1">{row.baseWord}</td>
                       <td className="cell-v2">{row.v2}</td>
                       <td className="cell-v3">{row.v3}</td>
                       <td className="cell-v4">{row.v4}</td>
@@ -437,6 +471,47 @@ export default function ContentPage() {
                 <p>No action words matched your search.</p>
               </div>
             )}
+          </div>
+        </div>
+      ) : category === "instructions" && instructionsData ? (
+        <div className="instructions-columns">
+          <div className="instructions-column dos-column">
+            <h3 className="column-title dos-title">🟢 DO'S</h3>
+            <ul className="instructions-list">
+              {instructionsData.dos.map((itemObj) => {
+                const isActive = currentLine === itemObj.lineIndex;
+                const activeClass = isActive ? "active-do" : "";
+                return (
+                  <li
+                    key={itemObj.lineIndex}
+                    ref={(el) => (lineRefs.current[itemObj.lineIndex] = el)}
+                    className={`instruction-item do-item ${activeClass}`}
+                  >
+                    <span className="do-icon">✓</span>
+                    <div>{itemObj.text}</div>
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
+          <div className="instructions-column donts-column">
+            <h3 className="column-title donts-title">🔴 DON'TS</h3>
+            <ul className="instructions-list">
+              {instructionsData.donts.map((itemObj) => {
+                const isActive = currentLine === itemObj.lineIndex;
+                const activeClass = isActive ? "active-dont" : "";
+                return (
+                  <li
+                    key={itemObj.lineIndex}
+                    ref={(el) => (lineRefs.current[itemObj.lineIndex] = el)}
+                    className={`instruction-item dont-item ${activeClass}`}
+                  >
+                    <span className="dont-icon">✕</span>
+                    <div>{itemObj.text}</div>
+                  </li>
+                );
+              })}
+            </ul>
           </div>
         </div>
       ) : (
