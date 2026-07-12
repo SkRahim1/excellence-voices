@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./App.css";
 
 import { Routes, Route, Navigate, useLocation } from "react-router-dom";
@@ -129,6 +129,16 @@ function ProtectedRoute({ children, isAuthenticated, setIsAuthenticated }) {
   return children;
 }
 
+function ScrollToTop() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "instant" });
+  }, [pathname]);
+
+  return null;
+}
+
 export default function App() {
   const location = useLocation();
   const [activeSection, setActiveSection] = useState("home");
@@ -250,6 +260,7 @@ export default function App() {
 
   return (
     <div className="app">
+      <ScrollToTop />
       <Topbar />
 
       <Navbar
