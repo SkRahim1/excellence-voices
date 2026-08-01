@@ -13,7 +13,7 @@ This document lists all school codes, school names, and their corresponding teac
 | **exscl-03** / **exlsch03** | Vashistha Model school, bollaram | `exlvas03` | `prlvas03` |
 | **exscl-04** / **exlsch04** | Jeevan Jyothi School | `exljjv04` | `prljjv04` |
 | **exscl-05** / **exlsch05** | Sangamithra School, Dammaiguda | `exlsng05` | `prlsng05` |
-| **exscl-06** / **exlsch06** | Sri Vaagdevi School (main branch) | `exlvag06` | `prlvag06` |
+| **exscl-06** / **exlsch06** | Shree Vaagdevi High School (Main Branch) | `exlvag06` | `prlvag06` |
 | **exscl-07** / **exlsch07** | Glorious School | `exlglo07` | `prlglo07` |
 | **exscl-08** / **exlsch08** | Sree Gouthami High School | `exlgou08` | `prlgou08` |
 | **exscl-09** / **exlsch09** | KVR High School | `exlkvr09` | `prlkvr09` |
@@ -23,7 +23,7 @@ This document lists all school codes, school names, and their corresponding teac
 | **exscl-13** / **exlsch13** | Sri Vaagdevi School -2 | `exlvag13` | `prlvag13` |
 | **exscl-14** / **exlsch14** | Vashistha School,Indresham | `exlvas14` | `prlvas14` |
 | **exscl-15** / **exlsch15** | Vashistha School | `exlvas15` | `prlvas15` |
-| **exscl-16** / **exlsch16** | Excellence School 16 | `exlsch16` | `prlsch16` |
+| **exscl-16** / **exlsch16** | Bhargavi Vidya Niketan High School | `exlsch16` | `prlsch16` |
 | **exscl-17** / **exlsch17** | Excellence School 17 | `exlsch17` | `prlsch17` |
 | **exscl-18** / **exlsch18** | Excellence School 18 | `exlsch18` | `prlsch18` |
 

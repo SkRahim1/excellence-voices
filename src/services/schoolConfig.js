@@ -4,7 +4,7 @@ export const SCHOOL_MAPPING = {
   "exscl-03": "Vashistha Model school, bollaram",
   "exscl-04": "Jeevan Jyothi School",
   "exscl-05": "Sangamithra School, Dammaiguda",
-  "exscl-06": "Sri Vaagdevi School (main branch)",
+  "exscl-06": "Shree Vaagdevi High School (Main Branch)",
   "exscl-07": "Glorious School",
   "exscl-08": "Sree Gouthami High School",
   "exscl-09": "KVR High School",
@@ -14,7 +14,7 @@ export const SCHOOL_MAPPING = {
   "exscl-13": "Sri Vaagdevi School -2",
   "exscl-14": "Vashistha School,Indresham",
   "exscl-15": "Vashistha School",
-  "exscl-16": "Excellence School 16",
+  "exscl-16": "Bhargavi Vidya Niketan High School",
   "exscl-17": "Excellence School 17",
   "exscl-18": "Excellence School 18",
 };
