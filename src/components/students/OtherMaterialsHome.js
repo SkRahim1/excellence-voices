@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
-import { Folder, ArrowRight, ArrowLeft, Sparkles, BookOpen, FileText } from "lucide-react";
+import { Folder, ArrowRight, ArrowLeft, Sparkles, FileText } from "lucide-react";
 import "./Debate2026Page.css";
 
 export default function OtherMaterialsHome() {
