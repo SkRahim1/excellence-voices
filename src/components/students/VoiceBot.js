@@ -561,6 +561,23 @@ export default function VoiceBot() {
       }
     }
 
+    // Debate 2026 & Other Materials Navigation
+    if (query.includes("debate") || query.includes("open debate")) {
+      navigate("/students/other-materials/debate-2026");
+      speak("Opening Debate 2026 directory. Here you will find the 5 training modules and competition guide.", () => {
+        setAppState("LISTENING");
+      });
+      return;
+    }
+
+    if (query.includes("other materials") || query.includes("open materials")) {
+      navigate("/students/other-materials");
+      speak("Opening Other Materials directory.", () => {
+        setAppState("LISTENING");
+      });
+      return;
+    }
+
     // Navigation Home
     if (query.includes("go home") || query.includes("go back") || query === "back" || query.includes("open portal")) {
       navigate("/students");

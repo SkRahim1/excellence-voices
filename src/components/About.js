@@ -1,14 +1,16 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { Cpu, Handshake, BookOpen, GraduationCap } from "lucide-react";
+import "./About.css";
 
 export default function About({ activeSection }) {
-  // Stagger animation for the badges
+  // Stagger animation for the badges & team cards
   const containerVariants = {
     hidden: { opacity: 0 },
     show: {
       opacity: 1,
       transition: {
-        staggerChildren: 0.1,
+        staggerChildren: 0.12,
       },
     },
   };
@@ -22,6 +24,39 @@ export default function About({ activeSection }) {
       transition: { type: "spring", stiffness: 100 }
     },
   };
+
+  const cardVariants = {
+    hidden: { opacity: 0, y: 30 },
+    show: { 
+      opacity: 1, 
+      y: 0,
+      transition: { duration: 0.6, ease: "easeOut" }
+    },
+  };
+
+  const teamMembers = [
+    {
+      name: "Rahim Shaikh",
+      role: "Co-Founder & Head of Technology",
+      qualification: "BCA · BPCH · M.A. English",
+      icon: <Cpu size={26} color="#0D2D59" />,
+      initials: "RS",
+    },
+    {
+      name: "Raviteja Pendem",
+      role: "Co-Founder & Head of School Partnerships",
+      qualification: "B.Tech",
+      icon: <Handshake size={26} color="#0D2D59" />,
+      initials: "RP",
+    },
+    {
+      name: "Lakshya Rana",
+      role: "Co-Founder & Training & Operations Lead",
+      qualification: "B.A. English",
+      icon: <BookOpen size={26} color="#0D2D59" />,
+      initials: "LR",
+    },
+  ];
 
   return (
     <section
@@ -77,6 +112,47 @@ export default function About({ activeSection }) {
           <motion.span className="tag" variants={tagVariants}>School Training</motion.span>
           <motion.span className="tag" variants={tagVariants}>Spoken English</motion.span>
           <motion.span className="tag" variants={tagVariants}>Stage Confidence</motion.span>
+        </motion.div>
+
+        {/* Leadership Team Section */}
+        <motion.div 
+          className="leadership-section"
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.7, delay: 0.3 }}
+        >
+          <h3 className="subheading">Meet Our Co-Founders</h3>
+          <p className="subpara">
+            Driven by passion and expertise to empower young voices across schools.
+          </p>
+
+          <motion.div 
+            className="team-grid"
+            variants={containerVariants}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true, margin: "-100px" }}
+          >
+            {teamMembers.map((member) => (
+              <motion.div key={member.name} className="team-card" variants={cardVariants}>
+                <div className="team-avatar-wrapper">
+                  <div className="team-avatar">
+                    <span>{member.initials}</span>
+                  </div>
+                  <div className="team-icon-badge">
+                    {member.icon}
+                  </div>
+                </div>
+                <h4 className="team-name">{member.name}</h4>
+                <p className="team-role">{member.role}</p>
+                <div className="team-qualification">
+                  <GraduationCap size={15} className="qual-icon" />
+                  <span>{member.qualification}</span>
+                </div>
+              </motion.div>
+            ))}
+          </motion.div>
         </motion.div>
       </div>
     </section>

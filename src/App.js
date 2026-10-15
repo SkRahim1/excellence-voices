@@ -20,6 +20,8 @@ import StudentsHome from "./components/students/StudentsHome";
 import ClassPage from "./components/students/ClassPage";
 import CategoryPage from "./components/students/CategoryPage";
 import ContentPage from "./components/students/ContentPage";
+import OtherMaterialsHome from "./components/students/OtherMaterialsHome";
+import Debate2026Page from "./components/students/Debate2026Page";
 //trainer route protection
 import TrainerProtectedPopup from "./components/TrainerProtectedPopup";
 import TeacherProtectedPopup from "./components/TeacherProtectedPopup";
@@ -320,6 +322,29 @@ export default function App() {
                 <StudentsHome />
               </ProtectedRoute>
             }
+          />
+
+          <Route
+            path="/students/other-materials"
+            element={
+              <ProtectedRoute isAuthenticated={isStudentAuthenticated} setIsAuthenticated={setIsStudentAuthenticated}>
+                <OtherMaterialsHome />
+              </ProtectedRoute>
+            }
+          />
+
+          <Route
+            path="/students/other-materials/debate-2026"
+            element={
+              <ProtectedRoute isAuthenticated={isStudentAuthenticated} setIsAuthenticated={setIsStudentAuthenticated}>
+                <Debate2026Page />
+              </ProtectedRoute>
+            }
+          />
+
+          <Route
+            path="/students/debate-2026"
+            element={<Navigate to="/students/other-materials/debate-2026" replace />}
           />
 
           <Route
