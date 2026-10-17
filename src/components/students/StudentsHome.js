@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Folder, ArrowRight, Sparkles, FileText, Award } from "lucide-react";
+import { Folder, ArrowRight, Sparkles, FileText, Award, BookOpen } from "lucide-react";
 import "./Debate2026Page.css";
 
 export default function StudentsHome() {
@@ -98,6 +98,46 @@ export default function StudentsHome() {
 
             <div className="directory-action-link">
               <span>Open Debate 2026 Directory</span>
+              <ArrowRight size={18} />
+            </div>
+          </Link>
+
+          {/* ENGLISH BOOK DIRECTORY CARD */}
+          <Link
+            to="/students/other-materials/english-book"
+            className="directory-card"
+          >
+            <div className="directory-badge-bar">
+              <div className="directory-icon-box" style={{ color: "#2563eb", background: "rgba(37, 99, 235, 0.08)" }}>
+                <BookOpen size={26} />
+              </div>
+              <span className="directory-tag" style={{ background: "rgba(37, 99, 235, 0.12)", color: "#1d4ed8" }}>
+                <Sparkles size={12} style={{ display: "inline", marginRight: "3px" }} />
+                Grades 1–5 • 30 Units
+              </span>
+            </div>
+
+            <h3 className="directory-title">English to Start With</h3>
+            <p className="directory-desc">
+              Friendly Learning Conversations with Saniya: 30 illustrated real-life conversation units, useful sentences, speaking practice, and fun roleplay activities for everyday English fluency.
+            </p>
+
+            <div
+              style={{
+                display: "flex",
+                alignItems: "center",
+                gap: "8px",
+                fontSize: "13px",
+                color: "#64748b",
+                marginBottom: "16px"
+              }}
+            >
+              <FileText size={15} color="#0d2d59" />
+              <span>34 Pages Full-Color Illustrated Book</span>
+            </div>
+
+            <div className="directory-action-link">
+              <span>Open English Book</span>
               <ArrowRight size={18} />
             </div>
           </Link>

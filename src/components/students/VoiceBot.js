@@ -578,6 +578,14 @@ export default function VoiceBot() {
       return;
     }
 
+    if (query.includes("english book") || query.includes("english to start with") || query.includes("open english")) {
+      navigate("/students/other-materials/english-book");
+      speak("Opening English to Start With book. Here you will find the 30 illustrated conversation units with Saniya.", () => {
+        setAppState("LISTENING");
+      });
+      return;
+    }
+
     // Navigation Home
     if (query.includes("go home") || query.includes("go back") || query === "back" || query.includes("open portal")) {
       navigate("/students");

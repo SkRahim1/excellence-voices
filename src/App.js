@@ -22,6 +22,7 @@ import CategoryPage from "./components/students/CategoryPage";
 import ContentPage from "./components/students/ContentPage";
 import OtherMaterialsHome from "./components/students/OtherMaterialsHome";
 import Debate2026Page from "./components/students/Debate2026Page";
+import EnglishBookPage from "./components/students/EnglishBookPage";
 //trainer route protection
 import TrainerProtectedPopup from "./components/TrainerProtectedPopup";
 import TeacherProtectedPopup from "./components/TeacherProtectedPopup";
@@ -345,6 +346,20 @@ export default function App() {
           <Route
             path="/students/debate-2026"
             element={<Navigate to="/students/other-materials/debate-2026" replace />}
+          />
+
+          <Route
+            path="/students/other-materials/english-book"
+            element={
+              <ProtectedRoute isAuthenticated={isStudentAuthenticated} setIsAuthenticated={setIsStudentAuthenticated}>
+                <EnglishBookPage />
+              </ProtectedRoute>
+            }
+          />
+
+          <Route
+            path="/students/english-book"
+            element={<Navigate to="/students/other-materials/english-book" replace />}
           />
 
           <Route

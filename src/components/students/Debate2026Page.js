@@ -126,12 +126,31 @@ const DEBATE_MODULES = [
       "Top 5 featured competition topics",
       "Trainer guidance for practice rounds"
     ]
+  },
+  {
+    id: 7,
+    type: "book",
+    moduleNumber: "English Book",
+    title: "English to Start With: Simple Conversations for Real Life!",
+    subtitle: "Friendly Learning Conversations with Saniya (Grades 1–5)",
+    description:
+      "A complete 34-page illustrated English conversation book specially created for Grades 1 to 5. Join Saniya through 30 real-life daily situations at home, school, with friends, and in the community—complete with dialogues, useful sentence banks, practice questions, and fun roleplay activities.",
+    fileName: "English_to_Start_With_Friendly_Learning_Conversations.pdf",
+    pages: "34 Pages",
+    author: "Excellence - Empowering Young Voices",
+    isBook: true,
+    keyTopics: [
+      "30 illustrated everyday conversation units with Saniya",
+      "Practical dialogues for home, school, library & playground",
+      "Useful Sentences vocabulary builder on every unit",
+      "Interactive 'Let's Practise' and 'Act It Out' roleplay activities"
+    ]
   }
 ];
 
 export default function Debate2026Page() {
   const [searchQuery, setSearchQuery] = useState("");
-  const [activeFilter, setActiveFilter] = useState("all"); // 'all', 'modules', 'guide'
+  const [activeFilter, setActiveFilter] = useState("all"); // 'all', 'modules', 'book', 'guide'
   const [selectedPdf, setSelectedPdf] = useState(null);
   const [isFullscreen, setIsFullscreen] = useState(false);
 
@@ -160,6 +179,7 @@ export default function Debate2026Page() {
   const filteredModules = DEBATE_MODULES.filter((item) => {
     // Type filter
     if (activeFilter === "modules" && item.type !== "module") return false;
+    if (activeFilter === "book" && item.type !== "book") return false;
     if (activeFilter === "guide" && item.type !== "guide") return false;
 
     // Search query
@@ -200,7 +220,10 @@ export default function Debate2026Page() {
 
         <div className="debate-meta-tags">
           <div className="debate-meta-pill">
-            <BookOpen size={15} color="#eba925" /> 5 Comprehensive Modules
+            <BookOpen size={15} color="#eba925" /> 5 Debate Modules
+          </div>
+          <div className="debate-meta-pill">
+            <BookOpen size={15} color="#60a5fa" /> English Conversation Book (30 Units)
           </div>
           <div className="debate-meta-pill">
             <Award size={15} color="#eba925" /> 1 Official Competition Guide
@@ -236,6 +259,12 @@ export default function Debate2026Page() {
             onClick={() => setActiveFilter("modules")}
           >
             5 Modules
+          </button>
+          <button
+            className={`debate-filter-btn ${activeFilter === "book" ? "active" : ""}`}
+            onClick={() => setActiveFilter("book")}
+          >
+            English Book
           </button>
           <button
             className={`debate-filter-btn ${activeFilter === "guide" ? "active" : ""}`}

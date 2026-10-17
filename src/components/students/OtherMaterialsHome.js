@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
-import { Folder, ArrowRight, ArrowLeft, Sparkles, FileText } from "lucide-react";
+import { Folder, ArrowRight, ArrowLeft, Sparkles, FileText, BookOpen } from "lucide-react";
 import "./Debate2026Page.css";
 
 export default function OtherMaterialsHome() {
@@ -17,7 +17,19 @@ export default function OtherMaterialsHome() {
         "Official debate curriculum modules covering fundamentals, argument construction, persuasive phrasing, advanced rebuttal methods, and 15 topic argument banks.",
       path: "/students/other-materials/debate-2026",
       fileCount: "5 Module PDFs + 1 Guide",
-      badgeColor: "#eba925"
+      badgeColor: "#eba925",
+      iconType: "folder"
+    },
+    {
+      id: "english-book",
+      title: "English to Start With",
+      tag: "Grades 1–5 • 30 Units",
+      description:
+        "Friendly Learning Conversations with Saniya: 30 illustrated real-life conversation units, useful sentences, speaking practice, and fun roleplay activities for everyday English fluency.",
+      path: "/students/other-materials/english-book",
+      fileCount: "34 Pages Full-Color Illustrated Book",
+      badgeColor: "#2563eb",
+      iconType: "book"
     }
   ];
 
@@ -49,10 +61,18 @@ export default function OtherMaterialsHome() {
         {directories.map((dir) => (
           <Link key={dir.id} to={dir.path} className="directory-card">
             <div className="directory-badge-bar">
-              <div className="directory-icon-box">
-                <Folder size={28} />
+              <div
+                className="directory-icon-box"
+                style={dir.iconType === "book" ? { color: "#2563eb", background: "rgba(37, 99, 235, 0.08)" } : {}}
+              >
+                {dir.iconType === "book" ? <BookOpen size={28} /> : <Folder size={28} />}
               </div>
-              <span className="directory-tag">{dir.tag}</span>
+              <span
+                className="directory-tag"
+                style={dir.iconType === "book" ? { background: "rgba(37, 99, 235, 0.12)", color: "#1d4ed8" } : {}}
+              >
+                {dir.tag}
+              </span>
             </div>
 
             <h2 className="directory-title">{dir.title}</h2>
